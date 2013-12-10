@@ -1,0 +1,38 @@
+
+Key words: rule, 
+
+Subject: Achieving special rule with a provoked task
+
+Prerequisites:
+
+Application validation tests:
+
+The requirement:
+
+
+Is there a way to schedule a job on the "day following the last Friday of the month"? 
+The schedule has to be triggered the day after the last friday of the month
+(it's a monthly job)
+
+
+Explanation:
+
+This schedule can't be achieved with a rule. However, there is a workaround you may consider.
+
+For example, creating a rule for the last Friday of the month; then the job provokes a task to run the next day. The scheduled task could run at 10:00; and the provoked task's launch window could be 09:00 - 09:30.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: internal
+
+Experties level:
+

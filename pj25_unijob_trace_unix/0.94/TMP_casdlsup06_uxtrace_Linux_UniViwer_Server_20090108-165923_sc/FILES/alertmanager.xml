@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+Alert Manager configuration file
+PRODUCT must be UNIJOB 
+TYPE must be RUN or SERVICE
+NOTIFICATION_TYPE must be EMAIL or COM
+LOG must be YES or NO
+TARGET, USER, NODE and JOB can be filters
+-->
+<CRITERIA_LIST>
+<!--	<CRITERIA>
+		<PRODUCT>UNIJOB</PRODUCT>
+		<VERSION>1</VERSION>
+		<NODE>*</NODE>
+		<TYPE>RUN</TYPE>
+		<TARGET>*</TARGET>
+		<JOB>*</JOB>
+		<USER>*</USER>
+		<STATUS>I</STATUS>
+		<NOTIFICATION>
+			<NOTIFICATION_TYPE>COM</NOTIFICATION_TYPE>
+			<COMMAND>echo </COMMAND>
+		</NOTIFICATION>
+	</CRITERIA> -->
+	
+</CRITERIA_LIST>

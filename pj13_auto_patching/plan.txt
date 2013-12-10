@@ -1,0 +1,19 @@
+central control script:
+with args:
+
+CompanyName, patches to install.
+
+ssh it!
+
+
+patching script:
+1. load env
+2. uxshutdown
+3. check processes
+4. apply patches.
+5. re-link
+6. start up $U
+7. run a uxlst atm
+8. run $UXEXE/uxverson
+
+Keep a log

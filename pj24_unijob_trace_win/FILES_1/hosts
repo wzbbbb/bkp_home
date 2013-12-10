@@ -1,0 +1,155 @@
+# @(#)47	1.1  src/bos/usr/sbin/netstart/hosts, cmdnet, bos420, 9613T 7/24/91 10:00:46
+# IBM_PROLOG_BEGIN_TAG 
+# This is an automatically generated prolog. 
+#  
+# bos420 src/bos/usr/sbin/netstart/hosts 
+#  
+# Licensed Materials - Property of IBM 
+#  
+# (C) COPYRIGHT International Business Machines Corp. 1985,1989 
+# All Rights Reserved 
+#  
+# US Government Users Restricted Rights - Use, duplication or 
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp. 
+#  
+# IBM_PROLOG_END_TAG 
+# 
+# COMPONENT_NAME: TCPIP hosts
+# 
+# FUNCTIONS: loopback 
+#
+# ORIGINS: 26  27 
+#
+# (C) COPYRIGHT International Business Machines Corp. 1985, 1989
+# All Rights Reserved
+# Licensed Materials - Property of IBM
+#
+# US Government Users Restricted Rights - Use, duplication or
+# disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+#
+#  /etc/hosts
+#
+# This file contains the hostnames and their address for hosts in the
+# network.  This file is used to resolve a hostname into an Internet
+# address.  
+#
+# At minimum, this file must contain the name and address for each
+# device defined for TCP in your /etc/net file.  It may also contain
+# entries for well-known (reserved) names such as timeserver
+# and printserver as well as any other host name and address.
+#
+# The format of this file is:
+# Internet Address	Hostname	# Comments
+# Items are separated by any number of blanks and/or tabs.  A '#'
+# indicates the beginning of a comment; characters up to the end of the
+# line are not interpreted by routines which search this file.  Blank
+# lines are allowed.
+
+# Internet Address	Hostname	# Comments
+# 192.9.200.1     	net0sample	# ethernet name/address
+# 128.100.0.1		token0sample	# token ring name/address
+# 10.2.0.2		x25sample	# x.25 name/address
+127.0.0.1	loopback localhost
+
+###################################################
+
+
+# External/Production Ethernet(ocean)
+###############################################
+10.100.100.102  ocean12 spocn12
+10.100.100.134  ocean34
+10.100.100.35   ocean35 
+10.100.100.36   ocean36 
+10.100.100.38   ocean38
+10.100.100.39   ocean39
+10.100.100.40   ocean40
+10.100.100.41   ocean41
+10.100.100.42   ocean42
+10.100.100.43   ocean43
+10.100.100.50   ocean50
+10.100.100.51   ocean51
+10.100.100.52   ocean52
+10.100.100.53   ocean53
+10.100.100.60   ocean60
+10.100.100.61   ocean61
+10.100.100.62   ocean62
+10.100.100.63   ocean63
+10.100.100.64   ocean64
+10.100.100.65   ocean65
+10.100.100.66   ocean66
+10.100.100.67   ocean67
+###############################################
+
+################Gigabit Network ###############
+10.104.104.12  gbocn12
+10.104.104.35  gbocn35
+10.104.104.38  gbocn38
+10.104.104.39  gbocn39
+10.104.104.40  gbocn40
+10.104.104.41  gbocn41
+10.104.104.42  gbocn42
+10.104.104.43  gbocn43
+10.104.104.50  gbocn50
+10.104.104.51  gbocn51
+10.104.104.52  gbocn52
+10.104.104.53  gbocn53
+10.104.104.60  gbocn60
+10.104.104.61  gbocn61
+10.104.104.62  gbocn62
+10.104.104.63  gbocn63
+10.104.104.64  gbocn64
+10.104.104.65  gbocn65
+10.104.104.66  gbocn66
+10.104.104.67  gbocn67
+###############################################
+
+################Virtual Network#################
+10.106.106.40  vocean40
+10.106.106.41  vocean41
+10.106.106.42  vocean42
+10.106.106.43  vocean43
+###############################################
+
+############## Domain Entry ###################
+10.100.201.17	oceanspray.com
+###############################################
+
+############## Network Printers ################################
+10.100.200.190  gcs1.oceanspray.com gcs1 IT Room HP Laser Jet 5si
+10.100.42.55	c2w-2430-01.oceanspray.com # SNO PS Printer 2
+10.100.42.39    c2w-b5170-02.oceanspray.com     c2w-b5170-02
+############################################################
+
+############## SAP Basis download Eary Watch ################
+204.79.199.2 sapserv4
+###########################################################
+
+############## OSC Intel Servers ##########################
+10.100.201.6	spray6
+10.100.201.39	spray39
+10.100.201.99   spray99 SPRAY99
+###########################################################
+
+################WMS Servers################################
+10.100.99.1     wms000
+10.110.1.201    wms100
+10.120.1.201    wms200
+10.125.1.201    wms243
+10.130.1.201    wms300
+165.131.234.201 wms324
+10.136.1.201	wms347
+10.160.1.201    wms600
+165.131.234.233 wms611
+10.170.1.201    wms700
+10.170.1.241    wms743
+10.174.1.241    xms743
+199.7.18.11     intral
+199.73.23.199   intraX
+10.170.11.225   mes702 MES702
+###########################################################
+
+################X Server Users#############################
+10.100.70.75    L-XP-LLAM.oscorp.oceanspray.com
+10.100.60.76    L-XP-JOODFELLOW.oscorp.oceanspray.com
+10.100.61.1    L-XP-LSILVA.oscorp.oceanspray.com
+###########################################################

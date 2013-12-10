@@ -1,0 +1,8 @@
+1. To abort scripts after any command failure, and add MSG function
+2. To abort if required dir is not mounted
+3. To add a reporting task with variables
+
+==session monitored
+==days monitored
+==email addresses to send
+

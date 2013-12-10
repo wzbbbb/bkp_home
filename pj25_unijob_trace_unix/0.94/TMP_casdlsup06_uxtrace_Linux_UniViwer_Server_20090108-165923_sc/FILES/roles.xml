@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<credentialsmap version="1.0">
+
+<tuple>
+	<localrole>Administrator</localrole>
+	<node>casdlsup06</node>
+	<credentials>
+		<item name="CREDENTIAL_ADMIN">YES</item>
+	</credentials>	
+</tuple>
+
+<tuple>
+<localrole>Administrator</localrole>
+<node>frsdlsup02</node>
+<credentials>
+<item name="CREDENTIAL_ADMIN">YES</item>
+<item name="CREDENTIAL_DEFINE_VIEW">ALL_ADM</item>
+<item name="CREDENTIAL_DEFINE_CONTROL">ALL_ADM</item>
+<item name="CREDENTIAL_MONITOR_VIEW">ALL_ADM</item>
+<item name="CREDENTIAL_MONITOR_CONTROL">ALL_ADM</item>
+</credentials>
+</tuple>
+<tuple>
+<localrole>Developer</localrole>
+<node>frsdlsup02</node>
+<credentials>
+<item name="CREDENTIAL_ADMIN">NO</item>
+<item name="CREDENTIAL_MONITOR_VIEW">NO</item>
+<item name="CREDENTIAL_MONITOR_CONTROL">NO</item>
+<item name="CREDENTIAL_DEFINE_VIEW">ALL_ADM</item>
+<item name="CREDENTIAL_DEFINE_CONTROL">ALL_ADM</item>
+</credentials>
+</tuple>
+<tuple>
+<localrole>Operator</localrole>
+<node>frsdlsup02</node>
+<credentials>
+<item name="CREDENTIAL_ADMIN">NO</item>
+<item name="CREDENTIAL_DEFINE_VIEW">NO</item>
+<item name="CREDENTIAL_DEFINE_CONTROL">NO</item>
+<item name="CREDENTIAL_MONITOR_VIEW">ALL_ADM</item>
+<item name="CREDENTIAL_MONITOR_CONTROL">ALL_ADM</item>
+</credentials>
+</tuple>
+</credentialsmap>

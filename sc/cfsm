@@ -1,0 +1,4 @@
+#!/bin/ksh
+# modify the CF log
+#set -x
+echo "`date '+%Y-%m-%d %H:%M:%S'`: sending email...  $1" >> /data/home/zwa/CF_respons_timer.txt

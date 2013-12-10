@@ -1,0 +1,78 @@
+These Windows services are started:
+
+   Application Management
+   Automatic Updates
+   COM+ Event System
+   Computer Browser
+   Cryptographic Services
+   DHCP Client
+   Distributed File System
+   Distributed Link Tracking Client
+   Distributed Transaction Coordinator
+   DNS Client
+   Error Reporting Service
+   Event Log
+   Help and Support
+   IPSEC Services
+   Logical Disk Manager
+   McAfee Framework Service
+   Net Logon
+   Network Associates McShield
+   Network Associates Task Manager
+   Network Connections
+   Network Location Awareness (NLA)
+   Plug and Play
+   Print Spooler
+   Protected Storage
+   Remote Access Connection Manager
+   Remote Procedure Call (RPC)
+   Remote Registry
+   Secondary Logon
+   Security Accounts Manager
+   Server
+   Shell Hardware Detection
+   System Event Notification
+   Task Scheduler
+   TCP/IP NetBIOS Helper
+   Telephony
+   Terminal Services
+   Univer$e MNT500_CLUSTER_CAL_X
+   Univer$e MNT500_CLUSTER_CDJ_A
+   Univer$e MNT500_CLUSTER_CDJ_X
+   Univer$e MNT500_CLUSTER_CMD
+   Univer$e MNT500_CLUSTER_DQM_
+   Univer$e MNT500_CLUSTER_ECH_X
+   Univer$e MNT500_CLUSTER_IO_A
+   Univer$e MNT500_CLUSTER_IO_X
+   Univer$e MNT500_CLUSTER_LNM
+   Univer$e MNT500_CLUSTER_ORD_X
+   Univer$e MNT500_CLUSTER_SUR
+   Univer$e mnt500a
+   Univer$e mnt500d
+   Univer$e mnt500e
+   Univer$e QCL500_CAL_X
+   Univer$e QCL500_CDJ_A
+   Univer$e QCL500_CDJ_X
+   Univer$e QCL500_CMD
+   Univer$e QCL500_DQM_
+   Univer$e QCL500_ECH_X
+   Univer$e QCL500_IO_A
+   Univer$e QCL500_IO_X
+   Univer$e QCL500_LNM
+   Univer$e QCL500_ORD_X
+   Univer$e QCL500_SUR
+   Univer$e qcl500a
+   Univer$e qcl500d
+   Univer$e qcl500e
+   Univer$e sup500a
+   Univer$e sup500d
+   Univer$e Universe 
+   VNC Server Version 4
+   Windows Audio
+   Windows Management Instrumentation
+   Windows Time
+   Wireless Configuration
+   Workstation
+
+The command completed successfully.
+

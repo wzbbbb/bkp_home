@@ -1,0 +1,2 @@
+update the readme.txt,
+including the license

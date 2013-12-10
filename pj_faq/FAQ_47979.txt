@@ -1,0 +1,39 @@
+47979
+Key words:
+
+	library link, patch level, multiple Dollar Universe Company,
+
+Subject:
+
+	Only one patch level can exist for each release of Dollar Universe on a Unix host.
+
+Prerequistites:
+
+	On Unix host.
+
+Application validation tests:
+
+Explanation:
+
+	Because of the security control in Unix, all Dollar Universe Company under the same release (V500 or V512) on the same physical host has to have the same patch level.
+	 
+	For example: for V512 Companies, all instances share the same library link:
+
+	/usr/lib/libux_v512
+
+	If you upgrade one Company, the library for all other Companies upgraded too. So, you have to patch the rest of the Companies too. 
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

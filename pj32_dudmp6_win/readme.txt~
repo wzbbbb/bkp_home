@@ -1,0 +1,48 @@
+Purpose
+The purpose of this project is to create an automatic dump procedure for $U V6 on Windows. It should easily dump customer data from a V6 $U uxtrace, and generate job records listings as the dudmpmu in V5. It should also follow the same principal of the dudmpmu concerning data processing. 
+
+
+Background
+Because of the limitation of V6 security control, we can not use the V6 data files if dumped the same way as in $U V5. To analyze $U V6 data files become extremely cumbersome. To maintain our work efficiency, a new dump tool for V6 is urgently demanded.
+Since V6's object IDs and names are mapped through dedicated data files, to extract records from the data files, we need a $U node with the same node and company name. The dudmp6 will install a new node and put in customer's data.
+
+
+Usage
+1. The script is in powershell; launch "powershell" in a CMD window.
+
+2. Then launch the script, for example:
+PS Y:\home\> ./dudmp6.ps1
+
+3. Then you will see the following:
+############################################
+Security Warning
+Run only scripts that you trust. While scripts from the Internet can be useful, this script can potentially harm your computer. Do you want to run Y:\home\zwa\pj32_dudmp6_win\dudmp6.ps1?
+[D] Do not run  [R] Run once  [S] Suspend  [?] Help (default is "D"):
+############################################
+The above message is normal. You have to let it run with "R". M$ finally delivered a nice scripting language; but why should they let it to run smoothly? Why? 
+
+4. If this is the first time running the script on a node, you may this error message:  
+############################################
+File ...\dudmp6.ps1 cannot be loaded. The file ...\dudmp6.ps1 is not digitally signed. ...  
+############################################
+In that case, you can run this command to ease the control. 
+
+Set-ExecutionPolicy Unrestricted
+
+
+
+Implementation 
+Over view
+dudmp6 uses the silent install to prepare the new node. It has improved a lot based on the UNIX version of the script. It does not assume the user knowing the structure of the tool. It allow all the required paths to be specified interactively, and perform some basic check. 
+This has made the script ready to work in any windows servers. The only thing hard coded is the UVMS information. It also reminds the user where to change the setting before the dump start. 
+
+
+Structure
+dudmp6 included 3 files
+1. dudmp6.ps1; the main script
+2. duas6013_custom.iss; the template used to build the response file for new installation.
+3. readme.txt
+
+Implementation consideration
+Since the response file can not be used for a different version of kit, for the first version, we have to use the windows 64 bit 6.0.13 kit. The good news is that $U V6 is fairly easy to upgrade.
+dudmp6 will pick random ports and use them after verification for $U installation.

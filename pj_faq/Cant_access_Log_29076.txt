@@ -1,0 +1,79 @@
+Sent:	Wednesday, March 13, 2002 10:39 AM
+To:	maintenance@orsyp.com
+Subject:	FAQ Request
+
+À:	maintenance@orsyp.com
+CheckBox10:	0
+CheckBox11:	0
+CheckBox12:	0
+CheckBox13:	0
+CheckBox14:	0
+CheckBox15:	0
+CheckBox16:	0
+CheckBox17:	0
+CheckBox18:	0
+CheckBox19:	0
+CheckBox20:	0
+CheckBox21:	0
+CheckBox22:	0
+CheckBox23:	-1
+CheckBox24:	0
+CheckBox26:	0
+CheckBox27:	0
+CheckBox28:	-1
+CheckBox3:	0
+CheckBox30:	0
+CheckBox31:	0
+CheckBox32:	0
+CheckBox33:	0
+CheckBox34:	0
+CheckBox36:	0
+CheckBox37:	0
+CheckBox38:	0
+CheckBox39:	0
+CheckBox4:	0
+CheckBox40:	0
+CheckBox41:	0
+CheckBox42:	0
+CheckBox44:	0
+CheckBox45:	0
+CheckBox46:	0
+CheckBox47:	0
+CheckBox48:	0
+CheckBox49:	0
+CheckBox5:	-1
+CheckBox50:	0
+CheckBox51:	0
+CheckBox52:	0
+CheckBox53:	0
+CheckBox54:	0
+CheckBox55:	-1
+CheckBox56:	0
+CheckBox57:	0
+CheckBox6:	0
+CheckBox8:	0
+CheckBox9:	0
+Easy:	OptionButton5
+Expla2:	This kind of issues is usually caused by inproperly defined the access right of the log files. The access right of a log file could be changed when they are deleted and recreated.
+
+For example, if the universe.log file is deleted during a maintenance procedure. Then, the launcher needs to write into the log; so, it creates a new one. Since the the launcher is owned by root. The new universe.log will look at the following:
+
+-rw-rw-r--    1 root     univ       439524 Jan 28 13:13 universe.log
+
+
+If the owners of any processes are not in the univ group and not root, the processes won't be able to write into the universe.log. For example, when the Dollar Universe Company is started with root, and the root is not in the "univ" group, the IO server won't be able to update the universe.log.
+The causes of this issue could be different, but they all could be prevented.
+
+HowTo:	OptionButton11
+IncNum:	29076
+Objet:	FAQ Request
+Op2:	1. Check to make sure every Dollar Universe processes have the right to write in to every log files.
+2. Try not do delete a log file, instead copy a new one to overwrite the old one. In this way, the access right won't be changed.
+3. Or change the log files to 666.
+
+Pre2:	Please check the access right of the concerned log files and check if every Dollar Universe processe can write into the log files.
+
+Product:	0
+Public:	OptionButton5
+ShtDes:	Some logs file can not be updated: Permission denied
+Symp:	Some processes failed to update some log files, e.g. the IO server could not update the universe.log.

@@ -1,0 +1,40 @@
+On Error Resume Next
+Set objUser = GetObject _
+ ("LDAP://cn=zwa,ou=Management,dc=NA,dc=fabrikam,dc=com")
+objUser.GetInfo
+
+strGivenName = objUser.Get("givenName")
+strInitials = objUser.Get("initials")
+strSn = objUser.Get("sn")
+strDisplayName = objUser.Get("displayName")
+strPhysicalDeliveryOfficeName = _
+ objUser.Get("physicalDeliveryOfficeName")
+strTelephoneNumber = objUser.Get("telephoneNumber")
+strMail = objUser.Get("mail")
+strWwwHomePage = objUser.Get("wWWHomePage")
+
+strDescription = objUser.GetEx("description")
+strOtherTelephone = objUser.GetEx("otherTelephone")
+strUrl = objUser.GetEx("url")
+
+Wscript.Echo "givenName: " & strGivenName
+Wscript.Echo "initials: " & strInitials
+Wscript.Echo "sn: " & strSn
+Wscript.Echo "displayName: " & strDisplayName
+Wscript.Echo "physicalDeliveryOfficeName: " & _
+ strPhysicalDeliveryOfficeName
+Wscript.Echo "telephoneNumber: " & strTelephoneNumber
+Wscript.Echo "mail: " & strMail
+Wscript.Echo "wWWHomePage: " & strWwwHomePage
+
+For Each strValue in strDescription
+ Wscript.Echo "description: " & strValue
+Next
+For Each strValue in strOtherTelephone
+ Wscript.Echo "otherTelephone: " & strValue
+Next
+For Each strValue in strUrl
+ Wscript.Echo "url: " & strValue
+Next
+
+

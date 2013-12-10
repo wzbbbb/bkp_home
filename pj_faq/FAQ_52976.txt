@@ -1,0 +1,32 @@
+
+Key words: Windows uxtrace, Windows Management Instrumentation, WMI
+
+Subject: Windows uxtrace need to access the Windows Management Instrumentation (WMI)
+
+Prerequistites: Windows Uxtrace 4.0 or above
+
+Application validation tests:
+
+If you see the following error message, please also pay attentation to the line number where the issue occur:  
+
+...\uxtrace_step2.vbs(23,1) (null): The service cannot be started, either because it is disabled or because it has no enabled devices associated with it.
+
+Explanation:
+
+
+The Windows uxtrace need to access the Windows Management Instrumentation (WMI) to gather necessary information. Please check with the Windows system admin to see this access has been disalbed.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

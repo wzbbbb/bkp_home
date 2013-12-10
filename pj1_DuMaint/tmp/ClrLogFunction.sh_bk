@@ -1,0 +1,234 @@
+#!/bin/ksh  
+###==========================================================================
+#@(#) PROCEDURE: 	IU_CLRLOG
+#@(#) OBJECT: 		purge operations logs, engines logs, universe.log 
+#@(#)         		more than uxKEEP_JOB_LOG days old
+#@(#) AUTHOR: 		JCO / ORSYP Inc.
+#@(#) CREATION DATE: 	01/10/2002
+#@(#) MODIFICATIONS:	Mar 24th, 2004 by Zhibing Wang, to make is a stand alone
+#@(#)                   program and load the environment from the DuMaint.conf
+#@(#)
+###==========================================================================
+
+### set -x is set if S_DEBUG variable is true
+[ "${S_DEBUG}" = "true" ] && set -x
+
+
+###===========###
+### Variables ###
+###===========###
+
+### Define local variables ( Capital letters for beginning of each syllable)
+#uxKEEP_JOB_LOG=10
+#uxKEEP_NB_LINE=4000
+#uxKEEP_ARC=15
+LocalDir=`pwd`
+Conf="${LocalDir}/DuMaint.conf"
+S_DATRAIT=`date '+%Y%m%d'`
+NbStep=8
+log=DuMaint.log
+#Pid="[${$}]"
+#echo " The PID of this script is: ${Pid} " 
+
+
+###===========###
+### Functions ###
+###===========###
+Pre () {  # test if the DuMaint.conf exist, and if you are root.
+	[ ! -f "$log" ] && touch "$log"
+	if [ ! -f $Conf ] ; then
+		echo "The $Conf does not exist! Please run the DuDetect.sh to create one." >> "$log"
+		exit 1
+	fi
+	id |  grep root 1> /dev/null  2> /dev/null
+	if [  $? -ne 0 ]; then
+		echo 'You have to be root to run this program!'  >> "$log"
+		exit 1
+	fi
+	echo "Pass root test"  >> "$log"
+
+}
+
+MESSAGE ()
+### object:	
+###	echo a message in the job log and the history trace
+### expects: 
+### 	- $1: Message text
+{
+	echo ${1}
+#	${UXEXE}/uxset msg "${1}"
+}
+
+
+TEST_ERROR ()
+### object:	
+###	Test if there was an error 
+### expects: 
+### 	- $1: Return Code
+###  	- $2: Error message (optionnal)      
+{
+	if [ ${1} != 0 ] ; then  
+		MESSAGE "### Fatal error detected in STEP${CntStep}"
+		MESSAGE "### Return Code =${1}"
+		MESSAGE "### Error Msg   =${2}"
+		exit 1
+	else
+		MESSAGE "### Command completed."
+		MESSAGE " "
+	fi
+}
+
+
+STEP0 ()
+### object:	
+###	List operations logs older than ${uxKEEP_JOB_LOG}
+{
+	MESSAGE "### List of operations logs older than ${uxKEEP_JOB_LOG} days in ${LogDir} ### "	
+	Command="find ${LogDir} -name \"${S_ESPEXE}*\" -mtime +${uxKEEP_JOB_LOG} -exec ls -l {} \;"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't list logs!"
+}
+
+
+STEP1 ()
+### object:	
+###	Remove operations logs older than ${uxKEEP_JOB_LOG}
+{
+	MESSAGE "### Remove these logs  ### "	
+	Command="find ${LogDir} -name \"${S_ESPEXE}*\" -mtime +${uxKEEP_JOB_LOG} -exec rm -f {} \;"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't delete some logs!"
+}
+
+
+STEP2 ()
+### object:	
+###	Remove workload forcast temp file
+{
+	MESSAGE "### Remove these logs  ### "	
+	Command="find ${LogDir} -name \"U_FSSB50*\" -exec rm -f {} \;"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't delete the workload forcast temp file!"
+}
+
+
+STEP3 ()
+### object:	
+###	Create unilog directory
+{
+	MESSAGE "### Creation of Unilog directory : ${OutDir} ### "
+	Command="[[ -d ${OutDir} ]] || mkdir -p ${OutDir}"
+	MESSAGE "Running the command: ${Command}"	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't create ${OutDir}!"
+}
+
+
+STEP4 ()
+### object:	
+###	Move Dollar Universe's logs in ${OutDir}
+{
+	cd ${LogDir}
+	#[ -f *.log ] && FileList=$(echo *.log)
+	ls *.log 1>/dev/null 2>/dev/null
+	[ "$?" -eq 0 ] && FileList=$(echo *.log)
+	echo $FileList
+        ls *.LOG 1>/dev/null 2>/dev/null
+        [ "$?" -eq 0 ] && FileList="${FileList} *.LOG"
+	echo $FileList
+	#$[ -f *.LOG ] && FileList="${FileList} *.LOG"
+	for File in ${FileList}
+	do
+		MESSAGE "### Move ${File} in ${OutDir}"
+		Command="mv ${LogDir}/${File} ${OutDir}"
+		echo "Running the command: ${Command}"	
+		eval ${Command}
+		MESSAGE "### Restore ${File} in ${LogDir} with ${uxKEEP_NB_LINE} lines "
+		Command="tail -${uxKEEP_NB_LINE} \"${OutDir}/${File}\" > \"${LogDir}/${File}\""
+		echo "Running the command: ${Command}"	
+		eval ${Command}
+	done
+}
+
+
+STEP5 ()
+### object:	
+###	Tar unilog directory
+{
+	MESSAGE "### Tar unilog directory : ${OutDir} ### "
+	Command="tar -cvf ${OutDir}.tar ${OutDir}"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't Tar directory : ${OutDir}!"
+}
+
+
+STEP6 ()
+### object:	
+###	Compress Tar file
+{
+	MESSAGE "### Compress Tar file ${OutDir}.tar ### "
+	Command="compress -f ${OutDir}.tar"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't compress Tar file ${OutDir}.tar!"
+}
+
+
+STEP7 ()
+### object:	
+###	Clean temporary files
+{
+	MESSAGE "### Remove unilog directory ${OutDir} ### "
+	Command="rm -Rf ${OutDir}"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't remove directory ${OutDir}!"
+}
+
+
+
+###======###
+### MAIN ###
+###======###
+
+#CntStep=${S_NUMJALON}
+Pre
+MaxLines=`sed -n '$=' $Conf`
+i=1
+while [ $i -le $MaxLines ] ; do
+	Dir=`sed -n "${i}p" $Conf |cut -d":" -f1`
+	Env="${Dir}/uxsetenv"
+	eval . $Env
+	uxKEEP_JOB_LOG=`sed -n "${i}p" $Conf |cut -d":" -f3`
+	uxKEEP_NB_LINE=`sed -n "${i}p" $Conf |cut -d":" -f5`
+	uxARCH_DIR="${UXDIR_ROOT}/archive"
+	for  S_ESPEXE  in A I S X
+	do
+		case ${S_ESPEXE} in
+			A) LogDir=${UXLAP};;
+			I) LogDir=${UXLIN};;
+			S) LogDir=${UXLSI};;
+			X) LogDir=${UXLEX};;
+		esac
+		OutDir="${uxARCH_DIR}/${S_SOCIETE}_Unilog_${S_ESPEXE}_${S_DATRAIT}"
+		echo "$OutDir"
+		CntStep=0
+		let CntStep=${CntStep}
+
+		while  [[ ${CntStep} -lt ${NbStep} ]] 
+		do
+		#	${UXEXE}/uxset step ${CntStep}
+			MESSAGE "====================================== "
+			STEP${CntStep}	
+			let CntStep=CntStep+1
+		done
+
+		MESSAGE "### All the steps are completed ### "
+	done
+	i=`expr $i + 1`
+done
+exit 0

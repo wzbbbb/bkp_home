@@ -1,0 +1,145 @@
+#!/bin/ksh
+
+
+echo " starting statistics generation "
+Today=$(date +"%m/%d/%Y ; %H:%M" )
+SizeDir ()
+{
+ result=$(du -k $1 | tail -1 | awk '{print $1}')
+ export result
+}
+Sizefile ()
+{
+ result=$(ls -l $1 | tail -1 | awk '{print $5}')
+ export result
+}
+
+echo " generating company stats "
+
+SizeDir $UXDIR_ROOT
+company=$result
+SizeDir $UXLEX
+uxlexsz=$result
+SizeDir $UXPEX
+uxpexsz=$result
+SizeDir $UXDEX
+uxdexsz=$result
+SizeDir $UXLSI
+uxlsisz=$result
+SizeDir $UXPSI
+uxpsisz=$result
+SizeDir $UXDSI
+uxdsisz=$result
+SizeDir $UXLIN
+uxlinsz=$result
+SizeDir $UXPIN
+uxpinsz=$result
+SizeDir $UXDIN
+uxdinsz=$result
+SizeDir $UXLAP
+uxlapsz=$result
+SizeDir $UXPAP
+uxpapsz=$result
+SizeDir $UXDAP
+uxdapsz=$result
+SizeDir $UXEXE
+uxexesz=$result
+SizeDir $UXMGR
+uxmgrsz=$result
+nblogexp=$(ls -la $UXLEX | wc -l)
+nblogsim=$(ls -la $UXLSI | wc -l)
+nblogint=$(ls -la $UXLIN | wc -l)
+nblogapp=$(ls -la $UXLAP | wc -l)
+
+Sizefile $UXLOG/universe.log
+universe_log=$result
+
+if [[ ! -f ${uxREPORT_DIR}/company_${S_NOEUD}.stat ]] ; then
+echo "Date ; Time ; Company ; EXP - log ; EXP - uproc ; EXP - data ; EXP - nlog ; SIM - log ; SIM - uproc ; SIM - data ; SIM - nlog ; INT - log ; INT - uproc \
+; INT - data ; INT - nlog ; APP - log ; APP - uproc ; APP - data ; APP - nlog ; exec ; mgr ; universe.log" > ${uxREPORT_DIR}/company_${S_NOEUD}.stat
+fi
+echo "$Today ; $company ; $uxlexsz ; $uxpexsz ; $uxdexsz ; $nblogexp ; $uxlsisz ; $uxpsisz ; $uxdsisz ; $nblogsim ; $uxlinsz ; $uxpinsz ; $uxdinsz \
+; $nblogint ; $uxlapsz ; $uxpapsz ; $uxdapsz ; $nblogapp ; $uxexesz ; $uxmgrsz ; $universe_log" >> ${uxREPORT_DIR}/company_${S_NOEUD}.stat
+
+DataSize  ()
+{
+Sizefile $1/u_fmsb50.dta
+u_fmsb50_dta=$result
+Sizefile $1/u_fmsb50.idx
+u_fmsb50_idx=$result
+Sizefile $1/u_fmlp50.dta
+u_fmlp50_dta=$result
+Sizefile $1/u_fmlp50.idx
+u_fmlp50_idx=$result
+Sizefile $1/u_fmfu50.dta
+u_fmfu50_dta=$result
+Sizefile $1/u_fmfu50.idx
+u_fmfu50_idx=$result
+Sizefile $1/u_fmer50.dta
+u_fmer50_dta=$result
+Sizefile $1/u_fmer50.idx
+u_fmer50_idx=$result
+Sizefile $1/u_fmev50.dta
+u_fmev50_dta=$result
+Sizefile $1/u_fmev50.idx
+u_fmev50_idx=$result
+Sizefile $1/u_fmlc50.dta
+u_fmlc50_dta=$result
+Sizefile $1/u_fmlc50.idx
+u_fmlc50_idx=$result
+Sizefile $1/u_fmpf50.dta
+u_fmpf50_dta=$result
+Sizefile $1/u_fmpf50.idx
+u_fmpf50_idx=$result
+Sizefile $1/u_fmsp50.dta
+u_fmsp50_dta=$result
+Sizefile $1/u_fmsp50.idx
+u_fmsp50_idx=$result
+Sizefile $1/u_fmtp50.dta
+u_fmtp50_dta=$result
+Sizefile $1/u_fmtp50.idx
+u_fmtp50_idx=$result
+Sizefile $1/u_fmhs50.dta
+u_fmhs50_dta=$result
+Sizefile $1/u_fmhs50.idx
+u_fmhs50_idx=$result
+Sizefile $1/u_fmph50.dta
+u_fmph50_dta=$result
+Sizefile $1/u_fmph50.idx
+u_fmph50_idx=$result
+Sizefile $1/u_fecd50.dta
+u_fecd50_dta=$result
+Sizefile $1/u_fecd50.idx
+u_fecd50_idx=$result
+Sizefile $1/u_fecl50.dta
+u_fecl50_dta=$result
+Sizefile $1/u_fecl50.idx
+u_fecl50_idx=$result
+
+if [ "$1" = "$UXDEX" ] ; then filename=data_exp_${S_NOEUD}.stat ; fi
+if [ "$1" = "$UXDSI" ] ; then filename=data_sim_${S_NOEUD}.stat ; fi
+if [ "$1" = "$UXDIN" ] ; then filename=data_int_${S_NOEUD}.stat ; fi
+if [ "$1" = "$UXDAP" ] ; then filename=data_app_${S_NOEUD}.stat ; fi
+
+if [[ ! -f ${uxREPORT_DIR}/$filename ]] ; then
+echo "Date ; Time ; u_fmsb50.dta ; u_fmsb50.idx ; u_fmlp50.dta ; u_fmlp50.idx ; u_fmfu50.dta ; u_fmfu50.idx ; u_fmer50.dta ; u_fmer50.idx ; u_fmev50.dta \
+; u_fmev50.idx ; u_fmlc50.dta ; u_fmlc50.idx ; u_fmpf50.dta ; u_fmpf50.idx ; u_fmsp50.dta ; u_fmsp50.idx ; u_fmtp50.dta ; u_fmtp50.idx ; u_fmhs50.dta \
+; u_fmhs50.idx ; u_fmph50.dta ; u_fmph50.idx ; u_fecd50.dta ; u_fecd50.idx ; u_fecl50.dta ; u_fecl50.idx" > ${uxREPORT_DIR}/$filename 
+fi
+
+echo "$Today ; $u_fmsb50_dta ; $u_fmsb50_idx ; $u_fmlp50_dta ; $u_fmlp50_idx ; $u_fmfu50_dta ; $u_fmfu50_idx ; $u_fmer50_dta ; $u_fmer50_idx ; $u_fmev50_dta \
+; $u_fmev50_idx ; $u_fmlc50_dta ; $u_fmlc50_idx ; $u_fmpf50_dta ; $u_fmpf50_idx ; $u_fmsp50_dta ; $u_fmsp50_idx ; $u_fmtp50_dta ; $u_fmtp50_idx ; $u_fmhs50_dta \
+; $u_fmhs50_idx ; $u_fmph50_dta ; $u_fmph50_idx ; $u_fecd50_dta ; $u_fecd50_idx ; $u_fecl50_dta ; $u_fecl50_idx" >> ${uxREPORT_DIR}/$filename 
+}
+
+echo " generating data stats EXP"
+DataSize $UXDEX
+echo " generating data stats SIM"
+DataSize $UXDSI
+echo " generating data stats INT"
+DataSize $UXDIN
+echo " generating data stats APP"
+DataSize $UXDAP
+
+echo "statistics generation done"
+exit 0

@@ -1,0 +1,49 @@
+##################################################################
+	Testing Uproc Template
+##################################################################
+
+Objective:
+Automate testing uproc generation.
+
+Implementation:
+Part1: a set of extracted templated uprocs and the extraction of related resources.
+Contained uprocs:
+TEMPLATE-1: duration simulation
+TEMPLATE-2: resource dependency simulation
+TEMPLATE-3: uproc dependency simulation
+TEMPLATE-4: uxset msg and uxset step 
+TEMPLATE-5: uxsurjob
+TEMPLATE-6: uxspvjob
+TEMPLATE-7: uxalrjob (after SPRE0025)
+
+Part2: a script to insert the template objects to the specified Company. 
+
+Note: For TEMPLATE-6, the original $UXMGR/US_SPV_UPROC in the target Company will not be modified. It should be customized in case by case basis. 
+
+The result:
+Uprocs ready to be duplicated and updated. 
+
+##################################################################
+	Objects extraction and multiple Companies insertion
+##################################################################
+
+Objective:
+Automate testing objects (uprocs and sessions) distribution amoung $U Companies with different patch levels.
+To extract and then insert the case related objects to different $U
+Companies. 
+
+Implementation:
+
+1. Specify the source Company name 
+
+2. Specify the case number
+
+3. Insert the objects to a set of predefined Companies: SUP500, QCL500, MNT500 
+
+4. The Company environments will be loaded one by one with predefined paths.
+
+Result: 
+All uprocs, sessions with the case number in their names will be inserted to the specified Companies on support2.
+
+GMU: into the same node where the extraction is done
+

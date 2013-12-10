@@ -1,0 +1,18 @@
+# Do not remove the following line, or various programs
+# that require network functionality will fail.
+127.0.0.1	localhost.localdomain	localhost	
+
+# -.- Permanent Linux (please avoid)
+192.168.110.205 casdlsup02 support2        support2.ORSYP.com
+192.168.110.207 support5
+192.168.110.206  casdlsup06 support6 casdlsup06.orsypgroup.com
+# -.- Windows 2003 Server
+192.168.110.208 support7        USSDMDA007  casdwsup07
+# -.- Temporary Linux servers
+192.168.105.116 support1
+192.168.105.117 support4
+#192.168.110.8   calpmbta.orsypgroup.com
+#192.168.110.11   calpmsup01
+192.168.110.201 caribou
+192.168.40.123  rowpmafl
+

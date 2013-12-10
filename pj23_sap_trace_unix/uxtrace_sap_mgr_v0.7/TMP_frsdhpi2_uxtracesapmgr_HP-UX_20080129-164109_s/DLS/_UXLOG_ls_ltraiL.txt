@@ -1,0 +1,9 @@
+#REM# LISTING OF THE SAP MANAGER _UXLOG DIRECTORY (following symbolic links and sorted by time stamp)
+#CMD# ls -ltraiL /apps/DUSAP42//log
+total 32
+212499 drwxr-xr-x  14 root       sys           1024 Nov  6  2006 ..
+212607 drwxrwxrwx   2 root       sys           1024 Nov  6  2006 .
+212712 -rw-rw-rw-   1 root       sys           2297 Nov  6  2006 uxunisrvrfc.log
+212711 -rw-rw-rw-   1 root       sys             86 Nov  6  2006 univsrvrfc_X.log
+212666 -rwxrwxrwx   1 root       sys           4392 Jan  4  2007 univmgr_TST511_frsdhpi2_X.log
+212667 -rwxrwxrwx   1 root       sys           4172 Jan  4  2007 sapjcs.log

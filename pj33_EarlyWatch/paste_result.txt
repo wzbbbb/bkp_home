@@ -1,0 +1,31 @@
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###CMD: uxlst ctl exp full
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sdff
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sdf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sdf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	dfljkdjfsdfsdf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sd
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	fsdfklsdjllkdsfj
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###CMD: ls -l $UXLEX
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	dosj
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sdf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	wef
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	grtf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	gsr
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	gpdsf 
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###CMD: license
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	dfsd
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###CMD: netstat -an 
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sdfsd
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	sdf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###CMD: ps -efl|grep ux
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	dfdsfdfsjlj
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	dfsdfsdf
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###CMD: uxlst tsk  exp full nomodel
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	wefjfjowefj 
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	###END
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	
+123456;casplda02;DU6.0.15;2013-06-24_11-30;CANADA;Montreal;Linux;uxlst tsk full exp;	

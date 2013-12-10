@@ -1,0 +1,127 @@
+| 2009-01-05 11:30:34 |ERROR| main | com.orsyp.central.server.CentralServerAdapter | Error initializing UniViewer server:  
+com.orsyp.InitializationException: Failed binding UniViewer server on casdlsup06.orsypgroup.com.
+	at com.orsyp.central.server.CentralServerAdapter.initialize(CentralServerAdapter.java:309)
+	at com.orsyp.central.server.CentralServerAdapter.implStart(CentralServerAdapter.java:404)
+	at com.orsyp.comm.server.ServerAdapter.start(ServerAdapter.java:107)
+	at com.orsyp.central.server.CentralServer.start(CentralServer.java:231)
+	at com.orsyp.central.server.CentralServer.main(CentralServer.java:221)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359)
+	at java.net.ServerSocket.bind(ServerSocket.java:319)
+	at java.net.ServerSocket.<init>(ServerSocket.java:185)
+	at java.net.ServerSocket.<init>(ServerSocket.java:97)
+	at com.orsyp.comm.server.ServerConnector.<init>(ServerConnector.java:16)
+	at com.orsyp.central.server.CentralServerAdapter.initialize(CentralServerAdapter.java:305)
+	... 4 more
+| 2009-01-05 11:30:34 |ERROR| Thread-0 | com.orsyp.central.server.ShutdownHook | Signal trapped! Try to stop the application... 
+| 2009-01-05 11:30:34 |ERROR| Thread-0 | com.orsyp.central.server.ShutdownHook | A signal was trapped. Exit code:5099 
+| 2009-01-05 11:46:28 |ERROR| main | com.orsyp.central.server.CentralServerAdapter | Error initializing UniViewer server:  
+com.orsyp.InitializationException: Failed binding UniViewer server on casdlsup06.orsypgroup.com.
+	at com.orsyp.central.server.CentralServerAdapter.initialize(CentralServerAdapter.java:309)
+	at com.orsyp.central.server.CentralServerAdapter.implStart(CentralServerAdapter.java:404)
+	at com.orsyp.comm.server.ServerAdapter.start(ServerAdapter.java:107)
+	at com.orsyp.central.server.CentralServer.start(CentralServer.java:231)
+	at com.orsyp.central.server.CentralServer.main(CentralServer.java:221)
+Caused by: java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:359)
+	at java.net.ServerSocket.bind(ServerSocket.java:319)
+	at java.net.ServerSocket.<init>(ServerSocket.java:185)
+	at java.net.ServerSocket.<init>(ServerSocket.java:97)
+	at com.orsyp.comm.server.ServerConnector.<init>(ServerConnector.java:16)
+	at com.orsyp.central.server.CentralServerAdapter.initialize(CentralServerAdapter.java:305)
+	... 4 more
+| 2009-01-05 11:46:28 |ERROR| Thread-0 | com.orsyp.central.server.ShutdownHook | Signal trapped! Try to stop the application... 
+| 2009-01-05 11:46:28 |ERROR| Thread-0 | com.orsyp.central.server.ShutdownHook | A signal was trapped. Exit code:5099 
+| 2009-01-05 11:51:15 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-05 11:51:15 |ERROR| main | com.orsyp.central.server.CheckCentralServer | Exception 
+java.lang.Exception: Access denied
+	at com.orsyp.central.server.CheckCentralServer.authenticate(CheckCentralServer.java:225)
+	at com.orsyp.central.server.CheckCentralServer.main(CheckCentralServer.java:60)
+| 2009-01-05 11:54:21 |INFO | main | com.orsyp.central.server.CentralServerAdapter | Check the license (/apps/unijob110/univiewer_server/casdlsup06/data/licenses.txt) 
+| 2009-01-05 11:54:21 |INFO | main | com.orsyp.central.server.CentralServerAdapter | UniViewer Management Server starting (UniViewer Server,1.1.0) 
+| 2009-01-05 11:54:21 |INFO | main | com.orsyp.central.server.CentralServerAdapter | Opening port number 4184 on the host: casdlsup06.orsypgroup.com/192.168.110.206 
+| 2009-01-05 11:54:21 |INFO | main | com.orsyp.central.server.CentralServerAdapter | Start of Alert Manager in mode: From last notified run message 
+| 2009-01-05 11:54:21 |INFO | main | com.orsyp.alertmanager.AlertManager | Alert Manager delay set to 60 
+| 2009-01-05 11:54:21 |WARN | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Node list is empty. 
+| 2009-01-05 12:12:11 |ERROR| uvms-pool-1-tid-7 | com.orsyp.request.AbstractRequestHandler | Failed processing request 
+com.orsyp.DataException: Installation error: the node name must be different from the Central node name casdlsup06.
+	at com.orsyp.request.register.InstallRequestHandler.executeUNJ(InstallRequestHandler.java:186)
+	at com.orsyp.request.register.InstallRequestHandler.execute(InstallRequestHandler.java:163)
+	at com.orsyp.request.register.InstallRequestHandler.execute(InstallRequestHandler.java:1)
+	at com.orsyp.request.AbstractRequestHandler.handle(AbstractRequestHandler.java:167)
+	at com.orsyp.central.server.UniWorker$DispatchHandler.implHandleRequest(UniWorker.java:228)
+	at com.orsyp.central.server.UniWorker$DispatchHandler.dispatch(UniWorker.java:159)
+	at com.orsyp.central.server.UniWorker.dispatch(UniWorker.java:507)
+	at com.orsyp.central.server.UniWorker.readHeaderMessages(UniWorker.java:498)
+	at com.orsyp.central.server.UniWorker.run(UniWorker.java:438)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+| 2009-01-05 12:12:11 |ERROR| uvms-pool-1-tid-7 | com.orsyp.request.AbstractRequestHandler | Failed processing request. 
+com.orsyp.DataException: Installation error: the node name must be different from the Central node name casdlsup06.
+	at com.orsyp.request.register.InstallRequestHandler.executeUNJ(InstallRequestHandler.java:186)
+	at com.orsyp.request.register.InstallRequestHandler.execute(InstallRequestHandler.java:163)
+	at com.orsyp.request.register.InstallRequestHandler.execute(InstallRequestHandler.java:1)
+	at com.orsyp.request.AbstractRequestHandler.handle(AbstractRequestHandler.java:167)
+	at com.orsyp.central.server.UniWorker$DispatchHandler.implHandleRequest(UniWorker.java:228)
+	at com.orsyp.central.server.UniWorker$DispatchHandler.dispatch(UniWorker.java:159)
+	at com.orsyp.central.server.UniWorker.dispatch(UniWorker.java:507)
+	at com.orsyp.central.server.UniWorker.readHeaderMessages(UniWorker.java:498)
+	at com.orsyp.central.server.UniWorker.run(UniWorker.java:438)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+| 2009-01-05 12:18:01 |INFO | uvms-pool-1-tid-7 | com.orsyp.central.credentials.XMLLocalRoleMappingManager | Proxy file /apps/unijob110/univiewer_server/casdlsup06/data/proxy.xml loaded successfully. 
+| 2009-01-05 12:19:22 |INFO | Thread-6 | com.orsyp.alertmanager.CollectorNodeData | Connection to IO [UNIJOB/casdlsup06_unijob/X] established 
+| 2009-01-05 12:19:22 |INFO | Thread-6 | com.orsyp.alertmanager.CollectorNodeData | Info Node: casdlsup06_unijob status: 1 OS: LINUX Product: UNJ version: 1.1.0 
+| 2009-01-06 11:58:12 |ERROR| uvms-pool-1-tid-10 | com.orsyp.central.server.AuthentificationStdImpl | Passphrase not authorized for frsdlsup02 
+| 2009-01-06 11:59:33 |INFO | Thread-9 | com.orsyp.alertmanager.CollectorNodeData | Connection to IO [UNIJOB/frsdlsup02/X] established 
+| 2009-01-06 11:59:33 |INFO | Thread-9 | com.orsyp.alertmanager.CollectorNodeData | Info Node: frsdlsup02 status: 1 OS: LINUX Product: UNJ version: 1.1.0 
+| 2009-01-08 14:58:29 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 14:58:29 |INFO | uvms-pool-1-tid-7 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 14:58:29 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 14:58:29 |INFO | uvms-pool-1-tid-7 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+| 2009-01-08 15:57:51 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 15:57:51 |INFO | uvms-pool-1-tid-7 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 15:57:51 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 15:57:51 |INFO | uvms-pool-1-tid-7 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+| 2009-01-08 16:05:46 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 16:05:46 |INFO | uvms-pool-1-tid-7 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 16:05:46 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 16:05:46 |INFO | uvms-pool-1-tid-7 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+| 2009-01-08 16:09:55 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 16:09:55 |INFO | uvms-pool-1-tid-7 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 16:09:55 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 16:09:55 |INFO | uvms-pool-1-tid-7 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+| 2009-01-08 16:24:32 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 16:24:32 |INFO | uvms-pool-1-tid-10 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 16:24:32 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 16:24:32 |INFO | uvms-pool-1-tid-10 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+#TSP# #BEG# 20090108-163752 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-163742_sc run
+| 2009-01-08 16:38:36 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 16:38:36 |INFO | uvms-pool-1-tid-10 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 16:38:36 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 16:38:36 |INFO | uvms-pool-1-tid-10 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+#TSP# #END# 20090108-164007 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-163742_sc run
+#TSP# #BEG# 20090108-164459 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-164449_sc run
+| 2009-01-08 16:45:16 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 16:45:16 |INFO | uvms-pool-1-tid-10 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 16:45:16 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 16:45:16 |INFO | uvms-pool-1-tid-10 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 
+#TSP# #END# 20090108-164655 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-164449_sc run
+#TSP# #BEG# 20090108-165933 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc run
+| 2009-01-08 16:59:49 |INFO | main | com.orsyp.central.server.CheckCentralServer | Create socket connection with addr: casdlsup06.orsypgroup.com port: 4184
+ 
+| 2009-01-08 16:59:49 |INFO | uvms-pool-1-tid-10 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | getALMStatus returns: RUNNING 
+| 2009-01-08 16:59:49 |INFO | Thread-1 | com.orsyp.alertmanager.AlertManager$AlertManagerThread | Checking Alert Manager... 
+| 2009-01-08 16:59:49 |INFO | uvms-pool-1-tid-10 | com.orsyp.engine.AUTEngine | Check Execution (AUT) 

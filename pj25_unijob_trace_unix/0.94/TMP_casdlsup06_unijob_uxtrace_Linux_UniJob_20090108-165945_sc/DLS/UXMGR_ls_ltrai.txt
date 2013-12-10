@@ -1,0 +1,27 @@
+#REM# LISTING OF THE UXMGR DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/unijob/casdlsup06_unijob/data
+#TSP#  20090108-170010 
+total 92
+21643494 drwxrwxrwx 2 root root 4096 Jan  5 12:18 upr
+21643489 -rwx------ 1 root root  523 Jan  5 12:18 unistopuj
+21643492 -rwx------ 1 root root  520 Jan  5 12:18 unistartuj
+21643490 -rwxr-xr-x 1 root root  417 Jan  5 12:18 unienv.ksh
+21643488 -rwxr-xr-x 1 root root  370 Jan  5 12:18 unienv.csh
+21643491 -rwx------ 1 root root  515 Jan  5 12:18 unicheckuj
+21643499 -rw-r--r-- 1 root root  277 Jan  5 12:18 u_namusr.dta
+21643498 -rw-r--r-- 1 root root  277 Jan  5 12:18 u_namnod.dta
+21643500 -rw-r--r-- 1 root root  277 Jan  5 12:18 u_nam_mu.dta
+21643496 drwxrwxrwx 2 root root 4096 Jan  5 12:18 temp
+21643497 dr-xr-xr-x 2 root root 4096 Jan  5 12:18 install
+21643385 drwxr-xr-x 2 root root 4096 Jan  5 12:18 data
+21643294 drwxr-xr-x 4 root root 4096 Jan  5 12:18 ..
+21643371 -rwxr-xr-x 1 root root  711 Jan  5 12:18 values.xml
+21643507 -rw-rw-rw- 1 root root  518 Jan  5 12:18 phrase.key
+21643511 -rw-rw-rw- 1 root root   10 Jan  5 12:19 u_namupr.dta
+21643512 -rw-rw-rw- 1 root root   10 Jan  5 12:19 u_namses.dta
+21643513 -rw-rw-rw- 1 root root   10 Jan  5 12:19 u_namjob.dta
+21643516 -rw-rw-rw- 1 root root   10 Jan  5 12:19 u_iousr.dta
+21643514 -rw-rw-rw- 1 root root   12 Jan  5 12:19 shell.dat
+21643495 drwxrwxrwx 2 root root 4096 Jan  5 12:19 log
+21643515 -rw-rw-rw- 1 root root  518 Jan  5 12:19 local.key
+21643384 drwxr-xr-x 7 root root 4096 Jan  8 16:42 .

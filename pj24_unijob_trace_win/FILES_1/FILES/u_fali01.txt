@@ -1,0 +1,11 @@
+# -------------------------------------------------------------------------------
+# ORSYP
+# -------------------------------------------------------------------------------
+# Universe        Product               Product        Expiration       Licence
+#   Node           Name                 Release          Date                       
+#                                                      yyyymmdd 
+# ---------- ------------------------- -----------  ---------------  ----------------
+#aix         DOLLAR-UNIVERSE:UNI        43             20041231      0G7WG36YH15H51PS              
+#ocean67 DOLLAR_UNIVERSE:UNI 5     20061101      YXTXD7DNM32CKTBZDU
+OCEAN67   DOLLAR_UNIVERSE:UNI     5     20201231      PUHV436JZ1T3IXYSH4
+

@@ -1,0 +1,334 @@
+Microsoft (R) Windows Script Host Version 5.6
+Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+
+Properties of Instances of Class Win32_LogicalDisk
+=================================================
+
+
+******************
+INSTANCE NUMBER: 1
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : C:
+Compressed : False
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : Local Fixed Disk
+DeviceID : C:
+DriveType : 3
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : NTFS
+FreeSpace : 5480718336
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 255
+MediaType : 12
+Name : C:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : 
+Purpose : 
+QuotasDisabled : True
+QuotasIncomplete : False
+QuotasRebuilding : False
+Size : 16253120512
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : True
+SupportsFileBasedCompression : True
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : False
+VolumeName : SYS
+VolumeSerialNumber : 8CD85B0A
+
+
+******************
+INSTANCE NUMBER: 2
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : D:
+Compressed : False
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : Local Fixed Disk
+DeviceID : D:
+DriveType : 3
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : NTFS
+FreeSpace : 16446271488
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 255
+MediaType : 12
+Name : D:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : 
+Purpose : 
+QuotasDisabled : True
+QuotasIncomplete : False
+QuotasRebuilding : False
+Size : 20974460928
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : True
+SupportsFileBasedCompression : True
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : False
+VolumeName : TEST
+VolumeSerialNumber : 38E314B8
+
+
+******************
+INSTANCE NUMBER: 3
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : E:
+Compressed : False
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : Local Fixed Disk
+DeviceID : E:
+DriveType : 3
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : NTFS
+FreeSpace : 42724581376
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 255
+MediaType : 12
+Name : E:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : 
+Purpose : 
+QuotasDisabled : True
+QuotasIncomplete : False
+QuotasRebuilding : False
+Size : 42796130304
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : True
+SupportsFileBasedCompression : True
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : False
+VolumeName : DATA
+VolumeSerialNumber : 9ECC7E78
+
+
+******************
+INSTANCE NUMBER: 4
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : H:
+Compressed : 
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : Network Connection
+DeviceID : H:
+DriveType : 4
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : 
+FreeSpace : 
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 
+MediaType : 0
+Name : H:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : \\support2\cases
+Purpose : 
+QuotasDisabled : 
+QuotasIncomplete : 
+QuotasRebuilding : 
+Size : 
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : 
+SupportsFileBasedCompression : 
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : 
+VolumeName : 
+VolumeSerialNumber : 
+
+
+******************
+INSTANCE NUMBER: 5
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : J:
+Compressed : 
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : Network Connection
+DeviceID : J:
+DriveType : 4
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : 
+FreeSpace : 
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 
+MediaType : 0
+Name : J:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : \\support2\zwa
+Purpose : 
+QuotasDisabled : 
+QuotasIncomplete : 
+QuotasRebuilding : 
+Size : 
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : 
+SupportsFileBasedCompression : 
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : 
+VolumeName : 
+VolumeSerialNumber : 
+
+
+******************
+INSTANCE NUMBER: 6
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : K:
+Compressed : 
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : Network Connection
+DeviceID : K:
+DriveType : 4
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : 
+FreeSpace : 
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 
+MediaType : 0
+Name : K:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : \\support2\windata
+Purpose : 
+QuotasDisabled : 
+QuotasIncomplete : 
+QuotasRebuilding : 
+Size : 
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : 
+SupportsFileBasedCompression : 
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : 
+VolumeName : 
+VolumeSerialNumber : 
+
+
+******************
+INSTANCE NUMBER: 7
+******************
+
+
+Access : 
+Availability : 
+BlockSize : 
+Caption : Z:
+Compressed : 
+ConfigManagerErrorCode : 
+ConfigManagerUserConfig : 
+CreationClassName : Win32_LogicalDisk
+Description : CD-ROM Disc
+DeviceID : Z:
+DriveType : 5
+ErrorCleared : 
+ErrorDescription : 
+ErrorMethodology : 
+FileSystem : 
+FreeSpace : 
+InstallDate : 
+LastErrorCode : 
+MaximumComponentLength : 
+MediaType : 11
+Name : Z:
+NumberOfBlocks : 
+PNPDeviceID : 
+PowerManagementCapabilities : 
+PowerManagementSupported : 
+ProviderName : 
+Purpose : 
+QuotasDisabled : 
+QuotasIncomplete : 
+QuotasRebuilding : 
+Size : 
+Status : 
+StatusInfo : 
+SupportsDiskQuotas : 
+SupportsFileBasedCompression : 
+SystemCreationClassName : Win32_ComputerSystem
+SystemName : USSDMDA007
+VolumeDirty : 
+VolumeName : 
+VolumeSerialNumber : 

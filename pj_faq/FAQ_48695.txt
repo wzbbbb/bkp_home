@@ -1,0 +1,36 @@
+
+Key words:
+
+calender, insert, task, forecase, simulation, launch
+
+Subject:
+
+Calender is not considered in launches after inserted
+
+Prerequistites:
+
+both V500 + FX24334C + FX24384B and V512 + FX24380
+
+Application validation tests:
+
+Explanation:
+
+When a calendar is inserted for MU=C48695_1, the task already in this MU does not use this calendar to update launches. The task continues to use the general calendar instead. For example, if a day is defined as holiday in the calendar MU=C48695_1, and the task is running on WORKING days, the launches on the holidays will still be created. 
+
+However, if running a simulation on the task, the new calendar of MU=C48695_1 is used. So, here we have a discrepancy.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rolemap xmlns="http://www.orsyp.com/ns/rolemap" version="1.0">
+	<tuple>
+		<userlogin>univa</userlogin>
+		<node>casdlsup06</node>
+		<localrole>Administrator</localrole>
+	</tuple>
+<tuple>
+<userlogin>univa</userlogin>
+<node>frsdlsup02</node>
+<localrole>Administrator</localrole>
+</tuple>
+</rolemap>

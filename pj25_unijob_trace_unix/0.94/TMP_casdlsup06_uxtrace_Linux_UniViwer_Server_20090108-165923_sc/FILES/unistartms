@@ -1,0 +1,27 @@
+#! /bin/ksh
+# ========================================================
+#  ORSYP.SA
+#  ------------------------------------------------------
+#  UniViewer Management Server startup procedure
+# ========================================================
+#
+echo "UniViewer Management Server startup procedure"
+#
+. /apps/unijob110/univiewer_server/casdlsup06/data/unienv.ksh
+
+#  ------------------------------------------------------
+#  Passphrase for the IO server if required
+#  ------------------------------------------------------
+# ls -l ${U_ROOT_DIR}/data/phrase.key > /dev/null 2>&1
+# if [ $? -ne 0 ]; then
+#    java -jar ${U_ROOT_DIR}/app/jars/installpassphrase.jar
+# fi
+
+#  ------------------------------------------------------
+#  Server start-up
+#  ------------------------------------------------------
+java -jar ${U_ROOT_DIR}/app/jars/centralserver-start.jar > ${U_ROOT_DIR}/data/log/stdout.log 2> ${U_ROOT_DIR}/data/log/stderr.log &
+
+echo "End of start procedure"
+echo ""
+

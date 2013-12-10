@@ -1,0 +1,6 @@
+#!/bin/ksh
+
+$UXEXE/uxstrcmd
+
+exit $?
+

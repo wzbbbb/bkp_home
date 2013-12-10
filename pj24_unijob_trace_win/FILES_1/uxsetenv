@@ -1,0 +1,306 @@
+#!/bin/sh
+####################################
+#Orsyp / VFE 24 JAN 2003
+#Correction uxsetenv / uxsetenv_ksh
+#In some OSes / releases of ksh, it is safer to have this variable already defined before manipulating it
+#in uxsetenv or uxsetenv_ksh
+#This file is to be copied in the Beginning the 2 uxsetenv or uxsetenv_ksh
+####################################
+S_U_LANGUE=EN
+export S_U_LANGUE
+
+#! /bin/ksh
+# ==========================================================================
+# ORSYP.Sa           
+#             ------------------------------------------------------
+#   Procedure for declaring a UNIVERSE environment
+#       Defining variables
+#       Defining aliases
+#
+#
+#   The following declarations are part of the common login
+#   UNIVERSE for the company OSCORP
+#   (file created at installation)
+# ==========================================================================
+#
+# ========================================================
+#
+# Defining default context variables for
+# DOLLAR-UNIVERSE users
+#
+# S_CODPROF  : UNIVERSE user profile
+# S_SOCIETE  : UNIVERSE company code
+# S_U_LANGUE : current language
+# S_TIMEOUT  : deconnection time
+#
+# ========================================================
+#
+S_CODPROF=PROFADM    
+export S_CODPROF
+S_SOCIETE=OSCORP
+export S_SOCIETE
+#
+if [ "${S_U_LANGUE}NDEF" != "NDEF" ]
+then
+   if [ "${S_U_LANGUE}" != "FR" ]
+   then 
+       S_U_LANGUE="EN"
+       export S_U_LANGUE
+   fi
+else
+  S_U_LANGUE="EN"
+  export S_U_LANGUE
+fi 
+#
+S_TIMEOUT=60
+export S_TIMEOUT
+S_ESPEXE=X
+export S_ESPEXE
+S_UNIVERS=E
+export S_UNIVERS
+S_APPLI=U_
+export S_APPLI
+S_NOEUD=ocean67
+export S_NOEUD
+ if [ -d /etc/UNIVERSE_DQM_${S_SOCIETE} ]  
+ then 
+# . /etc/UNIVERSE_DQM_${S_SOCIETE}/uxsetenv_dqm_ksh  
+    UXDQM=/etc/UNIVERSE_DQM_${S_SOCIETE}
+    export UXDQM
+    alias   uxdqm="cd $UXDQM;PS1='$UXDQM# '"
+  fi 
+#
+#       Protection mask applied to Uproc files
+#
+U_MASK_UPR="u=rwx,g=rx,o=rx" 
+export U_MASK_UPR
+#
+#       Defining Universe root directory
+#
+UXDIR_ROOT=/universe/OSCORP
+export UXDIR_ROOT
+alias   uxroot="cd $UXDIR_ROOT;PS1='$UXDIR_ROOT# '"
+#
+#       Defining Executables directory
+#
+UXEXE=/universe/OSCORP/exec
+export UXEXE
+alias   uxexe="cd $UXEXE;PS1='$UXEXE# '"
+#
+#       Defining Maintenance directory
+#
+UXMGR=/universe/OSCORP/mgr
+export UXMGR
+alias   uxmgr="cd $UXMGR;PS1='$UXMGR# '"
+#
+#       Defining Application Data directory
+#
+UXDAP=/universe/OSCORP/app/data
+export UXDAP
+alias   uxdap="cd $UXDAP;PS1='$UXDAP# '"
+#
+#       Defining Integration Data directory
+#
+UXDIN=/universe/OSCORP/int/data
+export UXDIN
+alias   uxdin="cd $UXDIN;PS1='$UXDIN# '"
+#
+#       Defining Simulation Data directory
+#
+UXDSI=/universe/OSCORP/sim/data
+export UXDSI
+alias   uxdsi="cd $UXDSI;PS1='$UXDSI# '"
+#
+#       Defining Production Data directory
+#
+UXDEX=/universe/OSCORP/exp/data
+export UXDEX
+alias   uxdex="cd $UXDEX;PS1='$UXDEX# '"
+#
+#       Defining Application Scripts directory
+#
+UXPAP=/universe/OSCORP/app/upr
+export UXPAP
+alias   uxpap="cd $UXPAP;PS1='$UXPAP# '"
+#
+#       Defining Integration Scripts directory
+#
+UXPIN=/universe/OSCORP/int/upr
+export UXPIN
+alias   uxpin="cd $UXPIN;PS1='$UXPIN# '"
+#
+#       Defining Simulation Scripts  directory
+#
+UXPSI=/universe/OSCORP/sim/upr
+export UXPSI
+alias   uxpsi="cd $UXPSI;PS1='$UXPSI# '"
+#
+#       Defining Production Scripts directory
+#
+UXPEX=/universe/OSCORP/exp/upr
+export UXPEX
+alias   uxpex="cd $UXPEX;PS1='$UXPEX# '"
+#
+#       Defining Application Logs directory
+#
+UXLAP=/universe/OSCORP/app/log
+export UXLAP
+alias   uxlap="cd $UXLAP;PS1='$UXLAP# '"
+#
+#       Defining  Integration Logs directory
+#
+UXLIN=/universe/OSCORP/int/log
+export UXLIN
+alias   uxlin="cd $UXLIN;PS1='$UXLIN# '"
+#
+#       Defining Simulation Logs directory
+#
+UXLSI=/universe/OSCORP/sim/log
+export UXLSI
+alias   uxlsi="cd $UXLSI;PS1='$UXLSI# '"
+#
+#       Defining Production Logs directory
+#
+UXLEX=/universe/OSCORP/exp/log
+export UXLEX
+alias   uxlex="cd $UXLEX;PS1='$UXLEX# '"
+#
+#       Defining UNIVERSE Log directory 
+#
+UXLOG=/universe/OSCORP/exp/log
+export UXLOG
+alias   uxlog="cd $UXLOG;PS1='$UXLOG# '"
+#
+#       Defining date format 
+#
+if [ "$S_U_LANGUE" = "FR" ]
+then
+   U_FMT_DATE="jj/mm/aaaa"
+   export U_FMT_DATE
+else
+   U_FMT_DATE="mm/dd/yyyy"
+   export U_FMT_DATE
+fi
+
+#
+#       Defining host file for SAP Agent 
+#
+   UXSAP_HOSTS_FILE="/universe/OSCORP/mgr/uxsapagt.host"
+   export    UXSAP_HOSTS_FILE
+# MOO (ORSYP) 8SEP2006
+U_AGTSAP_VERSION_REQUEST=YES
+export U_AGTSAP_VERSION_REQUEST
+#
+# ========================================================
+#
+#       Defining external ressources necessary
+#       for identifying IPC communications objects 
+# UXSHM_LCK : Reserving Shareable Memory space for Locks
+# UXSHM_FIL : Reserving Shareable Memory space for Open Files
+# UXSHM_TRN : Reserving Shareable Memory space for Interactive Conversations
+# UXSHM_JOB : Reserving Shareable Memory space for Batch Job tracking
+#
+# =======================================================
+#
+UXSHM_FIL=$UXMGR/UXSHM_FIL
+export UXSHM_FIL
+UXSHM_TRN=$UXMGR/UXSHM_TRN
+export UXSHM_TRN
+#
+#
+# =======================================================
+#
+# Defining environment variables for accessing file  :
+#  - U_LOG_FILE : UNIVERSE log
+#  - U_MSG_FILE : UNIVERSE messages file
+#  - SRVNET_DIR : Directory for network configuration files
+#
+# ========================================================
+#
+U_LOG_FILE=/universe/OSCORP/exp/log/universe.log
+export U_LOG_FILE
+U_MSG_FILE=$UXEXE/uni_msg.txt
+export U_MSG_FILE
+U_LIC_FILE=$UXMGR/u_fali01.txt
+export U_LIC_FILE
+U_EDITEUR_R="xterm -e vi -R"
+export U_EDITEUR_R
+U_EDITEUR_W="xterm -e vi "
+export U_EDITEUR_W
+SRVNET_DIR=$UXMGR
+export SRVNET_DIR
+S_CODCENTRAL=N
+export S_CODCENTRAL
+S_PLAGEHORAIRE="0:0/23:59"
+export S_PLAGEHORAIRE
+U_TMP_PATH=/universe/OSCORP/temp
+export U_TMP_PATH
+#
+#
+if [ -x $UXMGR/uxsetenv_OSCORP ]
+then
+    . $UXMGR/uxsetenv_OSCORP
+fi
+# ========================================================
+umask 0 
+
+#
+#Audit Trace Option
+U_LOG_TRANS=Y
+export U_LOG_TRANS
+#
+#Disabling cluster communication
+#U_CLUSTER_NODE_DISABLED=Y
+#export U_CLUSTER_NODE_DISABLED
+ 
+#Proxy definitions
+U_PROXY_FILE=${UXMGR}/u_ioproxy.dta
+export U_PROXY_FILE
+U_IO_PROXY_FILE=${UXMGR}/u_ioproxy.dta
+export U_IO_PROXY_FILE
+#U_PROXY_LOG=${UXLEX}/proxy_dbg.log
+#export U_PROXY_LOG
+#
+#Dynamic purge
+U_DYNAMIC_PURGE=Y
+export U_DYNAMIC_PURGE
+U_RETENTION_DELAY=007:00:00
+export U_RETENTION_DELAY
+U_TRACE_PURGE=Y
+export U_TRACE_PURGE
+#
+#DQM Options
+DQM_COPY_LOG=Y
+export DQM_COPY_LOG
+U_DQM_DISPATCH=Y
+export U_DQM_DISPATCH
+ UXRES=/universe/OSCORP/res
+ export UXRES
+ UXMGR4JAVA_HOSTS_FILE=${SRVNET_DIR}/uxmgr4java.host
+ export UXMGR4JAVA_HOSTS_FILE
+ U_LOCALHOSTNAME=ocean67
+ export U_LOCALHOSTNAME
+ UXAAP=REP_D_DAT/action
+ export UXAAP
+ UXAIN=REP_I_DAT/action
+ export UXAIN
+ UXASI=REP_S_DAT/action
+ export UXASI
+ UXAEX=REP_E_DAT/action
+ export UXAEX
+ U_ITM_I=Y
+ export U_ITM_I
+ U_ITM_T=N
+ export U_ITM_T
+ U_ITM_E=N
+ export U_ITM_E
+ U_ITM_R=Y
+ export U_ITM_R
+ U_ITM_W=N
+ export U_ITM_W
+ U_ITM_O=Y
+ export U_ITM_O
+ U_ITM_EVT_LOG=UXLOG
+ export U_ITM_EVT_LOG
+ U_ITM_METAFILE_PATH=UXEXE
+ export U_ITM_METAFILE_PATH

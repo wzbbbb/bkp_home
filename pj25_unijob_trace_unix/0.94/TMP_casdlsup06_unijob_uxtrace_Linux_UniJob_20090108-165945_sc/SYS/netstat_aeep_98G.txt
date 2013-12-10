@@ -1,0 +1,588 @@
+#CMD# netstat -aeep
+#TSP#  20090108-170136 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       User       Inode      PID/Program name   
+tcp        0      0 *:FLS530_IO_X               *:*                         LISTEN      univa      2303022    18974/uxioserv      
+tcp        0      0 *:FLS520_BVS_X              *:*                         LISTEN      univa      2223414    19662/uxbvssrv      
+tcp        0      0 *:FLS510_CDJ_I              *:*                         LISTEN      univa      2104669    9232/uxcdjsrv       
+tcp        0      0 *:FLS520_BVS_S              *:*                         LISTEN      univa      2223419    19665/uxbvssrv      
+tcp        0      0 *:FLS510_CDJ_A              *:*                         LISTEN      univa      2104661    9226/uxcdjsrv       
+tcp        0      0 *:FLS530_IO_A               *:*                         LISTEN      univa      2303021    18978/uxioserv      
+tcp        0      0 *:FLS520_BVS_I              *:*                         LISTEN      univa      2223424    19670/uxbvssrv      
+tcp        0      0 *:FLS510_DQM                *:*                         LISTEN      root       2104597    9201/uxdqmsrv       
+tcp        0      0 *:TST511_CDJ_X              *:*                         LISTEN      univa      2029908    8095/uxcdjsrv       
+tcp        0      0 *:FLS520_BVS_A              *:*                         LISTEN      univa      2223429    19672/uxbvssrv      
+tcp        0      0 *:TST511_CDJ_S              *:*                         LISTEN      univa      2029911    8094/uxcdjsrv       
+tcp        0      0 *:52004                     *:*                         LISTEN      root       2024068    5755/uniio          
+tcp        0      0 *:FLS530_BVS_X              *:*                         LISTEN      univa      2303038    18989/uxbvssrv      
+tcp        0      0 *:TST511_CDJ_I              *:*                         LISTEN      univa      2029910    8097/uxcdjsrv       
+tcp        0      0 *:52005                     *:*                         LISTEN      root       2024073    5757/unicdj         
+tcp        0      0 *:TST511_CDJ_A              *:*                         LISTEN      univa      2029909    8089/uxcdjsrv       
+tcp        0      0 *:52006                     *:*                         LISTEN      root       2024081    5761/unical         
+tcp        0      0 *:FLS520_CDJ_X              *:*                         LISTEN      univa      2223436    19650/uxcdjsrv      
+tcp        0      0 *:FLS530_BVS_A              *:*                         LISTEN      univa      2303044    18994/uxbvssrv      
+tcp        0      0 *:FLS520_CDJ_S              *:*                         LISTEN      univa      2223435    19684/uxcdjsrv      
+tcp        0      0 *:PRE530_IO_X               *:*                         LISTEN      univa      418154     15982/uxioserv      
+tcp        0      0 *:FLS520_CDJ_I              *:*                         LISTEN      univa      2223409    19661/uxcdjsrv      
+tcp        0      0 *:UNI532_CDJ_X              *:*                         LISTEN      univa      418157     15983/uxioserv      
+tcp        0      0 *:FLS520_CDJ_A              *:*                         LISTEN      univa      2223432    19659/uxcdjsrv      
+tcp        0      0 *:UNI532_CDJ_S              *:*                         LISTEN      univa      418155     15988/uxioserv      
+tcp        0      0 *:5802                      *:*                         LISTEN      root       5661       2069/Xvnc           
+tcp        0      0 *:FLS530_CDJ_X              *:*                         LISTEN      univa      2303045    18998/uxcdjsrv      
+tcp        0      0 *:UNI532_CDJ_I              *:*                         LISTEN      univa      418156     15991/uxioserv      
+tcp        0      0 *:TST530_IO_X               *:*                         LISTEN      univa      1375655    13015/uxioserv      
+tcp        0      0 *:TST500_IO_X               *:*                         LISTEN      univa      432581     22456/uxioserv      
+tcp        0      0 *:TST530_IO_S               *:*                         LISTEN      univa      1375648    13022/uxioserv      
+tcp        0      0 *:PRE530_BVS_X              *:*                         LISTEN      univa      418190     16008/uxbvssrv      
+tcp        0      0 *:FLS530_CDJ_A              *:*                         LISTEN      univa      2303039    19000/uxcdjsrv      
+tcp        0      0 *:PRE530_BVS_S              *:*                         LISTEN      univa      418173     16020/uxbvssrv      
+tcp        0      0 *:5902                      *:*                         LISTEN      root       5660       2069/Xvnc           
+tcp        0      0 *:FLS520_DQM_X              *:*                         LISTEN      root       2223395    19627/uxdqmsrv      
+tcp        0      0 *:TST530_IO_A               *:*                         LISTEN      univa      1375652    13024/uxioserv      
+tcp        0      0 *:TST500_IO_A               *:*                         LISTEN      univa      432580     22460/uxioserv      
+tcp        0      0 *:PRE530_BVS_I              *:*                         LISTEN      univa      418200     16036/uxbvssrv      
+tcp        0      0 *:sunrpc                    *:*                         LISTEN      root       4480       1612/portmap        
+tcp        0      0 *:TST540_IO_X               *:*                         LISTEN      univa      2122483    17115/uxioserv      
+tcp        0      0 *:TST500_CMD                *:*                         LISTEN      root       432588     22469/uxcmdsrv      
+tcp        0      0 *:PRE530_BVS_A              *:*                         LISTEN      univa      418199     16046/uxbvssrv      
+tcp        0      0 *:TST530_BVS_X              *:*                         LISTEN      univa      1375702    13042/uxbvssrv      
+tcp        0      0 *:42225                     *:*                         LISTEN      root       8015       -                   
+tcp        0      0 *:6002                      *:*                         LISTEN      root       5655       2069/Xvnc           
+tcp        0      0 *:FLS530_DQM_A              *:*                         LISTEN      root       2303018    18982/uxdqmsrv      
+tcp        0      0 *:TST540_IO_A               *:*                         LISTEN      univa      2122484    17116/uxioserv      
+tcp        0      0 *:PRE530_CDJ_X              *:*                         LISTEN      univa      418203     16021/uxcdjsrv      
+tcp        0      0 *:FLS510_IO_X               *:*                         LISTEN      univa      2104601    9202/uxioserv       
+tcp        0      0 *:TST530_BVS_A              *:*                         LISTEN      univa      1375691    13050/uxbvssrv      
+tcp        0      0 *:PRE530_CDJ_S              *:*                         LISTEN      univa      418221     16028/uxcdjsrv      
+tcp        0      0 *:TST540_BVS_X              *:*                         LISTEN      univa      2122494    17133/uxbvssrv      
+tcp        0      0 *:PRE530_CDJ_I              *:*                         LISTEN      univa      418202     16026/uxcdjsrv      
+tcp        0      0 *:TST520_IO_I               *:*                         LISTEN      univa      2104600    9206/uxioserv       
+tcp        0      0 *:PRE530_CDJ_A              *:*                         LISTEN      univa      418201     16024/uxcdjsrv      
+tcp        0      0 *:TST520_IO_A               *:*                         LISTEN      univa      2104602    9210/uxioserv       
+tcp        0      0 localhost.localdomain:ipp   *:*                         LISTEN      root       1689862    26797/cupsd         
+tcp        0      0 *:TST530_CDJ_X              *:*                         LISTEN      univa      1375675    13035/uxcdjsrv      
+tcp        0      0 *:TST500_CDJ_X              *:*                         LISTEN      univa      432594     22474/uxcdjsrv      
+tcp        0      0 *:TST540_BVS_A              *:*                         LISTEN      univa      2122503    17137/uxbvssrv      
+tcp        0      0 *:TST511_IO_X               *:*                         LISTEN      univa      2029785    8031/uxioserv       
+tcp        0      0 *:TST511_IO_S               *:*                         LISTEN      univa      2029786    8035/uxioserv       
+tcp        0      0 *:smtp                      *:*                         LISTEN      root       5251       1950/master         
+tcp        0      0 *:TST511_IO_I               *:*                         LISTEN      univa      2029787    8039/uxioserv       
+tcp        0      0 *:TST530_CDJ_A              *:*                         LISTEN      univa      1375684    13040/uxcdjsrv      
+tcp        0      0 *:TST500_CDJ_A              *:*                         LISTEN      univa      432595     22475/uxcdjsrv      
+tcp        0      0 *:TST540_CDJ_X              *:*                         LISTEN      univa      2122506    17141/uxcdjsrv      
+tcp        0      0 *:TST511_IO_A               *:*                         LISTEN      univa      2029788    8043/uxioserv       
+tcp        0      0 *:TST500_DQM                *:*                         LISTEN      root       432584     22463/uxdqmsrv      
+tcp        0      0 *:PRE530_DQM_X              *:*                         LISTEN      root       418145     15994/uxdqmsrv      
+tcp        0      0 *:FLS520_IO_X               *:*                         LISTEN      univa      2223399    19632/uxioserv      
+tcp        0      0 *:FLS520_IO_S               *:*                         LISTEN      univa      2223401    19636/uxioserv      
+tcp        0      0 *:FLS520_IO_I               *:*                         LISTEN      univa      2223403    19640/uxioserv      
+tcp        0      0 *:TST540_CDJ_A              *:*                         LISTEN      univa      2122507    17144/uxcdjsrv      
+tcp        0      0 *:FLS520_IO_A               *:*                         LISTEN      univa      2223404    19644/uxioserv      
+tcp        0      0 *:TST540_DQM_A              *:*                         LISTEN      root       2122485    17121/uxdqmsrv      
+tcp        0      0 *:FLS510_CDJ_X              *:*                         LISTEN      univa      2104608    9221/uxcdjsrv       
+tcp        0      0 *:TST530_DQM_A              *:*                         LISTEN      root       1375660    13030/uxdqmsrv      
+tcp        0      0 *:33119                     *:*                         LISTEN      rpcuser    4529       1631/rpc.statd      
+tcp        0      0 localhost.localdomain:46935 localhost.local:TST520_IO_A ESTABLISHED univa      2104659    9226/uxcdjsrv       
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55392 ESTABLISHED univa      418187     15982/uxioserv      
+tcp        0      0 casdlsup06:puprouter        casdlsup02:nfs              ESTABLISHED root       2369851    -                   
+tcp        0      0 casdlsup06:1018             casdlsup02:nfs              ESTABLISHED root       2416957    -                   
+tcp        0      0 casdlsup06:1013             casdlsup02:nfs              ESTABLISHED root       2416958    -                   
+tcp        0      0 casdlsup06:1014             casdlsup02:nfs              ESTABLISHED root       2416956    -                   
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58970 ESTABLISHED univa      432593     22460/uxioserv      
+tcp        0      0 casdlsup06:1012             caribou:nfs                 ESTABLISHED root       2416959    -                   
+tcp        0      0 casdlsup06:1008             caribou:nfs                 ESTABLISHED root       2416961    -                   
+tcp        0      0 casdlsup06:surf             caribou:nfs                 ESTABLISHED root       2416960    -                   
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55399 ESTABLISHED univa      418219     15982/uxioserv      
+tcp        0      0 localhost.locald:TST500_DQM localhost.localdomain:35929 ESTABLISHED root       432635     22463/uxdqmsrv      
+tcp        0      0 localhost.local:TST520_IO_A localhost.localdomain:46935 ESTABLISHED univa      2104660    9210/uxioserv       
+tcp        0      0 casdlsup06:TST511_IO_X      calpmvhe.orsypgroup.co:4754 ESTABLISHED univa      2124256    8031/uxioserv       
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55403 ESTABLISHED univa      418238     15982/uxioserv      
+tcp        0      0 casdlsup06:54713            casdlsup06:FLS520_IO_I      ESTABLISHED univa      2223420    19670/uxbvssrv      
+tcp        0      0 casdlsup06:53527            casdlsup06:FLS520_IO_S      ESTABLISHED univa      2223415    19665/uxbvssrv      
+tcp        0      0 casdlsup06:52004            casdlsup06:39109            ESTABLISHED root       2024085    5755/uniio          
+tcp        0      0 casdlsup06:52004            casdlsup06:39108            ESTABLISHED root       2024080    5755/uniio          
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42351 ESTABLISHED univa      418359     15991/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55408 ESTABLISHED univa      418262     15982/uxioserv      
+tcp        0      0 casdlsup06:TST540_IO_A      casdlsup06:36725            ESTABLISHED univa      2122493    17116/uxioserv      
+tcp        0      0 casdlsup06:TST511_IO_X      calpmvhe.orsypgroup.c:spocp ESTABLISHED univa      2124253    8031/uxioserv       
+tcp        0      0 localhost.local:FLS520_IO_I localhost.localdomain:58439 ESTABLISHED univa      2223408    19640/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48248            ESTABLISHED univa      1375748    13015/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55416 ESTABLISHED univa      418293     15982/uxioserv      
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42360 ESTABLISHED univa      418382     15991/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55417 ESTABLISHED univa      418295     15982/uxioserv      
+tcp        0      0 localhost.localdomain:44159 localhost.local:TST520_IO_I ESTABLISHED univa      2104667    9232/uxcdjsrv       
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54341 ESTABLISHED univa      2030236    8031/uxioserv       
+tcp        0      0 casdlsup06:36725            casdlsup06:TST540_IO_A      ESTABLISHED univa      2122490    17137/uxbvssrv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48253            ESTABLISHED univa      1375770    13015/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55423 ESTABLISHED univa      418319     15982/uxioserv      
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42367 ESTABLISHED univa      418401     15991/uxioserv      
+tcp        0      0 localhost.local:TST520_IO_I localhost.localdomain:44159 ESTABLISHED univa      2104668    9206/uxioserv       
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42304 ESTABLISHED univa      418181     15991/uxioserv      
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42819 ESTABLISHED univa      2122539    17115/uxioserv      
+tcp        0      0 casdlsup06:TST511_IO_X      calpmwzh.orsypgroup.co:2212 ESTABLISHED univa      2108733    8031/uxioserv       
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:59002 ESTABLISHED univa      432750     22460/uxioserv      
+tcp        0      0 localhost.localdomain:37102 localhost.local:FLS510_IO_X ESTABLISHED univa      2104606    9221/uxcdjsrv       
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42823 ESTABLISHED univa      2122555    17115/uxioserv      
+tcp        0      0 casdlsup06:TST511_IO_X      calpmwzh.orsypgroup.:ipcore ESTABLISHED univa      2108736    8031/uxioserv       
+tcp        0      0 casdlsup06:TST540_IO_X      casdlsup06:47947            ESTABLISHED univa      2122489    17115/uxioserv      
+tcp        0      0 casdlsup06:47947            casdlsup06:TST540_IO_X      ESTABLISHED univa      2122486    17133/uxbvssrv      
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42827 ESTABLISHED univa      2122571    17115/uxioserv      
+tcp        0      0 casdlsup06:PRE530_CDJ_A     support7:casanswmgmt        ESTABLISHED univa      418735     16024/uxcdjsrv      
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58997 ESTABLISHED univa      432730     22460/uxioserv      
+tcp        0      0 localhost.local:TST540_IO_A localhost.localdomain:44366 ESTABLISHED univa      2122505    17116/uxioserv      
+tcp        0      0 localhost.local:FLS520_IO_X localhost.localdomain:44400 ESTABLISHED univa      2223406    19632/uxioserv      
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58991 ESTABLISHED univa      432696     22460/uxioserv      
+tcp        0      0 localhost.localdomain:42823 localhost.local:TST540_IO_X ESTABLISHED univa      2122554    17189/uxech         
+tcp        0      0 localhost.localdomain:42819 localhost.local:TST540_IO_X ESTABLISHED root       2122538    17177/uxord         
+tcp        0      0 localhost.localdomain:42827 localhost.local:TST540_IO_X ESTABLISHED root       2122570    17203/uxsur         
+tcp        0      0 localhost.localdomain:42815 localhost.local:TST540_IO_X ESTABLISHED univa      2122522    17165/uxcal         
+tcp        0      0 localhost.localdomain:42810 localhost.local:TST540_IO_X ESTABLISHED univa      2122501    17144/uxcdjsrv      
+tcp        0      0 localhost.localdomain:42809 localhost.local:TST540_IO_X ESTABLISHED univa      2122499    17141/uxcdjsrv      
+tcp        0      0 localhost.locald:TST500_DQM localhost.localdomain:35943 ESTABLISHED root       432702     22463/uxdqmsrv      
+tcp        0      0 localhost.localdomain:58439 localhost.local:FLS520_IO_I ESTABLISHED univa      2223407    19661/uxcdjsrv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55387 ESTABLISHED univa      418172     15982/uxioserv      
+tcp        0      0 localhost.loca:PRE530_DQM_X localhost.localdomain:60507 ESTABLISHED root       418242     15994/uxdqmsrv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55388 ESTABLISHED univa      418177     15982/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48220            ESTABLISHED univa      1375670    13015/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48221            ESTABLISHED univa      1375674    13015/uxioserv      
+tcp        0      0 localhost.localdomain:44366 localhost.local:TST540_IO_A ESTABLISHED univa      2122504    17144/uxcdjsrv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48222            ESTABLISHED univa      1375679    13015/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55391 ESTABLISHED univa      418185     15982/uxioserv      
+tcp        0      0 localhost.localdomain:39940 localhost.local:FLS520_IO_A ESTABLISHED univa      2223430    19659/uxcdjsrv      
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54300 ESTABLISHED univa      2029886    8031/uxioserv       
+tcp        0      0 casdlsup06:TST530_CDJ_X     casdlsup06:57382            ESTABLISHED univa      1375706    13035/uxcdjsrv      
+tcp        0      0 casdlsup06:FLS520_IO_S      casdlsup06:53527            ESTABLISHED univa      2223418    19636/uxioserv      
+tcp        0      0 casdlsup06:UNI532_CDJ_X     casdlsup06:47914            ESTABLISHED univa      418162     15983/uxioserv      
+tcp        0      0 casdlsup06:UNI532_CDJ_S     casdlsup06:59697            ESTABLISHED univa      418194     15988/uxioserv      
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42809 ESTABLISHED univa      2122500    17115/uxioserv      
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42810 ESTABLISHED univa      2122502    17115/uxioserv      
+tcp        0      0 localhost.local:FLS520_IO_A localhost.localdomain:39940 ESTABLISHED univa      2223431    19644/uxioserv      
+tcp        0      0 localhost.localdomain:33688 localhost.local:FLS520_IO_S ESTABLISHED univa      2223433    19684/uxcdjsrv      
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42815 ESTABLISHED univa      2122523    17115/uxioserv      
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54334 ESTABLISHED univa      2030186    8031/uxioserv       
+tcp        0      0 casdlsup06:48580            casdlsup06:FLS520_IO_X      ESTABLISHED univa      2223410    19662/uxbvssrv      
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40199 ESTABLISHED univa      418297     15983/uxioserv      
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40205 ESTABLISHED univa      418321     15983/uxioserv      
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54322 ESTABLISHED univa      2030057    8031/uxioserv       
+tcp        0      0 localhost.localdomain:44400 localhost.local:FLS520_IO_X ESTABLISHED univa      2223405    19650/uxcdjsrv      
+tcp        0      0 casdlsup06:UNI532_CDJ_I     casdlsup06:37394            ESTABLISHED univa      418198     15991/uxioserv      
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40211 ESTABLISHED univa      418340     15983/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_A      casdlsup06:48148            ESTABLISHED univa      1375683    13024/uxioserv      
+tcp        0      0 casdlsup06:TST530_DQM_A     casdlsup06:41492            ESTABLISHED root       1375774    13030/uxdqmsrv      
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54313 ESTABLISHED univa      2029960    8031/uxioserv       
+tcp        0      0 casdlsup06:TST530_IO_A      casdlsup06:48150            ESTABLISHED univa      1375690    13024/uxioserv      
+tcp        0      0 casdlsup06:42491            casdlsup06:FLS520_IO_A      ESTABLISHED univa      2223425    19672/uxbvssrv      
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43490 ESTABLISHED univa      418462     15988/uxioserv      
+tcp        0      0 casdlsup06:59697            casdlsup06:UNI532_CDJ_S     ESTABLISHED univa      418191     16036/uxbvssrv      
+tcp        0      0 localhost.localdomain:60911 localhost.local:PRE530_IO_X ESTABLISHED root       419497     15994/uxdqmsrv      
+tcp        0      0 casdlsup06:58110            casdlsup06:PRE530_IO_X      ESTABLISHED univa      418167     16008/uxbvssrv      
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40170 ESTABLISHED univa      418179     15983/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:60911 ESTABLISHED univa      419498     15982/uxioserv      
+tcp        0      0 casdlsup06:48306            casdlsup06:TST530_IO_X      ESTABLISHED root       1376019    13030/uxdqmsrv      
+tcp        0      0 casdlsup06:48258            casdlsup06:TST530_IO_X      ESTABLISHED univa      1375795    13110/uxech         
+tcp        0      0 casdlsup06:48267            casdlsup06:TST530_IO_X      ESTABLISHED root       1375820    13123/uxsur         
+tcp        0      0 casdlsup06:48248            casdlsup06:TST530_IO_X      ESTABLISHED univa      1375747    13084/uxcal         
+tcp        0      0 casdlsup06:48253            casdlsup06:TST530_IO_X      ESTABLISHED root       1375769    13098/uxord         
+tcp        0      0 casdlsup06:48220            casdlsup06:TST530_IO_X      ESTABLISHED univa      1375667    13040/uxcdjsrv      
+tcp        0      0 casdlsup06:48221            casdlsup06:TST530_IO_X      ESTABLISHED univa      1375671    13035/uxcdjsrv      
+tcp        0      0 casdlsup06:48222            casdlsup06:TST530_IO_X      ESTABLISHED univa      1375676    13042/uxbvssrv      
+tcp        0      0 casdlsup06:FLS530_IO_A      casdlsup06:45298            ESTABLISHED univa      2303043    18978/uxioserv      
+tcp        0      0 localhost.local:TST511_IO_A localhost.localdomain:55500 ESTABLISHED univa      2029884    8043/uxioserv       
+tcp        0      0 casdlsup06:48150            casdlsup06:TST530_IO_A      ESTABLISHED univa      1375687    13050/uxbvssrv      
+tcp        0      0 casdlsup06:48148            casdlsup06:TST530_IO_A      ESTABLISHED univa      1375682    13040/uxcdjsrv      
+tcp        0      0 localhost.localdomain:60507 localhost.loca:PRE530_DQM_X ESTABLISHED root       418241     16078/uxord         
+tcp        0      0 casdlsup06:FLS520_IO_X      casdlsup06:48580            ESTABLISHED univa      2223413    19632/uxioserv      
+tcp        0      0 casdlsup06:41492            casdlsup06:TST530_DQM_A     ESTABLISHED root       1375773    13098/uxord         
+tcp        0      0 casdlsup06:PRE530_IO_X      casdlsup06:58110            ESTABLISHED univa      418170     15982/uxioserv      
+tcp        0      0 localhost.localdomain:60607 localhost.local:TST500_IO_X ESTABLISHED univa      432751     22565/uxech         
+tcp        0      0 localhost.localdomain:60602 localhost.local:TST500_IO_X ESTABLISHED univa      432731     22552/uxcal         
+tcp        0      0 localhost.localdomain:60596 localhost.local:TST500_IO_X ESTABLISHED root       432697     22538/uxord         
+tcp        0      0 localhost.localdomain:60593 localhost.local:TST500_IO_X ESTABLISHED root       432689     22526/uxsur         
+tcp        0      0 localhost.localdomain:60587 localhost.local:TST500_IO_X ESTABLISHED univa      432659     22514/uxech         
+tcp        0      0 localhost.localdomain:60582 localhost.local:TST500_IO_X ESTABLISHED root       432630     22502/uxord         
+tcp        0      0 localhost.localdomain:60578 localhost.local:TST500_IO_X ESTABLISHED univa      432612     22489/uxcal         
+tcp        0      0 localhost.localdomain:60573 localhost.local:TST500_IO_X ESTABLISHED univa      432590     22474/uxcdjsrv      
+tcp        0      0 casdlsup06:35123            support7:TST530_CDJ_X       ESTABLISHED univa      1375709    13042/uxbvssrv      
+tcp        0      0 localhost.localdomain:55500 localhost.local:TST511_IO_A ESTABLISHED univa      2029883    8089/uxcdjsrv       
+tcp        0      0 casdlsup06:FLS520_IO_A      casdlsup06:42491            ESTABLISHED univa      2223428    19644/uxioserv      
+tcp        0      0 casdlsup06:FLS530_IO_X      casdlsup06:59592            ESTABLISHED univa      2303037    18974/uxioserv      
+tcp        0      0 casdlsup06:59592            casdlsup06:FLS530_IO_X      ESTABLISHED univa      2303034    18989/uxbvssrv      
+tcp        0      0 localhost.localdomain:58997 localhost.local:TST500_IO_A ESTABLISHED univa      432729     22552/uxcal         
+tcp        0      0 localhost.localdomain:59002 localhost.local:TST500_IO_A ESTABLISHED univa      432749     22565/uxech         
+tcp        0      0 localhost.localdomain:58991 localhost.local:TST500_IO_A ESTABLISHED root       432695     22538/uxord         
+tcp        0      0 casdlsup06:40787            support5:TST530_CDJ_X       ESTABLISHED univa      1375703    13042/uxbvssrv      
+tcp        0      0 localhost.localdomain:58970 localhost.local:TST500_IO_A ESTABLISHED univa      432591     22475/uxcdjsrv      
+tcp        0      0 localhost.localdomain:54341 localhost.local:TST511_IO_X ESTABLISHED root       2030235    8258/uxsur          
+tcp        0      0 localhost.localdomain:54322 localhost.local:TST511_IO_X ESTABLISHED root       2030056    8180/uxord          
+tcp        0      0 localhost.localdomain:54334 localhost.local:TST511_IO_X ESTABLISHED univa      2030185    8238/uxech          
+tcp        0      0 localhost.localdomain:54313 localhost.local:TST511_IO_X ESTABLISHED univa      2029959    8130/uxcal          
+tcp        0      0 localhost.localdomain:54300 localhost.local:TST511_IO_X ESTABLISHED univa      2029885    8095/uxcdjsrv       
+tcp        0      0 localhost.localdomain:55445 localhost.local:PRE530_IO_X ESTABLISHED root       418379     16169/uxord         
+tcp        0      0 localhost.localdomain:55452 localhost.local:PRE530_IO_X ESTABLISHED univa      418398     16181/uxech         
+tcp        0      0 localhost.localdomain:55429 localhost.local:PRE530_IO_X ESTABLISHED univa      418337     16141/uxech         
+tcp        0      0 localhost.localdomain:55436 localhost.local:PRE530_IO_X ESTABLISHED univa      418356     16154/uxcal         
+tcp        0      0 localhost.localdomain:55473 localhost.local:PRE530_IO_X ESTABLISHED univa      418459     16223/uxech         
+tcp        0      0 localhost.localdomain:55458 localhost.local:PRE530_IO_X ESTABLISHED univa      418418     16195/uxcal         
+tcp        0      0 localhost.localdomain:55466 localhost.local:PRE530_IO_X ESTABLISHED root       418439     16208/uxord         
+tcp        0      0 localhost.localdomain:55387 localhost.local:PRE530_IO_X ESTABLISHED univa      418171     16028/uxcdjsrv      
+tcp        0      0 localhost.localdomain:55388 localhost.local:PRE530_IO_X ESTABLISHED univa      418176     16024/uxcdjsrv      
+tcp        0      0 localhost.localdomain:55391 localhost.local:PRE530_IO_X ESTABLISHED univa      418184     16026/uxcdjsrv      
+tcp        0      0 localhost.localdomain:55408 localhost.local:PRE530_IO_X ESTABLISHED univa      418261     16091/uxech         
+tcp        0      0 localhost.localdomain:55416 localhost.local:PRE530_IO_X ESTABLISHED univa      418292     16111/uxcal         
+tcp        0      0 localhost.localdomain:55417 localhost.local:PRE530_IO_X ESTABLISHED root       418294     16113/uxsur         
+tcp        0      0 localhost.localdomain:55423 localhost.local:PRE530_IO_X ESTABLISHED root       418318     16127/uxord         
+tcp        0      0 localhost.localdomain:55392 localhost.local:PRE530_IO_X ESTABLISHED univa      418186     16021/uxcdjsrv      
+tcp        0      0 localhost.localdomain:55399 localhost.local:PRE530_IO_X ESTABLISHED univa      418218     16063/uxcal         
+tcp        0      0 localhost.localdomain:55403 localhost.local:PRE530_IO_X ESTABLISHED root       418237     16078/uxord         
+tcp        0      0 localhost.local:FLS510_IO_X localhost.localdomain:37102 ESTABLISHED univa      2104607    9202/uxioserv       
+tcp        0      0 localhost.local:FLS530_IO_X localhost.localdomain:46547 ESTABLISHED univa      2303029    18974/uxioserv      
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43475 ESTABLISHED univa      418421     15988/uxioserv      
+tcp        0      0 localhost.local:FLS530_IO_X localhost.localdomain:46548 ESTABLISHED univa      2303031    18974/uxioserv      
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43483 ESTABLISHED univa      418442     15988/uxioserv      
+tcp        0      0 casdlsup06:39109            casdlsup06:52004            ESTABLISHED root       2024082    5761/unical         
+tcp        0      0 casdlsup06:39108            casdlsup06:52004            ESTABLISHED root       2024075    5759/unilan         
+tcp        0      0 localhost.local:TST511_IO_S localhost.localdomain:37277 ESTABLISHED univa      2029890    8035/uxioserv       
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55458 ESTABLISHED univa      418419     15982/uxioserv      
+tcp        0      0 localhost.localdomain:43409 localhost.loca:UNI532_CDJ_S ESTABLISHED univa      418188     16026/uxcdjsrv      
+tcp        0      0 localhost.localdomain:43490 localhost.loca:UNI532_CDJ_S ESTABLISHED univa      418461     16223/uxech         
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60573 ESTABLISHED univa      432592     22456/uxioserv      
+tcp        0      0 localhost.localdomain:43475 localhost.loca:UNI532_CDJ_S ESTABLISHED univa      418420     16195/uxcal         
+tcp        0      0 localhost.localdomain:43483 localhost.loca:UNI532_CDJ_S ESTABLISHED root       418441     16208/uxord         
+tcp        0      0 localhost.localdomain:48804 localhost.local:TST511_IO_I ESTABLISHED univa      2029887    8097/uxcdjsrv       
+tcp        0      0 localhost.local:FLS520_IO_S localhost.localdomain:33688 ESTABLISHED univa      2223434    19636/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55466 ESTABLISHED univa      418440     15982/uxioserv      
+tcp        0      0 localhost.localdomain:42351 localhost.loca:UNI532_CDJ_I ESTABLISHED univa      418358     16154/uxcal         
+tcp        0      0 localhost.localdomain:42367 localhost.loca:UNI532_CDJ_I ESTABLISHED univa      418400     16181/uxech         
+tcp        0      0 localhost.localdomain:42360 localhost.loca:UNI532_CDJ_I ESTABLISHED root       418381     16169/uxord         
+tcp        0      0 localhost.localdomain:42304 localhost.loca:UNI532_CDJ_I ESTABLISHED univa      418180     16024/uxcdjsrv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55473 ESTABLISHED univa      418460     15982/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48306            ESTABLISHED univa      1376020    13015/uxioserv      
+tcp        0      0 casdlsup06:47914            casdlsup06:UNI532_CDJ_X     ESTABLISHED univa      418159     16020/uxbvssrv      
+tcp        0      0 localhost.local:FLS530_IO_A localhost.localdomain:44470 ESTABLISHED univa      2303033    18978/uxioserv      
+tcp        0      0 casdlsup06:57382            casdlsup06:TST530_CDJ_X     ESTABLISHED univa      1375705    13042/uxbvssrv      
+tcp        0      0 localhost.localdomain:35929 localhost.locald:TST500_DQM ESTABLISHED root       432634     22502/uxord         
+tcp        0      0 localhost.localdomain:35943 localhost.locald:TST500_DQM ESTABLISHED root       432701     22538/uxord         
+tcp        0      0 casdlsup06:TST530_CDJ_X     support7:mps-raft           ESTABLISHED univa      1376387    13035/uxcdjsrv      
+tcp        0      0 localhost.localdomain:52004 localhost.localdomain:54551 ESTABLISHED root       2024079    5755/uniio          
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60607 ESTABLISHED univa      432752     22456/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48258            ESTABLISHED univa      1375796    13015/uxioserv      
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60602 ESTABLISHED univa      432732     22456/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55429 ESTABLISHED univa      418338     15982/uxioserv      
+tcp        0      0 casdlsup06:FLS520_IO_I      casdlsup06:54713            ESTABLISHED univa      2223423    19640/uxioserv      
+tcp        0      0 localhost.localdomain:37277 localhost.local:TST511_IO_S ESTABLISHED univa      2029889    8094/uxcdjsrv       
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60596 ESTABLISHED univa      432698     22456/uxioserv      
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48267            ESTABLISHED univa      1375821    13015/uxioserv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55436 ESTABLISHED univa      418357     15982/uxioserv      
+tcp        0      0 localhost.localdomain:44470 localhost.local:FLS530_IO_A ESTABLISHED univa      2303032    19000/uxcdjsrv      
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60593 ESTABLISHED univa      432690     22456/uxioserv      
+tcp        0      0 localhost.localdomain:54551 localhost.localdomain:52004 ESTABLISHED root       2024074    5757/unicdj         
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43409 ESTABLISHED univa      418189     15988/uxioserv      
+tcp        0      0 casdlsup06:45298            casdlsup06:FLS530_IO_A      ESTABLISHED univa      2303040    18994/uxbvssrv      
+tcp        0      0 localhost.localdomain:40211 localhost.loca:UNI532_CDJ_X ESTABLISHED univa      418339     16141/uxech         
+tcp        0      0 localhost.localdomain:40199 localhost.loca:UNI532_CDJ_X ESTABLISHED univa      418296     16111/uxcal         
+tcp        0      0 localhost.localdomain:40205 localhost.loca:UNI532_CDJ_X ESTABLISHED root       418320     16127/uxord         
+tcp        0      0 localhost.localdomain:46548 localhost.local:FLS530_IO_X ESTABLISHED univa      2303030    19000/uxcdjsrv      
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55445 ESTABLISHED univa      418380     15982/uxioserv      
+tcp        0      0 localhost.localdomain:46547 localhost.local:FLS530_IO_X ESTABLISHED univa      2303028    18998/uxcdjsrv      
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60587 ESTABLISHED univa      432660     22456/uxioserv      
+tcp        0      0 localhost.localdomain:40170 localhost.loca:UNI532_CDJ_X ESTABLISHED univa      418178     16028/uxcdjsrv      
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60582 ESTABLISHED univa      432631     22456/uxioserv      
+tcp        0      0 casdlsup06:37394            casdlsup06:UNI532_CDJ_I     ESTABLISHED univa      418195     16046/uxbvssrv      
+tcp        0      0 localhost.local:TST511_IO_I localhost.localdomain:48804 ESTABLISHED univa      2029888    8039/uxioserv       
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55452 ESTABLISHED univa      418399     15982/uxioserv      
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60578 ESTABLISHED univa      432613     22456/uxioserv      
+tcp        0      0 localhost.localdomain:8005  *:*                         LISTEN      root       70688      32206/java          
+tcp        0      0 *:casdlsup06_REP_X          *:*                         LISTEN      root       2369145    9174/java           
+tcp        0      0 *:8009                      *:*                         LISTEN      root       70687      32206/java          
+tcp        0      0 *:webcache                  *:*                         LISTEN      root       70684      32206/java          
+tcp        0      0 *:6002                      *:*                         LISTEN      root       5654       2069/Xvnc           
+tcp        0      0 *:ssh                       *:*                         LISTEN      root       5011       1885/sshd           
+tcp        0      0 *:4184                      *:*                         LISTEN      root       2022481    5222/java           
+tcp        0      0 casdlsup06:4184             support7:knetd              ESTABLISHED root       2369483    5222/java           
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:ah-esp-encap       CLOSE_WAIT  root       2369832    9174/java           
+tcp        0      0 casdlsup06:ssh              calpmlxu.orsyp:mcns-tel-ret ESTABLISHED root       2320589    26675/sshd: zwa [pr 
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgroup.c:wkars ESTABLISHED root       2389115    14855/sshd: bta [pr 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:pns                CLOSE_WAIT  root       2427173    9174/java           
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:netobjects2        CLOSE_WAIT  root       2427172    9174/java           
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:netobjects1        CLOSE_WAIT  root       2424723    9174/java           
+tcp        0      0 casdlsup06:43867            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED root       2390219    9174/java           
+tcp        1      0 casdlsup06:47078            casdlsup06:TST530_IO_X      CLOSE_WAIT  root       70730      32206/java          
+tcp        1      0 casdlsup06:47077            casdlsup06:TST530_IO_X      CLOSE_WAIT  root       70728      32206/java          
+tcp        1      0 casdlsup06:47076            casdlsup06:TST530_IO_X      CLOSE_WAIT  root       70726      32206/java          
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgrou:cadsi-lm ESTABLISHED root       2323431    27596/sshd: bta [pr 
+tcp        0      0 casdlsup06:37172            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED root       2369858    9174/java           
+tcp        0      0 casdlsup06:37161            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED root       2369772    9174/java           
+tcp        0      0 casdlsup06:37158            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED root       2369755    9174/java           
+tcp        0      0 casdlsup06:ssh              calpmlxu.orsypgroup.co:4382 ESTABLISHED root       2101604    7559/sshd: zwa [pri 
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgrou:writesrv ESTABLISHED root       2319069    26213/sshd: bta [pr 
+tcp        0      0 casdlsup06:4184             support7:sdfunc             ESTABLISHED root       2369474    5222/java           
+tcp        0      0 casdlsup06:4184             support7:2047               ESTABLISHED root       2369475    5222/java           
+udp        0      0 *:filenet-tms               *:*                                     rpcuser    4520       1631/rpc.statd      
+udp        0      0 *:filenet-rpc               *:*                                     avahi      5903       2198/avahi-daemon:  
+udp        0      0 *:filenet-rmi               *:*                                     root       8011       -                   
+udp        0      0 *:xdmcp                     *:*                                     root       7217       2327/gdm-binary     
+udp        0      0 *:959                       *:*                                     root       4511       1631/rpc.statd      
+udp        0      0 *:mdns                      *:*                                     avahi      5902       2198/avahi-daemon:  
+udp        0      0 *:sunrpc                    *:*                                     root       4479       1612/portmap        
+udp        0      0 *:ipp                       *:*                                     root       1689863    26797/cupsd         
+udp        0      0 casdlsup06:ntp              *:*                                     root       5090       1897/ntpd           
+udp        0      0 localhost.localdomain:ntp   *:*                                     root       5073       1897/ntpd           
+udp        0      0 *:ntp                       *:*                                     root       5060       1897/ntpd           
+udp        0      0 *:filenet-nch               *:*                                     avahi      5904       2198/avahi-daemon:  
+udp        0      0 *:ntp                       *:*                                     root       5061       1897/ntpd           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node PID/Program name    Path
+unix  2      [ ACC ]     STREAM     LISTENING     5534   2028/xfs            /tmp/.font-unix/fs7100
+unix  2      [ ACC ]     STREAM     LISTENING     5262   1950/master         public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     5656   2069/Xvnc           /tmp/.X11-unix/X2
+unix  2      [ ACC ]     STREAM     LISTENING     7496   2398/gam_server     @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     7207   2364/kdeinit Runnin /tmp/ksocket-root/kdeinit__2
+unix  2      [ ACC ]     STREAM     LISTENING     7209   2364/kdeinit Runnin /tmp/ksocket-root/kdeinit-:2
+unix  2      [ ACC ]     STREAM     LISTENING     7220   2327/gdm-binary     /tmp/.gdm_socket
+unix  2      [ ACC ]     STREAM     LISTENING     7370   2369/Xorg           /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     7385   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  2      [ ACC ]     STREAM     LISTENING     7454   2382/klauncher [kde /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  2      [ ACC ]     STREAM     LISTENING     7558   2412/bonobo-activat /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  2      [ ACC ]     STREAM     LISTENING     6156   2221/hald           @/tmp/hald-local/dbus-63NWWvJOfG
+unix  2      [ ACC ]     STREAM     LISTENING     7563   2409/gdmgreeter     /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  2      [ ACC ]     STREAM     LISTENING     7584   2414/at-spi-registr /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  2      [ ACC ]     STREAM     LISTENING     7619   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  2      [ ACC ]     STREAM     LISTENING     7776   2432/artsd          /tmp/ksocket-root/casdlsup06.orsypgroup.com-0980-49490cbe
+unix  2      [ ACC ]     STREAM     LISTENING     5269   1950/master         private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     5273   1950/master         private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     5277   1950/master         private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     5281   1950/master         private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     5285   1950/master         private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     5289   1950/master         private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     5293   1950/master         public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     5297   1950/master         private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     5301   1950/master         private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     5305   1950/master         private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     5309   1950/master         public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     5313   1950/master         private/error
+unix  2      [ ACC ]     STREAM     LISTENING     5317   1950/master         private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     5321   1950/master         private/local
+unix  25     [ ]         DGRAM                    4435   1589/syslogd        /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     5325   1950/master         private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     5329   1950/master         private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5333   1950/master         private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     5337   1950/master         private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     5876   2198/avahi-daemon:  /var/run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     5341   1950/master         private/maildrop
+unix  2      [ ACC ]     STREAM     LISTENING     5345   1950/master         private/old-cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5349   1950/master         private/cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5353   1950/master         private/uucp
+unix  2      [ ACC ]     STREAM     LISTENING     5357   1950/master         private/ifmail
+unix  2      [ ACC ]     STREAM     LISTENING     5361   1950/master         private/bsmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5472   1987/gpm            /dev/gpmctl
+unix  2      [ ]         DGRAM                    1111   455/udevd           @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     6157   2221/hald           @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  2      [ ]         DGRAM                    6165   2221/hald           @/org/freedesktop/hal/udev_event
+unix  2      [ ACC ]     STREAM     LISTENING     4664   1675/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     4713   1687/sdpd           /var/run/sdp
+unix  2      [ ACC ]     STREAM     LISTENING     4955   1867/acpid          /var/run/acpid.socket
+unix  2      [ ]         DGRAM                    2389246 14891/su            
+unix  2      [ ]         DGRAM                    2389160 14858/8             
+unix  3      [ ]         STREAM     CONNECTED     2389157 14855/sshd: bta [pr 
+unix  3      [ ]         STREAM     CONNECTED     2389156 14858/8             
+unix  2      [ ]         DGRAM                    2387678 14532/pickup        
+unix  2      [ ]         DGRAM                    2358273 5549/su             
+unix  2      [ ]         DGRAM                    2323554 27631/su            
+unix  2      [ ]         DGRAM                    2323466 27599/6             
+unix  3      [ ]         STREAM     CONNECTED     2323463 27596/sshd: bta [pr 
+unix  3      [ ]         STREAM     CONNECTED     2323462 27599/6             
+unix  2      [ ]         DGRAM                    2320644 26679/5             
+unix  3      [ ]         STREAM     CONNECTED     2320643 26675/sshd: zwa [pr 
+unix  3      [ ]         STREAM     CONNECTED     2320642 26679/5             
+unix  2      [ ]         DGRAM                    2319198 26247/su            
+unix  2      [ ]         DGRAM                    2319112 26215/4             
+unix  3      [ ]         STREAM     CONNECTED     2319109 26213/sshd: bta [pr 
+unix  3      [ ]         STREAM     CONNECTED     2319108 26215/4             
+unix  2      [ ]         DGRAM                    2318957 26175/su            
+unix  2      [ ]         DGRAM                    2101638 7561/7              
+unix  3      [ ]         STREAM     CONNECTED     2101637 7559/sshd: zwa [pri 
+unix  3      [ ]         STREAM     CONNECTED     2101636 7561/7              
+unix  3      [ ]         STREAM     CONNECTED     8154   2382/klauncher [kde /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     8153   2426/kdesktopJr0qta 
+unix  3      [ ]         STREAM     CONNECTED     7811   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7810   2396/kded           
+unix  3      [ ]         STREAM     CONNECTED     7804   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7803   2436/konsole        
+unix  3      [ ]         STREAM     CONNECTED     7787   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7786   2436/konsole        
+unix  3      [ ]         STREAM     CONNECTED     7785   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7784   2436/konsole        
+unix  3      [ ]         STREAM     CONNECTED     7756   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7755   2434/kaccess        
+unix  3      [ ]         STREAM     CONNECTED     7752   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7751   2434/kaccess        
+unix  3      [ ]         STREAM     CONNECTED     7750   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7749   2434/kaccess        
+unix  3      [ ]         STREAM     CONNECTED     7745   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7744   2382/klauncher [kde 
+unix  3      [ ]         STREAM     CONNECTED     7721   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7720   2396/kded           
+unix  3      [ ]         STREAM     CONNECTED     7719   1675/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7718   2396/kded           
+unix  3      [ ]         STREAM     CONNECTED     7690   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7689   2425/kicker         
+unix  3      [ ]         STREAM     CONNECTED     7682   2398/gam_server     @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7681   2425/kicker         
+unix  3      [ ]         STREAM     CONNECTED     7674   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7673   2425/kicker         
+unix  3      [ ]         STREAM     CONNECTED     7672   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7671   2425/kicker         
+unix  3      [ ]         STREAM     CONNECTED     7666   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7665   2425/kicker         
+unix  3      [ ]         STREAM     CONNECTED     7661   2398/gam_server     @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7660   2423/kdesktop       
+unix  3      [ ]         STREAM     CONNECTED     7652   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7651   2423/kdesktop       
+unix  3      [ ]         STREAM     CONNECTED     7648   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7647   2423/kdesktop       
+unix  3      [ ]         STREAM     CONNECTED     7644   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7643   2423/kdesktop       
+unix  3      [ ]         STREAM     CONNECTED     7638   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7637   2421/kwin           
+unix  3      [ ]         STREAM     CONNECTED     7636   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7635   2421/kwin           
+unix  3      [ ]         STREAM     CONNECTED     7630   2420/ksmserver      /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7629   2421/kwin           
+unix  3      [ ]         STREAM     CONNECTED     7627   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7626   2421/kwin           
+unix  3      [ ]         STREAM     CONNECTED     7625   2369/Xorg           /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7624   2409/gdmgreeter     
+unix  3      [ ]         STREAM     CONNECTED     7618   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7617   2420/ksmserver      
+unix  3      [ ]         STREAM     CONNECTED     7612   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7611   2420/ksmserver      
+unix  3      [ ]         STREAM     CONNECTED     7605   2420/ksmserver      /tmp/ksocket-root/kdeinit__2
+unix  3      [ ]         STREAM     CONNECTED     7604   2418/kwrapper       
+unix  3      [ ]         STREAM     CONNECTED     7623   2409/gdmgreeter     /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7592   2414/at-spi-registr 
+unix  3      [ ]         STREAM     CONNECTED     7589   2414/at-spi-registr /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7588   2409/gdmgreeter     
+unix  3      [ ]         STREAM     CONNECTED     7587   2414/at-spi-registr /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7586   2412/bonobo-activat 
+unix  3      [ ]         STREAM     CONNECTED     7583   2412/bonobo-activat /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7582   2414/at-spi-registr 
+unix  3      [ ]         STREAM     CONNECTED     7581   2369/Xorg           /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7580   2414/at-spi-registr 
+unix  3      [ ]         STREAM     CONNECTED     7579   2369/Xorg           /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7578   2414/at-spi-registr 
+unix  3      [ ]         STREAM     CONNECTED     7566   2409/gdmgreeter     /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7565   2412/bonobo-activat 
+unix  3      [ ]         STREAM     CONNECTED     7562   2412/bonobo-activat /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7561   2409/gdmgreeter     
+unix  3      [ ]         STREAM     CONNECTED     7543   2369/Xorg           /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7542   2409/gdmgreeter     
+unix  3      [ ]         STREAM     CONNECTED     7513   2028/xfs            /tmp/.font-unix/fs7100
+unix  3      [ ]         STREAM     CONNECTED     7512   2369/Xorg           
+unix  3      [ ]         STREAM     CONNECTED     7498   2398/gam_server     @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7497   2396/kded           
+unix  3      [ ]         STREAM     CONNECTED     7486   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7485   2396/kded           
+unix  3      [ ]         STREAM     CONNECTED     7482   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7481   2396/kded           
+unix  3      [ ]         STREAM     CONNECTED     7457   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7456   2364/kdeinit Runnin 
+unix  3      [ ]         STREAM     CONNECTED     7428   2371/dcopserver     /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7427   2382/klauncher [kde 
+unix  3      [ ]         STREAM     CONNECTED     7396   2382/klauncher [kde 
+unix  3      [ ]         STREAM     CONNECTED     7395   2364/kdeinit Runnin 
+unix  3      [ ]         STREAM     CONNECTED     7517   2369/Xorg           /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7372   2366/gdm-binary     
+unix  3      [ ]         STREAM     CONNECTED     6992   1675/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     6991   2221/hald           
+unix  3      [ ]         STREAM     CONNECTED     6939   2221/hald           @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6938   2249/hald-addon-sto 
+unix  3      [ ]         STREAM     CONNECTED     6896   2221/hald           @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6895   2241/hald-addon-key 
+unix  3      [ ]         STREAM     CONNECTED     6846   1867/acpid          /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     6845   2228/hald-addon-acp 
+unix  3      [ ]         STREAM     CONNECTED     6865   2221/hald           @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6840   2228/hald-addon-acp 
+unix  3      [ ]         STREAM     CONNECTED     6160   2221/hald           @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  3      [ ]         STREAM     CONNECTED     6159   2222/hald-runner    
+unix  3      [ ]         STREAM     CONNECTED     5924   1675/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5923   2211/cups-config-da 
+unix  3      [ ]         STREAM     CONNECTED     5879   1675/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5878   2198/avahi-daemon:  
+unix  3      [ ]         STREAM     CONNECTED     5873   2199/avahi-daemon:  
+unix  3      [ ]         STREAM     CONNECTED     5872   2198/avahi-daemon:  
+unix  2      [ ]         DGRAM                    5870   2198/avahi-daemon:  
+unix  3      [ ]         STREAM     CONNECTED     5694   2069/Xvnc           /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     5693   2080/vncconfig      
+unix  2      [ ]         DGRAM                    5474   1997/crond          
+unix  2      [ ]         DGRAM                    5451   1987/gpm            
+unix  2      [ ]         DGRAM                    5432   1978/clientmqueue   
+unix  2      [ ]         DGRAM                    5375   1965/qmgr           
+unix  3      [ ]         STREAM     CONNECTED     5364   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5363   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5360   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5359   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5356   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5355   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5352   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5351   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5348   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5347   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5344   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5343   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5340   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5339   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5336   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5335   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5332   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5331   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5328   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5327   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5324   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5323   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5320   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5319   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5316   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5315   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5312   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5311   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5308   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5307   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5304   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5303   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5300   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5299   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5296   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5295   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5292   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5291   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5288   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5287   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5284   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5283   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5280   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5279   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5276   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5275   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5272   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5271   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5268   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5267   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5265   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5264   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5261   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5260   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5253   1950/master         
+unix  3      [ ]         STREAM     CONNECTED     5252   1950/master         
+unix  2      [ ]         DGRAM                    5204   1950/master         
+unix  2      [ ]         DGRAM                    5034   1897/ntpd           
+unix  2      [ ]         DGRAM                    4803   1745/hidd           
+unix  3      [ ]         STREAM     CONNECTED     4706   1675/dbus-daemon    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     4705   1684/hcid: processi 
+unix  2      [ ]         DGRAM                    4692   1687/sdpd           
+unix  2      [ ]         DGRAM                    4686   1684/hcid: processi 
+unix  3      [ ]         STREAM     CONNECTED     4667   1675/dbus-daemon    
+unix  3      [ ]         STREAM     CONNECTED     4666   1675/dbus-daemon    
+unix  3      [ ]         STREAM     CONNECTED     4632   1661/rpc.idmapd     
+unix  4      [ ]         STREAM     CONNECTED     4631   1661/rpc.idmapd     
+unix  2      [ ]         DGRAM                    4510   1631/rpc.statd      
+unix  2      [ ]         DGRAM                    4443   1592/klogd          

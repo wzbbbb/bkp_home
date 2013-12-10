@@ -1,0 +1,29 @@
+
+Key words: DQM, sub DQM, PID, restart, job status
+
+Subject: How Dollar Universe determin job status after a restart 
+
+Prerequisites:
+
+Application validation tests:
+
+Explanation:
+
+For those job in EXECUTING status, Dollar Universe depends on sub-dqm (or sub-uxord) pid to determin the status of a job after restart. If a job is completed in between the shutdown and restart; and another process is, then, using the same pid in the system, Dollar Universe won't be abel to tell the different. It will think the job is still running, and keep it in EXECUTING status. 
+If the job is completed in between, and the pid is not in used any more, Dollar Universe will consider this job aborted.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: internal
+
+Experties level:  expert
+

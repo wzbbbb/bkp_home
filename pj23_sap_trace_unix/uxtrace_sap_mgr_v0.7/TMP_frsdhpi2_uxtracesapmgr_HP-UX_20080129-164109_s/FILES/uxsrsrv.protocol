@@ -1,0 +1,17 @@
+#           Network Configuration
+# This file contains the declaration of the communication
+# protocol of Dollar Universe nodes and, if necessary, the name of 
+# the target node by which you can reach this node from the 
+# local node.
+# The declaration formats are such as follows :
+# <Dollar Universe Node> PROTOCOL=x
+#  where x is the summ of :
+#  1 if the node is RMS, 0 otherwise
+#  2 if the node is DECNET, 0 otherwise
+#  4 if the node is TCP/IP, 0 otherwise
+#
+# <<Dollar Universe Node>> ROUTE=<<Gateway Node>>
+#
+# There is a single space charater between the node name 
+# and its descriptor.
+frsdhpi2 protocol=4

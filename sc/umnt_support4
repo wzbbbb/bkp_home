@@ -1,0 +1,18 @@
+#!/bin/sh
+#Thu Aug 26 15:28:58 EDT 2004
+#Orsyp Software Inc
+#Zhibing Wang
+#################################
+#Purpose: 
+#################################
+
+#################################
+#Main
+#################################
+ping -c1 support4
+[ $? -ne 0 ] && echo "support4 is down, skip the umount" && exit 1
+
+df -k |grep /data/home/zwa/Answers > /dev/null
+[ $? -eq 0 ] && sudo su -c "smbumount /data/home/zwa/Answers" && exit 0
+echo "/data/home/zwa/Answers is not mounted"  
+exit 1

@@ -1,0 +1,37 @@
+#REM# LISTING OF THE SAP MANAGER _U_TMP_PATH DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai 
+total 22916
+212661 -r-xr-xr-x   1 root       sys           1786 Aug 31  2005 uxchecksrvrfc.ksh
+212662 -rwxr-xr-x   1 projet     projet         636 Aug 31  2005 erp_sap.conf
+212627 -rw-rw-rw-   1 root       sys           1804 Aug 31  2005 u_sappar_sample
+212628 -r-xr-xr-x   1 root       sys           2451 Aug 31  2005 uxcpy_sap.ksh
+212625 -r-xr-xr-x   1 root       sys          26307 Aug 31  2005 ux_sapjcs_rights.ksh
+212706 -rwxr-----   1 root       projet       31387 Apr  5  2006 install.ksh
+212707 -rwxr-----   1 root       projet       31387 Apr  5  2006 patch.ksh
+212613 -rw-r--r--   1 root       sys             75 Nov  6  2006 u_fali01.txt
+212657 -rwxr-xr-x   1 root       sys            132 Nov  6  2006 saprfc.ini_wrong
+212653 -rwxr-xr-x   1 root       sys           1419 Nov  6  2006 uxstartrfcmanager
+212655 -rw-r--r--   1 root       sys           4492 Nov  6  2006 uxsetenv_rfc.csh
+212654 -rwxr-xr-x   1 root       sys           1337 Nov  6  2006 uxstoprfcmanager
+212656 -r-xr-xr-x   1 root       sys           4793 Nov  6  2006 uxsetenv_rfc.ksh
+212663 -rwxr-xr-x   1 root       sys            576 Nov  6  2006 install_rfc.dft
+212658 -rwxr-xr-x   1 root       sys            105 Nov  6  2006 services_maj_rfc
+212626 -rw-rw-rw-   1 root       sys           1045 Nov  6  2006 install_agtsap.dft
+212615 -rwx------   1 root       sys           1327 Nov  6  2006 uxstopsapmanager
+212616 -rw-r--r--   1 root       sys           4057 Nov  6  2006 uxsetenv_agtsap.csh
+212617 -r-xr-xr-x   1 root       sys           4340 Nov  6  2006 uxsetenv_agtsap.ksh
+212614 -rwx------   1 root       sys           1428 Nov  6  2006 uxstartsapmanager
+212624 -r--r--r--   1 root       sys            151 Nov  6  2006 uxsapagt.host_example
+212619 -rw-r--r--   1 root       sys            618 Nov  6  2006 uxsrsrv.protocol
+212620 -rw-r--r--   1 root       sys            120 Nov  6  2006 uxsrsrv.sck
+212621 -r-xr-xr-x   1 root       sys           2596 Nov  6  2006 uxins_sapupr.ksh
+212649 -r--r--r--   1 root       sys            146 Nov  6  2006 services_maj_agtsap
+212623 -r-xr-xr-x   1 root       sys            952 Nov  6  2006 uxagtsts.ksh
+212499 drwxr-xr-x  14 root       sys           1024 Nov  6  2006 ..
+212697 -rw-r-----   1 root       sys            645 Nov  6  2006 orsyp_24400.ref
+212618 -rw-r--r--   1 root       sys            769 Nov  6  2006 uxsrsrv.alias
+212714 -rw-------   1 root       sys        11532156 Nov  6  2006 core.unirfcmanager
+212713 -rw-rw-rw-   1 root       sys           1274 Nov  9  2006 dev_rfc.trc
+212622 -rw-------   1 root       sys           4712 Jan  4  2007 uxsaprfc.ini
+212604 drwxr-xr-x   2 root       sys           1024 Jan 28 23:42 .
+121060 -rwxr-----   1 root       sys          48429 Jan 29 16:36 uxtracesapmgr

@@ -1,0 +1,1210 @@
+###### 15604, ./uxioserv TST511 X casdlsup06 ######
+=== statm ===
+29847 2715 314 2 0 28845 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+932
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15609, ./uxioserv TST511 S casdlsup06 ######
+=== statm ===
+6566 563 316 2 0 5564 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+205
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15612, ./uxioserv TST511 I casdlsup06 ######
+=== statm ===
+9127 572 316 2 0 8125 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+285
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15616, ./uxioserv TST511 A casdlsup06 ######
+=== statm ===
+6823 533 277 2 0 5821 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+213
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15628, ./uxcdjsrv TST511 X casdlsup06 ######
+=== statm ===
+7742 245 182 2 0 6751 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+241
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15629, ./uxcdjsrv TST511 I casdlsup06 ######
+=== statm ===
+3958 168 149 2 0 2979 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+123
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15631, ./uxcdjsrv TST511 S casdlsup06 ######
+=== statm ===
+3958 168 149 2 0 2979 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+123
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15633, ./uxcdjsrv TST511 A casdlsup06 ######
+=== statm ===
+3902 168 149 2 0 2923 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+121
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15651, ./uxcal TST511 X casdlsup06 ######
+=== statm ===
+2813 472 350 2 0 705 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+21
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15663, ./uxord TST511 X casdlsup06 ######
+=== statm ===
+2901 669 514 2 0 705 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+22
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15675, ./uxech TST511 X casdlsup06 ######
+=== statm ===
+2812 261 220 2 0 704 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+21
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 15688, ./uxsur TST511 X casdlsup06 ######
+=== statm ===
+2812 335 288 2 0 704 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+7
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4562, ./uxioserv SUP513 X casdlsup06 ######
+=== statm ===
+22910 964 268 2 0 21912 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+3272
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4566, ./uxioserv SUP513 S casdlsup06 ######
+=== statm ===
+3817 170 155 2 0 2831 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+545
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4570, ./uxioserv SUP513 I casdlsup06 ######
+=== statm ===
+3816 170 155 2 0 2830 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+545
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4574, ./uxioserv SUP513 A casdlsup06 ######
+=== statm ===
+6392 361 296 2 0 5394 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+913
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4590, ./uxcdjsrv SUP513 S casdlsup06 ######
+=== statm ===
+3775 174 155 2 0 2798 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+539
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4591, ./uxcdjsrv SUP513 X casdlsup06 ######
+=== statm ===
+31221 14141 210 2 0 30232 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+4460
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4594, ./uxcdjsrv SUP513 A casdlsup06 ######
+=== statm ===
+3775 174 155 2 0 2798 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+539
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4597, ./uxcdjsrv SUP513 I casdlsup06 ######
+=== statm ===
+3776 174 155 2 0 2799 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+539
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4615, ./uxcal SUP513 X casdlsup06 ######
+=== statm ===
+2864 476 353 2 0 727 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+17
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4628, ./uxord SUP513 X casdlsup06 ######
+=== statm ===
+2864 602 425 2 0 727 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4642, ./uxech SUP513 X casdlsup06 ######
+=== statm ===
+2865 255 215 2 0 728 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+409
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 4655, ./uxsur SUP513 X casdlsup06 ######
+=== statm ===
+2864 263 224 2 0 727 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+25
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1463, ./uxioserv PRE511 X casdlsup06 ######
+=== statm ===
+66244 1132 393 2 0 65245 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+2365
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1470, ./uxioserv PRE511 S casdlsup06 ######
+=== statm ===
+16952 407 324 2 0 15953 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+2421
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1471, ./uxioserv PRE511 A casdlsup06 ######
+=== statm ===
+19513 487 338 2 0 18514 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+2787
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1475, ./uxdqmsrv PRE511 X casdlsup06 ######
+=== statm ===
+3604 1079 368 36 0 1867 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1480, ./uxcmdsrv PRE511 X casdlsup06 ######
+=== statm ===
+972 250 215 4 0 229 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+8
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1485, ./uxcdjsrv PRE511 X casdlsup06 ######
+=== statm ===
+4025 368 301 2 0 3047 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+575
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1490, ./uxcdjsrv PRE511 A casdlsup06 ######
+=== statm ===
+3847 300 280 2 0 2869 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+549
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1491, ./uxcdjsrv PRE511 S casdlsup06 ######
+=== statm ===
+3847 300 280 2 0 2869 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+549
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1507, ./uxcal PRE511 X casdlsup06 ######
+=== statm ===
+2794 597 467 2 0 702 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+36
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1520, ./uxord PRE511 X casdlsup06 ######
+=== statm ===
+2794 885 622 2 0 702 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+0
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1532, ./uxech PRE511 X casdlsup06 ######
+=== statm ===
+2795 393 349 2 0 703 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+399
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1792, ./uxsur PRE511 X casdlsup06 ######
+=== statm ===
+2795 427 384 2 0 703 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+24
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 1793, ./uxcal PRE511 S casdlsup06 ######
+=== statm ===
+2795 438 391 2 0 703 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+399
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 2209, ./uxord PRE511 S casdlsup06 ######
+=== statm ===
+2795 486 414 2 0 703 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+24
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 2411, ./uxech PRE511 S casdlsup06 ######
+=== statm ===
+2794 392 349 2 0 702 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+399
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 2445, ./uxcal PRE511 A casdlsup06 ######
+=== statm ===
+2794 439 391 2 0 702 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+399
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 2489, ./uxord PRE511 A casdlsup06 ######
+=== statm ===
+2795 445 373 2 0 703 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+24
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 2523, ./uxech PRE511 A casdlsup06 ######
+=== statm ===
+2795 393 349 2 0 703 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+399
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18037, ./uxioserv TST500 X casdlsup06 ######
+=== statm ===
+29878 691 267 2 0 29068 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+4268
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18041, ./uxioserv TST500 A casdlsup06 ######
+=== statm ===
+13879 310 210 2 0 13069 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1982
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18045, ./uxdqmsrv TST500 X casdlsup06 ######
+=== statm ===
+3440 342 265 33 0 1856 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+15
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18050, ./uxcmdsrv TST500 X casdlsup06 ######
+=== statm ===
+1071 175 174 4 0 229 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+9
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18053, ./uxcdjsrv TST500 X casdlsup06 ######
+=== statm ===
+12809 262 213 2 0 11941 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1829
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18057, ./uxcdjsrv TST500 A casdlsup06 ######
+=== statm ===
+3723 195 177 2 0 2867 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+531
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18071, ./uxcal TST500 X casdlsup06 ######
+=== statm ===
+2604 484 356 2 0 674 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+46
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18120, ./uxord TST500 X casdlsup06 ######
+=== statm ===
+2604 681 456 2 0 674 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+3
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18133, ./uxech TST500 X casdlsup06 ######
+=== statm ===
+2603 276 233 2 0 673 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+371
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18145, ./uxsur TST500 X casdlsup06 ######
+=== statm ===
+2604 283 236 2 0 674 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+11
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18156, ./uxord TST500 A casdlsup06 ######
+=== statm ===
+2603 337 264 2 0 673 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+23
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18170, ./uxcal TST500 A casdlsup06 ######
+=== statm ===
+2604 329 279 2 0 674 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+372
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18183, ./uxech TST500 A casdlsup06 ######
+=== statm ===
+2603 276 233 2 0 673 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+371
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13038, ./uxioserv FLS520 X casdlsup06 ######
+=== statm ===
+17176 405 236 2 0 16154 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+2453
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13043, ./uxioserv FLS520 S casdlsup06 ######
+=== statm ===
+8963 240 210 2 0 7953 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1280
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13063, ./uxioserv FLS520 I casdlsup06 ######
+=== statm ===
+8963 240 210 2 0 7953 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1280
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13068, ./uxioserv FLS520 A casdlsup06 ######
+=== statm ===
+11536 261 224 2 0 10514 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1648
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13070, ./uxdqmsrv FLS520 X casdlsup06 ######
+=== statm ===
+3577 209 193 35 0 1837 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+31
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13561, ./uxcdjsrv FLS520 I casdlsup06 ######
+=== statm ===
+3865 205 188 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+552
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13563, ./uxcdjsrv FLS520 S casdlsup06 ######
+=== statm ===
+3864 206 188 2 0 2867 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+552
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13566, ./uxcdjsrv FLS520 A casdlsup06 ######
+=== statm ===
+3865 205 188 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+552
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13567, /apps/du/520/FLS520/exec/uxbvssrv FLS520 X casdlsup06 ######
+=== statm ===
+4719 219 198 1 0 3017 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+674
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13569, /apps/du/520/FLS520/exec/uxbvssrv FLS520 S casdlsup06 ######
+=== statm ===
+4719 219 198 1 0 3017 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+674
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13572, /apps/du/520/FLS520/exec/uxbvssrv FLS520 I casdlsup06 ######
+=== statm ===
+4719 219 198 1 0 3017 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+674
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13573, ./uxcdjsrv FLS520 X casdlsup06 ######
+=== statm ===
+6950 444 189 2 0 5953 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+992
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 13582, /apps/du/520/FLS520/exec/uxbvssrv FLS520 A casdlsup06 ######
+=== statm ===
+4720 221 198 1 0 3018 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+674
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 20349, /etc/UNIVERSE_DQM_FLS500/uxdqmsrv FLS500 X ######
+=== statm ===
+2062 493 308 32 0 479 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+21
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 20352, ./uxioserv FLS500 X casdlsup06 ######
+=== statm ===
+11673 565 299 2 0 10863 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1945
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 20356, ./uxioserv FLS500 A casdlsup06 ######
+=== statm ===
+6192 394 270 2 0 5382 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1032
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 20363, ./uxcmdsrv FLS500 X casdlsup06 ######
+=== statm ===
+1071 280 236 4 0 229 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+11
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 20366, ./uxcdjsrv FLS500 X casdlsup06 ######
+=== statm ===
+4343 1027 268 2 0 3487 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+723
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 20370, ./uxcdjsrv FLS500 A casdlsup06 ######
+=== statm ===
+3724 378 249 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+620
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19781, ./uxioserv FDXPRD X DA_US_U_02 ######
+=== statm ===
+16960 588 356 2 0 15958 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+212
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19785, ./uxioserv FDXPRD A DA_US_U_02 ######
+=== statm ===
+3821 444 330 2 0 2831 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+47
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19793, ./uxcmdsrv FDXPRD X DA_US_U_02 ######
+=== statm ===
+971 251 209 4 0 227 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+12
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19796, ./uxcdjsrv FDXPRD X DA_US_U_02 ######
+=== statm ===
+3847 442 309 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+48
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19797, ./uxcdjsrv FDXPRD A DA_US_U_02 ######
+=== statm ===
+3847 442 309 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+48
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19812, ./uxcal FDXPRD X DA_US_U_02 ######
+=== statm ===
+2814 586 428 2 0 704 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+35
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19824, ./uxord FDXPRD X DA_US_U_02 ######
+=== statm ===
+1679 419 362 643 0 405 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+20
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19836, ./uxech FDXPRD X DA_US_U_02 ######
+=== statm ===
+2814 458 385 2 0 704 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+35
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 19849, ./uxsur FDXPRD X DA_US_U_02 ######
+=== statm ===
+2814 570 419 2 0 704 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+35
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18602, ./uxioserv PRE530 X casdlsup06 ######
+=== statm ===
+59759 1334 464 2 0 57632 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+14939
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18606, ./uxioserv PRE530 A casdlsup06 ######
+=== statm ===
+21010 771 460 2 0 18883 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+5252
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18613, ./uxdqmsrv PRE530 X casdlsup06 ######
+=== statm ===
+5215 2134 420 35 0 2204 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+81
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18624, ./uxcdjsrv PRE530 A casdlsup06 ######
+=== statm ===
+9252 558 392 2 0 7991 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+2313
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18625, ./uxcdjsrv PRE530 X casdlsup06 ######
+=== statm ===
+6691 558 394 2 0 5430 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1672
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18640, ./uxcal PRE530 X casdlsup06 ######
+=== statm ===
+3178 796 487 2 0 766 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+794
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18652, ./uxord PRE530 X casdlsup06 ######
+=== statm ===
+3179 1105 690 2 0 767 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+49
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18665, ./uxech PRE530 X casdlsup06 ######
+=== statm ===
+3428 994 482 2 0 993 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+857
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18682, ./uxcal PRE530 A casdlsup06 ######
+=== statm ===
+3178 791 482 2 0 766 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+794
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18688, ./uxsur PRE530 X casdlsup06 ######
+=== statm ===
+3178 649 394 2 0 766 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+49
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18702, ./uxord PRE530 A casdlsup06 ######
+=== statm ===
+3179 679 418 2 0 767 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+49
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 18717, ./uxech PRE530 A casdlsup06 ######
+=== statm ===
+3178 655 399 2 0 766 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+794
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16469, ./uxdqmsrv FLS510 X casdlsup06 ######
+=== statm ===
+3572 1885 323 36 0 1836 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+74
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16474, ./uxioserv FLS510 X casdlsup06 ######
+=== statm ===
+11894 641 388 2 0 10896 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+3964
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16477, ./uxioserv FLS510 I casdlsup06 ######
+=== statm ===
+3817 449 335 2 0 2831 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1272
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16481, ./uxioserv FLS510 A casdlsup06 ######
+=== statm ===
+3816 450 335 2 0 2830 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1272
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16487, ./uxcdjsrv FLS510 X casdlsup06 ######
+=== statm ===
+3845 480 337 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1281
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16490, ./uxcdjsrv FLS510 I casdlsup06 ######
+=== statm ===
+3845 442 309 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1281
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 16499, ./uxcdjsrv FLS510 A casdlsup06 ######
+=== statm ===
+3845 442 309 2 0 2868 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1281
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24337, ./uxioserv TST530 X casdlsup06 ######
+=== statm ===
+29005 1288 482 2 0 26874 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+9668
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24340, ./uxioserv TST530 A casdlsup06 ######
+=== statm ===
+5204 615 404 2 0 3073 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1734
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24347, ./uxbvssrv TST530 X casdlsup06 ######
+=== statm ===
+14111 1947 388 2 0 12034 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+4703
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24355, ./uxcdjsrv TST530 X casdlsup06 ######
+=== statm ===
+6901 768 397 2 0 5638 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+2300
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24378, ./uxcal TST530 X casdlsup06 ######
+=== statm ===
+3180 799 496 2 0 765 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+1060
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24390, ./uxord TST530 X casdlsup06 ######
+=== statm ===
+3268 1040 704 2 0 765 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+68
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24440, ./uxech TST530 X casdlsup06 ######
+=== statm ===
+3180 689 418 2 0 765 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+530
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied
+###### 24454, ./uxsur TST530 X casdlsup06 ######
+=== statm ===
+3181 657 403 2 0 766 0
+Cpus_allowed:	ffffffff
+Mems_allowed:	1
+=== oom_score ===
+66
+=== oom_adj ===
+0
+=== fd ===
+ls: fd: Permission denied

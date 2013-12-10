@@ -1,0 +1,53 @@
+directories need backup
+
+For quick recover from disasterous event: 
+
+1. Contents: everything: data; programs
+2. Frequence 
+3.  Cost: Storeage available ; CUP usage ; network traffic 
+
+
+/apps/du/	1.7G	Purge before the backup 	Weekly
+/cases/		4.3G    Purge before the backup		Daily
+/data/		668M	All				Daily
+/etc 		13M	All 				Weekly 
+/home		7.9M	All				Daily
+
+/lindata 	2.5G			No backup		
+	50_Kits_Unc
+		mvsca7 	5.2M
+		V500	254M
+	Patch_Unc
+		aix 	66M 
+		axp 	66M 
+		hpux 	606M 
+		linux 	379M 
+		mpe 	4.0K 
+		NT_2000 247M 
+		sequent 272M 
+		sunsol 	88M 
+	SysUpdate		May need to backup?
+		linux	340M
+		NT_2000	152M
+
+/windata 	2.5G			Weekly	
+40M     /windata/12_43_Doc
+85M     /windata/12_50_Doc
+
+	00_DA_US_Doc 		3.1M  	Daily		
+	32_Tools_Docs  		0
+	33_Tools_Kits 		62M 
+	42_Sys_Admin_Docs 	8.8M 
+	43_Sys_Admin_Kits 	35M 
+	60_Projects 		8.2M  Daily
+
+
+===========
+Purging /apps/du
+1. clearlog
+2. raz_fic and reorg FLS
+3. clear the /apps/du/tmp
+
+/apps/du/FLS
+
+

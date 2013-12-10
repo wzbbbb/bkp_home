@@ -1,0 +1,70 @@
+#REM# RECURSIV LISTING OF THE UXMGR DIRECTORY (Sorted by name)
+#CMD# ls -lRai /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP#  20090108-165947 
+/apps/unijob110/univiewer_server/casdlsup06/data:
+total 516
+21643272 drwxr-xr-x 7 root root   4096 Jan  8 16:08 .
+21627153 drwxr-xr-x 4 root root   4096 Jan  5 11:30 ..
+21643283 -rwxr-xr-x 1 root root    557 Jan  5 11:30 alertmanager.xml
+21643273 drwxr-xr-x 2 root root   4096 Jan  5 11:54 data
+21643518 -rw-r--r-- 1 root root      0 Jan  8 12:29 -f2
+21643291 dr-xr-xr-x 2 root root   4096 Jan  5 11:30 install
+21643288 drwxrwxrwx 2 root root   4096 Jan  5 11:30 jobtemplates
+21643287 -rwxr-xr-x 1 root root    114 Jan  5 11:30 licenses.txt
+21643289 drwxrwxrwx 2 root root   4096 Jan  5 11:30 log
+21643277 -rwxr-xr-x 1 root root   1972 Jan  5 11:30 log4j.xml
+21643280 -rwxr-xr-x 1 root root   5561 Jan  8 16:33 network.xml
+21643309 -rw-rw-rw- 1 root root    518 Jan  5 11:30 phrase.key
+21643307 -rw-rw-rw- 1 root root    339 Jan  6 11:58 phrases.bin
+21643281 -rwxr-xr-x 1 root root    352 Jan  6 11:58 proxy.xml
+21643284 -rwxr-xr-x 1 root root   1310 Jan  6 11:58 roles.xml
+21643290 drwxrwxrwx 2 root root   4096 Jan  5 11:30 temp
+21643525 -rw-rw-rw- 1 root root 210638 Jan  8 15:59 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-155726_sc.tar.gz
+21643526 -rw-rw-rw- 1 root root 214753 Jan  8 16:08 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-160444_sc.tar.gz
+21643285 -rwxr-xr-x 1 root root    557 Jan  5 11:30 unicheckms
+21643276 -rwxr-xr-x 1 root root    423 Jan  5 11:30 unienv.csh
+21643282 -rwxr-xr-x 1 root root    467 Jan  5 11:30 unienv.ksh
+21643286 -rwxr-xr-x 1 root root    981 Jan  5 11:30 unistartms
+21643278 -rwxr-xr-x 1 root root    427 Jan  5 11:30 unistopms
+21643292 -rwxr-xr-x 1 root root    580 Jan  5 11:30 values.xml
+
+/apps/unijob110/univiewer_server/casdlsup06/data/data:
+total 24
+21643273 drwxr-xr-x 2 root root 4096 Jan  5 11:54 .
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..
+21643293 -rw-rw-rw- 1 root root    0 Jan  5 11:54 jobtemplate.csv
+21643295 -rw-rw-rw- 1 root root    0 Jan  5 11:54 jobtemplatehistory.csv
+21643298 -rw-rw-rw- 1 root root    0 Jan  5 11:54 nodeview.csv
+21643299 -rw-rw-rw- 1 root root    0 Jan  5 11:54 nodeviewitem.csv
+21643297 -rw-rw-rw- 1 root root    0 Jan  5 11:54 runhistory.csv
+21643296 -rw-rw-rw- 1 root root    0 Jan  5 11:54 servicehistory.csv
+21643300 -rw-rw-rw- 1 root root   40 Jan  5 11:54 unicentral.db.log
+21643301 -rw-rw-rw- 1 root root  420 Jan  5 11:54 unicentral.db.properties
+21643510 -rw-rw-rw- 1 root root 2146 Jan  5 11:54 unicentral.db.script
+21643275 -rw-rw-rw- 1 root root   72 Jan  5 11:30 user.csv
+
+/apps/unijob110/univiewer_server/casdlsup06/data/install:
+total 12
+21643291 dr-xr-xr-x 2 root root 4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..
+21643279 -r--r--r-- 1 root root   85 Jan  5 11:30 history_installation.txt
+
+/apps/unijob110/univiewer_server/casdlsup06/data/jobtemplates:
+total 8
+21643288 drwxrwxrwx 2 root root 4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..
+
+/apps/unijob110/univiewer_server/casdlsup06/data/log:
+total 36
+21643289 drwxrwxrwx 2 root root  4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root  4096 Jan  8 16:08 ..
+21643303 -r--r--r-- 1 root root  2665 Jan  5 11:30 orsyp_installation.log
+21643302 -rw-rw-rw- 1 root root  1561 Jan  8 16:59 stderr.log
+21643274 -rw-rw-rw- 1 root root   649 Jan  8 16:59 stdout.log
+21643304 -rw-rw-rw- 1 root root 11571 Jan  8 16:59 uvserver.log
+21643306 -rw-rw-rw- 1 root root  2671 Jan  8 16:59 uxiotrns.log
+
+/apps/unijob110/univiewer_server/casdlsup06/data/temp:
+total 8
+21643290 drwxrwxrwx 2 root root 4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..

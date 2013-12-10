@@ -1,0 +1,3 @@
+#CMD# ypcat hosts
+#TSP#  20090108-165947 
+ypcat: can't get local yp domain: Local domain name not set

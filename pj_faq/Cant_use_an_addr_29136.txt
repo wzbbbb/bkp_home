@@ -1,0 +1,71 @@
+Sent:	Wednesday, March 13, 2002 10:39 AM
+To:	maintenance@orsyp.com
+Subject:	FAQ Request
+
+À:	maintenance@orsyp.com
+CheckBox10:	0
+CheckBox11:	0
+CheckBox12:	0
+CheckBox13:	0
+CheckBox14:	0
+CheckBox15:	0
+CheckBox16:	0
+CheckBox17:	0
+CheckBox18:	0
+CheckBox19:	0
+CheckBox20:	0
+CheckBox21:	0
+CheckBox22:	0
+CheckBox23:	-1
+CheckBox24:	0
+CheckBox26:	0
+CheckBox27:	0
+CheckBox28:	-1
+CheckBox3:	0
+CheckBox30:	0
+CheckBox31:	0
+CheckBox32:	0
+CheckBox33:	0
+CheckBox34:	0
+CheckBox36:	0
+CheckBox37:	0
+CheckBox38:	0
+CheckBox39:	0
+CheckBox4:	0
+CheckBox40:	0
+CheckBox41:	0
+CheckBox42:	0
+CheckBox44:	0
+CheckBox45:	0
+CheckBox46:	0
+CheckBox47:	0
+CheckBox48:	0
+CheckBox49:	0
+CheckBox5:	-1
+CheckBox50:	0
+CheckBox51:	0
+CheckBox52:	0
+CheckBox53:	0
+CheckBox54:	0
+CheckBox55:	-1
+CheckBox56:	0
+CheckBox57:	0
+CheckBox6:	0
+CheckBox8:	0
+CheckBox9:	0
+Easy:	OptionButton4
+Expla2:	The reason of this issue is that the host name could not be resolved to an IP address. 
+HowTo:	OptionButton11
+IncNum:	29136
+Objet:	FAQ Request
+Op2:	Define an IP address for the host in /etc/hosts, DNS, etc.
+
+Pre2:	Please check if an IP address is defined for the host name in /etc/hosts, DNS, NIS or other naming system.
+
+Product:	0
+Public:	OptionButton5
+ShtDes:	u_listen error : Errno syserror 126 : Cannot assign requested address
+Symp:	The IO servers could not be started, and the following error messages show in the universe.log:
+<< 2004-01-28 08:11:23 0009544/                /u_io_srv_main       /000000000 - Error opening IO server X service
+<< 2004-01-28 08:11:23 0009544/                /u_io_srv_main       /000000000 - u_listen error : Errno syserror 126 : Cannot assign requested address
+

@@ -1,0 +1,194 @@
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+finished is : yes
+Remove the file : /apps/du/FLS500/exp/data/u_fmsb50.dta_init
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+Please press "Enter" to purge these records or Control C to abort ...
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+#############################################################################
+#############################################################################
+The following are the diff result of the fmsb.
+Please press "Enter" to continue ...
+Restarting the Engines ...
+ Command : uxstr atm exp cycle=120 all
+
+Beginning of the execution
+Wed Mar 16 15:55:01 EST 2005
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+finished is : yes
+Remove the file : /apps/du/FLS500/exp/data/u_fmsb50.dta_init
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+Please press "Enter" to purge these records or Control C to abort ...
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+#############################################################################
+#############################################################################
+The following are the diff result of the fmsb.
+Please press "Enter" to continue ...
+Restarting the Engines ...
+ Command : uxstr atm exp cycle=120 all
+
+******Beginning of the execution******
+Wed Mar 16 15:59:01 EST 2005
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+      Machine   : DA_US_U_02 ,   Pid : 0           
+finished is : yes
+Remove the file : /apps/du/FLS500/exp/data/u_fmsb50.dta_init
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+Please press "Enter" to purge these records or Control C to abort ...
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+#############################################################################
+#############################################################################
+The following are the diff result of the fmsb.
+Please press "Enter" to continue ...
+Restarting the Engines ...
+ Command : uxstr atm exp cycle=120 all
+
+******Beginning of the execution******
+Wed Mar 16 16:32:06 EST 2005
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+******Beginning of the execution******
+Wed Mar 16 16:32:36 EST 2005
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+finished is : yes
+Remove the file : /apps/du/FLS500/exp/data/u_fmsb50.dta_init
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+Please press "Enter" to purge these records or Control C to abort ...
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+#############################################################################
+#############################################################################
+The following are the diff result of the fmsb.
+Please press "Enter" to continue ...
+Restarting the Engines ...
+ Command : uxstr atm exp cycle=120 all
+
+******Beginning of the execution******
+Wed Mar 16 16:34:57 EST 2005
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+Remove the file : /apps/du/FLS500/exp/data/u_fmsb50.dta_init
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+Please press "Enter" to purge these records or Control C to abort ...
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+#############################################################################
+#############################################################################
+The following are the diff result of the fmsb.
+Please press "Enter" to continue ...
+Restarting the Engines ...
+ Command : uxstr atm exp cycle=120 all
+
+******Beginning of the execution******
+Wed Mar 16 16:37:51 EST 2005
+Shutting down the engines ...
+ Command : uxend atm exp all
+
+Waiting for 30 seconds and check ...
+Remove the file : /apps/du/FLS500/exp/data/u_fmsb50.dta_init
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+Please press "Enter" to purge these records or Control C to abort ...
+------------
+Last NUMPROC : 7893080
+------------
+Start of purge
+------------
+End of purge
+------------
+#############################################################################
+#############################################################################
+The following are the diff result of the fmsb.
+Please press "Enter" to continue ...
+Restarting the Engines ...
+ Command : uxstr atm exp cycle=120 all
+

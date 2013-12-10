@@ -1,0 +1,26 @@
+#CMD# ps -efl | grep ux
+2401 R     root 14448     1  0 152 20 e00000013f5cc4c0  229                -  Jan 24  ?         0:05 ./uxioserv TST520 A frsdhpi2
+2401 R     root 14457     1  0 152 20 e00000013cd48dc0  326                -  Jan 24  ?         0:05 ./uxcdjsrv TST520 X frsdhpi2
+2401 R     root 14465     1  0 152 20 e00000013ebbf040  117                -  Jan 24  ?         0:04 ./uxbvssrv TST520 A frsdhpi2
+401 S     root  2409     1  0 154 20 e00000013d0bc4c0   20 e00000012e5df080  Jan 21  ?         0:52 ./uxech ADMLIN X frsdhpi2
+401 S     root  2311     1  0 154 20 e00000013cd8bdc0   20 e00000012e5df040  Jan 21  ?         0:00 ./uxcal ADMLIN X frsdhpi2
+401 S     root  2337     1  0 154 20 e00000013cf654c0   21 e00000012e5df080  Jan 21  ?         0:00 ./uxord ADMLIN X frsdhpi2
+401 S     root  2438     1  0 154 20 e00000013cdc4dc0   21 e00000012e5df080  Jan 21  ?         0:57 ./uxsur ADMLIN X frsdhpi2
+401 R     root  2282     1  0 152 20 e00000013cccd4c0  120                -  Jan 21  ?         0:17 ./uxcdjsrv ADMLIN A frsdhpi2
+401 R     root  2281     1  0 152 20 e00000013cddc940  128                -  Jan 21  ?         0:16 ./uxcdjsrv ADMLIN X frsdhpi2
+401 R     root  2264     1  0 152 20 e00000013ce6c4c0  389                -  Jan 21  ?         2:45 ./uxioserv ADMLIN X frsdhpi2
+401 R     root  2265     1  0 152 20 e00000013cddc700  101                -  Jan 21  ?         0:09 ./uxioserv ADMLIN A frsdhpi2
+401 S     root 14476     1  0 154 20 e00000013ef0f940   57 e00000012e5df040  Jan 24  ?         0:03 ./uxcal TST520 X frsdhpi2
+2401 R     root 14461     1  0 152 20 e00000013dddcb80  117                -  Jan 24  ?         0:05 ./uxbvssrv TST520 X frsdhpi2
+401 S     root  3000  2932  0 154 20 e00000013e0fadc0  811 e00000012e5df040  Jan 21  ?         0:04 netmon -P -k segRedux=true -k migrateHsrpVirtualIP=true
+2401 R     root 14446     1  0 152 20 e00000013eef1040  873                -  Jan 24  ?         1:05 ./uxioserv TST520 X frsdhpi2
+401 S     root 21061 15966  1 158 20 e00000013dddc280  165 e000000131c46000 16:41:09 pts/ta    0:00 /bin/ksh ./uxtracesapmgr
+401 R     root 13836     1  0 152 20 e00000013edffdc0  224                -  Jan 25  ?         0:10 ./uxcdjsrv FESTOP X sdeu1029
+2401 R     root 14456     1  0 152 20 e00000013ec45dc0  166                -  Jan 24  ?         0:04 ./uxcdjsrv TST520 A frsdhpi2
+401 S     root 13827     1  0 168 20 e00000013f5da700  281 9fffffff7f7e8000  Jan 25  ?         0:00 ./uxdqmsrv FESTOP X sdeu1029
+401 R     root 13826     1  0 152 20 e00000013f021940 1109                -  Jan 25  ?         1:55 ./uxioserv FESTOP X sdeu1029
+401 S     root 14536     1  0 154 20 e00000013dc98dc0   49 e00000012e5df080  Jan 24  ?         0:11 ./uxsur TST520 X frsdhpi2
+401 S     root 13833     1  0 168 20 e00000013eca3b80   23 9fffffff7f7e8000  Jan 25  ?         0:00 ./uxcmdsrv FESTOP X sdeu1029
+401 S     root 14487     1  0 154 20 e00000013eef1dc0   54 e00000012e5df080  Jan 24  ?         0:10 ./uxord TST520 X frsdhpi2
+401 S     root 14525     1  0 154 20 e00000013edff4c0   48 e00000012e5df040  Jan 24  ?         0:10 ./uxech TST520 X frsdhpi2
+401 S     root 21820 21061  0 154 20 e00000013f76d700   25 e00000013e9008b6 16:41:39 pts/ta    0:00 grep ux

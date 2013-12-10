@@ -1,0 +1,590 @@
+# @(#)B11.23_LRservices $Revision: 1.32.214.7 $ $Date: 97/09/10 14:50:42 $
+#
+# This file associates official service names and aliases with
+# the port number and protocol the services use.  
+#
+# Some of the services represented below are not supported on HP-UX.
+# They are provided solely as a reference.
+#
+# The form for each entry is:
+# <official service name>  <port number/protocol name>  <aliases>
+#
+# See the services(4) manual page for more information.
+# Note: The entries cannot be preceded by a blank space.
+#
+tcpmux         1/tcp                 # TCP port multiplexer (RFC 1078)
+echo           7/tcp                 # Echo
+echo           7/udp                 #
+discard        9/tcp  sink null      # Discard
+discard        9/udp  sink null      #
+systat        11/tcp  users          # Active Users
+daytime       13/tcp                 # Daytime
+daytime       13/udp                 #
+qotd          17/tcp  quote          # Quote of the Day
+chargen       19/tcp  ttytst source  # Character Generator
+chargen       19/udp  ttytst source  #
+ftp-data      20/tcp                 # File Transfer Protocol (Data)
+ftp           21/tcp                 # File Transfer Protocol (Control)
+telnet        23/tcp                 # Virtual Terminal Protocol
+smtp          25/tcp                 # Simple Mail Transfer Protocol
+time          37/tcp  timeserver     # Time
+time          37/udp  timeserver     #
+rlp           39/udp  resource       # Resource Location Protocol
+whois         43/tcp  nicname        # Who Is
+domain        53/tcp  nameserver     # Domain Name Service
+domain        53/udp  nameserver     #
+bootps        67/udp                 # Bootstrap Protocol Server
+bootpc        68/udp                 # Bootstrap Protocol Client
+tftp          69/udp                 # Trivial File Transfer Protocol
+rje           77/tcp  netrjs         # private RJE Service
+finger        79/tcp                 # Finger
+http          80/tcp  www            # World Wide Web HTTP
+http          80/udp  www            # World Wide Web HTTP
+link          87/tcp  ttylink        # private terminal link
+supdup        95/tcp                 #
+hostnames    101/tcp  hostname       # NIC Host Name Server
+tsap         102/tcp iso_tsap iso-tsap # ISO TSAP (part of ISODE)
+pop          109/tcp postoffice pop2 # Post Office Protocol - Version 2
+pop3         110/tcp  pop-3          # Post Office Protocol - Version 3
+portmap      111/tcp  sunrpc         # SUN Remote Procedure Call
+portmap      111/udp  sunrpc         #
+auth         113/tcp  authentication # Authentication Service
+sftp         115/tcp                 # Simple File Transfer Protocol
+uucp-path    117/tcp                 # UUCP Path Service
+nntp         119/tcp  readnews untp  # Network News Transfer Protocol
+ntp          123/udp                 # Network Time Protocol
+netbios_ns   137/tcp                 # NetBIOS Name Service
+netbios_ns   137/udp                 #
+netbios_dgm  138/tcp                 # NetBIOS Datagram Service
+netbios_dgm  138/udp                 #
+netbios_ssn  139/tcp                 # NetBIOS Session Service
+netbios_ssn  139/udp                 #
+bftp         152/tcp                 # Background File Transfer Protocol
+snmp         161/udp  snmpd          # Simple Network Management Protocol Agent
+snmp-trap    162/udp  trapd          # Simple Network Management Protocol Traps
+xdmcp        177/tcp                 # X Display Manager Control Protocol
+xdmcp        177/udp                 # X Display Manager Control Protocol
+bgp          179/tcp                 # Border Gateway Protocol
+# PV performance tool services entries
+pvserver     382/tcp    # PV server
+ovbbccb      383/tcp    # OV Communication Broker
+svrloc       427/tcp    # Server Location
+svrloc       427/udp    # Server Location
+# Ports for IPSec
+isakmp       500/tcp  isakmp         # IPSec Key Management (ISAKMP)
+isakmp       500/udp  isakmp         # IPSec Key Management (ISAKMP)
+#
+# UNIX services
+#
+biff         512/udp  comsat         # mail notification
+exec         512/tcp                 # remote execution, passwd required
+login        513/tcp                 # remote login
+who          513/udp  whod           # remote who and uptime
+shell        514/tcp  cmd            # remote command, no passwd used
+syslog       514/udp                 # remote system logging
+printer      515/tcp  spooler        # remote print spooling
+talk         517/udp                 # conversation
+ntalk        518/udp                 # new talk, conversation
+route        520/udp  router routed  # routing information protocol
+efs          520/tcp                 # Extended file name server
+timed        525/udp  timeserver     # remote clock synchronization
+tempo        526/tcp  newdate        #
+courier      530/tcp  rpc            #
+conference   531/tcp  chat           #
+netnews      532/tcp  readnews       #
+netwall      533/udp                 # Emergency broadcasting
+uucp         540/tcp  uucpd          # uucp daemon
+remotefs     556/tcp  rfs_server rfs # Brunhoff remote filesystem 
+ingreslock  1524/tcp                 # 
+#
+# Other HP-UX services
+#
+lansrm       570/udp                 # SRM/UX Server
+DAServer     987/tcp                 # SQL distributed access
+instl_boots 1067/udp                 # installation bootstrap protocol server
+instl_bootc 1068/udp                 # installation bootstrap protocol client
+nfsd-keepalive 1110/udp              # Client status info
+nfsd-status    1110/tcp              # Cluster status info
+msql        1111/tcp                 # Mini SQL database server
+rlb         1260/tcp                 # remote loopback diagnostic
+clvm-cfg    1476/tcp                 # HA LVM configuration
+diagmond    1508/tcp                 # Diagnostic System Manager
+nft         1536/tcp                 # NS network file transfer
+sna-cs      1553/tcp                 # SNAplus client/server
+sna-cs      1553/udp                 # SNAplus client/server
+ncpm-pm     1591/udp                 # NCPM Policy Manager
+ncpm-hip    1683/udp                 # NCPM Host Information Provider
+cvmon       1686/udp                 # Clusterview cvmon-cvmap communication
+registrar   1712/tcp                 # resource monitoring service
+registrar   1712/udp                 # resource monitoring service
+ncpm-ft     1744/udp                 # NCPM File Transfer
+psmond      1788/tcp                 # Predictive Monitor
+psmond      1788/udp                 # Hardware Predictive Monitor
+pmlockd     1889/tcp                 # SynerVision locking daemon
+pmlockd     1889/udp                 #
+nfsd        2049/udp                 # NFS remote file system
+nfsd        2049/tcp                 # NFS remote file system
+netdist     2106/tcp                 # update(1m) network distribution service
+cvmmon      2300/tcp                 # ClusterView Management cluster support
+hpidsadmin  2984/tcp              # HP-UX Host Intrusion Detection System admin
+hpidsadmin  2984/udp              # HP-UX Host Intrusion Detection System admin
+hpidsagent  2985/tcp              # HP-UX Host Intrusion Detection System agent
+hpidsagent  2985/udp              # HP-UX Host Intrusion Detection System agent
+hp-clic     3384/tcp                 #Cluster Management Services
+hp-clic     3384/udp                 #Hardware Management
+rfa         4672/tcp                 # NS remote file access
+veesm       4789/tcp                 # HP VEE service manager
+hacl-hb     5300/tcp                 # High Availability (HA) Cluster heartbeat
+hacl-gs     5301/tcp                 # HA Cluster General Services
+hacl-cfg    5302/tcp                 # HA Cluster TCP configuration
+hacl-cfg    5302/udp                 # HA Cluster UDP configuration
+hacl-probe  5303/tcp                 # HA Cluster TCP probe
+hacl-probe  5303/udp                 # HA Cluster UDP probe
+hacl-local  5304/tcp                 # HA Cluster Commands
+hacl-test   5305/tcp                 # HA Cluster Test
+hacl-dlm    5408/tcp                 # HA Cluster distributed lock manager
+omni        5555/tcp                 # HP OpenView OmniBack
+lanmgrx.osB 5696/tcp                 # LAN Manager/X for B.00.00 OfficeShare
+hcserver    5710/tcp                 # HP Cooperative Services
+wbem-http   5988/tcp                 # Web-Based Enterprise Management HTTP
+wbem-http   5988/udp                 # Web-Based Enterprise Management HTTP
+wbem-https  5989/tcp                 # Web-Based Enterprise Management HTTPS
+wbem-https  5989/udp                 # Web-Based Enterprise Management HTTPS
+grmd        5999/tcp                 # graphics resource manager
+spc         6111/tcp                 # sub-process control
+desmevt     6868/tcp                 # DE/ Services Monitor, Event Service
+pdclientd   6874/tcp                 # Palladium print client daemon
+pdeventd    6875/tcp                 # Palladium print event daemon
+iasqlsvr    7489/tcp                 # Information Access
+recserv     7815/tcp                 # SharedX Receiver Service
+p7_c33upd   8545/tcp    #TSD acceSS7 configuration update RPC server
+p7_c33      8546/tcp    #TSD acceSS7 configuration RPC server
+p7_c32      8547/tcp    #TSD acceSS7 communications status RPC server
+p7_c35      8548/tcp    #TSD acceSS7 communications configuration RPC server
+p7_g06      8549/tcp    #TSD acceSS7 application version registration RPC server
+p7_e30      8550/tcp    #TSD acceSS7 event manager RPC server
+comms_normal     8551/tcp    # acceSS7 normal priority messages
+comms_high       8552/tcp    # acceSS7 high priority messages
+c34_main         8553/udp    # acceSS7 Inter-Server messages
+ftp-ftam    8868/tcp                 # FTP->FTAM Gateway
+mcsemon     9999/tcp                 # MC/System Environment monitor
+console     10000/tcp                # MC/System Environment console multiplexor
+actcp       31766/tcp                # ACT Call Processing Server
+SrpSiteDaemon    6178/tcp    # acceSS7 Statistics Remote Site query daemon
+SrpCentralDaemon 6179/tcp    # acceSS7 Statistics Central Server query daemon
+erdb_svr        35100/tcp    # acceSS7 Statistics Central Database
+erdb_bck        35101/tcp    # acceSS7 Statistics Database Backup
+hp-sco          19410/tcp    # HP SCO port number
+hp-sco          19410/udp    # HP SCO port number
+hp-sca          19411/tcp    # HP SCA port number
+hp-sca          19411/udp    # HP SCA port number
+#
+# Kerberos (Project Athena/MIT) services
+#
+kerberos 	88/udp 	kdc 	# Kerberos V5 kdc
+kerberos 	88/tcp 	kdc 	# Kerberos V5 kdc
+klogin 		543/tcp 	# Kerberos rlogin -kfall
+kshell 		544/tcp cmd 	# Kerberos remote shell
+kerberos-adm 	749/tcp 	# Kerberos 5 admin/changepw
+kerberos-adm 	749/udp 	# Kerberos 5 admin/changepw
+krb5_prop 	754/tcp 	# Kerberos slave propagation
+kerberos-cpw 	464/udp 	# Kerberos Password Change protocol
+kerberos-cpw 	464/tcp 	# Kerberos Password Change protocol
+# The X10_LI server for each display listens on ports 5800 + display number.
+# The X10_MI server for each display listens on ports 5900 + display number.
+# The X11 server for each display listens on ports 6000 + display number.
+# The X11 font server listens on port 7000.
+# Do NOT associate other services with these ports.
+# Refer to the X documentation for details.
+hpoms-ci-lstn   5403/tcp	#SAP spooler support
+hpoms-dps-lstn  5404/tcp	#SAP spooler support
+samd            3275/tcp        # sam daemon
+#
+dtspc           6112/tcp        #subprocess control
+#
+swat      901/tcp	# SAMBA Web-based Admin Tool
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+TST512_IO_X     25700/tcp             # Io server area X
+TST512_IO_S     25701/tcp             # Io server area S 
+TST512_IO_I     25702/tcp             # Io server area I
+TST512_IO_A     25703/tcp             # Io server area A
+TST512_CMD      25704/tcp             # Command server
+TST512_CDJ_X    25711/tcp             # Collect dispatch job area X
+TST512_CDJ_S    25712/tcp             # Collect dispatch job area S
+TST512_CDJ_I    25713/tcp             # Collect dispatch job area I
+TST512_CDJ_A    25714/tcp             # Collect dispatch job area A
+# 
+# 
+#   ICS INSTALLATION 
+#   Line to be added to /etc/services
+ICS       9998/tcp          # ICS (Interconnection Server)
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+SUP500_IO_X     25500/tcp             # Io server area X
+SUP500_IO_S     25501/tcp             # Io server area S 
+SUP500_IO_I     25502/tcp             # Io server area I
+SUP500_IO_A     25503/tcp             # Io server area A
+SUP500_CMD      25504/tcp             # Command server
+SUP500_PMP_X    25505/tcp             # Graphical server monitor area X
+SUP500_PMP_S    25506/tcp             # Graphical server monitor area S 
+SUP500_PMP_I    25507/tcp             # Graphical server monitor area I
+SUP500_PMP_A    25508/tcp             # Graphical server monitor area A
+SUP500_CDJ_X    25511/tcp             # Collect dispatch job area X
+SUP500_CDJ_S    25512/tcp             # Collect dispatch job area S
+SUP500_CDJ_I    25513/tcp             # Collect dispatch job area I
+SUP500_CDJ_A    25514/tcp             # Collect dispatch job area A
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+PMG512_IO_X     51200/tcp             # Io server area X
+PMG512_IO_S     51201/tcp             # Io server area S 
+PMG512_IO_I     51202/tcp             # Io server area I
+PMG512_IO_A     51203/tcp             # Io server area A
+PMG512_CMD      51204/tcp             # Command server
+PMG512_CDJ_X    51211/tcp             # Collect dispatch job area X
+PMG512_CDJ_S    51212/tcp             # Collect dispatch job area S
+PMG512_CDJ_I    51213/tcp             # Collect dispatch job area I
+PMG512_CDJ_A    51214/tcp             # Collect dispatch job area A
+PMG512_DQM      51215/tcp             #Serveur DQM de Production
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+PMGT00_IO_X     50000/tcp             # Io server area X
+PMGT00_IO_S     50001/tcp             # Io server area S 
+PMGT00_IO_I     50002/tcp             # Io server area I
+PMGT00_IO_A     50003/tcp             # Io server area A
+PMGT00_CMD      50004/tcp             # Command server
+PMGT00_CDJ_X    50011/tcp             # Collect dispatch job area X
+PMGT00_CDJ_S    50012/tcp             # Collect dispatch job area S
+PMGT00_CDJ_I    50013/tcp             # Collect dispatch job area I
+PMGT00_CDJ_A    50014/tcp             # Collect dispatch job area A
+PMGT00_DQM_D    50015/tcp             # Serveur DQM de Developpement(A,I)
+PMGT00_DQM_E    50016/tcp             # Serveur DQM de Exploitation( S,X)
+#
+# SAP Job Control Server for UNIV50/frsdhpi2
+_SAP42_           13250/tcp
+_SAP40_           13252/tcp
+#
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+PMG522_IO_X     52200/tcp             # Io server area X
+PMG522_IO_S     52201/tcp             # Io server area S 
+PMG522_IO_I     52202/tcp             # Io server area I
+PMG522_IO_A     52203/tcp             # Io server area A
+PMG522_CMD      52204/tcp             # Command server
+PMG522_CMD_X    52204/tcp             # Command server
+PMG522_CMD_S    52204/tcp             # Command server
+PMG522_CMD_I    52204/tcp             # Command server
+PMG522_CMD_A    52204/tcp             # Command server
+PMG522_BVS_X    52205/tcp             # BVS server area X
+PMG522_BVS_S    52206/tcp             # BVS server area S
+PMG522_BVS_I    52207/tcp             # BVS server area I
+PMG522_BVS_A    52208/tcp             # BVS server area A
+PMG522_CDJ_X    52211/tcp            # Collect dispatch job area X
+PMG522_CDJ_S    52212/tcp            # Collect dispatch job area S
+PMG522_CDJ_I    52213/tcp            # Collect dispatch job area I
+PMG522_CDJ_A    52214/tcp            # Collect dispatch job area A
+# 
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+TST522_IO_X     28600/tcp             # Io server area X
+TST522_IO_S     28601/tcp             # Io server area S 
+TST522_IO_I     28602/tcp             # Io server area I
+TST522_IO_A     28603/tcp             # Io server area A
+TST522_CMD      28604/tcp             # Command server
+TST522_CMD_X    28604/tcp             # Command server
+TST522_CMD_S    28604/tcp             # Command server
+TST522_CMD_I    28604/tcp             # Command server
+TST522_CMD_A    28604/tcp             # Command server
+TST522_BVS_X    28605/tcp             # BVS server area X
+TST522_BVS_S    28606/tcp             # BVS server area S
+TST522_BVS_I    28607/tcp             # BVS server area I
+TST522_BVS_A    28608/tcp             # BVS server area A
+TST522_CDJ_X    28611/tcp            # Collect dispatch job area X
+TST522_CDJ_S    28612/tcp            # Collect dispatch job area S
+TST522_CDJ_I    28613/tcp            # Collect dispatch job area I
+TST522_CDJ_A    28614/tcp            # Collect dispatch job area A
+#Added by sbu to communicate with mgr4java
+TST522_JEE_X    23866/tcp
+# 
+SUP512_IO      24500/tcp 
+SUP512_IO_X    24500/tcp 
+SUP512_IO_S    24501/tcp  
+SUP512_IO_I    24502/tcp  
+SUP512_IO_A    24503/tcp  
+SUP512_CMD     24504/tcp  
+SUP512_CMD_X   24504/tcp  
+SUP512_CMD_S   24504/tcp  
+SUP512_CMD_I   24504/tcp  
+SUP512_CMD_A   24504/tcp  
+SUP512_BVS_X   24505/tcp  
+SUP512_BVS_S   24506/tcp  
+SUP512_BVS_I   24507/tcp  
+SUP512_BVS_A   24508/tcp  
+SUP512_CDJ_X   24511/tcp  
+SUP512_CDJ_S   24512/tcp  
+SUP512_CDJ_I   24513/tcp  
+SUP512_CDJ_A   24514/tcp  
+SUP512_DQM_X          24515/tcp  
+SUP512_DQM_S          24515/tcp  
+SUP512_DQM_I          24515/tcp  
+SUP512_DQM_A          24515/tcp  
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+QCL523_IO_X     45523/tcp             # Io server area X
+QCL523_IO_S     45524/tcp             # Io server area S 
+QCL523_IO_I     45525/tcp             # Io server area I
+QCL523_IO_A     45526/tcp             # Io server area A
+QCL523_CMD      45527/tcp             # Command server
+QCL523_CMD_X    45527/tcp             # Command server
+QCL523_CMD_S    45527/tcp             # Command server
+QCL523_CMD_I    45527/tcp             # Command server
+QCL523_CMD_A    45527/tcp             # Command server
+QCL523_BVS_X    45528/tcp             # BVS server area X
+QCL523_BVS_S    45529/tcp             # BVS server area S
+QCL523_BVS_I    45530/tcp             # BVS server area I
+QCL523_BVS_A    45531/tcp             # BVS server area A
+QCL523_CDJ_X    45534/tcp            # Collect dispatch job area X
+QCL523_CDJ_S    45535/tcp            # Collect dispatch job area S
+QCL523_CDJ_I    45536/tcp            # Collect dispatch job area I
+QCL523_CDJ_A    45537/tcp            # Collect dispatch job area A
+
+# 
+#   DQM INSTALLATION 
+#   Lines to be added to /etc/services
+
+QCL523_DQM_X    45538/tcp             #Serveur DQM de Production
+QCL523_DQM_S    45538/tcp             #Serveur DQM de Production
+QCL523_DQM_I    45538/tcp             #Serveur DQM de Production
+QCL523_DQM_A    45538/tcp             #Serveur DQM de Production
+ 
+#QCL523_JEE_X    9999/tcp
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+TST511_IO_X     24440/tcp             # Io server area X
+TST511_IO_S     24441/tcp             # Io server area S 
+TST511_IO_I     24442/tcp             # Io server area I
+TST511_IO_A     24443/tcp             # Io server area A
+TST511_CMD      24444/tcp             # Command server
+TST511_CDJ_X    24451/tcp             # Collect dispatch job area X
+TST511_CDJ_S    24452/tcp             # Collect dispatch job area S
+TST511_CDJ_I    24453/tcp             # Collect dispatch job area I
+TST511_CDJ_A    24454/tcp             # Collect dispatch job area A
+TST511_DQM       24455/tcp             #Serveur DQM de Production
+#
+# Service name for SAP RFC Bridge instance
+#TST511_FRSDHPI2_RFC_          13255/tcp    # SAP RFC Bridge
+#
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+PMG523_IO_X     52300/tcp             # Io server area X
+PMG523_IO_S     52301/tcp             # Io server area S 
+PMG523_IO_I     52302/tcp             # Io server area I
+PMG523_IO_A     52303/tcp             # Io server area A
+PMG523_CMD      52304/tcp             # Command server
+PMG523_CMD_X    52304/tcp             # Command server
+PMG523_CMD_S    52304/tcp             # Command server
+PMG523_CMD_I    52304/tcp             # Command server
+PMG523_CMD_A    52304/tcp             # Command server
+PMG523_BVS_X    52305/tcp             # BVS server area X
+PMG523_BVS_S    52306/tcp             # BVS server area S
+PMG523_BVS_I    52307/tcp             # BVS server area I
+PMG523_BVS_A    52308/tcp             # BVS server area A
+PMG523_CDJ_X    52311/tcp            # Collect dispatch job area X
+PMG523_CDJ_S    52312/tcp            # Collect dispatch job area S
+PMG523_CDJ_I    52313/tcp            # Collect dispatch job area I
+PMG523_CDJ_A    52314/tcp            # Collect dispatch job area A
+# 
+#   DQM INSTALLATION 
+#   Lines to be added to /etc/services
+PMG523_DQM_X    52315/tcp             #Serveur DQM de Production
+PMG523_DQM_S    52315/tcp             #Serveur DQM de Production
+PMG523_DQM_I    52315/tcp             #Serveur DQM de Production
+PMG523_DQM_A    52315/tcp             #Serveur DQM de Production
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+ADMLIN_IO_X     31980/tcp             # Io server area X
+ADMLIN_IO_S     31981/tcp             # Io server area S 
+ADMLIN_IO_I     31982/tcp             # Io server area I
+ADMLIN_IO_A     31983/tcp             # Io server area A
+ADMLIN_CMD      31984/tcp             # Command server
+ADMLIN_CDJ_X    31991/tcp             # Collect dispatch job area X
+ADMLIN_CDJ_S    31992/tcp             # Collect dispatch job area S
+ADMLIN_CDJ_I    31993/tcp             # Collect dispatch job area I
+ADMLIN_CDJ_A    31994/tcp             # Collect dispatch job area A
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+TST513_IO_X     30000/tcp             # Io server area X
+TST513_IO_S     30001/tcp             # Io server area S 
+TST513_IO_I     30002/tcp             # Io server area I
+TST513_IO_A     30003/tcp             # Io server area A
+TST513_CMD      30004/tcp             # Command server
+TST513_CDJ_X    30011/tcp             # Collect dispatch job area X
+TST513_CDJ_S    30012/tcp             # Collect dispatch job area S
+TST513_CDJ_I    30013/tcp             # Collect dispatch job area I
+TST513_CDJ_A    30014/tcp             # Collect dispatch job area A
+
+ 
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+TST520_IO_X     24520/tcp             # Io server area X
+TST520_IO_S     24521/tcp             # Io server area S 
+TST520_IO_I     24522/tcp             # Io server area I
+TST520_IO_A     24523/tcp             # Io server area A
+TST520_CMD      24524/tcp             # Command server
+TST520_CMD_X    24524/tcp             # Command server
+TST520_CMD_S    24524/tcp             # Command server
+TST520_CMD_I    24524/tcp             # Command server
+TST520_CMD_A    24524/tcp             # Command server
+TST520_BVS_X    24525/tcp             # BVS server area X
+TST520_BVS_S    24526/tcp             # BVS server area S
+TST520_BVS_I    24527/tcp             # BVS server area I
+TST520_BVS_A    24528/tcp             # BVS server area A
+TST520_CDJ_X    24531/tcp            # Collect dispatch job area X
+TST520_CDJ_S    24532/tcp            # Collect dispatch job area S
+TST520_CDJ_I    24533/tcp            # Collect dispatch job area I
+TST520_CDJ_A    24534/tcp            # Collect dispatch job area A
+
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+QCL513_IO_X     48600/tcp             # Io server area X
+QCL513_IO_S     48601/tcp             # Io server area S
+QCL513_IO_I     48602/tcp             # Io server area I
+QCL513_IO_A     48603/tcp             # Io server area A
+QCL513_CMD      48604/tcp             # Command server
+QCL513_CDJ_X    48611/tcp             # Collect dispatch job area X
+QCL513_CDJ_S    48612/tcp             # Collect dispatch job area S
+QCL513_CDJ_I    48613/tcp             # Collect dispatch job area I
+QCL513_CDJ_A    48614/tcp             # Collect dispatch job area A
+
+MNT510_IO_X     23750/tcp             # Io server area X
+ 
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+QCL500_IO_X     17000/tcp             # Io server area X
+QCL500_IO_S     17001/tcp             # Io server area S 
+QCL500_IO_I     17002/tcp             # Io server area I
+QCL500_IO_A     17003/tcp             # Io server area A
+QCL500_CMD      17004/tcp             # Command server
+QCL500_PMP_X    17005/tcp             # Graphical server monitor area X
+QCL500_PMP_S    17006/tcp             # Graphical server monitor area S 
+QCL500_PMP_I    17007/tcp             # Graphical server monitor area I
+QCL500_PMP_A    17008/tcp             # Graphical server monitor area A
+QCL500_CDJ_X    17011/tcp             # Collect dispatch job area X
+QCL500_CDJ_S    17012/tcp             # Collect dispatch job area S
+QCL500_CDJ_I    17013/tcp             # Collect dispatch job area I
+QCL500_CDJ_A    17014/tcp             # Collect dispatch job area A
+# 
+#   DQM INSTALLATION 
+#   Lines to be added to /etc/services
+DQM       48615/tcp             #Serveur DQM de Production
+ovas		7510/tcp	# HP OpenView Application Server
+pd_http		8068/tcp	# OpenView PD Server
+pd_tcp		8069/tcp	# OpenView PD Server
+netpath_http	8067/tcp	# OpenView PD Netpath Probe
+netpath_tcp	8066/tcp	# OpenView PD Netpath Probe
+listener 1521/tcp  # Oracle listener
+ovsessionmgr	2389/tcp	# OpenView Web Session Manager
+ovwdb		2447/tcp	# OpenView Object Database daemon
+ovuispmd	7777/tcp	# OpenView UI Services daemon
+ovalarmsrv	2953/tcp	# OpenView Alarm Server daemon listener port
+ovalarmsrv_cmd	2954/tcp	# OpenView Alarm Server daemon command port
+pmdmgr		696/udp	# OpenView Postmaster Manager
+ovembeddb	2690/tcp	# OpenView Embedded DW Database
+ovhttp		3443/tcp	# OpenView Web Server
+ovtopmd		2532/tcp	# OpenView IP Topology daemon
+netwkpathengine	3209/tcp	# HP OpenView Network Path Engine Server
+ovbus		7501/tcp	# HP OpenView Bus Daemon
+ovbus		7501/udp	# HP OpenView Bus Daemon
+ito-e-gui	2531/tcp	# OpenView Operations Java Console
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+FESTOP_IO_X     10650/tcp             # Io server area X
+FESTOP_IO_S     10651/tcp             # Io server area S 
+FESTOP_IO_I     10652/tcp             # Io server area I
+FESTOP_IO_A     10653/tcp             # Io server area A
+FESTOP_CMD      10654/tcp             # Command server
+FESTOP_CDJ_X    10661/tcp             # Collect dispatch job area X
+FESTOP_CDJ_S    10662/tcp             # Collect dispatch job area S
+FESTOP_CDJ_I    10663/tcp             # Collect dispatch job area I
+FESTOP_CDJ_A    10664/tcp             # Collect dispatch job area A
+
+ 
+# 
+#   DQM INSTALLATION 
+#   Lines to be added to /etc/services
+
+DQM       10665/tcp             #Serveur DQM de Production
+ 
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+QC532B_IO_X     15665/tcp             # Io server area X
+QC532B_IO_S     15666/tcp             # Io server area S 
+QC532B_IO_I     15667/tcp             # Io server area I
+QC532B_IO_A     15668/tcp             # Io server area A
+QC532B_CMD      15669/tcp             # Command server
+QC532B_CMD_X    15669/tcp             # Command server
+QC532B_CMD_S    15669/tcp             # Command server
+QC532B_CMD_I    15669/tcp             # Command server
+QC532B_CMD_A    15669/tcp             # Command server
+QC532B_BVS_X    15670/tcp             # BVS server area X
+QC532B_BVS_S    15671/tcp             # BVS server area S
+QC532B_BVS_I    15672/tcp             # BVS server area I
+QC532B_BVS_A    15673/tcp             # BVS server area A
+QC532B_CDJ_X    15676/tcp            # Collect dispatch job area X
+QC532B_CDJ_S    15677/tcp            # Collect dispatch job area S
+QC532B_CDJ_I    15678/tcp            # Collect dispatch job area I
+QC532B_CDJ_A    15679/tcp            # Collect dispatch job area A
+
+# 
+#   UNIVERSE INSTALLATION 
+#   Lines to be added to /etc/services
+# 
+QC532A_IO_X     16665/tcp             # Io server area X
+QC532A_IO_S     16666/tcp             # Io server area S 
+QC532A_IO_I     16667/tcp             # Io server area I
+QC532A_IO_A     16668/tcp             # Io server area A
+QC532A_CMD      16669/tcp             # Command server
+QC532A_CMD_X    16669/tcp             # Command server
+QC532A_CMD_S    16669/tcp             # Command server
+QC532A_CMD_I    16669/tcp             # Command server
+QC532A_CMD_A    16669/tcp             # Command server
+QC532A_BVS_X    16670/tcp             # BVS server area X
+QC532A_BVS_S    16671/tcp             # BVS server area S
+QC532A_BVS_I    16672/tcp             # BVS server area I
+QC532A_BVS_A    16673/tcp             # BVS server area A
+QC532A_CDJ_X    16676/tcp            # Collect dispatch job area X
+QC532A_CDJ_S    16677/tcp            # Collect dispatch job area S
+QC532A_CDJ_I    16678/tcp            # Collect dispatch job area I
+QC532A_CDJ_A    16679/tcp            # Collect dispatch job area A
+

@@ -1,0 +1,37 @@
+
+Key words:
+
+	GJM, Graphic Job Monitor, stop execution, kill 
+
+Subject:
+
+	How Graphic Job Monitor stopps an execution?
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+	1. the GJM will contact the IO server on the server side.
+
+	2. the launcher (main process) will kill the job, or the DQM server (main process) will kill the job if DQM is used.
+
+	3. the job is killed with a SIGTERM signal.
+
+	4. the kill is launched on the group process of the job, that is the UXORD/DQM process associated to the job ; it is not launched on the running UPROC script.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: internal
+
+Experties level: expert
+

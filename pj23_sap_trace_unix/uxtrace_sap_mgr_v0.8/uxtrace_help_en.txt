@@ -1,0 +1,33 @@
+-- How to implement the version 0.8 of the unix uxtracesapmgr procedure
+
+-.- Transfer
+Transfer the uxtrace_sap_mgr_v0.8.taz to the mgr directory ($UXMGR) of your SAP manager. (this transfer must be done in binary mode).
+
+-.- Go to the mgr directory of your SAP manager:
+cd zzz/mgr
+
+-.- Uncompress the taz ball :
+mv ./uxtrace_sap_mgr_v0.8.taz ./uxtrace_sap_mgr_v0.8.tar.Z
+uncompress  ./uxtrace_sap_mgr_v0.8.tar.Z
+tar -xvf ./uxtrace_sap_mgr_v0.8.tar
+
+-.- Files generated
+This procedure will create or replace the following files of your mgr
+directory :
+uxtracesapmgr uxtracer_help_en.txt uxtrace_help_fr.txt
+
+-.- Sending the result
+To prevent the uxtrace result from being removed by antiviruses or email firewall, Orsyp recommends the following 2 alternatives: 
+
+* upload the uxtrace result on your Orsyp ftp directory
+* send the uxtrace result with "yousendit" (http://www.yousendit.com) to suppport@orsyp.com
+
+-- How to use the uxtracesapmgr procedure (0.8)
+Launch the following command without any parameters: 
+cd zzz/mgr
+./uxtracesapmgr
+
+-.- Prerequisites
+	It is recommended to copy the uxtracesapmgr procedure into the zzz/mgr directory of the SAP manager you want to trace.
+	If the trace procedure is not located there, the SAP manager environment must be loaded.
+

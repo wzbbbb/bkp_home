@@ -1,0 +1,65 @@
+
+Key words: recover, uxlst ctl 
+
+Subject: How to use recover as a uxlst ctl option
+
+Prerequistites: V5.12 + FX24380
+
+Application validation tests:
+
+Explanation:
+
+The recover option has to be used together with the "status=A". It only used to show the ABORTED status of a recovered job. For example, if a job has been relaunched and completed, the following command will not show it: 
+
+# uxlst ctl exp full status=A upr=C50719-1
+ Command : uxlst ctl exp full status=A upr=C50719-1
+
+SESSION     UPROC      MU         STATE                 START      AT   END        AT      MODIFICATIONS          NODE       QUEUE                           JOB    PRI SESSNO  PROCNO  PDATE      USERNAME     VSES VUPR STP NSEQ
+--------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+It will be displayed with the recover option:
+
+# uxlst ctl exp full status=A upr=C50719-1 recover
+ Command : uxlst ctl exp full status=A upr=C50719-1 recover
+
+SESSION     UPROC      MU         STATE                 START      AT   END        AT      MODIFICATIONS          NODE       QUEUE                           JOB    PRI SESSNO  PROCNO  PDATE      USERNAME     VSES VUPR STP NSEQ
+--------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            C50719-1   DA_US_U_05 ABORTED               06/14/2006 0952 06/14/2006 0952 Operator     RECOVERED    DA_US_U_05 SYS_BATCH                       1931   100         0001879 06/14/2006 univa        000  000  00  0001840
+#
+
+
+# uxlst ctl exp full upr=C50719-1
+ Command : uxlst ctl exp full upr=C50719-1 status=*
+
+SESSION     UPROC      MU         STATE                 START      AT   END        AT      MODIFICATIONS          NODE       QUEUE                           JOB    PRI SESSNO  PROCNO  PDATE      USERNAME     VSES VUPR STP NSEQ
+--------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            C50719-1   DA_US_U_05 ABORTED               06/14/2006 0952 06/14/2006 0952 Operator     RECOVERED    DA_US_U_05 SYS_BATCH                       1931   100         0001879 06/14/2006 univa        000  000  00  0001840
+            C50719-1   DA_US_U_05 COMPLETED             06/14/2006 0952 06/14/2006 0952                           DA_US_U_05 SYS_BATCH                       1932   100         0001880 06/14/2006 univa        000  000  00  0001840
+#
+
+
+
+Here is the extraction from the readme file.
+
+##################################################################
+27771 : All systems :
+The uxlst ctl command accepts now the RECOVER qualifier. The use of this 
+qualifier when the STATUS qualifier is valorized to A allows to display 
+RECOVERED jobs.
+Problem corrected.
+##################################################################
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

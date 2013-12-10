@@ -1,0 +1,4 @@
+#REM# RECURSIV LISTING OF THE UXLIB DIRECTORY (Sorted by name)
+#CMD# ls -lRai /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP#  20090108-165947 
+ls: /apps/unijob110/univiewer_server/casdlsup06/app/lib: No such file or directory

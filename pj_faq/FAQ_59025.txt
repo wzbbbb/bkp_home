@@ -1,0 +1,33 @@
+
+Key words: Exit code 64 in history trace, job abort without job log
+
+Subject: One reason for job abort with exit code 64 
+
+Prerequisites:
+
+Application validation tests:
+
+Job aborted without job log, with "Exit code :  64" in history trace; no related message in the universe.log. There could be some messages in the DQM log.
+
+
+Explanation:
+
+In this case, the issue is caused by their automatic procedure that runs at the time. The procedure update the /etc/password file, which could make the DQM su command fail.
+The "Exit code :  64" is not an unique error message for this issue. However, it can be documented together with other symptoms, like no job log created, the exact history trace output and the exact time when it happens.
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: internal
+
+Experties level:
+

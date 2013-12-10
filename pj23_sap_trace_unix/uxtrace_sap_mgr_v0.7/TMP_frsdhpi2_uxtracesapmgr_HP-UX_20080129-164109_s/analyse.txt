@@ -1,0 +1,87 @@
+#CMD# uname -as
+HP-UX frsdhpi2 B.11.23 U ia64 2560335236 unlimited-user license
+
+#CMD# hostname
+frsdhpi2
+
+#CMD# /apps/DUSAP42//exec/uxversion.ksh
+PRODUCT:
+Dollar Universe Manager for SAP Solutions
+
+COMPONENT:
+SAP Job Control Server
+
+VERSION:
+4.2
+
+KIT BUILD:
+08/31/05 14:51:19
+
+INSTALLATION DATE:
+11-06-2006 21:19:13
+UXRIGHT 20061106212021 (LOW security level)
+Start of update 24400 installation (20061106212326)
+End of update 24400 installation (20061106212326)
+
+#CMD# ls -l /etc/UNIVERSE_SAPJCS*
+lrwxrwxrwx   1 root       sys             18 Nov  6  2006 /etc/UNIVERSE_SAPJCS_TST511_frsdhpi2 -> /apps/DUSAP42//mgr
+lrwxrwxrwx   1 root       sys             19 Apr  5  2006 /etc/UNIVERSE_SAPJCS_UNIV50_frsdhpi2 -> /SocieteSupport/mgr
+
+#CMD# df -k
+/dlp01                 (frsdlfd02.orsypgroup.com:/dsk4/dlp01) : 67108112 total allocated Kb
+                                                  17312248 free allocated Kb
+                                                  49795864 used allocated Kb
+                                                        74 % allocation used
+/dlc01                 (frsdlfd02.orsypgroup.com:/dsk4/dlc01) : 67108112 total allocated Kb
+                                                  17312248 free allocated Kb
+                                                  49795864 used allocated Kb
+                                                        74 % allocation used
+/dld04                 (frsdlfd01.orsypgroup.com:/dsk2/dld04) : 64787344 total allocated Kb
+                                                  16844568 free allocated Kb
+                                                  47942776 used allocated Kb
+                                                        74 % allocation used
+/dld06                 (frsdlfd01.orsypgroup.com:/dsk1/dld06) : 31940168 total allocated Kb
+                                                  21574880 free allocated Kb
+                                                  10365288 used allocated Kb
+                                                        32 % allocation used
+/dld07                 (frsdlfd01.orsypgroup.com:/dsk2/dld07) : 64787344 total allocated Kb
+                                                  16844568 free allocated Kb
+                                                  47942776 used allocated Kb
+                                                        74 % allocation used
+/home                  (/dev/vg00/lvol4       ) :  1041352 total allocated Kb
+                                                    926336 free allocated Kb
+                                                    115016 used allocated Kb
+                                                        11 % allocation used
+/opt                   (/dev/vg00/lvol5       ) :  6288928 total allocated Kb
+                                                   1536584 free allocated Kb
+                                                   4752344 used allocated Kb
+                                                        75 % allocation used
+/orsyp                 (/dev/vg00/lvol6       ) : 40084422 total allocated Kb
+                                                  27997400 free allocated Kb
+                                                  12087022 used allocated Kb
+                                                        30 % allocation used
+/orsyp2                (/dev/vg01/lvol2       ) : 62602687 total allocated Kb
+                                                  41851991 free allocated Kb
+                                                  20750696 used allocated Kb
+                                                        33 % allocation used
+/tmp                   (/dev/vg00/lvol7       ) :  1561920 total allocated Kb
+                                                   1523688 free allocated Kb
+                                                     38232 used allocated Kb
+                                                         2 % allocation used
+/usr                   (/dev/vg00/lvol8       ) :  6262904 total allocated Kb
+                                                   3635552 free allocated Kb
+                                                   2627352 used allocated Kb
+                                                        41 % allocation used
+/var                   (/dev/vg00/lvol9       ) :  8257584 total allocated Kb
+                                                   6244816 free allocated Kb
+                                                   2012768 used allocated Kb
+                                                        24 % allocation used
+/stand                 (/dev/vg00/lvol1       ) :   309456 total allocated Kb
+                                                    240312 free allocated Kb
+                                                     69144 used allocated Kb
+                                                        22 % allocation used
+/                      (/dev/vg00/lvol3       ) :   783064 total allocated Kb
+                                                    458704 free allocated Kb
+                                                    324360 used allocated Kb
+                                                        41 % allocation used
+

@@ -1,0 +1,48 @@
+47025
+
+Key words:
+
+	DQM, abort, Server process not found, Task launch refused 
+
+Subject:
+
+	Job failed because DQM server did not to start or died
+
+Prerequistites:
+
+	Make sure the Dollar Universe Company is using DQM.
+
+Application validation tests:
+
+	1. The DQM process will not show up.
+
+	2. No job log is created for a launch
+
+	3. In the history trace
+
+	4. In the universe.log, 
+	1). there should not have a message that showing DQM is started. 
+	2). Or showing that the DQM is killed
+
+Explanation:
+
+	Dollar Universe using DQM to launch jobs to the OS.  
+	There could be different reasons for failing to start the DQM server. 
+	Another possibility could be that the DQM was started by got killed.
+
+	Please refer to other FAQ to check the reasons why the DQM fails.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

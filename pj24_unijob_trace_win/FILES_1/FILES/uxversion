@@ -1,0 +1,21 @@
+#! /bin/ksh
+
+# ---------------------------------------------------- #
+#  Dollar Universe Application Server uxversion file
+#  WARNING : Do not modify !
+# ---------------------------------------------------- #
+
+echo "Start of installation of an application server Dollar Universe Solutions 5.1 (installation kit 513 2006/08/09 16:13)"
+echo "End of installation of an application server Dollar Universe Solutions 5.1 (installation kit 513 2006/08/09 16:14)"
+echo "Start of update 24422 installation  (20060809161441)"
+echo "End of update 24422 installation  (20060809161441)"
+echo "UXRIGHT Version : 3.7 20060809161505 (HIGH security level)"
+echo Successfully installed by Univkit uxrunmain DU513.1.0.6 on 20060809-161931
+echo "Start of upgrade to a Dollar Universe Application Server 5.3 (installation kit 533 2008/10/19 06:11) Initial_release=513"
+echo "End of upgrade to a Dollar Universe Application Server 5.3 (installation kit 533 2008/10/19 06:20) Initial_release=513"
+echo "UXRIGHT Version : 4.1 20081019062140 (HIGH security level)"
+echo Successfully updated by Univkit uxrunmain DU533.1.0.0 on 20081019-073400
+echo "Start of update 24549 installation  (20081019073615)"
+echo "End of update 24549 installation  (20081019073615)"
+echo "Start of update 24584 installation  (20090125072757)"
+echo "End of update 24584 installation  (20090125072757)"

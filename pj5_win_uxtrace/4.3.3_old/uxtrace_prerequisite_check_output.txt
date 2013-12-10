@@ -1,0 +1,699 @@
+USLPMZWA
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : USLPMZWA
+        Primary Dns Suffix  . . . . . . . : orsypgroup.com
+        Node Type . . . . . . . . . . . . : Hybrid
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+        DNS Suffix Search List. . . . . . : orsypgroup.com
+                                            orsypgroup.com
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : orsypgroup.com
+        Description . . . . . . . . . . . : Broadcom 440x 10/100 Integrated Controller
+        Physical Address. . . . . . . . . : 00-12-79-59-8E-90
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        IP Address. . . . . . . . . . . . : 192.168.1.158
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 192.168.1.253
+        DHCP Server . . . . . . . . . . . : 10.1.1.35
+        DNS Servers . . . . . . . . . . . : 206.47.224.88
+                                            198.235.216.130
+        Primary WINS Server . . . . . . . : 10.1.1.35
+        Secondary WINS Server . . . . . . : 192.168.10.2
+        Lease Obtained. . . . . . . . . . : Monday, June 05, 2006 1:41:07 PM
+        Lease Expires . . . . . . . . . . : Tuesday, June 13, 2006 1:41:07 PM
+Microsoft (R) Windows Script Host Version 5.6
+Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+
+WSH Version: 5.6
+VBScript Version: 5.6
+WMI Version: 2600.0000
+ADSI Version: 5,0,00,0
+============================================
+Caption: Microsoft Windows XP Professional
+Service Pack: 2.0
+CurrentTimeZone: 120
+FreePhysicalMemory: 203428
+FreeSpaceInPagingFiles: 638072
+FreeVirtualMemory: 2056392
+TotalVirtualMemorySize: 2097024
+InstallDate: 4/27/2005 6:36:06 PM
+LastBootUpTime: 6/5/2006 2:36:26 AM
+Locale: 0409
+NumberOfUsers: 2
+OSLanguage: 1033
+RegisteredUser:  
+Version: 5.1.2600
+System Directory: C:\WINDOWS\system32
+============================================
+Description: AT/AT COMPATIBLE
+Manufacturer: Hewlett-Packard
+Model: HP Compaq nx6110 (PC419AV)
+NumberOfProcessors: 1
+PrimaryOwnerName:  
+SystemType: X86-based PC
+TotalPhysicalMemory: 796246016
+============================================
+AdapterType: Ethernet 802.3
+Caption: [00000001] Broadcom 440x 10/100 Integrated Controller
+MACAddress: 00:12:79:59:8E:90
+Manufacturer: Broadcom
+ProductName: Broadcom 440x 10/100 Integrated Controller
+============================================
+AdapterType: Ethernet 802.3
+Caption: [00000002] Packet Scheduler Miniport
+MACAddress: 00:12:79:59:8E:90
+Manufacturer: Microsoft
+ProductName: Packet Scheduler Miniport
+============================================
+AdapterType: Ethernet 802.3
+Caption: [00000009] Packet Scheduler Miniport
+MACAddress: CA:DC:20:52:41:53
+Manufacturer: Microsoft
+ProductName: Packet Scheduler Miniport
+============================================
+AdapterType: Ethernet 802.3
+Caption: [00000010] 1394 Net Adapter
+MACAddress: E2:38:E4:89:26:39
+Manufacturer: Microsoft
+ProductName: 1394 Net Adapter
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB873333
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB873339
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB883667
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB883939
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB884575
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB885250
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB885835
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB885836
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB885884
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB886185
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB887472
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB887742
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB888113
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB888302
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB890046
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB890047
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB890175
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB890859
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB890923
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB891781
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB893066
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB893086
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB893756
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB893803
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB893803v2
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB894391
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896358
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896422
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896423
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896424
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896428
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896688
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB896727
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB898461
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB899587
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB899588
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB899589
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB899591
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB900485
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB900725
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB901017
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB901190
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB901214
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB902400
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB903235
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB904706
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB905414
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB905749
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB905915
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB908519
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB908531
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB910437
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB911562
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB911567
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB911927
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB912812
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB912919
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB913446
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: File 1
+ServicePackInEffect: KB913580
+=================================
+Description: 
+FixComments: 
+Hot Fix ID: Q147222
+ServicePackInEffect: 
+=================================
+Description: Microsoft .NET Framework 1.1 Hotfix (KB886903)
+FixComments: Update
+Hot Fix ID: M886903
+ServicePackInEffect: 1.1
+=================================
+Description: Microsoft .NET Framework 1.1 Service Pack 1 (KB867460)
+FixComments: Update
+Hot Fix ID: S867460
+ServicePackInEffect: 1.1
+=================================
+Description: Security Update for Step By Step Interactive Training (KB898458)
+FixComments: Update
+Hot Fix ID: KB898458
+ServicePackInEffect: SP2
+=================================
+Description: Security Update for Windows Media Player 10 (KB911565)
+FixComments: 
+Hot Fix ID: KB911565
+ServicePackInEffect: 
+=================================
+Description: Windows XP Hotfix - KB873333
+FixComments: Update
+Hot Fix ID: KB873333
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB873339
+FixComments: Update
+Hot Fix ID: KB873339
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB883667
+FixComments: Update
+Hot Fix ID: KB883667
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB883939)
+FixComments: Update
+Hot Fix ID: KB883939
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB884575
+FixComments: Update
+Hot Fix ID: KB884575
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB885250
+FixComments: Update
+Hot Fix ID: KB885250
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB885835
+FixComments: Update
+Hot Fix ID: KB885835
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB885836
+FixComments: Update
+Hot Fix ID: KB885836
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB885884
+FixComments: Update
+Hot Fix ID: KB885884
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB886185
+FixComments: Update
+Hot Fix ID: KB886185
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB887472
+FixComments: Update
+Hot Fix ID: KB887472
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB887742
+FixComments: Update
+Hot Fix ID: KB887742
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB888113
+FixComments: Update
+Hot Fix ID: KB888113
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB888302
+FixComments: Update
+Hot Fix ID: KB888302
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB890046)
+FixComments: Update
+Hot Fix ID: KB890046
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB890047
+FixComments: Update
+Hot Fix ID: KB890047
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB890175
+FixComments: Update
+Hot Fix ID: KB890175
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB890859
+FixComments: Update
+Hot Fix ID: KB890859
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB890923
+FixComments: Update
+Hot Fix ID: KB890923
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB891781
+FixComments: Update
+Hot Fix ID: KB891781
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB893066)
+FixComments: Update
+Hot Fix ID: KB893066
+ServicePackInEffect: SP3
+=================================
+Description: Windows XP Hotfix - KB893086
+FixComments: Update
+Hot Fix ID: KB893086
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB893756)
+FixComments: Update
+Hot Fix ID: KB893756
+ServicePackInEffect: SP3
+=================================
+Description: Windows Installer 3.1 (KB893803)
+FixComments: Update
+Hot Fix ID: KB893803
+ServicePackInEffect: SP3
+=================================
+Description: Windows Installer 3.1 (KB893803)
+FixComments: Update
+Hot Fix ID: KB893803v2
+ServicePackInEffect: SP3
+=================================
+Description: Update for Windows XP (KB894391)
+FixComments: Update
+Hot Fix ID: KB894391
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB896358)
+FixComments: Update
+Hot Fix ID: KB896358
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB896422)
+FixComments: Update
+Hot Fix ID: KB896422
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB896423)
+FixComments: Update
+Hot Fix ID: KB896423
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB896424)
+FixComments: Update
+Hot Fix ID: KB896424
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB896428)
+FixComments: Update
+Hot Fix ID: KB896428
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB896688)
+FixComments: Update
+Hot Fix ID: KB896688
+ServicePackInEffect: SP3
+=================================
+Description: Update for Windows XP (KB896727)
+FixComments: Update
+Hot Fix ID: KB896727
+ServicePackInEffect: SP3
+=================================
+Description: Update for Windows XP (KB898461)
+FixComments: Update
+Hot Fix ID: KB898461
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB899587)
+FixComments: Update
+Hot Fix ID: KB899587
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB899588)
+FixComments: Update
+Hot Fix ID: KB899588
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB899589)
+FixComments: Update
+Hot Fix ID: KB899589
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB899591)
+FixComments: Update
+Hot Fix ID: KB899591
+ServicePackInEffect: SP3
+=================================
+Description: Update for Windows XP (KB900485)
+FixComments: Update
+Hot Fix ID: KB900485
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB900725)
+FixComments: Update
+Hot Fix ID: KB900725
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB901017)
+FixComments: Update
+Hot Fix ID: KB901017
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB901190)
+FixComments: Update
+Hot Fix ID: KB901190
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB901214)
+FixComments: Update
+Hot Fix ID: KB901214
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB902400)
+FixComments: Update
+Hot Fix ID: KB902400
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB903235)
+FixComments: Update
+Hot Fix ID: KB903235
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB904706)
+FixComments: Update
+Hot Fix ID: KB904706
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB905414)
+FixComments: Update
+Hot Fix ID: KB905414
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB905749)
+FixComments: Update
+Hot Fix ID: KB905749
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB905915)
+FixComments: Update
+Hot Fix ID: KB905915
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB908519)
+FixComments: Update
+Hot Fix ID: KB908519
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB908531)
+FixComments: Update
+Hot Fix ID: KB908531
+ServicePackInEffect: SP3
+=================================
+Description: Update for Windows XP (KB910437)
+FixComments: Update
+Hot Fix ID: KB910437
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB911562)
+FixComments: Update
+Hot Fix ID: KB911562
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB911567)
+FixComments: Update
+Hot Fix ID: KB911567
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB911927)
+FixComments: Update
+Hot Fix ID: KB911927
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB912812)
+FixComments: Update
+Hot Fix ID: KB912812
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB912919)
+FixComments: Update
+Hot Fix ID: KB912919
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB913446)
+FixComments: Update
+Hot Fix ID: KB913446
+ServicePackInEffect: SP3
+=================================
+Description: Security Update for Windows XP (KB913580)
+FixComments: Update
+Hot Fix ID: KB913580
+ServicePackInEffect: SP3

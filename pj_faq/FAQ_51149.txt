@@ -1,0 +1,81 @@
+
+Key words: provoked task, uxordre, user
+
+Subject: To use the "user" option in the uxordre command
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+
+It is possible to launch a provoked task with a user different than the one defined in the task. To do that the "user" option has to be used in the uxordre command. 
+However, the "user" option in the uxordre command has to be the same as the login user (system user).  
+
+For example, for this task
+
+# uxshw tsk exp upr=EXIT1 mu=DA_US_U_02
+ Command : uxshw tsk exp upr=EXIT1 mu=DA_US_U_02 ses=" " vupr=000 nomodel partage
+
+ TYPE  | tsk
+
+ ITEMS | ses          :
+       | vses         : 000
+       | upr          : EXIT1
+       | vupr         : 000
+       | mu           : DA_US_U_02
+       | nomodel
+       | type         : p
+       | printer      : IMPR
+       | queue        : SYS_BATCH
+       | prty         : 100
+       | user         : unive
+       | nohold
+       | noforce
+       | nocentral
+       | norestart
+       | nomult
+       | pdate        : (   ,   ,c)
+       | rule         : ()
+       | sdate        : 07/05/2006
+       | prlw         : (0000,000,00,0000,0000)
+       | mulw         : ()
+       | dalw         : (0000,000,00)
+       | mon          : (0000,000,00)
+       | tue          : (0000,000,00)
+       | wed          : (0000,000,00)
+       | thu          : (0000,000,00)
+       | fri          : (0000,000,00)
+       | sat          : (0000,000,00)
+       | sun          : (0000,000,00)
+       | edate        : ()
+       | xdate        : ()
+       | launchvar    : (
+       |
+
+#
+
+
+When the login user is univa, this will not work,
+uxordre upr=EXIT1 mu=DA_US_U_02 vupr=000  user=univd
+
+but this one will
+uxordre upr=EXIT1 mu=DA_US_U_02 vupr=000  user=univa
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

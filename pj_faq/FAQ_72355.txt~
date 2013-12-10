@@ -1,0 +1,29 @@
+	Subject
+
+Fatal error writing the Uproc catalogue
+	Prerequisites
+
+This FAQ applise to DUAS V500 and above.
+
+
+	Application Validation Tests
+This error could show up when inserting uproc to a DUAS with "uxins upr" command. When this issue occurs, the "uxlst upt" command result will miss some uproc type definitions. 
+
+	Explanation
+The "Uproc catalogue" in this error message means uproc type. The complete message means that when inserting the uproc, the uproc type could not be written, because it can not be determined.
+The reason for this issue could be that the the uproc type definition is missing for this type of uproc. By default, there are several uproc types defined, for example, CL_INT, CL_EXT and FTP_PUT. You could see the uproc type from GCO or with the command uxlst upt.
+To fix this issue, you could use the uxadd upt to add the uproc type back.
+For example, the following command will add the CL_INT uproc type.
+uxadd upt  upt=CL_INT ref=CL_INT
+
+
+	Warnings
+
+	Mandatory Backups / Safety Measures
+
+	Implementation procedure
+
+	Implementation check
+
+	In case the procedure is unsuccessful Issues/Maintenance Feedback
+

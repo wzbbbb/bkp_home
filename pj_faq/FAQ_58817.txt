@@ -1,0 +1,57 @@
+
+Key words: GCO, execution hitory, file corruption, 
+
+Subject: Can't view event under under Execution History from within GCD
+
+Prerequisites:
+
+Application validation tests:
+
+The symptoms:
+
+We are unable to view any events under Execution History from within Global Control Dekstop (GCD) . We can see this information in Graphical Job Monitor but should also be able to see it from within GCD as we do on other servers. 
+
+Explanation:
+
+
+After analyzing the data files, we found that the history trace files are corrupted, and could not be fixed by reorganization. That's the reason why the execution history could not be displayed.
+
+We have found that on 2007-06-21 at 16:34, the Dollar Universe processes were stopped by kill commands, which could have caused the file corruptions.
+
+To fix this, we would recommend to reinitialize the history trace data files. All the history traces of the previously executed jobs will be lost. The variables of a previously aborted job will be lost, this will impact the relaunch of any job which aborted before the initialization.
+
+(a)	Prerequisites
+You need to load the Dollar Universe environment and log on as the Dollar Universe administrator.
+
+(b)	Stop your Dollar Universe Company
+${UXMGR}/uxshutdown
+
+(c)	Check that your company is well stopped
+Type the following unix command:
+ps -ef | grep ux | grep -v cuxxm | grep -v grep
+No uxioserv processes should remain alive for this company.
+
+(d)	Launch the following commands
+$UXMGR/ux_raz_fic u_fmhs50 X
+$UXMGR/ux_raz_fic u_fmph50 X
+
+(e)	Restart your Dollar Universe Company
+${UXMGR}/uxstartup
+
+
+Warnings:
+
+This procedure can be very sensitive. Please validate with L3 before sending it to customer.
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: internal
+
+Experties level:
+

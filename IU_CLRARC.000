@@ -1,0 +1,115 @@
+#!/bin/ksh
+###==========================================================================
+#@(#) PROCEDURE: 	IU_CLRARC
+#@(#) OBJECT: 		Purge all archive files in ${uxARCH_DIR} older     
+#@(#)         		than ${uxKEEP_ARC} days      
+#@(#) AUTHOR: 		JCO / ORSYP Inc.
+#@(#) CREATION DATE: 	11/01/2001
+#@(#) MODIFICATIONS: 
+#@(#)
+###==========================================================================
+
+### set -x is set if S_DEBUG variable is true
+[ "${S_DEBUG}" = "true" ] && set -x
+
+
+###===========###
+### Variables ###
+###===========###
+
+### Define local variables ( Capital letters for beginning of each syllable)
+
+NbStep=3
+
+Pid="[${$}]"
+echo " The PID of this script is: ${Pid} "
+
+
+###===========###
+### Functions ###
+###===========###
+
+MESSAGE ()
+### object:	
+###	echo a message in the job log and the history trace
+### expects: 
+### 	- $1: Message text
+{
+	echo ${1}
+	${UXEXE}/uxset msg "${1}"
+}
+
+
+TEST_ERROR ()
+### object:	
+###	Test if there was an error 
+### expects: 
+### 	- $1: Return Code
+###  	- $2: Error message (optionnal)      
+{
+	if [ ${1} != 0 ] ; then  
+		MESSAGE "### Fatal error detected in STEP${CntStep}"
+		MESSAGE "### Return Code =${1}"
+		MESSAGE "### Error Msg   =${2}"
+		exit 1
+	else
+		MESSAGE "### Command completed."
+		MESSAGE " "
+	fi
+}
+
+
+STEP0 ()
+### object:	
+###	List archive files to delete in ${uxARCH_DIR}
+{
+	MESSAGE "### Too old archives list in ${uxARCH_DIR} ### "	
+	Command="find ${uxARCH_DIR} -name \"${S_SOCIETE}*\" -mtime +${uxKEEP_ARC} -exec ls -l {} \;"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't list some archive files!"
+}
+
+
+STEP1 ()
+### object:	
+###	Delete archives older than ${uxKEEP_ARC} days
+{
+	MESSAGE "### Remove old archives in ${uxARCH_DIR} ### "	
+	Command="find ${uxARCH_DIR} -name \"${S_SOCIETE}*\" -mtime +${uxKEEP_ARC} -exec rm -f {} \;"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't delete some archive files!"
+}
+
+
+STEP2 ()
+### object:	
+###	New list of files in ${uxARCH_DIR}
+{
+	MESSAGE "### Updated list of files in ${uxARCH_DIR} ### "
+#VFE 2002-12-12 added "-type f"
+	Command="find ${uxARCH_DIR} -type f -exec ls -l {} \;"
+	MESSAGE "Running the command: ${Command} "	
+	eval ${Command}
+	TEST_ERROR ${?} "Can't list files in ${uxARCH_DIR}!"
+}
+
+
+###======###
+### MAIN ###
+###======###
+
+CntStep=${S_NUMJALON}
+let CntStep=${CntStep}
+
+while  [[ ${CntStep} -lt ${NbStep} ]] 
+do
+	${UXEXE}/uxset step ${CntStep}
+	MESSAGE "====================================== "
+	STEP${CntStep}	
+	let CntStep=CntStep+1
+done
+
+MESSAGE "### All the steps are completed ### "
+exit 0

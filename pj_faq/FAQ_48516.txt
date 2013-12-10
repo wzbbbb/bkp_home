@@ -1,0 +1,38 @@
+
+Key words:
+
+DQM, UXDQM_REORG_QUE, dynamic queue, job priority
+
+
+Subject:
+
+Define the variable UXDQM_REORG_QUE to Y, to enable a queue to dynamicly adjust the jobs priority within the queue.
+
+
+Prerequistites:
+
+This variable is available in both V500 + SPRE0025 + FX24334C and V512 + FX24380.
+
+
+Application validation tests:
+
+
+Explanation: 
+
+When this variable is defined, the queue can adjust the priority according to the increment and revision cycle defined in the queue. By default, the function does not work.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

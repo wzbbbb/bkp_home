@@ -1,0 +1,18 @@
+com.orsyp.DataException: Installation error: the node name must be different from the Central node name casdlsup06.
+	at com.orsyp.request.register.InstallRequestHandler.executeUNJ(InstallRequestHandler.java:186)
+	at com.orsyp.request.register.InstallRequestHandler.execute(InstallRequestHandler.java:163)
+	at com.orsyp.request.register.InstallRequestHandler.execute(InstallRequestHandler.java:1)
+	at com.orsyp.request.AbstractRequestHandler.handle(AbstractRequestHandler.java:167)
+	at com.orsyp.central.server.UniWorker$DispatchHandler.implHandleRequest(UniWorker.java:228)
+	at com.orsyp.central.server.UniWorker$DispatchHandler.dispatch(UniWorker.java:159)
+	at com.orsyp.central.server.UniWorker.dispatch(UniWorker.java:507)
+	at com.orsyp.central.server.UniWorker.readHeaderMessages(UniWorker.java:498)
+	at com.orsyp.central.server.UniWorker.run(UniWorker.java:438)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:885)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+#TSP# #BEG# 20090108-163752 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-163742_sc run
+#TSP# #END# 20090108-164007 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-163742_sc run
+#TSP# #BEG# 20090108-164459 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-164449_sc run
+#TSP# #END# 20090108-164655 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-164449_sc run
+#TSP# #BEG# 20090108-165933 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc run

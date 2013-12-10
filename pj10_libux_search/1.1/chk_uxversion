@@ -1,0 +1,17 @@
+#!/bin/ksh 
+version_file=$UXEXE/uxversion
+grep -q "Version v500" $version_file
+[ $? -eq 0 ] && check_v500="yes"
+
+ver=`grep "installation kit " version_file| cut -f2 -d"("|cut -f3 -d" " |sort -u`
+
+if [ $? -eq 0 ] ; then
+	for version_ in $ver ; do
+
+	done
+fi
+
+
+echo $fixed_lib_lnk
+
+

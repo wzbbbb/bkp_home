@@ -1,0 +1,39 @@
+
+Key words: delete/update task, Item locked in schedule file.  Key : ~
+
+Subject: explanation for error message: Item locked in schedule file.  Key : ~
+
+Prerequisites:
+
+Application validation tests: 
+The following error message shows when deleting/updating a task: Item locked in schedule file.  Key : ~
+
+For example:
+ Command : uxdlt tsk exp upr=R06H_SCMG2 vupr=000 ses=R06S_SCMG2 vses=000 node=chdfapf1 mu=AR_RC_SMG2 nomodel nopartage
+
+ 
+
+Item locked in schedule file.  Key : ~
+
+command in error!!
+
+
+Explanation:
+Item locked in schedule file" mean that an action not allowed on a locked item is attempted.  A task can be locked by an user access through an interface or the engines when working on this item (for example the calculator may lock a task when scheduling it's new launch).
+
+This issue is normally temporary, a retry after a few seconds should work.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: Internal
+
+Experties level:
+

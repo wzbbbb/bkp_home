@@ -1,0 +1,9 @@
+#REM# LISTING OF THE DOLLAR UNIVERSE UXJAR DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltruai 
+#TSP#  20090108-170037 
+total 20
+21643742 -rw-rw-rw- 1 root root 2881 Jan  8 16:45 UXLEX_unijob.log
+21643632 -rw-rw-rw- 1 root root   61 Jan  8 16:59 log_list.txt
+21643554 drwxrwxrwx 6 root root 4096 Jan  8 17:00 ..
+21643744 -rw-rw-rw- 1 root root 1003 Jan  8 17:00 UXLEX.tar.gz
+21643630 drwxrwxrwx 2 root root 4096 Jan  8 17:00 .

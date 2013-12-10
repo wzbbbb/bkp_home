@@ -1,0 +1,44 @@
+
+Key words: CDJ server, stop, failed reorg
+
+Subject: data file issue cause CDJ crash
+
+Prerequisites:
+
+Application validation tests:
+
+The CDJ server will not stay running. 
+
+Explanation:
+
+
+The reason for this issue could be that one of the reorganization was not completed successfully. 
+
+Please 
+1. shutdown the Dollar Universe Company
+
+2. delete the following file: 
+In C:\UNIVERSE\OSCORP\exp\data
+08/08/2007  09:26a             163,957 BUILTIN\Administrators u_fmcx50.idx_inv
+
+3. run another reorganization for this Company: 
+1). load the Dollar Universe Environment
+2). run
+$UXMGR\ux_vrf_rgz_rst.bat
+
+4. then restart the Copamy and check if the issue remains.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: Internal
+
+Experties level:
+

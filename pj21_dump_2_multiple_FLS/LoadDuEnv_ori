@@ -1,0 +1,111 @@
+#!/usr/bin/ksh
+############################################################
+# Load the wished Dollar Universe Environment
+# CALL :
+# 	LoadDuEnv
+############################################################
+##
+# revision : 1.1.2
+# date     : 20050614
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Correction
+#          : Fixe the search list issue
+#          : Limitation still remaining : A company cannot be present twice with the same name.
+##
+# revision : 1.1.1
+# date     : 20040528
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Correction
+#          : Company filter
+##
+# revision : 1.1
+# date     : 20040519
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+#          : Autodetects the available companies
+##
+# revision : 1.0
+# date     : 20031217
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+##
+# creation : 0.9
+# date     : 20021020
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+
+# variables
+g_search_list="/apps/du/500 /apps/du/510 /apps/du/511"
+g_init_dir=`pwd`
+
+DU_ENV ()
+{
+if [ ! "${S_SOCIETE:-n_v}" = "n_v" ]; then
+	echo "The Environment of the Dollar Universe Company : ${S_SOCIETE} is already loaded"
+	echo "We recommend you to quit this environment before loading a new one"
+	exit 1
+fi
+
+g_comp_du_lst=""
+for l_search_dir in ${g_search_list}
+do
+	if [ ! -d ${l_search_dir} ]; then
+		echo "${l_search_dir} does not exists -> Skipped"
+		continue
+	fi
+	l_cmp_lst_tc=""
+	cd ${l_search_dir}
+	l_cmp_lst_tc=`ls `
+	for l_dir_tc in ${l_cmp_lst_tc}
+	do
+		l_dir_lngth=`echo ${l_dir_tc} | wc -c`
+		if [ ${l_dir_lngth:-0} -eq 7 ] && [ -f ./${l_dir_tc}/mgr/uxsetenv ]; then
+			g_comp_du_lst="${g_comp_du_lst} ${l_dir_tc}"
+			eval g_path_${l_dir_tc}=${l_search_dir}/${l_dir_tc}
+		fi
+	done
+done
+if [ "${g_comp_du_lst}" = "" ]; then
+	echo "No environment available Please tape Return"
+fi	
+
+echo "To Load the environment of one of these companies, please type the first letters of it's name"
+echo "It is not case sensitive"
+echo "List of availables companies :"
+for l_comp in ${g_comp_du_lst}
+do
+	eval l_path=\$g_path_${l_comp}
+	echo "	${l_comp} located in ${l_path}"
+done
+read l_comp_ans
+l_comp_ans=`echo ${l_comp_ans} | tr [a-z] [A-Z]`
+l_comp_lst=""
+for l_comp in ${g_comp_du_lst}
+do
+	echo ${l_comp} | grep '^'${l_comp_ans} > /dev/null 2>&1
+	l_ret_cd=$?
+	[ ${l_ret_cd} -eq 0 ] && l_comp_lst="${l_comp_lst}${l_comp} "
+done 
+}
+until [ ${l_nb_res:-0} -eq 1 ]
+do
+	DU_ENV
+	l_nb_res=`echo ${l_comp_lst} | wc -w`
+	if [ ${l_nb_res} -gt 1 ]; then 
+		echo "Please be more specific, these companies match your request"
+		echo "	${l_comp_lst}"
+	elif [ ${l_nb_res} -eq 0 ]; then
+		echo "No company match your request"
+	fi
+done
+l_comp=`echo ${l_comp_lst}`
+eval l_path=\$g_path_${l_comp}
+. ${l_path}/mgr/uxsetenv
+echo "	Environment of the Company ${S_SOCIETE} loaded"
+echo "To Reload your aliases, please type :"
+echo '	$daal'
+echo ""
+PATH=${PATH}:${UXEXE}:${UXMGR}:.
+export PATH
+cd $g_init_dir
+ksh

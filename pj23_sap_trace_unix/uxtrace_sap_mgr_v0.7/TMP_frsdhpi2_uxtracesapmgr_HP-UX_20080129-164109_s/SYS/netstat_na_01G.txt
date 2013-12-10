@@ -1,0 +1,447 @@
+#CMD# netstat -na
+#TSP#  20080129-164110 
+Active Internet connections (including servers)
+Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)
+tcp        0      0  127.0.0.1.49182        127.0.0.1.31980         ESTABLISHED
+tcp        0      0  *.31983                *.*                     LISTEN
+tcp        0      0  *.7777                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.31980        127.0.0.1.49262         ESTABLISHED
+tcp        0      0  192.168.1.54.65015     192.168.1.54.24523      ESTABLISHED
+tcp        0      0  127.0.0.1.49635        127.0.0.1.49287         ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49403         ESTABLISHED
+tcp        0      0  *.31994                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49403        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  *.31991                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49319        127.0.0.1.49310         ESTABLISHED
+tcp        0      0  *.1521                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.49332        *.*                     LISTEN
+tcp        0      0  192.168.1.54.49514     192.168.1.54.383        ESTABLISHED
+tcp        0      0  192.168.1.54.23        192.168.110.6.2410      ESTABLISHED
+tcp        0      0  127.0.0.1.65034        127.0.0.1.24520         ESTABLISHED
+tcp        0      0  127.0.0.1.56204        127.0.0.1.10650         ESTABLISHED
+tcp        0      0  *.2447                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49359         ESTABLISHED
+tcp        0      0  127.0.0.1.49359        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  *.49164                *.*                     LISTEN
+tcp        0      0  *.5989                 *.*                     LISTEN
+tcp        0      0  *.2121                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49397         ESTABLISHED
+tcp        0      0  127.0.0.1.49397        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  192.168.1.54.162       192.168.1.54.49394      ESTABLISHED
+tcp        0      0  192.168.1.54.10650     192.168.1.199.1515      ESTABLISHED
+tcp        0      0  127.0.0.1.24520        127.0.0.1.65020         ESTABLISHED
+tcp        0      0  127.0.0.1.65020        127.0.0.1.24520         ESTABLISHED
+tcp        0      0  *.49153                *.*                     LISTEN
+tcp        0      0  *.49152                *.*                     LISTEN
+tcp        0      0  *.49154                *.*                     LISTEN
+tcp        0      0  192.168.1.54.162       192.168.1.54.49451      ESTABLISHED
+tcp        0      0  192.168.1.54.49451     192.168.1.54.162        ESTABLISHED
+tcp        0      0  *.24523                *.*                     LISTEN
+tcp        0      0  127.0.0.1.24520        127.0.0.1.65013         ESTABLISHED
+tcp        0      0  127.0.0.1.49391        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49385         ESTABLISHED
+tcp        0      0  192.168.1.54.49396     192.168.1.54.162        ESTABLISHED
+tcp        0      0  127.0.0.1.49310        127.0.0.1.49319         ESTABLISHED
+tcp        0      0  *.8080                 *.*                     LISTEN
+tcp        0      0  *.8887                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49392         ESTABLISHED
+tcp        0      0  127.0.0.1.49399        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  192.168.1.54.2447      192.168.1.54.49398      ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49399         ESTABLISHED
+tcp        0      0  127.0.0.1.49334        127.0.0.1.49633         ESTABLISHED
+tcp        0      0  192.168.1.54.10650     192.168.1.199.1613      ESTABLISHED
+tcp        0      0  *.49353                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49435        127.0.0.1.49513         ESTABLISHED
+tcp        0      0  192.168.1.54.31980     192.168.1.33.2072       ESTABLISHED
+tcp        0      0  127.0.0.1.49461        *.*                     LISTEN
+tcp        0      0  127.0.0.1.383          127.0.0.1.49460         ESTABLISHED
+tcp        0      0  *.111                  *.*                     LISTEN
+tcp        0      0  192.168.1.54.1002      192.168.1.1.2049        TIME_WAIT
+tcp        0      0  127.0.0.1.49287        *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49365         ESTABLISHED
+tcp        0      0  *.383                  *.*                     LISTEN
+tcp        0      0  127.0.0.1.49456        127.0.0.1.383           ESTABLISHED
+tcp        0      0  127.0.0.1.49460        127.0.0.1.383           ESTABLISHED
+tcp        0      0  127.0.0.1.383          127.0.0.1.49456         ESTABLISHED
+tcp        0      0  *.48615                *.*                     LISTEN
+tcp        0      0  192.168.1.54.31980     192.168.1.33.2068       ESTABLISHED
+tcp        0      0  *.515                  *.*                     LISTEN
+tcp        0      0  127.0.0.1.49365        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  127.0.0.1.49346        *.*                     LISTEN
+tcp        0      0  *.4045                 *.*                     LISTEN
+tcp        0      0  *.49155                *.*                     LISTEN
+tcp        0      0  *.49156                *.*                     LISTEN
+tcp        0      1  192.168.1.54.65031     192.168.1.138.383       SYN_SENT
+tcp        0      0  192.168.1.54.1001      192.168.1.5.2049        TIME_WAIT
+tcp        0      0  127.0.0.1.7161         127.0.0.1.1023          ESTABLISHED
+tcp        0      0  127.0.0.1.1023         127.0.0.1.7161          ESTABLISHED
+tcp        0      0  192.168.1.54.49394     192.168.1.54.162        ESTABLISHED
+tcp        0      0  192.168.1.54.162       192.168.1.54.49393      ESTABLISHED
+tcp        0      0  127.0.0.1.49420        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  192.168.1.54.49393     192.168.1.54.162        ESTABLISHED
+tcp        0      0  *.8886                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.49262        127.0.0.1.31980         ESTABLISHED
+tcp        0      0  127.0.0.1.31980        127.0.0.1.49267         ESTABLISHED
+tcp        0      0  192.168.1.54.2532      192.168.1.54.49413      ESTABLISHED
+tcp        0      0  127.0.0.1.1022         127.0.0.1.7161          ESTABLISHED
+tcp        0      0  127.0.0.1.49414        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  127.0.0.1.24520        127.0.0.1.65030         ESTABLISHED
+tcp        0      0  127.0.0.1.65024        127.0.0.1.24520         ESTABLISHED
+tcp        0      0  127.0.0.1.24520        127.0.0.1.65024         ESTABLISHED
+tcp        0      0  *.49220                *.*                     LISTEN
+tcp        0      0  127.0.0.1.31980        127.0.0.1.49193         ESTABLISHED
+tcp        0      0  127.0.0.1.49193        127.0.0.1.31980         ESTABLISHED
+tcp        0      0  *.1508                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.65013        127.0.0.1.24520         ESTABLISHED
+tcp        0      0  192.168.1.54.49222     192.168.1.54.1712       ESTABLISHED
+tcp        0      0  192.168.1.54.24523     192.168.1.54.65015      ESTABLISHED
+tcp        0      0  192.168.1.54.1712      192.168.1.54.49222      ESTABLISHED
+tcp        0      0  127.0.0.1.49513        127.0.0.1.49435         ESTABLISHED
+tcp        0      0  *.10650                *.*                     LISTEN
+tcp        0      0  *.24531                *.*                     LISTEN
+tcp        0      0  *.544                  *.*                     LISTEN
+tcp        0      0  127.0.0.1.49287        127.0.0.1.49635         ESTABLISHED
+tcp        0      0  127.0.0.1.65030        127.0.0.1.24520         ESTABLISHED
+tcp        0      0  127.0.0.1.7161         *.*                     LISTEN
+tcp        0      0  127.0.0.1.49406        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  127.0.0.1.49181        127.0.0.1.31983         ESTABLISHED
+tcp        0      0  *.7815                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49406         ESTABLISHED
+tcp        0      0  192.168.1.54.49407     192.168.1.54.162        ESTABLISHED
+tcp        0      0  127.0.0.1.31980        127.0.0.1.49182         ESTABLISHED
+tcp        0      0  *.2531                 *.*                     LISTEN
+tcp        0      0  *.49162                *.*                     LISTEN
+tcp        0      0  *.25                   *.*                     LISTEN
+tcp        0      0  *.587                  *.*                     LISTEN
+tcp        0      0  192.168.1.54.162       192.168.1.54.49407      ESTABLISHED
+tcp        0      0  192.168.1.54.49408     192.168.1.54.2447       ESTABLISHED
+tcp        0      0  192.168.1.54.2447      192.168.1.54.49408      ESTABLISHED
+tcp        0      0  *.543                  *.*                     LISTEN
+tcp        0      0  *.6112                 *.*                     LISTEN
+tcp        0      0  *.901                  *.*                     LISTEN
+tcp        0      0  127.0.0.1.49415        127.0.0.1.49416         ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49420         ESTABLISHED
+tcp        0      0  127.0.0.1.49416        127.0.0.1.49415         ESTABLISHED
+tcp        0      0  127.0.0.1.31980        127.0.0.1.49202         ESTABLISHED
+tcp        0      0  127.0.0.1.49202        127.0.0.1.31980         ESTABLISHED
+tcp        0      0  192.168.1.54.49432     *.*                     LISTEN
+tcp        0      0  *.49433                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49385        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  192.168.1.54.162       192.168.1.54.49396      ESTABLISHED
+tcp        0      0  *.2532                 *.*                     LISTEN
+tcp        0      0  192.168.1.54.49398     192.168.1.54.2447       ESTABLISHED
+tcp        0      0  192.168.1.54.10650     192.168.1.199.1518      ESTABLISHED
+tcp        0      0  *.135                  *.*                     LISTEN
+tcp        0      0  *.49550                *.*                     LISTEN
+tcp        0      0  192.168.1.54.49409     192.168.1.54.162        ESTABLISHED
+tcp        0      0  192.168.1.54.162       192.168.1.54.49409      ESTABLISHED
+tcp        0      0  192.168.1.54.49410     192.168.1.54.2532       ESTABLISHED
+tcp        0      0  *.10654                *.*                     LISTEN
+tcp        0      0  192.168.1.54.10661     192.168.40.130.1494     CLOSE_WAIT
+tcp        0      0  *.22                   *.*                     LISTEN
+tcp        0      0  127.0.0.1.49362        127.0.0.1.49303         ESTABLISHED
+tcp        0      0  127.0.0.1.49303        127.0.0.1.49362         ESTABLISHED
+tcp        0      0  127.0.0.1.49267        127.0.0.1.31980         ESTABLISHED
+tcp        0      0  *.31980                *.*                     LISTEN
+tcp        0      0  127.0.0.1.31983        127.0.0.1.49181         ESTABLISHED
+tcp        0      0  192.168.1.54.49402     192.168.1.54.162        ESTABLISHED
+tcp        0      0  192.168.1.54.162       192.168.1.54.49402      ESTABLISHED
+tcp        0      0  *.2148                 *.*                     LISTEN
+tcp        0      0  *.2389                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.49392        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  *.49466                *.*                     LISTEN
+tcp        0      0  *.49549                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49372        127.0.0.1.49458         ESTABLISHED
+tcp        0      0  192.168.1.54.2532      192.168.1.54.49410      ESTABLISHED
+tcp        0      0  127.0.0.1.7161         127.0.0.1.1022          ESTABLISHED
+tcp        0      0  192.168.1.54.49413     192.168.1.54.2532       ESTABLISHED
+tcp        0      0  *.49467                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49458        127.0.0.1.49372         ESTABLISHED
+tcp        0      0  192.168.1.54.24520     192.168.1.54.65016      ESTABLISHED
+tcp        0      0  127.0.0.1.24523        127.0.0.1.65014         ESTABLISHED
+tcp        0      0  192.168.1.54.65016     192.168.1.54.24520      ESTABLISHED
+tcp        0      0  127.0.0.1.49428        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49428         ESTABLISHED
+tcp        0      0  *.24528                *.*                     LISTEN
+tcp        0      0  192.168.1.54.383       192.168.1.54.49514      ESTABLISHED
+tcp        0      0  *.24525                *.*                     LISTEN
+tcp        0      0  *.24534                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49633        127.0.0.1.49334         ESTABLISHED
+tcp        0      0  *.49443                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49435        *.*                     LISTEN
+tcp        0      0  *.706                  *.*                     LISTEN
+tcp        0      0  127.0.0.1.49404        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  192.168.1.54.49354     192.168.1.54.1521       ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49404         ESTABLISHED
+tcp        0      0  192.168.1.54.49405     192.168.1.54.162        ESTABLISHED
+tcp        0      0  127.0.0.1.49303        *.*                     LISTEN
+tcp        0      0  127.0.0.1.49310        *.*                     LISTEN
+tcp        0      0  127.0.0.1.8005         *.*                     LISTEN
+tcp        0      0  127.0.0.1.49453        *.*                     LISTEN
+tcp        0      0  *.10661                *.*                     LISTEN
+tcp        0      0  192.168.1.54.31980     192.168.1.33.2069       ESTABLISHED
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49450         ESTABLISHED
+tcp        0      0  *.49447                *.*                     LISTEN
+tcp        0      0  127.0.0.1.49450        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  192.168.1.54.1521      192.168.1.54.49354      ESTABLISHED
+tcp        0      0  *.2301                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.49334        *.*                     LISTEN
+tcp        0      0  127.0.0.1.49372        *.*                     LISTEN
+tcp        0      0  *.3443                 *.*                     LISTEN
+tcp        0      0  *.49328                *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49391         ESTABLISHED
+tcp        0      0  192.168.1.54.162       192.168.1.54.49405      ESTABLISHED
+tcp        0      0  *.2953                 *.*                     LISTEN
+tcp        0      0  *.2954                 *.*                     LISTEN
+tcp        0      0  *.162                  *.*                     LISTEN
+tcp        0      0  *.691                  *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49414         ESTABLISHED
+tcp        0      0  127.0.0.1.49395        127.0.0.1.8886          ESTABLISHED
+tcp        0      0  *.2690                 *.*                     LISTEN
+tcp        0      0  127.0.0.1.8886         127.0.0.1.49395         ESTABLISHED
+tcp        0      0  127.0.0.1.24520        127.0.0.1.65034         ESTABLISHED
+tcp        0      0  127.0.0.1.10650        127.0.0.1.56204         ESTABLISHED
+tcp        0      0  *.24520                *.*                     LISTEN
+tcp        0      0  127.0.0.1.65014        127.0.0.1.24523         ESTABLISHED
+tcp        0      0  127.0.0.1.65032        127.0.0.1.2690          TIME_WAIT
+tcp        0      0  192.168.1.54.65028     192.168.1.54.1712       TIME_WAIT
+tcp        0      0  *.514                  *.*                     LISTEN
+tcp        0      0  *.513                  *.*                     LISTEN
+tcp        0      0  *.23                   *.*                     LISTEN
+tcp        0      0  *.7                    *.*                     LISTEN
+tcp        0      0  *.37                   *.*                     LISTEN
+tcp        0      0  *.13                   *.*                     LISTEN
+tcp        0      0  *.21                   *.*                     LISTEN
+tcp        0      0  *.113                  *.*                     LISTEN
+tcp        0      0  *.512                  *.*                     LISTEN
+tcp        0      0  *.49465                *.*                     LISTEN
+tcp        0      0  *.19                   *.*                     LISTEN
+tcp        0      0  *.9                    *.*                     LISTEN
+tcp        0      0  *.1712                 *.*                     LISTEN
+tcp        0      0  *.22                   *.*                     LISTEN
+tcp        0      0  *.49401                *.*                     LISTEN
+tcp        0      0  *.7510                 *.*                     LISTEN
+tcp        0      0  *.49224                *.*                     LISTEN
+udp        0      0  127.0.0.1.49682        *.*                   
+udp        0      0  *.49725                *.*                   
+udp        0      0  127.0.0.1.49759        *.*                   
+udp        0      0  127.0.0.1.49699        *.*                   
+udp        0      0  *.2121                 *.*                   
+udp        0      0  127.0.0.1.49493        *.*                   
+udp        0      0  *.2148                 *.*                   
+udp        0      0  *.49182                *.*                   
+udp        0      0  *.*                    *.*                   
+udp        0      0  *.*                    *.*                   
+udp        0      0  *.123                  *.*                   
+udp        0      0  192.168.1.54.123       *.*                   
+udp        0      0  127.0.0.1.123          *.*                   
+udp        0      0  *.161                  *.*                   
+udp        0      0  *.49152                *.*                   
+udp        0      0  *.111                  *.*                   
+udp        0      0  *.*                    *.*                   
+udp        0      0  *.162                  *.*                   
+udp        0      0  *.696                  *.*                   
+udp        0      0  *.*                    *.*                   
+udp        0      0  *.518                  *.*                   
+udp        0      0  *.963                  *.*                   
+udp        0      0  *.49161                *.*                   
+udp        0      0  *.49698                *.*                   
+udp        0      0  127.0.0.1.49701        *.*                   
+udp        0      0  127.0.0.1.49750        *.*                   
+udp        0      0  127.0.0.1.49728        *.*                   
+udp        0      0  127.0.0.1.49723        *.*                   
+udp        0      0  *.135                  *.*                   
+udp        0      0  127.0.0.1.49729        *.*                   
+udp        0      0  127.0.0.1.49712        *.*                   
+udp        0      0  127.0.0.1.49778        *.*                   
+udp        0      0  127.0.0.1.49702        *.*                   
+udp        0      0  127.0.0.1.49782        *.*                   
+udp        0      0  *.690                  *.*                   
+udp        0      0  127.0.0.1.49704        *.*                   
+udp        0      0  *.49693                *.*                   
+udp        0      0  *.4045                 *.*                   
+udp        0      0  127.0.0.1.49487        *.*                   
+udp        0      0  127.0.0.1.49476        *.*                   
+udp        0      0  *.49153                *.*                   
+udp        0      0  *.49158                *.*                   
+udp        0      0  *.49157                *.*                   
+udp        0      0  *.49156                *.*                   
+udp        0      0  *.49449                *.*                   
+udp        0      0  *.705                  *.*                   
+udp        0      0  127.0.0.1.49710        *.*                   
+udp        0      0  127.0.0.1.49706        *.*                   
+udp        0      0  *.177                  *.*                   
+udp        0      0  *.49707                *.*                   
+udp        0      0  *.49885                *.*                   
+udp        0      0  127.0.0.1.49783        *.*                   
+udp        0      0  *.13                   *.*
+udp        0      0  *.19                   *.*
+udp        0      0  *.9                    *.*
+udp        0      0  *.7                    *.*
+udp        0      0  *.514                  *.*
+
+Active UNIX domain sockets
+Address          Type   Recv-Q Send-Q            Inode             Conn             Refs          Nextref Addr
+e00000012f2c0040 stream      0      0 e00000012f2bc280                0                0                0 /etc/useracct/utmpd_read
+e00000012f2c0200 stream      0      0 e00000012f11fc40                0                0                0 /etc/useracct/utmpd_write
+e00000012f2c0580 dgram       0      0 e00000013c6253c0                0                0                0 /dev/log.un
+e00000012f2c0900 dgram       0      0 e00000012f8a6140                0                0                0 /var/spool/sockets/pwgr/client1098
+e00000012f2c0c80 dgram       0      0 e00000013c9b61c0                0                0                0 /var/spool/sockets/pwgr/client1594
+e00000013ece1040 dgram       0      0 e00000013f604200                0                0                0 /var/spool/sockets/pwgr/client14536
+e00000013ca21040 stream      0      0                0 e00000012f2c2340                0                0 
+e00000013eb21200 dgram       0      0 e00000013eb35680                0                0                0 /var/spool/sockets/pwgr/client3076
+e00000013ca21200 stream      0      0                0 e00000012f2c22c0                0                0 /tmp/.AgentSockets/A
+e00000013ca213c0 stream      0      0                0 e00000012f2c2440                0                0 
+e00000013eb21580 stream      0      0                0 e00000013eb1a380                0                0 
+e00000013ca21580 stream      0      0                0 e00000012f2c23c0                0                0 /tmp/.AgentSockets/A
+e00000013eb21740 stream      0      0                0 e00000013eb1a300                0                0 /tmp/.oracle/sopenview
+e00000013ca21740 stream      0      0                0 e00000012f2c2540                0                0 
+e00000013ca21900 stream      0      0                0 e00000012f2c24c0                0                0 /tmp/.AgentSockets/A
+e00000013ca21c80 dgram       0      0 e00000012f8a6640                0                0                0 /opt/dcelocal/var/rpc/local/01790/reaper
+e00000013dff2040 dgram       0      0 e00000012f7124c0                0                0                0 /var/spool/sockets/pwgr/client12034
+e00000013ca42040 stream      0      0 e00000013c655900                0                0                0 /opt/dcelocal/var/rpc/local/s-0/135
+e00000013ca42200 stream      0      0 e00000013c68a080                0                0                0 /var/opt/wbem/socket/cimxml.socket
+e00000013dff23c0 dgram       0      0 e00000013cc28640                0                0                0 /var/spool/sockets/pwgr/client2990
+e00000013ca42580 dgram       0      0 e00000013ca2e300                0                0                0 /opt/dcelocal/var/rpc/local/s-3/135
+e00000013f7e2740 dgram       0      0 e00000012f7e5480                0                0                0 /var/spool/sockets/pwgr/client15965
+e00000013dff2740 stream      0      0                0 e00000012f8a8f40                0                0 
+e00000013dff2900 stream      0      0                0 e00000012f8a8ec0                0                0 /var/opt/OV/sockets/ecs/1/socket
+e00000013ca42900 dgram       0      0 e00000013cbefa40                0                0                0 /var/spool/pwgr/daemon
+e00000013ca42ac0 dgram       0      0 e00000013cc472c0                0                0                0 /var/spool/sockets/pwgr/client1992
+e00000013f7e2c80 dgram       0      0                0                0                0                0 
+e00000013ca42c80 dgram       0      0 e00000013cbefe40                0                0                0 /var/spool/sockets/pwgr/client2020
+e00000013f7e2e40 dgram       0      0 e00000012f767d80                0                0                0 /var/spool/sockets/pwgr/client21057
+e00000013ca42e40 stream      0      0                0 e00000012f2c2bc0                0                0 
+e00000013df843c0 dgram       0      0 e00000013c747cc0                0                0                0 /var/spool/sockets/pwgr/client2988
+e00000013e5b4580 dgram       0      0 e00000013cbefc40                0                0                0 /var/spool/sockets/pwgr/client3072
+e00000013e5b4900 stream      0      0                0 e00000013e147900                0                0 
+e00000013e5b4ac0 stream      0      0                0 e00000013e147880                0                0 /tmp/.oracle/sopenview
+e00000013df84ac0 dgram       0      0 e00000013c747dc0                0                0                0 /var/spool/sockets/pwgr/client2993
+e00000013e5b4e40 dgram       0      0 e00000013cc3ec80                0                0                0 /opt/dcelocal/var/rpc/local/03073/reaper
+e00000013e9b5040 stream      0      0                0 e00000013e8918c0                0                0 /tmp/.oracle/sopenview
+e00000013e375040 stream      0      0                0 e00000013e147200                0                0 
+e00000013e375200 stream      0      0                0 e00000013e147180                0                0 /var/opt/OV/sockets/ecs/1/socket
+e00000013e375580 dgram       0      0 e00000013c752200                0                0                0 /opt/dcelocal/var/rpc/local/03056/reaper
+e00000013e9b5900 stream      0      0 e00000013ec4d200                0                0                0 /var/opt/OV/sockets/OpC/opcsvcm
+e00000013de05ac0 dgram       0      0 e00000013cc28840                0                0                0 /var/spool/sockets/pwgr/client2948
+e00000013e9b5c80 dgram       0      0 e00000013e9bbc00                0                0                0 /opt/dcelocal/var/rpc/local/03076/reaper
+e00000013e375c80 dgram       0      0 e00000013cc475c0                0                0                0 /opt/dcelocal/var/rpc/local/03058/reaper
+e00000013de05c80 dgram       0      0 e00000013cc28a40                0                0                0 /var/spool/sockets/pwgr/client2952
+e00000013e375e40 dgram       0      0 e00000013cc477c0                0                0                0 /var/spool/sockets/pwgr/client3058
+e00000013de05e40 dgram       0      0 e00000013cc28340                0                0                0 /var/spool/sockets/pwgr/client2946
+e00000013e8c6040 dgram       0      0 e00000013e8be180                0                0                0 /var/spool/sockets/pwgr/client3087
+e00000013e8c63c0 dgram       0      0 e00000013ca8fc00                0 e00000012f8a83c0                0 /opt/dcelocal/var/rpc/local/s-3/49707
+e00000013cca63c0 dgram       0      0 e00000013c704940                0                0                0 /opt/dcelocal/var/rpc/local/02080/reaper
+e00000013e8c6740 stream      0      0                0 e00000013e8ca1c0                0                0 
+e00000013cca6740 stream      0      0 e00000013c704e40                0                0                0 /opt/dcelocal/var/rpc/local/s-0/2121
+e00000013e8c6900 stream      0      0                0 e00000013e8ca140                0                0 /tmp/.oracle/sopenview
+e00000013e8c6ac0 dgram       0      0 e00000013e8beb80                0                0                0 /var/spool/sockets/pwgr/client3089
+e00000013e8c6c80 dgram       0      0 e00000013e8bec80                0                0                0 /var/spool/sockets/pwgr/client3091
+e00000013cca6c80 dgram       0      0 e00000013cc0b780                0                0                0 /opt/dcelocal/var/rpc/local/s-3/2121
+e00000013e8c6e40 dgram       0      0 e00000013e9290c0 e00000012f8a8340                0 e00000013e8ca6c0 /opt/dcelocal/var/rpc/local/03073/c-3/7000
+e00000013cca6e40 dgram       0      0 e00000013c742080                0                0                0 /var/spool/sockets/pwgr/client2080
+e00000013e987040 dgram       0      0 e00000013e929ec0                0                0                0 /opt/dcelocal/var/rpc/local/03072/c-3/shared
+e00000013e987200 dgram       0      0 e00000013e9ce100                0                0                0 /var/spool/sockets/pwgr/client3095
+e00000013d0c7740 dgram       0      0 e00000013c704140                0                0                0 /var/opt/OV/tmp/ovcd.sock
+e00000013d0c7900 dgram       0      0 e00000013cc188c0                0                0                0 /var/spool/sockets/pwgr/client2654
+e00000013e987ac0 dgram       0      0 e00000013e9ce600                0                0                0 /var/spool/sockets/pwgr/client3097
+e00000013d2b7ac0 dgram       0      0 e00000013c68a980                0                0                0 /var/spool/sockets/pwgr/client2845
+e00000013ebc8040 dgram       0      0 e00000013eb0e540                0                0                0 /var/spool/sockets/pwgr/client3149
+e00000013e848040 dgram       0      0 e00000013cbef040                0                0                0 /var/spool/sockets/pwgr/client3073
+e00000013d548040 dgram       0      0 e00000013d055600                0                0                0 /var/spool/sockets/pwgr/client2847
+e00000013e528200 stream      0      0 e00000013c8a7580                0                0                0 /opt/dcelocal/var/rpc/local/s-0/49433
+e00000013d548200 dgram       0      0 e00000013cc20700                0                0                0 /var/spool/sockets/pwgr/client2849
+e00000013e8483c0 stream      0      0                0 e00000013e147b00                0                0 
+e00000013d5483c0 dgram       0      0 e00000013c7470c0                0                0                0 /var/spool/sockets/pwgr/client2855
+e00000013e848580 stream      0      0                0 e00000013e147a80                0                0 /tmp/.oracle/sopenview
+e00000013e528580 dgram       0      0 e00000013cc3e480 e00000012f8a8340                0                0 /opt/dcelocal/var/rpc/local/03058/c-3/7000
+e00000013d548580 dgram       0      0 e00000013c7471c0                0                0                0 /var/spool/sockets/pwgr/client2857
+e00000013e528740 dgram       0      0 e00000013cc3e980                0                0                0 /opt/dcelocal/var/rpc/local/s-3/49693
+e00000013d548740 dgram       0      0 e00000013d3ad4c0                0                0                0 /var/spool/sockets/pwgr/client2861
+e00000013ebc8900 stream      0      0                0 e00000013e8caec0                0                0 
+e00000013e848900 dgram       0      0 e00000013cbef240                0                0                0 /opt/dcelocal/var/rpc/local/03070/reaper
+e00000013e528900 dgram       0      0 e00000013cc3ea80                0                0                0 /opt/dcelocal/var/rpc/local/03058/c-3/shared
+e00000013ebc8ac0 stream      0      0                0 e00000013e8cae40                0                0 /tmp/.oracle/sopenview
+e00000013e848ac0 dgram       0      0 e00000013cbef340                0                0                0 /var/spool/sockets/pwgr/client3070
+e00000013ebc8c80 dgram       0      0 e00000013ebf2380                0                0                0 /var/spool/sockets/pwgr/client3151
+e00000013e848e40 stream      0      0                0 e00000013e147d00                0                0 
+e00000013e528e40 dgram       0      0 e00000013c930800                0                0                0 /opt/dcelocal/var/rpc/local/03072/reaper
+e00000013d548e40 dgram       0      0 e00000013cc20b00                0                0                0 /var/spool/sockets/pwgr/client2863
+e00000013dc59040 dgram       0      0 e00000013c7477c0                0                0                0 /var/spool/sockets/pwgr/client2888
+e00000013d009040 dgram       0      0 e00000013cc0b880                0                0                0 /var/spool/sockets/pwgr/client2409
+e00000013e4e9580 dgram       0      0 e00000013cc476c0                0                0                0 /var/spool/sockets/pwgr/client3057
+e00000013d009580 dgram       0      0 e00000013c704540                0                0                0 /var/spool/sockets/pwgr/client2438
+e00000013e4e9900 dgram       0      0 e00000013cc3ee80                0                0                0 /var/spool/sockets/pwgr/client3081
+e00000013dc59900 stream      0      0 e00000013c747ac0                0                0                0 /var/opt/OV/sockets/OVsPMD_MGMT
+e00000013e4e9c80 dgram       0      0 e00000013c8a7880                0                0                0 /var/spool/sockets/pwgr/client3055
+e00000013d009c80 dgram       0      0 e00000013c704440                0                0                0 /var/spool/sockets/pwgr/client2851
+e00000013e4e9e40 stream      0      0                0 e00000013db42e00                0                0 
+e00000013e219e40 dgram       0      0 e00000013c747ec0                0                0                0 /var/spool/sockets/pwgr/client3000
+e00000013dc59e40 dgram       0      0 e00000013dc1c940                0                0                0 /var/spool/sockets/pwgr/client2932
+e00000013defa040 dgram       0      0 e00000013cc28d40                0                0                0 /var/spool/sockets/pwgr/client2937
+e00000013e97a200 dgram       0      0 e00000013e8edbc0                0                0                0 /opt/dcelocal/var/rpc/local/03074/reaper
+e00000013e97a3c0 dgram       0      0 e00000013e8eddc0                0                0                0 /var/spool/sockets/pwgr/client3074
+e00000013defa3c0 dgram       0      0 e00000013cc28b40                0                0                0 /var/spool/sockets/pwgr/client2954
+e00000013defa580 dgram       0      0 e00000013cc28c40                0                0                0 /var/spool/sockets/pwgr/client2953
+e00000013e97a740 stream      0      0                0 e00000013e8917c0                0                0 
+e00000013e97a900 stream      0      0                0 e00000013e891740                0                0 /tmp/.oracle/sopenview
+e00000013e0ea900 dgram       0      0 e00000013c77f080                0                0                0 /var/spool/sockets/pwgr/client2934
+e00000013e97aac0 dgram       0      0 e00000013e8edec0                0                0                0 /var/spool/sockets/pwgr/client3075
+e00000013e97ae40 stream      0      0                0 e00000013e891940                0                0 
+e00000013e37b200 dgram       0      0 e00000013df4cb80                0                0                0 /var/spool/sockets/pwgr/client3009
+e00000013e37b3c0 dgram       0      0 e00000013de61e00                0                0                0 /opt/dcelocal/var/rpc/local/03055/reaper
+e00000013ed2b580 dgram       0      0 e00000013f657a40                0                0                0 /var/spool/sockets/pwgr/client14525
+e00000013ed2b740 dgram       0      0 e00000013ed34ec0                0                0                0 /var/spool/sockets/pwgr/client3238
+e00000013e37b740 stream      0      0                0 e00000013db42a80                0                0 
+e00000013e37b900 stream      0      0                0 e00000013db42a00                0                0 /tmp/.oracle/sopenview
+e00000013e37bac0 dgram       0      0 e00000013cc20c00                0                0                0 /var/spool/sockets/pwgr/client3054
+e00000013cd3bc80 dgram       0      0 e00000013c704240                0                0                0 /var/spool/sockets/pwgr/client2311
+e00000013e92c040 dgram       0      0 e00000013e9291c0                0                0                0 /opt/dcelocal/var/rpc/local/03073/c-3/shared
+e00000013e5bc040 stream      0      0                0 e00000013db42e80                0                0 /tmp/.oracle/sopenview
+e00000013e5bc200 dgram       0      0 e00000013cc3e880                0                0                0 /var/spool/sockets/pwgr/client3067
+e00000013cf3c200 dgram       0      0 e00000013c704040                0                0                0 /var/spool/sockets/pwgr/client2337
+e00000013e5bc3c0 dgram       0      0 e00000013cbef640                0                0                0 /var/spool/sockets/pwgr/client3083
+e00000013e5bc580 dgram       0      0 e00000013cbdb7c0                0                0                0 /var/spool/sockets/pwgr/client3085
+e00000013e92c740 stream      0      0 e00000013e9299c0                0                0                0 /opt/dcelocal/var/rpc/local/s-0/49447
+e00000013e92c900 dgram       0      0 e00000013e929bc0                0 e00000012f8a82c0                0 /opt/dcelocal/var/rpc/local/s-3/49725
+e00000013e5bc900 dgram       0      0 e00000013e6e5d80                0                0                0 /opt/dcelocal/var/rpc/local/03068/reaper
+e00000013e5bcac0 dgram       0      0 e00000013e8ed2c0                0                0                0 /var/spool/sockets/pwgr/client3068
+e00000013e22cac0 dgram       0      0 e00000013cc3e080                0                0                0 /opt/dcelocal/var/rpc/local/03009/reaper
+e00000013e92cc80 dgram       0      0 e00000013e929ac0                0                0                0 /var/spool/sockets/pwgr/client3093
+e00000013e92ce40 dgram       0      0 e00000013e929dc0 e00000012f8a8340                0 e00000013e147500 /opt/dcelocal/var/rpc/local/03072/c-3/7000
+e00000013e5bce40 stream      0      0                0 e00000013e8912c0                0                0 
+e00000013e90d040 stream      0      0                0 e00000013e891240                0                0 /tmp/.oracle/sopenview
+e00000013d30d200 stream      0      0 e00000013d486340                0                0                0 /tmp/.oracle/sopenview
+e00000013e90d3c0 dgram       0      0 e00000013e8ed4c0                0                0                0 /opt/dcelocal/var/rpc/local/03071/reaper
+e00000013dbcd580 dgram       0      0 e00000013cc28040                0                0                0 /var/spool/sockets/pwgr/client2881
+e00000013e90d740 stream      0      0 e00000013d486740                0                0                0 /tmp/.oracle/sOracle_CSS_LclLstnr_localhost_0
+e00000013e90d900 dgram       0      0 e00000013e8ed8c0                0                0                0 /var/spool/sockets/pwgr/client3071
+e00000013d30d900 dgram       0      0 e00000013c742280                0                0                0 /var/spool/sockets/pwgr/client2853
+e00000013d30dac0 dgram       0      0 e00000013cc3e180                0                0                0 /var/spool/sockets/pwgr/client2886
+e00000013e90dc80 stream      0      0                0 e00000013e8915c0                0                0 
+e00000013dbcdc80 stream      0      0 e00000013debfd00                0                0                0 /var/opt/OV/sockets/ecs/1/socket
+e00000013d30dc80 dgram       0      0 e00000013cc20900                0                0                0 /var/spool/sockets/pwgr/client2859
+e00000013e90de40 stream      0      0                0 e00000013e891540                0                0 /tmp/.oracle/sopenview
+e00000013f5be200 dgram       0      0 e00000013c76ad40                0                0                0 /var/spool/sockets/pwgr/client14476
+e00000013c9be200 stream      0      0 e00000013c7dcec0                0                0                0 /tmp/.AgentSockets/A
+e00000013c9be740 stream      0      0                0 e00000012f8a8140                0                0 
+e00000013c9be900 stream      0      0                0 e00000012f8a8040                0                0 /tmp/.AgentSockets/A
+e00000013c9bec80 stream      0      0                0 e00000012f8a8240                0                0 
+e00000013ec9ee40 dgram       0      0 e00000013e25c8c0                0                0                0 /var/spool/sockets/pwgr/client14487
+e00000013c9bee40 stream      0      0                0 e00000012f8a81c0                0                0 /tmp/.AgentSockets/A
+e00000013e85f040 stream      0      0                0 e00000013e147c80                0                0 /tmp/.oracle/sopenview
+e00000013cd1f040 stream      0      0                0 e00000012f2c2940                0                0 /tmp/.AgentSockets/A
+e00000013ca1f200 dgram       0      0 e00000013ca2e200 e00000013e8ca640                0                0 /opt/dcelocal/var/rpc/local/01790/c-3/7000
+e00000013e85f3c0 dgram       0      0 e00000013cd85500                0                0                0 /opt/dcelocal/var/rpc/local/03069/reaper
+e00000013de0f3c0 dgram       0      0 e00000013cc28940                0                0                0 /var/spool/sockets/pwgr/client2947
+e00000013ca1f3c0 dgram       0      0 e00000013c5d2e40                0 e00000013e8ca340                0 /opt/dcelocal/var/rpc/local/01790/c-3/shared
+e00000013e85f580 dgram       0      0 e00000013cbef740                0                0                0 /var/spool/sockets/pwgr/client3069
+e00000013de0f580 stream      0      0 e00000013debfe00                0                0                0 /var/opt/OV/sockets/trapd.socket
+e00000013ca1f580 dgram       0      0 e00000013c78d3c0 e00000013e8ca040                0                0 /opt/dcelocal/var/rpc/local/01790/c-3/7002
+e00000013e85f900 stream      0      0                0 e00000013e147f00                0                0 
+e00000013e85fac0 stream      0      0                0 e00000013e147e80                0                0 /tmp/.oracle/sopenview
+e00000013de0fac0 dgram       0      0 e00000013cc20800                0                0                0 /var/spool/sockets/pwgr/client3046
+e00000013cd1fc80 stream      0      0 e00000013d486440                0                0                0 /tmp/.oracle/s#2795.1
+e00000013ca1fc80 dgram       0      0 e00000013c68a380                0                0                0 /var/spool/sockets/pwgr/client1804
+e00000013e85fe40 stream      0      0 e00000013cbef840                0                0                0 /opt/dcelocal/var/rpc/local/s-0/49443
+e00000013ca1fe40 dgram       0      0 e00000013cc187c0                0                0                0 /var/vx/isis/vea_portal

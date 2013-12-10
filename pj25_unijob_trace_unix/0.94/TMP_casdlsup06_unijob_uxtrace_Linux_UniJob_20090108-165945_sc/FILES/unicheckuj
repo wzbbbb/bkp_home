@@ -1,0 +1,18 @@
+#! /bin/ksh
+# ========================================================
+# ORSYP.SA
+#  ------------------------------------------------------
+#  UniJob check procedure
+# ========================================================
+#
+echo "UniJob check procedure"
+#
+. /apps/unijob110/unijob/casdlsup06_unijob/data/unienv.ksh
+
+cd ${U_ROOT_DIR}/app/bin
+
+#  ------------------------------------------------------
+#  UniJob check
+#  ------------------------------------------------------
+./unijob -check
+cd ${U_ROOT_DIR}/data

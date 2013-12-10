@@ -1,0 +1,1044 @@
+Microsoft (R) Windows Script Host Version 5.6
+Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+
+Log File: Application
+Record Number: 9485
+Type: information
+Time Generated: 12/15/2004 3:32:19 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_LNM stopped successfully.
+
+
+Log File: Application
+Record Number: 9484
+Type: information
+Time Generated: 12/15/2004 3:32:12 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_IO_X stopped successfully.
+
+
+Log File: Application
+Record Number: 9483
+Type: information
+Time Generated: 12/15/2004 3:32:06 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_IO_A stopped successfully.
+
+
+Log File: Application
+Record Number: 9482
+Type: information
+Time Generated: 12/15/2004 3:32:00 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CDJ_X stopped successfully.
+
+
+Log File: Application
+Record Number: 9481
+Type: information
+Time Generated: 12/15/2004 3:31:53 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CDJ_A stopped successfully.
+
+
+Log File: Application
+Record Number: 9480
+Type: information
+Time Generated: 12/15/2004 3:31:47 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CMD stopped successfully.
+
+
+Log File: Application
+Record Number: 9479
+Type: information
+Time Generated: 12/15/2004 3:31:17 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_ECH_X stopped successfully.
+
+
+Log File: Application
+Record Number: 9478
+Type: information
+Time Generated: 12/15/2004 3:31:17 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CAL_X stopped successfully.
+
+
+Log File: Application
+Record Number: 9477
+Type: information
+Time Generated: 12/15/2004 3:31:17 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_SUR stopped successfully.
+
+
+Log File: Application
+Record Number: 9476
+Type: information
+Time Generated: 12/15/2004 3:31:17 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_ORD_X stopped successfully.
+
+
+Log File: Application
+Record Number: 9475
+Type: information
+Time Generated: 12/15/2004 1:22:29 PM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9474
+Type: information
+Time Generated: 12/15/2004 11:29:09 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_SUR started successfully.
+
+
+Log File: Application
+Record Number: 9473
+Type: information
+Time Generated: 12/15/2004 11:29:04 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_ECH_X started successfully.
+
+
+Log File: Application
+Record Number: 9472
+Type: information
+Time Generated: 12/15/2004 11:28:58 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CAL_X started successfully.
+
+
+Log File: Application
+Record Number: 9471
+Type: information
+Time Generated: 12/15/2004 11:28:55 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_ORD_X started successfully.
+
+
+Log File: Application
+Record Number: 9470
+Type: information
+Time Generated: 12/15/2004 11:28:50 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CMD started successfully.
+
+
+Log File: Application
+Record Number: 9469
+Type: information
+Time Generated: 12/15/2004 11:28:45 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CDJ_A started successfully.
+
+
+Log File: Application
+Record Number: 9468
+Type: information
+Time Generated: 12/15/2004 11:28:41 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_CDJ_X started successfully.
+
+
+Log File: Application
+Record Number: 9467
+Type: information
+Time Generated: 12/15/2004 11:28:36 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_IO_A started successfully.
+
+
+Log File: Application
+Record Number: 9466
+Type: information
+Time Generated: 12/15/2004 11:28:36 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_IO_X started successfully.
+
+
+Log File: Application
+Record Number: 9465
+Type: information
+Time Generated: 12/15/2004 11:28:35 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: SUP500_LNM started successfully.
+
+
+Log File: Application
+Record Number: 9464
+Type: information
+Time Generated: 12/14/2004 11:11:56 PM
+Source: McLogEvent
+Category: 0
+Category String: 
+Event: 5000
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: VirusScan Enterprise McShield service started - scanning for 109855 viruses.
+
+Engine version : 4.3.20
+
+.DAT version : 4414
+
+
+
+EXTRA.DAT name : None
+
+Number of virus signatures in EXTRA.DAT : None
+
+Names of viruses that EXTRA.DAT can detect : None
+
+
+Log File: Application
+Record Number: 9463
+Type: information
+Time Generated: 12/14/2004 8:19:29 PM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9462
+Type: information
+Time Generated: 12/14/2004 3:12:36 AM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9461
+Type: information
+Time Generated: 12/13/2004 9:50:41 AM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9460
+Type: information
+Time Generated: 12/13/2004 9:50:29 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\sup500e
+Computer: SUPPORT4
+Message: Univ_sup500e started successfully.
+
+
+Log File: Application
+Record Number: 9459
+Type: information
+Time Generated: 12/13/2004 9:50:29 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\sup500a
+Computer: SUPPORT4
+Message: Univ_sup500a started successfully.
+
+
+Log File: Application
+Record Number: 9458
+Type: warning
+Time Generated: 12/13/2004 9:50:27 AM
+Source: EventSystem
+Category: 4
+Category String: Firing Agent
+Event: 4100
+User: 
+Computer: SUPPORT4
+Message: The COM+ Event System failed to create an instance of the subscriber {6295DF2D-35EE-11D1-8707-00C04FD93327}.  CoCreateInstanceEx returned HRESULT 8000401A.
+
+Log File: Application
+Record Number: 9457
+Type: information
+Time Generated: 12/13/2004 9:50:27 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\qcl500e
+Computer: SUPPORT4
+Message: Univ_qcl500e started successfully.
+
+
+Log File: Application
+Record Number: 9456
+Type: information
+Time Generated: 12/13/2004 9:50:27 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\qcl500a
+Computer: SUPPORT4
+Message: Univ_qcl500a started successfully.
+
+
+Log File: Application
+Record Number: 9455
+Type: information
+Time Generated: 12/13/2004 9:50:26 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\mnt500e
+Computer: SUPPORT4
+Message: Univ_mnt500e started successfully.
+
+
+Log File: Application
+Record Number: 9454
+Type: information
+Time Generated: 12/13/2004 9:50:25 AM
+Source: McLogEvent
+Category: 0
+Category String: 
+Event: 5000
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: VirusScan Enterprise McShield service started - scanning for 109850 viruses.
+
+Engine version : 4.3.20
+
+.DAT version : 4413
+
+
+
+EXTRA.DAT name : None
+
+Number of virus signatures in EXTRA.DAT : None
+
+Names of viruses that EXTRA.DAT can detect : None
+
+
+Log File: Application
+Record Number: 9453
+Type: information
+Time Generated: 12/13/2004 9:50:23 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\mnt500a
+Computer: SUPPORT4
+Message: Univ_mnt500a started successfully.
+
+
+Log File: Application
+Record Number: 9452
+Type: information
+Time Generated: 12/13/2004 9:50:22 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\avalida
+Computer: SUPPORT4
+Message: Univ_avalida started successfully.
+
+
+Log File: Application
+Record Number: 9451
+Type: information
+Time Generated: 12/13/2004 9:50:05 AM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: DollarUniverse started successfully.
+
+
+Log File: Application
+Record Number: 9450
+Type: information
+Time Generated: 12/10/2004 7:09:00 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\sup500e
+Computer: SUPPORT4
+Message: Univ_sup500e started successfully.
+
+
+Log File: Application
+Record Number: 9449
+Type: information
+Time Generated: 12/10/2004 7:09:00 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\sup500a
+Computer: SUPPORT4
+Message: Univ_sup500a started successfully.
+
+
+Log File: Application
+Record Number: 9448
+Type: information
+Time Generated: 12/10/2004 7:08:59 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\qcl500e
+Computer: SUPPORT4
+Message: Univ_qcl500e started successfully.
+
+
+Log File: Application
+Record Number: 9447
+Type: information
+Time Generated: 12/10/2004 7:08:59 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\qcl500a
+Computer: SUPPORT4
+Message: Univ_qcl500a started successfully.
+
+
+Log File: Application
+Record Number: 9446
+Type: information
+Time Generated: 12/10/2004 7:08:58 PM
+Source: McLogEvent
+Category: 0
+Category String: 
+Event: 5000
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: VirusScan Enterprise McShield service started - scanning for 109850 viruses.
+
+Engine version : 4.3.20
+
+.DAT version : 4413
+
+
+
+EXTRA.DAT name : None
+
+Number of virus signatures in EXTRA.DAT : None
+
+Names of viruses that EXTRA.DAT can detect : None
+
+
+Log File: Application
+Record Number: 9445
+Type: information
+Time Generated: 12/10/2004 7:08:56 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\mnt500e
+Computer: SUPPORT4
+Message: Univ_mnt500e started successfully.
+
+
+Log File: Application
+Record Number: 9444
+Type: information
+Time Generated: 12/10/2004 7:08:55 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\mnt500a
+Computer: SUPPORT4
+Message: Univ_mnt500a started successfully.
+
+
+Log File: Application
+Record Number: 9443
+Type: information
+Time Generated: 12/10/2004 7:08:55 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: SUPPORT4\avalida
+Computer: SUPPORT4
+Message: Univ_avalida started successfully.
+
+
+Log File: Application
+Record Number: 9442
+Type: information
+Time Generated: 12/10/2004 7:08:39 PM
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: DollarUniverse started successfully.
+
+
+Log File: Application
+Record Number: 9441
+Type: error
+Time Generated: 12/10/2004 7:07:07 PM
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: Windows cannot unload your registry file.  If you have a roaming profile, your settings are not replicated. Contact your administrator.  
+
+DETAIL - Access is denied. , Build number ((2195)).
+
+
+Log File: Application
+Record Number: 9440
+Type: information
+Time Generated: 12/10/2004 5:13:49 PM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9439
+Type: information
+Time Generated: 12/10/2004 11:19:58 AM
+Source: MsiInstaller
+Category: 0
+Category String: 
+Event: 11707
+User: 
+Computer: SUPPORT4
+Message: Product: Microsoft Tool Web Package:PSTAT.EXE -- Installation operation completed successfully.
+
+
+Log File: Application
+Record Number: 9438
+Type: information
+Time Generated: 12/9/2004 11:53:56 PM
+Source: McLogEvent
+Category: 0
+Category String: 
+Event: 5000
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: VirusScan Enterprise McShield service started - scanning for 109850 viruses.
+
+Engine version : 4.3.20
+
+.DAT version : 4413
+
+
+
+EXTRA.DAT name : None
+
+Number of virus signatures in EXTRA.DAT : None
+
+Names of viruses that EXTRA.DAT can detect : None
+
+
+Log File: Application
+Record Number: 9437
+Type: information
+Time Generated: 12/9/2004 11:42:43 PM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9436
+Type: information
+Time Generated: 12/9/2004 6:23:42 AM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: Application
+Record Number: 9435
+Type: information
+Time Generated: 12/8/2004 11:28:49 PM
+Source: McLogEvent
+Category: 0
+Category String: 
+Event: 5000
+User: NT AUTHORITY\SYSTEM
+Computer: SUPPORT4
+Message: VirusScan Enterprise McShield service started - scanning for 109850 viruses.
+
+Engine version : 4.3.20
+
+.DAT version : 4412
+
+
+
+EXTRA.DAT name : None
+
+Number of virus signatures in EXTRA.DAT : None
+
+Names of viruses that EXTRA.DAT can detect : None
+
+
+Log File: Application
+Record Number: 9434
+Type: information
+Time Generated: 12/8/2004 1:09:44 PM
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: SUPPORT4
+Message: Security policy in the Group policy objects are applied successfully.
+
+
+Log File: System
+Record Number: 1609
+Type: information
+Time Generated: 12/15/2004 4:37:22 AM
+Source: Automatic Updates
+Category: 2
+Category String: Installation
+
+Event: 17
+User: 
+Computer: SUPPORT4
+Message: Installation Ready: The following updates are downloaded and ready for installation. To install the updates, an administrator should log on to this computer and Windows will prompt with further instructions.
+- Security Update for Windows 2000 (KB873339)
+- Security Update for Windows 2000 (KB885836)
+- Security Update for Windows 2000 (KB885835)
+
+
+Log File: System
+Record Number: 1608
+Type: error
+Time Generated: 12/14/2004 2:17:35 PM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support444 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1607
+Type: error
+Time Generated: 12/14/2004 2:17:30 PM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support444 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1606
+Type: information
+Time Generated: 12/13/2004 5:52:55 PM
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: SUPPORT4
+Message: Application popup: Windows - Virtual Memory Minimum Too Low : Your system is low on virtual memory. Windows is increasing the size of your virtual memory paging file.  During this process, memory requests for some applications may be denied. For more information, see Help. 
+
+
+Log File: System
+Record Number: 1605
+Type: warning
+Time Generated: 12/13/2004 10:06:07 AM
+Source: DnsApi
+Category: 0
+Category String: 
+Event: 11151
+User: 
+Computer: SUPPORT4
+Message: The system failed to register network adapter with settings:
+
+
+  Adapter Name : {56AC15EF-0386-45EF-A083-972E551D00C3}
+
+  Host Name : support4
+
+  Adapter-specific Domain Suffix : orsypgroup.com
+
+  DNS server list :
+
+    81.255.91.103, 38.9.221.2
+
+  Sent update to server : None
+
+  IP Address(es) :
+
+    192.168.105.4
+
+
+The cause of this DNS registration failure was because of DNS server failure.
+This may be due to a zone transfer that has locked the DNS server for the
+applicable zone that your computer needs to register itself with.
+
+
+(The applicable zone should typically correspond to the Adapter-specific
+Domain Suffix that was indicated above.) You can manually retry registration
+of the network adapter and its settings by typing "ipconfig /registerdns"
+at the command prompt. If problems still persist, contact your network
+systems administrator to verify network conditions.
+
+
+Log File: System
+Record Number: 1604
+Type: information
+Time Generated: 12/13/2004 10:06:07 AM
+Source: DnsApi
+Category: 0
+Category String: 
+Event: 11159
+User: 
+Computer: SUPPORT4
+Message: The system failed to register pointer (PTR) resource records (RRs)
+for network adapter
+with settings:
+
+
+  Adapter Name : {56AC15EF-0386-45EF-A083-972E551D00C3}
+
+  Host Name : support4
+
+  Adapter-specific Domain Suffix : orsypgroup.com
+
+  DNS server list :
+
+    81.255.91.103, 38.9.221.2
+
+  Sent update to server : 192.175.48.1
+
+  IP Address : 192.168.105.4
+
+
+The reason that the system could not register these RRs was because
+the DNS server refused the update request. The cause of this could
+be (a) your computer is not allowed to update the adapter-specified DNS
+domain name, or (b) because the DNS server authoritative for the specified
+name does not support the DNS dynamic update protocol.
+
+
+To register the DNS pointer (PTR) resource records using the specific
+DNS domain name and IP addresses for this adapter, contact your DNS
+server or network systems administrator.
+
+
+Log File: System
+Record Number: 1603
+Type: information
+Time Generated: 12/13/2004 9:50:02 AM
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6005
+User: 
+Computer: SUPPORT4
+Message: The Event log service was started.
+
+
+Log File: System
+Record Number: 1602
+Type: information
+Time Generated: 12/13/2004 9:50:02 AM
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6009
+User: 
+Computer: SUPPORT4
+Message: Microsoft (R) Windows 2000 (R) 5.0 2195 Service Pack 4 Uniprocessor Free.
+
+
+Log File: System
+Record Number: 1601
+Type: information
+Time Generated: 12/10/2004 7:12:22 PM
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6006
+User: 
+Computer: SUPPORT4
+Message: The Event log service was stopped.
+
+
+Log File: System
+Record Number: 1600
+Type: information
+Time Generated: 12/10/2004 7:08:37 PM
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6005
+User: 
+Computer: SUPPORT4
+Message: The Event log service was started.
+
+
+Log File: System
+Record Number: 1599
+Type: information
+Time Generated: 12/10/2004 7:08:37 PM
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6009
+User: 
+Computer: SUPPORT4
+Message: Microsoft (R) Windows 2000 (R) 5.0 2195 Service Pack 4 Uniprocessor Free.
+
+
+Log File: System
+Record Number: 1598
+Type: information
+Time Generated: 12/10/2004 7:07:19 PM
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6006
+User: 
+Computer: SUPPORT4
+Message: The Event log service was stopped.
+
+
+Log File: System
+Record Number: 1597
+Type: error
+Time Generated: 12/9/2004 12:46:44 PM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support2 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1596
+Type: error
+Time Generated: 12/9/2004 12:46:43 PM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support2 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1595
+Type: error
+Time Generated: 12/9/2004 12:46:19 PM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support2 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1594
+Type: error
+Time Generated: 12/9/2004 12:46:18 PM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support2 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1593
+Type: error
+Time Generated: 12/9/2004 11:53:02 AM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support2 using any of the configured
+protocols.
+
+
+Log File: System
+Record Number: 1592
+Type: error
+Time Generated: 12/9/2004 11:53:01 AM
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10009
+User: ORSYP\zwa
+Computer: SUPPORT4
+Message: DCOM was unable to communicate with the computer support2 using any of the configured
+protocols.
+
+

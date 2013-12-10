@@ -1,0 +1,60 @@
+
+Key words:
+
+	uxshw cal mu, calendar, general calendar
+
+Subject:
+
+	In "uxshw cal mu=*", the MUs of some calendars are showing 00 
+
+Prerequistites:
+
+	This issue occurs in both V500, SPRE0025+ FX24384B and V512 + FX24380
+
+Application validation tests:
+
+Explanation:
+
+	Note that the issue only appears when the “mu=*”.
+
+	# uxlst cal
+	 Command : uxlst cal full
+
+	 MU         TYPE       LABEL
+	 --------------------- -------------------
+			       General calendar
+	 DA_US_U_02
+	 TT         MODEL
+	 T_TEST                No Holiday to 2027
+
+	# uxshw cal mu=T_TEST | grep ITEM
+	 ITEMS | mu           : T_TEST
+
+	# uxshw cal mu=DA_US_U_02 | grep ITEM
+	 ITEMS | mu           : DA_US_U_02
+
+	# uxshw cal mu=* | grep ITEM
+	 ITEMS | mu           :  00
+	 ITEMS | mu           : TT
+	 ITEMS | mu           :  00
+	 ITEMS | mu           :  00
+	#
+
+	The mu for the calendar DA_US_U_02 and T_TEST are showing as 00.
+	The issue has not been fixed yet.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

@@ -1,0 +1,47 @@
+#!/usr/bin/ksh
+############################################################
+#Create standard users, remove them if they already exist.
+#specify the company name as the argument
+#e.g. AddUser QCL500
+############################################################
+##
+# creation : 0.9
+# date     : Dec. 18th, 2003 
+# author   : Zhibing Wang		
+# modifs   : 
+
+[ $# -eq 0 ] && exit 1
+com=`echo $1 | tr [A-Z] [a-z]`
+b=both
+d=dev
+p=prod
+pa=PROFADM
+pd=PROFDEV
+pe=PROFEXP
+for user in univa univd unive ${com}a  ${com}d  ${com}e gmu  zwa mpe eka lsu abr fso jfu fct men aba ffr oge
+do
+	case $user in 
+		"univa") code=001; prof=$pa; esp=$b;;
+		"univd") code=002; prof=$pd; esp=$d;;
+		"unive") code=003; prof=$pe; esp=$p;;
+		${com}a) code=004; prof=$pa; esp=$b;;
+		${com}d) code=005; prof=$pd; esp=$d;;
+		${com}e) code=006; prof=$pe; esp=$p;;
+		"gmu")   code=228; prof=$pa; esp=$b;;
+		"zwa")   code=238; prof=$pa; esp=$b;;
+		"root")  code=998; prof=$pa; esp=$b;;
+		"mpe")   code=538; prof=$pa; esp=$b;;
+		"eka")   code=413; prof=$pa; esp=$b;;
+		"lsu")   code=418; prof=$pa; esp=$b;;
+		"abr")   code=412; prof=$pa; esp=$b;;
+		"fso")   code=231; prof=$pa; esp=$b;;
+		"jfu")   code=202; prof=$pa; esp=$b;;
+		"fct")   code=211; prof=$pa; esp=$b;;
+		"men")   code=218; prof=$pa; esp=$b;;
+		"aba")   code=403; prof=$pa; esp=$b;;
+		"ffr")   code=420; prof=$pa; esp=$b;;
+		"oge")   code=421; prof=$pa; esp=$b;;
+	esac
+	$UXEXE/uxdlt user user=${user}
+	$UXEXE/uxadd user user=${user} code=$code prof=$prof $esp
+done

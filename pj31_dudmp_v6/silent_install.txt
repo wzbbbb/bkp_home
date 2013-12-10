@@ -1,0 +1,36 @@
+twick the install.file to update:
+$1=node name
+$2=Company name
+$3=port
+
+........... fixed
+UVMS host
+UVMS port
+UVMS password
+........... fixed
+
+
+then update the install directory based on the node and company name
+
+./unirun -i -s -f "a new file name"
+
+Do not start engine after $U restart.
+. /var/opt/ORSYP/DUAS/<Company>_<Node>/unienv.ksh
+./unisetvar UNI_STARTUP_X IO,CDJ,BVS,DQM,EEP,SYN,ALM
+./unisetvar UNI_STARTUP_S IO,CDJ,BVS,DQM,EEP,SYN,ALM
+./unisetvar UNI_STARTUP_I IO,CDJ,BVS,DQM,EEP,SYN,ALM
+./unisetvar UNI_STARTUP_A IO,CDJ,BVS,DQM,EEP,SYN,ALM
+
+stop $U
+. /var/opt/ORSYP/DUAS/<Company>_<Node>/unienv.ksh
+${UNI_DIR_EXEC}/unistart
+${UNI_DIR_EXEC}/unistop 
+
+Then copy the data files within uxtrace "DUFILES/UXDEX and DATA" and over write the data files.
+
+run rerog
+then restart
+uxlst ctl full
+uxlst ctl hst full
+uxlst fla full
+uxlst evt full

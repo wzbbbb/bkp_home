@@ -1,0 +1,6 @@
+DEFINE load_general(file_names)  RETURNS general_info { 
+$general_info = load '$file_names' using PigStorage(';') as (Company_id:chararray,Node:chararray,Product:chararray,Year:int,Month:int,Date:int,Hour:int,Country:chararray,Region:chararray,City:chararray,OS:chararray,Command:chararray);
+};
+DEFINE load_specific(file_names)  RETURNS specific_info { 
+$specific_info = load '$file_names' using PigStorage(';') as (Company_id:chararray,Node:chararray,Product:chararray,Year:int,Month:int,Date:int,Hour:int,Country:chararray,Region:chararray,City:chararray,OS:chararray,Command:chararray,Content:chararray);
+};

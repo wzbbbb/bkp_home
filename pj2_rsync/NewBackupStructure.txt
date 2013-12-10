@@ -1,0 +1,28 @@
+Config file structure:
+
+/data:D:Compressed Backup
+/windata/00_DA_PJ_01:D:Compressed Backup
+/windata/60_DA_PJ_01:W:Compressed Backup
+
+
+session structure:
+
+Header
+  |
+Daily Controller -> check the config file and launch backup
+  |
+Weekly Controller -> (optional task) check the config file and launch backup
+  |
+Trailer
+
+Controller structure:
+
+==Read config file
+==launch rsync
+==launch tar&mv
+
+
+Backup -> rsync
+  |
+  v
+tar and mv to support5

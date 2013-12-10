@@ -1,0 +1,12 @@
+#! /bin/ksh
+# ========================================================
+#  ORSYP.SA
+#  ------------------------------------------------------
+#  UniViewer Management Server shutdown procedure
+# ========================================================
+#
+echo "UniViewer Management Server shutdown procedure"
+#
+. /apps/unijob110/univiewer_server/casdlsup06/data/unienv.ksh
+
+java -jar ${U_ROOT_DIR}/app/jars/centralserver-stop.jar

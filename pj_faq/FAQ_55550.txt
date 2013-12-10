@@ -1,0 +1,46 @@
+
+Key words: session, No. of uproc limit, 140 
+
+Subject: The maximum number of uprocs is 140 in a session
+
+Prerequisites:
+
+Application validation tests:
+
+[04 Feb 2007 00:05.03] [ERROR ]  [MESSAGE=The maximum no of Uprocs (140) has been reached] [NODE=aschmeap01]
+
+
+Explanation:
+
+Some customer want to create sessions containing more than 140 uprocs. 
+
+This is clearly documented in the Reference manual:
+
+
+	...
+	...
+
+Storage limits
+The total number of uprocs managed in a session is 140. Up to 20 uprocs can be declared at each level of the tree structure (for normal completions), with another 20 uprocs declared as "ab-ends" (abnormal completion of the so-called parent uproc).
+
+	...
+	...
+
+
+There is already a PE for this, 24995.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: 
+Internal
+
+Experties level:
+

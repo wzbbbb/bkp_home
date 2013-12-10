@@ -1,0 +1,74 @@
+#!/bin/sh
+#
+# chkconfig: - 91 35
+# description: Starts and stops the Universe ADMLIN installation
+#              #
+# pidfile: /var/cache/samba/winbind.pid
+# config:  /etc/samba/smb.conf
+
+# Source function library.
+if [ -f /etc/init.d/functions ] ; then
+  . /etc/init.d/functions
+elif [ -f /etc/rc.d/init.d/functions ] ; then
+  . /etc/rc.d/init.d/functions
+else
+  exit 0
+fi
+
+# Avoid using root's TMPDIR
+unset TMPDIR
+
+# Source networking configuration.
+. /etc/sysconfig/network
+
+# Check that networking is up.
+[ ${NETWORKING} = "no" ] && exit 0
+
+RETVAL=0
+
+
+start() {
+        KIND="Universe"
+        echo -n $"Starting $KIND services: do nothing"
+        #/var/ADMLIN/mgr/uxstartup
+        RETVAL=$?
+        echo
+        [ $RETVAL -eq 0 ] && touch /var/lock/subsys/universe || RETVAL=1
+        return $RETVAL
+}
+
+stop() {
+        echo
+        KIND="Universe"
+        echo -n $"Shutting down $KIND services: "
+	date > /tmp/stop_du.log
+        /etc/daenv/du/stop_all_du.ksh 
+        RETVAL=$?
+        [ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/universe
+        echo ""
+        return $RETVAL
+}
+
+restart() {
+        stop
+        start
+}
+
+case "$1" in
+  start)
+        start
+        ;;
+  stop)
+        stop
+        ;;
+  restart)
+        restart
+        ;;
+  *)
+        echo $"Usage: $0 {start|stop|restart}"
+        exit 1
+esac
+
+exit $?
+
+

@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/bin/sudo -u univa /etc/daenv/du/StopDu

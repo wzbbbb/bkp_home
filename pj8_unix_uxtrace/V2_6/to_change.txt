@@ -1,0 +1,32 @@
+-.- Dynix
+#CMD# top -bn3
+#TSP#  20040408-120529 
+top: illegal option -- 3
+Top version 3.3
+Usage: top [-ISbinpqu] [-d x] [-s x] [-U username] [number]
+
+
+-- Next version ?
+-.- Option to force the listing
+
+-.- This command my hang :
+gmu_supp: If you open a new terminal, you can kill this command and the trace will move forward.
+orsyphe: 1 S     root 26441 26440  0 154 20         42771600   34         43693868 18:05:29 pts/2     0:00 /etc/UNIVERSE_DQM_SUP500/uxshwque queue=ALL            
+
+
+-.- Add subdirectory listing :
+lrwxrwxrwx   1 root     root          12 Dec  6  2002 /etc/hosts -> ./inet/hosts
+
+#CMD# ls -ltrai /opt/universe/KIABI1/exp/log
+#TSP#  20031203-162744 
+    658985 lrwxrwxrwx   1 root     other         32 Aug 22 18:08 /opt/universe/KIABI1/exp/log -> /sauve01/universe/KIABI1/exp/log
+
+-.- Secure the detection of the company status
+By checking the output of the uxlst atm
+
+
+-- Not Considered
+-.- lib as a directory
+#CMD# ls -l /usr/lib | grep libux
+drwxrwxrwx   2 root     other       1024 Dec  5  2002 libux_v500
+

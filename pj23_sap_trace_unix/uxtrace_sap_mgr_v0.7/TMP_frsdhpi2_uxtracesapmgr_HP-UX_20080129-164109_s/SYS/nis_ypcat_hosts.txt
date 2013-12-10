@@ -1,0 +1,2 @@
+#CMD# ypcat hosts
+ypcat:  the NIS domain name hasn't been set on this machine

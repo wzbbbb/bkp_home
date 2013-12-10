@@ -1,0 +1,169 @@
+#! /bin/ksh
+l_area=${1}
+
+rst_fic()
+{
+# OS check
+OS=`uname`
+
+# Add the location of the unlink function in the PATH
+if [ -d /usr/sbin ]
+then
+        export PATH=${PATH}:/usr/sbin
+fi
+# call to verification of file data base
+if [ ${VERIF} = "Y" ]
+then
+  $UXEXE/uxvrffic $2 $1
+fi
+#
+ln -s $2/$1.dta ${U_TMP_PATH}/$1.dta_rst
+if [ $? -ne 0 ]
+then
+   echo "unable to link $2/$1.dta to ${U_TMP_PATH}/$1.dta_rst"
+   exit 1
+fi
+if [ "${3}" = "G" ]
+then
+   echo "general reoganization"
+   export U_RST_PATH=$UXDIR_ROOT
+   $UXEXE/uxrstfic $1
+else
+   echo "area reorganization"
+   export U_RST_PATH=$2
+   $UXEXE/uxrstfic $1 $3
+fi
+
+if [ $? -ne 0 ]
+then
+   if [ "${OS}" = "Linux" ]
+   then
+      rm -f  ${U_TMP_PATH}/$1.dta_rst
+   else
+      unlink ${U_TMP_PATH}/$1.dta_rst
+   fi
+   rm -f ${U_TMP_PATH:-no_value}/$1.dta
+   rm -f ${U_TMP_PATH:-no_value}/$1.idx
+   echo "unable to reorganize $2/$1"
+   exit 1
+fi
+
+if [ "${OS}" = "Linux" ]
+then
+   rm -f  ${U_TMP_PATH}/$1.dta_rst
+else
+   unlink ${U_TMP_PATH}/$1.dta_rst
+fi
+
+cp ${U_TMP_PATH:-no_value}/$1.dta  ${U_RST_PATH}/$1.dta
+rm -f ${U_TMP_PATH:-no_value}/$1.dta
+cp ${U_TMP_PATH:-no_value}/$1.idx  ${U_RST_PATH}/$1.idx
+rm -f ${U_TMP_PATH:-no_value}/$1.idx
+
+return 0
+}
+
+# ========================================================
+# ORSYP.Sa
+#
+# PROCEDURE DE MIGRATION DES FICHIERS $U
+#
+# ========================================================
+if [ "$UXEXE"x = x ]
+then
+  echo "UNIVERSE environment not found"
+  exit 1
+fi
+
+$UXEXE/uxlnmlod $UXMGR/uxlnm${S_SOCIETE}.dat > /dev/null
+
+if [ "${U_TMP_PATH:-nondefinie}" = "nondefinie" ]
+then
+   export U_TMP_PATH="/tmp"
+fi
+
+     VERIF=Y
+     export VERIF
+  if [ $# -eq 1 ] && [ $1 = NOVERIF ]
+  then
+     echo "WARNING : Dollar Universe database files check desactivated"
+     VERIF=N
+     export VERIF
+  fi
+
+#
+rst_fic dffdob50 $UXDIR_ROOT G
+
+rst_fic mdfach50 $UXDIR_ROOT G
+
+rst_fic mdfachgb $UXDIR_ROOT G
+
+rst_fic mdfapg50 $UXDIR_ROOT G
+
+rst_fic mdfapggb $UXDIR_ROOT G
+
+rst_fic mdfapr50 $UXDIR_ROOT G
+
+rst_fic mdfaprgb $UXDIR_ROOT G
+
+rst_fic mdfatr50 $UXDIR_ROOT G
+
+rst_fic mdfatrgb $UXDIR_ROOT G
+
+rst_fic u_fmrl50 $UXDIR_ROOT G
+
+rst_fic u_frra50 $UXDIR_ROOT G
+
+rst_fic u_frre50 $UXDIR_ROOT G
+
+rst_fic u_frrv50 $UXDIR_ROOT G
+
+rst_fic u_ftru50 $UXDIR_ROOT G
+
+rst_fic u_fttg50 $UXDIR_ROOT G
+
+rst_fic u_ftts50 $UXDIR_ROOT G
+
+rst_fic u_fuec50 $UXDIR_ROOT G
+
+rst_fic u_fuecgb $UXDIR_ROOT G
+
+rst_fic u_fsec50 $UXDIR_ROOT G
+
+rst_fic u_fmeq50 $UXDIR_ROOT G
+
+rst_fic u_fmqr50 $UXDIR_ROOT G
+
+rst_fic u_fmqp50 $UXDIR_ROOT G
+case ${l_area} in
+        A ) l_dir=${UXDAP};;
+        I ) l_dir=${UXDIN};;
+        S ) l_dir=${UXDSI};;
+        X ) l_dir=${UXDEX};;
+esac
+rst_fic u_fmse50 ${l_dir} ${l_area}
+rst_fic u_fmsp50 ${l_dir} ${l_area}
+rst_fic u_fmta50 ${l_dir} ${l_area}
+rst_fic u_fmtp50 ${l_dir} ${l_area}
+rst_fic u_fmtr50 ${l_dir} ${l_area}
+rst_fic u_fppf50 ${l_dir} ${l_area}
+rst_fic u_fseu50 ${l_dir} ${l_area}
+rst_fic u_frup50 ${l_dir} ${l_area}
+rst_fic u_fupr50 ${l_dir} ${l_area}
+rst_fic u_fmpf50 ${l_dir} ${l_area}
+rst_fic u_fecd50 ${l_dir} ${l_area}
+rst_fic u_fmhs50 ${l_dir} ${l_area}
+rst_fic u_fmlc50 ${l_dir} ${l_area}
+rst_fic u_fmlp50 ${l_dir} ${l_area}
+rst_fic u_fmph50 ${l_dir} ${l_area}
+rst_fic u_fmpi50 ${l_dir} ${l_area}
+rst_fic u_fmpl50 ${l_dir} ${l_area}
+rst_fic u_fmsb50 ${l_dir} ${l_area}
+rst_fic u_fmca50 ${l_dir} ${l_area}
+rst_fic u_fmcm50 ${l_dir} ${l_area}
+rst_fic u_fmcx50 ${l_dir} ${l_area}
+rst_fic u_fmer50 ${l_dir} ${l_area}
+rst_fic u_fmev50 ${l_dir} ${l_area}
+rst_fic u_fmfu50 ${l_dir} ${l_area}
+rst_fic u_fecl50 ${l_dir} ${l_area}
+

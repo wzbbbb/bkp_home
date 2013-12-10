@@ -1,0 +1,240 @@
+#CMD# ps -efHwl
+#TSP#  20090108-170129 
+F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+4 S root         1     0  0  76   0 -   500 -       2008 ?        00:00:13 init [5]                             
+1 S root         2     1  0 -40   - -     0 migrat  2008 ?        00:00:00   [migration/0]
+1 S root         3     1  0  94  19 -     0 ksofti  2008 ?        00:00:00   [ksoftirqd/0]
+5 S root         4     1  0 -40   - -     0 watchd  2008 ?        00:00:00   [watchdog/0]
+1 S root         5     1  0 -40   - -     0 migrat  2008 ?        00:00:54   [migration/1]
+1 S root         6     1  0  94  19 -     0 ksofti  2008 ?        00:00:00   [ksoftirqd/1]
+5 S root         7     1  0 -40   - -     0 watchd  2008 ?        00:00:00   [watchdog/1]
+5 S root         8     1  0  70  -5 -     0 worker  2008 ?        00:00:00   [events/0]
+5 S root         9     1  0  70  -5 -     0 worker  2008 ?        00:00:00   [events/1]
+1 S root        10     1  0  70  -5 -     0 worker  2008 ?        00:00:00   [khelper]
+1 S root        11     1  0  73  -5 -     0 worker  2008 ?        00:00:00   [kthread]
+1 S root        14    11  0  70  -5 -     0 worker  2008 ?        00:00:04     [kblockd/0]
+1 S root        15    11  0  70  -5 -     0 worker  2008 ?        00:00:05     [kblockd/1]
+1 S root        16    11  0  74  -5 -     0 worker  2008 ?        00:00:00     [kacpid]
+1 S root       138    11  0  70  -5 -     0 hub_th  2008 ?        00:00:00     [khubd]
+1 S root       140    11  0  70  -5 -     0 serio_  2008 ?        00:00:00     [kseriod]
+1 S root       206    11  0  74  -5 -     0 worker  2008 ?        00:00:00     [aio/0]
+1 S root       207    11  0  74  -5 -     0 worker  2008 ?        00:00:00     [aio/1]
+1 S root       375    11  0  71  -5 -     0 worker  2008 ?        00:00:00     [kpsmoused]
+1 S root       392    11  0  70  -5 -     0 kjourn  2008 ?        00:00:43     [kjournald]
+1 S root       431    11  0  71  -5 -     0 kaudit  2008 ?        00:00:00     [kauditd]
+1 S root      1292    11  0  80  -5 -     0 worker  2008 ?        00:00:00     [kmirrord]
+1 S root      1317    11  0  70  -5 -     0 kjourn  2008 ?        00:00:00     [kjournald]
+1 S root      1319    11  0  70  -5 -     0 kjourn  2008 ?        00:05:02     [kjournald]
+1 S root      2523    11  0  70  -5 -     0 worker  2008 ?        00:00:22     [rpciod/0]
+1 S root      2524    11  0  70  -5 -     0 worker  2008 ?        00:00:00     [rpciod/1]
+1 S root      5978    11  0  75   0 -     0 pdflus  2008 ?        00:00:10     [pdflush]
+1 S root     30572    11  0  75   0 -     0 pdflus  2008 ?        00:00:05     [pdflush]
+1 S root       205     1  0  75   0 -     0 kswapd  2008 ?        00:00:49   [kswapd0]
+5 S root       455     1  0  75  -4 -   553 -       2008 ?        00:00:00   /sbin/udevd -d
+1 S root      1589     1  0  75   0 -   414 -       2008 ?        00:00:04   syslogd -m 0
+5 S root      1592     1  0  75   0 -   400 syslog  2008 ?        00:00:00   klogd -x
+1 S root      1602     1  0  76   0 -   400 -       2008 ?        00:00:05   irqbalance
+5 S rpc       1612     1  0  76   0 -   433 195     2008 ?        00:00:00   portmap
+5 S rpcuser   1631     1  0  78   0 -   436 -       2008 ?        00:00:01   rpc.statd
+1 S root      1661     1  0  75   0 -  1184 -       2008 ?        00:00:12   rpc.idmapd
+5 S dbus      1675     1  0  76   0 -   768 1       2008 ?        00:00:00   dbus-daemon --system
+5 S root      1684     1  0  84   0 -   573 25      2008 ?        00:00:00   hcid: processing events
+1 S root      1687     1  0  84   0 -   416 -       2008 ?        00:00:00   sdpd
+1 S root      1706     1  0  70 -10 -     0 rfcomm  2008 ?        00:00:00   [krfcommd]
+1 S root      1745     1  0  75   0 -   454 25      2008 ?        00:12:58   /usr/bin/hidd --server
+5 S root      1843     1  0  76   0 -   468 1       2008 ?        00:00:00   /usr/sbin/automount --timeout=60 /net program /etc/auto.net
+5 S root      1858     1  0  76   0 -   478 -       2008 ?        00:00:00   /usr/sbin/smartd -q never
+1 S root      1867     1  0  76   0 -   400 1       2008 ?        00:00:00   /usr/sbin/acpid
+5 S root      1885     1  0  76   0 -  1244 -       2008 ?        00:00:00   /usr/sbin/sshd
+4 S root      7559  1885  0  77   0 -  1954 -      Jan06 ?        00:00:00     sshd: zwa [priv] 
+5 S zwa       7561  7559  0  75   0 -  1954 -      Jan06 ?        00:00:01       sshd: zwa@pts/7  
+0 S zwa       7562  7561  0  75   0 -  1146 wait   Jan06 pts/7    00:00:00         -bash
+4 S root     26175  7562  0  78   0 -  1185 wait   10:35 pts/7    00:00:00           su
+4 S root     26177 26175  0  75   0 -  1146 wait   10:35 pts/7    00:00:00             bash
+4 S root     23115 26177  0  85   0 -  1340 wait   16:59 pts/7    00:00:00               /bin/ksh ./uxtrace
+4 R root     26589 23115  0  85   0 -  1076 -      17:01 pts/7    00:00:00                 ps -efHwl
+4 S root     26213  1885  0  76   0 -  1954 -      10:36 ?        00:00:00     sshd: bta [priv] 
+5 S bta      26215 26213  0  75   0 -  1954 -      10:37 ?        00:00:00       sshd: bta@pts/4  
+0 S bta      26216 26215  0  75   0 -  1145 wait   10:37 pts/4    00:00:00         -bash
+4 S root     26247 26216  0  77   0 -  1185 wait   10:37 pts/4    00:00:00           su -
+4 S root     26249 26247  0  76   0 -  1145 wait   10:37 pts/4    00:00:00             -bash
+0 S root     26273 26249  0  75   0 -  1145 -      10:37 pts/4    00:00:00               bash
+4 S root     26675  1885  0  76   0 -  1954 -      10:50 ?        00:00:00     sshd: zwa [priv] 
+5 S zwa      26679 26675  0  76   0 -  1954 -      10:50 ?        00:00:00       sshd: zwa@pts/5  
+0 S zwa      26680 26679  0  75   0 -  1145 wait   10:50 pts/5    00:00:00         -bash
+4 S root      5549 26680  0  78   0 -  1185 wait   16:08 pts/5    00:00:00           su
+4 S root      5551  5549  0  75   0 -  1145 wait   16:08 pts/5    00:00:00             bash
+4 S root     23327  5551  0  76   0 -  1286 wait   16:59 pts/5    00:00:00               /bin/ksh ./uxtrace
+0 S root     26558 23327  0  76   0 -   432 -      17:01 pts/5    00:00:00                 vmstat 1 5
+4 S root     27596  1885  0  76   0 -  1954 -      11:21 ?        00:00:00     sshd: bta [priv] 
+5 S bta      27599 27596  0  75   0 -  1954 -      11:21 ?        00:00:00       sshd: bta@pts/6  
+0 S bta      27600 27599  0  75   0 -  1145 wait   11:21 pts/6    00:00:00         -bash
+4 S root     27631 27600  0  78   0 -  1185 wait   11:21 pts/6    00:00:00           su -
+4 S root     27633 27631  0  75   0 -  1146 wait   11:21 pts/6    00:00:00             -bash
+0 S root     27655 27633  0  75   0 -  1145 -      11:21 pts/6    00:00:00               bash
+4 S root     14855  1885  0  76   0 -  1954 -      16:31 ?        00:00:00     sshd: bta [priv] 
+5 S bta      14858 14855  0  75   0 -  1954 -      16:31 ?        00:00:00       sshd: bta@pts/8  
+0 S bta      14859 14858  0  75   0 -  1146 wait   16:31 pts/8    00:00:00         -bash
+4 S root     14891 14859  0  77   0 -  1185 wait   16:32 pts/8    00:00:00           su univa
+4 S univa    14892 14891  0  75   0 -  1145 wait   16:32 pts/8    00:00:00             bash
+0 S univa    14910 14892  0  79   0 -  1101 wait   16:32 pts/8    00:00:00               /bin/bash /etc/daenv/du/LoadDuEnv
+0 S univa    15325 14910  0  75   0 -  1194 -      16:32 pts/8    00:00:00                 ksh
+5 S ntp       1897     1  0  75   0 -  1062 -       2008 ?        00:00:11   ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+4 S root      1950     1  0  76   0 -  1523 -       2008 ?        00:00:01   /usr/libexec/postfix/master
+4 S postfix   1965  1950  0  76   0 -  1551 -       2008 ?        00:00:00     qmgr -l -t fifo -u
+4 S postfix  14532  1950  0  76   0 -  1538 -      16:30 ?        00:00:00     pickup -l -t fifo -u
+1 S smmsp     1978     1  0  76   0 -  1836 pause   2008 ?        00:00:00   sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+5 S root      1987     1  0  76   0 -   455 -       2008 ?        00:00:29   gpm -m /dev/input/mice -t exps2
+1 S root      1997     1  0  76   0 -  1293 -       2008 ?        00:00:01   crond
+5 S xfs       2028     1  0  75   0 -   912 -       2008 ?        00:00:00   xfs -droppriv -daemon
+4 S root      2069     1  0  75   0 -  2783 -       2008 ?        00:00:02   Xvnc :2 -desktop casdlsup06.orsypgroup.com:2 (root) -httpd /usr/share/vnc/classes -auth /root/.Xauthority -geometry 1024x768 -depth 16 -rfbwait 30000 -rfbauth /root/.vnc/passwd -rfbport 5902 -pn
+0 S root      2080     1  0  75   0 -  1044 -       2008 ?        00:00:00   vncconfig -iconic
+0 S root      2081     1  0  77   0 -  1101 wait    2008 ?        00:00:00   /bin/sh /usr/bin/startkde
+0 S root      2418  2081  0  75   0 -   395 -       2008 ?        00:01:09     kwrapper ksmserver
+5 S root      2095     1  0  75   0 -   539 -       2008 ?        00:00:00   /usr/sbin/atd
+5 S avahi     2198     1  0  75   0 -   700 1       2008 ?        00:00:00   avahi-daemon: running [casdlsup06.local]
+1 S avahi     2199  2198  0  83   0 -   700 -       2008 ?        00:00:00     avahi-daemon: chroot helper process
+1 S root      2211     1  0  84   0 -   783 1       2008 ?        00:00:00   cups-config-daemon
+5 S 68        2221     1  0  76   0 -  1258 1       2008 ?        00:00:03   hald
+0 S root      2222  2221  0  76   0 -   784 1       2008 ?        00:00:00     hald-runner
+4 S 68        2228  2222  0  76   0 -   559 -       2008 ?        00:00:00       /usr/libexec/hald-addon-acpi
+4 S 68        2241  2222  0  77   0 -   559 evdev_  2008 ?        00:00:00       /usr/libexec/hald-addon-keyboard
+0 S root      2249  2222  0  76   0 -   548 -       2008 ?        00:13:56       /usr/libexec/hald-addon-storage
+4 S root      2267     1  0  80   0 -   397 -       2008 tty1     00:00:00   /sbin/mingetty tty1
+4 S root      2269     1  0  79   0 -   397 -       2008 tty2     00:00:00   /sbin/mingetty tty2
+4 S root      2271     1  0  80   0 -   397 -       2008 tty3     00:00:00   /sbin/mingetty tty3
+4 S root      2280     1  0  76   0 -   397 -       2008 tty4     00:00:00   /sbin/mingetty tty4
+4 S root      2283     1  0  76   0 -   396 -       2008 tty5     00:00:00   /sbin/mingetty tty5
+4 S root      2286     1  0  80   0 -   397 -       2008 tty6     00:00:00   /sbin/mingetty tty6
+0 S root      2306     1  0  79   0 -  1112 wait    2008 ?        00:00:00   /bin/sh /etc/X11/prefdm -nodaemon
+4 S root      2327  2306  0  76   0 -  3234 3       2008 ?        00:00:00     /usr/sbin/gdm-binary -nodaemon
+5 S root      2366  2327  0  77   0 -  3325 pipe_w  2008 ?        00:00:00       /usr/sbin/gdm-binary -nodaemon
+4 S root      2369  2366  0  75   0 -  3550 -       2008 tty7     00:04:35         /usr/bin/Xorg :0 -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+4 S gdm       2409  2366  0  76   0 -  6449 3       2008 ?        00:03:03         /usr/libexec/gdmgreeter --gtk-module=gail:atk-bridge:/usr/lib/gtk-2.0/modules/libkeymouselistener:/usr/lib/gtk-2.0/modules/libdwellmouselistener
+1 S root      2364     1  0  76   0 -  7063 -       2008 ?        00:00:00   kdeinit Running...                    
+1 S root      2382  2364  0  75   0 -  6994 -       2008 ?        00:00:06     klauncher [kdeinit] --new-startup     
+0 S root      2421  2364  0  75   0 -  6362 -       2008 ?        00:00:00     kwin -session 102b521d261297000115558037900000023580000_1155589806_134678
+1 S root      2426  2364  0  75   0 -  7092 -       2008 ?        00:00:00     kio_file [kdeinit] file /tmp/ksocket-root/klauncherjiMW5b.slave-socket /tmp/ksocket-root/kdesktopJr0qta.slave-socket
+4 S root      2432  2364  0   9   - -  2531 -       2008 ?        00:07:23     /usr/bin/artsd -F 10 -S 4096 -s 60 -m artsmessage -c drkonqi -l 3 -f
+4 S root      2436  2364  0  75   0 -  8030 -       2008 ?        00:00:00     konsole -session 102b521d261297000115558775500000023580010_1155589806_110901
+4 S root      2441  2436  0  81   0 -  1145 -       2008 pts/2    00:00:00       /bin/bash
+1 S root      2371     1  0  75   0 -  4288 -       2008 ?        00:00:00   dcopserver --nosid
+1 S root      2396     1  0  75   0 -  8115 -       2008 ?        00:00:14   kded --new-startup
+0 S root      2398     1  0  75   0 -   675 1       2008 ?        00:46:41   /usr/libexec/gam_server
+0 S gdm       2412     1  0  77   0 -  1827 3       2008 ?        00:00:00   /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=12
+0 S gdm       2414     1  0  75   0 -  2928 3       2008 ?        00:14:57   /usr/libexec/at-spi-registryd --oaf-activate-iid=OAFIID:Accessibility_Registry:1.0 --oaf-ior-fd=23
+0 S root      2420     1  0  75   0 -  6035 -       2008 ?        00:00:00   ksmserver
+1 S root      2423     1  0  75   0 -  7698 -       2008 ?        00:00:01   kdesktop
+1 S root      2425     1  0  75   0 -  8181 -       2008 ?        00:03:57   kicker
+1 S root      2434     1  0  76   0 -  6057 -       2008 ?        00:00:00   kaccess
+1 S root      2525     1  0  76   0 -     0 322839  2008 ?        00:00:00   [lockd]
+0 S root     32206     1  0  84   0 - 57570 322839  2008 ?        00:20:42   /usr/java/jdk1.6.0_02/jre/bin/java -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/apps/tomcat/apache-tomcat-6.0.2/conf/logging.properties -Djava.endorsed.dirs=/apps/tomcat/apache-tomcat-6.0.2/endorsed -classpath :/apps/tomcat/apache-tomcat-6.0.2/bin/bootstrap.jar:/apps/tomcat/apache-tomcat-6.0.2/bin/commons-logging-api.jar -Dcatalina.base=/apps/tomcat/apache-tomcat-6.0.2 -Dcatalina.home=/apps/tomcat/apache-tomcat-6.0.2 -Djava.io.tmpdir=/apps/tomcat/apache-tomcat-6.0.2/temp org.apache.catalina.startup.Bootstrap start
+1 S univa    15982     1  9  75   0 - 62249 stext   2008 ?        1-13:53:59   ./uxioserv PRE530 X casdlsup06
+1 S univa    15983     1  2  75   0 - 18478 stext   2008 ?        08:10:08   ./uxioserv PRE530 S casdlsup06
+1 S univa    15988     1  0  76   0 - 18430 stext   2008 ?        00:00:30   ./uxioserv PRE530 I casdlsup06
+1 S univa    15991     1  0  75   0 - 20989 stext   2008 ?        00:00:34   ./uxioserv PRE530 A casdlsup06
+5 S root     15994     1  0  75   0 -  5215 rt_sig  2008 ?        00:01:11   ./uxdqmsrv PRE530 X casdlsup06
+1 S univa    16008     1  0  75   0 -  5132 stext   2008 ?        00:00:12   ./uxbvssrv PRE530 X casdlsup06
+1 S univa    16020     1  0  75   0 -  5131 stext   2008 ?        00:00:11   ./uxbvssrv PRE530 S casdlsup06
+1 S univa    16021     1  0  76   0 -  4146 stext   2008 ?        00:00:14   ./uxcdjsrv PRE530 X casdlsup06
+1 S univa    16024     1  0  75   0 -  6679 stext   2008 ?        00:00:12   ./uxcdjsrv PRE530 A casdlsup06
+1 S univa    16026     1  0  75   0 -  4118 stext   2008 ?        00:00:12   ./uxcdjsrv PRE530 I casdlsup06
+1 S univa    16028     1  0  75   0 -  5068 stext   2008 ?        00:00:19   ./uxcdjsrv PRE530 S casdlsup06
+1 S univa    16036     1  0  75   0 -  5132 stext   2008 ?        00:00:12   ./uxbvssrv PRE530 I casdlsup06
+1 S univa    16046     1  0  75   0 -  5131 stext   2008 ?        00:00:12   ./uxbvssrv PRE530 A casdlsup06
+1 S univa    16063     1  0  75   0 -  3178 -       2008 ?        00:01:20   ./uxcal PRE530 X casdlsup06
+5 S root     16078     1  0  75   0 -  3178 -       2008 ?        00:01:51   ./uxord PRE530 X casdlsup06
+1 S univa    16091     1  7  76   0 -  8716 -       2008 ?        1-04:01:53   ./uxech PRE530 X casdlsup06
+1 S univa    16111     1  0  75   0 -  3179 -       2008 ?        00:00:28   ./uxcal PRE530 S casdlsup06
+1 S root     16113     1  0  75   0 -  3178 -       2008 ?        00:00:14   ./uxsur PRE530 X casdlsup06
+5 S root     16127     1  1  76   0 -  3178 -       2008 ?        06:48:55   ./uxord PRE530 S casdlsup06
+1 S univa    16141     1  0  75   0 -  7018 -       2008 ?        01:29:55   ./uxech PRE530 S casdlsup06
+1 S univa    16154     1  0  75   0 -  3178 -       2008 ?        00:00:22   ./uxcal PRE530 A casdlsup06
+5 S root     16169     1  0  76   0 -  3178 -       2008 ?        00:00:30   ./uxord PRE530 A casdlsup06
+1 S univa    16181     1  0  75   0 -  3179 -       2008 ?        00:00:02   ./uxech PRE530 A casdlsup06
+1 S univa    16195     1  0  75   0 -  3179 -       2008 ?        00:00:06   ./uxcal PRE530 I casdlsup06
+5 S root     16208     1  0  76   0 -  3178 -       2008 ?        00:00:08   ./uxord PRE530 I casdlsup06
+1 S univa    16223     1  0  75   0 -  3179 -       2008 ?        00:00:02   ./uxech PRE530 I casdlsup06
+1 S univa    22456     1  0  75   0 - 24153 stext   2008 ?        00:00:46   ./uxioserv TST500 X casdlsup06
+1 S univa    22460     1  0  75   0 - 11318 stext   2008 ?        00:00:19   ./uxioserv TST500 A casdlsup06
+5 S root     22463     1  0  76   0 -  3440 rt_sig  2008 ?        00:00:00   ./uxdqmsrv TST500 X casdlsup06
+1 S root     22469     1  0  81   0 -  1071 rt_sig  2008 ?        00:00:00   ./uxcmdsrv TST500 X casdlsup06
+1 S univa    22474     1  0  75   0 -  3725 stext   2008 ?        00:00:10   ./uxcdjsrv TST500 X casdlsup06
+1 S univa    22475     1  0  75   0 -  3724 stext   2008 ?        00:00:10   ./uxcdjsrv TST500 A casdlsup06
+1 S univa    22489     1  0  75   0 -  2603 -       2008 ?        00:00:00   ./uxcal TST500 X casdlsup06
+5 S root     22502     1  0  75   0 -  2604 -       2008 ?        00:00:00   ./uxord TST500 X casdlsup06
+1 S univa    22514     1  0  75   0 -  2604 -       2008 ?        00:00:03   ./uxech TST500 X casdlsup06
+1 S root     22526     1  0  75   0 -  2603 -       2008 ?        00:00:23   ./uxsur TST500 X casdlsup06
+5 S root     22538     1  0  76   0 -  2603 -       2008 ?        00:00:00   ./uxord TST500 A casdlsup06
+1 S univa    22552     1  0  75   0 -  2603 -       2008 ?        00:00:00   ./uxcal TST500 A casdlsup06
+1 S univa    22565     1  0  75   0 -  2603 -       2008 ?        00:00:03   ./uxech TST500 A casdlsup06
+1 S univa    13015     1  0  75   0 - 34137 stext  Jan02 ?        00:03:27   ./uxioserv TST530 X casdlsup06
+1 S univa    13022     1  0  76   0 -  5199 -      Jan02 ?        00:00:02   ./uxioserv TST530 S casdlsup06
+1 S univa    13024     1  0  75   0 - 13193 stext  Jan02 ?        00:00:04   ./uxioserv TST530 A casdlsup06
+5 S root     13030     1  0  76   0 -  9571 rt_sig Jan02 ?        00:34:19   ./uxdqmsrv TST530 X casdlsup06
+1 S univa    13035     1  0  76   0 -  9253 stext  Jan02 ?        00:00:05   ./uxcdjsrv TST530 X casdlsup06
+1 S univa    13040     1  0  75   0 -  4118 stext  Jan02 ?        00:00:04   ./uxcdjsrv TST530 A casdlsup06
+1 S univa    13042     1  0  75   0 - 14642 stext  Jan02 ?        00:00:11   ./uxbvssrv TST530 X casdlsup06
+1 S univa    13050     1  0  75   0 -  5132 stext  Jan02 ?        00:00:04   ./uxbvssrv TST530 A casdlsup06
+1 S univa    13084     1  0  75   0 -  3179 -      Jan02 ?        00:00:05   ./uxcal TST530 X casdlsup06
+5 S root     13098     1  0  75   0 -  3178 -      Jan02 ?        00:03:32   ./uxord TST530 X casdlsup06
+1 S univa    13110     1  0  75   0 -  4823 -      Jan02 ?        00:03:26   ./uxech TST530 X casdlsup06
+1 S root     13123     1  0  75   0 -  3178 -      Jan02 ?        00:00:17   ./uxsur TST530 X casdlsup06
+5 S root     26797     1  0  76   0 -  2296 -      Jan04 ?        00:00:00   cupsd
+0 S root      5222     1  0  77   0 - 55484 322839 Jan05 ?        00:04:24   java -jar /apps/unijob110/univiewer_server/casdlsup06/app/jars/centralserver-start.jar
+1 S root      5755     1  0  75   0 - 14820 stext  Jan05 ?        00:00:04   ./uniio UNIJOB X casdlsup06_unijob
+1 S root      5757     1  0  76   0 -  4022 stext  Jan05 ?        00:00:02   ./unicdj UNIJOB X casdlsup06_unijob
+5 S root      5759     1  0  75   0 -  3598 stext  Jan05 ?        00:00:00   ./unilan UNIJOB X casdlsup06_unijob
+1 S root      5761     1  0  75   0 -  3974 stext  Jan05 ?        00:00:01   ./unical UNIJOB X casdlsup06_unijob
+1 S univa     8031     1  0  76   0 - 32553 stext  Jan05 ?        00:05:19   ./uxioserv TST511 X casdlsup06
+1 S univa     8035     1  0  75   0 -  3878 stext  Jan05 ?        00:00:01   ./uxioserv TST511 S casdlsup06
+1 S univa     8039     1  0  75   0 -  3879 stext  Jan05 ?        00:00:01   ./uxioserv TST511 I casdlsup06
+1 S univa     8043     1  0  75   0 -  6454 stext  Jan05 ?        00:00:01   ./uxioserv TST511 A casdlsup06
+1 S univa     8089     1  0  75   0 -  3901 stext  Jan05 ?        00:00:02   ./uxcdjsrv TST511 A casdlsup06
+1 S univa     8094     1  0  75   0 -  3957 stext  Jan05 ?        00:00:02   ./uxcdjsrv TST511 S casdlsup06
+1 S univa     8095     1  0  75   0 -  3847 stext  Jan05 ?        00:00:02   ./uxcdjsrv TST511 X casdlsup06
+1 S univa     8097     1  0  75   0 -  3957 stext  Jan05 ?        00:00:02   ./uxcdjsrv TST511 I casdlsup06
+1 S univa     8130     1  0  75   0 -  2813 -      Jan05 ?        00:00:01   ./uxcal TST511 X casdlsup06
+5 S root      8180     1  0  76   0 -  2901 -      Jan05 ?        00:00:06   ./uxord TST511 X casdlsup06
+1 S univa     8238     1  0  75   0 -  2812 -      Jan05 ?        00:00:22   ./uxech TST511 X casdlsup06
+1 S root      8258     1  0  75   0 -  2813 -      Jan05 ?        00:01:21   ./uxsur TST511 X casdlsup06
+5 S root      9201     1  0  75   0 -  3589 rt_sig Jan06 ?        00:00:00   ./uxdqmsrv FLS510 X casdlsup06
+1 S univa     9202     1  0  75   0 - 11919 stext  Jan06 ?        00:00:04   ./uxioserv FLS510 X casdlsup06
+1 S univa     9206     1  0  76   0 -  3821 stext  Jan06 ?        00:00:01   ./uxioserv FLS510 I casdlsup06
+1 S univa     9210     1  0  75   0 -  3820 stext  Jan06 ?        00:00:01   ./uxioserv FLS510 A casdlsup06
+1 S univa     9221     1  0  76   0 -  3846 stext  Jan06 ?        00:00:02   ./uxcdjsrv FLS510 X casdlsup06
+1 S univa     9226     1  0  75   0 -  3846 stext  Jan06 ?        00:00:01   ./uxcdjsrv FLS510 A casdlsup06
+1 S univa     9232     1  0  76   0 -  3847 stext  Jan06 ?        00:00:01   ./uxcdjsrv FLS510 I casdlsup06
+1 S univa    17115     1  0  76   0 - 31444 stext  Jan06 ?        00:00:05   ./uxioserv TST540 X casdlsup06
+1 S univa    17116     1  0  75   0 - 10745 stext  Jan06 ?        00:00:01   ./uxioserv TST540 A casdlsup06
+5 S root     17121     1  0  75   0 - 14875 stext  Jan06 ?        00:00:00   ./uxdqmsrv TST540 X casdlsup06
+1 S univa    17133     1  0  75   0 -  5258 stext  Jan06 ?        00:00:01   ./uxbvssrv TST540 X casdlsup06
+1 S univa    17137     1  0  75   0 -  5258 stext  Jan06 ?        00:00:01   ./uxbvssrv TST540 A casdlsup06
+1 S univa    17141     1  0  76   0 -  4081 stext  Jan06 ?        00:00:01   ./uxcdjsrv TST540 X casdlsup06
+1 S univa    17144     1  0  75   0 -  4081 stext  Jan06 ?        00:00:01   ./uxcdjsrv TST540 A casdlsup06
+1 S univa    17165     1  0  75   0 -  3185 -      Jan06 ?        00:00:00   ./uxcal TST540 X casdlsup06
+5 S root     17177     1  0  75   0 -  3184 -      Jan06 ?        00:00:00   ./uxord TST540 X casdlsup06
+1 S univa    17189     1  0  75   0 -  3184 -      Jan06 ?        00:00:00   ./uxech TST540 X casdlsup06
+1 S root     17203     1  0  75   0 -  3185 -      Jan06 ?        00:00:02   ./uxsur TST540 X casdlsup06
+5 S root     19627     1  0  76   0 -  3577 rt_sig Jan07 ?        00:00:00   ./uxdqmsrv FLS520 X casdlsup06
+1 S univa    19632     1  0  76   0 - 17075 stext  Jan07 ?        00:00:21   ./uxioserv FLS520 X casdlsup06
+1 S univa    19636     1  0  75   0 -  8964 stext  Jan07 ?        00:00:00   ./uxioserv FLS520 S casdlsup06
+1 S univa    19640     1  0  76   0 -  8964 stext  Jan07 ?        00:00:00   ./uxioserv FLS520 I casdlsup06
+1 S univa    19644     1  0  75   0 -  8964 stext  Jan07 ?        00:00:00   ./uxioserv FLS520 A casdlsup06
+1 S univa    19650     1  0  75   0 -  4252 stext  Jan07 ?        00:00:00   ./uxcdjsrv FLS520 X casdlsup06
+1 S univa    19659     1  0  75   0 -  3866 stext  Jan07 ?        00:00:00   ./uxcdjsrv FLS520 A casdlsup06
+1 S univa    19661     1  0  75   0 -  3865 stext  Jan07 ?        00:00:00   ./uxcdjsrv FLS520 I casdlsup06
+1 S univa    19662     1  0  75   0 -  4719 stext  Jan07 ?        00:00:00   /apps/du/520/FLS520/exec/uxbvssrv FLS520 X casdlsup06
+1 S univa    19665     1  0  75   0 -  4720 stext  Jan07 ?        00:00:00   /apps/du/520/FLS520/exec/uxbvssrv FLS520 S casdlsup06
+1 S univa    19670     1  0  75   0 -  4719 stext  Jan07 ?        00:00:00   /apps/du/520/FLS520/exec/uxbvssrv FLS520 I casdlsup06
+1 S univa    19672     1  0  75   0 -  4719 stext  Jan07 ?        00:00:00   /apps/du/520/FLS520/exec/uxbvssrv FLS520 A casdlsup06
+1 S univa    19684     1  0  75   0 -  3865 stext  Jan07 ?        00:00:00   ./uxcdjsrv FLS520 S casdlsup06
+1 S univa    18974     1  0  75   0 - 20705 stext  09:34 ?        00:00:09   ./uxioserv FLS530 X casdlsup06
+1 S univa    18978     1  0  76   0 - 10322 stext  09:34 ?        00:00:00   ./uxioserv FLS530 A casdlsup06
+5 S root     18982     1  0  76   0 -  5154 rt_sig 09:34 ?        00:00:00   ./uxdqmsrv FLS530 X casdlsup06
+1 S univa    18989     1  0  75   0 -  5112 stext  09:34 ?        00:00:00   ./uxbvssrv FLS530 X casdlsup06
+1 S univa    18994     1  0  76   0 -  5112 stext  09:34 ?        00:00:00   ./uxbvssrv FLS530 A casdlsup06
+1 S univa    18998     1  0  75   0 -  4407 stext  09:34 ?        00:00:00   ./uxcdjsrv FLS530 X casdlsup06
+1 S univa    19000     1  0  75   0 -  4117 stext  09:34 ?        00:00:00   ./uxcdjsrv FLS530 A casdlsup06
+1 S root      9173     1  0  77   0 -  1145 wait   16:19 pts/4    00:00:00   bash
+0 S root      9174  9173  0  79   0 - 303863 322839 16:19 pts/4   00:00:20     java -Xmx1024m -Xms512m -cp exec/c3p0-0.9.1.2.jar:exec/ehcache-1.2.3.jar:exec/commons-codec-1.2.jar:exec/ant.jar:exec/antlr-2.7.6.jar:exec/api.jar:exec/art.jar:exec/cglib-nodep-2.1_3.jar:exec/comm.jar:exec/commons-beanutils.jar:exec/commons-betwixt-0.8.jar:exec/commons-codec-1.3.jar:exec/commons-collections-3.2.jar:exec/commons-dbcp-1.2.1.jar:exec/commons-digester-1.8.jar:exec/commons-logging-1.1.jar:exec/commons-pool-1.4.jar:exec/dom4j-1.6.1.jar:exec/DUJavaWebConsole.jar:exec/Extensions.jar:exec/hibernate3.jar:exec/jaxen-1.1-beta-6.jar:exec/jta.jar:exec/log4j-1.2.14.jar:exec/log4j-extras.jar:exec/monitoring.jar:exec/monitoring-std.jar:exec/mysql-connector-java-5.0.3-bin.jar:exec/ojdbc14.jar:exec/RepPubCommon.jar:exec/servlet-api.jar:exec/spring.jar:exec/sqljdbc.jar:exec/stdimpl.jar:exec/Swing.jar:exec/util.jar:exec/RepPubServer.jar:exec/wco-servlet.jar:exec/userfile.jar:exec/userlicense.jar:exec/jtds-1.2.jar:exec/itext-1.3.1.jar:exec/jasperreports-3.0.0.jar:exec/jasperreports-extensions-1.3.1.jar:exec/jcommon-1.0.9.jar:exec/jfreechart-1.0.11.jar:exec/mail-1.4.jar:exec/activation.jar com.orsyp.reppub.server.communication.ServerStartUp

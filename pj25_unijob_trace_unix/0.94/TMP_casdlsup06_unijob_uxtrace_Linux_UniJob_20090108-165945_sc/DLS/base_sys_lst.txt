@@ -1,0 +1,276 @@
+#REM# LISTING OF THE TCP/IP FILES
+#CMD# ls -ltr /etc/services*
+-rw-r--r-- 1 root root 365450 Aug 31  2006 /etc/services.sav.20060831-180324
+-rw-r--r-- 1 root root 366138 Sep 11  2006 /etc/services.sav.20060911-115455
+-rw-r--r-- 1 root root 367115 Sep 11  2006 /etc/services.sav.20060911-154622
+-rw-r--r-- 1 root root 368092 Sep 11  2006 /etc/services.sav.20060911-171642
+-rw-r--r-- 1 root root 369069 Sep 12  2006 /etc/services.sav.20060912-174113
+-rw-r--r-- 1 root root 376160 Nov  2  2006 /etc/services.sav.20061102-143236
+-rw-r--r-- 1 root root 377354 Nov  2  2006 /etc/services.sav.20061102-173929
+-rw-r--r-- 1 root root 378490 Nov  3  2006 /etc/services.sav.20061103-152332
+-rw-r--r-- 1 root root 383008 Nov  3  2006 /etc/services.sav.20061103-172453
+-rw-r--r-- 1 root root 383011 Nov  3  2006 /etc/services.sav.20061103-180943
+-rw-r--r-- 1 root root 383011 Nov  7  2006 /etc/services.sav.20061107-153124
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-172327
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-173723
+-rw-r--r-- 1 root root 381072 Oct  4  2007 /etc/services_before_UNIVERSE_bkup
+-rw-r--r-- 1 root root 385757 Oct  4  2007 /etc/services_before_UNIVERSE
+-rw-r--r-- 1 root root 387778 Nov  9  2007 /etc/services_UPG_523_BKP
+-rw-r--r-- 1 root root 389010 Feb 27  2008 /etc/services_UPG_532_BKP
+-rw-r--r-- 1 root root 389412 Mar 31  2008 /etc/services_UPG_533_BKP
+-rw-rw-rw- 1 root root   1077 Oct 17 14:41 /etc/services_maj
+-rw-r--r-- 1 root root 392378 Oct 17 14:41 /etc/services_SAVE
+-rw-r--r-- 1 root root    327 Oct 20 17:49 /etc/services_maj_dqm
+-rw-r--r-- 1 root root 393782 Oct 20 17:49 /etc/services_SAVE_dqm
+-rw-r--r-- 1 root root 394007 Jan  8 09:59 /etc/services
+#CMD# ls -lL /etc/services*
+-rw-r--r-- 1 root root 394007 Jan  8 09:59 /etc/services
+-rw-r--r-- 1 root root 385757 Oct  4  2007 /etc/services_before_UNIVERSE
+-rw-r--r-- 1 root root 381072 Oct  4  2007 /etc/services_before_UNIVERSE_bkup
+-rw-rw-rw- 1 root root   1077 Oct 17 14:41 /etc/services_maj
+-rw-r--r-- 1 root root    327 Oct 20 17:49 /etc/services_maj_dqm
+-rw-r--r-- 1 root root 365450 Aug 31  2006 /etc/services.sav.20060831-180324
+-rw-r--r-- 1 root root 366138 Sep 11  2006 /etc/services.sav.20060911-115455
+-rw-r--r-- 1 root root 367115 Sep 11  2006 /etc/services.sav.20060911-154622
+-rw-r--r-- 1 root root 368092 Sep 11  2006 /etc/services.sav.20060911-171642
+-rw-r--r-- 1 root root 369069 Sep 12  2006 /etc/services.sav.20060912-174113
+-rw-r--r-- 1 root root 376160 Nov  2  2006 /etc/services.sav.20061102-143236
+-rw-r--r-- 1 root root 377354 Nov  2  2006 /etc/services.sav.20061102-173929
+-rw-r--r-- 1 root root 378490 Nov  3  2006 /etc/services.sav.20061103-152332
+-rw-r--r-- 1 root root 383008 Nov  3  2006 /etc/services.sav.20061103-172453
+-rw-r--r-- 1 root root 383011 Nov  3  2006 /etc/services.sav.20061103-180943
+-rw-r--r-- 1 root root 383011 Nov  7  2006 /etc/services.sav.20061107-153124
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-172327
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-173723
+-rw-r--r-- 1 root root 392378 Oct 17 14:41 /etc/services_SAVE
+-rw-r--r-- 1 root root 393782 Oct 20 17:49 /etc/services_SAVE_dqm
+-rw-r--r-- 1 root root 387778 Nov  9  2007 /etc/services_UPG_523_BKP
+-rw-r--r-- 1 root root 389010 Feb 27  2008 /etc/services_UPG_532_BKP
+-rw-r--r-- 1 root root 389412 Mar 31  2008 /etc/services_UPG_533_BKP
+#CMD# ls -ltr /etc/hosts*
+-rw-r--r-- 1 root root 347 Jan 12  2000 /etc/hosts.deny
+-rw-r--r-- 1 root root 161 Jan 12  2000 /etc/hosts.allow
+-rw-r--r-- 2 root root 616 Aug 20 13:59 /etc/hosts
+#CMD# ls -lL /etc/hosts*
+-rw-r--r-- 2 root root 616 Aug 20 13:59 /etc/hosts
+-rw-r--r-- 1 root root 161 Jan 12  2000 /etc/hosts.allow
+-rw-r--r-- 1 root root 347 Jan 12  2000 /etc/hosts.deny
+#CMD# ls -ltr /etc/fedora-release*
+-rw-r--r-- 1 root root 33 Mar 14  2006 /etc/fedora-release
+#CMD# ls -lL /etc/fedora-release*
+-rw-r--r-- 1 root root 33 Mar 14  2006 /etc/fedora-release
+#CMD# ls -ltr /etc/redhat-release*
+lrwxrwxrwx 1 root root 14 Aug  9  2006 /etc/redhat-release -> fedora-release
+#CMD# ls -lL /etc/redhat-release*
+-rw-r--r-- 1 root root 33 Mar 14  2006 /etc/redhat-release
+#CMD# ls -ltr /etc/resolv.conf*
+-rw-r--r-- 2 root root 89 Aug 14  2006 /etc/resolv.conf
+#CMD# ls -lL /etc/resolv.conf*
+-rw-r--r-- 2 root root 89 Aug 14  2006 /etc/resolv.conf
+#CMD# ls -ltr /proc/version*
+-r--r--r-- 1 root root 0 Jan  8 17:00 /proc/version
+#CMD# ls -lL /proc/version*
+-r--r--r-- 1 root root 0 Jan  8 17:00 /proc/version
+#REM# LISTING OF THE UNIVERSE LINKS
+#CMD# ls -l / | grep -i UNI
+#CMD# ls -l /etc | grep -i UNI
+-rw-r--r--  1 root  root   25290 Apr 17  2007 bkup_UNIVERSE_SECURITY_SUP513
+-rw-r--r--  1 root  root   25290 Apr 16  2007 bkup_UNIVERSE_SECURITY_TST520
+-rw-r--r--  1 root  root  385757 Oct  4  2007 services_before_UNIVERSE
+-rw-r--r--  1 root  root  381072 Oct  4  2007 services_before_UNIVERSE_bkup
+lrwxrwxrwx  1 root  root      33 Oct  4  2007 UNIVERSE_ACNPRD_casdlsup06 -> /apps/du/500/ACNPRD/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 May  2  2007 UNIVERSE__casdlsup06 -> /apps/du/520/TST520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_ -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct  4  2007 UNIVERSE_DQM_ACNPRD -> /apps/du/500/ACNPRD/DQM
+lrwxrwxrwx  1 root  root      23 Aug 24  2007 UNIVERSE_DQM_FLS500 -> /apps/du/500/FLS500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 14  2006 UNIVERSE_DQM_FLS510 -> /apps/du/510/FLS510/DQM
+lrwxrwxrwx  1 root  root      23 Nov 28  2006 UNIVERSE_DQM_FLS520 -> /apps/du/520/FLS520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_FLS530 -> /apps/du/530/FLS530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 17 14:43 UNIVERSE_DQM_FLS540 -> /apps/du/540/FLS540/DQM
+lrwxrwxrwx  1 root  root      23 Nov  3  2006 UNIVERSE_DQM_INT520 -> /apps/du/520/INT520/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_MDT500 -> /apps/du/500/MDT500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 29  2006 UNIVERSE_DQM_MDT511 -> /apps/du/511/MDT511/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_MNT500 -> /apps/du/MNT500/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_PRE500 -> /apps/du/500/PRE500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 31  2006 UNIVERSE_DQM_PRE511 -> /apps/du/511/PRE511/DQM
+lrwxrwxrwx  1 root  root      23 Oct 16 16:57 UNIVERSE_DQM_PRE530 -> /apps/du/530/PRE530/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_QCL500 -> /apps/du/QCL500/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_SUP500 -> /apps/du/SUP500/DQM
+lrwxrwxrwx  1 root  root      23 Sep  7  2007 UNIVERSE_DQM_SUP511 -> /apps/du/511/SUP511/DQM
+lrwxrwxrwx  1 root  root      23 Apr 17  2007 UNIVERSE_DQM_SUP513 -> /apps/du/510/SUP513/DQM
+lrwxrwxrwx  1 root  root      23 Sep 12  2006 UNIVERSE_DQM_TST500 -> /apps/du/500/TST500/DQM
+lrwxrwxrwx  1 root  root      23 Oct 21 11:47 UNIVERSE_DQM_TST511_ori -> /apps/du/511/TST511/DQM
+lrwxrwxrwx  1 root  root      23 May 14  2007 UNIVERSE_DQM_TST520 -> /apps/du/520/TST520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_TST530 -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 20 17:49 UNIVERSE_DQM_TST540 -> /apps/du/540/TST540/DQM
+lrwxrwxrwx  1 root  root      23 Jan 18  2008 UNIVERSE_DQM_UNI532 -> /apps/du/532/UNI532/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_ZMVS50 -> /apps/du/ZMVS50/DQM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_FDXPRD_DA_US_U_02 -> /apps/du/FDXPRD/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 24  2007 UNIVERSE_FLS500_casdlsup06 -> /apps/du/500/FLS500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 23  2007 UNIVERSE_FLS500_DA_US_U_02 -> /apps/du/500/FLS500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_FLS500_DA_US_U_02_bck -> /apps/du/FLS500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 14  2006 UNIVERSE_FLS510_casdlsup06 -> /apps/du/510/FLS510/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Nov 28  2006 UNIVERSE_FLS520_casdlsup06 -> /apps/du/520/FLS520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Nov  3  2006 UNIVERSE_INT520_casdlsup06 -> /apps/du/520/INT520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep 11  2006 UNIVERSE_MDT500_casdlsup06 -> /apps/du/500/MDT500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Apr 27  2007 UNIVERSE_MDT511_casdlsup06 -> /apps/du/511/MDT511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_MNT500_DA_US_U_02 -> /apps/du/MNT500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_MNT500_support2 -> /apps/du/MNT500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep 11  2006 UNIVERSE_PRE500_casdlsup06 -> /apps/du/500/PRE500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 31  2006 UNIVERSE_PRE511_casdlsup06 -> /apps/du/511/PRE511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_QCL500_DA_US_U_02 -> /apps/du/QCL500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_QCL500_support2 -> /apps/du/QCL500/mgr/UXSHM_LNM
+-rw-r--r--  1 root  root   24273 Oct  4  2007 UNIVERSE_SECURITY_ACNPRD
+-rw-r--r--  1 root  root   24177 Oct  4  2007 UNIVERSE_SECURITY_ACNPRD_24384B
+-rw-r--r--  1 root  root   24171 Oct  4  2007 UNIVERSE_SECURITY_ACNPRD_RE0025
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_FLS500 -> /apps/du/FLS500/mgr/security.txt
+-rw-r--r--  1 univa users  27498 Mar  3  2006 UNIVERSE_SECURITY_FLS500_24384B
+-rw-r--r--  1 univa users  27498 Mar  3  2006 UNIVERSE_SECURITY_FLS500_RE0025
+-rw-r--r--  1 root  root   25290 Nov 28  2006 UNIVERSE_SECURITY_FLS520
+-rw-r--r--  1 root  root   25287 Oct 21 10:09 UNIVERSE_SECURITY_FLS530
+-rw-r--r--  1 root  root   25290 Aug  8  2007 UNIVERSE_SECURITY_FLS530_UPG_532_BKP
+-rw-r--r--  1 root  root   25290 Aug  8  2007 UNIVERSE_SECURITY_FLS530_UPG_533_BKP
+-rw-r--r--  1 root  root   25290 Oct 17 14:41 UNIVERSE_SECURITY_FLS540
+-rw-r--r--  1 root  root   25290 Nov  3  2006 UNIVERSE_SECURITY_INT520
+-rw-r--r--  1 root  root   24177 Sep 11  2006 UNIVERSE_SECURITY_MDT500
+-rw-r--r--  1 root  root   24171 Sep 11  2006 UNIVERSE_SECURITY_MDT500_RE0025
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_A -> /apps/du/511/MDT511/mgr/security_A.txt
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_I -> /apps/du/511/MDT511/mgr/security_I.txt
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_S -> /apps/du/511/MDT511/mgr/security_S.txt
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_X -> /apps/du/511/MDT511/mgr/security_X.txt
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_MNT500 -> /apps/du/MNT500/mgr/security.txt
+-rw-rw-r--  1 univa univ   47751 Mar 31  2006 UNIVERSE_SECURITY_MNT500_24430A
+-rw-r--r--  1 root  root   24273 Sep 11  2006 UNIVERSE_SECURITY_PRE500
+-rw-r--r--  1 root  root   24177 Sep 11  2006 UNIVERSE_SECURITY_PRE500_24384B
+-rw-r--r--  1 root  root   24171 Sep 11  2006 UNIVERSE_SECURITY_PRE500_RE0025
+lrwxrwxrwx  1 root  root      36 Mar  7  2007 UNIVERSE_SECURITY_PRE511 -> /apps/du/511/PRE511/mgr/security.txt
+-rw-r--r--  1 root  root   25276 Dec  5 14:54 UNIVERSE_SECURITY_PRE530
+-rw-r--r--  1 root  root   25290 Aug 14  2007 UNIVERSE_SECURITY_PRE530_UPG_532_BKP
+-rw-r--r--  1 root  root   25290 Aug 14  2007 UNIVERSE_SECURITY_PRE530_UPG_533_BKP
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_QCL500 -> /apps/du/QCL500/mgr/security.txt
+-rw-rwxr--  1 univa univ   27402 Aug  9  2005 UNIVERSE_SECURITY_QCL500_24384B
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_SUP500 -> /apps/du/SUP500/mgr/security.txt
+-rw-r--r--  1 root  root   25290 Sep  7  2007 UNIVERSE_SECURITY_SUP511
+-rw-r--r--  1 root  root   25290 Apr 17  2007 UNIVERSE_SECURITY_SUP513
+-rw-r--r--  1 root  root   24273 Sep 12  2006 UNIVERSE_SECURITY_TST500
+-rw-r--r--  1 root  root   24177 Sep 12  2006 UNIVERSE_SECURITY_TST500_24384B
+-rw-r--r--  1 root  root   24171 Sep 12  2006 UNIVERSE_SECURITY_TST500_RE0025
+-rw-r--r--  1 root  root   25290 Dec  2 17:14 UNIVERSE_SECURITY_TST511
+-rw-r--r--  1 root  root   25290 Nov  2  2006 UNIVERSE_SECURITY_TST520
+-rw-r--r--  1 root  root   25290 Nov 25 12:13 UNIVERSE_SECURITY_TST530
+-rw-r--r--  1 root  root   25985 Feb 29  2008 UNIVERSE_SECURITY_TST530_old
+-rw-r--r--  1 root  root   25992 Dec  4  2007 UNIVERSE_SECURITY_TST530_UPG_532_BKP
+-rw-r--r--  1 root  root   25985 Feb 29  2008 UNIVERSE_SECURITY_TST530_UPG_533_BKP
+-rw-r--r--  1 root  root   25290 Oct 10 15:38 UNIVERSE_SECURITY_TST540
+-rw-r--r--  1 root  root   25290 Jan 18  2008 UNIVERSE_SECURITY_UNI532
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_ZMVS50 -> /apps/du/ZMVS50/mgr/security.txt
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_SUP500_DA_US_U_02 -> /apps/du/SUP500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep  7  2007 UNIVERSE_SUP511_casdlsup06 -> /apps/du/511/SUP511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Apr 17  2007 UNIVERSE_SUP513_casdlsup06 -> /apps/du/510/SUP513/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_A -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_A
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_I -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_I
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_S -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_S
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_X -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_X
+lrwxrwxrwx  1 root  root      33 Sep 12  2006 UNIVERSE_TST500_casdlsup06 -> /apps/du/500/TST500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep 11  2006 UNIVERSE_TST511_casdlsup06 -> /apps/du/511/TST511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 May  2  2007 UNIVERSE_TST520_casdlsup06 -> /apps/du/520/TST520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Oct  9  2006 UNIVERSE_USERALIAS_MNT500_old -> /apps/du/MNT500/mgr/useralias.txt
+-rw-r--r--  1 root  root      11 May 16  2008 UNIVERSE_USERALIAS_TST500
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_ZMVS50_DA_US_U_02 -> /apps/du/ZMVS50/mgr/UXSHM_LNM
+#REM# LISTING OF THE RFC SERVER DIRECTORY
+#CMD# ls -l /etc | grep UNIVERSE_SERVER_RFC
+#REM# LISTING OF THE SAP AGENT DIRECTORY
+#CMD# ls -l /etc | grep UNIVERSE_AGENT_SAP
+#REM# LISTING OF THE ALL DQM DIRECTORIES
+#CMD# ls -l /etc | grep UNIVERSE_DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_ -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct  4  2007 UNIVERSE_DQM_ACNPRD -> /apps/du/500/ACNPRD/DQM
+lrwxrwxrwx  1 root  root      23 Aug 24  2007 UNIVERSE_DQM_FLS500 -> /apps/du/500/FLS500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 14  2006 UNIVERSE_DQM_FLS510 -> /apps/du/510/FLS510/DQM
+lrwxrwxrwx  1 root  root      23 Nov 28  2006 UNIVERSE_DQM_FLS520 -> /apps/du/520/FLS520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_FLS530 -> /apps/du/530/FLS530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 17 14:43 UNIVERSE_DQM_FLS540 -> /apps/du/540/FLS540/DQM
+lrwxrwxrwx  1 root  root      23 Nov  3  2006 UNIVERSE_DQM_INT520 -> /apps/du/520/INT520/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_MDT500 -> /apps/du/500/MDT500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 29  2006 UNIVERSE_DQM_MDT511 -> /apps/du/511/MDT511/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_MNT500 -> /apps/du/MNT500/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_PRE500 -> /apps/du/500/PRE500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 31  2006 UNIVERSE_DQM_PRE511 -> /apps/du/511/PRE511/DQM
+lrwxrwxrwx  1 root  root      23 Oct 16 16:57 UNIVERSE_DQM_PRE530 -> /apps/du/530/PRE530/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_QCL500 -> /apps/du/QCL500/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_SUP500 -> /apps/du/SUP500/DQM
+lrwxrwxrwx  1 root  root      23 Sep  7  2007 UNIVERSE_DQM_SUP511 -> /apps/du/511/SUP511/DQM
+lrwxrwxrwx  1 root  root      23 Apr 17  2007 UNIVERSE_DQM_SUP513 -> /apps/du/510/SUP513/DQM
+lrwxrwxrwx  1 root  root      23 Sep 12  2006 UNIVERSE_DQM_TST500 -> /apps/du/500/TST500/DQM
+lrwxrwxrwx  1 root  root      23 Oct 21 11:47 UNIVERSE_DQM_TST511_ori -> /apps/du/511/TST511/DQM
+lrwxrwxrwx  1 root  root      23 May 14  2007 UNIVERSE_DQM_TST520 -> /apps/du/520/TST520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_TST530 -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 20 17:49 UNIVERSE_DQM_TST540 -> /apps/du/540/TST540/DQM
+lrwxrwxrwx  1 root  root      23 Jan 18  2008 UNIVERSE_DQM_UNI532 -> /apps/du/532/UNI532/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_ZMVS50 -> /apps/du/ZMVS50/DQM
+#REM# LISTING OF THE libux STRUCTURE
+#CMD# ls -l /usr/lib | grep libux
+lrwxrwxrwx   1 root root       28 Feb 27  2008 libux_fso_DU_V53-Maintenance -> /apps/du/530/FLS530/exec/lib
+lrwxrwxrwx   1 root root       28 Oct 17 14:41 libux_v540 -> /apps/du/540/FLS540/exec/lib
+#CMD# ls -lRai /usr/lib/libux*/*
+20168750 -r-xr-xr-x 1 univa univ 2605909 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_api.so
+20168770 -r-xr-xr-x 1 univa univ 2260978 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_cmd.so
+20168745 -r-xr-xr-x 1 univa univ 2260550 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_cmd.so_24549
+20168769 -r-xr-xr-x 1 univa univ 3862539 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_ord.so
+20168744 -r-xr-xr-x 1 univa univ 3846229 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_ord.so_24549
+20168766 -r-xr-xr-x 1 univa univ 8119000 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxapi.so
+20168752 -r-xr-xr-x 1 univa univ 8110374 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxapi.so_24549
+20168746 -r-xr-xr-x 1 univa univ  282804 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxbvs.so
+20168751 -r-xr-xr-x 1 univa univ  144167 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcdj.so
+20168765 -r-xr-xr-x 1 univa univ  553050 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcmd.so
+20168764 -r-xr-xr-x 1 univa univ  552810 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcmd.so_24549
+20168756 -r-xr-xr-x 1 univa univ    7917 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcrypt_empty.so
+20168762 lrwxrwxrwx 1 root  root      21 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcrypt.so -> ./libuxcrypt_empty.so
+20168738 -r-xr-xr-x 1 univa univ 2563791 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxdscart.so
+20168753 -r-xr-xr-x 1 univa univ   89736 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxftapi.so
+20168755 -r-xr-xr-x 1 univa univ   15804 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxft_empty.so
+20168760 lrwxrwxrwx 1 root  root      18 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxft.so -> ./libuxft_empty.so
+20168740 -r-xr-xr-x 1 univa univ 3307166 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxgui.so
+20168768 -r-xr-xr-x 1 univa univ 2397467 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxos.so
+20168757 -r-xr-xr-x 1 univa univ 2395303 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxos.so_24549
+20168741 -r-xr-xr-x 1 univa univ   18391 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_com.so
+20168742 -r-xr-xr-x 1 univa univ    9050 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_empty.so
+20168763 -r-xr-xr-x 1 root  root   20086 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_itm.so
+20168747 -r-xr-xr-x 1 univa univ   20890 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_ito.so
+20168759 -r-xr-xr-x 1 univa univ 1006593 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_pat.so
+20168761 lrwxrwxrwx 1 root  root      19 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv.so -> ./libuxspv_empty.so
+20168737 -r-xr-xr-x 1 univa univ   14046 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_tiv.so
+20168739 -r-xr-xr-x 1 univa univ   16785 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_tng.so
+20168749 -r-xr-xr-x 1 univa univ  609094 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxsrvio.so
+20168767 -r-xr-xr-x 1 univa univ 8526572 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxuni.so
+20168748 -r-xr-xr-x 1 univa univ 8504788 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxuni.so_24549
+20168758 -r-xr-xr-x 1 univa univ 2304861 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxxml.so
+20168754 -r-xr-xr-x 1 univa univ   74672 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxz.so
+21856426 -rwxrwxr-x 1 root  root 2651996 Oct 17 14:41 /usr/lib/libux_v540/libuni_api.so
+21856427 -rwxrwxr-x 1 root  root 2289815 Oct 17 14:41 /usr/lib/libux_v540/libuni_cmd.so
+21856428 -rwxrwxr-x 1 root  root 3185565 Oct 17 14:41 /usr/lib/libux_v540/libuni_ord.so
+21856429 -rwxrwxr-x 1 root  root 8149276 Oct 17 14:41 /usr/lib/libux_v540/libuxapi.so
+21856430 -rwxrwxr-x 1 root  root  282812 Oct 17 14:41 /usr/lib/libux_v540/libuxbvs.so
+21856431 -rwxrwxr-x 1 root  root  144167 Oct 17 14:41 /usr/lib/libux_v540/libuxcdj.so
+21856432 -rwxrwxr-x 1 root  root  552874 Oct 17 14:41 /usr/lib/libux_v540/libuxcmd.so
+21856450 -rwxrwxr-x 1 root  root    7917 Oct 17 14:41 /usr/lib/libux_v540/libuxcrypt_empty.so
+21856583 lrwxrwxrwx 1 root  root      21 Oct 17 14:41 /usr/lib/libux_v540/libuxcrypt.so -> ./libuxcrypt_empty.so
+21856433 -rwxrwxr-x 1 root  root  466497 Oct 17 14:41 /usr/lib/libux_v540/libuxdqmplus.so
+21856434 -rwxrwxr-x 1 root  root 2551370 Oct 17 14:41 /usr/lib/libux_v540/libuxdscart.so
+21856435 -rwxrwxr-x 1 root  root   89736 Oct 17 14:41 /usr/lib/libux_v540/libuxftapi.so
+21856448 -rwxrwxr-x 1 root  root   15804 Oct 17 14:41 /usr/lib/libux_v540/libuxft_empty.so
+21856581 lrwxrwxrwx 1 root  root      18 Oct 17 14:41 /usr/lib/libux_v540/libuxft.so -> ./libuxft_empty.so
+21856436 -rwxrwxr-x 1 root  root 3311605 Oct 17 14:41 /usr/lib/libux_v540/libuxgui.so
+21856437 -rwxrwxr-x 1 root  root 2415955 Oct 17 14:41 /usr/lib/libux_v540/libuxos.so
+21856438 -rwxrwxr-x 1 root  root   18789 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_com.so
+21856449 -rwxrwxr-x 1 root  root    9248 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_empty.so
+21856439 -rwxrwxr-x 1 root  root   20312 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_itm.so
+21856440 -rwxrwxr-x 1 root  root   21080 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_ito.so
+21856441 -rwxrwxr-x 1 root  root 1006593 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_pat.so
+21856582 lrwxrwxrwx 1 root  root      19 Oct 17 14:41 /usr/lib/libux_v540/libuxspv.so -> ./libuxspv_empty.so
+21856442 -rwxrwxr-x 1 root  root   14256 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_tiv.so
+21856443 -rwxrwxr-x 1 root  root   17003 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_tng.so
+21856444 -rwxrwxr-x 1 root  root  641697 Oct 17 14:41 /usr/lib/libux_v540/libuxsrvio.so
+21856445 -rwxrwxr-x 1 root  root 9153935 Oct 17 14:41 /usr/lib/libux_v540/libuxuni.so
+21856446 -rwxrwxr-x 1 root  root 2304861 Oct 17 14:41 /usr/lib/libux_v540/libuxxml.so
+21856447 -rwxrwxr-x 1 root  root   74672 Oct 17 14:41 /usr/lib/libux_v540/libuxz.so

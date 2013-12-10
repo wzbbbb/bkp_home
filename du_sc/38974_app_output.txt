@@ -1,0 +1,273 @@
+ Command : uxadd fla app upr=38974-1 mu=DA_US_U_02 user=univa vupr=001 pdate=02/03/2005 exlw=(0000,0000) nseq=0000 prty=100 queue=SYS_BATCH vses=000 noforce nocentral norestart nobypass nopartage
+
+numlanc 0001095
+#######################################################
+#TS#  Mon Feb 14 15:54:53 EST 2005
+ Command : uxadd fla app upr=38974-1 mu=DA_US_U_02 user=univa vupr=001 pdate=02/03/2005 exlw=(0000,0000) nseq=0000 prty=100 queue=SYS_BATCH vses=000 noforce nocentral norestart nobypass nopartage
+
+numlanc 0001096
+#######################################################
+#TS#  Mon Feb 14 15:54:53 EST 2005
+#######################################################
+#TS#  Mon Feb 14 15:55:03 EST 2005
+ Command : uxlst fla app upr=38974-1 vupr=001 mu=DA_US_U_02 full
+
+ SESSION    UPROC      MU         STATE                  START      AT   END        AT    NODE       CLUSTER      QUEUE BATCH     NSEQ    SESSNO  PROCNO 
+ -------------------------------- ---------------------- ------------------------------------------------------------------------------------------------
+#######################################################
+
+#TS#  Mon Feb 14 15:55:03 EST 2005
+ Command : uxlst ctl app upr=38974-1 vupr=001 mu=DA_US_U_02 full status=*
+
+SESSION     UPROC      MU         STATE                 START      AT   END        AT      MODIFICATIONS          NODE       QUEUE                           JOB    PRI SESSNO  PROCNO  PDATE      USERNAME     VSES VUPR STP NSEQ
+--------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1551 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0022   100         0001077 02/03/2005 univa        000  001  00  0001091
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1551 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0023   100         0001078 02/03/2005 univa        000  001  00  0001092
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1552 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0024   100         0001079 02/03/2005 univa        000  001  00  0001093
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1552 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0025   100         0001080 02/03/2005 univa        000  001  00  0001094
+            38974-1    DA_US_U_02 EXECUTING             02/14/2005 1554 02/14/2005 1554                           DA_US_U_02 SYS_BATCH                       0026   100         0001081 02/03/2005 univa        000  001  00  0001095
+            38974-1    DA_US_U_02 EXECUTING             02/14/2005 1554 02/14/2005 1554                           DA_US_U_02 SYS_BATCH                       0027   100         0001082 02/03/2005 univa        000  001  00  0001096
+#######################################################
+
+#TS#  Mon Feb 14 15:55:04 EST 2005
+ Command : uxend ctl app upr=38974-1 vupr=001 mu=DA_US_U_02 status=E
+
+#######################################################
+
+#TS#  Mon Feb 14 15:55:05 EST 2005
+#TS#  Mon Feb 14 15:55:15 EST 2005
+ Command : uxlst ctl app upr=38974-1 vupr=001 mu=DA_US_U_02 full status=*
+
+SESSION     UPROC      MU         STATE                 START      AT   END        AT      MODIFICATIONS          NODE       QUEUE                           JOB    PRI SESSNO  PROCNO  PDATE      USERNAME     VSES VUPR STP NSEQ
+--------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1551 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0022   100         0001077 02/03/2005 univa        000  001  00  0001091
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1551 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0023   100         0001078 02/03/2005 univa        000  001  00  0001092
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1552 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0024   100         0001079 02/03/2005 univa        000  001  00  0001093
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1552 02/14/2005 1552                           DA_US_U_02 SYS_BATCH                       0025   100         0001080 02/03/2005 univa        000  001  00  0001094
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1554 02/14/2005 1555                           DA_US_U_02 SYS_BATCH                       0026   100         0001081 02/03/2005 univa        000  001  00  0001095
+            38974-1    DA_US_U_02 ABORTED               02/14/2005 1554 02/14/2005 1555                           DA_US_U_02 SYS_BATCH                       0027   100         0001082 02/03/2005 univa        000  001  00  0001096
+#######################################################
+#TS#  Mon Feb 14 15:55:15 EST 2005
+ Command : uxlst ctl app upr=38974-1 vupr=001 mu=DA_US_U_02 hst status=*
+
+_!================================================
+_!**
+$!** PROCEDURE .. : 38974-1   
+$!** EXECUTION .. : 0001077
+$!** M.U. ....... : DA_US_U_02
+_!================================================
+
+02/14/2005 15:51:49 Start Condition Check                                       
+                   Modified directly in the Engine by                           
+                   operator : root                                              
+                   Processing Date 02/03/2005                                   
+02/14/2005 15:51:52 Submitted in BATCH Q: SYS_BATCH                             
+                   under ENTRY N°  : 0022                                       
+VAR : duration                                                                  
+60                                                                              
+VAR : return_code                                                               
+0                                                                               
+VAR : int                                                                       
+0                                                                               
+VAR : txt                                                                       
+                                                                                
+VAR : date                                                                      
+01/31/2004                                                                      
+                                                                                
+BATCH starting                                                                  
+14-02-2005 15:52:22 Cancel  job  request  by   root                             
+ *** Uproc cancelled while running. Completion Instructions were not executed **
+                                                                                
+02/14/2005 15:52:24 *** TASK ENDED ABNORMALLY  ***                              
+ *** Uproc ABORTED. Completion Instructions were not executed ***               
+
+==================================================
+##################################################
+==================================================
+
+_!================================================
+_!**
+$!** PROCEDURE .. : 38974-1   
+$!** EXECUTION .. : 0001078
+$!** M.U. ....... : DA_US_U_02
+_!================================================
+
+02/14/2005 15:51:52 Start Condition Check                                       
+                   Modified directly in the Engine by                           
+                   operator : root                                              
+                   Processing Date 02/03/2005                                   
+02/14/2005 15:51:52 Submitted in BATCH Q: SYS_BATCH                             
+                   under ENTRY N°  : 0023                                       
+VAR : duration                                                                  
+60                                                                              
+VAR : return_code                                                               
+0                                                                               
+VAR : int                                                                       
+0                                                                               
+VAR : txt                                                                       
+                                                                                
+VAR : date                                                                      
+01/31/2004                                                                      
+                                                                                
+BATCH starting                                                                  
+14-02-2005 15:52:22 Cancel  job  request  by   root                             
+ *** Uproc cancelled while running. Completion Instructions were not executed **
+                                                                                
+02/14/2005 15:52:24 *** TASK ENDED ABNORMALLY  ***                              
+   Session Number   Uproc      Number  M.U.       Aut.Proc.Dt Date  Time   E    
+                    38974-1    0001077 DA_US_U_02 001 03022005 14022005 155148 I
+ *** Uproc ABORTED. Completion Instructions were not executed ***               
+
+==================================================
+##################################################
+==================================================
+
+_!================================================
+_!**
+$!** PROCEDURE .. : 38974-1   
+$!** EXECUTION .. : 0001079
+$!** M.U. ....... : DA_US_U_02
+_!================================================
+
+02/14/2005 15:52:11 Start Condition Check                                       
+                   Modified directly in the Engine by                           
+                   operator : root                                              
+                   Processing Date 02/03/2005                                   
+02/14/2005 15:52:12 Submitted in BATCH Q: SYS_BATCH                             
+                   under ENTRY N°  : 0024                                       
+VAR : duration                                                                  
+60                                                                              
+VAR : return_code                                                               
+0                                                                               
+VAR : int                                                                       
+0                                                                               
+VAR : txt                                                                       
+                                                                                
+VAR : date                                                                      
+01/31/2004                                                                      
+                                                                                
+BATCH starting                                                                  
+14-02-2005 15:52:23 Cancel  job  request  by   root                             
+ *** Uproc cancelled while running. Completion Instructions were not executed **
+                                                                                
+02/14/2005 15:52:24 *** TASK ENDED ABNORMALLY  ***                              
+   Session Number   Uproc      Number  M.U.       Aut.Proc.Dt Date  Time   E    
+                    38974-1    0001078 DA_US_U_02 001 03022005 14022005 155152 I
+ *** Uproc ABORTED. Completion Instructions were not executed ***               
+
+==================================================
+##################################################
+==================================================
+
+_!================================================
+_!**
+$!** PROCEDURE .. : 38974-1   
+$!** EXECUTION .. : 0001080
+$!** M.U. ....... : DA_US_U_02
+_!================================================
+
+02/14/2005 15:52:12 Start Condition Check                                       
+                   Modified directly in the Engine by                           
+                   operator : root                                              
+                   Processing Date 02/03/2005                                   
+02/14/2005 15:52:12 Submitted in BATCH Q: SYS_BATCH                             
+                   under ENTRY N°  : 0025                                       
+VAR : duration                                                                  
+60                                                                              
+VAR : return_code                                                               
+0                                                                               
+VAR : int                                                                       
+0                                                                               
+VAR : txt                                                                       
+                                                                                
+VAR : date                                                                      
+01/31/2004                                                                      
+                                                                                
+BATCH starting                                                                  
+14-02-2005 15:52:23 Cancel  job  request  by   root                             
+ *** Uproc cancelled while running. Completion Instructions were not executed **
+                                                                                
+02/14/2005 15:52:24 *** TASK ENDED ABNORMALLY  ***                              
+   Session Number   Uproc      Number  M.U.       Aut.Proc.Dt Date  Time   E    
+                    38974-1    0001079 DA_US_U_02 001 03022005 14022005 155211 I
+ *** Uproc ABORTED. Completion Instructions were not executed ***               
+
+==================================================
+##################################################
+==================================================
+
+_!================================================
+_!**
+$!** PROCEDURE .. : 38974-1   
+$!** EXECUTION .. : 0001081
+$!** M.U. ....... : DA_US_U_02
+_!================================================
+
+02/14/2005 15:54:54 Start Condition Check                                       
+                   Modified directly in the Engine by                           
+                   operator : root                                              
+                   Processing Date 02/03/2005                                   
+02/14/2005 15:54:54 Submitted in BATCH Q: SYS_BATCH                             
+                   under ENTRY N°  : 0026                                       
+VAR : duration                                                                  
+60                                                                              
+VAR : return_code                                                               
+0                                                                               
+VAR : int                                                                       
+0                                                                               
+VAR : txt                                                                       
+                                                                                
+VAR : date                                                                      
+01/31/2004                                                                      
+                                                                                
+BATCH starting                                                                  
+14-02-2005 15:55:04 Cancel  job  request  by   root                             
+ *** Uproc cancelled while running. Completion Instructions were not executed **
+                                                                                
+02/14/2005 15:55:06 *** TASK ENDED ABNORMALLY  ***                              
+ *** Uproc ABORTED. Completion Instructions were not executed ***               
+
+==================================================
+##################################################
+==================================================
+
+_!================================================
+_!**
+$!** PROCEDURE .. : 38974-1   
+$!** EXECUTION .. : 0001082
+$!** M.U. ....... : DA_US_U_02
+_!================================================
+
+02/14/2005 15:54:54 Start Condition Check                                       
+                   Modified directly in the Engine by                           
+                   operator : root                                              
+                   Processing Date 02/03/2005                                   
+02/14/2005 15:54:54 Submitted in BATCH Q: SYS_BATCH                             
+                   under ENTRY N°  : 0027                                       
+VAR : duration                                                                  
+60                                                                              
+VAR : return_code                                                               
+0                                                                               
+VAR : int                                                                       
+0                                                                               
+VAR : txt                                                                       
+                                                                                
+VAR : date                                                                      
+01/31/2004                                                                      
+                                                                                
+BATCH starting                                                                  
+14-02-2005 15:55:04 Cancel  job  request  by   root                             
+ *** Uproc cancelled while running. Completion Instructions were not executed **
+                                                                                
+02/14/2005 15:55:06 *** TASK ENDED ABNORMALLY  ***                              
+   Session Number   Uproc      Number  M.U.       Aut.Proc.Dt Date  Time   E    
+                    38974-1    0001081 DA_US_U_02 001 03022005 14022005 155454 I
+ *** Uproc ABORTED. Completion Instructions were not executed ***               
+
+==================================================
+##################################################
+==================================================
+
+#######################################################
+
+#TS#  Mon Feb 14 15:55:16 EST 2005

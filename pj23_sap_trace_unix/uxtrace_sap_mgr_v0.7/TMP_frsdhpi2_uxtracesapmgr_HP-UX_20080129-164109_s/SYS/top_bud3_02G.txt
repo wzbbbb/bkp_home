@@ -1,0 +1,159 @@
+System: frsdhpi2 Tue Jan 29 16:41:55 2008
+Load averages: 0.03, 0.02, 0.01
+203 processes: 141 sleeping, 61 running, 1 zombie
+Cpu states:
+CPU   LOAD   USER   NICE    SYS   IDLE  BLOCK  SWAIT   INTR   SSYS
+ 0    0.03   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%   0.0% 
+ 1    0.03   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%   0.0% 
+---   ----  -----  -----  -----  -----  -----  -----  -----  -----
+avg   0.03   0.0%   0.0%   0.0% 100.0%   0.0%   0.0%   0.0%   0.0% 
+
+Memory: 1556564K (901860K) real, 2632776K (1751288K) virtual, 655176K free  Page# 1/6
+
+CPU TTY     PID USERNAME PRI NI   SIZE    RES STATE    TIME %WCPU  %CPU COMMAND
+ 0 pts/ta 21061 root     158 20  5272K   584K sleep    0:00  0.87  0.79 ksh
+ 0   ?     3009 root     152 20   115M 16664K run      0:58  0.47  0.47 ovoareqsdr
+ 0   ?     2654 root     152 20 70488K 13548K run      3:54  0.37  0.37 ovcd
+ 0   ?       52 root     152 20  2664K  2368K run      6:40  0.36  0.36 vxfsd
+ 0   ?     1790 root     152 20 39432K  9076K run      0:12  0.35  0.35 rpcd
+ 0   ?     3072 root     152 20   125M 15332K run      0:03  0.33  0.33 opcdispm:
+ 1   ?     2937 bin      152 20   280M 43408K run      8:10  0.29  0.29 ovrequestd
+ 0   ?     3046 root     152 20   393M 46620K run      6:46  0.28  0.28 ovas
+ 0   ?        9 root     152 20  1224K  1088K run      0:00  0.27  0.27 ObjectThreadPool
+ 0   ?     2935 root     154 20 63008K 37080K sleep   29:18  0.25  0.25 pmd
+ 1   ?     3075 root     152 20   114M 20868K run     22:10  0.20  0.20 opcbbcdist
+ 1   ?     2723 root     152 20 56308K  9720K run      1:27  0.20  0.20 opcmsga
+ 0   ?     3005 root     152 20 34288K 20708K run      1:34  0.20  0.20 ovdbrun
+ 1   ?     2264 root     152 20 31876K  9896K run      2:45  0.18  0.18 uxioserv
+ 1   ?     3058 root     152 20   118M 14012K run      0:05  0.18  0.18 opcmsgrd
+ 0   ?     3184 oracle   152  0 66156K 12912K run      5:24  0.16  0.16 ocssd.bin
+ 1   ?     2660 root     152 20 40604K  8644K run      0:23  0.16  0.16 ovbbccb
+ 0   ?       38 root     152 20   288K   256K run      5:43  0.15  0.15 schedcpu
+ 1   ?     3073 root     152 20   117M 13608K run      0:03  0.14  0.14 opcdistm
+ 1   ?    14446 root     152 20 22976K  7012K run      1:05  0.14  0.14 uxioserv
+ 0   ?      545 root     152 20  8352K  2968K run      0:31  0.12  0.12 utmpd
+ 1   ?     2506 root     152 20 50356K 14604K run      0:43  0.12  0.12 vxsvc
+ 0   ?     3057 root     152 20   111M 10056K run      0:00  0.12  0.12 opcmsgrb
+ 0   ?       19 root     191 20   216K   192K run      1:35  0.10  0.10 ksyncer_daemon
+ 1   ?     2939 root     152 20 42292K  6356K run      0:05  0.10  0.10 ovcs
+ 0   ?    13826 root     152 20 37596K 14388K run      1:55  0.10  0.10 uxioserv
+ 1   ?     3097 oracle   154 20   952M  8996K sleep    8:05  0.09  0.09 oracleopenview
+ 1   ?     2859 oracle   156 20   953M 10424K sleep    5:27  0.09  0.09 ora_cjq0_openview
+ 0   ?     2080 root     152 20 22572K  4040K run      0:06  0.08  0.08 swagentd
+ 0   ?     2724 root     152 20 44504K  3500K run      0:21  0.08  0.08 opcacta
+ 0   ?     3055 root     152 20   103M  7384K run      0:14  0.08  0.08 opcctlm
+ 0   ?     2727 root     152 20 48908K  3168K run      0:58  0.08  0.08 opcmona
+ 0   ?     3074 root     152 20   108M  7708K run      0:21  0.07  0.07 opccsad
+ 1   ?     1804 root     152 20 56040K  9384K run      4:34  0.07  0.07 cimserver
+ 0   ?     2687 root     152 20 44884K  4072K run      0:00  0.06  0.06 ovconfd
+ 0   ?     3068 root     152 20   101M  6504K run      0:05  0.06  0.06 opcactm
+ 0   ?     3069 root     152 20   106M  8076K run      0:13  0.06  0.06 opcmsgm
+ 1   ?     3071 root     152 20   101M  6504K run      0:10  0.06  0.06 opcforwm
+ 0   ?     3076 root     152 20   111M  9292K run      0:00  0.06  0.06 opcsvcm:
+ 0   ?    13836 root     152 20 28360K  7904K run      0:10  0.06  0.06 uxcdjsrv
+System: frsdhpi2 Tue Jan 29 16:42:01 2008
+Load averages: 0.03, 0.02, 0.01
+203 processes: 141 sleeping, 61 running, 1 zombie
+Cpu states:
+CPU   LOAD   USER   NICE    SYS   IDLE  BLOCK  SWAIT   INTR   SSYS
+ 0    0.03   0.2%   0.0%   0.0%  99.8%   0.0%   0.0%   0.0%   0.0% 
+ 1    0.03   0.4%   0.0%   0.2%  99.4%   0.0%   0.0%   0.0%   0.0% 
+---   ----  -----  -----  -----  -----  -----  -----  -----  -----
+avg   0.03   0.2%   0.0%   0.0%  99.8%   0.0%   0.0%   0.0%   0.0% 
+
+Memory: 1556564K (901860K) real, 2632776K (1751288K) virtual, 655176K free  Page# 1/6
+
+CPU TTY     PID USERNAME PRI NI   SIZE    RES STATE    TIME %WCPU  %CPU COMMAND
+ 0 pts/ta 21061 root     158 20  5272K   584K sleep    0:00  0.66  0.61 ksh
+ 0   ?     3009 root     152 20   115M 16664K run      0:58  0.51  0.51 ovoareqsdr
+ 0   ?     2654 root     152 20 70488K 13548K run      3:54  0.37  0.37 ovcd
+ 0   ?     1790 root     152 20 39432K  9076K run      0:12  0.35  0.35 rpcd
+ 0   ?     3072 root     152 20   125M 15332K run      0:03  0.33  0.33 opcdispm:
+ 0   ?       52 root     152 20  2664K  2368K run      6:40  0.33  0.33 vxfsd
+ 0   ?     3046 root     152 20   393M 46620K run      6:46  0.31  0.31 ovas
+ 0   ?     2935 root     154 20 63008K 37080K sleep   29:18  0.29  0.29 pmd
+ 0   ?        9 root     152 20  1224K  1088K run      0:00  0.27  0.27 ObjectThreadPool
+ 1   ?     2937 bin      152 20   280M 43408K run      8:10  0.27  0.27 ovrequestd
+ 1   ?     2264 root     152 20 31876K  9896K run      2:45  0.21  0.21 uxioserv
+ 1   ?     3075 root     152 20   114M 20868K run     22:10  0.21  0.21 opcbbcdist
+ 1   ?     2723 root     152 20 56308K  9720K run      1:27  0.20  0.20 opcmsga
+ 0   ?     3005 root     152 20 34288K 20708K run      1:34  0.20  0.20 ovdbrun
+ 1   ?     3058 root     152 20   118M 14012K run      0:05  0.18  0.18 opcmsgrd
+ 0   ?       38 root     152 20   288K   256K run      5:43  0.17  0.17 schedcpu
+ 1   ?     2660 root     152 20 40604K  8644K run      0:23  0.16  0.16 ovbbccb
+ 0   ?     3184 oracle   152  0 66156K 12912K run      5:24  0.15  0.15 ocssd.bin
+ 1   ?     3073 root     152 20   117M 13608K run      0:03  0.14  0.14 opcdistm
+ 1   ?    14446 root     152 20 22976K  7012K run      1:05  0.14  0.14 uxioserv
+ 0   ?      545 root     152 20  8352K  2968K run      0:31  0.12  0.12 utmpd
+ 1   ?     2506 root     152 20 50356K 14604K run      0:43  0.12  0.12 vxsvc
+ 0   ?     3057 root     152 20   111M 10056K run      0:00  0.12  0.12 opcmsgrb
+ 1   ?     2939 root     152 20 42292K  6356K run      0:05  0.10  0.10 ovcs
+ 0   ?    13826 root     152 20 37596K 14388K run      1:55  0.10  0.10 uxioserv
+ 0   ?       19 root     191 20   216K   192K run      1:35  0.09  0.09 ksyncer_daemon
+ 0   ?     2080 root     152 20 22572K  4040K run      0:06  0.08  0.08 swagentd
+ 0   ?     2724 root     152 20 44504K  3500K run      0:21  0.08  0.08 opcacta
+ 0   ?     3055 root     152 20   103M  7384K run      0:14  0.08  0.08 opcctlm
+ 1   ?     3097 oracle   134 20   952M  8996K sleep    8:05  0.07  0.07 oracleopenview
+ 0   ?     2727 root     152 20 48908K  3168K run      0:58  0.07  0.07 opcmona
+ 1   ?     2859 oracle   156 20   953M 10424K sleep    5:27  0.07  0.07 ora_cjq0_openview
+ 1   ?     3074 root     152 20   108M  7708K run      0:21  0.06  0.06 opccsad
+ 1   ?     1804 root     152 20 56040K  9384K run      4:34  0.06  0.06 cimserver
+ 0   ?     2687 root     152 20 44884K  4072K run      0:00  0.06  0.06 ovconfd
+ 0   ?     3068 root     152 20   101M  6504K run      0:05  0.06  0.06 opcactm
+ 0   ?     3069 root     152 20   106M  8076K run      0:13  0.06  0.06 opcmsgm
+ 1   ?     3071 root     152 20   101M  6504K run      0:10  0.06  0.06 opcforwm
+ 0   ?     3076 root     152 20   111M  9292K run      0:00  0.06  0.06 opcsvcm:
+ 0   ?    13836 root     152 20 28360K  7904K run      0:10  0.06  0.06 uxcdjsrv
+System: frsdhpi2 Tue Jan 29 16:42:06 2008
+Load averages: 0.03, 0.02, 0.01
+203 processes: 141 sleeping, 61 running, 1 zombie
+Cpu states:
+CPU   LOAD   USER   NICE    SYS   IDLE  BLOCK  SWAIT   INTR   SSYS
+ 0    0.03   0.2%   0.0%   0.0%  99.8%   0.0%   0.0%   0.0%   0.0% 
+ 1    0.03   0.2%   0.0%   0.0%  99.8%   0.0%   0.0%   0.0%   0.0% 
+---   ----  -----  -----  -----  -----  -----  -----  -----  -----
+avg   0.03   0.2%   0.0%   0.0%  99.8%   0.0%   0.0%   0.0%   0.0% 
+
+Memory: 1556920K (853460K) real, 2632868K (1719500K) virtual, 654820K free  Page# 1/6
+
+CPU TTY     PID USERNAME PRI NI   SIZE    RES STATE    TIME %WCPU  %CPU COMMAND
+ 0   ?     3009 root     152 20   115M 16664K run      0:58  0.50  0.50 ovoareqsdr
+ 0 pts/ta 21061 root     158 20  5272K   584K sleep    0:00  0.50  0.47 ksh
+ 0   ?     2654 root     152 20 70488K 13548K run      3:54  0.42  0.42 ovcd
+ 0   ?     1790 root     152 20 39432K  9076K run      0:12  0.35  0.35 rpcd
+ 0   ?     3072 root     152 20   125M 15332K run      0:03  0.33  0.33 opcdispm:
+ 0   ?       52 root     152 20  2664K  2368K run      6:40  0.32  0.32 vxfsd
+ 0   ?     3046 root     152 20   393M 46620K run      6:46  0.28  0.28 ovas
+ 0   ?        9 root     152 20  1224K  1088K run      0:00  0.27  0.27 ObjectThreadPool
+ 0   ?     2935 root     154 20 63008K 37080K sleep   29:18  0.27  0.27 pmd
+ 1   ?     2937 bin      152 20   280M 43408K run      8:10  0.26  0.26 ovrequestd
+ 1   ?     2264 root     152 20 31876K  9896K run      2:45  0.24  0.24 uxioserv
+ 1   ?     2723 root     152 20 56308K  9720K run      1:27  0.20  0.20 opcmsga
+ 0   ?     3005 root     152 20 34288K 20708K run      1:34  0.20  0.20 ovdbrun
+ 1   ?     3058 root     152 20   118M 14012K run      0:05  0.18  0.18 opcmsgrd
+ 1   ?     3075 root     152 20   114M 20868K run     22:10  0.17  0.17 opcbbcdist
+ 1   ?     2660 root     152 20 40604K  8644K run      0:23  0.16  0.16 ovbbccb
+ 0   ?     3184 oracle   152  0 66156K 12912K run      5:24  0.14  0.14 ocssd.bin
+ 1   ?     3073 root     152 20   117M 13608K run      0:03  0.14  0.14 opcdistm
+ 1   ?    14446 root     152 20 22976K  7012K run      1:05  0.14  0.14 uxioserv
+ 0   ?       38 root     152 20   288K   256K run      5:43  0.13  0.13 schedcpu
+ 0   ?      545 root     152 20  8352K  2968K run      0:31  0.12  0.12 utmpd
+ 1   ?     2506 root     152 20 50356K 14604K run      0:43  0.12  0.12 vxsvc
+ 0   ?     3057 root     152 20   111M 10056K run      0:00  0.12  0.12 opcmsgrb
+ 1   ?     2859 oracle   156 20   953M 10424K sleep    5:27  0.10  0.10 ora_cjq0_openview
+ 1   ?     2939 root     152 20 42292K  6356K run      0:05  0.10  0.10 ovcs
+ 0   ?    13826 root     152 20 37596K 14388K run      1:55  0.10  0.10 uxioserv
+ 0   ?       19 root     191 20   216K   192K run      1:35  0.08  0.08 ksyncer_daemon
+ 0   ?     2080 root     152 20 22572K  4040K run      0:06  0.08  0.08 swagentd
+ 0   ?     2724 root     152 20 44504K  3500K run      0:21  0.08  0.08 opcacta
+ 0   ?     3055 root     152 20   103M  7384K run      0:14  0.08  0.08 opcctlm
+ 1 pts/ta 21950 root     178 20 10516K   740K run      0:00  0.13  0.07 top
+ 1   ?     2360 root     154 10  8572K  1444K sleep    4:26  0.07  0.07 psmctd
+ 1   ?     2438 root     154 20 36336K  7388K sleep    0:57  0.06  0.06 uxsur
+ 1   ?     1804 root     152 20 56040K  9384K run      4:34  0.06  0.06 cimserver
+ 0   ?     2687 root     152 20 44884K  4072K run      0:00  0.06  0.06 ovconfd
+ 0   ?     3068 root     152 20   101M  6504K run      0:05  0.06  0.06 opcactm
+ 0   ?     3069 root     152 20   106M  8076K run      0:13  0.06  0.06 opcmsgm
+ 1   ?     3071 root     152 20   101M  6504K run      0:10  0.06  0.06 opcforwm
+ 1   ?     3074 root     152 20   108M  7708K run      0:21  0.06  0.06 opccsad
+ 0   ?     3076 root     152 20   111M  9292K run      0:00  0.06  0.06 opcsvcm:

@@ -1,0 +1,45 @@
+
+Key words: 
+disabled, task, calculator, launch 
+
+Subject: 
+For some tasks, when disabling and re-enabling a task, one launch is skipped
+
+
+Prerequisites:
+
+Application validation tests:
+
+When disabling the task, upon enabling of the task, the future launch did not execute, however, the future launch +1 did execute.  (It appears that disabling a task prevents a future launch from executing, but enabling the same task does not also enable the current future launch.)
+
+
+Explanation:
+
+
+The behavoir is normal. By default, a disabled task is still generating launches (disabled launches). According to your configuration, those disabled launches may or may not show up in the expected launch window. When a disabled task is re-enabled, the calculator will calculate the next launch. If a disabled launch is already exist, the calculator will go ahead to create the next launch, which looks like it skips one launch.
+
+To change the behavior, not skip a launch when re-enabling task, please define the following and check again.
+
+The following needs to be defined in the shared memory data file, $UXMGR/uxlnm[CompanyName].dat
+
+/TABLE="LNM_[CompanyName]"/NAME="U_WRITE_HELDX"/VALUE="N"
+/TABLE="LNM_[CompanyName]"/NAME="U_HOLD_IMX"/VALUE="Y"
+
+Then, please restart the Dollar Universe Company.
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

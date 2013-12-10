@@ -1,0 +1,36 @@
+
+Key words:
+
+	Windows, uninstall, services, remove
+
+Subject:
+
+	How to remove Dollar Universe Windows service 
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+	The uninstall icon in the "program menu" will probabily not remove the Dollar Universe Services.
+	Please shutdown all of the Dollar Universe services first, then run the script %UXEXE%\[CompanyName]ServRemove.bat. 
+	Please note that the Universe Univer$e service is shared amoung different Dollar Universe Companies on a Windows node. If it got removed, you will have to add it back. 
+	Please check the script %UXEXE%\[CompanyName]ServInstall.bat, you will see the line that install the service. 
+
+	After removed the services, you can run the uninstall icon to remove the Company files.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

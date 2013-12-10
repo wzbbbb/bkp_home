@@ -1,0 +1,53 @@
+
+Key words:
+
+	exchanger crash, exchanger die 
+
+Subject:
+
+	Exchangers die because of DNS related issues.
+
+Prerequistites:
+
+Application validation tests:
+
+	The issue has not been reproduced. The follwoing is the customer's environment.
+
+	1). Red Hat Enterprise Linux AS release 3 (Taroon
+
+	2). Version v500 (2008/08/2001)
+	Start of update RE0021D installation ito (20051012134247)
+	End of update RE0021D installation ito (20051012134247)
+	Start of update 24039C installation ito (20051012134344)
+	End of update 24039C installation ito (20051012134344)
+
+	3). Exchangers die regualarly with SIGNAL 11 on different nodes, It always occurs on xx:59, for example 6:59, 7:59, 22:59.
+	<< 2005-10-13 12:59:24 0002926/uxech           /UXOS_HdlTermProcess /000000000 - execution handler : SIGNAL = (11) PID = (2926) PPID = (1) GPID = (2926)
+	<< 2005-10-17 13:59:27 0024525/uxech           /UXOS_HdlTermProcess /000000000 - execution handler : SIGNAL = (11) PID = (24525) PPID = (1) GPID = (24525)
+	<< 2005-10-21 11:59:17 0004251/uxech           /UXOS_HdlTermProcess /000000000 - execution handler : SIGNAL = (11) PID = (4251) PPID = (1) GPID = (4251)
+	<< 2005-10-24 02:59:28 0024851/uxech           /UXOS_HdlTermProcess /000000000 - execution handler : SIGNAL = (11) PID = (24851) PPID = (1) GPID = (24851)
+	<< 2005-10-30 06:59:25 0018792/uxech           /UXOS_HdlTermProcess /000000000 - execution handler : SIGNAL = (11) PID = (18792) PPID = (1) GPID = (18792)
+	<< 2005-11-10 07:59:13 0008835/uxech           /UXOS_HdlTermProcess /000000000 - execution handler : SIGNAL = (11) PID = (8835) PPID = (1) GPID = (8835)
+
+	4). Central Monitoring was on. Could be related. 
+
+Explanation:
+
+	From the strace result, we found that the issue seems related to DNS resolution. Do not have the strace result any more. However, in the strace result, we can see that the exchangers were always trying to contact DNS when the issue occurred.
+
+	The issue disappeared after using IP address in the uxsrsrv.sck file. 
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: internal
+
+Experties level:
+

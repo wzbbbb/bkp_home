@@ -1,0 +1,5 @@
+#CMD# netstat -i
+Name      Mtu  Network         Address         Ipkts   Ierrs Opkts   Oerrs Coll
+lan0      1500 192.168.1.0     frsdhpi2.orsypgroup.com 
+                                               654001  0     532183  0     0   
+lo0       4136 loopback        localhost       3777207 0     3777208 0     0   

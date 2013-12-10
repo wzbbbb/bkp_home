@@ -1,0 +1,2 @@
+#CMD# who -b 
+         system boot  2008-12-17 09:28

@@ -1,0 +1,38 @@
+'<SCRIPT LANGUAGE = "VBScript">
+Sub window_onLoad
+ iTimerID = window.setInterval("GetInfo", 10000, "VBScript")
+End Sub
+Sub GetInfo
+ For i = (objTable.Rows.Length - 1) to 0 Step -1
+ myNewRow = document.all.objTable.deleteRow(i)
+ Next
+ Set objRow = objTableBody.InsertRow()
+ objRow.Style.fontWeight = "bold"
+ Set objCell = objRow.InsertCell()
+ objCell.InnerText = "Process ID"
+ Set objCell = objRow.InsertCell()
+ objCell.InnerText = "Process Name"
+ Set objCell = objRow.InsertCell()
+ objCell.InnerText = "Working Set Size"
+ strComputer = "."
+ Set objWMIService = GetObject("winmgmts:" _
+ & "{impersonationLevel=impersonate}!\\" & strComputer & "\root\cimv2")
+ Set colProcesses = objWMIService.ExecQuery _
+ ("SELECT * FROM Win32_Process")
+ For Each strProcess in colProcesses
+ Set objRow = objTableBody.InsertRow()
+ Set objCell = objRow.InsertCell()
+ objCell.InnerText = strProcess.ProcessID
+ Set objCell = objRow.InsertCell()
+ objCell.InnerText = strProcess.Name
+ Set objCell = objRow.InsertCell()
+ objCell.InnerText = FormatNumber(strProcess.WorkingSetSize,0,,,-1)
+ Next
+End Sub
+'</SCRIPT>
+'<TABLE ID = "objTable">
+'<TBODY ID = "objTableBody">
+'</TBODY>
+'</TABLE>
+
+

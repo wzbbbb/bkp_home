@@ -1,0 +1,12 @@
+#REM# LISTING OF THE UXEXE DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai 
+#TSP#  20090108-165947 
+total 248
+21643271 -r--r--r-- 1 root root      6 Jan  5 11:30 uxtraceversion.txt
+21643268 -rwx------ 1 root root 104697 Jan  5 11:30 uxtrace_ori
+21643270 -r--r--r-- 1 root root   6373 Jan  5 11:30 uxtrace_help_fr.txt
+21643269 -r--r--r-- 1 root root   6937 Jan  5 11:30 uxtrace_help_en.txt
+21627156 drwxr-xr-x 5 root root   4096 Jan  8 16:22 ..
+21643517 -rwxr----- 1 root root 105741 Jan  8 16:59 uxtrace
+21643267 drwxrwxr-x 3 root root   4096 Jan  8 16:59 .
+21643519 drwxr-xr-x 5 root root   4096 Jan  8 16:59 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc

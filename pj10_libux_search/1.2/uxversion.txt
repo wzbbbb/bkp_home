@@ -1,0 +1,17 @@
+Version v500 (2008/08/2001)
+Start of update RE0021D installation (20040503162106)
+End of update RE0021D installation (20040503162106)
+Start of update 24181A installation (20040503162500)
+End of update 24181A installation (20040503162500)
+UXRIGHT Version : 3.3 20040503162540 (HIGH security level)
+Start of update RE0025 installation (20050809154539)
+Start of update RE0025 installation (20050809155032)
+End of update RE0025 installation (20050809155032) 
+Start of upgrade to an application server Dollar Universe Solutions 5.1 (installation kit 511 2005/10/04 18:14)
+End of upgrade to an application server Dollar Universe Solutions 5.1 (installation kit 511 2005/10/04 18:16)
+UXRIGHT Version : 3.4 20051017190235 (HIGH security level)
+UXRIGHT Version : 3.4 20051018111641 (HIGH security level)
+Start of upgrade to an application server Dollar Universe Solutions 5.1 (installation kit 512 2005/10/18 13:51)
+End of upgrade to an application server Dollar Universe Solutions 5.1 (installation kit 512 2005/10/18 13:52) 
+
+

@@ -1,0 +1,58 @@
+#CMD# df -k
+#TSP#  20080129-164236 
+/dlp01                 (frsdlfd02.orsypgroup.com:/dsk4/dlp01) : 67108112 total allocated Kb
+                                                  17312248 free allocated Kb
+                                                  49795864 used allocated Kb
+                                                        74 % allocation used
+/dlc01                 (frsdlfd02.orsypgroup.com:/dsk4/dlc01) : 67108112 total allocated Kb
+                                                  17312248 free allocated Kb
+                                                  49795864 used allocated Kb
+                                                        74 % allocation used
+/dld04                 (frsdlfd01.orsypgroup.com:/dsk2/dld04) : 64787344 total allocated Kb
+                                                  16844568 free allocated Kb
+                                                  47942776 used allocated Kb
+                                                        74 % allocation used
+/dld06                 (frsdlfd01.orsypgroup.com:/dsk1/dld06) : 31940168 total allocated Kb
+                                                  21574880 free allocated Kb
+                                                  10365288 used allocated Kb
+                                                        32 % allocation used
+/dld07                 (frsdlfd01.orsypgroup.com:/dsk2/dld07) : 64787344 total allocated Kb
+                                                  16844568 free allocated Kb
+                                                  47942776 used allocated Kb
+                                                        74 % allocation used
+/home                  (/dev/vg00/lvol4       ) :  1041352 total allocated Kb
+                                                    926336 free allocated Kb
+                                                    115016 used allocated Kb
+                                                        11 % allocation used
+/opt                   (/dev/vg00/lvol5       ) :  6288928 total allocated Kb
+                                                   1536584 free allocated Kb
+                                                   4752344 used allocated Kb
+                                                        75 % allocation used
+/orsyp                 (/dev/vg00/lvol6       ) : 40084422 total allocated Kb
+                                                  27997400 free allocated Kb
+                                                  12087022 used allocated Kb
+                                                        30 % allocation used
+/orsyp2                (/dev/vg01/lvol2       ) : 62602687 total allocated Kb
+                                                  41851991 free allocated Kb
+                                                  20750696 used allocated Kb
+                                                        33 % allocation used
+/tmp                   (/dev/vg00/lvol7       ) :  1562096 total allocated Kb
+                                                   1500784 free allocated Kb
+                                                     61312 used allocated Kb
+                                                         3 % allocation used
+/usr                   (/dev/vg00/lvol8       ) :  6262904 total allocated Kb
+                                                   3635552 free allocated Kb
+                                                   2627352 used allocated Kb
+                                                        41 % allocation used
+/var                   (/dev/vg00/lvol9       ) :  8257584 total allocated Kb
+                                                   6244816 free allocated Kb
+                                                   2012768 used allocated Kb
+                                                        24 % allocation used
+/stand                 (/dev/vg00/lvol1       ) :   309456 total allocated Kb
+                                                    240312 free allocated Kb
+                                                     69144 used allocated Kb
+                                                        22 % allocation used
+/                      (/dev/vg00/lvol3       ) :   783064 total allocated Kb
+                                                    458704 free allocated Kb
+                                                    324360 used allocated Kb
+                                                        41 % allocation used

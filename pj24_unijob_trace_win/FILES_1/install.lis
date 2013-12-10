@@ -1,0 +1,36 @@
+SOCNAME OSCORP
+U_NOEUD ocean67
+REP_RACIN /universe
+REP_SOCIE /universe/OSCORP
+REP_EXEC /universe/OSCORP/exec
+REP_MAINT /universe/OSCORP/mgr
+REP_D_DAT /universe/OSCORP/app/data
+REP_D_UPR /universe/OSCORP/app/upr
+REP_D_LOG /universe/OSCORP/app/log
+REP_I_DAT /universe/OSCORP/int/data
+REP_I_UPR /universe/OSCORP/int/upr
+REP_I_LOG /universe/OSCORP/int/log
+REP_S_DAT /universe/OSCORP/sim/data
+REP_S_UPR /universe/OSCORP/sim/upr
+REP_S_LOG /universe/OSCORP/sim/log
+REP_E_DAT /universe/OSCORP/exp/data
+REP_E_UPR /universe/OSCORP/exp/upr
+REP_E_LOG /universe/OSCORP/exp/log
+CRE_USER n
+INIT_SHEL 
+USER_ADM univa
+DEF_REP_A /home/univa
+NO_U_ADM 001
+USER_DEV univd
+DEF_REP_D  /home/univd
+NO_U_DEV 002
+USER_EXP univo
+DEF_REP_E /home/univo
+NO_U_EXP 003
+USER_ROBO univa
+GRP_RESER 
+NOM_LOG /universe/OSCORP/exp/log/universe.log
+CONF_INST y
+PORT_INF 10600
+INSTALL_MULT y
+CONF_MAJSERV n

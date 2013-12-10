@@ -1,0 +1,39 @@
+echo off
+rem set PATH=%PATH%;d:\Tools
+
+rem if not P%1%==P goto no_message
+if not "%1%" == "" goto no_message
+echo Which environment Company do you want to load ?
+echo Launch this program again and specify one of the following parameters: 
+:: echo 0 for COMM50
+echo M for MNT500
+echo Q for QCL500
+echo S for SUP500
+echo F for FLS500
+echo CM for CLUSTER MNT500
+echo CQ for CLUSTER QCL500
+echo CS for CLUSTER SUP500
+goto end
+:no_message
+rem if %1%== goto end
+if %1 == M set uxcomp=d:\du\standard\MNT500
+if %1==Q set uxcomp=d:\du\standard\QCL500
+if %1==S set uxcomp=d:\du\standard\SUP500
+if %1==F set uxcomp=d:\du\standard\FLS500
+if %1==CM set uxcomp=d:\du\cluster\MNT500
+if %1==CQ set uxcomp=d:\du\cluster\QCL500
+if %1==CS set uxcomp=d:\du\cluster\SUP500
+echo i am here
+
+echo Environment of the company %uxcomp%
+echo Version of the company: 
+if not exist %uxcomp%\exec\uxversion.bat goto uxver_not_exist
+call %uxcomp%\exec\uxversion.bat
+goto uxver_done
+:uxver_not_exist
+echo No patch applied on the %uxcomp%
+:uxver_done
+if P%uxcomp%==P goto end
+set PATH=%PATH%;%uxcomp%\exec\;%uxcomp%\mgr\
+call %uxcomp%\mgr\uxsetenv.bat
+:end

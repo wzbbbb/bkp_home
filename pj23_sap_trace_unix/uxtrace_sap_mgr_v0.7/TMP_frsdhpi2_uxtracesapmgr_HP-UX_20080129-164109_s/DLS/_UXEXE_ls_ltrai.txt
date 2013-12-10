@@ -1,0 +1,29 @@
+#REM# LISTING OF THE SAP MANAGER _UXEXE DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/DUSAP42//exec
+total 70680
+212664 -rwsr-xr-x   1 root       projet     2777088 Aug 31  2005 unirfcmanager
+212665 -rwsr-xr-x   1 root       projet      630784 Aug 31  2005 unirfcmanagerstop
+212698 -r-xr-xr-x   1 root       sys        3497984 Aug 31  2005 uxagtsap_24400
+212632 -r-xr-xr-x   1 root       sys         315392 Aug 31  2005 uxagtsapstop
+212701 -r-xr-xr-x   1 root       sys         331776 Aug 31  2005 uxsysfile_24400
+212633 -r--r--r--   1 root       sys         932690 Aug 31  2005 uni_msg.txt
+212699 -r-xr-xr-x   1 root       sys          90112 Aug 31  2005 uxhstfile_24400
+212634 -r-xr-xr-x   1 root       sys         315392 Aug 31  2005 uxagtcli
+212700 -r-xr-xr-x   1 root       sys        2646016 Aug 31  2005 uxjnlfile_24400
+212638 -r-xr-xr-x   1 root       sys         315392 Aug 31  2005 uxhstpurge
+212637 -r-xr-xr-x   1 root       sys        1212416 Aug 31  2005 uxevtfile
+212645 -r--r--r--   1 root       sys         471660 Aug 31  2005 SAPUPR_UX_42.ext
+212646 -r--r--r--   1 root       sys         181926 Aug 31  2005 SAPUPR_ADV_UX_42.ext
+212647 -r--r--r--   1 root       sys         421125 Aug 31  2005 SAPUPR_WIN_42.ext
+212648 -r--r--r--   1 root       sys         605297 Aug 31  2005 SAPUPR_ADV_WIN_42.ext
+212499 drwxr-xr-x  14 root       sys           1024 Nov  6  2006 ..
+212630 -r-xr-xr-x   1 root       sys        3497984 Nov  6  2006 uxagtsap
+212636 -r-xr-xr-x   1 root       sys        3497984 Nov  6  2006 uxjnlfile
+212635 -r-xr-xr-x   1 root       sys        3497984 Nov  6  2006 uxhstfile
+212631 -r-xr-xr-x   1 root       sys         331776 Nov  6  2006 uxsysfile
+212629 -rwxr-xr-x   1 root       sys            627 Nov  6  2006 uxversion.ksh
+212708 -rw-rw-rw-   1 root       sys             20 Nov  6  2006 uxsapevt.dat
+212709 -rw-rw-rw-   1 root       sys             64 Nov  6  2006 uxsaphst.dat
+212710 -rw-rw-rw-   1 root       sys             68 Jan  4  2007 uxsapjnl.dat
+212605 drwxr-xr-x   2 root       sys           1024 Dec 31 10:58 .
+117217 -rwxrw-rw-   1 root       sys        10608640 Dec 31 10:58 core.uxagtsap

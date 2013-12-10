@@ -1,0 +1,63 @@
+#!/bin/ksh
+fixed_lib_lnk=libux_v500
+CHECK ()
+{
+	#pri=$1 
+	files=`ls |grep -v .log |grep -v .conf |grep -v uxtrace`
+	for i in $files
+	do
+		CHECK_FILE $i $1
+	done
+}
+
+CHECK_FILE ()
+{
+	l_file=$1
+	pri=$2
+	if [ -f ${l_file} ]; then
+		#bsed libux_v500 ${l_file} >> /dev/null 2>&1
+		bsed  ${fixed_lib_lnk} ${l_file} >> /dev/null 2>&1
+		if [ $? = 0 ]; then
+			echo "Warning: The file ${l_file} is not relinked!" 
+			if [ $pri = "p1" ]; then
+				echo "Please run a relink for this Company"
+				echo "Quiting ..."
+				exit 1
+			fi
+		fi
+	fi
+}
+HeavyCheck()
+{
+	echo "Checking $UXEXE ..."
+	cd $UXEXE
+	CHECK p1
+	echo "Checking $UXEXE/lib ..."
+	cd $UXEXE/lib 
+	CHECK p1
+	echo "Checking $UXMGR ..."
+	cd $UXMGR 
+	CHECK p2
+	echo "Checking $UXDQM"
+	cd $UXDQM 
+	CHECK p1
+}
+LightCheck() {
+	CHECK_FILE $UXEXE/uxioserv p1  
+	CHECK_FILE $UXEXE/lib/libuxos.so p1
+	CHECK_FILE $UXMGR/uxgethrd p2
+	CHECK_FILE $UXDQM/uxdqmsrv p1
+}
+
+if [ "${UXEXE:-nv}" = "nv" ]; then
+	echo "Pleaes load the \$U env"
+	exit 0
+fi
+if [ "${SELECTIVE_LIB_CHECK:-NA}" = "NA" ]; then
+	echo "Library link checking: full mode ..."
+	echo "To use the selective mode: export SELECTIVE_LIB_CHECK=Y "
+	HeavyCheck
+else
+	echo "Library link checking: selective mode ..."
+	LightCheck
+fi

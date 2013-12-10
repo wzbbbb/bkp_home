@@ -1,0 +1,59 @@
+
+Key words:
+
+resource, uxrls, res, "!UG!!ESP!"
+
+Subject:
+
+When resource definition contain "!UG!!ESP!", when locking or releasing the resource, the commands have to specify the area and MU. 
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+When the definition of a resource is like the following:
+
+(oxen-TEST50):/users/univa # uxshw res esp=S res=CM1SESS8_LOG     
+ Command : uxshw res esp=S res=CM1SESS8_LOG mu=* pdate=* tsoc=* inf partage
+
+ TYPE  | res 
+
+ ITEMS | res          : CM1SESS8_LOG         
+       | label        : Session CM1SESS8 incompatibility         
+       | fname        : !UG!!ESP!                                                    
+       | dir          :                                                              
+       | nature       : log 
+       | freq         : 30 
+       | lock 
+       | qt1          : 0 
+       | qt2          : 0 
+       | noclear 
+       |
+
+The uxrls command has to include the MU and ESP information.
+
+For example the following command will work:
+
+uxrls res res=CM1SESS8_LOG esp=S  mu=[MU_Name] clear
+
+or
+
+uxrls res res=CM1SESS8_LOG esp=*  mu=* clear
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

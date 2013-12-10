@@ -1,0 +1,39 @@
+Why the processing date of a task is always the 1st day of the month?
+
+...........Prerequest
+This FAQ apply to DUAS V51, V52, V53 and above.
+
+
+...........application test
+This FAQ is concerning the following situation. When a task is using a rule with monthly period, even the functional period of the concerned uproc is daily, the processing date of the job will be the first day of the month, instead of the same day of the execution. 
+
+
+...........explanation
+To explain this issue, we use the following example. This is a typical rule setting for a job that run the first Saturday of each month.
+
+rul          : 1ST_SAT
+label        : 1st Sat of each month
+period       : (1m)
+pos          : (+1c)
+offset       : f
+autho        : (nnn,nnn,nnn,nnn,nnn,yyy,nnn)
+authom       : (1,2,3,4,5,6,7,8,9,10,11,12)
+authod       : +(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31)
+
+The processing date for the task with the above rule, will be the 1st day of each month. If you need to have the processing date of the job to be the same day of the execution, you can update the rule to the following. This solution is available to DUAS V53 and above.
+
+period       : (1d)
+pos          : (+1c)
+offset       : n
+autho        : (nnn,nnn,nnn,nnn,nnn,yyy,nnn)
+authom       : (1,2,3,4,5,6,7,8,9,10,11,12)
+authod       : +(1,2,3,4,5,6,7)
+
+If your DUAS is in a earlier version, you can define the following line at the bottom of the file uxlnm[Company_name].dat in "mgr" directory.
+/TABLE="LNM_[Company_name]"/NAME="S_CALC_REP"/VALUE="O"
+Then, restart the Company. 
+To test the result, you can run a simulation again to see if the processing date changed.
+
+...........If unsuccessful
+The above explanation can not resolve your issue, please open a case with technical support and mention the FAQ number 71592.
+

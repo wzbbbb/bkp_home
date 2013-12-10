@@ -1,0 +1,3 @@
+wscript.echo "This is in vbs."
+now
+

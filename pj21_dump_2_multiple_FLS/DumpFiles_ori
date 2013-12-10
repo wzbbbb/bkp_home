@@ -1,0 +1,197 @@
+#!/usr/bin/ksh
+############################################################
+# Put the files in the Dollar Universe company in order to analyze them.
+############################################################
+##
+# update   : 0.7.4
+# date     : 20040707
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Correction
+#          : Behavior if the procedure is aborted
+##
+# update   : 0.7.3
+# date     : 20040707
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Correction
+#          : Skip the *ftt* files
+##
+# update   : 0.7.2
+# date     : 20040707
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Enhancement
+#          : Better Management of the non production areas
+##
+# update   : 0.7.1
+# date     : 20040610
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Enhancement
+#          : Automatic listing possibility
+##
+# creation : 0.7
+# date     : 20040526
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Creation
+
+g_du_dir=/apps/du/500
+g_comp=FLS500
+. /${g_du_dir}/${g_comp}/mgr/uxsetenv
+g_file_pref=dudmp
+g_clean_script=${UXMGR}/fls_clean.sh
+
+ps -ef | grep [u]xioserv | grep " ${g_comp} " > /dev/null 2>&1
+l_rc=$?
+if [ ${l_rc} -eq 0 ]; then
+	echo "The company ${g_comp} is not stopped"
+	echo "Do you accept to stop it ? (n by default)"
+	read l_stp_ans
+	case ${l_stp_ans:-n} in
+		[yY] ) ${UXMGR}/uxshutdown;;
+		[nN] ) echo "The company ${g_comp} need to be stopped in order to process"
+			exit 0;;
+		* ) echo "The answer is not valid"
+			exit 1;;
+	esac
+fi
+
+ps -ef | grep [u]xioserv | grep " ${g_comp} " > /dev/null 2>&1
+l_rc=$?
+if [ ${l_rc} -eq 0 ]; then
+	echo "The following processes are still started :"
+	ps -ef | grep [u]xioserv | grep " ${g_comp} "
+	echo "The procedure aborts"
+	exit 1
+fi
+
+echo "Which area do you want to consider ? exp by default"
+read l_area_ans
+case ${l_area_ans:-x} in
+	[aA]|[aA][pP][pP] ) l_area=A;l_area_3=APP; l_dta_dir=${UXDAP};;
+	[iI]|[iI][nN][tT] ) l_area=I;l_area_3=INT; l_dta_dir=${UXDIN};;
+	[sS]|[sS][iI][mM] ) l_area=S;l_area_3=SIM; l_dta_dir=${UXDSI};;
+	[xX]|[eE]|[eE][xX][pP] ) l_area=X;l_area_3=EXP; l_dta_dir=${UXDEX};;
+	* ) echo "The answer is not valid"
+		exit 1;;
+esac
+
+
+if [ ! -f ${g_clean_script} ]; then
+	echo "$UXMGR/ux_raz_fic u_fmcm50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmcx50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmer50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmev50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmfu50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmhs50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmlc50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmlp50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmph50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmpi50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmsb50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmsp50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmtp50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fseu50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fecl50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fecd50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fppf50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmpf50 ${l_area}" >> ${g_clean_script}
+	chmod 777 ${g_clean_script}
+fi
+
+echo "Running the reinitialization script"
+cat ${g_clean_script}
+echo "Is Ok ? (default y)"
+read l_clean_ans
+case ${l_clean_ans:-y} in
+	[yY] ) chmod 777 ${g_clean_script}; ${g_clean_script}; rm -f ${g_clean_script};;
+	[nN] ) echo "Files not cleaned"
+		exit 0;;
+	* ) echo "The answer is not valid"
+		exit 1;;
+esac
+
+l_flag_reorg=off
+echo "List the availables files "
+l_file_lst=`ls *dta`
+for l_file in ${l_file_lst}
+do
+	l_skp=off
+	echo ${l_file} | grep ftt > /dev/null
+	l_rc=$?
+	[ ${l_rc} -eq 0 ] && l_skp=on
+	if [ ${l_skp} = off ]; then
+		l_file_base=`echo ${l_file} | cut -d'.' -f1`
+		echo "#REM# processing ${l_file}"
+		if [ -f ${l_dta_dir}/${l_file} ]; then
+			echo "$UXMGR/ux_raz_fic ${l_file_base} ${l_area}" >> ${g_clean_script}
+			echo "#CMD# cp ${l_file} ${l_dta_dir}/${l_file}"
+			cp ${l_file} ${l_dta_dir}/${l_file}
+		fi
+		if [ -f ${UXDIR_ROOT}/${l_file} ]; then
+			echo "#CMD# cp ${l_file} ${UXDIR_ROOT}/${l_file}"
+			cp ${l_file} ${UXDIR_ROOT}/${l_file}
+			echo "$UXMGR/ux_raz_fic ${l_file_base}" >> ${g_clean_script}
+		fi
+		l_flag_reorg=on
+	else
+		echo "#REM# ${l_file} is skipped"
+	fi
+done
+
+[ ${l_flag_reorg:-off} = on ] && $UXMGR/ux_vrf_rgz_rst_area ${l_area}
+if [ ${l_flag_reorg:-off} = on ]; then
+	echo "$UXMGR/ux_raz_fic u_fmcm50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmcx50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmer50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmev50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmfu50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmhs50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmlc50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmlp50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmph50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmpi50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmsb50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmsp50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmtp50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fseu50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fecl50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fecd50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fppf50 ${l_area}" >> ${g_clean_script}
+	echo "$UXMGR/ux_raz_fic u_fmpf50 ${l_area}" >> ${g_clean_script}
+	chmod 777 ${g_clean_script}
+fi
+
+echo "Starting the Dollar Universe company"
+echo "Is Ok ? (default y)"
+read l_rest_ans
+case ${l_rest_ans:-y} in
+	[yY] ) BYPASS_INTEGRITY_CHECK=true; export BYPASS_INTEGRITY_CHECK; ${UXMGR}/uxstartup;l_du_str_flg=on;;
+	[nN] ) ;;
+	* ) ;;
+esac
+
+if [ ${l_du_str_flg:-off} = on ]; then
+	echo "Do you want to generate the automatic listings ? (default y)"
+	read l_gen_ans
+	if [ ${l_gen_ans:-y} = y ]; then
+		echo "#WAR# The Following commands will be launched in background"
+		l_cmd="${UXEXE}/uxlst ctl full ${l_area_3}"
+		echo "#CMD# ${l_cmd}"
+		l_cmd="${UXEXE}/uxlst fla full ${l_area_3}"
+		echo "#CMD# ${l_cmd}"
+		l_cmd="${UXEXE}/uxlst evt full ${l_area_3}"
+		echo "#CMD# ${l_cmd}"
+		l_cmd="${UXEXE}/uxlst ctl hst ${l_area_3}"
+		echo "#CMD# ${l_cmd}"
+		l_cmd="${UXEXE}/uxlst ctl full ${l_area_3}"
+		l_otpt=../../LST/${l_area_3}_${g_file_pref}_ctl_lst.txt
+		[ -f ${l_otpt} ] || ${l_cmd} > ${l_otpt} 2>&1 &
+		l_cmd="${UXEXE}/uxlst fla full ${l_area_3}"
+		l_otpt=../../LST/${l_area_3}_${g_file_pref}_fla_lst.txt
+		[ -f ${l_otpt} ] || ${l_cmd} > ${l_otpt} 2>&1 &
+		l_cmd="${UXEXE}/uxlst evt full ${l_area_3}"
+		l_otpt=../../LST/${l_area_3}_${g_file_pref}_evt_lst.txt
+		[ -f ${l_otpt} ] || ${l_cmd} > ${l_otpt} 2>&1 &
+		l_cmd="${UXEXE}/uxlst ctl hst ${l_area_3}"
+		l_otpt=../../LST/${l_area_3}_${g_file_pref}_ctl_hst.txt
+		[ -f ${l_otpt} ] || ${l_cmd} > ${l_otpt} 2>&1 &
+	fi
+fi

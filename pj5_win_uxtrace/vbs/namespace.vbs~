@@ -1,0 +1,9 @@
+strComputer = "."
+
+Set objSWbemServices = GetObject("winmgmts:\\" & strComputer & "\root")
+Set colNameSpaces = objSwbemServices.InstancesOf("__NAMESPACE")
+
+For Each objNameSpace In colNameSpaces
+ Wscript.Echo objNameSpace.Name
+Next
+

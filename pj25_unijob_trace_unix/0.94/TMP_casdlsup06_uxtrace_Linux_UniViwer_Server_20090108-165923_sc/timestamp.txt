@@ -1,0 +1,590 @@
+#TSP# #BEG#GLOBAL# 20090108-165923 
+#CMD# id
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -l /apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-165933 
+#TSP# #BEG# 20090108-165933 
+#CMD# netstat -a
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# netstat -na
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# ps -ef
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# df -k
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# ps -ef | grep UNIJOB
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# ps -ef | grep centralserver-start
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# ps -efl
+#TSP# #END# 20090108-165935 
+#TSP# #BEG# 20090108-165935 
+#CMD# vmstat 1 5
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# ps -efw
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# ps -efw | grep UNIJOB
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# ps -efw | grep centralserver-start
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# ps -efHwl
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# ps -efHwl | grep UNIJOB
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# ps -efHwl | grep centralserver-start
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# pstree -ap
+#TSP# #END# 20090108-165939 
+#TSP# #BEG# 20090108-165939 
+#CMD# top -bn3
+#TSP# #END# 20090108-165946 
+#TSP# #BEG# 20090108-165946 
+#CMD# netstat -aeep
+#TSP# #END# 20090108-165947 
+#CMD# ipcs -ma
+#TSP# #BEG# 20090108-165947 
+#CMD# env
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# netstat -i
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ypcat services
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ypcat passwd
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ypcat group
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ypcat hosts
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ypcat networks
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ypcat protocols
+#TSP# #END# 20090108-165947 
+#CMD# who -b 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -lai /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -lRai /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltrai 
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -lai 
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -lRai 
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -lai /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -lRai /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltrai 
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltraiL 
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltraiL /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP# #END# 20090108-165947 
+#TSP# #BEG# 20090108-165947 
+#CMD# ls -ltraiL /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP# #END# 20090108-165947 
+#CMD# ls -ltr /etc/services*
+#CMD# ls -lL /etc/services*
+#CMD# ls -ltr /etc/hosts*
+#CMD# ls -lL /etc/hosts*
+#CMD# ls -ltr /etc/fedora-release*
+#CMD# ls -lL /etc/fedora-release*
+#CMD# ls -ltr /etc/redhat-release*
+#CMD# ls -lL /etc/redhat-release*
+#CMD# ls -ltr /etc/resolv.conf*
+#CMD# ls -lL /etc/resolv.conf*
+#CMD# ls -ltr /proc/version*
+#CMD# ls -lL /proc/version*
+#CMD# ls -l / | grep -i UNI
+#CMD# ls -l /etc | grep -i UNI
+#CMD# ls -l /etc | grep UNIVERSE_SERVER_RFC
+#CMD# ls -l /etc | grep UNIVERSE_AGENT_SAP
+#CMD# ls -l /etc | grep UNIVERSE_DQM
+#CMD# ls -l /usr/lib | grep libux
+#CMD# ls -lRai /usr/lib/libux*/*
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k 
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk 
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k 
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk 
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP# #END# 20090108-165948 
+#TSP# #BEG# 20090108-165948 
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP# #END# 20090108-165948 
+#CMD# uname -as
+#CMD# head -100 /etc/*release
+#CMD# java -version
+#CMD# hostname
+#CMD# ./unicheckms
+#CMD# cat /apps/unijob110/univiewer_server/casdlsup06/data/install/history_installation.txt
+#CMD# df -k
+#TSP# #BEG# 20090108-165949 Logs files transfert from UXLEX
+#TSP# #BEG#DEF# 20090108-165949 Defining which logs to collect from the UXLEX directory
+#TSP# #END#DEF# 20090108-165949 Defining which logs to collect from the UXLEX directory
+#TSP# #BEG#BKP# 20090108-165949 Backuping the logs from the UXLEX directory
+#TSP# #END#BKP# 20090108-165949 Backuping the logs from the UXLEX directory
+#TSP# #BEG#FND1# 20090108-165949 Old logs files transfert from UXLEX
+#TSP# #END#FND1# 20090108-165949 Old logs files transfert from UXLEX
+#TSP# #BEG#TAR# 20090108-165949 Packaging the UXLEX directory
+#TSP# #END#TAR# 20090108-165949 Packaging the UXLEX directory
+#TSP# #END# 20090108-165949 Logs files transfert from UXLEX
+#TSP# #BEG# 20090108-165949 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-165949 
+#TSP# #BEG# 20090108-165949 
+#CMD# netstat -a
+#TSP# #END# 20090108-170000 
+#TSP# #BEG# 20090108-170000 
+#CMD# netstat -na
+#TSP# #END# 20090108-170000 
+#TSP# #BEG# 20090108-170000 
+#CMD# ps -ef
+#TSP# #END# 20090108-170000 
+#TSP# #BEG# 20090108-170000 
+#CMD# df -k
+#TSP# #END# 20090108-170000 
+#TSP# #BEG# 20090108-170000 
+#CMD# ps -ef | grep UNIJOB
+#TSP# #END# 20090108-170000 
+#TSP# #BEG# 20090108-170000 
+#CMD# ps -ef | grep centralserver-start
+#TSP# #END# 20090108-170001 
+#TSP# #BEG# 20090108-170001 
+#CMD# ps -efl
+#TSP# #END# 20090108-170001 
+#TSP# #BEG# 20090108-170001 
+#CMD# vmstat 1 5
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# ps -efw
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# ps -efw | grep UNIJOB
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# ps -efw | grep centralserver-start
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# ps -efHwl
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# ps -efHwl | grep UNIJOB
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# ps -efHwl | grep centralserver-start
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# pstree -ap
+#TSP# #END# 20090108-170005 
+#TSP# #BEG# 20090108-170005 
+#CMD# top -bn3
+#TSP# #END# 20090108-170011 
+#TSP# #BEG# 20090108-170011 
+#CMD# netstat -aeep
+#TSP# #END# 20090108-170013 
+#TSP# #BEG# 20090108-170013 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-170013 
+#TSP# #BEG# 20090108-170013 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-170013 
+#TSP# #BEG# 20090108-170013 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170014 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170014 
+#TSP# #BEG# 20090108-170029 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170029 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170029 
+#TSP# #BEG# 20090108-170044 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170044 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170044 
+#TSP# #BEG# 20090108-170059 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170059 
+#TSP# #BEG# 20090108-170059 
+#CMD# netstat -a
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# netstat -na
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# ps -ef
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# df -k
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# ps -ef | grep UNIJOB
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# ps -ef | grep centralserver-start
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# ps -efl
+#TSP# #END# 20090108-170101 
+#TSP# #BEG# 20090108-170101 
+#CMD# vmstat 1 5
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# ps -efw
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# ps -efw | grep UNIJOB
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# ps -efw | grep centralserver-start
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# ps -efHwl
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# ps -efHwl | grep UNIJOB
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# ps -efHwl | grep centralserver-start
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# pstree -ap
+#TSP# #END# 20090108-170105 
+#TSP# #BEG# 20090108-170105 
+#CMD# top -bn3
+#TSP# #END# 20090108-170112 
+#TSP# #BEG# 20090108-170112 
+#CMD# netstat -aeep
+#TSP# #END# 20090108-170122 
+#TSP# #END#GLOBAL# 20090108-170122 
+#TSP# #BEG# 20090108-170122 
+#CMD# ps -efl | grep UNIJOB
+#TSP# #END# 20090108-170122 
+#TSP# #BEG# 20090108-170122 
+#CMD# ps -efl | grep centralserver-start
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP# #END# 20090108-170123 
+#TSP# #BEG# 20090108-170123 
+#CMD# netstat -a
+#TSP# #END# 20090108-170124 
+#TSP# #BEG# 20090108-170124 
+#CMD# netstat -na
+#TSP# #END# 20090108-170124 
+#TSP# #BEG# 20090108-170124 
+#CMD# ps -ef
+#TSP# #END# 20090108-170124 
+#TSP# #BEG# 20090108-170124 
+#CMD# df -k
+#TSP# #END# 20090108-170124 
+#TSP# #BEG# 20090108-170124 
+#CMD# ps -ef | grep UNIJOB
+#TSP# #END# 20090108-170124 
+#TSP# #BEG# 20090108-170125 
+#CMD# ps -ef | grep centralserver-start
+#TSP# #END# 20090108-170125 
+#TSP# #BEG# 20090108-170125 
+#CMD# ps -efl
+#TSP# #END# 20090108-170125 
+#TSP# #BEG# 20090108-170125 
+#CMD# vmstat 1 5
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# ps -efw
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# ps -efw | grep UNIJOB
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# ps -efw | grep centralserver-start
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# ps -efHwl
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# ps -efHwl | grep UNIJOB
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# ps -efHwl | grep centralserver-start
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# pstree -ap
+#TSP# #END# 20090108-170129 
+#TSP# #BEG# 20090108-170129 
+#CMD# top -bn3
+#TSP# #END# 20090108-170136 
+#TSP# #BEG# 20090108-170136 
+#CMD# netstat -aeep
+#TSP# #END# 20090108-170137 
+#TSP# #BEG# 20090108-170137 
+#CMD# rmdir /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/CUST
+#TSP# #END# 20090108-170137 

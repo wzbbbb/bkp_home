@@ -1,0 +1,8 @@
+#CMD# ps -efHwl | grep UNIJOB
+#TSP#  20090108-170029 
+0 S root     25794 23115  0  82   0 -   980 -      17:00 pts/7    00:00:00                 grep UNIJOB
+0 S root     25801 23327  0  84   0 -   978 -      17:00 pts/5    00:00:00                 grep UNIJOB
+1 S root      5755     1  0  75   0 - 14820 stext  Jan05 ?        00:00:04   ./uniio UNIJOB X casdlsup06_unijob
+1 S root      5757     1  0  76   0 -  4022 stext  Jan05 ?        00:00:02   ./unicdj UNIJOB X casdlsup06_unijob
+5 S root      5759     1  0  75   0 -  3598 stext  Jan05 ?        00:00:00   ./unilan UNIJOB X casdlsup06_unijob
+1 S root      5761     1  0  75   0 -  3974 stext  Jan05 ?        00:00:01   ./unical UNIJOB X casdlsup06_unijob

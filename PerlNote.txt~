@@ -1,0 +1,1075 @@
+#!perl
+cpan>i /yahoomessenger/ 	#search for a module
+cpan>install [Dist]	#
+cpan>o conf
+cpan>o conf init 	#reinitialized the conf, like add more rullist
+cpan>h
+
+ActivePerl:
+PPM>query *	#list all installed modules
+PPM>search yahoomessenger 	#search online
+PPM>help
+PPM>install Net-YahooMessenger
+
+. 	# connect two string
+eg, print $yahoo->id . "\n"
+
+#!/usr/bin/perl
+use strict;	#important pragma
+use warnings;	#another import pragma
+use Data::Dumper;
+print "What is your username";
+my $username;
+$username=<STDIN>; #file handle for standard input
+chomp($username); #if there is no newlines, chomp leaves the string along.
+print "Hello, $username. \n ";
+
+.................................
+.................................
+per -c #doesnot run a program but check for syntax
+gzip -d -c Data-Dumper-2.08.tar.gz | tar xvf -
+cd Data-Dumper-2.08
+more < README
+perl Makefile.PL
+nmake
+nmake test
+nmake install
+
+.................................
+.................................
+...........Single quote: What you see is what you get
+special chars:
+\: 'xxx\'xxx'=>xxx'xxx   #'
+\\: => \
+
+...........String can span multiple lines.
+print 'Time to
+start a new line.'
+
+.................................
+.................................
+...........Double quote & Interpolation 
+\\	\
+\$	$
+\@	@
+\t	tab
+\n	newline
+\r	hard return
+\f	form feed
+\b	backspace
+\a	alarm (bell) : 
+\e	escape
+\033	char represpented by octal value ,033
+\x1b	................................., 1b 
+
+
+............................................
+............................................
+...........Scalars:
+Scalars: can store strings, numbers (integer, floats), references and filehandle.
+my $ref_to_name = \$ame;
+
+...........qw()
+my ($first, $last)=qw(John Doe);
+print "first is $first \n";
+print "last is $last\n";
+
+...........concatenation
+my $fullname= 'mud' . "bath";
+...........repetition
+my $line = '-' x 80; #$line is 80 hypens
+...........length
+my $len = length($line);
+...........substr
+substr (string, offset, length);
+my $chunk = substr('the rain in spain', 9 ,2);
+warn "chunk is '$chunk'";
+> chunk is 'in' ...
+
+my $string = 'the rain in spain';
+substr($string, 9, 2) = 'beyond';
+warn "string is $string";
+> string is 'the rain beyond spain' ...
+
+...........split
+split (/PATTERN/, string_expression, limit);
+my $tab_sep_data = "John\tDoe\tmale\t42";
+my ($first,$last, $gender, $age) = split(/\t/, $tab_sep_data);
+
+#you can break a string into individual chars by calling split with an empty string pattern "".
+
+...........john
+join('separator string', string1, string2, ...);
+my $string = john (" and ", 'apples', 'banbans', 'peaches');
+warn "string is '$string'";
+> string is 'apples and bananas and peaches' ...
+
+...........qw : quote barewords
+my $string = join (" and ", qw(apples bananas peaches));
+warn "string is $string";
+> string is 'apples and bananas and peaches' ...
+
+...........Numberic
+"0b"	Binary
+"0x"	hexadecimail
+0	Octal
+my $n=7.1;
+my $n=1.5e7;
+my $n=0123;
+my $n=0xfa94;
+
+...........abs
+my $var=abs(-3.4);
+...........int
+my $price=9.95;
+my $dollar=int($price);
+my $roundup_dollar=sprintf("%.0f", $price);
+# roundup_dollar is 10
+
+...........sin, cos, tan
+my $angle=45;
+my $raians = $angle * (3.14 / 180);
+my $sin_deg = sin($angle); #0.707
+my $sine_rad = sin($radians);
+
+...........exponentiation
+my $sevensquared = 3 ** 4; #81
+my $n = 49 ** (1/2); #7
+...........sqrt
+my $n=sqrt(123);
+
+...........natral logarithms (exp, log)
+my $value_of_e = exp(1);
+my $big_num= exp(42); # 2.7183 ** 42 = 1.7e18
+my $inv_exp = log($big_num); # inv_exp = 42
+
+...........rand and srand
+
+...........sprintf
+springf (format_string, list_of_values);
+my $pi = 3.1415;
+my $str= sprintf ("%06.2f", $pi);
+warn "str i $str";
+> str is 003.14 ...
+%	format
+0	fill leading space with 0
+6	total length
+.2	put two places after the decimal point
+f	floating point
+...........Numify
+You  can  force  numification  of  a  value  by  adding  integer  zero  to  it.
+my $user_input = '19.95'; # '19.95'
+my $price = $user_input+0; # 19.95
+
+...........defined()
+Use 
+If the  scalar  is  defined, the  function  returns  a  boolean  "true" (1)
+If the scalar is NOT defined, the function returns a boolean "false" ("").
+ 
+...........Booleans
+1) Strings  "" and  "0" are  FALSE, any  other  string  or  stringification  is  TRUE
+2) Number  0  is  FALSE, any  other  number  is  TRUE
+3) all  references  are  TRUE
+4) undef  is  FALSE
+
+FALSE
+The  following  scalars  are  interpreted  as  FALSE:
+integer 0 # false
+float 0.0 # false
+string '0' # false
+string '' # false
+undef # false
+
+
+Function			String	Numeric
+equal to			eq	==
+not equal to			ne	!=
+less than			lt	<
+greater	than			gt	>
+less than or equal to		le	<=
+greater than or equal to	ge	>=
+Comparison (<-1,==0,>1)		cmp	<=> 
+-1 : lt; 0 :eq; 1 : gt
+
+1 			true
+"" (null string) 	false
+
+&& 	#Precedence	
+|| 
+!	
+and
+or
+xor
+
+sub mysub {
+	my( $left, $right )=@_;
+	$left ||=1.0;	#if $left and $right are not assigned
+	$right ||=2.0;	# use the default value
+			#$left =$left || 1.0;
+	...
+}
+open (my $filehandle, $filename) or die "can't open";
+
+.................................
+.................................
+...........References
+my $name = 'John';
+my $name_ref = \$name;
+warn "name_ref is $name_ref";
+> name_ref is 'SCALAR(0x812e6ec)' ... 
+my $deref_name = $$name_ref;
+warn $deref_name;
+> John ... 
+warn Dumper \$name_ref;
+> $VAR1 = \'John';
+#Data::Dumper will take a reference to ANYTHING and print out the thing to which it refers in a human readable form.
+
+.................................
+.................................
+...........Filehandles
+open (my $fh, '>out.txt');
+print $fh "hello world\n";
+print $fh "this is simple file writng\n";
+close($fh);
+
+.................................
+.................................
+...........Array
+my @number = qw(zero one two three);
+my $string = $number[2];
+warn $strign;
+> two ...
+
+my @months;
+$months[1] = 'Jan';
+$months[5] = 'May';
+# $months[0] and $months[2..4] are autovivified
+# and initialized to undef
+print Dumper \@months;
+> $VAR1 = [
+> undef, 	# index 0 is undefined
+> 'January', 	# $months[1]
+> ${\$VAR1->[0]}, # this is same as undef
+> ${\$VAR1->[0]}, # undef
+> ${\$VAR1->[0]}, # undef
+> 'May' 	# $months[5]
+> ];
+
+my @junk = ('pliers', 1,1,1 '*', '//',
+	3.14, 9*11, 'yaba', 'baba' );
+
+#Negative  indexes  start  from  the  end  of  the  array  and  work  backwards.
+my @colors = qw(red green blue);
+my $last = $color[-1];
+warn "last is '$last'";
+> last is 'blue' ...
+
+.................................
+.................................
+...........scaler (@array) : number of element of an array
+my @phonetic = qw (alpha bravo charlie delta);
+my $quantity = scaler (@phonetic);
+my $quant = @phonetic; #It is the same to assign the entire array into a scaler.
+warn $quantity;
+warn $quant;
+>4
+>4
+
+...........push(@array, LIST) : add elements to the end of an array
+my @greceries =qw (milk bread);
+push(@groceries, qw(eggs bacon cheese));
+print Dumper \@groceries;
+> $VAR1 = [
+> 'milk',
+> 'bread',
+> 'eggs',
+> 'bacon',
+> 'cheese'
+> ];
+
+...........pop(@array) : get the last element of, and remove it form an array 
+my @names = qw (alice bob charlie);
+my $last_name = pop(@names);
+print Dumper \@names;
+> popped = charlie ...
+> $VAR1 = [
+> 'alice',
+> 'bob'
+> ];
+
+...........shift(@array) : get the 1st one and remove it from the array.
+my @course =qs(fee fie foe fum);
+my $start = shift(@curses);
+warn $start;
+warn Dumper \@curses;
+> fee
+> $VAR1 = [
+> 'fie',
+> 'foe',
+> 'fum'
+> ];
+
+...........unshift (@array, LIST) : add element to the begining of an array
+my @trees = qw (pine maples oak);
+unshift(@trees, 'birch');
+warn Dumper \@trees;
+> $VAR1 = [
+> 'birch', # index 0
+> 'pine', # old index 0, now 1
+> 'maple', # 2
+> 'oak' # 3
+> ];
+
+...........foreach (@array)
+LABEL foreach VAR (LIST) BLOCK
+my @fruits = qw(apples oranges lemons pears);
+foreach my $fruit (@fruits)
+	{print "fruit is '$fruit'\n";}
+>fruit is 'apples'
+>fruit is 'oranges'
+>fruit is 'lemons'
+>fruit is 'pears'
+my @integers = ( 23, 142, 9384, 83948 );
+foreach my $num (@integers) { $num+=100; }
+print Dumper \@integers;
+> $VAR1 = [
+> 123,
+> 242,
+> 9484,
+> 84048
+> ];
+
+...........sort (@array) : 
+#sort an array alphabetically. won't change the origial array
+my @fruit = qw (pears apples bananas oranges);
+my @sorted_array = sort(@fruit);
+print Dumper \@sorted_array;
+>$VAR1 = [
+> 'apples',
+> 'bananas',
+> 'oranges',
+> 'pears'
+> ];
+
+#sort numerically,
+my @scores = (1000, 13, 27, 200, 76, 150); 
+my @sorted_array = sort {$a<=>$b} (@scores);
+print Dumper \@sorted_array;
+> $VAR1 = [
+> 13,
+> 27,
+> 76,
+> 150,
+> 200,
+> 1000
+> ];
+
+...........reverse(@array)
+my @numbers = reverse (1000, 13, 27, 200, 76, 150);
+print Dumper \@numbers;
+> $VAR1 = [
+> 150,
+> 76,
+> 200,
+> 27,
+> 13,
+> 1000
+> ];
+
+...........splice(@array)
+#add or remove elements into or out of any index range of an array.
+splice(ARRAY, OFFSET, LENGTH, LIST);
+my @words = qw(hello there);
+splice(@words, 1, 0, 'out');
+warn join(" ", @words);
+> hello out there ...
+
+...........Uninitialized an array
+my @array = ();
+scalar() # to test if an array is initialized.
+
+...........hash
+my %info =qw(name john age 42);
+my $data = $info{name}; #'name' is the key
+warn $data;
+> John ...
+
+...........exists($hash{$key})
+my %pets = (cats=>2, dogs=>1);
+unless(exists($pets{fish}))
+	{print "No fish here\n";}
+
+Warning: during multi­key lookup, all the lower level keys are autovivified, and only the last key has exists() tested on it. 
+#Note in the following example, we explicitely create the key "Florida", but we only test for the existence of {Maine}­>{StateBird}, which has the side effect of creating the key {Maine} in the hash. 
+
+my %stateinfo;
+$stateinfo{Florida}->{Abbreviation}='FL';
+if (exists($stateinfo{Maine}->{StateBird}))
+	{warn "it exists";}
+print Dumper \%stateinfo;
+> $VAR1 = {
+> 	'Florida' => {
+> 			'Abbreviation' => 'FL'
+> 		},
+> 	'Maine' => {}
+> };
+
+my %stateinfo;
+$stateinfo{Florida}->{Abbreviation}='FL';
+if (exists($stateinfo{Maine}))
+{
+	if (exists($stateinfo{Maine}->{StateBird}))
+		{ warn "it exists";}
+}
+print Dumper \%stateinfo;
+> $VAR1 = {
+> 	'Florida' => {
+> 		'Abbreviation' => 'FL'
+> 		}
+> 	};
+
+...........delete($hash{key})
+my %perts =
+	(
+	fish=>3,
+	cats=>2,
+	dogs=>1,
+	)
+$pets{cats}=undef;
+delete($pets{fish});
+print Dumper \%pets;
+> $VAR1 = {
+> 		'cats' => undef,
+> 		'dogs' => 1
+> 	};
+
+...........keys(%hash)
+#Use  keys() to  return  a  list  of  all  the  keys  in  a  hash.
+my %pets =
+	(
+	fish=>3,
+	cats=>2,
+	dogs=>1,
+)
+foreach my $pet (keys(%pets))
+{
+	print "pet is '$pet'\n";
+}
+> pet is 'cats'
+> pet is 'dogs'
+> pet is 'fish'
+
+...........values(%hash)
+#Use values() to return a list of all the values in a hash.
+#The order of the values will match the order of the keys return in keys(). 
+my %pets = 
+	(
+	fish=>3,
+	cats=>2,
+	dogs=>1,
+	);
+my @pet_keys = keys(%pets);
+my @pet_vals = values(%pets);
+print Dumper \@pet_keys;
+print Dumper \@pet_vals;
+
+> $VAR1 = [
+> 		'cats',
+> 		'dogs',
+> 		'fish'
+> 	];
+> $VAR1 = [
+> 		2,
+> 		1,
+> 		3
+> 	];
+
+...........each(%hash)
+#Use each() to iterate through each key/value pair in a hash, one at a time.
+my %pets =
+(
+	fish=>3,
+	cats=>2,
+	dogs=>1,
+);
+while (my($pet,$qty)=each($pets))
+	{print "pet='$pet', qty='$qty'\n";
+	}
+> pet='cats', qty='2'
+> pet='dogs', qty='1'
+> pet='fish', qty='3'
+# Every call to each() returns the next key/value pair in the hash. After the last key/value pair is returned, the next call to each() will return an empty list, which is boolean false.
+
+#Every  hash  has  one  "each  iterator" attached  to  it. This  iterator  is  used  by  perl  to
+remember  where  it  is  in  the  hash  for  the  next  call  to  each().
+#Calling  keys() on  the  hash  will  reset  the  iterator. The  list  returned  by  keys() can  be discared.
+
+keys(%hash);
+
+#Do  not  add  keys  while  iterating  a  hash  with  each().
+#You  can  delete  keys  while  iterating  a  hash  with  each().
+my %pets =
+	(
+	fish=>3,
+	cats=>2,
+	dogs=>1,
+	);
+sub one_time
+{
+	my($pet,$qty)=each(%pets);
+		# if key is not defined,
+		# then each() must have hit end of hash
+
+	if(defined($pet))
+	{	 print "pet='$pet', qty='$qty'\n"; }
+	else
+	{	 print "end of hash\n"; }
+}
+one_time; # cats
+one_time; # dogs
+keys(%pets); # reset the hash iterator
+one_time; # cats
+one_time; # dogs
+one_time; # fish
+one_time; # end of hash
+one_time; # cats
+one_time; # dogs
+> pet='cats', qty='2'
+> pet='dogs', qty='1'
+> pet='cats', qty='2'
+> pet='dogs', qty='1'
+> pet='fish', qty='3'
+> end of hash
+> pet='cats', qty='2'
+> pet='dogs', qty='1'
+
+#each() on a hash can not be called twice the same time.
+
+...........list content
+my %encrypt=(tank=>'turtle',bomber=>'eagle');
+my %decrypt=reverse(%encrypt) ;
+print Dumper \%decrypt;
+> $VAR1 = {
+> 	'eagle' => 'bomber',
+> 	'turtle' => 'tank'
+> 	};
+
+.................................
+.................................
+...........file input and output
+
+...........open()
+open(my $filehandle, 'filename.txt')
+	or die "Could not open file";
+
+'<' 	Read. Do  not  create. Do  not  clobber  existing  file. DEFAULT.
+'>' 	Write. Create  if  non ­existing. Clobber  if  already  exists.
+'>>' 	Append. Create  if  non ­existing. Do  not  clobber  existing  file.
+
+...........close()
+close($filehandle) or die "Could not close";
+
+...........read()
+#cat -n
+open (my $fh, 'input.txt') or die "could not open";
+my $num=0;
+while(<$fh>) 	#<>: read online a time
+{
+	$num++;
+	my $line = $_;
+	chomp($line);	#necessary? attached one \n later anyway ...
+	print "$num: $line\n"; 
+}
+
+#read a line into a scalar, if defined() failed, --> reached EOF
+defined(my $line = <$fh>) or die "premature eof";
+
+#another eg.
+use Carp;
+open (my $fh, 'input.txt');
+sub nlin
+{
+	defined(my $line = <$fh>) or croak "premature eof";
+	chomp($line);
+	return $line;
+}
+my $name=nlin;
+my $addr=nlin;
+my $age =nlin;
+print "Name: $name, address: $addr, age: $age\n";
+
+...........write()
+open (my $fh, '>output.txt');
+print $fh "once\n";
+print $fh "upon\n";
+print $fh "a time\n";
+clost $fh;
+
+...........file tests : true (1) or falst ("")
+-x FILE 	#the syntax
+
+•-e file exists
+•-f file is a plain file
+•-d file is a directory
+•-l file is a symbolic link
+•-r file is readable
+•-w file is writable
+•-z file size is zero
+•-p file is a named pipe
+•-S file is a socket
+•-T file is a text file (perl's definition)      '
+
+...........glob() : like ls?
+#The glob() function takes a string expression and returns a list of files that match that expression using shell style filename expansion and translation.
+my @files = glob (STRING_EXPRSSION);
+
+my @textfiles = glob("*.txt");
+my $startup_file = glob('~/.cshrc');	#translate ~ into a directory
+
+...........file tree searching
+use File::Find;
+my $pwd=`pwd`;
+chop($pwd);
+find(\&process,$pwd);
+sub process{ ... }
+
+sub process
+{
+my $fullname = $File::Find::name;
+if ($fullname =~ m{\.txt$})
+{print "found text file $fullname\n";}
+if((-d $fullname) and ($fullname=~m{CVS}))
+{$File::Find::prune=1; return;}
+}
+#The process() subroutine is a subroutine that you define. The process() subroutine will be called  on every file and directory in $pwd and recursively into every subdirectory and file below.
+#The package variable $File::Find::contains the name of the current file or directory. Your process() subroutine can read this variable and perform whatever testing it wants on the fullname. If you process() was called on a file and not just a directory, the path to the file is available in $File::Find::dir and the name of the file is in $_.
+#If your process() subroutine sets the package variable $File::Find::to 1, then find() will not recurse any further into the current directory.
+#This process() subroutine prints out all .txt files encountered and it avoids entering any CVS directories.
+
+.................................
+.................................
+...........control flow
+
+...........if
+if ($price == 0) {
+	print "Free Beer!\n";
+}
+
+...........label
+#
+# LABEL is an optional name that identifies the
+# control flow structure. It is a bareword identifier
+# followed by a colon. example==> MY_NAME:
+#
+# BLOCK ==> zero or more statements contained
+# in curly braces { print "hi"; }
+LABEL BLOCK
+LABEL BLOCK continue BLOCK
+# BOOL ==> boolean (see boolean section above)
+if (BOOL) BLOCK
+if (BOOL) BLOCK else BLOCK
+if (BOOL) BLOCK elsif (BOOL) BLOCK elsif ()...
+if (BOOL) BLOCK elsif (BOOL) BLOCK ... else BLOCK
+unless (BOOL) BLOCK
+unless (BOOL) BLOCK else BLOCK
+unless (BOOL) BLOCK elsif (BOOL) BLOCK elsif ()...
+unless (BOOL) BLOCK elsif (BOOL) BLOCK ... else BLOCK
+LABEL while (BOOL) BLOCK
+LABEL while (BOOL) BLOCK continue BLOCK
+LABEL until (BOOL) BLOCK
+LABEL until (BOOL) BLOCK continue BLOCK
+# INIT, TEST, CONT are all expressions
+# INIT is an initialization expression
+# INIT is evaluated once prior to loop entry
+# TEST is BOOLEAN expression that controls loop exit
+# TEST is evaluated each time after BLOCK is executed
+# CONT is a continuation expression
+# CONT is evaluated each time TEST is evaluated TRUE
+LABEL for ( INIT; TEST; CONT ) BLOCK
+# LIST is a list of scalars,
+# see arrays and list context sections later in text
+LABEL foreach (LIST) BLOCK
+LABEL foreach VAR (LIST) BLOCK
+LABEL foreach VAR (LIST) BLOCK continue BLOCK
+
+...........label
+#Labels  are  always  optional. A  label  is  an  identifier  followed  by  a  colon. 
+If  the  structure  has  a  LABEL, you  can  call
+next LABEL;
+last LABEL;
+redo LABEL;
+#If  no  label  is  given  to  next, last, or  redo, then  the  command  will  operate  on  the  inner ­most control  structure.
+
+...........last LABEL :
+#The  last  command  goes  to  the  end  of  the  entire  control  structure. It  does  not  execute  any continue  block  if  one  exists.
+...........next LABEL :
+#The  next  command  skips  the  remaining  BLOCK. if  there  is  a  continue  block, execution resumes  there. After  the  continue  block  finishes, or  if  no  continue  block  exists, execution starts  the  next  iteration  of  the  control  construct  if  it  is  a  loop  construct.
+...........redo LABEL:
+#The  redo  command  skips  the  remaining  BLOCK. It  does  not  execute  any  continue  block (even  if  it  exists). Execution  then  resumes  at  the  start  of  the  control  structure  without evaluating  the  conditional  again.
+
+.................................
+.................................
+...........BEGIN CHECK INIT END
+BEGIN  ­> #execute  block  as  soon  as  it  is  compiled, even  before  compiling  anything  else.
+CHECK  ­> #Schedule  these  blocks  for  execution  after  all  source  code  has  been  compiled.
+INIT ­> #Schedule  these  blocks  for  execution  after  the  CHECK  blocks  have  executed.
+normal  code  ­> Schedule  normal  code  to  execute  after  all  INIT  blocks.
+END  ­> #Schedule  for  execution  after  normal  code  has  completed.  
+
+Multiple BEGIN  # blocks are executed immediately in NORMAL declaration order.
+Multiple CHECK  #blocks are scheduled to execute in REVERSE declaration order.
+Multiple INIT   #blocks are scheduled to execute in NORMAL declaration order.
+Multiple END    #blocks are scheduled to execute in REVERSE declaration order.
+END { print "END 1\n" }
+CHECK { print "CHECK 1\n" }
+BEGIN { print "BEGIN 1\n" }
+INIT { print "INIT 1\n" }
+print "normal\n";
+INIT { print "INIT 2\n" }
+BEGIN { print "BEGIN 2\n" }
+CHECK { print "CHECK 2\n" }
+END { print "END 2\n" }
+> BEGIN 1
+> BEGIN 2
+> CHECK 2
+> CHECK 1
+> INIT 1
+> INIT 2
+> normal
+> END 2
+> END 1
+
+.................................
+.................................
+...........reference
+my %home=
+	(
+		fish=>3, cats=>2, dogs=>1,
+		milk=>1, bread=>2, egges=>12,
+	);
+my $license_for_alice = \%home;
+my $license_for_bob = \%home;
+${$license_for_alice} {dogs} +=5;
+delete(${$license_for_bob}{milk});
+print Dumper \%home
+> $VAR1 = {
+> 	'eggs' => 12,
+> 	'cats' => 2,
+> 	'bread' => 2,
+> 	'dogs' => 6,
+> 	'fish' => 3
+> 	};
+
+my $ref_to_age=42;
+my $ref_to_colors=\@colors;
+my $r_pets = \%pets;
+${$ref_to_age}++ # the same as $$ref_to_age ++;
+pop(@{$ref_to_colors});
+my %copy_of_pets = %{$r_pets};
+print "age is '$age'\n";
+#access hash and array number through reference
+${$r_pets} {dogs} += 5;  ;===; $r_pets->{dogs} +=5;
+${$r_colors} [1] = 'yellow' ;===; $r_colors->[1] = 'yellow';
+print Dumper \@colors; 
+print Dumper \%pets;
+> $VAR1 = [
+	'red',
+	'yellow',
+	'blue'
+	];
+$VAR1 = {
+	'cats' => 2,
+	'dogs' => 6,
+	'fish' => 3
+	};
+
+...........anonymous referents
+#To create an anonymous array referent, put the contents of the array in square brackets. The square brackets will create the underlying array with no name, and return a reference to that unnamed array.
+my $colors_ref=['red', 'green', 'blue']; #creating an array with no name.
+print Dumper $colors_ref;
+> $VAR1 = [
+> 	'red',
+> 	'green',
+> 	'blue'
+> 	];
+
+my $pets_ref = { fish=>3,cats=>2,dogs=>1 }; #accessing a hash only through reference
+print Dumper $pets_ref;
+> $VAR1 = {
+> 	'cats' => 2,
+> 	'dogs' => 1,
+> 	'fish' => 3
+> 	};
+
+...........complex data structures: reference's reference '
+my %pets=(fish=>3, cats=>2, dogs=>1);
+my @frig=qw(milk cread eggs);
+my $house={	#a ref to a hash that contains two refs.
+	pets=>\%pets,
+	frig=>\@frig
+};
+pring Dumper $house;
+> $VAR1 = {
+> 	'pets' => {
+> 			'cats' => 2,
+> 			'dogs' => 1,
+> 			'fish' => 3
+> 		},
+> 	'refridgerator' => [
+> 			'milk',
+> 			'bread',
+> 			'eggs'
+> 		]
+>	};
+# Alice added more canines
+$house->{pets}->{dogs}+=5;
+# Bob drank all the milk
+shift(@{$house->{refridgerator}});
+
+...........multidimensional arrays
+my $mda;
+for (my $i=0;$i<2;$i++)
+{
+	for(my $j=0;$j<2;$j++)
+	{
+		for(my $k=0;$k<2;$k++)
+		{
+			$mda->[$i]->[$j]->[$k]=
+			"row=$i, col=$j, depth=$k";
+		}
+	}
+}
+print Dumper $mda;
+> $VAR1 = [
+> 		[
+> 			[
+> 			'row=0, col=0, depth=0',
+> 			'row=0, col=0, depth=1'
+> 			],
+> 			[
+> 			'row=0, col=1, depth=0',
+> 			'row=0, col=1, depth=1'
+> 			]
+> 		],
+> 		[
+> 			[
+> 			'row=1, col=0, depth=0',
+> 			'row=1, col=0, depth=1'
+> 			],
+> 			[
+> 			'row=1, col=1, depth=0',
+> 			'row=1, col=1, depth=1'
+> 			]
+> 		]
+> 	];
+
+...........stringification of references
+my $age = 42;
+my $ref = \$age;
+warn "ref is '$ref'";
+> reference is 'SCALAR(0x812e6ec)'
+
+...........ref()
+#The ref() function takes a scalar and returns a string indicating what kind of referent the scalar is referencing.  
+sub what_is_it
+{
+	my ($scalar)=@_;
+	my $string = ref($scalar);
+	print "string is '$string'\n";
+}
+what_is_it(\'hello');
+what_is_it([1,2,3]);
+what_is_it({cats=>2});
+what_is_it(42);
+> string is 'SCALAR'
+> string is 'ARRAY'
+> string is 'HASH'
+> string is ''
+
+.................................
+.................................
+...........Package
+#To use package variables:
+#can use variable without declaring it with 'my'
+$some_package::answer=42;
+warn "The value is '$some_package::answer'\n";
+#or
+package this_package;
+our $name='John';
+warn "name is '$name'";
+
+package Hogs;
+our $speak = 'oink';
+print "Hogs::speak is '$Hogs::speak'\n";
+> Hogs::speak is 'oink'
+
+#Package var inside a lexical scope
+package Hogs;
+our $speak='oink';
+{ #START OF CODE BLOCK
+	package Heifers;
+	our $speak='moo';
+} # END OF CODE BLOCK
+print "speak is '$speak'\n";
+> speak is 'oink'
+print "Heifers::speak is '$Heifers::speak'\n";
+> Heifers::speak is 'moo'
+
+...........lexical variable
+#Lexical variables declared inside a lexical scope do not survive outside the lexical scope. 
+#All  perl  scripts  start  with  an  implied  declaration  of:
+package main;
+
+#1) Lexical  variables  do  not  belong  to  any  package  namespace,
+no warnings;
+package main;
+my $cnt='I am just a lexical';
+warn "main::cnt is '$main::cnt'";
+> main::cnt is ''
+#2) Lexical variables are only directly accessible from the point where they are declared to the end of the nearest enclosing block subroutine, eval, or file.
+no strict;
+{
+	my $some_lex = 'I am lex';
+}
+warn "some_lex is '$some_lex'";
+> some_lex is ''
+
+#3) Lexical variables are subject to "garbage collection" at the end of scope.
+#Every time a variable is declared with "my", it is created dynamically,
+#Package variables  are  permanent,
+my @cupboard;
+for (1 .. 5)
+{
+	my $lex_var = 'canned goods';
+	my $lex_ref = \$lex_var;
+	push(@cupboard, $lex_ref);
+	print "$lex_ref\n";
+}
+> SCALAR(0x812e770)
+> SCALAR(0x812e6c8)
+> SCALAR(0x812e6e0)
+> SCALAR(0x81624c8)
+> SCALAR(0x814cf64)
+
+...........garbage collection
+#If a lexical variable is a referent to another variable, then the lexical will not be garbage collected when it goes out of scope. 
+no strict;
+my $referring_var;
+{
+	my $some_lex = 'I am lex';
+	$referring_var=\$some_lex;
+}
+warn "some_lex is '$some_lex'";
+warn "referring var refers to '$$referring_var'";
+> some_lex is ''
+> referring var refers to 'I am lex'
+
+...........reference count garbage collection
+#circular  references  will  not  get  collected
+
+...........Garbage Collection and Subroutines
+#Subroutines that use a lexical variable declared outside of the subroutine declaration are called "CLOSURES".
+#named subroutines are like package variables in that, once declared, they never go out of scope or get garbage collected.
+#If a subroutine uses a lexical variable, then that variable will not be garbage collected as long as the subroutine exists.  
+
+...........local()
+#The local function takes a package variable, saves off the original value, allows you to assign a temp value to it. That new value is seen by anyone accessing the variable. And at the end of the lexical scope in which local() was called, the original value for the variable is returned.
+sub RunSilent {
+	local($Development::Verbose)=0;
+	Run; }
+
+.................................
+.................................
+...........par
+pp -o sshnuke.exe sshnuke.pl #stand-alone executable!
+zip foo.par hello.pm world.pm
+zip -r bar.par lib/
+
+#to load modules from PAR files:
+use PAR;
+use lib "foo.par";
+usr hello;
+
+use PAR "/home/mylibs/*.par";
+use Hello;
+
+#Use par.pl to run files inside a PAR archive:
+
+        % par.pl foo.par                  # looks for 'main.pl' by default
+        % par.pl foo.par test.pl          # runs script/test.pl in foo.par
+
+#Same thing, with the stand-alone parl or parl.exe:
+
+        % parl foo.par                    # no perl or PAR.pm needed!
+        % parl foo.par test.pl            # ditto
+
+#The PAR loader can prepend itself to a PAR file:
+
+#-b bundles non-core modules needed by PAR.pm:
+
+% par.pl -b -O./foo.pl foo.par # self-contained script 
+
+#-B bundles core modules in addition to -b;
+%parl -B -O./foo.exe foo.par #self-contained binary
+
+#Dependency Scanning
+#Recursively scan dependencies with scandeps.pl:
+
+        % scandeps.pl sshnuke.pl
+        # Legend: [C]ore [X]ternal [S]ubmodule [?]NotOnCPAN
+        'Crypt::SSLeay'       => '0', #  X   #
+        'Net::HTTP'           => '0', #      #
+        'Crypt::SSLeay::X509' => '0', # S    # Crypt::SSLeay
+        'Net::HTTP::Methods'  => '0', # S    # Net::HTTP
+        'Compress::Zlib'      => '0', #  X   # Net::HTTP::Methods
+
+#Scan an one-liner, list all involved files:
+
+        % scandeps.pl -V -e "use Dynaloader;"
+        ...
+        # auto/DynaLoader/dl_findfile.al [autoload]
+        # auto/DynaLoader/extralibs.ld [autoload]
+        # auto/File/Glob/Glob.bs [data]
+        # auto/File/Glob/Glob.so [shared]
+        ...
+
+Perl Packager: pp
+Combines scanning, zipping and loader-embedding:
+
+        % pp -o out.exe src.pl            # self-contained .exe
+        % out.exe                         # runs anywhere on the same OS
+
+Bundle additional modules:
+
+        % pp -o out.exe -M CGI src.pl     # pack CGI + its dependencies, too
+
+Pack one-liners:
+
+        % pp -o out.exe -e 'print "Hi!"'  # turns one-liner into executable
+
+Generate PAR files instead of executables:
+
+        % pp -p src.pl                    # makes 'source.par'
+        % pp -B -p src.pl                 # include core modules
+
+
+#How it works
+#Command-line options are almost identical to perlcc's
+
+#Also supports gcc-style long options:
+
+% pp --gui --verbose --output=out.exe src.pl 
+
+#Small initial overhead; no runtime overhead
+#
+#Dependencies are POD-stripped before packing
+#
+#Loads modules directly into memory on demand
+#
+#Shared libraries (DLLs) are extracted with File::Temp
+#
+#Works on Perl 5.6.0 or above
+#
+#Tested on Win32, FreeBSD, Linux, Darwin, Cygwin, AIX, Solaris, HP-UX...
+	
+

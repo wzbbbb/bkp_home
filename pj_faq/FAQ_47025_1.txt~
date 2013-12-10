@@ -1,0 +1,81 @@
+
+Key words:
+
+DQM, 
+
+Subject:
+
+DQM fails to start after patching 
+
+
+Prerequistites:
+
+
+Application validation tests:
+
+1. Errors in the universe.log when Dollar Universe starting:
+
+<< 2006-01-04 12:36:44 0026925/uxdqmsrv        /u_dqm_disk_load     /000000000 - Wrong file version
+<< 2006-01-04 12:36:44 0026925/uxdqmsrv        /u_dqm_init_srv      /000000000 - Error -1 loading dqm files
+
+2. The DQM process will not show up.
+
+Explanation:
+
+When upgrading to SPREOO25 + 24293 or a later patch, the DQM data files will be upgraded. They have 2 choices:   
+
+1. Using new data files
+1). shutdown $U 
+2). rename the 2 DQM data files in $UXDQM
+3). restart the $U. The 2 DQM data files will be automatically recreated. 
+
+Comments: 
+In this procedure, all of the original queue definitions will be lost, the user has to manually recreate all of the queues. So, it is better to have them record all of the deinition of each queue before the procedure.
+
+This procedure is easy to follow. It is recommended if they are not using too many queues. 
+
+2. Migrating the data files
+
+The following is from 24293 readme file. The procedure is less obvious to follow. If recreating the queues is not too much work, try to use the procedure above . 
+
+#############################################################################
+The DQM data file migration procedure follows:
+   
+ ** The DQM data files may have different names depending on the company's 
+    parameters.  We will call the uxdmpque*.dat file - DTA_QUE_FILE and 
+    the uxdmpdta*.dat file - DTA_JOB_FILE (both files are located in the 
+    $UXDQM directory).
+   
+ ** DQM DATA FILE MIGRATION :
+   -1- Change to the $UXDQM directory
+   -2- Backup the DQM data files (DTA_QUE_FILE and DTA_JOB_FILE)
+   -3- Launch the command : ./uxmigdqm DTA_QUE_FILE queues.dat jobs.dat
+   -4- Rename the file queues.dat to DTA_QUE_FILE
+   -5- Rename the file jobs.dat to DTA_JOB_FILE
+   
+
+#############################################################################
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+In both above procedures, it is good to back up the 2 DQM data files first. 
+
+
+Implementation check:
+
+1. Restarting the Dollar Universe Company, the DQM server should start. 
+2. Try to create some queues, they should be able to launch jobs through the newly created queues.
+
+In case the procedure is unsuccessful:
+
+Move the 2 DQM data file backups back.
+
+Next updates:
+
+Access level:
+
+Experties level:
+

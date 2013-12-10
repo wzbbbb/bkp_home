@@ -1,0 +1,1268 @@
+Microsoft (R) Windows Script Host Version 5.6
+Copyright (C) Microsoft Corporation 1996-2001. Tous droits r‚serv‚s.
+
+strBias is:  60
+The begin date is: 20050330000000.000000+060
+Log File: Application
+Record Number: 26
+Type: error
+Time Generated: 20050406204954.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 25
+Type: information
+Time Generated: 20050406195020.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: accepted: 192.168.105.7::4789
+
+
+
+
+Log File: Application
+Record Number: 24
+Type: information
+Time Generated: 20050406194950.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: closed: 192.168.105.4::4836 (Clean disconnection)
+
+
+
+
+Log File: Application
+Record Number: 23
+Type: information
+Time Generated: 20050406194713.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: accepted: 192.168.105.4::4836
+
+
+
+
+Log File: Application
+Record Number: 22
+Type: information
+Time Generated: 20050406194705.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: closed: 192.168.105.4::4835 (Authentication failure)
+
+
+
+
+Log File: Application
+Record Number: 21
+Type: error
+Time Generated: 20050406194705.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: SConnection: AuthFailureException: Authentication failure
+
+
+
+
+Log File: Application
+Record Number: 20
+Type: information
+Time Generated: 20050406194702.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: accepted: 192.168.105.4::4835
+
+
+
+
+Log File: Application
+Record Number: 19
+Type: information
+Time Generated: 20050406194541.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: closed: 192.168.105.4::4607 (Idle timeout)
+
+
+
+
+Log File: Application
+Record Number: 18
+Type: error
+Time Generated: 20050406190853.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 17
+Type: information
+Time Generated: 20050406181119.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: accepted: 192.168.105.4::4607
+
+
+
+
+Log File: Application
+Record Number: 16
+Type: information
+Time Generated: 20050406180744.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: closed: 192.168.105.4::4428 (Clean disconnection)
+
+
+
+
+Log File: Application
+Record Number: 15
+Type: information
+Time Generated: 20050406171905.000000+120
+Source: MsiInstaller
+Category: 0
+Category String: 
+Event: 11728
+User: 
+Computer: DEVNT24
+Message: Product: WebFldrs -- La configuration s'est termin‚e correctement.
+
+
+Log File: Application
+Record Number: 14
+Type: error
+Time Generated: 20050406171853.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 13
+Type: information
+Time Generated: 20050406171852.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: La forˆt de l'utilisateur connect‚ est diff‚rente de la forˆt de l'ordinateur. Le traitement de la strat‚gie de groupe entre forˆts est d‚sactiv‚ et le traitement du bouclage est rendu obligatoire dans cette forˆt pour ce compte utilisateur.
+
+
+Log File: Application
+Record Number: 12
+Type: information
+Time Generated: 20050406171734.000000+120
+Source: WinVNC4
+Category: 0
+Category String: 
+Event: 1
+User: 
+Computer: DEVNT24
+Message: Connections: accepted: 192.168.105.4::4428
+
+
+
+
+Log File: Application
+Record Number: 11
+Type: information
+Time Generated: 20050406164043.000000+120
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: DEVNT24\abr
+Computer: DEVNT24
+Message: Le service Univ_abr a d‚marr‚.
+
+
+Log File: Application
+Record Number: 10
+Type: information
+Time Generated: 20050406164040.000000+120
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: DEVNT24\abr
+Computer: DEVNT24
+Message: Le service Univ_abr a ‚t‚ arrˆt‚.
+
+
+Log File: Application
+Record Number: 9
+Type: information
+Time Generated: 20050406163640.000000+120
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: DEVNT24\abr
+Computer: DEVNT24
+Message: Le service Univ_abr a d‚marr‚.
+
+
+Log File: Application
+Record Number: 8
+Type: information
+Time Generated: 20050406163637.000000+120
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 4
+User: DEVNT24\abr
+Computer: DEVNT24
+Message: Le service Univ_abr a ‚t‚ arrˆt‚.
+
+
+Log File: Application
+Record Number: 7
+Type: error
+Time Generated: 20050406155855.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 6
+Type: information
+Time Generated: 20050406153647.000000+120
+Source: DollarUniverse
+Category: 0
+Category String: 
+Event: 1
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Le service SUP500_SUR a d‚marr‚.
+
+
+Log File: Application
+Record Number: 5
+Type: error
+Time Generated: 20050406140853.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 4
+Type: error
+Time Generated: 20050406121148.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 3
+Type: information
+Time Generated: 20050406104428.000000+120
+Source: SceCli
+Category: 0
+Category String: 
+Event: 1704
+User: 
+Computer: DEVNT24
+Message: La strat‚gie de s‚curit‚ dans les objets Strat‚gie de groupe est appliqu‚e correctement.
+
+
+Log File: Application
+Record Number: 2
+Type: error
+Time Generated: 20050406103447.000000+120
+Source: Userenv
+Category: 0
+Category String: 
+Event: 1000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: Windows ne peut pas effectuer de traitement de bouclage quand l'ordinateur est joint … un domaine non Windows 2000 ou qu'il est membre d'un groupe de travail. Le traitement de bouclage va ˆtre d‚sactiv‚.
+
+
+Log File: Application
+Record Number: 1
+Type: information
+Time Generated: 20050406102855.000000+120
+Source: McLogEvent
+Category: 0
+Category String: 
+Event: 5000
+User: AUTORITE NT\SYSTEM
+Computer: DEVNT24
+Message: VirusScan Enterprise Le service McShield a d‚marr‚ - Recherche de 121413 virus en cours.
+
+Version de moteur : 4.4.00
+
+Version de .DAT : 4462
+
+
+
+Nom d'EXTRA.DAT : Aucun
+
+Nombre de signatures de virus dans EXTRA.DAT : Aucun
+
+Noms des virus d‚tect‚s par EXTRA.DAT : Aucun
+
+
+Log File: System
+Record Number: 534
+Type: warning
+Time Generated: 20050406110842.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+
+Log File: System
+Record Number: 533
+Type: warning
+Time Generated: 20050406090340.000000+120
+Source: Srv
+Category: 0
+Category String: 
+Event: 2013
+User: 
+Computer: DEVNT24
+Message: Le disque C: est sur le point d'ˆtre satur‚. Vous devrez peut-ˆtre supprimer des fichiers.
+
+
+Log File: System
+Record Number: 532
+Type: warning
+Time Generated: 20050405183843.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+
+Log File: System
+Record Number: 531
+Type: information
+Time Generated: 20050405130217.000000+120
+Source: Removable Storage Service
+Category: 0
+Category String: 
+Event: 135
+User: 
+Computer: DEVNT24
+Message: Une notification de SUPPRESSION d'interface de p‚riph‚rique pour le p‚riph‚riqueÿ: 
+ a ‚t‚ re‡ue.
+
+\\?\USBSTOR#Disk&Ven_Sony&Prod_Storage_Media&Rev_PROL#7&20297e83&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+
+Log File: System
+Record Number: 530
+Type: error
+Time Generated: 20050405110514.000000+120
+Source: Removable Storage Service
+Category: 0
+Category String: 
+Event: 17
+User: 
+Computer: DEVNT24
+Message: Les services de m‚dias amovibles ne peuvent pas prendre en charge
+la bibliothŠque PhysicalDrive1. Une erreur non sp‚cifi‚e s'est produite.
+Ceci peut ˆtre provoqu‚ par un certain nombre
+de problŠmes dont l'endommagement de base de donn‚es, un ‚chec de
+communication avec la bibliothŠque ou des ressources systŠme
+insuffisantes.
+
+
+Log File: System
+Record Number: 529
+Type: error
+Time Generated: 20050405110500.000000+120
+Source: Removable Storage Service
+Category: 0
+Category String: 
+Event: 17
+User: 
+Computer: DEVNT24
+Message: Les services de m‚dias amovibles ne peuvent pas prendre en charge
+la bibliothŠque PhysicalDrive1. Une erreur non sp‚cifi‚e s'est produite.
+Ceci peut ˆtre provoqu‚ par un certain nombre
+de problŠmes dont l'endommagement de base de donn‚es, un ‚chec de
+communication avec la bibliothŠque ou des ressources systŠme
+insuffisantes.
+
+
+Log File: System
+Record Number: 528
+Type: information
+Time Generated: 20050405110445.000000+120
+Source: Removable Storage Service
+Category: 0
+Category String: 
+Event: 134
+User: 
+Computer: DEVNT24
+Message: Une notification d'ARRIVE d'interface de p‚riph‚rique pour le p‚riph‚riqueÿ: 
+ a ‚t‚ re‡ue.
+
+\\?\USBSTOR#Disk&Ven_Sony&Prod_Storage_Media&Rev_PROL#7&20297e83&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+
+Log File: System
+Record Number: 527
+Type: information
+Time Generated: 20050405110445.000000+120
+Source: Removable Storage Service
+Category: 0
+Category String: 
+Event: 135
+User: 
+Computer: DEVNT24
+Message: Une notification de SUPPRESSION d'interface de p‚riph‚rique pour le p‚riph‚riqueÿ: 
+ a ‚t‚ re‡ue.
+
+\\?\USBSTOR#Disk&Ven_Sony&Prod_Storage_Media&Rev_PROL#7&20297e83&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+
+Log File: System
+Record Number: 526
+Type: information
+Time Generated: 20050405110443.000000+120
+Source: Removable Storage Service
+Category: 0
+Category String: 
+Event: 134
+User: 
+Computer: DEVNT24
+Message: Une notification d'ARRIVE d'interface de p‚riph‚rique pour le p‚riph‚riqueÿ: 
+ a ‚t‚ re‡ue.
+
+\\?\USBSTOR#Disk&Ven_Sony&Prod_Storage_Media&Rev_PROL#7&20297e83&0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}
+
+
+Log File: System
+Record Number: 525
+Type: information
+Time Generated: 20050405110148.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 05/04/2005 11:01:48
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   05/04/05 11:01
+
+Le travail d'impression 198 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 05/04/05 11:00
+Taille du travailÿ: 129503 octets.
+
+
+
+Log File: System
+Record Number: 524
+Type: error
+Time Generated: 20050405101602.000000+120
+Source: NETLOGON
+Category: 0
+Category String: 
+Event: 5719
+User: 
+Computer: DEVNT24
+Message: Aucun contr“leur de domaine Windows NT ou Windows 2000 n'est disponible pour le domaine ORSYP_DEV.
+L'erreur suivante s'est produiteÿ:
+Le serveur RPC n'est pas disponible.
+
+
+
+Log File: System
+Record Number: 523
+Type: information
+Time Generated: 20050405092300.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 05/04/2005 09:23:00
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   05/04/05 09:22
+
+Le travail d'impression 143 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 05/04/05 09:22
+Taille du travailÿ: 14318 octets.
+
+
+
+Log File: System
+Record Number: 522
+Type: information
+Time Generated: 20050405091945.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 05/04/2005 09:19:45
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   05/04/05 09:18
+
+Le travail d'impression 142 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 05/04/05 09:18
+Taille du travailÿ: 17413 octets.
+
+
+
+Log File: System
+Record Number: 521
+Type: information
+Time Generated: 20050405090919.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 05/04/2005 09:09:19
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   05/04/05 09:08
+
+Le travail d'impression 139 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 05/04/05 09:08
+Taille du travailÿ: 11273 octets.
+
+
+
+Log File: System
+Record Number: 520
+Type: warning
+Time Generated: 20050405020844.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+
+Log File: System
+Record Number: 519
+Type: error
+Time Generated: 20050404132305.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7000
+User: 
+Computer: DEVNT24
+Message: Le service Univer$e sup500a n'a pas pu d‚marrer en raison de l'erreurÿ: 
+L'‚chec d'une ouverture de session a empˆch‚ le d‚marrage du service.
+
+
+
+Log File: System
+Record Number: 518
+Type: error
+Time Generated: 20050404132305.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7013
+User: 
+Computer: DEVNT24
+Message: La tentative d'ouverture de session avec le mot de passe actuel a ‚chou‚ avec l'erreurÿ: 
+chec d'ouverture de sessionÿ: nom d'utilisateur inconnu ou mot de passe incorrect.
+
+
+
+Log File: System
+Record Number: 517
+Type: information
+Time Generated: 20050404081046.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 04/04/2005 08:10:46
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   04/04/05 08:09
+
+Le travail d'impression 2 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 04/04/05 08:09
+Taille du travailÿ: 17507 octets.
+
+
+
+Log File: System
+Record Number: 516
+Type: warning
+Time Generated: 20050404080849.000000+120
+Source: RSVP
+Category: 0
+Category String: 
+Event: 10047
+User: 
+Computer: DEVNT24
+Message: QoS RSVP n'a pu trouver aucune interface sur laquelle le contr“le du trafic est activ‚. Installez les services de contr“le du trafic QoS par le biais des Connexions r‚seau et accŠs … distance.
+
+
+Log File: System
+Record Number: 515
+Type: error
+Time Generated: 20050404080833.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7000
+User: 
+Computer: DEVNT24
+Message: Le service Univer$e Manager for SAP n'a pas pu d‚marrer en raison de l'erreurÿ: 
+Le service n'a pas r‚pondu assez vite … la demande de lancement ou de contr“le.
+
+
+
+Log File: System
+Record Number: 514
+Type: error
+Time Generated: 20050404080833.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7009
+User: 
+Computer: DEVNT24
+Message: D‚lai (30000 millisecondes) d'attente pour une connexion du service Univer$e Manager for SAP.
+
+
+Log File: System
+Record Number: 513
+Type: information
+Time Generated: 20050404080659.000000+120
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6005
+User: 
+Computer: DEVNT24
+Message: Le service d'Enregistrement d'‚v‚nement a d‚marr‚.
+
+
+Log File: System
+Record Number: 512
+Type: information
+Time Generated: 20050404080659.000000+120
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6009
+User: 
+Computer: DEVNT24
+Message: Microsoft (R) Windows 2000 (R) 5.0 2195 Service Pack 4 Uniprocessor Free.
+
+
+Log File: System
+Record Number: 511
+Type: warning
+Time Generated: 20050404080801.000000+120
+Source: Dhcp
+Category: 0
+Category String: 
+Event: 1007
+User: 
+Computer: DEVNT24
+Message: Votre ordinateur a automatiquement configur‚ l'adresse IP pour la
+carte avec l'adresse r‚seau 02004C4F4F50. L'adresse IP utilis‚e est 169.254.25.129.
+
+
+Log File: System
+Record Number: 510
+Type: information
+Time Generated: 20050401170715.000000+120
+Source: EventLog
+Category: 0
+Category String: 
+Event: 6006
+User: 
+Computer: DEVNT24
+Message: Le service d'Enregistrement d'‚v‚nement a ‚t‚ arrˆt‚.
+
+
+Log File: System
+Record Number: 509
+Type: information
+Time Generated: 20050401151903.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Windows - L'‚criture d‚cal‚e a ‚chou‚ÿ: Windows n'a pas pu sauvegarder toutes les donn‚es pour le fichier \Device\LanmanRedirector\demeter\DollarAccess\Incident Related Files\34xxx\347xx\34756\WIN_TRACE_svacc040_.10132004_1614\cmd_exp_ctl_log.rar. Les donn‚es ont ‚t‚ perdues. Cette erreur peut ˆtre due … une panne de votre mat‚riel ou de votre connexion r‚seau. Essayez de sauvegarder ce fichier … un autre emplacement. 
+
+
+Log File: System
+Record Number: 508
+Type: warning
+Time Generated: 20050401151902.000000+120
+Source: MRxSmb
+Category: 0
+Category String: 
+Event: 50
+User: 
+Computer: DEVNT24
+Message: {Perte de donn‚es en ‚criture retard‚e}
+Le systŠme a essay‚ de transf‚rer des donn‚es du fichier depuis les tampons
+vers \Device\LanmanRedirector. L'‚criture a ‚chou‚, il se peut que seulement quelques
+donn‚es aient ‚t‚ ‚crites dans le fichier.
+
+
+Log File: System
+Record Number: 507
+Type: warning
+Time Generated: 20050401151901.000000+120
+Source: MRxSmb
+Category: 0
+Category String: 
+Event: 50
+User: 
+Computer: DEVNT24
+Message: {Perte de donn‚es en ‚criture retard‚e}
+Le systŠme a essay‚ de transf‚rer des donn‚es du fichier depuis les tampons
+vers \Device\LanmanRedirector. L'‚criture a ‚chou‚, il se peut que seulement quelques
+donn‚es aient ‚t‚ ‚crites dans le fichier.
+
+
+Log File: System
+Record Number: 506
+Type: information
+Time Generated: 20050401151901.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Windows - L'‚criture d‚cal‚e a ‚chou‚ÿ: Windows n'a pas pu sauvegarder toutes les donn‚es pour le fichier cmd_exp_ctl_log.rar. Les donn‚es ont ‚t‚ perdues. Cette erreur peut ˆtre due … une panne de votre mat‚riel ou de votre connexion r‚seau. Essayez de sauvegarder ce fichier … un autre emplacement. 
+
+
+Log File: System
+Record Number: 505
+Type: warning
+Time Generated: 20050401151859.000000+120
+Source: MRxSmb
+Category: 0
+Category String: 
+Event: 50
+User: 
+Computer: DEVNT24
+Message: {Perte de donn‚es en ‚criture retard‚e}
+Le systŠme a essay‚ de transf‚rer des donn‚es du fichier depuis les tampons
+vers \Device\LanmanRedirector. L'‚criture a ‚chou‚, il se peut que seulement quelques
+donn‚es aient ‚t‚ ‚crites dans le fichier.
+
+
+Log File: System
+Record Number: 504
+Type: information
+Time Generated: 20050401151859.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Windows - L'‚criture d‚cal‚e a ‚chou‚ÿ: Windows n'a pas pu sauvegarder toutes les donn‚es pour le fichier \Device\LanmanRedirector\demeter\DollarAccess\Incident Related Files\34xxx\347xx\34756\WIN_TRACE_svacc040_.10132004_1614\cmd_exp_ctl_log.rar. Les donn‚es ont ‚t‚ perdues. Cette erreur peut ˆtre due … une panne de votre mat‚riel ou de votre connexion r‚seau. Essayez de sauvegarder ce fichier … un autre emplacement. 
+
+
+Log File: System
+Record Number: 503
+Type: warning
+Time Generated: 20050401151854.000000+120
+Source: MRxSmb
+Category: 0
+Category String: 
+Event: 50
+User: 
+Computer: DEVNT24
+Message: {Perte de donn‚es en ‚criture retard‚e}
+Le systŠme a essay‚ de transf‚rer des donn‚es du fichier depuis les tampons
+vers \Device\LanmanRedirector. L'‚criture a ‚chou‚, il se peut que seulement quelques
+donn‚es aient ‚t‚ ‚crites dans le fichier.
+
+
+Log File: System
+Record Number: 502
+Type: warning
+Time Generated: 20050401151851.000000+120
+Source: MRxSmb
+Category: 0
+Category String: 
+Event: 50
+User: 
+Computer: DEVNT24
+Message: {Perte de donn‚es en ‚criture retard‚e}
+Le systŠme a essay‚ de transf‚rer des donn‚es du fichier depuis les tampons
+vers \Device\LanmanRedirector. L'‚criture a ‚chou‚, il se peut que seulement quelques
+donn‚es aient ‚t‚ ‚crites dans le fichier.
+
+
+Log File: System
+Record Number: 501
+Type: information
+Time Generated: 20050401151848.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Windows - L'‚criture d‚cal‚e a ‚chou‚ÿ: Windows n'a pas pu sauvegarder toutes les donn‚es pour le fichier \Device\LanmanRedirector\demeter\DollarAccess\Incident Related Files\34xxx\347xx\34756\WIN_TRACE_svacc040_.10132004_1614\cmd_exp_ctl_log.rar. Les donn‚es ont ‚t‚ perdues. Cette erreur peut ˆtre due … une panne de votre mat‚riel ou de votre connexion r‚seau. Essayez de sauvegarder ce fichier … un autre emplacement. 
+
+
+Log File: System
+Record Number: 500
+Type: warning
+Time Generated: 20050401151848.000000+120
+Source: MRxSmb
+Category: 0
+Category String: 
+Event: 50
+User: 
+Computer: DEVNT24
+Message: {Perte de donn‚es en ‚criture retard‚e}
+Le systŠme a essay‚ de transf‚rer des donn‚es du fichier depuis les tampons
+vers \Device\LanmanRedirector. L'‚criture a ‚chou‚, il se peut que seulement quelques
+donn‚es aient ‚t‚ ‚crites dans le fichier.
+
+
+Log File: System
+Record Number: 499
+Type: error
+Time Generated: 20050401101654.000000+120
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10010
+User: ORSYP\abr
+Computer: DEVNT24
+Message: Le serveur {323C0F99-820A-4E0B-B714-57942C6D9678} ne s'est pas enregistr‚ sur DCOM avant la fin du temps imparti.
+
+
+Log File: System
+Record Number: 498
+Type: information
+Time Generated: 20050401074800.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 01/04/2005 07:48:00
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   01/04/05 07:47
+
+Le travail d'impression 34 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 01/04/05 07:47
+Taille du travailÿ: 11148 octets.
+
+
+
+Log File: System
+Record Number: 497
+Type: warning
+Time Generated: 20050401032920.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+
+Log File: System
+Record Number: 496
+Type: warning
+Time Generated: 20050331105921.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+
+Log File: System
+Record Number: 495
+Type: information
+Time Generated: 20050331075744.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 31/03/2005 07:57:44
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   31/03/05 07:56
+
+Le travail d'impression 125 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 31/03/05 07:56
+Taille du travailÿ: 17669 octets.
+
+
+
+Log File: System
+Record Number: 494
+Type: warning
+Time Generated: 20050330182922.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+
+Log File: System
+Record Number: 493
+Type: error
+Time Generated: 20050330153457.000000+120
+Source: NETLOGON
+Category: 0
+Category String: 
+Event: 5719
+User: 
+Computer: DEVNT24
+Message: Aucun contr“leur de domaine Windows NT ou Windows 2000 n'est disponible pour le domaine ORSYP_DEV.
+L'erreur suivante s'est produiteÿ:
+Le serveur RPC n'est pas disponible.
+
+
+
+Log File: System
+Record Number: 492
+Type: error
+Time Generated: 20050330120831.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7000
+User: 
+Computer: DEVNT24
+Message: Le service Univer$e abr n'a pas pu d‚marrer en raison de l'erreurÿ: 
+L'‚chec d'une ouverture de session a empˆch‚ le d‚marrage du service.
+
+
+
+Log File: System
+Record Number: 491
+Type: error
+Time Generated: 20050330120831.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7013
+User: 
+Computer: DEVNT24
+Message: La tentative d'ouverture de session avec le mot de passe actuel a ‚chou‚ avec l'erreurÿ: 
+chec d'ouverture de sessionÿ: nom d'utilisateur inconnu ou mot de passe incorrect.
+
+
+
+Log File: System
+Record Number: 490
+Type: error
+Time Generated: 20050330120825.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7000
+User: 
+Computer: DEVNT24
+Message: Le service Univer$e abr n'a pas pu d‚marrer en raison de l'erreurÿ: 
+L'‚chec d'une ouverture de session a empˆch‚ le d‚marrage du service.
+
+
+
+Log File: System
+Record Number: 489
+Type: error
+Time Generated: 20050330120825.000000+120
+Source: Service Control Manager
+Category: 0
+Category String: 
+Event: 7013
+User: 
+Computer: DEVNT24
+Message: La tentative d'ouverture de session avec le mot de passe actuel a ‚chou‚ avec l'erreurÿ: 
+chec d'ouverture de sessionÿ: nom d'utilisateur inconnu ou mot de passe incorrect.
+
+
+
+Log File: System
+Record Number: 488
+Type: information
+Time Generated: 20050330092426.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 30/03/2005 09:24:26
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   30/03/05 09:23
+
+Le travail d'impression 136 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 30/03/05 09:23
+Taille du travailÿ: 14651 octets.
+
+
+
+Log File: System
+Record Number: 487
+Type: information
+Time Generated: 20050330092426.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 30/03/2005 09:24:25
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   30/03/05 09:23
+
+Le travail d'impression 135 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 30/03/05 09:23
+Taille du travailÿ: 14651 octets.
+
+
+
+Log File: System
+Record Number: 486
+Type: information
+Time Generated: 20050330092426.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 30/03/2005 09:24:25
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   30/03/05 09:23
+
+Le travail d'impression 134 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 30/03/05 09:23
+Taille du travailÿ: 14651 octets.
+
+
+
+Log File: System
+Record Number: 485
+Type: information
+Time Generated: 20050330092425.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 30/03/2005 09:24:24
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   30/03/05 09:23
+
+Le travail d'impression 133 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 30/03/05 09:23
+Taille du travailÿ: 14651 octets.
+
+
+
+Log File: System
+Record Number: 484
+Type: information
+Time Generated: 20050330092424.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 30/03/2005 09:24:24
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   30/03/05 09:23
+
+Le travail d'impression 132 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 30/03/05 09:23
+Taille du travailÿ: 14651 octets.
+
+
+
+Log File: System
+Record Number: 483
+Type: error
+Time Generated: 20050330085429.000000+120
+Source: DCOM
+Category: 0
+Category String: 
+Event: 10010
+User: ORSYP\abr
+Computer: DEVNT24
+Message: Le serveur {323C0F99-820A-4E0B-B714-57942C6D9678} ne s'est pas enregistr‚ sur DCOM avant la fin du temps imparti.
+
+
+Log File: System
+Record Number: 482
+Type: information
+Time Generated: 20050330074713.000000+120
+Source: Application Popup
+Category: 0
+Category String: 
+Event: 26
+User: 
+Computer: DEVNT24
+Message: Application popupÿ: Service Affichage des messages ÿ: Message de SERV_NT … ABR le 30/03/2005 07:47:12
+
+Deÿ:   SPOOLER sur \\SERV_NT
+Aÿ:     abr
+Objetÿ:   ** AVIS D'IMPRESSION **
+Dateÿ:   30/03/05 07:46
+
+Le travail d'impression 117 est termin‚ sur HP LaserJet 4100 PCL 6(HPLJ4100).
+Le travail a ‚t‚ plac‚ dans la file HP LaserJet 4100 PCL 6 le 30/03/05 07:46
+Taille du travailÿ: 11077 octets.
+
+
+
+Log File: System
+Record Number: 481
+Type: warning
+Time Generated: 20050330015933.000000+120
+Source: w32time
+Category: 0
+Category String: 
+Event: 64
+User: 
+Computer: DEVNT24
+Message: Le premier service n'a pas ‚t‚ capable de trouver un contr“leur de domaine avec qui se synchroniser depuis longtemps … cause de problŠmes r‚seau r‚p‚t‚s. Pour r‚duire le trafic r‚seau, le service d'horloge attendra 960 minutes avant d'essayer … nouveau. Aucune synchronisation ne se produira au cours de cet intervalle, mˆme si la connectivit‚ r‚seau est restaur‚e. Des erreurs d'horloge accumul‚es pourraient causer l'‚chec de certaines op‚rations r‚seau. Pour indiquer au service d'horloge que la connectivit‚ r‚seau a ‚t‚ restaur‚e et qu'il doit se synchroniser … nouveau, ex‚cutez "w32tm /s" … partir de l'invite de commande.
+
+

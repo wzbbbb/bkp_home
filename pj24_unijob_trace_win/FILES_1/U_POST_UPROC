@@ -1,0 +1,144 @@
+#!/bin/ksh
+###==========================================================================
+#@(#) PROCEDURE:  ${UXMGR}/U_POST_UPROC
+#@(#) OBJECT:     Customer post-processing exit. Run systematically
+#@(#)               after executing each individual Uproc.
+#@(#)
+#@(#) AUTHOR:     VFE/ORSYP Inc.
+#@(#) CREATION DATE: 22/JUL/2003
+#@(#) HISTORY:
+#@(#) 20 JAN 2005: VFE Added Log parsing
+#@(#) 29 SEP 2005: VFE Updated log parsing
+###==========================================================================
+
+#Redefine a local RESEXE we will use to exit later 
+#Being in a sub-process we cannot change the value of the real RESEXE
+export RESEXE_LOCAL=${RESEXE}
+export RESEXE_SAVE=${RESEXE}
+
+### Object    : print a message in the job log and the history trace
+### Parameters: $1: Message text
+Message()
+  {
+  echo ${1}
+  ${UXEXE}/uxset msg "${1}"
+  }
+
+#########################################################
+#Define log name, used for different purposes
+#########################################################
+# Log name :
+PATH_LOG=$UXLEX; #Default
+case ${S_ESPEXE} in
+  A)PATH_LOG=${UXLAP};;
+  I)PATH_LOG=${UXLIN};;
+  S)PATH_LOG=${UXLSI};;
+esac        
+
+#VFE 29MAR2006 Clarify code
+if [[ -z "${S_CODSESS}" ]];then
+  FILE_LOG=${PATH_LOG}/${S_ESPEXE}${S_CODUG}${S_PROCEXE}.${S_NUMPROC}
+else
+  FILE_LOG=${PATH_LOG}/${S_ESPEXE}${S_CODSESS}${S_NUMSESS}${S_CODUG}${S_PROCEXE}.${S_NUMPROC}
+fi
+
+
+#########################################################
+# Log  Parsing, based on presence of uproc variables:
+# UX_SUCCESS_STRING and/or UX_FAILURE_STRING
+#########################################################
+bExist_SUCCESS_STRING=false
+bExist_FAILURE_STRING=false
+
+if [ "${UX_SUCCESS_STRING}" ];then
+  [[ -n "${UX_SUCCESS_STRING}" ]] && bExist_SUCCESS_STRING=true
+fi
+if [ "${UX_FAILURE_STRING}" ];then
+  [[ -n "${UX_FAILURE_STRING}" ]] && bExist_FAILURE_STRING=true
+fi
+
+if [ ${bExist_SUCCESS_STRING} = true -o ${bExist_FAILURE_STRING} = true ];then
+
+  #29SEP2005: need to define default value based on several cases
+  if [ ${bExist_SUCCESS_STRING} = true ];then
+    export RESEXE_LOCAL=1
+  fi
+  if [ ${bExist_FAILURE_STRING} = true ];then
+    export RESEXE_LOCAL=0
+  fi
+  if [ ${bExist_SUCCESS_STRING} = true -a ${bExist_FAILURE_STRING} = true ];then
+    #Leave it as it was
+    export RESEXE_LOCAL=${RESEXE_SAVE} 
+  fi
+ 
+
+  echo " " 
+  echo " " 
+  echo " " 
+  echo "==========================================================================="
+  #Check for success
+  if [ ${bExist_SUCCESS_STRING} = true ];then
+    nCount=$(cat ${FILE_LOG} |grep -v UX_SUCCESS_STRING | grep "${UX_SUCCESS_STRING}" | wc -l)
+    if [[ ${nCount} -gt 0 ]]; then
+      #singular/plural
+      szWord="time"
+      [[ ${nCount} -gt 1 ]] && szWord="times"
+      echo "Log parsing: Success string \"${UX_SUCCESS_STRING}\" found ${nCount} ${szWord} in log."
+      export RESEXE_LOCAL=0
+    else
+      echo "Log parsing: Success string \"${UX_SUCCESS_STRING}\" not found in log."
+    fi
+  fi
+  #Check for failure
+  if [ ${bExist_FAILURE_STRING} = true ];then
+    nCount=$(cat ${FILE_LOG} |grep -v UX_FAILURE_STRING | grep "${UX_FAILURE_STRING}" | wc -l)
+    if [[ ${nCount} -gt 0 ]]; then
+      #singular/plural
+      szWord="time"
+      [[ ${nCount} -gt 1 ]] && szWord="times"
+      echo "Log parsing: Failure string \"${UX_FAILURE_STRING}\" found ${nCount} ${szWord} in log."
+      export RESEXE_LOCAL=1
+    else
+      echo "Log parsing: Failure string \"${UX_FAILURE_STRING}\" not found in log."
+    fi
+  fi
+  echo "==========================================================================="
+
+fi
+
+#########################################################
+# Manage abort status
+#########################################################
+if [[ ${RESEXE_LOCAL:=0} -ne 0 ]];then
+  Message "Return Code = ${RESEXE_LOCAL}"
+
+  file=${UXDIR_ROOT}/runbooks/${S_PROCEXE}_runbook.txt
+  if [[ -f ${file} ]];then
+    while read line;do
+      ${UXEXE}/uxset msg "${line}"
+    done < ${file}
+  else 
+    ${UXEXE}/uxset msg "WARNING: No runbook defined for job ${S_PROCEXE}"
+  fi
+fi
+
+#########################################################
+# Change permission on Log:
+#########################################################
+#This could be used to force permissions on uproc log file
+#[[ -f ${FILE_LOG} ]] && chmod 666 ${FILE_LOG} > /dev/null 2>&1
+
+#<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#Note:
+#A customized command to trigger a mail or a pager could be added here.
+#
+#Example:
+#if [[ ${RESEXE_LOCAL:=0} -ne 0 ]];then
+#  typeset Title="$(date +%Y-%m-%d_%H:%M:%S): Uproc ${S_PROCEXE} in Session ${S_CODSESS:=null} ABORTED" 
+#  typeset Message="$(date +%Y-%m-%d_%H:%M:%S): Uproc ${S_PROCEXE} in Session ${S_CODSESS:=null} ABORTED: MU=${S_CODUG}, node=${S_NOEUD}, company=${S_SOCIETE}" 
+#  echo ${Message} | mailx -s "${Title}" address@company.com
+#fi
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+exit ${RESEXE_LOCAL}
+

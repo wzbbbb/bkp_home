@@ -1,0 +1,55 @@
+
+Key words: GCO, version, Windows, V5.2-3
+
+Subject: 
+GCO installed with V523 displays wrong version
+
+
+Prerequistites:
+Windows Dollar Universe 5.2-3
+
+
+Application validation tests:
+
+
+Explanation:
+
+When installed with V521, it is Dollar Universe Console 2.3.1 
+C:\DOLLARU\UNIVST\mgr\uxtrace>echo Start of installation of a Dollar Universe Console 2.3.1 (installation kit 521  11-29-2006 14:26:17) 
+Start of installation of a Dollar Universe Console 2.3.1 (installation kit 521  11-29-2006 14:26:17)
+
+C:\DOLLARU\UNIVST\mgr\uxtrace>echo End of installation of a Dollar Universe Global Console 2.3.1 (installation kit 521  11-29-2006 14:27:03) 
+End of installation of a Dollar Universe Global Console 2.3.1 (installation kit 521  11-29-2006 14:27:03)
+
+
+However, when installed with V523, GCO becomes  Dollar Universe Console 2.2.3 
+C:\PROGRA~1\universe\STPLPR\mgr\uxtrace_with_gnu_tools_V4.3.1>echo Start of installation of a Dollar Universe Console 2.2.3 (installation kit 523 2-7-2007 10:27:45) 
+Start of installation of a Dollar Universe Console 2.2.3 (installation kit 523 2-7-2007 10:27:45)
+
+C:\PROGRA~1\universe\STPLPR\mgr\uxtrace_with_gnu_tools_V4.3.1>echo End of installation of a Dollar Universe Global Console 2.2.3 (installation kit 523 2-7-2007 10:28:59) 
+End of installation of a Dollar Universe Global Console 2.2.3 (installation kit 523 2-7-2007 10:28:59)
+
+C:\PROGRA~1\universe\STPLPR\mgr\uxtrace_with_gnu_tools_V4.3.1>echo Start of installation of FX24444 (02/07/2007 03:52 )  
+Start of installation of FX24444 (02/07/2007 03:52 ) 
+
+C:\PROGRA~1\universe\STPLPR\mgr\uxtrace_with_gnu_tools_V4.3.1>echo End of installation of FX24444 (02/07/2007 03:52 )  
+End of installation of FX24444 (02/07/2007 03:52 )
+
+
+This will not be fixed.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

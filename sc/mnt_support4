@@ -1,0 +1,18 @@
+#!/bin/sh
+#Thu Aug 26 15:14:17 EDT 2004
+#Orsyp Software Inc
+#Zhibing Wang
+#################################
+#Purpose: mount support4 Ansewrs for backup
+#################################
+
+#################################
+#Main
+#################################
+
+ping -c1  USLPMZWA> /dev/null
+[ $? -ne 0 ] && echo "USLPMZWA is down, skip the mount" && exit 1
+df -k |grep /data/home/zwa/Answers > /dev/null
+[ $? -eq 0 ] && echo "/data/home/zwa/Answers is already mounted"  && exit 0
+
+sudo su -c "smbmount //USLPMZWA/Answers /data/home/zwa/Answers -o username=zwa,workgroup=ORSYP,password=mar999%!7"

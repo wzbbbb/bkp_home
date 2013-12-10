@@ -1,0 +1,6 @@
+#!/bin/bash -x
+case_no=$1
+l1=`echo $case_no |cut -c1-3`
+l2=`echo $case_no |cut -c1-4`
+cd /cases/ca${l1}xxx/ca${l2}xx/ca${case_no}
+

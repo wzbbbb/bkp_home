@@ -1,0 +1,6 @@
+#REM# LISTING OF THE U_TMP_PATH DIRECTORY (following symbolic links and Sorted by time stamp)
+#CMD# ls -ltraiL /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP#  20090108-165947 
+total 8
+21643290 drwxrwxrwx 2 root root 4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..

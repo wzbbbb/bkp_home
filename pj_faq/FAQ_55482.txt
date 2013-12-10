@@ -1,0 +1,35 @@
+
+Key words: UNIX, submission user, interactive profile, group
+
+Subject: 
+A few notes when creating a submission user on Unix
+
+Prerequisites:
+
+Application validation tests:
+
+
+Explanation:
+A submission user needs to be both a Dollar Universe user and a Unix system user. 
+If you are using proxy, you may also need to update the proxy setting. 
+
+The system user created normally have the same name as the Dollar Universe user; and belongs to the same group as other submission users. Usually, there is a dedicated user group for Dollar Universe users in the Unix system.
+
+Please be aware that a submission user's login process can not be interactive. For example, the user's profile should be not asking for some inputs.
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

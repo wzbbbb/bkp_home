@@ -1,0 +1,113 @@
+#! /bin/ksh
+
+# ========================================================
+# ORSYP.Sa
+#  ------------------------------------------------------
+#  UniJob auto-update procedure
+# ========================================================
+
+update_begin()
+{
+  cat ${UXLEX}/update.log
+  if [ ${INIT_OK} -ne 0 ]
+  then
+    exit 1
+  fi
+  #
+  echo "UniJob update script"
+  #
+
+  if [ ! -d /tmp ]
+  then 
+   echo "Unable to find /tmp directory. Procedure aborted."
+   exit 1
+  fi
+  
+  mv ${UPDATE_PATH}/${UPDATE_SCRIPT} /tmp/
+  if [ $? -ne 0 ]
+  then
+	echo "Unable to move script to /tmp directory. Procedure aborted."
+    exit 1
+  fi
+  mv ${UPDATE_PATH}/${UPDATE_PACKAGE} /tmp/
+  if [ $? -ne 0 ]
+  then
+	echo "Unable to move package to /tmp directory. Procedure aborted."
+    exit 1
+  fi
+  
+  ${U_ROOT_DIR}/app/bin/setvar local UNI_CAL_STARTUP ${CAL_LAST_STATUS}
+  ${U_ROOT_DIR}/app/bin/setvar local UNI_LAN_STARTUP ${LAN_LAST_STATUS}
+  ${U_ROOT_DIR}/app/bin/setvar local UNI_CDJ_STARTUP ${CDJ_LAST_STATUS}
+  echo "Engines last status before migration (CAL/LAN/CDJ)  ${CAL_LAST_STATUS} ${LAN_LAST_STATUS} ${CDJ_LAST_STATUS}"
+
+  /tmp/${UPDATE_SCRIPT} /tmp/${UPDATE_PACKAGE}
+
+  if [ $? -ne 0 ]
+  then
+    MIGRATION_OK=1
+  fi
+  echo "UniJob update procedure over, status ${MIGRATION_OK}"
+
+  # Putting the package and script back in the Job directory (no error control needed)
+  mv /tmp/${UPDATE_SCRIPT}  ${UPDATE_PATH}/
+  mv /tmp/${UPDATE_PACKAGE} ${UPDATE_PATH}/
+     
+  #
+  echo "UniJob update end procedure"
+  #
+  ${U_ROOT_DIR}/app/bin/uxupdateend ${S_NUMPROC} ${MIGRATION_OK} 
+  
+  # set engines start-up status back with original settings  
+  ${U_ROOT_DIR}/app/bin/setvar local UNI_CAL_STARTUP ${CAL_ORIG_STATUS}
+  ${U_ROOT_DIR}/app/bin/setvar local UNI_LAN_STARTUP ${LAN_ORIG_STATUS}
+  ${U_ROOT_DIR}/app/bin/setvar local UNI_CDJ_STARTUP ${CDJ_ORIG_STATUS}
+
+}
+
+#
+echo "UniJob update init procedure"
+#
+UNI_DIR_APP=${8}
+UNI_DIR_DATA=${9}
+
+. ${UNI_DIR_DATA}/unienv.ksh
+
+cd /tmp
+if [ $? -ne 0 ]
+then
+	echo "Unable to move to /tmp directory. Procedure aborted."
+	exit 1
+fi
+
+# getting variables
+UXLEX=`${U_ROOT_DIR}/app/bin/getvar UXLEX`
+U_TMP_PATH=`${U_ROOT_DIR}/app/bin/getvar U_TMP_PATH`
+
+INIT_OK=0
+MIGRATION_OK=0
+
+${U_ROOT_DIR}/app/bin/uxupdateinit "${1}" "${2}"
+if [ $? -ne 0 ]
+then
+ INIT_OK=1 
+fi
+echo "UniJob update init over, status ${INIT_OK}"
+
+# saving engines original status settings
+CAL_ORIG_STATUS=`${U_ROOT_DIR}/app/bin/getvar UNI_CAL_STARTUP`
+LAN_ORIG_STATUS=`${U_ROOT_DIR}/app/bin/getvar UNI_LAN_STARTUP`
+CDJ_ORIG_STATUS=`${U_ROOT_DIR}/app/bin/getvar UNI_CDJ_STARTUP`
+
+s_numproc_file="${U_TMP_PATH}/u_var_update"
+. ${s_numproc_file}
+
+S_TARGETID="${2}"
+S_UPROCID="${7}"
+
+CAL_LAST_STATUS="${4}"
+LAN_LAST_STATUS="${5}"
+CDJ_LAST_STATUS="${6}"
+
+update_begin > ${UXLEX}/X${S_TARGETID}${S_UPROCID}.${S_NUMPROC}  2>&1
+

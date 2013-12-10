@@ -1,0 +1,14 @@
+=================================
+ping support2 -c4
+PING support2 (192.168.105.2) 56(84) bytes of data.
+64 bytes from support2 (192.168.105.2): icmp_seq=0 ttl=64 time=0.085 ms
+64 bytes from support2 (192.168.105.2): icmp_seq=1 ttl=64 time=0.083 ms
+64 bytes from support2 (192.168.105.2): icmp_seq=2 ttl=64 time=0.091 ms
+64 bytes from support2 (192.168.105.2): icmp_seq=3 ttl=64 time=0.083 ms
+
+--- support2 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3000ms
+rtt min/avg/max/mdev = 0.083/0.085/0.091/0.009 ms, pipe 2
+=================================
+ping sup2 -c4
+ping: unknown host sup2

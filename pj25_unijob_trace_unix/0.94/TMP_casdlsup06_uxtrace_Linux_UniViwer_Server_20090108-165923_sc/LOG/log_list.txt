@@ -1,0 +1,4 @@
+/apps/unijob110/univiewer_server/casdlsup06/data/log/stderr.log
+/apps/unijob110/univiewer_server/casdlsup06/data/log/stdout.log
+/apps/unijob110/univiewer_server/casdlsup06/data/log/uvserver.log
+/apps/unijob110/univiewer_server/casdlsup06/data/log/uxiotrns.log

@@ -1,0 +1,54 @@
+ Command : uxlst fla exp status=L full before=09/20/2019,2000 upr=* ses=* mu=* since=(00/00/0000,0000)
+
+ SESSION    UPROC      MU         STATE                  START      AT   END        AT    NODE       CLUSTER      QUEUE BATCH     NSEQ    SESSNO  PROCNO  INFO                                               SEV  
+ -------------------------------- ---------------------- --------------------------------------------------------------------------------------------------------
+ U_WMNT     U_WMNT_H   LWP029     LAUNCH WAIT            09/18/2009 1200 09/18/2009 1210  LWP029                  SYS_BATCH      0002706 0000238                                                                        
+            U_WMNT_H   CASDLSUP06 LAUNCH WAIT            09/21/2009 1719 09/21/2009 1724  casdlsup06              SYS_BATCH      0002711                  $U Maint. Win.: Header / En-tete session           0001       
+ U_WMNT     U_WMNT_H   CASDLSUP06 LAUNCH WAIT            09/21/2009 1739 09/21/2009 1744  casdlsup06              SYS_BATCH      0002712 0000239          $U Maint. Win.: Header / En-tete session           0001       
+
+
+############ The following jobs are in a session that in still in LAUNCH WAIT
+
+
+ Command : uxshw ses ses=U_WMNT lnk vses=*
+
+ TYPE  | ses 
+
+ ITEMS | ses          : U_WMNT     
+       | vses         : 000 
+       | header       : U_WMNT_H  
+       | links        :
+       |
+       || NumF | NumS | Path |   Father   |    Son     |   HDP/MU   || 
+       || 0001 | 0002 |  OK  | U_WMNT_H   | U_WMNTOLR  |            || 
+       || 0002 | 0003 |  OK  | U_WMNTOLR  | U_WMNTOAX  |            || 
+       || 0003 | 0004 |  OK  | U_WMNTOAX  | U_WMNTOLB  |            || 
+       || 0004 | 0005 |  OK  | U_WMNTOLB  | U_WMNTPDH  |            || 
+       || 0005 | 0006 |  OK  | U_WMNTPDH  | U_WMNTPUL  |            || 
+       || 0006 | 0007 |  OK  | U_WMNTPUL  | U_WMNTPEL  |            || 
+       || 0007 | 0008 |  OK  | U_WMNTPEL  | U_WMNTPOA  |            || 
+       || 0008 | 0009 |  OK  | U_WMNTPOA  | U_WMNT_T   |            || 
+       || 0008 | 0010 |  KO  |            | U_WMNT_T   |            || 
+       |
+
+ Command : uxshw ses ses=U_WMNT lnk vses=*
+
+ TYPE  | ses 
+
+ ITEMS | ses          : U_WMNT     
+       | vses         : 000 
+       | header       : U_WMNT_H  
+       | links        :
+       |
+       || NumF | NumS | Path |   Father   |    Son     |   HDP/MU   || 
+       || 0001 | 0002 |  OK  | U_WMNT_H   | U_WMNTOLR  |            || 
+       || 0002 | 0003 |  OK  | U_WMNTOLR  | U_WMNTOAX  |            || 
+       || 0003 | 0004 |  OK  | U_WMNTOAX  | U_WMNTOLB  |            || 
+       || 0004 | 0005 |  OK  | U_WMNTOLB  | U_WMNTPDH  |            || 
+       || 0005 | 0006 |  OK  | U_WMNTPDH  | U_WMNTPUL  |            || 
+       || 0006 | 0007 |  OK  | U_WMNTPUL  | U_WMNTPEL  |            || 
+       || 0007 | 0008 |  OK  | U_WMNTPEL  | U_WMNTPOA  |            || 
+       || 0008 | 0009 |  OK  | U_WMNTPOA  | U_WMNT_T   |            || 
+       || 0008 | 0010 |  KO  |            | U_WMNT_T   |            || 
+       |
+

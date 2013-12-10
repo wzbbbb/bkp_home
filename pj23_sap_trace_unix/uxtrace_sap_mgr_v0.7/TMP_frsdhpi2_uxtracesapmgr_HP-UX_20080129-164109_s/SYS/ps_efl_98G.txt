@@ -1,0 +1,206 @@
+#CMD# ps -efl
+#TSP#  20080129-164236 
+  F S      UID   PID  PPID  C PRI NI             ADDR   SZ            WCHAN    STIME TTY       TIME COMD
+1003 S     root     0     0  0 127 20 e0000001001c2f00    0 e0000001001b253c  Jan 21  ?         0:27 swapper
+541 R     root     1     0  0 152 20 e00000012c03d280  386                -  Jan 21  ?         0:18 init
+1003 R     root     8     0  0 152 20 e00000012c03d4c0    0                -  Jan 21  ?         0:00 ioconfigd
+1003 R     root     9     0  0 152 20 e00000012c03d700    0                -  Jan 21  ?         0:00 ObjectThreadPool
+1003 S     root    10     0  0 152 20 e00000012c03d940    0 9fffffff7f7e7ed0  Jan 21  ?         0:07 nfsktcpd
+1003 R     root    11     0  0 152 20 e00000012c03db80    0                -  Jan 21  ?         0:00 autofskd
+1003 S     root    12     0  0 147 20 e00000012c03ddc0    0 e0000001006171f0  Jan 21  ?         0:00 lvmkd
+1003 S     root    13     0  0 147 20 e00000012c3a7040    0 e0000001006171f0  Jan 21  ?         0:00 lvmkd
+1003 S     root    14     0  0 147 20 e00000012c3a7280    0 e0000001006171f0  Jan 21  ?         0:00 lvmkd
+1003 S     root    15     0  0 147 20 e00000012c3a74c0    0 e0000001006171f0  Jan 21  ?         0:00 lvmkd
+1003 S     root    16     0  0 147 20 e00000012c3a7700    0 e0000001006171f0  Jan 21  ?         0:00 lvmkd
+1003 S     root    17     0  0 147 20 e00000012c3a7940    0 e0000001006171f0  Jan 21  ?         0:00 lvmkd
+1003 S     root    18     0  0 148 20 e00000012c3a7b80    0 e000000100b2e640  Jan 21  ?         0:00 lvmschedd
+1003 R     root    19     0  0 191 20 e00000012e124040    0                -  Jan 21  ?         1:35 ksyncer_daemon
+1003 S     root    20     0  0 148 20 e00000012e124280    0 e000000130d7f264  Jan 21  ?         0:00 lvmdevd
+1003 S     root    21     0  0 148 20 e00000012e1244c0    0 e000000130d7e068  Jan 21  ?         0:00 lvmattachd
+1003 S     root    22     0  0 128 20 e00000012e124700    0 e000000100615518  Jan 21  ?         0:00 pagetable_init_daemon
+1003 S     root    23     0  0 100 20 e00000012e124940    0 e000000100b02740  Jan 21  ?         0:00 supsched
+1003 S     root    24     0  0 100 20 e00000012e124b80    0 e000000100619d68  Jan 21  ?         0:00 strmem
+1003 S     root    25     0  0 100 20 e00000012e124dc0    0 e000000100993d50  Jan 21  ?         0:00 strweld
+1003 S     root    26     0  0 100 20 e00000012eeff040    0 e0000001006b7338  Jan 21  ?         0:00 strfreebd
+1003 S     root     2     0  0 128 20 e00000012eeff280    0 e000000100b2d730  Jan 21  ?         0:02 vhand
+1003 S     root     3     0  0 128 20 e00000012eeff4c0    0 e0000001001b253c  Jan 21  ?         1:03 statdaemon
+1003 S     root     4     0  0 128 20 e00000012eeff700    0 e000000100b27250  Jan 21  ?         0:05 unhashdaemon
+1003 S     root    27     0  0 -32 20 e00000012eeff940    0 e00000012ef0b2c8  Jan 21  ?         0:08 progressdaemon
+1003 R     root    28     0  0 152 20 e00000012eeffb80    0                -  Jan 21  ?         0:00 kmemdaemon
+1003 S     root    29     0  0 -32 20 e00000012eeffdc0    0 e000000100618838  Jan 21  ?         0:00 ttisr
+1003 S     root    30     0  0 -32 20 e00000012ef14040    0 e000000100616420  Jan 21  ?         0:17 ipmid
+1003 S     root    37     0  0 128 20 e00000012ef14280    0 e000000100618530  Jan 21  ?         0:00 eventdaemon
+1003 R     root    38     0  0 152 20 e00000012ef144c0    0                -  Jan 21  ?         5:43 schedcpu
+1003 R     root    39     0  0 191 20 e00000012ef14700    0                -  Jan 21  ?         0:35 pagezerod
+1003 R     root    40     0  0 191 20 e00000012ef14940    0                -  Jan 21  ?         0:00 cmcd
+1003 S     root    41     0  0 100 20 e00000012ef14b80    0                -  Jan 21  ?         0:02 smpsched
+1003 S     root    42     0  0 100 20 e00000012ef14dc0    0                -  Jan 21  ?         0:02 smpsched
+1003 S     root    43     0  0 100 20 e00000012f0d3040    0                -  Jan 21  ?         0:00 sblksched
+1003 S     root    44     0  0 100 20 e00000012f0d3280    0                -  Jan 21  ?         0:00 sblksched
+1003 R     root    45     0  0 152 20 e00000012f0d34c0    0                -  Jan 21  ?         0:00 kend
+401 S     root  3177     1  0 138  0 e00000013ec134c0  151 e00000012f2c6380  Jan 21  ?         0:00 /sbin/krsd -i
+401 S     root  1768     1  0 154 20 e00000013c9124c0  171 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/fddi4subagt
+1003 R     root    52     0  0 152 20 e00000012f112280    0                -  Jan 21  ?         6:40 vxfsd
+1401 S     root  1805  1804  0 154 20 e00000013c851940  175 e00000012ef4a376  Jan 21  ?         0:00 /opt/wbem/sbin/cimservera
+1003 S     root    76     0  0 153 20 e00000012f1454c0    0 e000000138a2d284  Jan 21  ?         0:00 rng
+1003 S     root   103     0  0 148 20 e00000012f0d3b80    0 e0000001301f1264  Jan 21  ?         0:00 lvmdevd
+1003 S     root   104     0  0 148 20 e00000012f145b80    0 e0000001301f0068  Jan 21  ?         0:00 lvmattachd
+  1 S     root  1193     1  0 154 20 e00000013c833040    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+1401 R     root  1804     1  0 152 20 e00000012f25db80 1733                -  Jan 21  ?         4:34 /opt/wbem/sbin/cimserver
+1401 S   oracle 12034     1  0 156 20 e00000013dbceb80 42592 e00000012f7af0ec  Jan 21  ?        10:05 ora_q001_openview
+441 S     root  1875     1  0 120 20 e00000013cb19700  193 9fffffff7f7e8000  Jan 21  ?         0:29 /usr/sbin/xntpd
+401 S     root   862     1  0 127 20 e00000013c7a4b80   15 e000000100251404  Jan 21  ?         0:00 /usr/lbin/nktl_daemon 0 0 0 0 0 1 -2
+401 S     root   872     1  0 127 20 e00000013c5734c0   22 e00000013c6600ac  Jan 21  ?         0:00 /usr/lbin/ntl_reader 0 1 1 0 1000 2 /var/adm/nettl /var/adm/conslog.opts
+401 S     root  1127     1  0 154 20 e00000013c543dc0  262 e00000012e5df040  Jan 21  ?         0:00 /usr/sbin/rpcbind
+401 S     root  2030     1  0 154 20 e00000013cc7b940   20 e00000012ef4a8b6  Jan 21  ?         0:00 /usr/sbin/envd
+401 S     root   826     1  0 155 20 e00000012f30d040   28 e00000013798005c  Jan 21  ?         0:00 /usr/sbin/ptydaemon
+401 S     root  2370  1257  0 154 20 e00000013cb194c0  274 e00000012e5df080  Jan 21  ?         0:00 /etc/opt/resmon/lbin/registrar
+401 R     root  1790     1  0 152 20 e00000013c912940  786                -  Jan 21  ?         0:12 /opt/dce/sbin/rpcd
+401 S     root   816     1  0 154 20 e00000012f25d280   74 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/syslogd -D
+401 R     root  2506     1  0 152 20 e00000013cb3a940  853                -  Jan 21  ?         0:43 vxsvc -r /opt/VRTSob/config/Registry -e
+2401 R     root 14448     1  0 152 20 e00000013f5cc4c0  229                -  Jan 24  ?         0:05 ./uxioserv TST520 A frsdhpi2
+401 S     root  1992     1  0 154 20 e00000013ca75940   56 e00000012ef4a536  Jan 21  ?         0:00 /usr/sbin/cron
+401 S     root   535     1  0 168 20 e00000012f89f040   27 e00000012f10a640  Jan 21  ?         0:00 /usr/sbin/syncer
+2401 R     root 14457     1  0 152 20 e00000013cd48dc0  326                -  Jan 24  ?         0:05 ./uxcdjsrv TST520 X frsdhpi2
+1401 R     root   545     1  0 152 20 e00000013c5434c0  421                -  Jan 21  ?         0:31 /usr/sbin/utmpd
+401 S     root  1099     1  0 154 20 e00000013c80d940  655 e00000012e5df040  Jan 21  ?         0:00 /opt/ssh/sbin/sshd
+401 S     root  2020     1  0 154 10 e00000013cc7b280  284 e00000012e5df040  Jan 21  ?         0:17 /usr/sbin/stm/uut/bin/sys/diagmond
+401 S     root  1729     1  0 134 20 e00000013c573700  167 e00000012e5df040  Jan 21  ?         0:00 /usr/sbin/trapdestagt
+  1 S     root  1194     1  0 154 20 e00000013c8334c0    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+1401 S     root   751     1  0 168 20 e00000013c543700  304 e00000012f10a240  Jan 21  ?         0:22 ipmon -sD
+  1 S     root  1192     1  0 154 20 e00000013c833280    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+  1 S     root  1195     1  0 154 20 e00000013c833700    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+  1 S     root  1196     1  0 154 20 e00000013c833940    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+  1 S     root  1197     1  0 154 20 e00000013c833b80    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+  1 S     root  1198     1  0 154 20 e00000013c833dc0    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+  1 S     root  1199     1  0 154 20 e00000013c851040    0 e000000100963f30  Jan 21  ?         0:00 /usr/sbin/biod 8
+401 S     root  1205     1  0 154 20 e00000013c8514c0  240 e00000012e5df040  Jan 21  ?         0:00 /usr/sbin/rpc.statd
+401 R     root  1217     1  0 152 20 e00000013c86d040  369                -  Jan 21  ?         0:00 /usr/sbin/automountd
+401 S     root  1211     1  0 154 20 e00000013c5e1700  362 e00000012e5df040  Jan 21  ?         0:00 /usr/sbin/rpc.lockd
+1401 S   oracle  2847     1  0 156 20 e00000013d50a4c0 42504 e00000012f7af07c  Jan 21  ?         0:10 ora_mman_openview
+401 S     root  1697     1  0 154 20 e00000013c80db80  242 e00000012e5df080  Jan 21  ?         0:34 /usr/sbin/mib2agt
+401 S     root  1257     1  0 154 20 e00000013c86ddc0  135 e00000012e5df080  Jan 21  ?         0:05 /usr/sbin/inetd
+401 S     root  1681     1  0 154 20 e00000012f145700  166 e00000012e5df040  Jan 21  ?         0:27 /usr/sbin/ipv6agt
+401 R     root  2725  2654  0 152 20 e00000013c9d9dc0  266                -  Jan 21  ?         0:00 /opt/OV/lbin/eaagt/opcmsgi
+401 S     root  1955     1  0 154 20 e00000013ca75040   88 e00000012e5df080  Jan 21  ?         0:18 /usr/sbin/pwgrd
+401 S     root  1664     1  0 154 20 e00000013c851700  174 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/hp_unixagt
+2401 R     root 14465     1  0 152 20 e00000013ebbf040  117                -  Jan 24  ?         0:04 ./uxbvssrv TST520 A frsdhpi2
+401 R     root  2723  2654  0 152 20 e00000013cdc4280 1652                -  Jan 21  ?         1:27 /opt/OV/lbin/eaagt/opcmsga
+401 S     root  4053     1  0 156 20 e00000013dd29040   17 e00000012e115040  Jan 21  console   0:00 /usr/sbin/getty console console
+401 S     root  2409     1  0 154 20 e00000013d0bc4c0   20 e00000012e5df080  Jan 21  ?         0:52 ./uxech ADMLIN X frsdhpi2
+2401 S     root  1594     1  0 154 20 e00000013c920b80  454 e00000012e5df040  Jan 21  ?         4:20 sendmail: accepting connections
+1401 S   oracle  2863     1  0 154 20 e00000013db414c0 42760 e00000012e5df040  Jan 21  ?         0:00 ora_s000_openview
+1401 S   oracle  2886     1  0 156 20 e00000013cc7bdc0 42608 e00000012f7af0d4  Jan 21  ?         0:38 ora_mmon_openview
+401 R     root  1634     1  0 152 20 e00000013c9d9b80  554                -  Jan 21  ?         0:00 /usr/sbin/snmpdm
+401 S     root  2311     1  0 154 20 e00000013cd8bdc0   20 e00000012e5df040  Jan 21  ?         0:00 ./uxcal ADMLIN X frsdhpi2
+401 R     root  2719  2654  0 152 20 e00000013cd48700 3760                -  Jan 21  ?         0:24 /opt/OV/lbin/perf/coda
+2401 R     root  2080     1  0 152 20 e00000013cccd940  596                -  Jan 21  ?         0:06 /usr/sbin/swagentd -r
+1401 S   oracle  2881     1  0 156 20 e00000013db41280 42508 e00000012f7af0cc  Jan 21  ?         0:01 ora_qmnc_openview
+401 S     root  2337     1  0 154 20 e00000013cf654c0   21 e00000012e5df080  Jan 21  ?         0:00 ./uxord ADMLIN X frsdhpi2
+401 S     root  2438     1  0 154 20 e00000013cdc4dc0   21 e00000012e5df080  Jan 21  ?         0:57 ./uxsur ADMLIN X frsdhpi2
+401 R     root  2726  2654  0 152 20 e00000013ca91b80  339                -  Jan 21  ?         0:18 /opt/OV/lbin/eaagt/opcle -std
+  1 Z     root 21963  3467  0 178 20 e00000013f818280    0                - 16:42:17 ?         0:00 <defunct>
+401 S     root  2360  2020  0 154 10 e00000013cc7bb80  288 e00000012e5df080  Jan 21  ?         4:26 psmctd
+1401 S   oracle  2857     1  0 156 20 e00000013da5a940 42592 e00000012f7af0a4  Jan 21  ?         0:00 ora_reco_openview
+1401 S   oracle  2855     1  0 156 20 e00000013da5a4c0 42608 e00000012f7af09c  Jan 21  ?         0:22 ora_smon_openview
+401 S     root  2359  2020  0 158 10 e00000013cc7b4c0  131 e0000001006141b4  Jan 21  ?         0:04 diaglogd
+1401 S   oracle  2859     1  0 156 20 e00000013d4badc0 42608 e00000012f7af0ac  Jan 21  ?         5:27 ora_cjq0_openview
+401 R     root  2282     1  0 152 20 e00000013cccd4c0  120                -  Jan 21  ?         0:17 ./uxcdjsrv ADMLIN A frsdhpi2
+401 S     root  2933  2932  0 154 20 e00000013dd29940  150 e00000012e5df040  Jan 21  ?         0:00 ovsessionmgr
+401 S     root  2176     1  0 134 20 e00000013cd8bb80  155 e00000012e5df040  Jan 21  ?         0:00 /etc/opt/resmon/lbin/emsagent
+1401 S   oracle  2851     1  0 156 20 e00000013ca75b80 42568 e00000012f7af08c  Jan 21  ?         0:22 ora_lgwr_openview
+401 R     root  2660  2654  0 152 20 e00000013cdc4b80 1853                -  Jan 21  ?         0:23 /opt/OV/bin/ovbbccb -nodaemon
+401 R     root  2281     1  0 152 20 e00000013cddc940  128                -  Jan 21  ?         0:16 ./uxcdjsrv ADMLIN X frsdhpi2
+401 R     root  2264     1  0 152 20 e00000013ce6c4c0  389                -  Jan 21  ?         2:45 ./uxioserv ADMLIN X frsdhpi2
+401 R     root  2265     1  0 152 20 e00000013cddc700  101                -  Jan 21  ?         0:09 ./uxioserv ADMLIN A frsdhpi2
+1401 S   oracle  2795     1  0 154 20 e00000013ce15b80  758 e00000012e5df040  Jan 21  ?         0:01 /orsyp/oracle/product/10.1.0/bin/tnslsnr LISTENER -inherit
+401 R     root  2654     1  0 152 20 e00000013cb19b80 2180                -  Jan 21  ?         3:54 /opt/OV/bin/ovcd
+1401 S   oracle  2853     1  0 156 20 e00000013d4ba4c0 42568 e00000012f7af094  Jan 21  ?         1:47 ora_ckpt_openview
+401 R     root  2727  2654  0 152 20 e00000013cb3adc0  683                -  Jan 21  ?         0:58 /opt/OV/lbin/eaagt/opcmona
+401 S     root  3182     1  0 168 20 e00000013ec13b80   78 e00000012f10a680  Jan 21  ?         0:18 /etc/opt/resmon/lbin/p_client
+1401 S   oracle  2849     1  0 156 20 e00000013d50ab80 43088 e00000012f7af084  Jan 21  ?         0:41 ora_dbw0_openview
+401 R     root  2728  2654  0 152 20 e00000013ce154c0 1074                -  Jan 21  ?         0:00 /opt/OV/lbin/eaagt/opctrapi
+401 R     root  2724  2654  0 152 20 e00000013cd8b4c0  438                -  Jan 21  ?         0:21 /opt/OV/lbin/eaagt/opcacta
+401 R     root  2687  2654  0 152 20 e00000013cf65940  432                -  Jan 21  ?         0:00 /opt/OV/lbin/conf/ovconfd
+1401 S   oracle  2845     1  0 154 20 e00000013d50a040 42760 e00000012e5df080  Jan 21  ?         1:49 ora_pmon_openview
+1401 R   oracle  3184     1  0 152  0 e00000013eca3040 2601                -  Jan 21  ?         5:24 /orsyp/oracle/product/10.1.0/bin/ocssd.bin
+1401 S     root  2631     1  0 154 20 e00000013cf65b80    5 e00000013d0ad828  Jan 21  ?         0:00 /opt/hpsmh/lbin/smhstartd
+1401 S   oracle 21057     1  0 156 20 e00000013f7e8b80 42544 e00000012f7af0c4 16:40:42 ?         0:00 ora_j000_openview
+401 S     root  2932     1  0 154 20 e00000013dd29700  217 e00000012e5df080  Jan 21  ?         0:09 ovspmd -U
+401 S     root  2669     1  0 154 20 e00000013d21bdc0  321 e00000012e5df040  Jan 21  ?         0:00 /usr/sbin/stm/uut/bin/tools/monitor/cmc_em
+1401 S   oracle  2861     1  0 154 20 e00000013db43280 42504 e00000012e5df040  Jan 21  ?         0:00 ora_d000_openview
+1401 S   oracle  2888     1  0 156 20 e00000013db41b80 42556 e00000012f7af0dc  Jan 21  ?         1:43 ora_mmnl_openview
+401 S     root 14476     1  0 154 20 e00000013ef0f940   57 e00000012e5df040  Jan 24  ?         0:03 ./uxcal TST520 X frsdhpi2
+401 S     root  2067  1257  0 154 20 e00000013ee8e280  399 e00000012e5df080  Jan 23  ?         0:00 /usr/dt/bin/rpc.ttdbserver
+401 S     root 15965  1257  0 154 20 e00000013f694280  104 e00000013f76f828 23:22:36 pts/ta    0:00 telnetd
+2401 R     root 14461     1  0 152 20 e00000013dddcb80  117                -  Jan 24  ?         0:05 ./uxbvssrv TST520 X frsdhpi2
+401 S     root  2934  2932  0 154 20 e00000013dd29dc0  389 e00000012e5df040  Jan 21  ?         0:00 ovwdb -O
+401 S     root  2935  2932  0 154 20 e00000013dd894c0 9201 e00000012e5df040  Jan 21  ?        29:18 pmd
+2401 S      bin  2947  2946  0 168 20 e00000013de57b80  298 e00000013dd9b470  Jan 21  ?         0:00 /opt/OV/httpd/bin/httpd -d /opt/OV/httpd
+2401 R      bin  2937  2932  0 152 20 e00000013dd89b80 6567                -  Jan 21  ?         8:10 ovrequestd -s
+401 R     root  3055  2932  0 152 20 e00000013de5b700  862                -  Jan 21  ?         0:14 opcctlm -start
+401 R     root  2939  2654  0 152 20 e00000013dddc4c0 1012                -  Jan 21  ?         0:05 /opt/OV/lbin/sec/ovcs
+2401 S      bin  2948  2946  0 154 20 e00000013de57dc0  298 e00000013de1dca8  Jan 21  ?         0:00 /opt/OV/httpd/bin/httpd -d /opt/OV/httpd
+401 S     root  2946     1  0 168 20 e00000013de5b280  298 e00000013ded17d8  Jan 21  ?         0:15 /opt/OV/httpd/bin/httpd -d /opt/OV/httpd
+2401 S      bin  2952  2946  0 168 20 e00000013def0280  298 e00000013df02230  Jan 21  ?         0:00 /opt/OV/httpd/bin/httpd -d /opt/OV/httpd
+2401 S      bin  2953  2946  0 168 20 e00000013d1d4b80  298 e00000013df153f0  Jan 21  ?         0:00 /opt/OV/httpd/bin/httpd -d /opt/OV/httpd
+2401 S      bin  2954  2946  0 168 20 e00000013d2dadc0  298 e00000013df19430  Jan 21  ?         0:00 /opt/OV/httpd/bin/httpd -d /opt/OV/httpd
+401 S     root  2973     1  0 154 20 e00000013dfb8940  293 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/stm/uut/bin/tools/monitor/cpe_em
+401 S     root  2992  2932  0 154 20 e00000013e02eb80  147 e00000012e5df080  Jan 21  ?         0:21 genannosrvr -a orch_async
+401 R     root  2991  2932  0 152 20 e00000013e02e4c0 1154                -  Jan 21  ?         0:00 ovalarmsrv
+2401 S      bin  2990  2932  0 154 20 e00000013e02e040  286 e00000012e5df080  Jan 21  ?         0:00 ovactiond
+401 S     root  2988  2932  0 154 20 e00000013dfc3b80  436 e00000012e5df080  Jan 21  ?         0:00 ovtopmd -O
+401 S     root  2989  2932  0 154 20 e00000013dfc3700  141 e00000012e5df040  Jan 21  ?         0:00 ovtrapd
+401 S     root  2993  2932  0 154 20 e00000013e083280  140 e00000012e5df040  Jan 21  ?         0:03 ovdbcheck -ovspmd
+401 R     root  3046  2932  0 152 20 e00000013e0fa280 4709                -  Jan 21  ?         6:46 ovas
+401 R     root  3009  2932  0 152 20 e00000013e1b8280 2364                -  Jan 21  ?         0:58 ovoareqsdr -start
+401 S     root  2999  2932  0 154 20 e00000013e0fa940   96 e00000012e5df080  Jan 21  ?         0:00 ovuispmd -O
+401 S     root  3000  2932  0 154 20 e00000013e0fadc0  811 e00000012e5df040  Jan 21  ?         0:04 netmon -P -k segRedux=true -k migrateHsrpVirtualIP=true
+401 S     root  3001  2932  0 154 20 e00000013dfb8b80  269 e00000012e5df080  Jan 21  ?         0:00 snmpCollect
+401 R     root  3005     1  0 152 20 e00000013ce2adc0 5945                -  Jan 21  ?         1:34 /opt/OV/bin/ovdbrun -c /var/opt/OV/share/databases/analysis/default
+1401 S   oracle  3054     1  0 154 20 e00000013e38d4c0 42592 e00000013e15e700  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+401 R     root  3056  3009  0 152 20 e00000013e38d280  240                -  Jan 21  ?         0:00 ovoareqhdlr
+401 R     root  3057  3009  0 152 20 e00000013de5b940 1542                -  Jan 21  ?         0:00 opcmsgrb
+401 R     root  3058  3009  0 152 20 e00000013dfb8dc0 1260                -  Jan 21  ?         0:05 opcmsgrd
+401 R     root  3069  3055  0 152 20 e00000013e348dc0 1159                -  Jan 21  ?         0:13 opcmsgm
+401 R     root  3068  3055  0 152 20 e00000013e348700  769                -  Jan 21  ?         0:05 opcactm
+1401 S   oracle  3067     1  0 134 20 e00000013e38db80 42592 e00000013e15ee00  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+401 R     root  3070  3055  0 152 20 e00000013e348b80  699                -  Jan 21  ?         0:11 opcttnsm
+401 R     root  3071  3055  0 152 20 e00000013e348940  768                -  Jan 21  ?         0:10 opcforwm
+401 R     root  3072  3055  0 152 20 e00000013e6a2040 1236                -  Jan 21  ?         0:03 opcdispm: running
+401 R     root  3073  3055  0 152 20 e00000013e6a2280 1164                -  Jan 21  ?         0:03 opcdistm
+401 R     root  3074  3055  0 152 20 e00000013e6a2b80 1022                -  Jan 21  ?         0:21 opccsad
+401 R     root  3075  3055  0 152 20 e00000013e6e7040 4675                -  Jan 21  ?        22:10 opcbbcdist
+401 R     root  3076  3055  0 152 20 e00000013e6e7280 1133                -  Jan 21  ?         0:00 opcsvcm: running
+401 S     root  3238  3155  0 154 20 e00000013ec45280   68 e00000012e5df080  Jan 21  ?         0:00 /usr/dt/bin/dtlogin
+1401 S   oracle  3081     1  0 154 20 e00000013e7b8940 42592 e00000013e7f9400  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3083     1  0 154 20 e00000013e862040 42592 e00000013e7f9800  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3085     1  0 154 20 e00000013e862700 42592 e00000013e7f9c00  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3087     1  0 134 20 e00000013e348280 42592 e00000013e8c0040  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3089     1  0 134 20 e00000013e6e7940 42592 e00000013e8c0540  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3091     1  0 154 20 e00000013e90f040 42512 e00000013e5db740  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3093     1  0 134 20 e00000013e90f700 42512 e00000013e5dbd40  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3095     1  0 154 20 e00000013e90fdc0 42592 e00000013e98a280  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3097     1  0 154 20 e00000013e862dc0 42576 e00000013e98a580  Jan 21  ?         8:05 oracleopenview (LOCAL=NO)
+401 S     root  3178     1  0 154 20 e00000013ec13700   98 e000000100614e54  Jan 21  ?         0:00 /sbin/sfd
+401 S     root  3155     1  0 158 20 e00000013eb1d280  272 e000000131bf6000  Jan 21  ?         0:00 /sbin/sh /usr/dt/bin/dtrc
+1401 S   oracle  3149     1  0 154 20 e00000013d1d44c0 42592 e00000013eae19c0  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S   oracle  3151     1  0 134 20 e00000013ebbfb80 42592 e00000013ec111c0  Jan 21  ?         0:00 oracleopenview (LOCAL=NO)
+1401 S     root  3183     1  0 168 20 e00000013ec13dc0   30 e00000012f10a140  Jan 21  ?         0:04 /opt/wbem/sbin/cimserverd
+401 S     root  3567     1  0 154 20 e00000013eb06b80  201 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/stm/uut/bin/tools/monitor/sysstat_em
+401 S     root  3548     1  0 154 20 e00000013eca34c0  278 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/stm/uut/bin/tools/monitor/memory_ia64
+401 S     root  3256     1  0 154 20 e00000013ebbf940  278 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/stm/uut/bin/tools/monitor/disk_em
+2401 R     root 14446     1  0 152 20 e00000013eef1040  873                -  Jan 24  ?         1:05 ./uxioserv TST520 X frsdhpi2
+401 S     root 21061 15966  7 158 20 e00000013dddc280  165 e000000131c46000 16:41:09 pts/ta    0:00 /bin/ksh ./uxtracesapmgr
+401 R     root 13836     1  0 152 20 e00000013edffdc0  224                -  Jan 25  ?         0:10 ./uxcdjsrv FESTOP X sdeu1029
+401 S     root  3467     1  0 154 20 e00000013eca3940  257 e00000012e5df040  Jan 21  ?         2:51 /usr/sbin/stm/uut/bin/tools/monitor/ia64_corehw
+401 S     root  3443     1  0 154 20 e00000013ee8e4c0  205 e00000012e5df080  Jan 21  ?         0:00 /usr/sbin/stm/uut/bin/tools/monitor/fpl_em
+2401 R     root 14456     1  0 152 20 e00000013ec45dc0  166                -  Jan 24  ?         0:04 ./uxcdjsrv TST520 A frsdhpi2
+401 S     root 13827     1  0 168 20 e00000013f5da700  281 9fffffff7f7e8000  Jan 25  ?         0:00 ./uxdqmsrv FESTOP X sdeu1029
+401 R     root 13826     1  0 152 20 e00000013f021940 1109                -  Jan 25  ?         1:55 ./uxioserv FESTOP X sdeu1029
+401 S     root 14536     1  0 154 20 e00000013dc98dc0   49 e00000012e5df080  Jan 24  ?         0:11 ./uxsur TST520 X frsdhpi2
+401 S     root 13833     1  0 168 20 e00000013eca3b80   23 9fffffff7f7e8000  Jan 25  ?         0:00 ./uxcmdsrv FESTOP X sdeu1029
+401 S     root 14487     1  0 154 20 e00000013eef1dc0   54 e00000012e5df080  Jan 24  ?         0:10 ./uxord TST520 X frsdhpi2
+401 S     root 14525     1  0 154 20 e00000013edff4c0   48 e00000012e5df040  Jan 24  ?         0:10 ./uxech TST520 X frsdhpi2
+401 S     root 15966 15965  0 158 20 e00000013f76d940  286 e000000131d4e000 23:22:37 pts/ta    0:00 -sh
+401 R     root 22051 21061  1 178 20 e00000013f694040   69                - 16:42:36 pts/ta    0:00 ps -efl

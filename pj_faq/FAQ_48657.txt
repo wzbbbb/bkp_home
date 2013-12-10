@@ -1,0 +1,144 @@
+
+Key words:
+
+	uxshw cal mu, calendar, general calendar
+
+Subject:
+
+	In "uxshw cal mu=*", the MUs of some calendars are showing 00 
+
+Prerequistites:
+
+	This issue occurs in both V500, SPRE0025+ FX24384B and V512 + FX24380
+
+Application validation tests:
+
+Explanation:
+
+	Note that the issue only appears when the “mu=*”.
+
+	# uxlst cal
+	 Command : uxlst cal full
+
+	 MU         TYPE       LABEL
+	 --------------------- -------------------
+			       General calendar
+	 DA_US_U_02
+	 TT         MODEL
+	 T_TEST                No Holiday to 2027
+
+	# uxshw cal mu=T_TEST | grep ITEM
+	 ITEMS | mu           : T_TEST
+
+	# uxshw cal mu=DA_US_U_02 | grep ITEM
+	 ITEMS | mu           : DA_US_U_02
+
+	# uxshw cal mu=* | grep ITEM
+	 ITEMS | mu           :  00
+	 ITEMS | mu           : TT
+	 ITEMS | mu           :  00
+	 ITEMS | mu           :  00
+	#
+
+	The mu for the calendar DA_US_U_02 and T_TEST are showing as 00.
+	The issue has not been fixed yet.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+	##################################################################
+	========== Automatically generated environment report ============
+	##################################################################
+
+
+	====== date and time
+	Tue Mar 14 11:36:33 EST 2006
+
+
+	====== hostname
+	Linux support2 2.6.14-1.1644_FC4 #1 Sun Nov 27 03:25:11 EST 2005 i686
+
+
+	====== OS release
+	==> /etc/fedora-release <==
+	Fedora Core release 4 (Stentz)
+
+	==> /etc/lsb-release <==
+	LSB_VERSION="1.3"
+
+	==> /etc/redhat-release <==
+	Fedora Core release 4 (Stentz)
+
+
+	====== Dollar Universe node name
+	S_NOEUD=DA_US_U_02
+
+
+	====== Dollar Universe Company name
+	S_SOCIETE=MNT500
+
+
+	====== Dollar Universe Company patch level
+	Version v500 (2008/08/2001)
+	Start of update RE0021D installation  (20040226162933)
+	End of update RE0021D installation  (20040226162933)
+	Start of update 24026 installation  (20040302105559)
+	End of update 24026 installation  (20040302105559)
+	Start of update 24039C installation  (20040226163324)
+	End of update 24039C installation  (20040226163324)
+	UXRIGHT Version : 3.3 20040226163402 (HIGH security level)
+	Start of update 24157 installation  (20040302105430)
+	End of update 24157 installation  (20040302105430)
+	Start of update 24175A installation  (20040302105456)
+	End of update 24175A installation  (20040302105456)
+	Start of update 24181A installation  (20040507164334)
+	Start of update 24181A installation  (20040507164410)
+	Start of update 24181A installation  (20040507164446)
+	End of update 24181A installation  (20040507164446)
+	Start of update RE0025 installation  (20041001150730)
+	Start of update RE0025 installation  (20041001151022)
+	End of update RE0025 installation  (20041001151022)
+	Start of update 24208B installation  (20041019190605)
+	End of update 24208B installation  (20041019190605)
+	Start of update 24223 installation  (20041029122342)
+	End of update 24223 installation  (20041029122342)
+	Start of update 24230A installation  (20041110161252)
+	End of update 24230A installation  (20041110161252)
+	Start of update 24246 installation  (20041228153954)
+	End of update 24246 installation  (20041228153954)
+	Start of update 24225 installation  (20041228154859)
+	End of update 24225 installation  (20041228154859)
+	Start of update 24245 installation  (20041228155129)
+	End of update 24245 installation  (20041228155129)
+	Start of update 24269 installation  (20050203200154)
+	End of update 24269 installation  (20050203200154)
+	Start of update 24293 installation  (20050411151700)
+	Start of update 24293 installation  (20050411151729)
+	End of update 24293 installation  (20050411151729)
+	UXRIGHT Version : 3.4 20050411164046 (HIGH security level)
+	Start of update 24306 installation  (20050512161720)
+	Start of update 24306A installation  (20050714112906)
+	End of update 24306A installation  (20050714112906)
+	Start of update 24334B installation  (20050825183730)
+	End of update 24334B installation  (20050825183730)
+	Start of update 24362A installation  (2005/10/13 16:02)
+	End of update 24362A installation  (2005/10/13 16:02)
+	Start of update 24378 installation  (20060201133725)
+	End of update 24378 installation  (20060201133725)
+	Start of update 24384B installation  (20060313172911)
+	End of update 24384B installation  (20060313172911)
+	#
+
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

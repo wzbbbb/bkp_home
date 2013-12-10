@@ -1,0 +1,55 @@
+
+Key words:
+	FTP uproc, Manager for file transfer, admin user
+
+Subject:
+
+	FTP_PUT type uproc does not work when using the Dollar Universe admin user 
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+	When launched, the following error will show up in the  job log, although the file does exist. 
+	#######################################################
+	Wed Mar  1 18:07:21 2006: Passive mode transfer
+	Wed Mar  1 18:07:21 2006: BINARY mode transfer selected
+	Wed Mar  1 18:07:21 2006: Can not upload /home/univa/test.txt file: File does not exist
+	Wed Mar  1 18:07:21 2006: Connection closed
+	abort
+	#######################################################
+
+	However, the uproc will work when specifying other users.
+
+	This issue has been fixed by the FX24380. After patching the  $U admin user will can also work. 
+
+	The job log will look like:
+
+	#######################################################
+	Wed Mar  1 18:21:01 2006: Passive mode transfer
+	Wed Mar  1 18:21:01 2006: BINARY mode transfer selected
+	Wed Mar  1 18:21:01 2006: Connecting to server support2
+	Wed Mar  1 18:21:01 2006: Username univa
+	Wed Mar  1 18:21:01 2006: ---------------------------------------------------------------------------------------------
+	Wed Mar  1 18:21:01 2006: Beginning the upload of [/home/univa/test.txt] to the remote file [ftp://support2//home/univa/target/text_target.txt]...
+	Wed Mar  1 18:21:01 2006: FTP transfer ended successfully
+	Wed Mar  1 18:21:01 2006: ---------------------------------------------------------------------------------------------
+	Wed Mar  1 18:21:01 2006: Connection closed
+	#######################################################
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

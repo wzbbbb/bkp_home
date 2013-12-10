@@ -1,0 +1,43 @@
+
+Key words:
+
+uxordre, remote node, provoked task,
+
+
+Subject: When launching a remote provoked task, the local $U user need to exist on target node
+
+Prerequisites:
+
+Application validation tests:
+
+Explanation:
+
+
+uxordre considers the $U user on the local system, instead of the local (for example, Windows) system user.
+When launching a provoked task on a remote node, the user on local and remote node need to be the same case, for example zwa is not the same as ZWA.
+
+Proxy is not used in this example.
+For example. launch from window GCO node to a Linux node. Windows user map to ZWA $U user with useralias.txt, and there is only a zwa on the Unix $U. The uxordre command won't work:
+
+E:\du\TST511\exec>uxordre upr=C56532_2 mu=CASDLSUP06  node=casdlsup06
+Access denied - insufficient rights
+
+If both side $U user is zwa it will work:
+E:\du\TST511\exec>uxordre upr=C56532_2 mu=CASDLSUP06  node=casdlsup06
+numlanc 0020413
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

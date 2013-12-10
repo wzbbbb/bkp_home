@@ -1,0 +1,3 @@
+#CMD# ps -efw | grep centralserver-start
+#TSP#  20090108-170152 
+root      5222     1  0 Jan05 ?        00:04:24 java -jar /apps/unijob110/univiewer_server/casdlsup06/app/jars/centralserver-start.jar

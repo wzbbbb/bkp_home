@@ -1,0 +1,8 @@
+/apps/du/SUP500/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/QCL500/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/MNT500/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/GCO210/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/ADMIN5/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/FLS500/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/ZMVS50/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0
+/apps/du/510/TST510/mgr:JobLogDays=:1:NBLines=:100:ArchiveDays=:0

@@ -1,0 +1,53 @@
+
+Key words:
+SAP, XBP 1.0, printing parameters, API mode, uproc template
+
+
+Subject: 
+Which printing parameters does the XBP 1.0 support?
+
+
+Prerequisites:
+
+Application validation tests:
+
+Explanation:
+
+
+
+A customer can define the parameters in the ZUXTS table. If they want to use the API mode to launch SAP jobs, they can define the printing parameters as the uproc variables using the "All parameters" uproc template. Here is the list:
+
+
+Print Parameter         3.1x    4.0x    4.5x and later
+
+output device           X       X       X
+print immediately       X       X       X
+delete after output     X       X       X
+number of copies        X       X       X
+archiving mode          X       X       X
+authorization           X       X       X
+selection cover page    x       X       X
+sap cover page          X       X       X
+spool retention period  X       X       X
+recipient               x       x       X
+lines                   x       x       X
+columns                 x       x       X
+
+Please note that still, many marameters are not supported by the XPB 1.0.
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

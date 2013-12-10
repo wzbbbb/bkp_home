@@ -1,0 +1,37 @@
+#REM# RECURSIV LISTING OF THE UXEXE DIRECTORY (Sorted by name)
+#CMD# ls -lRai /apps/unijob110/unijob/casdlsup06_unijob/app/bin
+#TSP#  20090108-170010 
+/apps/unijob110/unijob/casdlsup06_unijob/app/bin:
+total 1848
+21643312 drwxr-xr-x 2 root root    4096 Jan  5 12:18 .
+21643311 drwxr-xr-x 6 root root    4096 Jan  8 16:59 ..
+21643313 -r-xr-xr-x 1 root root    8342 Jan  5 12:18 getvar
+21643314 -r-x------ 1 root root   18358 Jan  5 12:18 k_calstop
+21643315 -r-x------ 1 root root   14375 Jan  5 12:18 k_lanstop
+21643316 -r-x------ 1 root root    8737 Jan  5 12:18 setvar
+21643317 -r-x------ 1 root root   56073 Jan  5 12:18 uniadd
+21643318 -r-x------ 1 root root   18358 Jan  5 12:18 unical
+21643319 -r-x------ 1 root root   14370 Jan  5 12:18 unicdj
+21643320 -r-x------ 1 root root   28804 Jan  5 12:18 uniend
+21643321 -r-x------ 1 root root   33453 Jan  5 12:18 unihld
+21643322 -r-x------ 1 root root   15602 Jan  5 12:18 uniio
+21643323 -r-x------ 1 root root   33171 Jan  5 12:18 unijob
+21643324 -r-s------ 1 root root 1195413 Jan  5 12:18 unilan
+21643325 -r-x------ 1 root root   32890 Jan  5 12:18 unilst
+21643326 -r-x------ 1 root root   33485 Jan  5 12:18 unirls
+21643327 -r-x------ 1 root root   15234 Jan  5 12:18 unishell
+21643328 -r-x------ 1 root root   10404 Jan  5 12:18 uxcdjstop
+21643329 -r-x------ 1 root root   13223 Jan  5 12:18 uxcrefic
+21643330 -r-x------ 1 root root   14095 Jan  5 12:18 uxdmpfic
+21643331 -r-x------ 1 root root   15684 Jan  5 12:18 uxiostop
+21643332 -r-x------ 1 root root   14966 Jan  5 12:18 uxiotrclck
+21643333 -r-xr-xr-x 1 root root   14987 Jan  5 12:18 uxjobend
+21643334 -r-xr-xr-x 1 root root   34177 Jan  5 12:18 uxjobinit
+21643335 -r-xr-xr-x 1 root root   27904 Jan  5 12:18 uxjobstatus
+21643336 -r-x------ 1 root root   15299 Jan  5 12:18 uxlodfic
+21643337 -r-x------ 1 root root   10818 Jan  5 12:18 uxrazfic
+21643338 -r-x------ 1 root root   12717 Jan  5 12:18 uxrstfic
+21643339 -r-x------ 1 root root   13466 Jan  5 12:18 uxseqfic
+21643340 -r-xr-xr-x 1 root root   25103 Jan  5 12:18 uxstrcmd
+21643341 -r-x------ 1 root root   17511 Jan  5 12:18 uxupdateend
+21643342 -r-x------ 1 root root   40302 Jan  5 12:18 uxupdateinit

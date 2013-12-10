@@ -1,0 +1,19 @@
+@echo off 
+
+echo this is the test
+call :function1
+
+if "%1" == "bb"  echo %1 is bb
+set  s=sss
+echo 1st time %s%
+if %s% == ssss goto afterecho
+set s=ddd
+:afterecho 
+echo %s%
+
+goto :eof
+
+
+:function1
+echo this is within a function1
+goto :eof

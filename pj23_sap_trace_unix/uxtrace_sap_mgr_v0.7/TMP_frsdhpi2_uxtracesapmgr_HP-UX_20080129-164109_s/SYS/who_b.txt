@@ -1,0 +1,2 @@
+#CMD# who -b 
+   .       system boot  Jan 21 08:03

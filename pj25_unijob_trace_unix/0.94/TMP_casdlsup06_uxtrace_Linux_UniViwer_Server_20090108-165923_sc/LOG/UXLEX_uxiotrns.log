@@ -1,0 +1,29 @@
+| 2009-01-05 12:18:00 | casdlsup06.orsypgroup.com/unijob/univa | REGISTER | UNJ-casdlsup06_unijob 
+| 2009-01-05 16:33:45 | null/Univiewer/univa | DEL ROLE | casdlsup06_unijob.Administrator 
+| 2009-01-05 16:33:45 | null/Univiewer/univa | DEL ROLE | casdlsup06_unijob.Operator 
+| 2009-01-05 16:33:45 | null/Univiewer/univa | DEL ROLE | casdlsup06_unijob.Developer 
+| 2009-01-05 16:33:45 | null/Univiewer/univa | FILE UPDATE | Network 
+| 2009-01-06 11:58:22 | frsdlsup02.orsypgroup.com/unijob/univa | REGISTER | UNJ-frsdlsup02 
+| 2009-01-06 12:00:09 | frwpmsup08/UniViewer/univa | UPDATE NODE | frsdlsup02 
+| 2009-01-08 10:20:31 | USSDMDA007/UniViewer/univa | CREATE NODE | casdlsup06(Reporter) 
+| 2009-01-08 11:19:32 | USSDMDA007/UniViewer/univa | CREATE NODE | REP_S(Reporter) 
+| 2009-01-08 11:41:46 | calpmsup01/UniViewer/univa | CREATE NODE | casdlsup06 (TST530) 
+| 2009-01-08 12:49:17 | USSDMDA007/UniViewer/univa | CREATE NODE | USSDMDA007(Reporter) 
+#TSP# #BEG# 20090108-145755 TMP_casdlsup06_uxtrace_Linux_UNIJOB_UniViwer_Server_20090108-145745_sc run
+#TSP# #END# 20090108-150023 TMP_casdlsup06_uxtrace_Linux_UNIJOB_UniViwer_Server_20090108-145745_sc run
+#TSP# #BEG# 20090108-155737 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-155726_sc run
+#TSP# #END# 20090108-155927 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-155726_sc run
+#TSP# #BEG# 20090108-160454 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-160444_sc run
+#TSP# #END# 20090108-160816 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-160444_sc run
+#TSP# #BEG# 20090108-160913 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-160903_sc run
+#TSP# #END# 20090108-161217 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-160903_sc run
+#TSP# #BEG# 20090108-162406 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-162356_sc run
+#TSP# #END# 20090108-162638 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-162356_sc run
+| 2009-01-08 16:27:22 | USSDMDA007/UniViewer/univa | DELETE NODE | casdlsup06(TST530) 
+| 2009-01-08 16:30:36 | USSDMDA007/UniViewer/univa | CREATE NODE | casdlsup06 (TST530) 
+| 2009-01-08 16:33:34 | USSDMDA007/UniViewer/univa | CREATE NODE | casdlsup06 (PRE530) 
+#TSP# #BEG# 20090108-163752 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-163742_sc run
+#TSP# #END# 20090108-164007 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-163742_sc run
+#TSP# #BEG# 20090108-164459 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-164449_sc run
+#TSP# #END# 20090108-164655 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-164449_sc run
+#TSP# #BEG# 20090108-165933 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc run

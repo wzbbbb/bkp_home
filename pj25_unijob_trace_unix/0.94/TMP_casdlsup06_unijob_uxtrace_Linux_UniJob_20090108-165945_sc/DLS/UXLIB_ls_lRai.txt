@@ -1,0 +1,31 @@
+#REM# RECURSIV LISTING OF THE UXLIB DIRECTORY (Sorted by name)
+#CMD# ls -lRai /apps/unijob110/unijob/casdlsup06_unijob/app/lib
+#TSP#  20090108-170010 
+/apps/unijob110/unijob/casdlsup06_unijob/app/lib:
+total 8404
+21643343 drwxr-xr-x 2 root root    4096 Jan  5 12:18 .
+21643311 drwxr-xr-x 6 root root    4096 Jan  8 16:59 ..
+21643345 -r-xr-xr-x 1 root root   23377 Jan  5 12:18 libunical_cli.so
+21643344 -r-xr-xr-x 1 root root  248913 Jan  5 12:18 libunical.so
+21643346 -r-xr-xr-x 1 root root  319639 Jan  5 12:18 libunical_srv.so
+21643347 -r-xr-xr-x 1 root root   52718 Jan  5 12:18 libunicdj_cli.so
+21643348 -r-xr-xr-x 1 root root  125390 Jan  5 12:18 libunicdj_srv.so
+21643349 -r-xr-xr-x 1 root root    6399 Jan  5 12:18 libunicentral_api.so
+21643350 -r-xr-xr-x 1 root root   22085 Jan  5 12:18 libunicmpt.so
+21643352 -r-xr-xr-x 1 root root    7981 Jan  5 12:18 libunicommcrypt.so
+21643351 -r-xr-xr-x 1 root root  204326 Jan  5 12:18 libunicomm.so
+21643353 -r-xr-xr-x 1 root root   52713 Jan  5 12:18 libuniconf.so
+21643354 -r-xr-xr-x 1 root root 3150624 Jan  5 12:18 libunidscart.so
+21643355 -r-xr-xr-x 1 root root  152048 Jan  5 12:18 libuniftcli.so
+21643356 -r-xr-xr-x 1 root root   20523 Jan  5 12:18 libuniftsrv.so
+21643357 -r-xr-xr-x 1 root root   48707 Jan  5 12:18 libuniglob.so
+21643358 -r-xr-xr-x 1 root root   51842 Jan  5 12:18 libunilic.so
+21643359 -r-xr-xr-x 1 root root   63504 Jan  5 12:18 libuniobjreq.so
+21643360 -r-xr-xr-x 1 root root   68782 Jan  5 12:18 libuniord_srv.so
+21643361 -r-xr-xr-x 1 root root   22704 Jan  5 12:18 libuniproxy.so
+21643362 -r-xr-xr-x 1 root root  357308 Jan  5 12:18 libunisio_cli.so
+21643363 -r-xr-xr-x 1 root root  938213 Jan  5 12:18 libunisio_srv.so
+21643364 -r-xr-xr-x 1 root root   20191 Jan  5 12:18 libuniulog.so
+21643365 -r-xr-xr-x 1 root root  149442 Jan  5 12:18 libuniutil.so
+21643366 -r-xr-xr-x 1 root root 2304861 Jan  5 12:18 libuxxml.so
+21643367 -r-xr-xr-x 1 root root   74672 Jan  5 12:18 libuxz.so

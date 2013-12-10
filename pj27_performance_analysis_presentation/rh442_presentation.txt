@@ -1,0 +1,348 @@
+The dead end situation: 
+
+Situation: IO server (or DQM) did not consume much CPU, but no jobs launching.
+What the process is doing?  
+ 
+- A few possible leads  
+- How to collect related information
+
+######################
+Quick recap
+The status displayed in ps command output 
+D    Uninterruptible sleep (usually IO)
+R    Running or runnable (on run queue)
+S    Interruptible sleep (waiting for an event to complete)
+T    Stopped, either by a job control signal or because it is being traced.
+W    paging (not valid since the 2.6.xx kernel)
+X    dead (should never be seen)
+Z    Defunct ("zombie") process, terminated but not reaped by its parent.
+######################
+A zombie is just a memory structure that contains some information about a completed process.  
+A zombie still holds a process descriptor.
+To clean up zombie processes, kill the parent process. The init will clean it up. 
+
+######################
+Process description
+<    high-priority (not nice to other users)
+N    low-priority (nice to other users)
+L    has pages locked into memory (for real-time and custom IO)
+s    is a session leader
+l    is multi-threaded (using CLONE_THREAD, like NPTL pthreads do)
++    is in the foreground process group
+######################
+A sample ps output
+# ps -eo pid,ppid,psr,cls,rtprio,ni,vsz,stat,start,time,command|egrep "TST530 X"\|"PID"
+  PID  PPID PSR CLS RTPRIO  NI    VSZ STAT  STARTED     TIME COMMAND
+24029     1   0  TS      -   0 146520 Ssl    Jun 19 00:00:15 ./uxioserv TST530 X casdlsup06
+24042     1   0  TS      -   0  47264 Ssl    Jun 19 00:00:00 ./uxcdjsrv TST530 X casdlsup06
+24044     1   1  TS      -   0  57468 Ssl    Jun 19 00:00:04 ./uxbvssrv TST530 X casdlsup06
+24072     1   1  TS      -   0  12724 Ss     Jun 19 00:00:00 ./uxcal TST530 X casdlsup06
+24085     1   1  TS      -   0  12720 Ss     Jun 19 00:00:09 ./uxord TST530 X casdlsup06
+24143     1   0  TS      -   0  12824 Ss     Jun 19 00:00:53 ./uxech TST530 X casdlsup06
+24156     1   1  TS      -   0  12720 Ss     Jun 19 00:00:08 ./uxsur TST530 X casdlsup06
+29848 29386   1  TS      -   0   3916 S+   18:00:37 00:00:00 egrep TST530 X|PID
+
+######################
+We ask: was the system under heave load? Maybe $U did not get enough CPU to run? 
+
+We think: It must be the 500 oracle processes on this node! Look, this CPU is 100% used.
+
+The question: Why other applications are using 100% CPU, and $U got nothing?
+
+######################
+How kernel decides which process to run 
+
+- At a given moment, a CPU can only run one process.
+- Each CPU has 2 run queues, active and expired.
+- Current running process moves to expired queue when preempted.
+- Active and expired queue switch when active queue empties.
+
+To check average run queue size
+[root@CentOS52 ~]# sar -q 1 2
+Linux 2.6.18-92.el5 (CentOS52)  06/20/2009
+
+07:47:40 PM   runq-sz  plist-sz   ldavg-1   ldavg-5  ldavg-15
+07:47:41 PM         0       106      0.14      0.06      0.02
+07:47:42 PM         0       106      0.13      0.06      0.02
+Average:            0       106      0.14      0.06      0.02
+
+plist-sz: Number of processes and threads in the process list.
+
+######################
+The system load average is a measure of the number of process that are in either the TASK_RUNNABLE stat or the TASK_UNINTERRUPTIBLE stat.
+
+TASK_UNINTERRUPTIBLE processes are waiting for IO. 
+
+In steady state the 3 values for load average, 1, 5, 15 minutes, will eventually converge. If the 3 numbers are very different, the 15 minutes maybe a better reference for uxtrace analysis.
+
+######################
+Standard preemption rules of the run queue
+- CPU receives a hard interrupt
+- process requests IO
+- process voluntarily surrenders the CPU via sched_yield
+- scheduler algorithm determines that process should be preempted
+
+######################
+Static priority 1-99: SCHED_FIFO and SCHED_RR
+Static priority 0 (dynamic priority 100-139),  SCHED_OTHER and SCHED_BATCH
+
+dynamic priority	static priority	
+		Low,TS	FF/RR           	High,RT
+high		0 	1 	2 	... 	99
+		1
+		2
+		...
+		...
+default  ->	20
+		...
+		...
+low		39
+
+
+######################
+SCHED_FIFO, 
+- Only standard preemption rule apply; 
+- Re-insert at the head of its policy queue, 
+- Not time slice. 
+- Command: chrt -f
+
+SCHED_RR, 
+- with time time slice.
+- Higher priorities have longer time slice.
+- Re-insert at the end of its priority queue.
+- Command: chrt -r
+
+SCHED_OTHER
+- Computes a new internal priority each time a process is preempted
+- Internal priority range from 100-139
+- Processes with equal priority can preempt current process every 20ms to prevent CPU starvation
+- CPU bound process receive a +5 priority penalty after preemption
+- Command: nice, renice
+
+Case: Customer wants to make job run faster 
+######################
+Interactive process could be re-inserted into the active queue. Or -5 and put in expired queue. 
+Process which spend most of their time running are penalized with a +5.
+
+- $U is being discriminated ... 
+
+The solution
+- Recommending RR and higher priority than oracle
+######################
+Example:
+alias psall='ps -eo pid,ppid,psr,cls,rtprio,ni,vsz,stat,start,time,command'
+chrt -r 33 /bin/sleep 400
+[root@CentOS52 ~]#  psall |egrep "PID"\|'sleep'\|"watch"
+  PID  PPID PSR CLS RTPRIO  NI    VSZ STAT  STARTED     TIME COMMAND
+    4     1   0  FF     99   -      0 S<     Jun 19 00:00:00 [watchdog/0]
+  344  5164   0  RR     33   -   3712 S    19:47:05 00:00:00 /bin/sleep 400
+  395  5164   0  TS      -   0   3912 S+   19:50:54 00:00:00 egrep PID|sleep|watch
+
+[root@CentOS52 ~]# ps -efl |egrep "PID"\|'sleep'\|"watch"
+F S UID        PID  PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+5 S root         4     1  0 -40   - -     0 watchd Jun19 ?        00:00:00 [watchdog/0]
+4 S root       344  5164  0  26   - -   928 322800 19:47 pts/2    00:00:00 /bin/sleep 400
+0 S root       397  5164  0  76   0 -   979 pipe_w 19:50 pts/2    00:00:00 egrep PID|sleep|watch
+
+[root@CentOS52 ~]# ps -eflc |egrep "PID"\|'sleep'\|"watch"
+F S UID        PID  PPID CLS PRI ADDR SZ WCHAN  STIME TTY          TIME CMD
+5 S root         4     1 FF  139 -     0 watchd Jun19 ?        00:00:00 [watchdog/0]
+4 S root       344  5164 RR   73 -   928 322800 19:47 pts/2    00:00:00 /bin/sleep 400
+0 S root       399  5164 TS   24 -   979 pipe_w 19:51 pts/2    00:00:00 egrep PID|sleep|watch
+
+With the same column name, ps -efl and ps -eflc shows different values for PRI. We will stick with the first command syntax.
+######################
+Are we in this situation?
+
+What will be the status of the process if this assumption is true? 
+- $U did not get enough CPU to run
+How long was the run queue?
+How many seconds did we get?
+What’re the priorities of other processes on this CPU?
+How many seconds did they get?
+
+From case 71348 on AIX:
+     F S      UID      PID     PPID   C PRI NI ADDR    SZ    WCHAN    STIME    TTY  TIME CMD
+ 40001 A     root 18407462        1   2  60 20 15006400 64732        *   May 05      - 639:21 ./uxdqmsrv ACNPRD X valprd01 
+250005 Z   nrspdu 18411610 18407462  21 117 40                                      0:00 <defunct>
+
+######################
+Multi-processor system
+Customer: No, but we have several CPUs not 100% used.
+We think: Really? Can $U use them?
+The question: how can we be sure?
+######################
+Equalizing CPU visit count
+
+The scheduler rebalance run queues
+- every 100ms if all processor are busy
+- every 1ms if a CPU is idle
+
+When a process uses up its time slice on a particular CPU, it is normally scheduled into the expired array for the same CPU.
+
+This is a desirable behavior. Each CPU has its own cache, therefore the chances are quite good that when a process gets its next time slice, some of the data that it needs will still be in cache.
+######################
+Pinning processes to CPUs
+
+- taskset: to pin a task to one or more CPUs
+- cpuset: group CPUs into sets; then assign tasks to them 
+- isolcpu: isolate a CPU from automatic scheduling
+######################
+To find which CPU we can use
+
+- cat /proc/PID/status | grep -i allowed ->
+
+# cat /proc/24029/status | grep allowed
+Cpus_allowed:   ffffffff
+Mems_allowed:   1
+
+ffffffff means all CPUs
+
+Back to case 71348 on AIX, if only we have this information ...
+######################
+Too bad, it is in S instead ...
+- It is waiting for an event or a signal. Could it be a lock on a $U file?
+- Not in run queue
+
+- Mandatory lock
+Mandatory locks are exclusive, enforced by the kernel. It is not used by $U.
+- Advisory lock
+ADVISORY means that the lock does not prevent other people from accessing the data. Advisory lock rely on other applicatios checking to see if a lock is being held on a file.
+######################
+cat /proc/locks ->
+# cat /proc/locks
+1: POSIX  ADVISORY  WRITE 2108 03:02:1967068 0 EOF
+2: FLOCK  ADVISORY  WRITE 2015 03:02:1967059 0 EOF
+3: POSIX  ADVISORY  WRITE 1997 03:02:1967053 0 EOF
+4: FLOCK  ADVISORY  WRITE 1969 03:02:2558778 0 EOF
+######################
+cat /proc/partitions ->
+# cat /proc/partitions
+major minor  #blocks  name
+
+   3     0  293057352 hda
+   3     1     265041 hda1
+   3     2   10482412 hda2
+   3     3    1052257 hda3
+   3     4          1 hda4
+   3     5  281249923 hda5
+
+find /var -inum 1967068
+
+- grep from uxtrace result.
+- there should be no locks on $U file
+- The messed up universe.log on Windows. A lock on universe.log is not respected?
+######################
+In fact, the uxioserv is in "D".
+- probably waiting for IO access (hard drive)
+- It should be transient.
+- Some other applications should have the same issue 
+- The super chmod command did show in this status.
+
+chown -R da:support 11xxx 15xxx 18xxx 19xxx 20xxx 21xxx 22xxx 23xxx 24xxx 25xxx 26xxx 27xxx 28xxx 29xxx 30xxx 31xxx 32xxx 33xxx 34xxx 35xxx 36xxx 37xxx 38xxx 39xxx 40xxx 41xxx 42xxx 43xxx 44xxx 45xxx 46xxx 47xxx 48xxx 49xxx 50xxx 51xxx 52xxx 53xxx 54xxx 55xxx 56xxx 57xxx 58xxx 59xxx 60xxx 61xxx 62xxx 63xxx 64xxx 65xxx 66xxx 67xxx 68xxx 69xxx 70xxx 71xxx 72xxx
+######################
+IO scheduler:
+
+deadline: compromises lower efficiency to gain low wait times. 
+anticipatory: compromises longer wait times to gain more efficiency. 
+noop: compromises all but the simplest of the sorting in order to gain CPU cycles. 
+cfq: attempts to compromise on all points in order to achieve equality.
+
+To find out which scheduler a disk is using, and its queue length:
+[root@frstlsup20 TST511]# cat /sys/block/sda/queue/scheduler
+noop anticipatory deadline [cfq]
+[root@frstlsup20 TST511]# cat /sys/block/sda/queue/nr_requests
+128
+######################
+
+CFQ: completely fair queueing
+- class and priority based IO queuing
+- use 64 internal queues
+- fills internal queues using round-robin
+- request are dispatched from non-empty queues
+- sort occurs at dispatch queue
+######################
+CFQ: Class-based prioritized queuing
+
+Class 1 (real-time): first-access to disk, can starve other classes 
+- Priorities 0 (most important) - 7
+
+Class 2 (best-effort): round-robin access, the default
+- Priorities 0 (most important) - 7
+
+Class 3 (idle): receives disk IO only if no other request in queue
+- No priorities
+
+Examples
+# ionice -c2 -n0 bash
+Runs 'bash' as a best-effort program with highest priority.
+######################
+Some useful command to get IO related information. 
+
+[root@frstlsup20 TST511]# iostat -x
+Linux 2.6.18-92.1.13.el5 (frstlsup20.orsypgroup.com)    06/23/2009
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           0.82    0.00    0.27    0.02    0.00   98.89
+
+Device:         rrqm/s   wrqm/s   r/s   w/s   rsec/s   wsec/s avgrq-sz avgqu-sz   await  svctm  %util
+hdb               0.01     2.16  0.02  1.20     0.64    26.94    22.63     0.00    2.87   0.61   0.07
+sda               0.00     0.00  0.00  0.00     0.00     0.00    19.00     0.00    5.07   3.22   0.00
+
+[root@frstlsup20 TST511]# sar -d 1 2
+Linux 2.6.18-92.1.13.el5 (frstlsup20.orsypgroup.com)    06/23/2009
+
+10:24:02 PM       DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+10:24:03 PM   dev3-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+10:24:03 PM    dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+10:24:03 PM       DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+10:24:04 PM   dev3-64      0.98      0.00     31.37     32.00      0.00      1.00      1.00      0.10
+10:24:04 PM    dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:      dev3-64      0.50      0.00     15.84     32.00      0.00      1.00      1.00      0.05
+Average:       dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+######################
+Getting worse, it is in "S", but there is no lock showing for $U files.
+- waiting for an event to complete
+strace
+ltrace
+
+- when tracing, the process status is "T".
+-Typical on uxioserv, it shows waiting for incoming connection
+select(7, [6], [], [], {3, 560000})     = 0 (Timeout)
+######################
+Victim of OOM KILL
+
+- After running out of memory and swap spaces
+- kill -9 $(pidof uxioserv)
+
+- /proc/PID/oom_score: Display current oom-killer score
+Higher the score, more likely being killed by the oom-killer.
+The oom score is passed from parent process to child process durring fork() operations.
+
+- /proc/PID/oom_adj: Adjust the oom-killer score
+######################
+oom_adj valid values : [-17:15], default 0
+
+15: significantly increase the likelyhood that process <pid> will be OOM killed.
+-16: significantly decrease the likelyhood that process <pid> will be OOM killed.
+-17" will disable OOM killing for process <pid> totally.
+
+example:
+echo -17 > /proc/<pid>/oom_adj"
+
+Each time the uxioserv and uxdqmsrv are started, their oom_adj should be updated to -17. 
+(Also recommend them to change the oom_adj for oracle processes to 15)
+
+######################
+[root@frstlsup20 TST511]# cat /proc/29605/oom_score
+624
+[root@frstlsup20 TST511]# cat /proc/29605/oom_adj
+0
+
+- grep -i OOM /var/log/messages -> 
+######################
+Calling a better new uxtrace

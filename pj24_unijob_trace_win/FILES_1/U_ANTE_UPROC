@@ -1,0 +1,152 @@
+#!/bin/ksh
+###==========================================================================
+#@(#) PROCEDURE:  ${UXMGR}/U_ANTE_UPROC
+#@(#) OBJECT:     Customer pre-processing exit. Run systematically
+#@(#)               before executing each individual Uproc.
+#@(#)
+#@(#)           - Use Univer$e Environment Variables to load 
+#@(#)             a specific environment file defined by application
+#@(#)             or/and by Management Unit.
+#@(#)           - Process the step 99 if needed                    
+#@(#)           - Manage Max Run Alarm if defined
+#@(#)
+#@(#) AUTHOR:     VFE / ORSYP Inc.
+#@(#) CREATION DATE:  20 AUG 2003
+#@(#) HISTORY:  
+#@(#) 20 JAN 2005: VFE Added uxMAX_RUN_TERM
+#@(#) 03 NOV 2006: VHE Use uxalrjob instead of uxspvjob - still compatible 
+###==========================================================================
+
+### set -x is set if UXVERBOSE variable is true
+[ "${UXVERBOSE:+false}" = "true" ] && set -x
+
+Message ()
+### object: 
+### print a message in the job log and the history trace
+### expects: 
+###   - $1: Message text
+{
+  echo ${1}
+  ${UXEXE}/uxset msg "${1}"
+}
+
+
+############################################
+# Declarations                             #
+############################################
+typeset EnvFile Snum 
+typeset nMAX_RUN_TIME=0
+typeset nMAX_RUN_TERM=0
+
+# Get the project code from the 1st 2 characters of the Uproc code
+#Ex: FI for FInance, IU for Internal Universe Maintenance
+typeset -L2 CodeProject=${S_PROCEXE}
+typeset -L3 CodeTeam=${S_PROCEXE}
+typeset -L4 tmpTypeUproc=${S_PROCEXE} 
+typeset -R1 TypeUproc=${tmpTypeUproc} 
+typeset bSimulate=false
+
+############################################
+# Process step 99 if S_NUMJALON=99
+############################################
+
+Snum=`expr $S_NUMJALON + 0`
+if [ $Snum -eq 99 ]
+then
+  # Update of S_CMD_UPROC so that the uproc ends with a return code 0 
+  S_CMD_UPROC=`exit 0`
+
+  Message "======================================="
+  Message "= RELAUNCHED AT STEP99 : No Execution ="
+  Message "======================================="
+  exit 0
+fi
+
+############################################
+# Differentiate processing based on areas
+############################################
+#in A or I: Only simulate, unless it is an internal DollarUniverse job, like Maintenance
+#
+#List of exceptions:
+# CodeProject=IU: maintenance uprocs
+# CodeProject=TU: Technical Uprocs, need to run in all AREAs to complete the job flows (file watchers...)
+#
+# TypeUproc=L or Q (Queue Mgt): needs to run in all areas
+#   L = Launcher, when provoking tasks. Needs to run to have efficient testing
+#   Q = Queue Mgt, needs to run to have efficient testing
+#
+
+case ${S_ESPEXE} in
+"A"|"I")
+
+  #VFE 20AUG2003: it is possible depending on N&S to authorize some uprocs to run in APP/INT as in this example:
+  #if [ ! \( "${CodeProject}" = "IU" -o "${CodeProject}" = "TU" -o "${TypeUproc}" = "L" -o "${TypeUproc}" = "Q" \) ]
+
+  #In standard, we sleep for all but IU and TU
+  if [ ! \( "${CodeProject}" = "IU" -o "${CodeProject}" = "TU" \) ]
+  then
+    Message "Sleeping... executing uproc ${S_PROCEXE} in session ${S_CODSESS:=NO_SESSION} on Management Unit ${S_CODUG}"
+    S_CMD_UPROC=`sleep 10;exit 0`
+    bSimulate=true
+    exit 0
+  fi
+  ;; # case ${S_ESPEXE} in "A"|"I")
+esac
+
+#For all others
+if [[ ! ${bSimulate} = true ]];then
+
+  ############################################
+  # Max Run Alarm (in minutes)
+  ############################################
+  if [[ -n "${uxMAX_RUN_TIME}" ]];then
+    let nMAX_RUN_TIME="${uxMAX_RUN_TIME} + 0"
+    if [[ ${nMAX_RUN_TIME} -gt 0 ]];then
+      let nMAX_RUN_TIME="${nMAX_RUN_TIME} * 60"  #convert to seconds
+      let nMAX_RUN_TIME="${nMAX_RUN_TIME} - 1"   #correction since was rounding up to the next minute
+
+      # VHE 03NOV2006
+      # With delivery of SPRE0025, preference is given now to uxalrjob instead of uxspvjob
+      # Temporarily we accept both, priority given to uxalrjob and associated U_ALR_JOB
+      #
+      if [[ -x ${UXMGR}/U_ALR_JOB ]];then
+        ${UXEXE}/uxalrjob ${nMAX_RUN_TIME} &
+      elif [[ -x ${UXMGR}/U_SPV_UPROC ]];then
+        ${UXEXE}/uxspvjob ${nMAX_RUN_TIME} &
+      else
+        Message "!!! WARNING:  Neither ${UXMGR}/U_ALR_JOB or $UXMGR/U_SPV_UPROC are executable"
+      fi
+
+    fi
+  fi
+
+  ############################################
+  # Max Run TERM (in minutes)
+  ############################################
+  if [[ -n "${uxMAX_RUN_TERM}" ]];then
+    let nMAX_RUN_TERM="${uxMAX_RUN_TERM} + 0"
+    if [[ ${nMAX_RUN_TERM} -gt 0 ]];then
+      let nMAX_RUN_TERM="${nMAX_RUN_TERM} * 60"  #convert to seconds
+      ${UXEXE}/uxsurjob ${nMAX_RUN_TERM} ${S_NUMPROC} &
+    fi
+  fi
+
+  ############################################
+  # If existing load an environment file,
+  # based on several name rules
+  ############################################
+  for EnvFile in  ${UXDIR_ROOT}/env/main.env \
+      ${UXDIR_ROOT}/env/${S_ESPEXE}.env \
+      ${UXDIR_ROOT}/env/${S_ESPEXE}_node_${S_NOEUD}.env \
+      ${UXDIR_ROOT}/env/${S_ESPEXE}_prj_${CodeProject}.env \
+      ${UXDIR_ROOT}/env/${S_ESPEXE}_app_${CodeTeam}.env \
+      ${UXDIR_ROOT}/env/${S_ESPEXE}_${S_APPLI}.env \
+      ${UXDIR_ROOT}/env/${S_ESPEXE}_mu_${S_CODUG}.env
+  do
+    if [ -r ${EnvFile} ]
+    then
+      Message "Loading the environnement defined in ${EnvFile}"
+      . ${EnvFile} || Message "!!! WARNING: ${EnvFile} could not be properly loaded"
+    fi
+  done
+fi

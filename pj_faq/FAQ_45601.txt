@@ -1,0 +1,48 @@
+
+Key words:
+
+	Windows domain user, Windows user services, useralias.txt
+
+Subject:
+
+	How to create Windows user service
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+	Windows user services can be created manually after Dollar Universe installation. 
+
+	1). Load the Dollar Universe Environment
+
+	2). Open the file %UXEXE%\[CompanyName]ServInstall.bat, you will find a line looks like the following:
+
+	d:\du\standard\QCL500\exec\UniServUser -install qcl500a  ORSYP  qcl500a 
+
+	Note: the "ORSYP" in the above line is the Windows domain or Windows host name. 
+
+	3). Copy and edit the line according to your configuration, then run it; the user services should then be created 
+
+	4). Open the Windows Services panel, to make "Startup type" Automatic, and update the logon informaiton. 
+
+	5). start it.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+	If the user service could not start, please check the logon information; make sure the proper (Domain) user name and password is used.
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

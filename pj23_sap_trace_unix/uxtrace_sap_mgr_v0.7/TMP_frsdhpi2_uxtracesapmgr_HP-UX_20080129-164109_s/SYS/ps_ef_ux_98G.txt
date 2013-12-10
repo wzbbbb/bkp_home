@@ -1,0 +1,27 @@
+#CMD# ps -ef | grep ux
+#TSP#  20080129-164236 
+    root 14448     1  0  Jan 24  ?         0:05 ./uxioserv TST520 A frsdhpi2
+    root 14457     1  0  Jan 24  ?         0:05 ./uxcdjsrv TST520 X frsdhpi2
+    root 14465     1  0  Jan 24  ?         0:04 ./uxbvssrv TST520 A frsdhpi2
+    root  2409     1  0  Jan 21  ?         0:52 ./uxech ADMLIN X frsdhpi2
+    root  2311     1  0  Jan 21  ?         0:00 ./uxcal ADMLIN X frsdhpi2
+    root  2337     1  0  Jan 21  ?         0:00 ./uxord ADMLIN X frsdhpi2
+    root  2438     1  0  Jan 21  ?         0:57 ./uxsur ADMLIN X frsdhpi2
+    root  2282     1  0  Jan 21  ?         0:17 ./uxcdjsrv ADMLIN A frsdhpi2
+    root  2281     1  0  Jan 21  ?         0:16 ./uxcdjsrv ADMLIN X frsdhpi2
+    root  2264     1  0  Jan 21  ?         2:45 ./uxioserv ADMLIN X frsdhpi2
+    root  2265     1  0  Jan 21  ?         0:09 ./uxioserv ADMLIN A frsdhpi2
+    root 14476     1  0  Jan 24  ?         0:03 ./uxcal TST520 X frsdhpi2
+    root 14461     1  0  Jan 24  ?         0:05 ./uxbvssrv TST520 X frsdhpi2
+    root  3000  2932  0  Jan 21  ?         0:04 netmon -P -k segRedux=true -k migrateHsrpVirtualIP=true
+    root 14446     1  0  Jan 24  ?         1:05 ./uxioserv TST520 X frsdhpi2
+    root 21061 15966  7 16:41:09 pts/ta    0:00 /bin/ksh ./uxtracesapmgr
+    root 13836     1  0  Jan 25  ?         0:10 ./uxcdjsrv FESTOP X sdeu1029
+    root 14456     1  0  Jan 24  ?         0:04 ./uxcdjsrv TST520 A frsdhpi2
+    root 13827     1  0  Jan 25  ?         0:00 ./uxdqmsrv FESTOP X sdeu1029
+    root 13826     1  0  Jan 25  ?         1:55 ./uxioserv FESTOP X sdeu1029
+    root 14536     1  0  Jan 24  ?         0:11 ./uxsur TST520 X frsdhpi2
+    root 13833     1  0  Jan 25  ?         0:00 ./uxcmdsrv FESTOP X sdeu1029
+    root 14487     1  0  Jan 24  ?         0:10 ./uxord TST520 X frsdhpi2
+    root 14525     1  0  Jan 24  ?         0:10 ./uxech TST520 X frsdhpi2
+    root 22038 21061  1 16:42:36 pts/ta    0:00 grep ux

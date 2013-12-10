@@ -1,0 +1,4 @@
+#CMD# ping localhost -n 4
+ping: unknown host localhost
+#CMD# ping localhost -n 4
+ping: unknown host localhost

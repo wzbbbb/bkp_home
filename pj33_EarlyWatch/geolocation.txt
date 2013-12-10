@@ -1,0 +1,11 @@
+curl http://freegeoip.net/csv/
+"64.254.253.219","CA","Canada","QC","Québec","Montréal","","45.5000","-73.5833","",""
+
+curl http://freegeoip.net/csv/204.197.178.250
+"204.197.178.250","CA","Canada","ON","Ontario","Toronto","","43.6667","-79.4167","",""
+
+s=`curl http://freegeoip.net/csv/`
+echo $s |cut -d"," -f3,4,5
+"Canada","QC","Québec"
+
+

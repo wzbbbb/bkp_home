@@ -1,0 +1,34 @@
+
+**** ERROR file opened at 20061106 220551 MET, SAP-REL 620,0,1503 RFC-VER 3 662227 MT-SL
+T:1 ======> Connect to SAP gateway failed
+Connect_PM  TPNAME=DOLLAR_UNIVERSE_RFC_SERVER, GWHOST=frsdhpi2, GWSERV=3300
+
+LOCATION    CPIC (TCP/IP) on local host
+ERROR       partner not reached (host frsdhpi2, service 3300)
+
+TIME        Mon Nov  6 22:05:51 2006
+RELEASE     620
+COMPONENT   NI (network interface)
+VERSION     36
+RC          -10
+MODULE      niuxi_mt.c
+LINE        1028
+DETAIL      NiPConnect
+SYSTEM CALL connect
+ERRNO       2
+ERRNO TEXT  No such file or directory
+COUNTER     1
+
+
+**** ERROR file opened at 20061106 220932 MET, SAP-REL 620,0,1503 RFC-VER 3 662227 MT-SL
+T:6 ======> Function module "RSPC_API_GET_CHAINS" not found.
+T:6 <* RfcReceive [2] : returns 3:RFC_SYS_EXCEPTION
+T:6 <* RfcCallReceive [2] : returns 3:RFC_SYS_EXCEPTION
+>TS> Thu Nov  9 22:44:49 2006
+T:37 ======> Function module "BAPI_XBP_OUTPUT_DEVICE_SEARCH" not found.
+T:37 <* RfcReceive [9] : returns 3:RFC_SYS_EXCEPTION
+T:37 <* RfcCallReceive [9] : returns 3:RFC_SYS_EXCEPTION
+T:37 <* RfcCallReceive [9] : returns 18:RFC_INVALID_HANDLE
+T:37 <* RfcCall [9] : returns 18:RFC_INVALID_HANDLE
+T:37 <* RfcCall [9] : returns 18:RFC_INVALID_HANDLE
+T:37 <* RfcCallReceive [9] : returns 18:RFC_INVALID_HANDLE

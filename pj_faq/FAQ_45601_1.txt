@@ -1,0 +1,34 @@
+
+Key words:
+
+	Windows domain user, Windows user services, useralias.txt
+
+Subject:
+
+	How to use Windows domain user as a submission account in Dollar Universe
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+	To launch a job with Windows domain user is similar to using a local Windows user.
+	1). Create a user service for the domain user. Check the other FAQ for details.
+	2). Define a Dollar Universe user with the same name as the user service. 
+	3). Use this Dollar Universe user as the submission account. 
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

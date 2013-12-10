@@ -1,0 +1,940 @@
+#! /bin/ksh 
+
+rst_fic()
+{
+# OS check
+OS=`uname`
+
+# Add the location of the unlink function in the PATH
+if [ -d /usr/sbin ]
+then
+	export PATH=${PATH}:/usr/sbin
+fi
+# call to verification of file data base
+if [ ${VERIF} = "Y" ]
+then
+  $UXEXE/uxvrffic $2 $1
+fi
+#
+ln -s $2/$1.dta ${U_TMP_PATH}/$1.dta_rst
+if [ $? -ne 0 ]
+then
+   echo "unable to link $2/$1.dta to ${U_TMP_PATH}/$1.dta_rst"
+   exit 1
+fi
+if [ "${3}" = "G" ]
+then
+   echo "general reoganization"
+   export U_RST_PATH=$UXDIR_ROOT
+   $UXEXE/uxrstfic $1
+else
+   echo "area reorganization"
+   export U_RST_PATH=$2
+   $UXEXE/uxrstfic $1 $3
+fi
+
+if [ $? -ne 0 ]
+then
+   if [ "${OS}" = "Linux" ]
+   then
+      rm -f  ${U_TMP_PATH}/$1.dta_rst
+   else
+      unlink ${U_TMP_PATH}/$1.dta_rst
+   fi
+   rm -f ${U_TMP_PATH:-no_value}/$1.dta
+   rm -f ${U_TMP_PATH:-no_value}/$1.idx
+   echo "unable to reorganize $2/$1"
+   exit 1
+fi
+
+if [ "${OS}" = "Linux" ]
+then
+   rm -f  ${U_TMP_PATH}/$1.dta_rst
+else
+   unlink ${U_TMP_PATH}/$1.dta_rst
+fi
+
+cp ${U_TMP_PATH:-no_value}/$1.dta  ${U_RST_PATH}/$1.dta
+rm -f ${U_TMP_PATH:-no_value}/$1.dta
+cp ${U_TMP_PATH:-no_value}/$1.idx  ${U_RST_PATH}/$1.idx
+rm -f ${U_TMP_PATH:-no_value}/$1.idx 
+
+return 0
+}
+
+# ========================================================
+# ORSYP.Sa 
+#
+# PROCEDURE DE MIGRATION DES FICHIERS $U  
+#
+# ========================================================
+if [ "$UXEXE"x = x ]
+then
+  echo "UNIVERSE environment not found"
+  exit 1
+fi
+
+if [ "${U_TMP_PATH:-nondefinie}" = "nondefinie" ]
+then
+   export U_TMP_PATH="/tmp"
+fi
+
+     VERIF=Y
+     export VERIF
+  if [ $# -eq 1 ] && [ $1 = NOVERIF ]
+  then
+     echo "WARNING : Dollar Universe database files check desactivated"
+     VERIF=N
+     export VERIF
+  fi
+
+#
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic dffdob50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic mdfapr50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic mdfaprgb $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmrl50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frra50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frre50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frrv50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_ftru50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fttg50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_ftts50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmeq50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmqr50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmqp50 $UXDIR_ROOT G 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecd50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecd50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecd50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecd50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecl50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecl50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecl50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fecl50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmca50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmca50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmca50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmca50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcm50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcm50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcm50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcm50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcx50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcx50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcx50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmcx50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmer50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmer50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmer50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmer50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmev50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmev50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmev50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmev50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmfu50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmfu50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmfu50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmfu50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmhs50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmhs50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmhs50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmhs50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlc50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlc50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlc50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlc50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlp50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlp50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlp50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmlp50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmph50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmph50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmph50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmph50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpi50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpi50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpi50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpi50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpl50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpl50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpl50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpl50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsb50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsb50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsb50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsb50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmse50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmse50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmse50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmse50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsp50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsp50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsp50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmsp50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmta50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmta50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmta50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmta50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtp50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtp50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtp50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtp50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtr50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtr50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtr50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmtr50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fppf50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fppf50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fppf50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fppf50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fseu50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fseu50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fseu50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fseu50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frup50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frup50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frup50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_frup50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fupr50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fupr50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fupr50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fupr50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpf50 $UXDEX X 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpf50 $UXDAP A 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpf50 $UXDIN I 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fmpf50 $UXDSI S 
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvm50 $UXDEX X
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvm50 $UXDAP A
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvm50 $UXDIN I
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvm50 $UXDSI S
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvi50 $UXDEX X
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvi50 $UXDAP A
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvi50 $UXDIN I
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+echo "###############################################"
+echo "Start date :   \c"
+date
+rst_fic u_fbvi50 $UXDSI S
+echo "End date   :   \c"
+date
+echo "###############################################\n"
+

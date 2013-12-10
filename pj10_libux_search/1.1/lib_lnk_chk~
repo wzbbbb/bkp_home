@@ -1,0 +1,98 @@
+#!/bin/ksh -x
+# revision : 1.1
+# date 	   : 20060227	
+# author   : ZWA
+
+CHECK_VER ()
+{
+	version_file=$UXEXE/uxversion
+	grep -q "Version v500" $version_file
+	[ $? -eq 0 ] && check_v500="yes"
+	grep -q "installation kit " $version_file
+	#get the list of the release version installed; e.g.: ver="511 512"
+	if	[ $? -eq 0 ] ; then 
+		check_later_release="yes"
+		ver=`grep "installation kit " $version_file| cut -f2 -d"("|cut -f3 -d" " |sort -u`
+	fi
+	#some releases later than 500 are installed.
+}
+CHECK ()
+{
+	#pri=$1 
+	files=`ls |grep -v .log |grep -v .conf |grep -v uxtrace`
+	for i in $files; do
+		CHECK_FILE $i $1
+	done
+}
+CHECK_FILE ()
+{
+	l_file=$1
+	pri=$2
+	# Issues with the return code of the bsed, try a tempo
+	if [ -f ${l_file} ]; then
+		#bsed libux_v500 ${l_file} >> /dev/null 2>&1
+		l_rc_gb=1
+		if [ ${check_v500} = "yes" ] ; then #with v500
+			bsed libux_v500 ${l_file} >> /dev/null 2>&1
+			l_rc=$?
+			[ ${l_rc} -eq 0 ] && l_rc_gb=0
+		fi
+		if [ ${check_later_release} = "yes" ] ; then #with later release
+			for version_ in $ver ; do
+				bsed libux_v${version_} ${l_file} >> /dev/null 2>&1
+				l_rc=$?
+				[ ${l_rc} -eq 0 ] && l_rc_gb=0
+			done
+		fi
+		if [ $l_rc_gb = 0 ]; then
+			echo "Warning: The file ${l_file} is not relinked!" 
+			if [ $pri = "p1" ]; then
+				echo "Please run a relink for this Company"
+				echo "Quiting ..."
+				exit 1
+			fi
+		fi
+	fi
+}
+HeavyCheck()
+{
+	echo "Checking $UXEXE ..."
+	cd $UXEXE
+	CHECK p1
+	echo "Checking $UXEXE/lib ..."
+	cd $UXEXE/lib 
+	CHECK p1
+	echo "Checking $UXMGR ..."
+	cd $UXMGR 
+	CHECK p2
+	echo "Checking $UXDQM"
+	cd $UXDQM 
+	CHECK p1
+}
+LightCheck() {
+	CHECK_FILE $UXEXE/uxioserv p1  
+	CHECK_FILE $UXEXE/uxlst p1  
+	CHECK_FILE $UXEXE/cuxxm p1  
+	CHECK_FILE $UXEXE/lib/libuxos.so p1
+	CHECK_FILE $UXMGR/uxgethrd p2
+	CHECK_FILE $UXDQM/uxdqmsrv p1
+}
+
+######################
+#### Main ()
+######################
+check_v500="no"
+check_later_release="no"
+if [ "${UXEXE:-nv}" = "nv" ]; then
+	echo "Pleaes load the \$U env"
+	exit 0
+fi
+CHECK_VER
+if [ "${FULL_LIB_CHECK:-NA}" = "NA" ]; then
+	echo "To use the full mode: export FULL_LIB_CHECK=Y "
+	echo "Library link checking: selective mode ..."
+	LightCheck
+else
+	echo "Library link checking: full mode ..."
+	HeavyCheck
+fi

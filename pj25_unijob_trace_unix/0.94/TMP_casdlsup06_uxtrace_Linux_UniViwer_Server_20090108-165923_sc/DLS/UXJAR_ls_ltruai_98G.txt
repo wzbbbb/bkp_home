@@ -1,0 +1,32 @@
+#REM# LISTING OF THE DOLLAR UNIVERSE UXJAR DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP#  20090108-170059 
+total 5648
+21627163 -rw-rw-rw- 1 root root     546 Jan  8 14:45 addlogin.jar
+21627187 -rw-rw-rw- 1 root root     532 Jan  8 14:45 uxinsmod.jar
+21627184 -rw-rw-rw- 1 root root     530 Jan  8 14:45 setvar.jar
+21627179 -rw-rw-rw- 1 root root     545 Jan  8 14:45 miglogin.jar
+21627176 -rw-rw-rw- 1 root root     551 Jan  8 14:45 installpassphrase.jar
+21627188 -rw-rw-rw- 1 root root  706710 Jan  8 14:45 hsqldb.jar
+21627175 -rw-rw-rw- 1 root root     531 Jan  8 14:45 getvar.jar
+21627171 -rw-rw-rw- 1 root root     543 Jan  8 14:45 centralserver-stop.jar
+21627170 -rw-rw-rw- 1 root root     541 Jan  8 14:45 centralserver-start.jar
+21627156 drwxr-xr-x 5 root root    4096 Jan  8 16:59 ..
+21627186 -rw-rw-rw- 1 root root   96711 Jan  8 16:59 util.jar
+21627185 -rw-rw-rw- 1 root root 1016483 Jan  8 16:59 stdimpl.jar
+21627182 -rw-rw-rw- 1 root root  118701 Jan  8 16:59 schedconv-std.jar
+21627183 -rw-rw-rw- 1 root root   82659 Jan  8 16:59 schedconv.jar
+21627181 -rw-rw-rw- 1 root root  337950 Jan  8 16:59 protocols.jar
+21627180 -rw-rw-rw- 1 root root  241388 Jan  8 16:59 protobuf-java-2.0.1.jar
+21627178 -rw-rw-rw- 1 root root  371264 Jan  8 16:59 mail.jar
+21627177 -rw-rw-rw- 1 root root  391834 Jan  8 16:59 log4j-1.2.15.jar
+21627174 -rw-rw-rw- 1 root root   15817 Jan  8 16:59 conf.jar
+21627173 -rw-rw-rw- 1 root root   36174 Jan  8 16:59 commons-cli-1.1.jar
+21627172 -rw-rw-rw- 1 root root  260395 Jan  8 16:59 comm.jar
+21627169 -rw-rw-rw- 1 root root     542 Jan  8 16:59 centralserver-check.jar
+21627168 -rw-rw-rw- 1 root root  315781 Jan  8 16:59 central.jar
+21627167 -rw-rw-rw- 1 root root  191375 Jan  8 16:59 central-core.jar
+21627166 -rw-rw-rw- 1 root root  793885 Jan  8 16:59 art.jar
+21627165 -rw-rw-rw- 1 root root  563389 Jan  8 16:59 api.jar
+21627164 -rw-rw-rw- 1 root root  106633 Jan  8 16:59 alm.jar
+21627162 drwxr-xr-x 2 root root    4096 Jan  8 17:00 .

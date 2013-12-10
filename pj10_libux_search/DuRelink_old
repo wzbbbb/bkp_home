@@ -1,0 +1,140 @@
+#!/usr/bin/ksh
+############################################################
+# Relink a Dollar Universe company :
+# Replace the libux_v500 link with a chosen link lib_${COMPANY}
+############################################################
+##
+# revision : 1.2.0
+# date     : 20040913
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+#          : Help creation
+##
+# revision : 1.1
+# date     : 20040514
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+#          : Introduction of the liblink.conf and liblink.log files
+##
+# revision : 1.0
+# date     : 20040429
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+##
+# creation : 0.9
+# date     : 20040428
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : First draft
+
+# Configuration variables
+g_ini_link=libux_v500
+g_new_link=lib_${S_SOCIETE}
+g_bin_bkp_flag=off
+g_bkp_ext=_link_bkp
+
+HELP ()
+{
+echo "This procedure relink the binaries of the curent Dollar Universe company"
+echo "	The prerequisites are :"
+echo "  	- Dollar Universe environment loaded"
+echo "  	- Dollar Universe company stopped"
+echo "  	- login as root"
+echo "  	- bsed installed on the system"
+echo ""
+}
+while getopts h option
+do
+        case "${option}" in
+                h )
+                  HELP
+                  exit 1
+                ;;
+                *)
+                ;;
+        esac
+done
+
+# Tests the prerequisites
+if [ "${UXEXE:-nv}" = "nv" ]; then
+	HELP
+	echo "Please load the \$U environment"
+	exit 1
+fi
+if [ `id -u` -ne 0 ]; then
+	HELP
+	echo "You need to be root to execute this procedure"
+	exit 1
+fi
+l_nb_proc=`ps -ef | grep ux | grep ${S_SOCIETE} | grep -v grep | wc -l`
+if [ ${l_nb_proc} -ne 0 ]; then
+	HELP
+	echo "The Dollar Universe company needs to be stopped"
+	exit 1
+fi
+which bsed > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	HELP
+	echo "bsed needs to be installed on your system"
+	exit 1
+fi
+
+# Internal variables, do not change them
+g_conf_file=$UXEXE/liblink.conf
+g_log_file=$UXEXE/liblink.log
+g_dir_to_scan="UXEXE UXLIB UXCMD UXMGR UXDQM"
+UXLIB=$UXEXE/lib; export UXLIB
+UXCMD=$UXEXE/cmdfile; export UXCMD
+g_date=`date +%Y%m%d-%H%M%S`
+
+PROCESS_DIR ()
+{
+l_targ_dir=${1:-nv}
+l_output=${2}
+cd ${l_targ_dir}; l_ret_code=$?
+if [ ${l_ret_code:-0} -ne 0 ]; then
+	echo "REM The directory ${l_dir_alias} is not valid (${l_trsf_value})"
+	return 1
+fi
+l_file_lst=`ls `
+for l_file in ${l_file_lst}
+do
+	if [ -f ${l_file} ]; then
+		l_skp_flag=off
+		echo ${l_file} | grep ${g_bkp_ext}'$' > /dev/null 2>&1 && l_skp_flag=on
+		echo ${g_log_file} | grep ${l_file}'$' > /dev/null 2>&1 && l_skp_flag=on
+		echo ${g_conf_file} | grep ${l_file}'$' > /dev/null 2>&1 && l_skp_flag=on
+		[ ${l_skp_flag} = off ] && PROCESS_FILE ${l_file} ${l_output}
+	fi
+done
+}
+
+PROCESS_FILE ()
+{
+l_file=$1
+l_output=$2
+bsed ${g_ini_link} ${l_file} >> /dev/null 2>&1
+if [ $? = 0 ]; then
+	echo "#REM# Processing file ${l_file} \c"
+	echo "#REP# ${g_ini_link} -> ${g_new_link} ${l_file}" >> ${l_output}
+	cp -p ${l_file} ${l_file}${g_bkp_ext}
+	bsed ${g_ini_link}=${g_new_link} ${l_file}${g_bkp_ext} ${l_file} 
+	[ ${g_bin_bkp_flag-on} = off ] && rm -f ${l_file}${g_bkp_ext}
+fi
+}
+
+# Main
+echo "#LOG# ${g_date} : ${g_ini_link} -> ${g_new_link}" >> ${g_conf_file}
+echo "#TSP# ${g_date} : ${g_ini_link} -> ${g_new_link}" >> ${g_log_file}
+
+for l_dir_alias in ${g_dir_to_scan}
+do
+	eval l_trsf_value=\$${l_dir_alias}
+	echo "#DIR# ${l_dir_alias} DIRECTORY (${l_trsf_value})" | tee -a ${g_log_file}
+	PROCESS_DIR ${l_trsf_value} ${g_log_file}
+done
+
+# Creation of the link
+[ -f /usr/lib/${g_new_link} ] || ln -s ${UXEXE}/lib /usr/lib/${g_new_link}
+
+# Removing the old link; ZWA
+[ -d /usr/lib/libux_v500 ] && rm -f  /usr/lib/libux_v500

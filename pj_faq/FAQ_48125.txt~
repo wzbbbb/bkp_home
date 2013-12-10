@@ -1,0 +1,29 @@
+
+Key words:
+filter, U_SEL_SINCE, environment variable
+
+Subject:
+U_SEL_SINCE works as a default filter for command line 
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+When the environment variable U_SEL_SINCE is defined, it will impact commands like uxlst ctl and uxdlt evt, etc. It will act as a "SINCE" filter is added to the command syntax, even though some commands, like uxdlt, does not support the "SINCE" filter. The results is that only the records match in the filter will be selected.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

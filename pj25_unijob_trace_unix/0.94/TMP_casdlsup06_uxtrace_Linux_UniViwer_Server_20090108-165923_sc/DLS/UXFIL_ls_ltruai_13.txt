@@ -1,0 +1,10 @@
+#REM# LISTING OF THE DOLLAR UNIVERSE UXFIL DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP#  20090108-170044 
+total 76
+21627156 drwxr-xr-x 5 root root  4096 Jan  8 16:59 ..
+21627189 -rw-r--r-- 1 root root 16712 Jan  8 16:59 variables.xml
+21627160 -r-xr-xr-x 1 root root  8307 Jan  8 16:59 unirestore.ksh
+21627161 -r-xr-xr-x 1 root root 20685 Jan  8 16:59 unigeneric.ksh
+21627159 -r-xr-xr-x 1 root root  8778 Jan  8 16:59 unibackup.ksh
+21627157 drwxr-xr-x 2 root root  4096 Jan  8 17:00 .

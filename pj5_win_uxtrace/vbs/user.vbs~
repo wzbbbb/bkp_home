@@ -1,0 +1,4 @@
+Set objOU = GetObject("LDAP://ou=MIS,dc=WWW,dc=orsyp,dc=com")
+Wscript.Echo objOU.Get("description")
+
+

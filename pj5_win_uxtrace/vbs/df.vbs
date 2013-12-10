@@ -1,0 +1,19 @@
+'option explicit
+dim computer 
+dim objdisk 
+dim objwmi  'wmi object
+dim colobjlogdisk ' collection of logic disks
+dim freemb 
+const mb_factor = 1048576
+dateinfo = now & vbcrlf
+dateinfo = dateinfo & date & vbcrlf
+dateinfo = dateinfo & time & vbcrlf
+wscript.echo dateinfo
+
+computer="support4"
+set objwmi=getobject("winmgmts://" & computer)
+set colobjlogdisk= objwmi.instancesof("win32_logicaldisk")
+for each  objdisk in colobjlogdisk
+	freemb=objdisk.freespace / mb_factor
+	wscript.echo objdisk.deviceid, int(freemb), "Mb free"
+next

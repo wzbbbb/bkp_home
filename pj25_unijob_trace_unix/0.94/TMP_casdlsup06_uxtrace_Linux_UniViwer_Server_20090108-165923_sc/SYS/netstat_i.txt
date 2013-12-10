@@ -1,0 +1,6 @@
+#CMD# netstat -i
+#TSP#  20090108-165947 
+Kernel Interface table
+Iface       MTU Met    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg
+eth0       1500   0 14551187      0      0      0 10796574      0      0      0 BMRU
+lo        16436   0 2910126142      0      0      0 2910126142      0      0      0 LRU

@@ -1,0 +1,147 @@
+-- Comment utiliser la procedure uxtrace version 0.9.1 pour unix
+
+-.- Tansfert
+Transferer l'uxtrace_v0.9.1.taz dans le repertoire mgr ($UXMGR) de votre societe UniJob.
+Attention il est essentiel que ce transfert soit effectue en mode binaire. 
+
+-.- Placez-vous ensuite dans le repertoire mgr de votre societe:
+cd zzz/mgr
+
+-.- Decompression du .taz :
+mv ./uxtrace_v0.9.1.taz ./uxtrace_v0.9.1.tar.Z
+uncompress  ./uxtrace_v0.9.1.tar.Z
+tar -xvf ./uxtrace_v0.9.1.tar
+
+-.- Fichiers generes
+Cette procedure va creer ou remplacer les fichiers suivants dans votre repertoire mgr:
+uxtrace uxtrace_help_en.txt uxtrace_help_fr.txt
+
+-- Comment lancer la procedure uxtrace (0.9.1)
+Les informations ci-dessous sont egalement disponibles en anglais en tapant;
+
+uxtrace -h
+(Ceci fait egalement apparaitre la version de l'uxtrace)
+
+-.- Syntaxe 
+uxtrace [-s] [-c] [-L] [-d] [-b] [-h <string>] [ -o] [-p <string>] [-l <num>] [-P] [-a <string>]
+	Les arguments:
+ 	 -s : L'accent sera mis sur les symptomes systemes
+ 	 -c : L'accent sera mis sur les problemes de configuration de UniJob
+	 -L : Trace rapide
+ 	 -p : Lancera la procedure specifique (variablisee par un argument) a la fin de l'uxtrace.
+ 	 -P : Ne lancera pas la procedure specifique suite a l'uxtrace.
+ 	 -l : Le nombre de jours d'archivage des traces systemes (par defaut copie 100 logs dans l'espace principal et 50 dans les espaces secondaires)
+ 	 -a : Definit l'espace principal
+ 	 -o : Considere que la societe UniJob est stoppe (ceci n'est pas recommande)
+    	Les modes d'executions :
+ 	 -d : divise le resultat de l'uxtrace en trois pour un envoi plus facile par courrier electronique
+ 	 -b : Lance l'uxtrace en mode batch (plus de questions interactives)
+  	 -h : Affiche une aide rapide sur les arguments
+  	 -h full : Affiche plus d'informations sur les arguments
+
+-.- Details des differents arguments:
+ 	 -s : symptomes systemes
+		Lorsque le probleme porte sur le systeme et/ou lorsque UniJob se comporte de la sorte:
+		  - temps de reponse anormalement lent
+		  - grosse augmentation persistante de la consommation de CPU
+		  - ne semble plus reagir
+ 	 -c : problemes de configuration de UniJob
+		Lorsque UniJob rencontre des problemes concernant,
+		les dependances, la date de traitement, un evenement, etc..
+ 	 -L : Trace rapide
+		Cette option invalide les options -s et -c.
+ 	 -p : Lancera la procedure specifique (variablisee par un argument) suite a l'uxtrace.
+ 	 	Par exemple, si vous desirez executer le script suivant suite a l'uxtrace :
+		${UXMGR}/uxtrace_cust_01
+		Utilisez le parametre -p01, par exemple;  uxtrace -scp01
+		Ce script est toujours execute (si il est present) sauf si l'argument -P est specifie.
+		${UXMGR}/uxtrace_cust
+	 -P : Ne lancera pas la procedure specifique suite a l'uxtrace
+	 -l : Le nombre de jours d'archivage des traces systemes (par defaut copie 100 logs dans l'espace principal et 50 dans les espaces secondaires)
+	 -a : Definit l'espace principal
+		A utiliser si le probleme que vous rencontrez ne se situe pas
+		en exploitation, les valeurs acceptees pour l'espace d'application sont par exemple A,a,app,APP
+	 -o : Considere que la societe UniJob est stoppee (ceci n'est pas recommande)
+ 	      Une fonction de l'uxtrace verifie automatiquement le status de la societe UniJob.
+ 	      Cet argument n'est a utiliser qu'a la demande express de DollarAccess.
+ 	      Cet argument ajoute automatiquement l'argument -s lorsqu'il est utilise.
+ 	      
+-.- Details a propos des Modes d'execution :
+
+	 -d : Divise le fichier genere en trois pour faciliter ensuite sa transmission a DollarAccess via e-mail.
+	 -b : Lance l'uxtrace en mode batch (ceci evite les questions interactives)
+
+-.- Pre-requis
+	Il est recommande de placer la procedure uxtrace dans le repertoire mgr de la societe a tracer.
+	Si la trace est placee dans un autre repertoire, il faudra que l'environnement
+	de UniJob soit prealablement charge (. ./uxsetenv) afin que la procedure
+	aboutisse.	
+		
+-.- Quelques exemples de problemes avec les arguments a choisir pour l'uxtrace.
+
+
+-..- Difficultes avec les dependances entre uprocs.
+Une uproc est en attente de d'evenement en production, l'evenement semble pourtant 
+etre present : Afin d'obtenir le plus d'informations pertinentes possibles il 
+est recommande de lancer l'uxtrace avec l'argument -c.
+uxtrace -c 
+
+Si le probleme est en application:
+uxtrace -c -aA
+
+Si vous prevoyez que le resultat de l'uxtrace sera volumineux et que vous voulez l'envoyer par e-mail, utilisez l'option -d. 
+uxtrace -c -aA -d
+
+-..- La date de traitement de l'uproc ZZZ est incorrecte. Le probleme se situe en simulation.
+uxtrace -c -aS
+
+Si vous etes habitues aux messages durant l'uxtrace.
+uxtrace -c -aS -b
+
+-..- UniJob est lent et/ou consomme enormement de temps processeur
+uxtrace -s
+
+En cas de production bloquee, sur une machine de production, sans moyen de contournement, et que vous desirez envoyer les resultats par e-mail.
+
+uxtrace -s -d
+
+-..- UniJob ne demarre pas:
+uxtrace -s
+
+-..- La procedure n'aboutit pas suite a une erreur de syntaxe dans le script {UXMGR}/uxtrace_cust.
+{UXMGR}/uxtrace_cust script. Ajouter alors l'arguement -P pour eviter ce script.
+
+-.- Changer le repertoire cible
+Comment modifier le repertoire cible de l'uxtrace si l'espace disponible dans le repertoire mgr n'est pas suffisant.
+
+-..- Modification poncutelle
+
+Modifier la valeur de la variable UXTRACELOCATE avant de lancer l'uxtrace. 
+
+Par exemple pour deplacer la cible dans le repertoire temporaire /tmp:
+
+En ksh ou sh :
+UXTRACELOCATE=/tmp
+export UXTRACELOCATE
+En csh :
+setenv UXTRACELOCATE /tmp
+
+Puis lancez la procedure uxtrace
+
+-..- Modification definitive
+Une edition du script uxtrace est necessaire, dans ce fichier, chercher la section
+suivante:
+
+#       * modify the folder location of the created uxtrace package
+#       * Default value                 ${UXMGR}
+#       * Other values possibles        the absolute path of an existant folder
+# UXTRACELOCATE="/tmp"
+
+Enlever le commentaire devant UXTRACELOCATE et lui assigner une nouvelle valeur.
+
+#       * modify the folder location of the created uxtrace package
+#       * Default value                 ${UXMGR}
+#       * Other values possibles        the absolute path of an existant folder
+UXTRACELOCATE="/tmp"
+
+PS : La meme methode vous permet de changer le parametre UXLOGDELAY (nombre de jour de backup des traces systemes).

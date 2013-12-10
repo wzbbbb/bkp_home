@@ -1,0 +1,11 @@
+#REM# LISTING OF THE DOLLAR UNIVERSE UXJAR DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltruai 
+#TSP#  20090108-165955 
+total 140
+21643383 -r--r--r-- 1 root root      6 Jan  5 12:18 uxtraceversion.txt
+21643382 -r--r--r-- 1 root root   6373 Jan  5 12:18 uxtrace_help_fr.txt
+21643381 -r--r--r-- 1 root root   6937 Jan  5 12:18 uxtrace_help_en.txt
+21643311 drwxr-xr-x 6 root root   4096 Jan  8 16:59 ..
+21643380 -rwx------ 1 root root 105741 Jan  8 16:59 uxtrace
+21643554 drwxrwxrwx 5 root root   4096 Jan  8 16:59 TMP_casdlsup06_unijob_uxtrace_Linux_UniJob_20090108-165945_sc
+21643379 drwxrwxr-x 3 root root   4096 Jan  8 16:59 .

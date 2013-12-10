@@ -1,0 +1,82 @@
+#REM# RECURSIV LISTING OF THE UXEXE DIRECTORY (Sorted by name)
+#CMD# ls -lRai 
+#TSP#  20090108-165947 
+.:
+total 248
+21643267 drwxrwxr-x 3 root root   4096 Jan  8 16:59 .
+21627156 drwxr-xr-x 5 root root   4096 Jan  8 16:22 ..
+21643519 drwxr-xr-x 5 root root   4096 Jan  8 16:59 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc
+21643517 -rwxr----- 1 root root 105741 Jan  8 16:59 uxtrace
+21643269 -r--r--r-- 1 root root   6937 Jan  5 11:30 uxtrace_help_en.txt
+21643270 -r--r--r-- 1 root root   6373 Jan  5 11:30 uxtrace_help_fr.txt
+21643268 -rwx------ 1 root root 104697 Jan  5 11:30 uxtrace_ori
+21643271 -r--r--r-- 1 root root      6 Jan  5 11:30 uxtraceversion.txt
+
+./TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc:
+total 28
+21643519 drwxr-xr-x 5 root root 4096 Jan  8 16:59 .
+21643267 drwxrwxr-x 3 root root 4096 Jan  8 16:59 ..
+21643522 drwxr-xr-x 2 root root 4096 Jan  8 16:59 DLS
+21643523 drwxr-xr-x 2 root root 4096 Jan  8 16:59 LOG
+21643521 drwxr-xr-x 2 root root 4096 Jan  8 16:59 SYS
+21643524 -rw-r--r-- 1 root root 3934 Jan  8 16:59 timestamp.txt
+21643520 -rw-r--r-- 1 root root 1665 Jan  8 16:59 uxtrace.txt
+
+./TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS:
+total 64
+21643522 drwxr-xr-x 2 root root 4096 Jan  8 16:59 .
+21643519 drwxr-xr-x 5 root root 4096 Jan  8 16:59 ..
+21643530 -rw-r--r-- 1 root root  960 Jan  8 16:59 UXDEX_ls_ltrai_01G.txt
+21643531 -rw-r--r-- 1 root root  961 Jan  8 16:59 UXDEX_ls_ltruai_01G.txt
+21643532 -rw-r--r-- 1 root root  663 Jan  8 16:59 UXDIR_ROOT_ls_ltrai_01G.txt
+21643533 -rw-r--r-- 1 root root  664 Jan  8 16:59 UXDIR_ROOT_ls_ltruai_01G.txt
+21643574 -rw-r--r-- 1 root root  667 Jan  8 16:59 UXEXE_ls_lai.txt
+21643575 -rw-r--r-- 1 root root  103 Jan  8 16:59 UXEXE_ls_lRai.txt
+21643573 -rw-r--r-- 1 root root  675 Jan  8 16:59 UXEXE_ls_ltrai.txt
+21643534 -rw-r--r-- 1 root root  548 Jan  8 16:59 UXFIL_ls_ltrai_01G.txt
+21643535 -rw-r--r-- 1 root root  549 Jan  8 16:59 UXFIL_ls_ltruai_01G.txt
+21643536 -rw-r--r-- 1 root root 2042 Jan  8 16:59 UXJAR_ls_ltrai_01G.txt
+21643537 -rw-r--r-- 1 root root 2043 Jan  8 16:59 UXJAR_ls_ltruai_01G.txt
+21643571 -rw-r--r-- 1 root root 1745 Jan  8 16:59 UXMGR_ls_lai.txt
+21643572 -rw-r--r-- 1 root root 3742 Jan  8 16:59 UXMGR_ls_lRai.txt
+21643570 -rw-r--r-- 1 root root 1753 Jan  8 16:59 UXMGR_ls_ltrai.txt
+
+./TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/LOG:
+total 12
+21643523 drwxr-xr-x 2 root root 4096 Jan  8 16:59 .
+21643519 drwxr-xr-x 5 root root 4096 Jan  8 16:59 ..
+21643528 -rw-r--r-- 1 root root  260 Jan  8 16:59 log_list.txt
+
+./TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/SYS:
+total 436
+21643521 drwxr-xr-x 2 root root  4096 Jan  8 16:59 .
+21643519 drwxr-xr-x 5 root root  4096 Jan  8 16:59 ..
+21643541 -rw-r--r-- 1 root root   950 Jan  8 16:59 df_k_01G.txt
+21643561 -rw-r--r-- 1 root root  2441 Jan  8 16:59 env.txt
+21643538 -rw-r--r-- 1 root root 49038 Jan  8 16:59 netstat_a_01G.txt
+21643559 -rw-r--r-- 1 root root 69879 Jan  8 16:59 netstat_aeep_01G.txt
+21643562 -rw-r--r-- 1 root root   321 Jan  8 16:59 netstat_i.txt
+21643539 -rw-r--r-- 1 root root 49128 Jan  8 16:59 netstat_na_01G.txt
+21643565 -rw-r--r-- 1 root root   102 Jan  8 16:59 nis_ypcat_group.txt
+21643566 -rw-r--r-- 1 root root   102 Jan  8 16:59 nis_ypcat_hosts.txt
+21643567 -rw-r--r-- 1 root root   105 Jan  8 16:59 nis_ypcat_networks.txt
+21643564 -rw-r--r-- 1 root root   103 Jan  8 16:59 nis_ypcat_passwd.txt
+21643568 -rw-r--r-- 1 root root   106 Jan  8 16:59 nis_ypcat_protocols.txt
+21643563 -rw-r--r-- 1 root root   105 Jan  8 16:59 nis_ypcat_services.txt
+21643540 -rw-r--r-- 1 root root 19267 Jan  8 16:59 ps_ef_01G.txt
+21643543 -rw-r--r-- 1 root root   272 Jan  8 16:59 ps_ef_centralserver_01G.txt
+21643544 -rw-r--r-- 1 root root 25641 Jan  8 16:59 ps_efl_01G.txt
+21643529 -rw-r--r-- 1 root root   327 Jan  8 16:59 ps_efl_centralserver_01G.txt
+21643527 -rw-r--r-- 1 root root   495 Jan  8 16:59 ps_efl_UNIJOB_01G.txt
+21643542 -rw-r--r-- 1 root root   446 Jan  8 16:59 ps_ef_UNIJOB_01G.txt
+21643546 -rw-r--r-- 1 root root 19269 Jan  8 16:59 ps_efw_01G.txt
+21643548 -rw-r--r-- 1 root root   273 Jan  8 16:59 ps_efw_centralserver_01G.txt
+21643549 -rw-r--r-- 1 root root 26429 Jan  8 16:59 ps_efwHl_01G.txt
+21643551 -rw-r--r-- 1 root root   347 Jan  8 16:59 ps_efwHl_centralserver_01G.txt
+21643550 -rw-r--r-- 1 root root   608 Jan  8 16:59 ps_efwHl_UNIJOB_01G.txt
+21643547 -rw-r--r-- 1 root root   447 Jan  8 16:59 ps_efw_UNIJOB_01G.txt
+21643552 -rw-r--r-- 1 root root 13965 Jan  8 16:59 pstree_ap_01G.txt
+21643560 -rw-r--r-- 1 root root   879 Jan  8 16:59 shared_memory.txt
+21643553 -rw-r--r-- 1 root root 58589 Jan  8 16:59 top_bud3_01G.txt
+21643545 -rw-r--r-- 1 root root   618 Jan  8 16:59 vmstat_01G.txt
+21643569 -rw-r--r-- 1 root root    53 Jan  8 16:59 who_b.txt

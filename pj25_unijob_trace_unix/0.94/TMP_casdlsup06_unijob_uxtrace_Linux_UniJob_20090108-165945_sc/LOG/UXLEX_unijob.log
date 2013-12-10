@@ -1,0 +1,24 @@
+| 2009-01-05 12:19:15 |WARN |IO |pid=5755.-1208768832| uniio                     |  File Descriptor available (256,256)
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | UniJob IO server starting
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | Product version: UniJob,1.1.0 (build Dec 31 2008)
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | IO server v.610 (Multithread Version)
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | IO server integrates the following functions: STD,VER,AUT,TRN,FIL,DAT,ENG,PRX,GAG,LAG,SEL,CDJ,LNM,Lic,BVI,BCK,RGZ,ATM,BVS,ENV,LiC,EXT,XML
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | CNS node is: [local]
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | Starting CDJ...
+| 2009-01-05 12:19:15 |INFO |CDJ|pid=5756.-1208555200| unicdj                    | File Descriptor available (256,256)
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | Starting launcher...
+| 2009-01-05 12:19:15 |INFO |LAN|pid=5758.-1208670000| unilan                    | File Descriptor available (256,256)
+| 2009-01-05 12:19:15 |INFO |LAN|pid=5758.-1208670000| k_ord_cycle               | LAN Server starting: Node ID=[local]
+| 2009-01-05 12:19:15 |INFO |IO |pid=5755.-1208768832| u_io_srv_main             | Starting calculator...
+| 2009-01-05 12:19:15 |INFO |CAL|pid=5760.-1208645952| unical                    | File Descriptor available (256,256)
+| 2009-01-05 12:19:15 |INFO |CAL|pid=5760.-1208645952| u_cal_srv_thread_main     | UniJob CAL server: node=[local], host=[casdlsup06.orsypgroup.com], port=52006
+| 2009-01-05 12:19:15 |INFO |CAL|pid=5760.-1208645952| u_cal_srv_thread_main     | Server v.110 starting (Dec 31 2008)
+| 2009-01-05 12:19:15 |INFO |LAN|pid=5758.-1208670000| k_lan_ioConnection        | Successfully identified with IO local
+| 2009-01-05 12:19:15 |INFO |CDJ|pid=5756.-1208555200| u_cdj_main                | Synchronization request OK: successfully connected to UNIJOB IO server X on local
+| 2009-01-05 12:19:15 |INFO |CDJ|pid=5756.-1208555200| u_cdj_main                | CDJ starting (multithread version)
+| 2009-01-08 16:09:39 |ERROR|IO |pid=5755.-1240405088| u_io_get_flg_alm          | Alert Manager on socket 21 not connected anymore.
+#TSP# #BEG# 20090108-163759 TMP_casdlsup06_unijob_uxtrace_Linux_UniJob_20090108-163749_sc run
+#TSP# #END# 20090108-164006 TMP_casdlsup06_unijob_uxtrace_Linux_UniJob_20090108-163749_sc run
+#TSP# #BEG# 20090108-164452 TMP_casdlsup06_unijob_uxtrace_Linux_UniJob_20090108-164442_sc run
+#TSP# #END# 20090108-164649 TMP_casdlsup06_unijob_uxtrace_Linux_UniJob_20090108-164442_sc run
+#TSP# #BEG# 20090108-165955 TMP_casdlsup06_unijob_uxtrace_Linux_UniJob_20090108-165945_sc run

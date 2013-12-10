@@ -1,0 +1,48 @@
+
+Key words:
+
+	HPUX, IO server, uxdlt user, uxadd user
+
+Subject:
+
+	uxdlt user, uxadd user commands may cause IO server loop or crash
+
+Prerequistites:
+
+	HP-UX aswrdb01 B.11.11 U 
+
+Application validation tests:
+
+Explanation:
+
+	This issue is first detected when installing $U on HPUX 11.11 with univkit. The installation failed. From the uxrun.log, the following will show:
+
+	 Command : uxdlt user user=unive
+
+	 Command : uxadd user user=univs code=004 prof=PROFSCH both nopartage
+
+	UxCmd_LoadUniverse Initialization error
+	Update to an unknown User
+	command in error!!
+
+
+	The IO server loops or crashes after the first "uxdlt user" command.
+
+	This issue should have been fixed by FX24393 on V512.
+
+Warnings:
+
+	This issue does not occur on all HP-UX 11.11. Some HP-UX 11.11 nodes with some OS patches does not have the issue.
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

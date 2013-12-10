@@ -1,0 +1,17 @@
+#REM# LISTING OF THE SAP MANAGER _UXDIR_ROOT DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/DUSAP42/
+total 18
+212519 drwxr-xr-x   6 projet     projet        1024 Aug 31  2005 DUSAPB42
+212549 drwxr-xr-x   7 projet     projet        1024 Aug 31  2005 DUSAPJ42
+212502 drwxr-xr-x   3 projet     projet          96 Nov  6  2006 hpux
+212606 drwxrwxrwx   2 root       sys             96 Nov  6  2006 temp
+212603 dr-xr-xr-x   2 root       sys             96 Nov  6  2006 lib
+212518 drwxr-xr-x   4 root       sys             96 Nov  6  2006 importsap40b
+212650 drwxr-xr-x   4 root       sys             96 Nov  6  2006 importsap46b
+212499 drwxr-xr-x  14 root       sys           1024 Nov  6  2006 .
+212668 drwxr-xr-x   8 root       sys           1024 Nov  6  2006 RFC_BRIDGE
+212517 drwxr-xr-x   2 root       sys           1024 Nov  6  2006 shell
+212607 drwxrwxrwx   2 root       sys           1024 Nov  6  2006 log
+     5 drwxr-xr-x  11 root       sys           1024 Oct 26 13:51 ..
+212605 drwxr-xr-x   2 root       sys           1024 Dec 31 10:58 exec
+212604 drwxr-xr-x   2 root       sys           1024 Jan 28 23:42 mgr

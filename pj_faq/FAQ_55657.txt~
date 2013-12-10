@@ -1,0 +1,33 @@
+
+Key words: task, update, rule, insert
+
+Subject: When a rule is modified, the rule needs to be inserted again to the task 
+
+Prerequisites:
+
+Application validation tests:
+
+Explanation:
+
+
+When a task is created, the rules it uses are copied into the task. If the rule is modified later, the task will not be affected, since it uses its own copy of the rule. This is a security control to prevent some human mistakes from impacting production. For example, if a rule is modified by mistake, all of the tasks that are using the same rule will not be impacted.
+The rule has to be inserted again into the tasks to change the scheduling of task accordingly, e.g. update the task and insert the rule again. 
+To check if a task will run as expected, you can use the "Simulate" function for each task to see how's the rules in each task are interpreted.
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+Public
+
+Experties level:
+

@@ -1,0 +1,149 @@
+Uxtrace Windows 4.3.1
+
+-.- Installation
+Veuillez decompresser l'archive dans le repertoire %UXMGR% ("mgr"), 
+ou copier tout le contenu dans un sous repertoire de %UXMGR%. (Les deux cas sont supportes).
+
+-.- Contenu du package
+* uxtrace.vbs
+* uxtrace_step1.bat
+* uxtrace_step2.vbs
+* tar.exe (seulement dans l'archive "with GNU tools")
+* gzip.exe (seulement dans l'archive "with GNU tools")
+* uxtrace_help_en.txt
+* uxtrace_help_fr.txt
+* uxtrace_prerequisite_check.bat
+* version_test.vbs
+
+-.- Comment le lancer
+1. En mode interactif
+L'uxtrace windows peut être exécuté en double cliquant sur le fichier uxtrace.vbs. 
+Une fenetre apparaitra permettant la saisie des parametres d'execution de l'uxtrace.
+
+2. En tache de fond
+Il est possible de lancer l'uxtrace a travers une uproc. Les meme fonctionnalites sont disponibles. 
+Pour le lancer en tache de fond:
+
+cscript uxtrace.vbs /batch:yes [ /area:{X,S,I,A} /file_level:{0-9} /target:{CS, C, S} ]
+
+Examples:
+cscript uxtrace.vbs /batch:YES 
+cscript uxtrace.vbs /batch:Y  /area:a 
+cscript uxtrace.vbs /batch:y  /file_level:4 /target:C
+cscript uxtrace.vbs /batch:y  /file_level:9 /target:C /area:x
+
+-.- Les parametres
+L'uxtrace windows accepte le meme jeu de parametres que l'uxtrace Unix.
+
+Note: La casse doit être respectée en ce qui concerne les paramètres, mais pas leurs valeurs.
+
+1). The Working Area: indique l'espace a considerer.
+
+Les valeurs possibles sont: A,I,S,X
+Valeur par defaut: X
+
+Note: Seul un espace peut etre considere a la fois.
+
+2). The Files to be collected: indique quels fichiers seront copies dans le resultat de l'uxtrace.
+
+Les valeurs possibles sont: 0 - 9
+Valeur par defaut: 0 (Ne copie aucun fichier)
+
+Avec la valeur 9, l'uxtrace copie tous les fichiers de l'espace en question. 
+Vous trouverez la liste exacte des fichiers copies en fonction du nombre specifie
+en lisant le script.
+
+3). Tracing target: indique si l'uxtrace recupere des informations systemes, Dollar Universe ou les deux.
+
+Les valeurs possibles sont une combinaison de C, S, CS, SC, SCE, SE, SO, SEO
+Valeur par defaut: CS
+
+C: recupere un listing complet de Dollar Universe. 
+Si les fichiers de Dollar Universe ont une taille superieure a une limite (par defaut 10 Mo),
+les fichiers sont sauvegardes et les listings ne sont pas executes.
+S: recupere un listing complet du systeme
+E: recupere le journal des evenements Windows
+O: Considere que la societe Dollar Universe est stoppée.
+
+-.- Transmission du resultat
+Afin d'éviter que le résultat de l'uxtrace soit intercepte par un antivirus ou un firewall, nous vous 
+recommandons les deux alternatives suivantes pour l'envoi;
+
+* Telecharger le resultat de l'uxtrace dans votre repertoire FTP ORSYP dans le sous repertoire "issues"
+* Nous envoyer le resultat de l'uxtrace via le site Internet "yousendit" (http://www.yousendit.com).
+Utiliser l'adresse de destinataire suivante: suppport@orsyp.com
+Preciser le numero de l'incident dans la fenetre "Message to recipient"
+
+-.- uxtrace_prerequisite_check.bat
+Ce script est utilisé afin de vérifier si l'environnement nécessaire à une exécution correcte de l'uxtrace est disponible
+sur le noeud Windows. Ce scritp peut être lancé via un double click ou depuis une fenêtre de commande (sans arguments).
+Ce script fait appel au script VBS version_test.vbs, lequel va générer un fichier texte nommé:
+
+uxtrace_prerequisite_check_output.txt 
+
+Si vous rencontrez des problèmes lors de l'exécution de l'uxtrace, merci de bien vouloir lancer 
+uxtrace_prerequisite_check.bat puis nous faire parvenir uxtrace_prerequisite_check_output.txt.
+
+-.- Fichiers generes
+Le nom du resultat de l'uxtrace commence avec un TMP_, et contient la date et l'heure de generation.
+Ce resultat est stocke dans le repertoire %UXMGR%.
+
+-.- Packaging effectues par des outils gnu.
+2 versions de l'uxtrace sont disponibles :
+
+- Le package ayant pour nom uxtrace_with_gnu_tools_vx.x.x.zip inclut les commandes gnu gzip et tar. Ceci permet un packaging automatique du resultat de l'uxtrace.
+Ces commandes sont les seules fournies sous la licence GPL.
+Ces commandes ont ete telechargees de la page suivante :
+http://gnuwin32.sourceforge.net/packages/tar.htm
+http://gnuwin32.sourceforge.net/packages/gzip.htm
+Et n'ont pas ete modifiees par Orsyp.
+Les sources et la documentation des commandes tar et gzip sont disponibles sur les pages en question ainsi 
+que dans le repertoire gnu_tools du stockage de l'uxtrace windows.
+
+- Le package ayant pour nom uxtrace_without_gnu_tools_vx.x.x.zip n'inclut pas les commandes gnu gzip et tar.
+ Le packaging du resultat de l'uxtrace n'est donc pas automatique.
+Ce package peut etre utilise dans le cas ou votre entreprise ne recommande pas l'utilisation d'outils gnu.
+
+La seule difference entre ces versions est le packaging automatique du resultat effectue par les commandes gnu.
+Pour plus d'information a propos de la licence gnu, veuillez verifier les packages tar et gzip ou visitez 
+le lien : http://www.gnu.org/ 
+
+-.- Limitations et prerequis
+* L'uxtrace Windows nécessite la version 5.6 de "Windows Script Host".
+* Si votre version n'est pas suffisante, vous pouvez télécharger la mise à jour vers la version 5.6 à l'adresse 
+suivante:
+http://www.microsoft.com/downloads/details.aspx?FamilyId=C717D943-7E4B-4622-86EB-95A22B832CAA&displaylang=en
+* uxtrace_prerequisite_check.bat peut être utilisé afin de vérifier si l'environnement nécessaire à une exécution 
+correcte de l'uxtrace est disponible sur le noeud Windows. Merci de bien vouloir vous référer à la section
+'uxtrace_prerequisite_check.bat' plus haut.
+* Le listing des process n'affiche pas les parametres de lancement.
+* PAT, ITO, SAP n'ont pas ete implementes.
+
+-.- Changements
+4.1: 
+1). Ajout de l'arguement "O" afin d'executer l'uxtrace sans l'execution de commandes Dollar Universe.
+ Ceci est necessaire quand les commandes Dollar Universe se bloquent.
+2). Ajout de la commande gpresult.exe, utilisee pour remplacer ismember.exe.
+
+4.2:
+1). Le listing des evenements Windows est optionnel et non active par defaut. 
+Ceci est controle par l'argument "E". Afin d'activer le listing des evenements Windows,
+specifiez ES pour l'argument Tracing Target.
+2). ISMEMBER.EXE est supprime
+
+4.2.1:
+1). Petites ameliorations.
+2). Ajout de ipconfig /all
+3). Supprime la dependance aux commandes tar et gzip, ne les utilise que comme une option supplémentaire.
+
+4.2.2:
+1). Petites ameliorations.
+2). Ping localhost. 
+
+ 4.3.0
+1). Correction de bug, un fichier est copie du mauvais repertoire lorsque DQM n'est pas utilise.
+2). Corretion Mineure
+3). Evolution, gestion des erreurs lors de la copie des fichiers
+4). Evolution, gestion des erreurs lors du listing des process
+ 
+

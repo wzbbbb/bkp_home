@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables version="1.0" xmlns:xsi="http://www.orsyp.com/ns/varc-instance">
+<!-- DO NOT MODIFY THIS FILE
+ Values indicated in this file are DEFAULT values (it is used if there is no value defined in the values file) -->
+<!-- 2008/02/08  -->
+<!-- VARIABLES are described using: ID (code name), TYPE (STRING or CHOICES only in the first version), DISPLAY (displayed name in the GUI), NATURE (to qualify the variables with some tags) and a DEFAULT VALUE (normally always defined) -->
+<!-- NATURE can be: INSTALL (installation variable), STATIC (variable change needs restart to take effect), DYNAMIC (no restart is needed) -->
+<!-- Variables are sorted using CATEGORIES -->
+
+<category icon="categ1.png">
+<name>
+	<display lang="EN">UniViewer Management Server settings</display>
+	<display lang="FR">Reglages de UniViewer Management Server</display>
+</name>
+<!-- Variable S_U_LANGUE -->
+<var id="S_U_LANGUE" is_env="N">
+   <display lang="EN">Language</display>
+   <nature>INSTALL</nature>
+   <data type="CHOICES">
+   <choice code="EN">
+      <display lang="EN">English</display>
+   </choice>
+   <choice code="FR">
+      <display lang="EN">Francais</display>
+   </choice>
+      <default>EN</default>
+   </data>
+</var>
+<!-- Variable U_FMT_DATE -->
+<var id="U_FMT_DATE" is_env="Y">
+   <display lang="EN">Date format</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="mm/dd/yyyy">
+      <display lang="EN">mm/dd/yyyy</display>
+   </choice>
+   <choice code="jj/mm/aaaa">
+      <display lang="EN">jj/mm/aaaa</display>
+   </choice>
+      <default>mm/dd/yyyy</default>
+   </data>
+</var>
+<!-- Variable JDBC_DRIVER -->
+<var id="JDBC_DRIVER" is_env="N">
+   <display lang="EN">Name of jdbc driver</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>org.hsqldb.jdbcDriver</default>
+   </data>
+</var>
+<!-- Variable JDBC_DRIVER_JAR -->
+<var id="JDBC_DRIVER_JAR" is_env="N">
+   <display lang="EN">Name of jdbc library</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_APP!/jars/hsqldb.jar</default>
+   </data>
+</var>
+<!-- Variable JDBC_URL -->
+<var id="JDBC_URL" is_env="N">
+   <display lang="EN">URL of jdbc driver</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>jdbc:hsqldb:!UXDEX!/unicentral.db</default>
+   </data>
+</var>
+</category>
+
+
+<category icon="categ2.png">
+<name>
+	<display lang="EN">Installation files and directories</display>
+	<display lang="FR">Fichiers et repertoires d'installation</display>
+</name>
+<!-- Variable UNI_DIR_ROOT -->
+<var id="UNI_DIR_ROOT" is_env="Y">
+   <display lang="EN">UniJob root directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable UNI_DIR_APP -->
+<var id="UNI_DIR_APP" is_env="N">
+   <display lang="EN">Application directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_ROOT!/app</default>
+   </data>
+</var>
+<!-- Variable UNI_DIR_DATA -->
+<var id="UNI_DIR_DATA" is_env="N">
+   <display lang="EN">Data directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_ROOT!/data</default>
+   </data>
+</var>
+<!-- Variable UXDIR_ROOT -->
+<var id="UXDIR_ROOT" is_env="Y">
+   <display lang="EN">DB root directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/data</default>
+   </data>
+</var>
+<!-- Variable UXEXE -->
+<var id="UXEXE" is_env="Y">
+   <display lang="EN">UniJob executables directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_APP!/bin</default>
+   </data>
+</var>
+<!-- Variable UXMGR -->
+<var id="UXMGR" is_env="Y">
+   <display lang="EN">UniJob maintenance directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!</default>
+   </data>
+</var>
+<!-- Variable UXDEX -->
+<var id="UXDEX" is_env="Y">
+   <display lang="EN">UniJob data directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/data</default>
+   </data>
+</var>
+<!-- Variable UXPEX -->
+<var id="UXPEX" is_env="Y">
+   <display lang="EN">UniJob scripts directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/upr</default>
+   </data>
+</var>
+<!-- Variable UXLEX -->
+<var id="UXLEX" is_env="Y">
+   <display lang="EN">UniJob log directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log</default>
+   </data>
+</var>
+<!-- Variable U_LIC_FILE -->
+<var id="U_LIC_FILE" is_env="N">
+   <display lang="EN">License file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/licenses.txt</default>
+   </data>
+</var>
+<!-- Variable SRVNET_DIR -->
+<var id="SRVNET_DIR" is_env="N">
+   <display lang="EN">Network configuration directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!</default>
+   </data>
+</var>
+<!-- Variable U_TMP_PATH -->
+<var id="U_TMP_PATH" is_env="Y">
+   <display lang="EN">Temporary directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/temp</default>
+   </data>
+</var>
+<!-- Variable AUT_NETWORK_FILE -->
+<var id="AUT_NETWORK_FILE" is_env="N">
+   <display lang="EN">Network configuration file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/network.xml</default>
+   </data>
+</var>
+<!-- Variable AUT_ROLES_FILE -->
+<var id="AUT_ROLES_FILE" is_env="N">
+   <display lang="EN">Roles configuration file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/roles.xml</default>
+   </data>
+</var>
+<!-- Variable AUT_PROXY_FILE -->
+<var id="AUT_PROXY_FILE" is_env="N">
+   <display lang="EN">Proxy configuration file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/proxy.xml</default>
+   </data>
+</var>
+<!-- Variable AUT_USERS_FILE -->
+<var id="AUT_USERS_FILE" is_env="N">
+   <display lang="EN">Users configuration file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/users.xml</default>
+   </data>
+</var>
+<!-- Variable AUT_PASSPHRASES_FILE -->
+<var id="AUT_PASSPHRASES_FILE" is_env="N">
+   <display lang="EN">Passphrases file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/phrases.bin</default>
+   </data>
+</var>
+<!-- Variable U_JT_PATH -->
+<var id="U_JT_PATH" is_env="N">
+   <display lang="EN">Job template directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/jobtemplates</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ3.png">
+<name>
+	<display lang="EN">UniJob server environment</display>
+	<display lang="FR">Environnement du serveur UniJob</display>
+</name>
+<!-- Variable S_NODENAME -->
+<var id="S_NODENAME" is_env="N">
+   <display lang="EN">Extended node name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable S_NOEUD -->
+<var id="S_NOEUD" is_env="N">
+   <display lang="EN">Node name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable U_LOCALHOSTNAME -->
+<var id="U_LOCALHOSTNAME" is_env="N">
+   <display lang="EN">Local host name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable UNI_VERSION -->
+<var id="UNI_VERSION" is_env="N">
+   <display lang="EN">Product version</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>UniViewer Server,1.1.0</default>
+   </data>
+</var>
+<!-- Variable S_CODNOEUD -->
+<var id="S_CODNOEUD" is_env="N">
+   <display lang="EN">Node name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!S_NOEUD!</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ4.png">
+<name>
+	<display lang="EN">Startup and shutdown</display>
+	<display lang="FR">Demarrage et arret</display>
+</name>
+	<!-- Variable AUT_ALM_STARTUP -->
+	<var id="AUT_ALM_STARTUP" is_env="N">
+	   <display lang="EN">Start-up for Alert Manager</display>
+	   <nature>STATIC</nature>
+	   <data type="CHOICES">
+	   <choice code="Y">
+	      <display lang="EN">Yes</display>
+	   </choice>
+	   <choice code="N">
+	      <display lang="EN">No</display>
+	   </choice>
+	      <default>Y</default>
+	   </data>
+	</var>
+</category>
+
+<category icon="categ5.png">
+<name>
+	<display lang="EN">Logging</display>
+	<display lang="FR">Log</display>
+</name>
+<!-- Variable UXLOG -->
+<var id="UXLOG" is_env="Y">
+   <display lang="EN">UniJob main log directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log</default>
+   </data>
+</var>
+<!-- Variable U_LOG_FILE -->
+<var id="U_LOG_FILE" is_env="N">
+   <display lang="EN">Main log file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log/uvserver.log</default>
+   </data>
+</var>
+<!-- Variable U_LOG_LEVEL -->
+<var id="U_LOG_LEVEL" is_env="N">
+   <display lang="EN">Main log level</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>0</default>
+   </data>
+</var>
+<!-- Variable U_LOG_TRANS -->
+<var id="U_LOG_TRANS" is_env="N">
+   <display lang="EN">Audit trail activation</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+      <default>Y</default>
+   </data>
+</var>
+<!-- Variable U_MAX_SIZE_LOG_FILE -->
+<var id="U_MAX_SIZE_LOG_FILE" is_env="N">
+   <display lang="EN">Maximum size for the log file (Mbytes)</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>100</default>
+   </data>
+</var>
+<!-- Variable U_ARCH_LOG_MAX_NB -->
+<var id="U_ARCH_LOG_MAX_NB" is_env="N">
+   <display lang="EN">Maximum number of archived log files</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>2</default>
+   </data>
+</var>
+<!-- Variable AUT_LOG4J_FILE -->
+<var id="AUT_LOG4J_FILE" is_env="N">
+   <display lang="EN">Log4j settings</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log4j.xml</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ6.png">
+<name>
+	<display lang="EN">Technical settings</display>
+	<display lang="FR">Reglages techniques</display>
+</name>
+<!-- Variable S_TIMEOUT -->
+<var id="S_TIMEOUT" is_env="N">
+   <display lang="EN">Default time-out</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>60</default>
+   </data>
+</var>
+<!-- Variable U_FULL_PATH -->
+<var id="U_FULL_PATH" is_env="N">
+   <display lang="EN">Changing UNIX path for ps command</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="Y">
+      <display lang="EN">Full path</display>
+   </choice>
+   <choice code="N">
+      <display lang="EN">Short path</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+<!-- Variable U_CONNECT_ITER_INTERVAL -->
+<var id="U_CONNECT_ITER_INTERVAL" is_env="N">
+   <display lang="EN">Seconds between two network connection attempts</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>0</default>
+   </data>
+</var>
+<!-- Variable U_CONNECT_ITER_NBMAX -->
+<var id="U_CONNECT_ITER_NBMAX" is_env="N">
+   <display lang="EN">Maximum number of network connection attempts</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>1</default>
+   </data>
+</var>
+<!-- Variable UXMAXFD -->
+<var id="UXMAXFD" is_env="N">
+   <display lang="EN">Maximum number of file descriptors</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>256</default>
+   </data>
+</var>
+<!-- Variable NODE STATUS IO REQUEST -->
+	<var id="NODE_STATUS_IO_REQUEST" is_env="N">
+	<display lang="EN">Get status for Dollar Universe nodes</display>
+	<nature>DYNAMIC</nature>
+	<data type="CHOICES">
+		<choice code="N">
+			<display lang="EN">No</display>
+		</choice>
+		<choice code="Y">
+			<display lang="EN">Yes</display>
+		</choice>
+		<default>N</default>
+	</data>
+</var>
+</category>
+
+<category icon="categ7.png">
+<name>
+	<display lang="EN">Maintenance</display>
+	<display lang="FR">Maintenance</display>
+</name>
+</category>
+
+<category icon="categ8.png">
+<name>
+	<display lang="EN">Advanced settings</display>
+	<display lang="FR">Reglages avances</display>
+</name>
+
+<!-- Variable AUT_SESSIONID_TIMEOUT_MIN -->
+<var id="AUT_SESSIONID_TIMEOUT_MIN" is_env="N">
+   <display lang="EN">Expiration delay for sessions (in minutes)</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>1440</default>
+   </data>
+</var>
+
+</category>
+
+<category icon="categ9.png">
+<name>
+	<display lang="EN">Default UniJob environment</display>
+	<display lang="FR">Environnement UniJob par defaut</display>
+</name>
+<!-- Variable S_SOCIETE -->
+<var id="S_SOCIETE" is_env="Y">
+   <display lang="EN">Company name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>UNIJOB</default>
+   </data>
+</var>
+<!-- Variable S_ESPEXE -->
+<var id="S_ESPEXE" is_env="Y">
+   <display lang="EN">Default Area</display>
+   <nature>INSTALL</nature>
+   <data type="CHOICES">
+   <choice code="A">
+      <display lang="EN">Application</display>
+   </choice>
+   <choice code="I">
+      <display lang="EN">Integration</display>
+   </choice>
+   <choice code="S">
+      <display lang="EN">Simulation</display>
+   </choice>
+   <choice code="X">
+      <display lang="EN">Production</display>
+   </choice>
+      <default>X</default>
+   </data>
+</var>
+<!-- Variable U_CLUSTER -->
+<var id="U_CLUSTER" is_env="N">
+   <display lang="EN">Cluster mode</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ11.png">
+	<name>
+		<display lang="EN">Alerts Settings</display> 
+        <display lang="FR">Reglage des alertes</display>
+	</name> 
+	<!-- Variable S_ALERT_NOTIFICATION -->
+	<var id="S_ALERT_NOTIFICATION" is_env="N">
+	<display lang="EN">Notification after unavailability</display>
+	<nature>STATIC</nature>
+	<data type="CHOICES">
+		<choice code="FROM_LAST">
+			<display lang="EN">From last received</display>
+		</choice>
+		<choice code="FROM_NOW">
+			<display lang="EN">Newer only</display>
+		</choice>
+		<choice code="ALL">
+			<display lang="EN">All</display>
+		</choice>
+		<default>FROM_LAST</default>
+    </data>
+	</var>
+	<!-- Variable S_SMTP_SERVER_HOST -->
+	<var id="S_SMTP_SERVER_HOST" is_env="N">
+	<display lang="EN">SMTP server host</display>
+	<nature>DYNAMIC</nature>
+	<data type="STRING">
+		<default></default>
+	</data>
+	</var>
+	<!-- Variable S_SMTP_SENDER -->
+	<var id="S_SMTP_SENDER" is_env="N">
+	<display lang="EN">SMTP sender</display>
+	<nature>DYNAMIC</nature>
+	<data type="STRING">
+		<default></default>
+	</data>
+	</var>
+	<!-- Variable U_ALM_CRITERIA_FILE -->
+	<var id="U_ALM_CRITERIA_FILE" is_env="N">
+	<display lang="EN">Alert Manager criteria file</display>
+	<nature>STATIC</nature>
+	<data type="STRING">
+		<default>!UNI_DIR_DATA!/alertmanager.xml</default>
+	</data>
+	</var>	
+	<!-- Variable U_ALM_RECONNECT_ELAPSE -->
+	<var id="U_ALM_RECONNECT_ELAPSE" is_env="N">
+	<display lang="EN">Alert Manager reconnection delay (seconds)</display>
+	<nature>STATIC</nature>
+	<data type="STRING">
+		<default>60</default>
+	</data>
+	</var>
+	<!-- Variable ALM_SERVICE_NOTIFY_ON_START -->
+	<var id="ALM_SERVICE_NOTIFY_ON_START" is_env="N">
+	<display lang="EN">Service notification when Alert Manager starts</display>
+	<nature>STATIC</nature>
+	<data type="CHOICES">
+		<choice code="N">
+			<display lang="EN">No</display>
+		</choice>
+		<choice code="Y">
+			<display lang="EN">Yes</display>
+		</choice>
+		<default>Y</default>
+	</data>
+	</var>
+</category>
+
+<category icon="categ10.png">
+<name>
+	<display lang="EN">Network parameters</display>
+	<display lang="FR">Parametres reseau</display>
+</name>
+<!-- Variable SRV_AUT_PORT -->
+<var id="SRV_AUT_PORT" is_env="N">
+   <display lang="EN">Port number for the authentication server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable SRV_AUT_HOST -->
+<var id="SRV_AUT_HOST" is_env="N">
+   <display lang="EN">Host for the authentication server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>HOST=localhost</default>
+   </data>
+</var>
+
+
+</category>
+
+</variables>
+

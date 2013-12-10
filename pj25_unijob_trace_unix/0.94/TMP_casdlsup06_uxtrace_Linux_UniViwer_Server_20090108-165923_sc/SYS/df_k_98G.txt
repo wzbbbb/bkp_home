@@ -1,0 +1,19 @@
+#CMD# df -k
+#TSP#  20090108-170101 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+/dev/hda1               256666     17397    226017   8% /boot
+tmpfs                   484844         0    484844   0% /dev/shm
+/dev/hda5            276836664  18723152 244051016   8% /dsk1
+support2:/dsk1/cases  65472416  60063264   2083296  97% /cases
+support2:/dsk1/windata
+                      65472416  60063264   2083296  97% /windata
+support2:/dsk1/lindata
+                      65472416  60063264   2083296  97% /lindata
+caribou:/dsk1/dlc01  163765376 122605824  32840704  79% /windata/20_Edition
+caribou:/dsk1/da_documents
+                     163765376 122605824  32840704  79% /da_documents
+casplda01:/dsk2/users
+                     288435136  54410496 219372960  20% /data/home
+caribou:/dsk1/da_documents/data
+                     163765376 122605824  32840704  79% /data/data

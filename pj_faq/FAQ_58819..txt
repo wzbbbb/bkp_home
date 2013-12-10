@@ -1,0 +1,40 @@
+
+Key words: resource, path, remote node 
+
+Subject: How to use space in resource's path
+
+Prerequisites:
+
+Application validation tests:
+
+Explanation:
+
+Spaces are not allowed in resource's path.
+The work around:
+For Unix: to create a soft link for the directory with space
+
+For Windows: use its 8.3 name.
+use "dir /x" to get it 8.3 name, and use it:
+for example:
+07/18/2007  12:03 PM    <DIR>          FINANC~1     financial monthend
+
+Or create a new mount point:
+D:\tmp>net use m: "\\USSDMDA007\d$\tmp\financial monthend"
+and access it as m:; then unmount it after.
+C:\>net use m: /delete
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

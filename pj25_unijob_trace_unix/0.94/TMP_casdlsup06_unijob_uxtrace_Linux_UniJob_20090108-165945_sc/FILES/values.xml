@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<values xmlns:xsi="http://www.orsyp.com/ns/val-instance" version="1.0">
+
+	<unijob>
+
+		<var id="UNI_DIR_ROOT">/apps/unijob110/unijob/casdlsup06_unijob</var>
+		<var id="S_NOEUD">local</var>
+		<var id="S_NODENAME">casdlsup06_unijob</var>
+		<var id="U_LOCALHOSTNAME">casdlsup06.orsypgroup.com</var>
+		<var id="UX_IO_VAR_OS">LINUX_REDHAT</var>
+
+		<var id="S_U_LANGUE">EN</var>
+		<var id="U_FMT_DATE">mm/dd/yyyy</var>
+
+		<var id="SRV_AUT_PORT">4184</var>
+		<var id="SRV_AUT_HOST">HOST=casdlsup06</var>		
+
+		<var id="SRV_SIO_PORT">52004</var>
+		<var id="SRV_CDJ_PORT">52005</var>
+		<var id="SRV_CAL_PORT">52006</var>
+	
+		<var id="U_NO_SETHDLTERM">Y</var>
+	
+	</unijob>
+
+</values>

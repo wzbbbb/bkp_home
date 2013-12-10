@@ -1,0 +1,28 @@
+#! /bin/ksh
+# ========================================================
+# ORSYP.Sa           
+#   ------------------------------------------------------
+#   UNIVERSE startup procedure
+#  To be run before any administrator attempt to access 
+#  UNIVERSE
+# ========================================================
+#
+#echo "UNIVERSE startup procedure beginning"
+#
+. /universe/OSCORP/mgr/uxsetenv
+#
+$UXEXE/uxgetmsg INSTTEXT000137
+#. /universe/OSCORP/mgr/ux_vrf_rgz_rst
+#
+UX_STATUS=$?
+#
+if [ $UX_STATUS -eq 0 ]
+  then
+    ksh $UXMGR/uxstartup_gen ocean67 OSCORP
+#    echo "End of UNIVERSE startup procedure"
+    $UXEXE/uxgetmsg INSTTEXT000138
+else
+#    echo "Failed to start UNIVERSE"
+    $UXEXE/uxgetmsg INSTTEXT000148
+fi
+#

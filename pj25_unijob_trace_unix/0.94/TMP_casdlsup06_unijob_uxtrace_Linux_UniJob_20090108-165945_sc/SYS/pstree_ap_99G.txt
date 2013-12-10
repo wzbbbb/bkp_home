@@ -1,0 +1,490 @@
+#CMD# pstree -ap
+#TSP#  20090108-170153 
+init,1                             
+  |-Xvnc,2069 :2 -desktop casdlsup06.orsypgroup.com:2\040(root) -httpd /usr/share/vnc/classes -auth /root/.Xauthority -geometry ...
+  |-acpid,1867
+  |-at-spi-registry,2414 --oaf-activate-iid=OAFIID:Accessibility_Registry:1.0 --oaf-ior-fd=23
+  |-atd,2095
+  |-automount,1843 --timeout=60 /net program /etc/auto.net
+  |-avahi-daemon,2198
+  |   `-avahi-daemon,2199
+  |-bash,9173
+  |   `-java,9174 -Xmx1024m -Xms512m -cp...
+  |       |-{java},9175
+  |       |-{java},9176
+  |       |-{java},9177
+  |       |-{java},9178
+  |       |-{java},9179
+  |       |-{java},9180
+  |       |-{java},9181
+  |       |-{java},9182
+  |       |-{java},9183
+  |       |-{java},9330
+  |       |-{java},9331
+  |       |-{java},9379
+  |       |-{java},9380
+  |       |-{java},9434
+  |       |-{java},9435
+  |       |-{java},9436
+  |       |-{java},9437
+  |       |-{java},9438
+  |       |-{java},9439
+  |       |-{java},9440
+  |       |-{java},9441
+  |       |-{java},9450
+  |       |-{java},9451
+  |       |-{java},9453
+  |       |-{java},9479
+  |       `-{java},9480
+  |-bonobo-activati,2412 --ac-activate --ior-output-fd=12
+  |-crond,1997
+  |-cups-config-dae,2211
+  |-cupsd,26797
+  |-dbus-daemon,1675 --system
+  |-dcopserver,2371 --nosid
+  |-(events/0,8)
+  |-(events/1,9)
+  |-gam_server,2398
+  |-gpm,1987 -m /dev/input/mice -t exps2
+  |-hald,2221
+  |   `-hald-runner,2222
+  |       |-hald-addon-acpi,2228
+  |       |-hald-addon-keyb,2241
+  |       `-hald-addon-stor,2249
+  |-hcid,1684
+  |-hidd,1745 --server
+  |-irqbalance,1602
+  |-java,32206 -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager-Djava.util.logging.config.file
+  |   |-{java},32207
+  |   |-{java},32208
+  |   |-{java},32209
+  |   |-{java},32210
+  |   |-{java},32211
+  |   |-{java},32212
+  |   |-{java},32213
+  |   |-{java},32214
+  |   |-{java},32215
+  |   |-{java},32216
+  |   |-{java},32217
+  |   |-{java},32218
+  |   |-{java},32219
+  |   |-{java},32220
+  |   |-{java},32221
+  |   |-{java},32222
+  |   |-{java},32223
+  |   |-{java},32224
+  |   |-{java},32225
+  |   |-{java},32227
+  |   |-{java},32228
+  |   |-{java},32229
+  |   |-{java},32230
+  |   |-{java},32231
+  |   |-{java},32232
+  |   |-{java},32233
+  |   |-{java},32234
+  |   |-{java},32235
+  |   |-{java},32236
+  |   |-{java},32237
+  |   |-{java},32238
+  |   |-{java},32239
+  |   |-{java},32240
+  |   |-{java},32241
+  |   |-{java},32242
+  |   |-{java},32243
+  |   |-{java},32244
+  |   |-{java},32245
+  |   |-{java},32246
+  |   |-{java},32247
+  |   |-{java},32248
+  |   |-{java},32249
+  |   |-{java},32250
+  |   `-{java},32251
+  |-java,5222 -jar /apps/unijob110/univiewer_server/casdlsup06/app/jars/centralserver-start.jar
+  |   |-{java},5223
+  |   |-{java},5224
+  |   |-{java},5225
+  |   |-{java},5226
+  |   |-{java},5227
+  |   |-{java},5228
+  |   |-{java},5229
+  |   |-{java},5230
+  |   |-{java},5231
+  |   |-{java},5232
+  |   |-{java},5233
+  |   |-{java},5234
+  |   |-{java},5235
+  |   |-{java},5236
+  |   |-{java},5237
+  |   |-{java},5238
+  |   |-{java},5239
+  |   |-{java},5240
+  |   |-{java},5241
+  |   |-{java},5242
+  |   |-{java},5243
+  |   `-{java},5245
+  |-kaccess,2434
+  |-kded,2396 --new-startup
+  |-kdeinit,2364                    
+  |   |-artsd,2432 -F 10 -S 4096 -s 60 -m artsmessage -c drkonqi -l 3 -f
+  |   |-kio_file,2426
+  |   |-klauncher,2382     
+  |   |-konsole,2436 -session 102b521d261297000115558775500000023580010_1155589806_110901
+  |   |   `-bash,2441
+  |   `-kwin,2421 -session 102b521d261297000115558037900000023580000_1155589806_134678
+  |-kdesktop,2423
+  |-(khelper,10)
+  |-kicker,2425
+  |-klogd,1592 -x
+  |-(krfcommd,1706)
+  |-ksmserver,2420
+  |-(ksoftirqd/0,3)
+  |-(ksoftirqd/1,6)
+  |-(kswapd0,205)
+  |-(kthread,11)
+  |   |-(aio/0,206)
+  |   |-(aio/1,207)
+  |   |-(kacpid,16)
+  |   |-(kauditd,431)
+  |   |-(kblockd/0,14)
+  |   |-(kblockd/1,15)
+  |   |-(khubd,138)
+  |   |-(kjournald,392)
+  |   |-(kjournald,1317)
+  |   |-(kjournald,1319)
+  |   |-(kmirrord,1292)
+  |   |-(kpsmoused,375)
+  |   |-(kseriod,140)
+  |   |-(pdflush,5978)
+  |   |-(pdflush,30572)
+  |   |-(rpciod/0,2523)
+  |   `-(rpciod/1,2524)
+  |-(lockd,2525)
+  |-master,1950
+  |   |-pickup,14532 -l -t fifo -u
+  |   `-qmgr,1965 -l -t fifo -u
+  |-(migration/0,2)
+  |-(migration/1,5)
+  |-mingetty,2267 tty1
+  |-mingetty,2269 tty2
+  |-mingetty,2271 tty3
+  |-mingetty,2280 tty4
+  |-mingetty,2283 tty5
+  |-mingetty,2286 tty6
+  |-ntpd,1897 -u ntp:ntp -p /var/run/ntpd.pid -g
+  |-portmap,1612
+  |-prefdm,2306 /etc/X11/prefdm -nodaemon
+  |   `-gdm-binary,2327 -nodaemon
+  |       `-gdm-binary,2366 -nodaemon
+  |           |-Xorg,2369 :0 -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+  |           `-gdmgreeter,2409...
+  |-rpc.idmapd,1661
+  |-rpc.statd,1631
+  |-sdpd,1687
+  |-sendmail,1978
+  |-smartd,1858 -q never
+  |-sshd,1885
+  |   |-sshd,7559 
+  |   |   `-sshd,7561  
+  |   |       `-bash,7562
+  |   |           `-su,26175
+  |   |               `-bash,26177
+  |   |-sshd,26213 
+  |   |   `-sshd,26215  
+  |   |       `-bash,26216
+  |   |           `-su,26247 -
+  |   |               `-bash,26249
+  |   |                   `-bash,26273
+  |   |-sshd,26675 
+  |   |   `-sshd,26679  
+  |   |       `-bash,26680
+  |   |           `-su,5549
+  |   |               `-bash,5551
+  |   |                   `-uxtrace,23327 ./uxtrace
+  |   |                       `-pstree,26877 -ap
+  |   |-sshd,27596 
+  |   |   `-sshd,27599  
+  |   |       `-bash,27600
+  |   |           `-su,27631 -
+  |   |               `-bash,27633
+  |   |                   `-bash,27655
+  |   `-sshd,14855 
+  |       `-sshd,14858  
+  |           `-bash,14859
+  |               `-su,14891 univa
+  |                   `-bash,14892
+  |                       `-LoadDuEnv,14910 /etc/daenv/du/LoadDuEnv
+  |                           `-ksh,15325
+  |-startkde,2081 /usr/bin/startkde
+  |   `-kwrapper,2418 ksmserver
+  |-syslogd,1589 -m 0
+  |-udevd,455 -d
+  |-unical,5761 UNIJOB X casdlsup06_unijob
+  |   `-{unical},5766
+  |-unicdj,5757 UNIJOB X casdlsup06_unijob
+  |   `-{unicdj},5767
+  |-uniio,5755 UNIJOB X casdlsup06_unijob
+  |   |-{uniio},5762
+  |   |-{uniio},5763
+  |   |-{uniio},5764
+  |   `-{uniio},5768
+  |-unilan,5759 UNIJOB X casdlsup06_unijob
+  |   `-{unilan},5765
+  |-uxbvssrv,16008 PRE530 X casdlsup06
+  |   `-{uxbvssrv},16029
+  |-uxbvssrv,16020 PRE530 S casdlsup06
+  |   `-{uxbvssrv},16025
+  |-uxbvssrv,16036 PRE530 I casdlsup06
+  |   `-{uxbvssrv},16038
+  |-uxbvssrv,16046 PRE530 A casdlsup06
+  |   `-{uxbvssrv},16047
+  |-uxbvssrv,13042 TST530 X casdlsup06
+  |   |-{uxbvssrv},13044
+  |   |-{uxbvssrv},13064
+  |   |-{uxbvssrv},13065
+  |   `-{uxbvssrv},13066
+  |-uxbvssrv,13050 TST530 A casdlsup06
+  |   `-{uxbvssrv},13055
+  |-uxbvssrv,17133 TST540 X casdlsup06
+  |   `-{uxbvssrv},17138
+  |-uxbvssrv,17137 TST540 A casdlsup06
+  |   `-{uxbvssrv},17146
+  |-uxbvssrv,19662 FLS520 X casdlsup06
+  |   `-{uxbvssrv},19663
+  |-uxbvssrv,19665 FLS520 S casdlsup06
+  |   `-{uxbvssrv},19668
+  |-uxbvssrv,19670 FLS520 I casdlsup06
+  |   `-{uxbvssrv},19678
+  |-uxbvssrv,19672 FLS520 A casdlsup06
+  |   `-{uxbvssrv},19679
+  |-uxbvssrv,18989 FLS530 X casdlsup06
+  |   `-{uxbvssrv},18999
+  |-uxbvssrv,18994 FLS530 A casdlsup06
+  |   `-{uxbvssrv},19007
+  |-uxcal,16063 PRE530 X casdlsup06
+  |-uxcal,16111 PRE530 S casdlsup06
+  |-uxcal,16154 PRE530 A casdlsup06
+  |-uxcal,16195 PRE530 I casdlsup06
+  |-uxcal,22489 TST500 X casdlsup06
+  |-uxcal,22552 TST500 A casdlsup06
+  |-uxcal,13084 TST530 X casdlsup06
+  |-uxcal,8130 TST511 X casdlsup06
+  |-uxcal,17165 TST540 X casdlsup06
+  |-uxcdjsrv,16021 PRE530 X casdlsup06
+  |   `-{uxcdjsrv},16053
+  |-uxcdjsrv,16024 PRE530 A casdlsup06
+  |   |-{uxcdjsrv},16051
+  |   `-{uxcdjsrv},16310
+  |-uxcdjsrv,16026 PRE530 I casdlsup06
+  |   `-{uxcdjsrv},16052
+  |-uxcdjsrv,16028 PRE530 S casdlsup06
+  |   `-{uxcdjsrv},16067
+  |-uxcdjsrv,22474 TST500 X casdlsup06
+  |   `-{uxcdjsrv},22479
+  |-uxcdjsrv,22475 TST500 A casdlsup06
+  |   `-{uxcdjsrv},22478
+  |-uxcdjsrv,13035 TST530 X casdlsup06
+  |   |-{uxcdjsrv},13048
+  |   |-{uxcdjsrv},13068
+  |   `-{uxcdjsrv},13390
+  |-uxcdjsrv,13040 TST530 A casdlsup06
+  |   `-{uxcdjsrv},13054
+  |-uxcdjsrv,8089 TST511 A casdlsup06
+  |   `-{uxcdjsrv},8111
+  |-uxcdjsrv,8094 TST511 S casdlsup06
+  |   `-{uxcdjsrv},8113
+  |-uxcdjsrv,8095 TST511 X casdlsup06
+  |   `-{uxcdjsrv},8110
+  |-uxcdjsrv,8097 TST511 I casdlsup06
+  |   `-{uxcdjsrv},8112
+  |-uxcdjsrv,9221 FLS510 X casdlsup06
+  |   `-{uxcdjsrv},9233
+  |-uxcdjsrv,9226 FLS510 A casdlsup06
+  |   `-{uxcdjsrv},9256
+  |-uxcdjsrv,9232 FLS510 I casdlsup06
+  |   `-{uxcdjsrv},9262
+  |-uxcdjsrv,17141 TST540 X casdlsup06
+  |   `-{uxcdjsrv},17153
+  |-uxcdjsrv,17144 TST540 A casdlsup06
+  |   `-{uxcdjsrv},17154
+  |-uxcdjsrv,19650 FLS520 X casdlsup06
+  |   `-{uxcdjsrv},19689
+  |-uxcdjsrv,19659 FLS520 A casdlsup06
+  |   `-{uxcdjsrv},19686
+  |-uxcdjsrv,19661 FLS520 I casdlsup06
+  |   `-{uxcdjsrv},19667
+  |-uxcdjsrv,19684 FLS520 S casdlsup06
+  |   `-{uxcdjsrv},19688
+  |-uxcdjsrv,18998 FLS530 X casdlsup06
+  |   `-{uxcdjsrv},19010
+  |-uxcdjsrv,19000 FLS530 A casdlsup06
+  |   `-{uxcdjsrv},19004
+  |-uxcmdsrv,22469 TST500 X casdlsup06
+  |-uxdqmsrv,15994 PRE530 X casdlsup06
+  |-uxdqmsrv,22463 TST500 X casdlsup06
+  |-uxdqmsrv,13030 TST530 X casdlsup06
+  |-uxdqmsrv,9201 FLS510 X casdlsup06
+  |-uxdqmsrv,17121 TST540 X casdlsup06
+  |   |-{uxdqmsrv},17124
+  |   |-{uxdqmsrv},17125
+  |   |-{uxdqmsrv},17126
+  |   `-{uxdqmsrv},17127
+  |-uxdqmsrv,19627 FLS520 X casdlsup06
+  |-uxdqmsrv,18982 FLS530 X casdlsup06
+  |-uxech,16091 PRE530 X casdlsup06
+  |-uxech,16141 PRE530 S casdlsup06
+  |-uxech,16181 PRE530 A casdlsup06
+  |-uxech,16223 PRE530 I casdlsup06
+  |-uxech,22514 TST500 X casdlsup06
+  |-uxech,22565 TST500 A casdlsup06
+  |-uxech,13110 TST530 X casdlsup06
+  |-uxech,8238 TST511 X casdlsup06
+  |-uxech,17189 TST540 X casdlsup06
+  |-uxioserv,15982 PRE530 X casdlsup06
+  |   |-{uxioserv},16030
+  |   |-{uxioserv},16031
+  |   |-{uxioserv},16037
+  |   |-{uxioserv},16041
+  |   |-{uxioserv},16042
+  |   |-{uxioserv},16044
+  |   |-{uxioserv},16065
+  |   |-{uxioserv},16080
+  |   |-{uxioserv},16093
+  |   |-{uxioserv},16116
+  |   |-{uxioserv},16117
+  |   |-{uxioserv},16130
+  |   |-{uxioserv},16144
+  |   |-{uxioserv},16156
+  |   |-{uxioserv},16171
+  |   |-{uxioserv},16183
+  |   |-{uxioserv},16197
+  |   |-{uxioserv},16210
+  |   |-{uxioserv},16225
+  |   `-{uxioserv},16627
+  |-uxioserv,15983 PRE530 S casdlsup06
+  |   |-{uxioserv},16027
+  |   |-{uxioserv},16035
+  |   |-{uxioserv},16039
+  |   |-{uxioserv},16118
+  |   |-{uxioserv},16131
+  |   `-{uxioserv},16145
+  |-uxioserv,15988 PRE530 I casdlsup06
+  |   |-{uxioserv},16043
+  |   |-{uxioserv},16045
+  |   |-{uxioserv},16050
+  |   |-{uxioserv},16198
+  |   |-{uxioserv},16211
+  |   `-{uxioserv},16226
+  |-uxioserv,15991 PRE530 A casdlsup06
+  |   |-{uxioserv},16040
+  |   |-{uxioserv},16048
+  |   |-{uxioserv},16049
+  |   |-{uxioserv},16157
+  |   |-{uxioserv},16172
+  |   `-{uxioserv},16184
+  |-uxioserv,22456 TST500 X casdlsup06
+  |   |-{uxioserv},22476
+  |   |-{uxioserv},22491
+  |   |-{uxioserv},22504
+  |   |-{uxioserv},22516
+  |   |-{uxioserv},22535
+  |   |-{uxioserv},22541
+  |   |-{uxioserv},22555
+  |   `-{uxioserv},22569
+  |-uxioserv,22460 TST500 A casdlsup06
+  |   |-{uxioserv},22477
+  |   |-{uxioserv},22540
+  |   |-{uxioserv},22554
+  |   `-{uxioserv},22568
+  |-uxioserv,13015 TST530 X casdlsup06
+  |   |-{uxioserv},13043
+  |   |-{uxioserv},13046
+  |   |-{uxioserv},13051
+  |   |-{uxioserv},13067
+  |   |-{uxioserv},13086
+  |   |-{uxioserv},13100
+  |   |-{uxioserv},13112
+  |   |-{uxioserv},13125
+  |   `-{uxioserv},13210
+  |-uxioserv,13022 TST530 S casdlsup06
+  |-uxioserv,13024 TST530 A casdlsup06
+  |   |-{uxioserv},13053
+  |   |-{uxioserv},13057
+  |   `-{uxioserv},13058
+  |-uxioserv,8031 TST511 X casdlsup06
+  |   |-{uxioserv},8098
+  |   |-{uxioserv},8133
+  |   |-{uxioserv},8182
+  |   |-{uxioserv},8240
+  |   |-{uxioserv},8260
+  |   |-{uxioserv},11134
+  |   |-{uxioserv},11137
+  |   |-{uxioserv},17965
+  |   `-{uxioserv},17968
+  |-uxioserv,8035 TST511 S casdlsup06
+  |   `-{uxioserv},8100
+  |-uxioserv,8039 TST511 I casdlsup06
+  |   `-{uxioserv},8099
+  |-uxioserv,8043 TST511 A casdlsup06
+  |   `-{uxioserv},8096
+  |-uxioserv,9202 FLS510 X casdlsup06
+  |   `-{uxioserv},9231
+  |-uxioserv,9206 FLS510 I casdlsup06
+  |   `-{uxioserv},9261
+  |-uxioserv,9210 FLS510 A casdlsup06
+  |   `-{uxioserv},9255
+  |-uxioserv,17115 TST540 X casdlsup06
+  |   |-{uxioserv},17145
+  |   |-{uxioserv},17148
+  |   |-{uxioserv},17149
+  |   |-{uxioserv},17150
+  |   |-{uxioserv},17167
+  |   |-{uxioserv},17179
+  |   |-{uxioserv},17191
+  |   `-{uxioserv},17205
+  |-uxioserv,17116 TST540 A casdlsup06
+  |   |-{uxioserv},17147
+  |   |-{uxioserv},17151
+  |   `-{uxioserv},17152
+  |-uxioserv,19632 FLS520 X casdlsup06
+  |   |-{uxioserv},19660
+  |   |-{uxioserv},19674
+  |   `-{uxioserv},19675
+  |-uxioserv,19636 FLS520 S casdlsup06
+  |   |-{uxioserv},19676
+  |   |-{uxioserv},19677
+  |   `-{uxioserv},19687
+  |-uxioserv,19640 FLS520 I casdlsup06
+  |   |-{uxioserv},19666
+  |   |-{uxioserv},19680
+  |   `-{uxioserv},19681
+  |-uxioserv,19644 FLS520 A casdlsup06
+  |   |-{uxioserv},19682
+  |   |-{uxioserv},19683
+  |   `-{uxioserv},19685
+  |-uxioserv,18974 FLS530 X casdlsup06
+  |   |-{uxioserv},19001
+  |   |-{uxioserv},19002
+  |   |-{uxioserv},19005
+  |   `-{uxioserv},19006
+  |-uxioserv,18978 FLS530 A casdlsup06
+  |   |-{uxioserv},19003
+  |   |-{uxioserv},19008
+  |   `-{uxioserv},19009
+  |-uxord,16078 PRE530 X casdlsup06
+  |-uxord,16127 PRE530 S casdlsup06
+  |-uxord,16169 PRE530 A casdlsup06
+  |-uxord,16208 PRE530 I casdlsup06
+  |-uxord,22502 TST500 X casdlsup06
+  |-uxord,22538 TST500 A casdlsup06
+  |-uxord,13098 TST530 X casdlsup06
+  |-uxord,8180 TST511 X casdlsup06
+  |-uxord,17177 TST540 X casdlsup06
+  |-uxsur,16113 PRE530 X casdlsup06
+  |-uxsur,22526 TST500 X casdlsup06
+  |-uxsur,13123 TST530 X casdlsup06
+  |-uxsur,8258 TST511 X casdlsup06
+  |-uxsur,17203 TST540 X casdlsup06
+  |-vncconfig,2080 -iconic
+  |-(watchdog/0,4)
+  |-(watchdog/1,7)
+  `-xfs,2028 -droppriv -daemon

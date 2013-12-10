@@ -1,0 +1,33 @@
+#---- Begin script foo.ps1 ----
+#param([string]$foo = "", [string]$bar = "")
+#Write-Host "Arg: $foo"
+#Write-Host "Arg: $bar"
+#----  End script foo.ps1  ----
+#PS C:\> .\foo.ps1 -foo "foo" -bar "bar"
+#Arg: foo
+#Arg: bar
+
+#write-host "number of args: " $args.length 
+#foreach ($arg in $args) {
+#	write-host the arg is $arg
+#}
+#$args[0]
+#$args[1]
+
+#netstat -an|findstr 35015  2>&1 > $null
+#write-host $?
+#$node_="calpmzwa"
+#Get-Content d:\apps\powershell\duas6012_custom.iss |foreach {$_ -replace "Node_code=VM2K8R2001", "Node_code=$node_"} |set-content d:\apps\powershell\current_template.iss;
+#(Get-Content d:\apps\powershell\current_template.iss )|foreach {$_ -replace [regex]::Escape("c:\ORSYP\DUAS\TMP600_VM2K8R2001"), "c:\ORSYP\DUAS\TMP600_calpmzwa"} |set-content d:\apps\powershell\current_template.iss
+
+#du_as_6.0.13_windows64.exe /s /f1"c:\temp\duas6013_custom.iss" /f2"c:\temp\duas6013.log"
+$UNI_DIR_EXEC="C:\tmp\du\DUPPRD_EUSIP001\bin"
+$UXMGR="C:\tmp\du\DUPPRD_EUSIP001\mgr"
+$area_3="app"
+$dir_dufiles="C:\tmp\du\uxtrace_EUSIP001_windows_DUAS_6.0.11_DUPPRD_20130227_153737_A9CS\DUFILES"
+$ctl={cmd /c "$UXMGR\uxsetenv & $UNI_DIR_EXEC\uxlst ctl full $area_3 >$dir_dufiles/../LST/dump_uxlst_ctl_full.txt"}
+$fla={cmd /c "$UXMGR\uxsetenv & $UNI_DIR_EXEC\uxlst fla full $area_3 >$dir_dufiles/../LST/dump_uxlst_fla_full.txt"}
+
+start-job $ctl 
+start-job $fla
+

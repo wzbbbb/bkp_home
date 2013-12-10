@@ -1,0 +1,98 @@
+Windows UniJob Uxtrace 0.9.2
+
+-.- Installation
+Please unpack the package in the "app" directory, or put everything in a directory under "app", it will work in both cases.
+
+-.- Package contents
+* uxtrace.vbs
+* uxtrace_step1.bat
+* uxtrace_step2.vbs
+* tar.exe (available in the "with GNU tools" package only)
+* gzip.exe (available in the "with GNU tools" package only)
+* uxtrace_help_en.txt
+* uxtrace_help_fr.txt
+* uxtrace_prerequisite_check.bat
+* uxtrace_version_test.vbs
+
+-.- To launch it
+1. Interactively
+The Windows uxtrace could be launched by double clicking on the uxtrace.vbs file. It will, then, pop up dialog boxes to ask for parameters.
+
+2. Batch mode
+The batch mode makes it possible to launch the uxtrace through an uproc. It provides the same functionality. To launch it in batch mode:
+
+cscript uxtrace.vbs /batch:yes [ /area:{X,S,I,A} /file_level:{0-9} /target:{CS, C, S} ]
+
+Examples:
+cscript uxtrace.vbs /batch:YES 
+cscript uxtrace.vbs /batch:Y  /area:a 
+cscript uxtrace.vbs /batch:y  /file_level:4 /target:C
+cscript uxtrace.vbs /batch:y  /file_level:9 /target:C /area:x
+
+-.- The parameters
+The Windows uxtrace will accept the same set of parameters as the Unix uxtrace.
+
+Note:  All of the parameter names are case sensitive, but the values are not.
+
+1). The working area 
+
+The valid parameters are: X
+Default value: X
+
+
+2). The files to be collected
+
+The valid parameters are: 0 - 9
+Default Value: 0 (Do not collect any data files)
+
+With value 9, the uxtrace will back all of the data files. For detailed description on which files are collected with which number and how are the files grouped, please check for additional document; or read the script.
+
+3). Tracing Target
+
+Valid parameters are : C, S, CS, SC, SCE, SE, SO, SEO
+Default Value: CS
+
+C: to collect UniJob or UniViewer Server related information, with intensive listing result. Similiar to the behavior of the Unix uxtrace, if the related data files are bigger than a threshold value (default 10M), instead of running the "uxlst", the data files will be copied.
+S: to collect operating system information, more screenshots, plus registry, etc.
+E: to collect Windows event log
+O: run the uxtrace and consider the UniJob or UniViewer Server Company shutdown
+
+-.- File generated
+The uxtrace result will start with the TMP_ string, will contain the generation time stamp and will be a saved in the %UXMGR% directory.
+
+-.- Sending the result
+To prevent the uxtrace result from being removed by antiviruses or email firewall, Orsyp recommends the following 2 alternatives: 
+
+* upload the uxtrace result on your Orsyp ftp directory
+* send the uxtrace result with "yousendit" (http://www.yousendit.com) to suppport@orsyp.com
+(Please specify the case number in the "Message to recipient")
+
+-.- uxtrace_prerequisite_check.bat
+This script is used to check if the envrionemnt, necessary for the Windows uxtrace, is available on a Windows node. This script can be launched by double click on it or from a command window without parameters. This script will call a VBS script version_test.vbs. A text file will be generated, uxtrace_prerequisite_check_output.txt. Please send the uxtrace_prerequisite_check_output.txt file to Technical Support. 
+-.- GNU compression and packaging Tools
+For your convenience, two releases of the uxtrace are available :
+
+- The release named uxtrace_with_gnu_tools_v0.9.2.zip includes the gzip and tar gnu commands which allows the automatic packaging of the uxtrace result.
+The tar and gzip gnu commands are the only files delivered under the GPL license.
+The tar and gzip gnu commands have been dowloaded from the following web page :
+http://gnuwin32.sourceforge.net/packages/tar.htm
+http://gnuwin32.sourceforge.net/packages/gzip.htm
+And have not been modified by ORSYP.
+The source and documentation of the tar and gzip commands are available on these web pages and in the gnu_tools subdirectory of the windows uxtrace repository.
+
+- The release named uxtrace_without_gnu_tools_v0.9.2.zip does not include any gnu commands and therefore does not offer the automatic packaging of the uxtrace result.
+These release is to be used in case your company policy forbids the implementation of gnu tools in a production environment.
+
+The only difference between these releases is the automatic packaging feature offered by the release including the gzip and tar gnu commands.
+For more information about the gnu license, please check the tar and gzip packages or follow the link : http://www.gnu.org/ 
+
+-.-  requirements
+* The Windows uxtrace will need "Windows Script Host Version 5.6" to run.
+* To download and upgrade the WSH host to 5.6, please check the following website:
+http://www.microsoft.com/downloads/details.aspx?FamilyId=C717D943-7E4B-4622-86EB-95A22B832CAA&displaylang=en
+* To check if a Windows node will be able to run the Windows uxtrace, please run the uxtrace_prerequisite_check.bat script, and send the generated uxtrace_prerequisite_check_output.txt file to Technical Support. For the more details about this script, please check the section uxtrace_prerequisite_check.bat.
+
+-.- Limitations and
+* The process listings do not show their launch parameters. 
+* Several functions have not yet been implemented, e.g. PAT, ITO and SAP.
+

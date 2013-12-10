@@ -1,0 +1,43 @@
+Key words:
+
+	useralias.txt, Windows user services, Dollar Universe user, Dollar Universe command
+
+Subject:
+
+	How to define the useralias.txt file to run Dollar Universe commands in jobs.
+
+Prerequistites:
+
+Application validation tests:
+
+Explanation:
+
+	The useralias.txt file is used to map Windows users to Dollar Universe users. Let's consider the following entries:
+	Domain1           user1                 univa 
+	NT1               univa                 univa 
+	There are 3 columns in each line. The first one is the host/domain of the user; the second one is the Windows user name; the last column is the Dollar Universe name.
+	The first line maps the user1 from Windows domain Domain1 to Dollar Universe user univa. The second line maps Winodws local user univa on the node NT1 to Dollar Universe univa.
+
+	To run a Dollar Universe command in a job means that the submission account of the job has to be able to match to a Dollar Universe user. Considering the following situation:
+
+	user1 from Windows Domain1 is using a Dollar Universe Windows GUI to create a launch. The following entry will enable him to access the Dollar Universe Windows GUI:
+	Domain1           user1                 univa 
+
+	However, with only one entry, if he creates a launch with the submission account univa, the job will not be able to run Dollar Universe commands. Since the Windows user service that will acctually run the job is univa, which can not map to a Dollar Universe user. The following entry in the useralias.txt file is necessary for the job to run a Dollar Universe commands:
+
+	NT1               univa                 univa 
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level: everyone
+
+Experties level:
+

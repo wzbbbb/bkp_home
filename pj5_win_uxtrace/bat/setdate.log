@@ -1,0 +1,10 @@
+VarName     : UXDATE 
+InFileName  : dateclean.tmp 
+NbLine      : 1 
+NbCol       : 0 
+LgthVal     : 20 
+OutFileName : uxdatetemp.bat 
+ValEnv : 02232005
+ 
+CmdEnv : set UXDATE=02232005
+ 

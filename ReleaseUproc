@@ -1,0 +1,441 @@
+#!/bin/ksh
+
+############################################################################################
+#
+#Orsyp / VFE 27FEB2004
+#
+#Object: Removes onHold from a single uproc in a node for a particular area
+#Syntax: ReleaseUproc <uproc> <area> <$Universe nodename>
+#Example:
+# ./ReleaseUproc VFE4 EXP bastille
+############################################################################################
+
+#Debug mode - for tests only (true|false)
+bDebug=false
+
+##########################################
+# Parameters
+##########################################
+P_UPROC=$1
+P_AREA=$2
+P_NODE=$3
+
+##########################################
+# Initializations
+##########################################
+
+#Constants: in upper case
+########################
+typeset PRODUCT_NAME="ReleaseUproc"
+typeset PRODUCT_VERSION="1.0.0"
+
+typeset USAGE_0="Orsyp - $PRODUCT_NAME v. ${PRODUCT_VERSION}"
+typeset USAGE_1=" "
+typeset USAGE_2="Usage: $PRODUCT_NAME <uproc> <area> <nodename>"
+typeset USAGE_3="  uproc: Uproc to be released"
+typeset USAGE_4="  area: in which area (APP|INT|SIM|EXP)"
+typeset USAGE_5="  nodename: the Dollar Universe node name"
+
+typeset MAX_TOKENS=9999                     #Max number of tokens we can use. Important. We are grepping on this value
+
+typeset SINGLECHAR="[-A-Za-z0-9_]"          #Mandatory name
+typeset MNAME="${SINGLECHAR}+"              #Mandatory name
+typeset ONAME="${SINGLECHAR}*"              #Optional name
+typeset MSPACES="[ ]+"                      #Mandatory spaces
+typeset OSPACES="[ ]*"                      #Optional spaces
+
+#
+#Define which "grep" binary we are using
+#OS compatibility: 
+#    grep -E tested on HPux 11.11 + HP 11.0 + Dynix 4.5.3
+#    /usr/xpg4/bin/grep -E tested on Solaris 2.6 and 2.8
+#
+typeset GREP="grep -Ei" #Default, case insensitive
+[[ -x /usr/xpg4/bin/grep ]] && GREP="/usr/xpg4/bin/grep -Ei"
+
+#Temporary variables: lower case
+########################
+typeset nCount=0
+typeset nQt1=0
+typeset szString=""
+typeset nNB=0
+typeset nRes=1
+typeset nRes2=1
+
+########################
+#Global variables
+########################
+typeset G_ESPEXE="X"                        #Default value for the area
+typeset G_VUPR="000"                        #Default value for the version
+typeset G_RESOURCE="TU_ONHOLD_${P_UPROC}"   #Name of the resource
+typeset G_LASTCOND=""                       #Last current condition used in uproc
+typeset G_NEXTCOND=99                       #Next available condition
+typeset G_INNERFOR=""                       #Original inner formula, inside parenthesis
+typeset G_NEWFORMULA=""                     #Formula modified
+typeset G_WORKFORMULA=""                    #Temporary Formula being worked on
+typeset G_nCOUNT_RES=0                      #Existence of resource?
+
+
+#Arrays
+#These 3 are symetric - same size
+set -A G_A_NUMCOND            #Array with num conditions: ex: 01 02 05 04
+set -A G_A_TYPE               #conditions type present in uproc: ex: dep inc res dep
+set -A G_A_NAME               #name of objects for conditions: ex: UPR1 UPR2 RES1 UPR4
+#
+set -A G_A_RES_IND            #Array with the indices where the resources are to be found in the 3 other arrays
+
+
+
+########################
+#Internal initializations
+########################
+[[ ${P_AREA} = "APP" ]] && G_ESPEXE="A"
+[[ ${P_AREA} = "INT" ]] && G_ESPEXE="I"
+[[ ${P_AREA} = "SIM" ]] && G_ESPEXE="S"
+[[ ${P_AREA} = "EXP" ]] && G_ESPEXE="X"
+
+[[ ${P_AREA} = "APP" ]] && G_VUPR="001"
+[[ ${P_AREA} = "INT" ]] && G_VUPR="001"
+[[ ${P_AREA} = "SIM" ]] && G_VUPR="000"
+[[ ${P_AREA} = "EXP" ]] && G_VUPR="000"
+
+
+
+############################################################################################
+### Functions
+############################################################################################
+Message()
+  {
+  echo "$1"
+  }
+
+############################################################################################
+#Name: Usage
+#Description: Gives the "Usage" message ; read from variables USAGE_0..to USAGE_N
+############################################################################################
+Usage()
+  {
+  #Local variables
+  typeset L_US_nCount=0
+  typeset L_US_Mes=$(eval echo "\$USAGE_${L_US_nCount}")
+  Message "  "
+  while [[ -n "${L_US_Mes}" ]]
+  do
+    Message "${L_US_Mes}"
+    let L_US_nCount=L_US_nCount+1
+    L_US_Mes="$(eval echo "\"\$USAGE_${L_US_nCount}\"")"
+  done
+  Message "  "
+  }
+
+############################################################################################
+#Name: FindMax
+#Object: Finds the highest condition in a list of conditions and echoes it
+#Usage: 
+#      MAXCOND=$(FindMax "<List of objects>")
+#
+#Example:
+#       MAXCOND=$(FindMax "$V_ALLCONDS")
+############################################################################################
+FindMax (){
+  #Parameters
+  P_FM_LIST=${1:?"Parameter 1 (P_FM_LIST) unknown"}
+
+  #Local variables
+  typeset L_FM_ITEM="01"
+  typeset L_FM_MAXCOND="01"
+
+  for L_FM_ITEM in ${P_FM_LIST}
+  do
+    L_FM_MAXCOND=$(echo $L_FM_ITEM $L_FM_MAXCOND | awk '
+      { 
+      if($1+0>$2+0)
+        print $1
+      else
+        print $2}')
+  done
+  echo $L_FM_MAXCOND
+  }
+
+############################################################################################
+#Name: GetFormula
+#Object: Finds the internal formula for a uproc and echoes it
+#Usage: 
+#   V_FORMULA_ORIG=$(GetFormula <uproc_name> <vupr> <area APP|INT|SIM|EXP> <Universe node>)
+#   if [[ $? -ne 0 ]];then .....
+#
+#Example:
+#   V_FORMULA_ORIG=$(GetFormula VFE4 000 EXP bastille)
+#   if [[ $? -ne 0 ]];then .....
+############################################################################################
+GetFormula()
+  {
+  #Parameters
+  P_GF_UPROC=${1:?"Parameter 1 (P_GF_UPROC) unknown"}
+  P_GF_VUPROC=${2:?"Parameter 2 (P_GF_VUPROC) unknown"}
+  P_GF_AREA=${3:?"Parameter 3 (P_GF_AREA) unknown"}
+  P_GF_NODE=${4:?"Parameter 4 (P_GF_NODE) unknown"}
+
+  #Local variables
+  typeset L_GF_ORIGINALFORMULA=""
+  typeset L_GF_RIGHTFOR=""   #Right side of formula
+  typeset L_GF_INNERFOR=""   #Inner formula
+
+  [[ -z "${GREP}" ]] && echo "GREP is not initialized!!!" && return 1
+
+  
+  L_GF_ORIGINALFORMULA=$(${UXEXE}/uxshw upr ${P_GF_AREA} node=${P_GF_NODE} UPR=${P_GF_UPROC} vupr=${P_GF_VUPROC} | ${GREP} "formula${OSPACES}:" | awk -F: '{ print $2 }' )
+  if [[ $? -ne 0 ]];then
+    return 1
+  fi
+  L_GF_RIGHTFOR=${L_GF_ORIGINALFORMULA#*( )\(*( )}
+  L_GF_INNERFOR=${L_GF_RIGHTFOR%*( )\)*( )}
+
+  # Delete BOTH leading and trailing whitespace
+  L_GF_INNERFOR=$(echo ${L_GF_INNERFOR}|sed 's/^[ \t]*//;s/[ \t]*$//')
+
+  echo ${L_GF_INNERFOR}
+  return 0
+  }
+
+############################################################################################
+#Name: ParseConditions
+#Object: Parses the conditions in a uproc, and loads following Arrays:
+#     G_A_NUMCOND  Array with num conditions: ex: 01 02 05 04
+#     G_A_TYPE     conditions type present in uproc: ex: dep inc res dep
+#     G_A_NAME     name of objects for conditions: ex: UPR1 UPR2 RES1 UPR4Usage: 
+# Finally:
+#     G_A_RES_IND  Array with the indices where the resources are to be found in the 3 other arrays
+#
+#Usage:
+#   ParseConditions <uproc_name> <vupr> <area APP|INT|SIM|EXP> <Universe node>
+#   if [[ $? -ne 0 ]];then .....
+#
+#Example:
+############################################################################################
+ParseConditions()
+  {
+  #Parameters
+  P_PC_UPROC=${1:?"Parameter 1 (P_PC_UPROC) unknown"}
+  P_PC_VUPROC=${2:?"Parameter 2 (P_PC_VUPROC) unknown"}
+  P_PC_AREA=${3:?"Parameter 3 (P_PC_AREA) unknown"}
+  P_PC_NODE=${4:?"Parameter 4 (P_PC_NODE) unknown"}
+
+  #Local variables
+  typeset L_PC_nCount=0
+  typeset L_PC_nCountCond=0
+  typeset L_PC_nCountRes=0
+  typeset L_PC_ALLNUMS=""     # 01 02 ...
+  typeset L_PC_ALLCONDS=""
+  typeset L_PC_nRes=1         #Result
+  
+  typeset TmpType=""
+  typeset TmpName=""
+
+  #Create a string with dependency numbers
+  L_PC_ALLNUMS=$(${UXEXE}/uxshw upr ${P_PC_AREA} UPR=${P_PC_UPROC} vupr=${P_PC_VUPROC} node=${P_PC_NODE} | ${GREP} "^${OSPACES}condno${OSPACES}:" | awk '{ print $3 }' )
+  L_PC_nRes=$?
+  if [[ ${L_PC_nRes} -ne 0 ]];then
+    Message "ERROR: Could not show contents of uproc ${P_PC_UPROC} in area ${P_PC_AREA} on node ${P_PC_NODE}. Giving up."
+    return 1
+  fi
+
+  #Create a string with <dependency type> <name> 
+  #as in: dep UPR1 dep UPR3 inc UPR3 res TU_ONHOLD_VFE1 res TU_ONHOLD_VFE1
+  L_PC_ALLCONDS=$(${UXEXE}/uxshw upr ${P_PC_AREA} UPR=${P_PC_UPROC} vupr=${P_PC_VUPROC} node=${P_PC_NODE} | ${GREP} "^${OSPACES}(dep|inc|res)${OSPACES}:${OSPACES}${MNAME}" | awk '{ print $1,$3 }')
+  if [[ ${L_PC_nRes} -ne 0 ]];then
+    Message "ERROR: Could not show contents of uproc ${P_PC_UPROC} in area ${P_PC_AREA} on node ${P_PC_NODE}. Giving up."
+    return 1
+  fi
+
+  #
+  #Transform variable string V_xx into an Array A_xx - overwrite them
+  #
+  set -A G_A_NUMCOND ${L_PC_ALLNUMS}
+  set -A L_A_ALLCONDS ${L_PC_ALLCONDS} #Temp local array
+
+  #
+  #L_A_ALLCONDS looks like: dep VFE4 dep VFE3 inc VFE3 res TU_ONHOLD_VFE1 res TU_ONHOLD_VFE1
+  #Now, separate L_A_ALLCONDS in 2 arrays
+  #
+  let L_PC_nCount=0
+  let L_PC_nCountCond=0
+  while (( ${L_PC_nCount} < ${#L_A_ALLCONDS[*]} )); do
+    G_A_TYPE[${L_PC_nCountCond}]=${L_A_ALLCONDS[${L_PC_nCount}]}
+    G_A_NAME[${L_PC_nCountCond}]=${L_A_ALLCONDS[${L_PC_nCount}+1]}
+    let L_PC_nCount="L_PC_nCount + 2"
+    let L_PC_nCountCond="L_PC_nCountCond + 1"
+  done
+
+  #
+  #Create a RES array with only resource conditions toward the one to suppress: G_RESOURCE
+  #
+  let L_PC_nCount=0
+  let L_PC_nCountRes=0
+  while (( ${L_PC_nCount} < ${#G_A_NUMCOND[*]} )); do
+    TmpType=${G_A_TYPE[${L_PC_nCount}]}
+    TmpName=${G_A_NAME[${L_PC_nCount}]}
+
+    if [ -n ${TmpType} -a -n ${TmpName} ];then
+      if [ ${TmpType} = "res" -a ${TmpName} = ${G_RESOURCE} ];then
+        G_A_RES_IND[${L_PC_nCountRes}]=${L_PC_nCount}
+        let L_PC_nCountRes="L_PC_nCountRes+1"
+      fi
+    fi
+    let L_PC_nCount="L_PC_nCount + 1"
+  done
+
+return 0
+}
+
+############################################################################################
+#
+#     Main
+#
+############################################################################################
+
+#P_UPROC is mandatory: otherwise, print "Usage"
+[[ -z "${P_UPROC}" ]]  && { Usage;exit 1; }
+
+#Check environment is loaded
+[[ -z "${UXEXE}" ]] && { Message "Dollar Universe environment is not initialized!!! (hint: uxsetenv)";exit 1; }
+
+#Check uproc existence
+Message "Info: Checking existence of uproc ${P_UPROC} v. ${G_VUPR} on node ${P_NODE} in area ${P_AREA}."
+nCount=$(${UXEXE}/uxlst upr ${P_AREA} node=${P_NODE} upr=${P_UPROC} vupr=${G_VUPR} | ${GREP} -v Command | ${GREP} "^${OSPACES}${P_UPROC}${OSPACES}" | wc -l)
+if (( $nCount < 1 ));then
+  Message "ERROR: Uproc ${P_UPROC} version ${G_VUPR} does not exist in area ${P_AREA} on node ${P_NODE}."
+  Message "       Giving up."
+  exit 1
+fi
+
+# Parsing dependencies in the uproc
+Message "Info: Analyzing dependencies."
+ParseConditions ${P_UPROC} ${G_VUPR} ${P_AREA} ${P_NODE}
+if [[ $? -ne 0 ]];then
+  Message "ERROR: Cannot parse conditions in uproc. Giving up."
+  exit 1
+fi
+
+##########################################
+#Retrieving FORMULA
+##########################################
+Message "Info: Parsing  formula."
+G_INNERFOR=$(GetFormula ${P_UPROC} ${G_VUPR} ${P_AREA} ${P_NODE})
+if [[ $? -ne 0 ]];then
+  echo Cannot get internal formula; giving up.
+  exit 1
+fi
+#Translate into english
+G_WORKFORMULA=$(echo ${G_INNERFOR} | sed -e 's/ ET / AND /g' | sed -e "s/ OU / OR /g")
+
+#Check resource existence
+Message "Info: Checking existence of resource ${G_RESOURCE} on node ${P_NODE}."
+G_nCOUNT_RES=$(${UXEXE}/uxlst res node=${P_NODE} RES=${G_RESOURCE} | ${GREP} "^${OSPACES}${G_RESOURCE}${OSPACES}" | wc -l)
+
+
+if [[ "${bDebug:=false}" = "true" ]];then
+
+  echo "--- Array G_A_NUMCOND:      <${G_A_NUMCOND[*]}>"
+  echo "--- Array G_A_TYPE:         <${G_A_TYPE[*]}>"
+  echo "--- Array G_A_NAME:         <${G_A_NAME[*]}>"
+  echo "--- Presence of ${G_RESOURCE}: G_A_RES_IND: <${G_A_RES_IND[*]}>"
+  echo "--- G_WORKFORMULA:          <${G_WORKFORMULA}>"
+
+fi
+
+#=========================================================================================
+# THIS PART IS DIFFERENTIATED for HOLD or RELEASE UPROC
+#=========================================================================================
+
+
+
+
+##########################################
+#Process resource if missing
+##########################################
+if (( ${G_nCOUNT_RES} < 1 ));then
+  Message "Warning: Resource ${G_RESOURCE} does not exist on node ${P_NODE}."
+  Message "         Resuming anyway."
+fi
+
+#First pass: suppress all AND references to the resources to suppress
+let nCount=0
+while (( ${nCount} < ${#G_A_RES_IND[*]} )); do
+  TmpCond="=C${G_A_NUMCOND[${G_A_RES_IND[${nCount}]}]}"  #Ex: C03
+  G_WORKFORMULA=$(echo ${G_WORKFORMULA} | sed -e "s/ AND ${TmpCond}//g")
+  let nCount="nCount + 1"
+done
+
+#Second pass: suppress isolated condition (first one?)
+let nCount=0
+while (( ${nCount} < ${#G_A_RES_IND[*]} )); do
+  TmpCond="=C${G_A_NUMCOND[${G_A_RES_IND[${nCount}]}]}"  #Ex: C03
+  G_WORKFORMULA=$(echo ${G_WORKFORMULA} | sed -e "s/^[ \t]*${TmpCond}[ \t]*$//g") 
+  let nCount="nCount + 1"
+done
+
+# Final: Delete BOTH leading and trailing whitespace
+G_NEWFORMULA=$(echo ${G_WORKFORMULA}|sed 's/^[ \t]*//;s/[ \t]*$//')
+
+[[ "${bDebug:=false}" = "true" ]] && echo "--- G_NEWFORMULA:            <${G_NEWFORMULA}>"
+
+#Update if necessary
+if [[ ! ${G_INNERFOR} = ${G_NEWFORMULA} ]];then
+
+  Message "Info: Updating internal formula."
+  [[ -z "${G_NEWFORMULA}" ]] && G_NEWFORMULA=" " #The space is important
+  ${UXEXE}/uxupd UPR ${P_AREA} node=${P_NODE} upr=${P_UPROC} vupr=${G_VUPR} FORMULA LFORM=\"${G_NEWFORMULA}\" | ${GREP} -v Command
+  nRes=$?
+  if [[ ${nRes} -ne 0 ]];then
+    Message "Warning: Could not update formula for uproc ${P_UPROC} in area ${P_AREA} on node ${P_NODE}."
+    Message "         Will keep dependencies to stay consistent."
+    Message "         Resuming."
+  else
+    #Remove dependencies only if formula was updated OK, otherwise risk of inconsistency
+
+    ##########################################
+    #Delete conditions
+    ##########################################
+    #Suppress all AND references to the resources to suppress
+    let nCount=0
+    while (( ${nCount} < ${#G_A_RES_IND[*]} )); do
+      TmpCond="${G_A_NUMCOND[${G_A_RES_IND[${nCount}]}]}"  #Ex: 03
+      Message "Info: Removing condition ${TmpCond}"
+      ${UXEXE}/uxupd UPR ${P_AREA} node=${P_NODE} upr=${P_UPROC} vupr=${G_VUPR} RESCON dlt CONDNO=${TmpCond} | ${GREP} -v Command
+
+      let nCount="nCount + 1"
+    done
+  fi
+else
+  Message "Info: No need to update internal formula."
+fi
+
+
+##########################################
+#Release resource
+##########################################
+if (( ${G_nCOUNT_RES} > 0 ));then
+  Message "Info: Releasing resource ${G_RESOURCE} on node ${P_NODE}."
+  ${UXEXE}/uxrls RES node=${P_NODE} RES=${G_RESOURCE} ESP=${G_ESPEXE} CLEAR | ${GREP} -v Command
+  nRes=$?
+  if [[ ${nRes} -ne 0 ]];then
+    Message "ERROR: Could not release resource ${G_RESOURCE} on node ${P_NODE}."
+  fi
+  Message "Info: Removing resource ${G_RESOURCE} on node ${P_NODE}."
+  ${UXEXE}/uxdlt RES node=${P_NODE} RES=${G_RESOURCE} | ${GREP} -v Command
+  nRes2=$?
+  if [[ ${nRes2} -ne 0 ]];then
+    Message "Warning: Could not delete resource ${G_RESOURCE} on node ${P_NODE}. Resuming anyway."
+  fi
+else
+  nRes=0
+fi
+
+
+if [[ ${nRes} -eq 0 ]];then
+  Message " "
+  Message "Info: Uproc ${P_UPROC} successfully released on $(date +%m/%d/%Y,%H%M)."
+fi
+
+exit ${nRes}

@@ -1,0 +1,10 @@
+VarName     : UXTIME 
+InFileName  : dateclean.tmp 
+NbLine      : 2 
+NbCol       : 0 
+LgthVal     : 20 
+OutFileName : uxtimetemp.bat 
+ValEnv : 1214PM
+ 
+CmdEnv : set UXTIME=1214PM
+ 

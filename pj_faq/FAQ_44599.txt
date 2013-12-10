@@ -1,0 +1,48 @@
+
+Key words:
+
+	user table, distribution
+
+Subject:
+
+	On Unix, user table distribution failed
+
+Prerequistites:
+
+Application validation tests:
+
+	It may get fixed in 5.2.1 or 5.3
+
+Explanation:
+
+	On all Unix
+	When distributing user table, Dollar Universe needs to create some temporary files in the remote $UXEXE directory. After applying the uxright script, the $UXEXE will become 555. Unless the remote uxech process is running under root, the user table distribution can not be completed.
+
+	In the remote universe.log file, the following error will show up:
+
+	<< 2005-09-27 15:24:49 1876170/uxech           /DFADME32            /134578284 - %UNI_-F-U_EU_SGDS0102, Fatal error writing extraction file, please check its address
+
+
+	Some sample temporary files look like the following:
+	       129 -rw-rw-rw-   1 root     other      50535 Nov  1 10:22 USERS_TABLE_20051101_102241.SAV
+	       132 -rw-rw-rw-   1 root     other      50535 Nov  1 10:24 USERS_TABLE_20051101_102419.SAV
+
+
+	The workaround would be to make the $UXEXE writeable to the "univa" (the owner of the uxech process).
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+	Internal
+
+Experties level:
+

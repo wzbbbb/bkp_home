@@ -1,0 +1,181 @@
+crontab -e
+
+05 22 * * 1,2,3,4,5 /dadata/daenv/APS/APS.ksh > /etc/APS/log/APS.log 2>&1
+
+
+on DA_US_U_02
+ln -s /dadata/APS/DA_US_U_02/ /etc/APS
+
+on DA_US_U_05
+ln -s /dadata/APS/DA_US_U_05/ /etc/APS
+
+
+##################################################################
+
+mkdir /etc/APS/log
+mkdir /etc/APS/err_log
+
+mkdir /dadata/APS
+mkdir /dadata/APS/frsdlsup01
+mkdir /dadata/APS/frsdlsup11
+mkdir /dadata/APS/frsdlsup12
+mkdir /dadata/APS/frsdlsup13
+mkdir /dadata/APS/frsdlsup02  
+
+mkdir /dadata/APS/frsdlsup01/log
+mkdir /dadata/APS/frsdlsup11/log
+mkdir /dadata/APS/frsdlsup12/log
+mkdir /dadata/APS/frsdlsup13/log
+mkdir /dadata/APS/frsdlsup02/log
+
+mkdir /dadata/APS/frsdlsup01/err_log
+mkdir /dadata/APS/frsdlsup11/err_log
+mkdir /dadata/APS/frsdlsup12/err_log
+mkdir /dadata/APS/frsdlsup13/err_log
+mkdir /dadata/APS/frsdlsup02/err_log  
+
+mkdir /dadata/APS/frsdlsup01/MDT500
+mkdir /dadata/APS/frsdlsup11/MDT500
+mkdir /dadata/APS/frsdlsup12/MDT500
+mkdir /dadata/APS/frsdlsup13/MDT500
+mkdir /dadata/APS/frsdlsup02/MDT500
+
+mkdir /dadata/APS/frsdlsup01/MDT511
+mkdir /dadata/APS/frsdlsup02/MDT511
+
+
+mkdir /dadata/APS/frsdlsup01/PRE500
+mkdir /dadata/APS/frsdlsup11/PRE500
+mkdir /dadata/APS/frsdlsup12/PRE500
+mkdir /dadata/APS/frsdlsup13/PRE500
+mkdir /dadata/APS/frsdlsup02/PRE500
+
+mkdir /dadata/APS/frsdlsup01/PRE511
+mkdir /dadata/APS/frsdlsup02/PRE511
+mkdir /dadata/APS/frsdlsup11/PRE511
+mkdir /dadata/APS/frsdlsup12/PRE511
+mkdir /dadata/APS/frsdlsup13/PRE511
+
+mkdir /dadata/APS/frsdlsup01/TST511
+mkdir /dadata/APS/frsdlsup11/TST511
+mkdir /dadata/APS/frsdlsup12/TST511
+mkdir /dadata/APS/frsdlsup13/TST511
+mkdir /dadata/APS/frsdlsup02/TST511
+
+mkdir /dadata/APS/frsdlsup01/TST500
+mkdir /dadata/APS/frsdlsup11/TST500
+mkdir /dadata/APS/frsdlsup12/TST500
+mkdir /dadata/APS/frsdlsup13/TST500
+mkdir /dadata/APS/frsdlsup02/TST500
+
+mkdir /dadata/APS/frsdlsup01/FLS500
+mkdir /dadata/APS/frsdlsup02/FLS500
+
+
+mkdir /dadata/APS/frsdlsup01/MDT500/patch1
+mkdir /dadata/APS/frsdlsup02/MDT500/patch1
+
+mkdir /dadata/APS/frsdlsup01/MDT511/patch1
+mkdir /dadata/APS/frsdlsup02/MDT511/patch1
+
+mkdir /dadata/APS/frsdlsup01/PRE500/patch1
+mkdir /dadata/APS/frsdlsup11/PRE500/patch1
+mkdir /dadata/APS/frsdlsup12/PRE500/patch1
+mkdir /dadata/APS/frsdlsup13/PRE500/patch1
+mkdir /dadata/APS/frsdlsup02/PRE500/patch1
+
+mkdir /dadata/APS/frsdlsup01/PRE511/patch1
+mkdir /dadata/APS/frsdlsup11/PRE511/patch1
+mkdir /dadata/APS/frsdlsup12/PRE511/patch1
+mkdir /dadata/APS/frsdlsup13/PRE511/patch1
+mkdir /dadata/APS/frsdlsup02/PRE511/patch1
+
+
+mkdir /dadata/APS/frsdlsup01/TST500/patch1
+mkdir /dadata/APS/frsdlsup11/TST500/patch1
+mkdir /dadata/APS/frsdlsup12/TST500/patch1
+mkdir /dadata/APS/frsdlsup13/TST500/patch1
+mkdir /dadata/APS/frsdlsup02/TST500/patch1
+
+
+mkdir /dadata/APS/frsdlsup01/TST511/patch1
+mkdir /dadata/APS/frsdlsup11/TST511/patch1
+mkdir /dadata/APS/frsdlsup12/TST511/patch1
+mkdir /dadata/APS/frsdlsup13/TST511/patch1
+mkdir /dadata/APS/frsdlsup02/TST511/patch1
+
+mkdir /dadata/APS/frsdlsup01/FLS500/patch1
+mkdir /dadata/APS/frsdlsup02/FLS500/patch1
+
+mkdir /dadata/APS/frsdlsup01/MDT500/patch2
+mkdir /dadata/APS/frsdlsup02/MDT500/patch2
+
+mkdir /dadata/APS/frsdlsup01/PRE500/patch2
+mkdir /dadata/APS/frsdlsup11/PRE500/patch2
+mkdir /dadata/APS/frsdlsup12/PRE500/patch2
+mkdir /dadata/APS/frsdlsup13/PRE500/patch2
+mkdir /dadata/APS/frsdlsup02/PRE500/patch2
+
+mkdir /dadata/APS/frsdlsup01/TST500/patch2
+mkdir /dadata/APS/frsdlsup11/TST500/patch2
+mkdir /dadata/APS/frsdlsup12/TST500/patch2
+mkdir /dadata/APS/frsdlsup13/TST500/patch2
+mkdir /dadata/APS/frsdlsup02/TST500/patch2
+
+mkdir /dadata/APS/frsdlsup01/FLS500/patch2
+mkdir /dadata/APS/frsdlsup02/FLS500/patch2
+
+mkdir /dadata/APS/frsdlsup01/MDT500/patch3
+mkdir /dadata/APS/frsdlsup02/MDT500/patch3
+
+mkdir /dadata/APS/frsdlsup01/PRE500/patch3
+mkdir /dadata/APS/frsdlsup11/PRE500/patch3
+mkdir /dadata/APS/frsdlsup12/PRE500/patch3
+mkdir /dadata/APS/frsdlsup13/PRE500/patch3
+mkdir /dadata/APS/frsdlsup02/PRE500/patch3
+
+mkdir /dadata/APS/frsdlsup01/TST500/patch3
+mkdir /dadata/APS/frsdlsup11/TST500/patch3
+mkdir /dadata/APS/frsdlsup12/TST500/patch3
+mkdir /dadata/APS/frsdlsup13/TST500/patch3
+mkdir /dadata/APS/frsdlsup02/TST500/patch3
+
+mkdir /dadata/APS/frsdlsup01/FLS500/patch3
+mkdir /dadata/APS/frsdlsup02/FLS500/patch3
+
+
+cp FX24334B.taz /dadata/APS/frsdlsup11/TST500/patch1
+cp FX24334B.taz /dadata/APS/frsdlsup12/TST500/patch1
+cp FX24334B.taz /dadata/APS/frsdlsup13/TST500/patch1
+
+cp FX24334B.taz /dadata/APS/frsdlsup11/PRE500/patch1
+cp FX24334B.taz /dadata/APS/frsdlsup12/PRE500/patch1
+cp FX24334B.taz /dadata/APS/frsdlsup13/PRE500/patch1
+
+.................................
+mkdir /dadata/APS/frsdlsup01/MDT511/patch2
+mkdir /dadata/APS/frsdlsup02/MDT511/patch2
+mkdir /dadata/APS/frsdlsup01/PRE511/patch2
+mkdir /dadata/APS/frsdlsup11/PRE511/patch2
+mkdir /dadata/APS/frsdlsup12/PRE511/patch2
+mkdir /dadata/APS/frsdlsup13/PRE511/patch2
+mkdir /dadata/APS/frsdlsup02/PRE511/patch2
+mkdir /dadata/APS/frsdlsup01/TST511/patch2
+mkdir /dadata/APS/frsdlsup11/TST511/patch2
+mkdir /dadata/APS/frsdlsup12/TST511/patch2
+mkdir /dadata/APS/frsdlsup13/TST511/patch2
+mkdir /dadata/APS/frsdlsup02/TST511/patch2
+
+
+mkdir /dadata/APS/frsdlsup01/MDT511/patch3
+mkdir /dadata/APS/frsdlsup02/MDT511/patch3
+mkdir /dadata/APS/frsdlsup01/PRE511/patch3
+mkdir /dadata/APS/frsdlsup11/PRE511/patch3
+mkdir /dadata/APS/frsdlsup12/PRE511/patch3
+mkdir /dadata/APS/frsdlsup13/PRE511/patch3
+mkdir /dadata/APS/frsdlsup02/PRE511/patch3
+mkdir /dadata/APS/frsdlsup01/TST511/patch3
+mkdir /dadata/APS/frsdlsup11/TST511/patch3
+mkdir /dadata/APS/frsdlsup12/TST511/patch3
+mkdir /dadata/APS/frsdlsup13/TST511/patch3
+mkdir /dadata/APS/frsdlsup02/TST511/patch3

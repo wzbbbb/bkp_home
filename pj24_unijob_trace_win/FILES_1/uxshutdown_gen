@@ -1,0 +1,108 @@
+# ========================================================
+# ORSYP.Sa                                 23/09/94
+# 
+#  Updated on 2000/01/12 by JFU (English version)
+#   ------------------------------------------------------
+#   General DOLLAR UNIVERSE shutdown procedure, within a UNIVERSE company
+#   
+#   This procedure use two arguments : 
+#   The first argument must contain the UNIVERSE node name
+#   The second argument must contain the UNIVERSE company name
+#   
+#   NOTE: This procedure is launched by UNIVERSE  uxshutdown procedure.
+# ========================================================
+
+while true
+do
+
+   if [ $# -ne 2 ]
+   then
+#      echo "The number of arguments is invalid";
+      $UXEXE/uxgetmsg U_EFACNBPAR
+      exit 1
+   fi   
+
+   NOEUD=$1
+   SOCIETE=$2
+   echo "                 Node   = $1 "
+   echo "                 Company name = $2 "
+
+# 
+# -------------  Engines
+#                              Launcher+Calculator+Exchanger+Surveyor '*'
+#
+   $UXEXE/uxendatm     $SOCIETE A $NOEUD "*"
+   $UXEXE/uxendatm     $SOCIETE I $NOEUD "*"
+   $UXEXE/uxendatm     $SOCIETE S $NOEUD "*"
+   $UXEXE/uxendatm     $SOCIETE X $NOEUD "*"
+#
+#
+# -------------  Command server
+#
+   $UXEXE/uxcmstop     $SOCIETE X $NOEUD
+#  #
+#  # ------------- Stop the Business Views manager  by AREA
+#  #
+   $UXEXE/uxbvsstop  $SOCIETE X $NOEUD 
+   $UXEXE/uxbvsstop  $SOCIETE S $NOEUD 
+   $UXEXE/uxbvsstop  $SOCIETE I $NOEUD 
+   $UXEXE/uxbvsstop  $SOCIETE A $NOEUD 
+#
+#
+# -------------  IO serveur by area
+#
+let Iscn=0
+AtmPres="O"
+while [ ${Iscn} -lt  12 ] && [ "${AtmPres}" = "O" ]
+      do 
+         AtmPres="N"
+         $UXEXE/uxvrfshutatm $SOCIETE  A $NOEUD "*"
+         if [ $? -eq 1 ]  
+         then 
+            AtmPres="O"   
+         fi
+         $UXEXE/uxvrfshutatm $SOCIETE  I $NOEUD "*"
+         if [ $? -eq 1 ]  
+         then 
+            AtmPres="O"   
+         fi
+         $UXEXE/uxvrfshutatm $SOCIETE  S $NOEUD "*"
+         if [ $? -eq 1 ]  
+         then 
+            AtmPres="O"   
+         fi
+         $UXEXE/uxvrfshutatm $SOCIETE  X $NOEUD "*"
+         if [ $? -eq 1 ]  
+         then 
+            AtmPres="O"   
+         fi
+         if [ "${AtmPres}" = "O" ]
+         then
+            sleep 5
+         fi
+         let Iscn=Iscn+1
+      done 
+
+   $UXEXE/uxiostop     $SOCIETE A $NOEUD
+   $UXEXE/uxiostop     $SOCIETE I $NOEUD
+   $UXEXE/uxiostop     $SOCIETE S $NOEUD
+   $UXEXE/uxiostop     $SOCIETE X $NOEUD
+#
+# shutdown DQM if link exist
+#
+ if [ -a /etc/UNIVERSE_DQM_${SOCIETE} ]
+    then
+      /etc/UNIVERSE_DQM_${SOCIETE}/uxstpdqm ${SOCIETE} X ${NOEUD}
+#     /etc/UNIVERSE_DQM_${SOCIETE}/uxstpdqm ${SOCIETE} X &
+  fi
+#
+#
+# -------------  Graphical Job Monitor  by area
+#
+   $UXEXE/uxcdjstop     $SOCIETE A $NOEUD
+   $UXEXE/uxcdjstop     $SOCIETE I $NOEUD
+   $UXEXE/uxcdjstop     $SOCIETE S $NOEUD
+   $UXEXE/uxcdjstop     $SOCIETE X $NOEUD
+
+   break 1
+done

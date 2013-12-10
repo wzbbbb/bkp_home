@@ -1,0 +1,14 @@
+#CMD# ipcs -ma
+IPC status from /dev/kmem as of Tue Jan 29 16:41:35 2008
+T         ID     KEY        MODE        OWNER     GROUP   CREATOR    CGROUP NATTCH      SEGSZ  CPID  LPID   ATIME    DTIME    CTIME 
+Shared Memory:
+m          0 0x412011ed --rw-rw-rw-      root      root      root      root      0        348   860   860  8:03:59  8:03:59  8:03:53
+m          1 0x4e0c0002 --rw-rw-rw-      root      root      root      root      5      61760   860  2999  8:06:01  8:03:59  8:03:53
+m          2 0x412466f2 --rw-rw-rw-      root      root      root      root      1       8192   860   872  8:03:55  8:03:53  8:03:53
+m     360451 0x6118f8bb --rw-rw-rw-      root      root      root      root      6     171688  2251  2438  8:05:03 no-entry  8:04:36
+m     753668 0x6118fb3f --rw-rw-rw-      root      root      root      root      1     359972  2337  2337  8:04:52 no-entry  8:04:52
+m     622597 0x6deacff8 --rw-r-----    oracle  oinstall    oracle  oinstall     87  773586944  2843 21057 16:40:42 16:40:42  8:05:36
+m          6 0x00000000 D-rw-------       bin       bin      root      root      6      52228  2946  2946  8:05:51 no-entry  8:05:51
+m          7 0x6147c57a --rw-rw-rw-     univa       sys     univa       sys      6     171688 14439 21047 16:40:00 no-entry 16:06:04
+m          8 0x6147c80c --rw-rw-rw-      root       sys      root       sys      1     359972 14487 14487 16:06:20 no-entry 16:06:20
+m          9 0x6114dd1c --rw-rw-rw-      root       sys      root       sys      3     171688 13817 10812 18:20:13 no-entry 10:14:06

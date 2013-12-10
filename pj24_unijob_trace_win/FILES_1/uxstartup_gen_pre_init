@@ -1,0 +1,183 @@
+# ========================================================
+# ORSYP.Sa
+# 
+#                           
+#   ------------------------------------------------------
+#   General startup procedure for DOLLAR UNIVERSE
+#   this procedure must be execute by DOLLAR UNIVERSE
+#   administrator or root before use any Universe 
+#   application. 
+#   
+#   This procedure use two arguments  : 
+#   The first argument must contain the UNIVERSE node name
+#   The second argument must contain the UNIVERSE company name
+#
+#   NOTE: this procedure is launched by UNIVERSE uxstartup
+#         procedure
+# ========================================================
+
+
+################################################################################
+# Integrity Check
+#
+# Can be bypassed with: export BYPASS_INTEGRITY_CHECK=true 
+################################################################################
+#PROCESS_MODE is set to "BATCH" when launched from $Universe, for example inside IU_RTS
+if [ ! "${PROCESS_MODE:-NONE}" = "BATCH" -a ! "${BYPASS_INTEGRITY_CHECK}" = "true" ];then
+  echo "Processing Data Integrity Check"
+  echo "*** Warning : Do not abort this procedure ! ***" 
+  ${UXMGR}/ux_vrf_rgz_rst > ${UXLEX}/REORG.log.X.$(date +%Y%m%d_%H%M%S) 
+  if [ $? -ne 0 ]
+  then
+    echo "ERROR, Data Integrity Check aborted, please check file REORG.LOG"
+    echo " "
+    echo "Solution: 1) Try a second time" 
+    echo "          2) It is possible to bypass the reorganization by defining the variable BYPASS_INTEGRITY_CHECK"
+    echo "             Example: BYPASS_INTEGRITY_CHECK=true;export BYPASS_INTEGRITY_CHECK" 
+    echo " "
+    echo "Warning:"
+    echo "forcing the relaunch without analyzing the cause of the problem may corrupt your data." 
+    echo " "
+    exit 1 
+  else
+    echo "Data Integrity Check completed successfully."
+  fi
+#  
+  echo "Sleeping 5 seconds..."
+  sleep 5
+  echo "done"
+else
+  echo "Skipping integrity check (PROCESS_MODE=${PROCESS_MODE} - BYPASS_INTEGRITY_CHECK=${BYPASS_INTEGRITY_CHECK})"
+fi
+
+#Remove old REORG logs
+echo "Removing old REORG logs."
+find ${UXLEX} -name "REORG*" -mtime +15 -exec rm -f {} \;
+echo " "
+echo " "
+
+
+################################################################################
+#
+# Starting Engines
+#
+################################################################################
+
+
+while true
+do
+
+   if [ $# -ne 2 ]
+   then
+      echo "The number of arguments is invalid"
+      break 1
+   fi
+
+   NOEUD=$1
+   SOCIETE=$2
+
+   Msg=`$UXEXE/uxgetmsg U_EGAM10B3223`
+   echo "                 $Msg   = $1 "
+   Msg=`$UXEXE/uxgetmsg U_EGAM10B3222`
+   echo "                 $Msg = $2 "
+
+   cd $UXMGR
+
+#
+#
+#
+#
+# ------------- DQM  
+# if DQM is  present (link /etc/UNIVERSE_DQM_SOCIETE exist  )
+#
+  if [ -a /etc/UNIVERSE_DQM_${SOCIETE} ]
+    then
+      nohup  /etc/UNIVERSE_DQM_${SOCIETE}/uxstartdqm ${SOCIETE} X $NOEUD > $UXLEX/uxstartdqm.log 2>&1 &
+#     nohup  /etc/UNIVERSE_DQM_${SOCIETE}/uxstartdqm ${SOCIETE} S $NOEUD > $UXLSI/uxstartdqm.log 2>&1 &
+#     nohup  /etc/UNIVERSE_DQM_${SOCIETE}/uxstartdqm ${SOCIETE} I $NOEUD > $UXLIN/uxstartdqm.log 2>&1 &
+#     nohup  /etc/UNIVERSE_DQM_${SOCIETE}/uxstartdqm ${SOCIETE} A $NOEUD > $UXLAP/uxstartdqm.log 2>&1 &
+  fi
+#
+#
+# -------------  IO Server by Area 
+#
+    $UXEXE/uxioserv  $SOCIETE X $NOEUD >>$UXLEX/uxioserv.log 2>&1 
+    $UXEXE/uxioserv  $SOCIETE S $NOEUD >>$UXLSI/uxioserv.log 2>&1 
+#    $UXEXE/uxioserv  $SOCIETE I $NOEUD >>$UXLIN/uxioserv.log 2>&1 
+    $UXEXE/uxioserv  $SOCIETE A $NOEUD >>$UXLAP/uxioserv.log 2>&1 
+#
+   sleep 4
+#
+#
+# -------------  Command Server 
+# UPD JFU 08/07/2000: uncomment the cmdsrv startup
+#
+#   nohup $UXEXE/uxcmdsrv      $SOCIETE X $NOEUD >>$UXLEX/uxcmdsrv.log 2>&1 &
+#
+# ------------- Graphical Job Monitor by Area ---------------
+#
+   nohup $UXEXE/uxcdjsrv  $SOCIETE X $NOEUD  >$UXLEX/uxcdjsrv.log 2>&1 & 
+   nohup $UXEXE/uxcdjsrv  $SOCIETE S $NOEUD  >$UXLSI/uxcdjsrv.log 2>&1 & 
+#   nohup $UXEXE/uxcdjsrv  $SOCIETE I $NOEUD  >$UXLIN/uxcdjsrv.log 2>&1 & 
+   nohup $UXEXE/uxcdjsrv  $SOCIETE A $NOEUD  >$UXLAP/uxcdjsrv.log 2>&1 & 
+#
+#
+# -------------  Engines
+# By area, launch engines       
+#                              Launcher+Calculator+Exchanger+Surveyor '*' 
+#                              Launcher    'L'       
+#                              Calculator  'C'       
+#                              Exchanger   'E'       
+#                              Surveyor    'S'       
+#
+# it's recommended to launch the differents engines once a time, within an
+# area, with the timing below :
+# 
+# UPD JFU 08/07/2000: insert 5 seconds sleep between engines starting ...
+# UPD JFU 08/07/2000: starting of production engines separately ...
+# UPD JAG 06/22/2007: prohibit autostart of Launcher at restart...
+#
+# 1) Calculator 2) Launcher 3) Exchanger 4) Surveyor   
+     
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE X $NOEUD "C"
+  sleep 5
+#  $UXEXE/uxstratm  $SOCIETE X $NOEUD "L"
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE X $NOEUD "E"
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE X $NOEUD "S"
+
+#  $UXEXE/uxstratm  $SOCIETE S $NOEUD "C"
+#  sleep 5
+  $UXEXE/uxstratm  $SOCIETE S $NOEUD "L"
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE S $NOEUD "E"
+  sleep 5
+
+  $UXEXE/uxstratm  $SOCIETE A $NOEUD "C"
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE A $NOEUD "L"
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE A $NOEUD "E"
+
+#  $UXEXE/uxstratm  $SOCIETE I $NOEUD "C"
+#  sleep 5
+  $UXEXE/uxstratm  $SOCIETE I $NOEUD "L"
+  sleep 5
+  $UXEXE/uxstratm  $SOCIETE I $NOEUD "E"
+
+ 
+#  #
+#  # ------------- Starts the Business Views manager  by AREA
+#  #
+  $UXEXE/uxbvssrv  $SOCIETE X $NOEUD >> $UXLEX/uxbvssrv.log 2>&1 
+  $UXEXE/uxbvssrv  $SOCIETE S $NOEUD >> $UXLSI/uxbvssrv.log 2>&1
+#    $UXEXE/uxbvssrv  $SOCIETE I $NOEUD >> $UXLIN/uxbvssrv.log 2>&1
+  $UXEXE/uxbvssrv  $SOCIETE A $NOEUD >> $UXLAP/uxbvssrv.log 2>&1
+   cd $UXEXE
+#
+#
+   break 1
+done
+#

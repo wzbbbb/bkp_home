@@ -1,0 +1,327 @@
+#! /bin/sh
+###################################################################
+#                 Transfer traces to the server
+###################################################################
+# @(#) script sh
+# @(#) created by  : Guy MULLER (Orsyp)
+###################################################################
+##
+# revision : 1.1.1
+# date     : 200511012
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Nfs sharing adaptation -> right issue
+##
+# revision : 1.1
+# date     : 20051003
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Nfs sharing adaptation
+##
+# revision : 1.0
+# date     : 20030925
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Packaging
+##
+# revision : 0.9
+# date     : 20030807
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Redesign
+##
+# revision : 0.7
+# date     : 20020907
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Creation
+
+#set -x
+#set -v
+### Linux Configuration
+g_daenv_dir=/etc/daenv
+#Fr_Cases_Dir_Base=/FR/DA/Incident\ Related\ Files
+#Fr_Cases_Dir_Base=/FR/cases
+Fr_Cases_Dir_Base=/cases
+fr_host=frsplda01
+Linux_Cases_Dir_Base=/cases
+Transfert_Cases_Dir_Base=/cases/.Transfert
+Local_Dir=/cases/Z_Transfer
+bg_trsf_procedure=${g_daenv_dir}/cases/BgFrLinuxTrsf
+
+### Cygwin Configuration
+#Fr_Cases_Dir_Base=/cygdrive/s/Incident\ Related\ Files
+#Linux_Cases_Dir_Base=/cygdrive/u
+
+### All Configurations
+ux_tmp_dir=/cases/.Transfert/.tmp
+ux_log_dir=/cases/.Transfert/.logs
+ux_lst_dir=/cases/.Transfert/.lst
+ux_lin_list=${ux_tmp_dir}/.tmp_lin_list_$$.txt
+ux_fr_list=${ux_tmp_dir}/.tmp_fr_list_$$.txt
+ux_links_list=${ux_lst_dir}/links_list.txt
+Log_File=${ux_log_dir}/CpLinuxFr.txt
+ux_start_dir=`pwd`
+ux_ext_list="ZIP zip Z gz taz doc txt xls"
+
+
+
+# ----------------------------------------------- #
+# MESSAGE FUNCTION
+# ----------------------------------------------- #
+UX_MESSAGE ()
+{
+loc_os=`uname`
+case ${loc_os} in
+        Linux )
+                if [ ${UX_PRINT:-KO} = OK ]; then
+                        print "$1"
+                else
+                        echo "$1"
+                fi;;
+        * ) echo "$1";;
+esac
+}
+
+# ----------------------------------------------- #
+# HELP FUNCTION
+# ----------------------------------------------- #
+HELP()
+{
+UX_MESSAGE "Syntax : $0  [-d] [-l] [-c <case number>]"
+UX_MESSAGE "  # How to use :"
+UX_MESSAGE "  # In local mode : -l"
+UX_MESSAGE "  # In date mode : -d"
+UX_MESSAGE "  # In display mode : -c <case number>"
+}
+
+# ----------------------------------------------- #
+# CLEAN EXIT
+# ----------------------------------------------- #
+CLEAN_EXIT ()
+{
+loc_return_code=$1
+rm ${ux_lin_list} ${ux_fr_list} > /dev/null 2>&1
+exit ${loc_return_code:-0}
+}
+
+# ----------------------------------------------- #
+# BG COMMAND FUNCTION
+# ----------------------------------------------- #
+UX_BG_CMD()
+{
+[ ${UXTRACEMODEX:-OFF} = ON ] && set -x ; [ ${UXTRACEMODEV:-OFF} = ON ] && set -v
+# Local variable definition
+loc_command="$1"
+loc_sup_time="$2"
+loc_command_to_test=`echo ${loc_command} | cut -d" " -f1`
+loc_shell_pid=$$
+export loc_shell_pid
+loc_sleep=5
+
+#Submission of the command
+eval "${loc_command} >> ${Log_File} 2>&1 " &
+loc_bg_cmd_pid=$!
+
+#Calculation of the number of loops
+loc_numb_end=`expr ${loc_sup_time} / ${loc_sleep}`
+loc_loop_time=`expr ${loc_sleep} \* ${loc_numb_end}`
+loc_numb=0
+
+#Loop beginning
+ux_bg_jobs=`ps -ef | grep ${loc_bg_cmd_pid} | grep ${loc_shell_pid} | grep -v grep | grep ${loc_command_to_test}`
+if [ ! "${ux_bg_jobs}" = "" ]; then
+	until [ ${loc_numb} -ge ${loc_numb_end} ]
+	do
+		sleep ${loc_sleep}
+		ux_bg_jobs=`ps -ef | grep ${loc_bg_cmd_pid} | grep ${loc_shell_pid} | grep -v grep | grep ${loc_command_to_test}`
+	        loc_numb=`expr ${loc_numb} + 1`
+		if [ "${ux_bg_jobs}" = "" ]; then
+			break
+		fi
+	done
+fi
+ux_bg_jobs=`ps -ef | grep ${loc_bg_cmd_pid} | grep ${loc_shell_pid} | grep -v grep | grep ${loc_command_to_test}`
+if [ ! "${ux_bg_jobs}" = "" ]; then
+	kill ${loc_bg_cmd_pid}
+	if [ $? -ne 0 ]; then
+		UX_MESSAGE "#REM# Some issue occurs in the aborting attempt of the command ${loc_command}"
+	fi
+	return 2
+else
+	wait ${loc_bg_cmd_pid}
+	return ${?:-0}
+fi
+}
+
+# Check the configuration
+#mount | grep "${Fr_Cases_Dir_Base}" > /dev/null 2>&1
+#l_rc=$?
+##if [ ! -d "${Fr_Cases_Dir_Base}" ]; then
+#if [ ${l_rc:-1} -ne 0 ]; then
+#	HELP
+#	echo ""
+#	echo "The ${Fr_Cases_Dir_Base} directory is not mounted"
+#	exit 1
+#fi
+
+while getopts ldc: option
+do
+	case "${option}" in
+		c )
+		case_number_flag=on
+		ux_case_number=${OPTARG}
+		;;
+		l )
+		local_flag=on
+		;;
+		d )
+		date_flag=on
+		;;
+		*)
+		HELP
+		CLEAN_EXIT 1
+		;;
+	esac
+done
+if [ $# -eq 0 ]; then
+	HELP
+	CLEAN_EXIT 1
+fi
+loc_id=`id -u`
+if [ ${loc_id} -ne 0 ]; then
+        echo "You must log on with the root user account"
+        exit 1
+fi
+if [ ${ux_case_number:-no_value} = no_value ]; then
+	echo "The case number is mandatory"
+	exit 1
+fi
+
+# 1 directories structur's defintion
+ux_case_number_2dig=`echo ${ux_case_number} | cut -c 1-2 `
+ux_case_number_3dig=`echo ${ux_case_number} | cut -c 1-3 `
+ux_fr_case_dir="${Fr_Cases_Dir_Base}/${ux_case_number_2dig}xxx/${ux_case_number_3dig}xx/${ux_case_number}" 
+
+# 2 check the linux directory structur
+[ ${local_flag:-off} = on ] && ux_loc_case_dir=${Local_Dir}
+[ ${local_flag:-off} = on ] || ux_loc_case_dir=`ls  -d ${Linux_Cases_Dir_Base}/*/${ux_case_number} 2> /dev/null `
+if [ ! $? -eq 0 ] || [ `echo "${ux_loc_case_dir}" | wc -l` -ne 1 ]; then
+	UX_MESSAGE "Directory for the case ${ux_case_number} does not exists on Linux, create it first"
+	exit 1
+fi
+
+# 3 Generating the list of files on the linux side
+cd ${ux_loc_case_dir}/trsf
+[ $? -ne 0 ] && CLEAN_EXIT 2
+ls > ${ux_lin_list}
+
+while read ux_file
+do
+	if [ -d "${ux_file}" ]; then
+		UX_MESSAGE "The following file is a directory, please remove it or zip it"
+		UX_MESSAGE "${ux_loc_case_dir}/trsf/${ux_file}"
+		CLEAN_EXIT 1
+	fi
+	if [ -h "${ux_file}" ]; then
+		UX_MESSAGE "The following file is a symbolink link, please remove it"
+		UX_MESSAGE "${ux_loc_case_dir}/trsf/${ux_file}"
+		CLEAN_EXIT 1
+	fi
+done < ${ux_lin_list}
+
+# 4 Dating the files if requested
+if [ ${date_flag:-off} = on ]; then
+	loc_date=`date +%Y%m%d-%H%M`_
+	while read ux_file
+	do
+       		mv "${ux_file}" "${loc_date}${ux_file}"
+	done < ${ux_lin_list}
+	ls > ${ux_lin_list}
+fi
+# 5 Compressing unknown file formats
+for ux_ext in ${ux_ext_list}
+do
+	grep -v \\\.${ux_ext}'$' ${ux_lin_list} > ${ux_lin_list}_tmp
+	mv ${ux_lin_list}_tmp ${ux_lin_list}
+done
+while read ux_file
+do
+	compress "${ux_file}" 
+done < ${ux_lin_list}
+ls > ${ux_lin_list}
+
+# 6 First try of generation of list of files present on the French side.
+#UX_BG_CMD "ls \"${ux_fr_case_dir}\"/* > ${ux_fr_list}" 10
+UX_BG_CMD "ssh -t $fr_host ls \"${ux_fr_case_dir}\"/* > ${ux_fr_list}" 10
+[ $? -ne 0 ] && ux_lin_busy=on
+# 7 Comparing the linux and the french side
+if [ ! ${ux_lin_busy:-off} = on ]; then
+	loc_nb_char=`echo "${ux_fr_case_dir}/" | wc -c | sed 's/ //g'`	
+	cut -c ${loc_nb_char}- ${ux_fr_list} > ${ux_fr_list}_tmp
+	mv ${ux_fr_list}_tmp ${ux_fr_list}
+	loc_source_file=${ux_lin_list}
+	loc_target_file=${ux_fr_list}
+	while read ux_file
+	do
+		grep '^'"${ux_file}"'$' ${loc_target_file} > /dev/null 2>&1
+		if [ $? -eq 0 ]; then
+			UX_MESSAGE "The following file already exists on the target side :"
+			UX_MESSAGE "${ux_file}"
+			grep -v '^'"${ux_file}"'$' ${loc_source_file} > ${loc_source_file}_tmp
+			mv ${loc_source_file}_tmp ${loc_source_file}	
+		fi
+	done < ${loc_source_file}
+fi
+
+# 8 generation of the links for the files which would be moved if they don't exist on the France side.
+loc_date=`date +%Y%m%d-%H%M%S`_
+UX_MESSAGE "#CNB# ${ux_case_number} ${loc_date}" >> ${ux_links_list}
+while read ux_file
+do
+		UX_MESSAGE "<//Demeter/DollarAccess/Incident Related Files/${ux_case_number_2dig}xxx/${ux_case_number_3dig}xx/${ux_case_number}/${ux_file}>" | sed 's/\//\\/g'
+		UX_MESSAGE "<//Demeter/DollarAccess/Incident Related Files/${ux_case_number_2dig}xxx/${ux_case_number_3dig}xx/${ux_case_number}/${ux_file}>" | sed 's/\//\\/g' >> ${ux_links_list}
+done < ${ux_lin_list}
+
+# 9 check the france directory structur
+l_dir="${Fr_Cases_Dir_Base}/${ux_case_number_2dig}xxx"
+ssh -t $fr_host [ ! -d "${l_dir}" ] && dir_exist=no
+if [ $dir_exist = "no" ]; then
+#if [ ! -d "${l_dir}" ]; then
+	mkdir -p "${l_dir}"
+	#chown 491:502 "${l_dir}"
+	#chmod 775 "${l_dir}"
+fi
+l_dir="${Fr_Cases_Dir_Base}/${ux_case_number_2dig}xxx/${ux_case_number_3dig}xx"
+ssh -t $fr_host [ ! -d "${l_dir}" ] && dir_exist=no
+if [ $dir_exist = "no" ]; then
+#if [ ! -d "${l_dir}" ]; then
+	mkdir -p "${l_dir}"
+	#chown 491:502 "${l_dir}"
+	#chmod 775 "${l_dir}"
+fi
+l_dir="${Fr_Cases_Dir_Base}/${ux_case_number_2dig}xxx/${ux_case_number_3dig}xx/${ux_case_number}"
+ssh -t $fr_host [ ! -d "${l_dir}" ] && dir_exist=no
+if [ $dir_exist = "no" ]; then
+#if [ ! -d "${l_dir}" ]; then
+	mkdir -p "${l_dir}"
+	#chown 491:502 "${l_dir}"
+	#chmod 775 "${l_dir}"
+fi
+# Fix the right creation issue
+#if [ ! -d "${ux_fr_case_dir}" ]; then
+#	mkdir -p "${ux_fr_case_dir}"
+#fi
+ssh -t $fr_host [ ! -d "${ux_fr_case_dir}" ] && dir_exist=no
+if [ $dir_exist = "no" ]; then
+#if [ ! -d "${ux_fr_case_dir}" ]; then
+	UX_MESSAGE "This case does not have any directory on the FR Side, and this directory cannot be created"
+	UX_MESSAGE "${ux_fr_case_dir}"
+	CLEAN_EXIT 1
+fi
+
+# 10 File Transfering
+while read loc_file
+do
+	UX_MESSAGE "#REM# ${ux_loc_case_dir}/trsf/${loc_file} " >> ${Log_File} 2>&1
+	cp -vp ${ux_loc_case_dir}/trsf/"${loc_file}" ${ux_loc_case_dir}/wrk/  >> ${Log_File} 2>&1
+	cp -vp ${ux_loc_case_dir}/trsf/"${loc_file}" ${ux_loc_case_dir}/trcs/  >> ${Log_File} 2>&1
+	mv ${ux_loc_case_dir}/trsf/"${loc_file}" ${Transfert_Cases_Dir_Base}/${ux_case_number}@"${loc_file}"  >> ${Log_File} 2>&1
+done < ${ux_lin_list}
+
+${bg_trsf_procedure} &

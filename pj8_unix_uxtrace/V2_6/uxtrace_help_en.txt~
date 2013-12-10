@@ -1,0 +1,146 @@
+-- How to implement the version 2.5.9 of the unix uxtrace procedure
+
+-.- Transfer
+Transfer the uxtrace_v2.5.9.taz to the mgr directory ($UXMGR) of your Dollar Universe
+Company. (this transfer must be done in binary mode).
+
+-.- Go to the mgr directory of your Company:
+cd zzz/mgr
+
+-.- Uncompress the taz ball :
+mv ./uxtrace_v2.5.9.taz ./uxtrace_v2.5.9.tar.Z
+uncompress  ./uxtrace_v2.5.9.tar.Z
+tar -xvf ./uxtrace_v2.5.9.tar
+
+-.- Files generated
+This procedure will create or replace the following files of your mgr
+directory :
+uxtrace uxtrace_help_en.txt uxtrace_help_fr.txt
+
+-- How to use the uxtrace procedure (2.5.9)
+The following information is also available by typing :
+uxtrace -h
+(this also displays the uxtrace version.)
+
+-.- Syntax 
+uxtrace [-s] [-c] [-L] [-d] [-b] [-h <string>] [ -o] [-p <string>] [-l <num>] [-P] [-a <string>]
+	Trace flags :
+ 	 -s : Traces issues with system symptoms
+ 	 -c : Traces issues with Dollar Universe misconfiguration symptoms
+ 	 -L : Lights traces
+ 	 -p : Will run the specific procedure (variabalized by an argument) at the end of the uxtrace
+	 -P : Won't run the standard specific procedure at the end of the uxtrace
+	 -l : Nb of days of job log collect (Default : 100 logs will be collected from the main area, and 50 from the other areas)
+              [-l <nb of days of job log collected>]
+	 -a : Define the main area
+ 	 -o : Considers that the Dollar Universe company is shutdowned (not recommended)
+ 	      type uxtrace -h for more information
+	Execution modes :
+ 	 -d : Will divide the uxtrace result into 3 packages instead of one package
+ 	 -b : Will run the uxtrace in batch mode (No interactive questions)
+ 	 -h : Displays simple help
+ 	 -h full : Displays global help (More details about the different options)
+
+-.- Details for the different trace flags
+ 	 -s : Traces issues with system symptoms
+		Defined as issues with system symptoms and/or an issue where Dollar Universe exhibits :
+		  - an abnormally long response time
+		  - a disproportionate amount of CPU consumption
+		  - no longer reacts
+ 	 -c : Traces issues with Dollar Universe misconfiguration symptoms
+		Defined as issues with Dollar Universe misconfiguration symptoms,
+		issues regarding dependencies between uprocs, processing date etc ...
+ 	 -L : Light traces
+		Get some light traces to get a low level screenshot of the Dollar Universe company.
+		This option disables the -s and the -c options.
+ 	 -p : Will run a specific procedure (using a variable argument) at the end of the uxtrace
+ 	 	For example if you wanted to source the following script at the end of the uxtrace :
+		${UXMGR}/uxtrace_cust_01
+		Use the -p parameter such as -p01, for example uxtrace -scp01
+		Please notice that the following default script is always executed (if present) unless -P is specified.
+		${UXMGR}/uxtrace_cust
+	 -P : Won't run the standard specific procedure at the end of the uxtrace
+	 -l : Nb of days of job log collect (Default  : 50 logs will be collected from the main area, and 25 from the other areas)
+	        Will collect all the job logs older than the specified value
+	 -a : Define the main area
+		To use if your issue does not occur in the production area
+		for example for APP, it accepts A,a,app,APP
+ 	 -o : Considers that the Dollar Universe company is shutdowned
+ 	      A function in the uxtrace procedure automaticaly tests the status of the Dollar Universe Company.
+ 	      Onlys use the -o flag at DollarAccess's request.
+ 	      This flag automatically switches the -s flag on
+	      
+-.- Details of the different execution modes :
+	 -d : Will divide the uxtrace result in 3 packages instead of one package
+		To facilitate sending the results by e-mail
+ 	 -b : Will run the uxtrace in batch mode (No interactive questions)
+
+-.- Prerequisites
+	It is recommended to copy the uxtrace procedure into the zzz/mgr directory of the Dollar Universe company you want to trace.
+	If the trace procedure is not located there, the Dollar Universe environment must be loaded for the company you want to trace.
+
+-.- Examples of issues and how to launch the uxtrace procedure
+-..- Dependencies between uprocs
+A uproc is in event wait in the production area, but the expected event seems to be present :
+To get the most information it is recommended to launch the uxtrace through the following command
+uxtrace -c 
+
+If this issue occurs in the application area :
+uxtrace -c -aA
+
+If you want to send the result by e-mail, use the -d option to divide the result in small packages :
+uxtrace -c -aA -d
+
+-..- The processing date of the uproc ZZZ is wrong
+In case this issue occurs in simulation area :
+uxtrace -c -aS
+
+If you are used to the messages displayed by the uxtrace procedure
+uxtrace -c -aS -b
+
+-..- Dollar Universe is slow and/or consumming an abnormal amount of CPU
+You can use :
+uxtrace -s
+
+If this is a production crash, and you want to be sure to be abble to send the created packages by e-mail :
+uxtrace -s -d
+
+-..- Dollar Universe does not start :
+You can use :
+uxtrace -s
+
+If this is a production crash, and you want to be sure to be abble to send the created packages by e-mail :
+uxtrace -s -d
+
+-..- The uxtrace procedure aborts because of an synthax error in the ${UXMGR}/uxtrace_cust script.
+Then please add the -P parameter to not launch this script.
+
+-.- Changing the output directory
+How to change the output directory in case there is not enough space left in the mgr directory ?
+
+-..- Doing it for one submission
+Assign the path of the directory to the variable UXTRACELOCATE before launching the uxtrace procedure.
+For example if you want the tar ball to be created in the /tmp directory :
+In ksh or sh :
+UXTRACELOCATE=/tmp
+export UXTRACELOCATE
+In csh :
+setenv UXTRACELOCATE /tmp
+And then launch the uxtrace procedure.
+
+-..- Changing it permanently
+Edit the uxtrace script and look for this section :
+
+#       * modify the folder location of the created uxtrace package
+#       * Default value                 ${UXMGR}
+#       * Other values possibles        the absolute path of an existant folder
+# UXTRACELOCATE="/tmp"
+
+Uncomment the last line and define the new value, for example :
+
+#       * modify the folder location of the created uxtrace package
+#       * Default value                 ${UXMGR}
+#       * Other values possibles        the absolute path of an existant folder
+UXTRACELOCATE="/tmp"
+
+PS By the same method you can also change the UXLOGDELAY parameter (to change how many days of job logs are backuped by the uxtrace procedure)

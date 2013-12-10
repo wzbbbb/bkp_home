@@ -1,0 +1,15 @@
+#! /bin/ksh
+# ========================================================
+#  ORSYP.SA
+#  ------------------------------------------------------
+#  UniViewer Management Server check procedure
+# ========================================================
+#
+echo "UniViewer Management Server check procedure"
+#
+. /apps/unijob110/univiewer_server/casdlsup06/data/unienv.ksh
+
+#  ------------------------------------------------------
+#  Server check-up
+#  ------------------------------------------------------
+java -jar ${U_ROOT_DIR}/app/jars/centralserver-check.jar

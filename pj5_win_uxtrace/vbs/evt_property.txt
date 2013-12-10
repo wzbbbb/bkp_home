@@ -1,0 +1,367 @@
+Microsoft (R) Windows Script Host Version 5.6
+Copyright (C) Microsoft Corporation 1996-2001. All rights reserved.
+
+Properties of Instances of Class Win32_NTLogEvent
+=================================================
+
+
+******************
+INSTANCE NUMBER: 1
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1004
+EventIdentifier : 1004
+EventType : 2
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : Detection of product '{00020409-78E1-11D2-B60F-006097C998E7}', feature 'PowerPointUserData', component '{8ADD2C9A-C8B7-11D1-9C67-0000F81F1B38}' failed.  The resource 'HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\PowerPoint\UserData' does not exist.
+
+RecordNumber : 1850
+SourceName : MsiInstaller
+TimeGenerated : 20050404132902.000000-240
+TimeWritten : 20050404132902.000000-240
+Type : Warning
+User : 
+
+
+******************
+INSTANCE NUMBER: 2
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1004
+EventIdentifier : 1004
+EventType : 2
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : Detection of product '{00020409-78E1-11D2-B60F-006097C998E7}', feature 'OfficeUserData', component '{C9AF9050-C8BE-11D1-9C67-0000F81F1B38}' failed.  The resource 'HKEY_CURRENT_USER\Software\Microsoft\Office\9.0\Common\UserData' does not exist.
+
+RecordNumber : 1849
+SourceName : MsiInstaller
+TimeGenerated : 20050404132902.000000-240
+TimeWritten : 20050404132902.000000-240
+Type : Warning
+User : 
+
+
+******************
+INSTANCE NUMBER: 3
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 5000
+EventIdentifier : 1073746824
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : VirusScan Enterprise McShield service started - scanning for 121011 viruses.
+
+Engine version : 4.4.00
+
+.DAT version : 4460
+
+
+
+EXTRA.DAT name : None
+
+Number of virus signatures in EXTRA.DAT : None
+
+Names of viruses that EXTRA.DAT can detect : None
+
+RecordNumber : 1848
+SourceName : McLogEvent
+TimeGenerated : 20050401173331.000000-300
+TimeWritten : 20050401173331.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 4
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_SUR started successfully.
+
+RecordNumber : 1847
+SourceName : DollarUniverse
+TimeGenerated : 20050401115818.000000-300
+TimeWritten : 20050401115818.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 5
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_ECH_X started successfully.
+
+RecordNumber : 1846
+SourceName : DollarUniverse
+TimeGenerated : 20050401115816.000000-300
+TimeWritten : 20050401115816.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 6
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_CAL_X started successfully.
+
+RecordNumber : 1845
+SourceName : DollarUniverse
+TimeGenerated : 20050401115813.000000-300
+TimeWritten : 20050401115813.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 7
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_ORD_X started successfully.
+
+RecordNumber : 1844
+SourceName : DollarUniverse
+TimeGenerated : 20050401115811.000000-300
+TimeWritten : 20050401115811.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 8
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_DQM_ started successfully.
+
+RecordNumber : 1843
+SourceName : DollarUniverse
+TimeGenerated : 20050401115804.000000-300
+TimeWritten : 20050401115804.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 9
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_CMD started successfully.
+
+RecordNumber : 1842
+SourceName : DollarUniverse
+TimeGenerated : 20050401115802.000000-300
+TimeWritten : 20050401115802.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 10
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_CDJ_A started successfully.
+
+RecordNumber : 1841
+SourceName : DollarUniverse
+TimeGenerated : 20050401115755.000000-300
+TimeWritten : 20050401115755.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 11
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_CDJ_X started successfully.
+
+RecordNumber : 1840
+SourceName : DollarUniverse
+TimeGenerated : 20050401115752.000000-300
+TimeWritten : 20050401115752.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 12
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_IO_A started successfully.
+
+RecordNumber : 1839
+SourceName : DollarUniverse
+TimeGenerated : 20050401115745.000000-300
+TimeWritten : 20050401115745.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 13
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_IO_X started successfully.
+
+RecordNumber : 1838
+SourceName : DollarUniverse
+TimeGenerated : 20050401115743.000000-300
+TimeWritten : 20050401115743.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM
+
+
+******************
+INSTANCE NUMBER: 14
+******************
+
+
+Category : 0
+CategoryString : 
+ComputerName : USSDMDA007
+Data : 
+EventCode : 1
+EventIdentifier : 1073741825
+EventType : 3
+13 -- Type mismatch
+Error getting an event log
+Logfile : Application
+Message : MNT500_LNM started successfully.
+
+RecordNumber : 1837
+SourceName : DollarUniverse
+TimeGenerated : 20050401115741.000000-300
+TimeWritten : 20050401115741.000000-300
+Type : Information
+User : NT AUTHORITY\SYSTEM

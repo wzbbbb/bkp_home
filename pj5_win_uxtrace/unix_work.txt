@@ -1,0 +1,3412 @@
+Directory structure:
+DLS 		;N/A
+DQM 		;N/A
+DUFILES 	;N/A
+FILES 		;N/A
+ITO 		;N/A
+LOG 		;N/A
+LST 		;N/A
+PAT 		;N/A
+SYS 		;N/A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===DLS
+
+
+UXDAP_ls_ltrai_01G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+UXDAP_ls_ltrai_01G.txt:#TSP#  20041104-070341 
+TSP
+
+UXDAP_ls_ltrai_02G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+UXDAP_ls_ltrai_02G.txt:#TSP#  20041104-070728 
+TSP
+
+UXDAP_ls_ltrai_11.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+
+UXDAP_ls_ltrai_11.txt:#TSP#  20041104-070828 
+TSP
+
+UXDAP_ls_ltrai_12.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+UXDAP_ls_ltrai_12.txt:#TSP#  20041104-070847 
+TSP
+
+UXDAP_ls_ltrai_13.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+UXDAP_ls_ltrai_13.txt:#TSP#  20041104-070908 
+TSP
+
+UXDAP_ls_ltrai_98G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+
+UXDAP_ls_ltrai_98G.txt:#TSP#  20041104-070928 
+TSP
+
+UXDAP_ls_ltrai_99G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (modified) file first, including inode and hiden files.
+
+UXDAP_ls_ltrai_99G.txt:#TSP#  20041104-071056 
+TSP
+
+UXDAP_ls_ltruai_01G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_01G.txt:#TSP#  20041104-070341 
+TSP
+
+UXDAP_ls_ltruai_02G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_02G.txt:#TSP#  20041104-070728 
+TSP
+
+UXDAP_ls_ltruai_11.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_11.txt:#TSP#  20041104-070828 
+TSP
+
+UXDAP_ls_ltruai_12.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_12.txt:#TSP#  20041104-070848 
+TSP
+
+UXDAP_ls_ltruai_13.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_13.txt:#TSP#  20041104-070908 
+TSP
+
+UXDAP_ls_ltruai_98G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_98G.txt:#TSP#  20041104-070928 
+TSP
+
+UXDAP_ls_ltruai_99G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/app/data
+LIST UXDAP, old (access) file first, including inode and hiden files.
+
+UXDAP_ls_ltruai_99G.txt:#TSP#  20041104-071057 
+TSP
+
+UXDEX_ls_ltrai_01G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+LIST UXDEX, old (modified) file first, including inode and hiden files.
+
+UXDEX_ls_ltrai_01G.txt:#TSP#  20041104-070338 
+TSP
+
+UXDEX_ls_ltrai_02G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+LIST UXDEX, old (modified) file first, including inode and hiden files.
+
+UXDEX_ls_ltrai_02G.txt:#TSP#  20041104-070724 
+TSP
+
+UXDEX_ls_ltrai_11.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+LIST UXDEX, old (modified) file first, including inode and hiden files.
+
+UXDEX_ls_ltrai_11.txt:#TSP#  20041104-070825 
+
+
+UXDEX_ls_ltrai_12.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltrai_12.txt:#TSP#  20041104-070845 
+
+
+UXDEX_ls_ltrai_13.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltrai_13.txt:#TSP#  20041104-070905 
+
+
+UXDEX_ls_ltrai_98G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltrai_98G.txt:#TSP#  20041104-070925 
+
+
+UXDEX_ls_ltrai_99G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltrai_99G.txt:#TSP#  20041104-071054 
+
+
+UXDEX_ls_ltruai_01G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+LIST UXDEX, old (access) file first, including inode and hiden files.
+
+
+UXDEX_ls_ltruai_01G.txt:#TSP#  20041104-070339 
+
+
+UXDEX_ls_ltruai_02G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+LIST UXDEX, old (access) file first, including inode and hiden files.
+
+UXDEX_ls_ltruai_02G.txt:#TSP#  20041104-070725 
+
+UXDEX_ls_ltruai_11.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltruai_11.txt:#TSP#  20041104-070826 
+
+
+UXDEX_ls_ltruai_12.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltruai_12.txt:#TSP#  20041104-070845 
+
+
+UXDEX_ls_ltruai_13.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltruai_13.txt:#TSP#  20041104-070905 
+
+UXDEX_ls_ltruai_98G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltruai_98G.txt:#TSP#  20041104-070926 
+
+
+UXDEX_ls_ltruai_99G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+UXDEX_ls_ltruai_99G.txt:#TSP#  20041104-071054 
+
+
+UXDIN_ls_ltrai_01G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+LIST UXDIN, old (modified) file first, including inode and hiden files.
+
+
+UXDIN_ls_ltrai_01G.txt:#TSP#  20041104-070340 
+
+UXDIN_ls_ltrai_02G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltrai_02G.txt:#TSP#  20041104-070727 
+
+UXDIN_ls_ltrai_11.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltrai_11.txt:#TSP#  20041104-070827 
+
+UXDIN_ls_ltrai_12.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltrai_12.txt:#TSP#  20041104-070847 
+
+UXDIN_ls_ltrai_13.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltrai_13.txt:#TSP#  20041104-070907 
+
+UXDIN_ls_ltrai_98G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltrai_98G.txt:#TSP#  20041104-070927 
+
+
+UXDIN_ls_ltrai_99G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltrai_99G.txt:#TSP#  20041104-071055 
+
+
+UXDIN_ls_ltruai_01G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+LIST UXDIN, old (access) file first, including inode and hiden files.
+
+UXDIN_ls_ltruai_01G.txt:#TSP#  20041104-070341 
+
+
+UXDIN_ls_ltruai_02G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltruai_02G.txt:#TSP#  20041104-070727 
+
+
+UXDIN_ls_ltruai_11.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltruai_11.txt:#TSP#  20041104-070827 
+
+
+UXDIN_ls_ltruai_12.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltruai_12.txt:#TSP#  20041104-070847 
+
+
+UXDIN_ls_ltruai_13.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltruai_13.txt:#TSP#  20041104-070907 
+
+
+UXDIN_ls_ltruai_98G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltruai_98G.txt:#TSP#  20041104-070927 
+
+UXDIN_ls_ltruai_99G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/int/data
+
+
+UXDIN_ls_ltruai_99G.txt:#TSP#  20041104-071056 
+
+UXDIR_ROOT_ls_ltrai_01G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+LIST UXDIR_ROOT, old (modified) file first, including inode and hiden files.
+
+UXDIR_ROOT_ls_ltrai_01G.txt:#TSP#  20041104-070342 
+
+UXDIR_ROOT_ls_ltrai_02G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltrai_02G.txt:#TSP#  20041104-070729 
+
+UXDIR_ROOT_ls_ltrai_11.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltrai_11.txt:#TSP#  20041104-070828 
+
+UXDIR_ROOT_ls_ltrai_12.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltrai_12.txt:#TSP#  20041104-070848 
+
+UXDIR_ROOT_ls_ltrai_13.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltrai_13.txt:#TSP#  20041104-070908 
+
+UXDIR_ROOT_ls_ltrai_98G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltrai_98G.txt:#TSP#  20041104-070929 
+
+UXDIR_ROOT_ls_ltrai_99G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltrai_99G.txt:#TSP#  20041104-071057 
+
+
+UXDIR_ROOT_ls_ltruai_01G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+LIST UXDIR_ROOT, old (access) file first, including inode and hiden files.
+
+UXDIR_ROOT_ls_ltruai_01G.txt:#TSP#  20041104-070342 
+
+UXDIR_ROOT_ls_ltruai_02G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+
+UXDIR_ROOT_ls_ltruai_02G.txt:#TSP#  20041104-070729 
+
+
+UXDIR_ROOT_ls_ltruai_11.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltruai_11.txt:#TSP#  20041104-070829 
+
+
+UXDIR_ROOT_ls_ltruai_12.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltruai_12.txt:#TSP#  20041104-070849 
+
+
+UXDIR_ROOT_ls_ltruai_13.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltruai_13.txt:#TSP#  20041104-070909 
+
+
+
+UXDIR_ROOT_ls_ltruai_98G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltruai_98G.txt:#TSP#  20041104-070929 
+
+
+UXDIR_ROOT_ls_ltruai_99G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01
+
+
+UXDIR_ROOT_ls_ltruai_99G.txt:#TSP#  20041104-071057 
+
+
+UXDSI_ls_ltrai_01G.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltrai_01G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltrai_01G.txt:#TSP#  20041104-070339 
+
+
+UXDSI_ls_ltrai_02G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+UXDSI_ls_ltrai_02G.txt:#TSP#  20041104-070726 
+
+UXDSI_ls_ltrai_11.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+UXDSI_ls_ltrai_11.txt:#TSP#  20041104-070826 
+
+UXDSI_ls_ltrai_12.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltrai_12.txt:#TSP#  20041104-070846 
+
+
+UXDSI_ls_ltrai_13.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltrai_13.txt:#TSP#  20041104-070906 
+
+
+UXDSI_ls_ltrai_98G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltrai_98G.txt:#TSP#  20041104-070926 
+
+
+UXDSI_ls_ltrai_99G.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltrai_99G.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltrai_99G.txt:#TSP#  20041104-071055 
+
+
+UXDSI_ls_ltruai_01G.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_01G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_01G.txt:#TSP#  20041104-070340 
+
+
+UXDSI_ls_ltruai_02G.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_02G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_02G.txt:#TSP#  20041104-070726 
+
+
+UXDSI_ls_ltruai_11.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_11.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_11.txt:#TSP#  20041104-070826 
+
+
+UXDSI_ls_ltruai_12.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_12.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_12.txt:#TSP#  20041104-070846 
+
+
+UXDSI_ls_ltruai_13.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_13.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_13.txt:#TSP#  20041104-070906 
+
+
+UXDSI_ls_ltruai_98G.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_98G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_98G.txt:#TSP#  20041104-070927 
+
+
+UXDSI_ls_ltruai_99G.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDSI directory
+
+
+UXDSI_ls_ltruai_99G.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+UXDSI_ls_ltruai_99G.txt:#TSP#  20041104-071055 
+
+
+UXEXE_ls_lRai.txt:#REM# RECURSIV LISTING OF THE DOLLAR UNIVERSE UXEXE directory
+
+
+UXEXE_ls_lRai.txt:#CMD# ls -lRai /opt/universe/FDXP01/exec
+
+
+UXEXE_ls_lRai.txt:#TSP#  20041104-070547 
+
+
+UXEXE_ls_lai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXEXE directory (Sort by name)
+
+
+UXEXE_ls_lai.txt:#CMD# ls -lai /opt/universe/FDXP01/exec
+
+
+UXEXE_ls_lai.txt:#TSP#  20041104-070546 
+
+
+UXEXE_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXEXE directory (Sort by time stamp)
+
+
+UXEXE_ls_ltrai.txt:#CMD# ls -ltrai /opt/universe/FDXP01/exec
+
+
+UXEXE_ls_ltrai.txt:#TSP#  20041104-070546 
+
+
+UXLAP_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXLAP directory
+
+
+UXLAP_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/log
+
+
+UXLAP_ls_ltrai.txt:#TSP#  20041104-070551 
+
+
+UXLEX_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXLEX directory
+
+
+UXLEX_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/log
+
+
+UXLEX_ls_ltrai.txt:#TSP#  20041104-070550 
+
+
+UXLIB_ls_lRai.txt:#CMD# ls -lRai /opt/universe/FDXP01/exec/lib
+RECURSIV LISTING OF THE DOLLAR UNIVERSE UXLIB directory
+
+UXLIB_ls_lRai.txt:#TSP#  20041104-070548 
+
+
+UXLIB_ls_lai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXLIB directory (Sort by name)
+
+
+UXLIB_ls_lai.txt:#CMD# ls -lai /opt/universe/FDXP01/exec/lib
+
+
+UXLIB_ls_lai.txt:#TSP#  20041104-070548 
+
+
+UXLIB_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXLIB directory (Sort by time stamp)
+
+
+UXLIB_ls_ltrai.txt:#CMD# ls -ltrai /opt/universe/FDXP01/exec/lib
+
+
+UXLIB_ls_ltrai.txt:#TSP#  20041104-070547 
+
+
+UXLIN_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXLIN directory
+
+
+UXLIN_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/log
+
+
+UXLIN_ls_ltrai.txt:#TSP#  20041104-070551 
+
+
+UXLSI_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXLSI directory
+
+
+UXLSI_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/log
+
+
+UXLSI_ls_ltrai.txt:#TSP#  20041104-070551 
+
+
+UXMGR_ls_lRai.txt:#REM# RECURSIV LISTING OF THE DOLLAR UNIVERSE UXMGR directory
+
+
+UXMGR_ls_lRai.txt:#CMD# ls -lRai /var/universe/ams-cos2p/FDXP01/mgr
+
+
+UXMGR_ls_lRai.txt:#TSP#  20041104-070546 
+
+
+UXMGR_ls_lai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXMGR directory (Sort by name)
+
+
+UXMGR_ls_lai.txt:#CMD# ls -lai /var/universe/ams-cos2p/FDXP01/mgr
+
+
+UXMGR_ls_lai.txt:#TSP#  20041104-070545 
+
+
+UXMGR_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXMGR directory (Sort by time stamp)
+
+
+UXMGR_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/mgr
+
+
+UXMGR_ls_ltrai.txt:#TSP#  20041104-070545 
+
+
+UXPAP_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXPAP directory
+
+
+UXPAP_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/app/upr
+
+
+UXPAP_ls_ltrai.txt:#TSP#  20041104-070550 
+
+
+UXPEX_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXPEX directory
+
+
+UXPEX_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/exp/upr
+
+
+UXPEX_ls_ltrai.txt:#TSP#  20041104-070548 
+
+
+UXPIN_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXPIN directory
+
+
+UXPIN_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/int/upr
+
+
+UXPIN_ls_ltrai.txt:#TSP#  20041104-070549 
+
+
+UXPSI_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXPSI directory
+
+
+UXPSI_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/sim/upr
+
+
+UXPSI_ls_ltrai.txt:#TSP#  20041104-070549 
+
+
+U_TMP_PATH_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE U_TMP_PATH directory
+
+
+U_TMP_PATH_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/temp
+
+
+U_TMP_PATH_ls_ltrai.txt:#TSP#  20041104-070552 
+
+
+base_sys_lst.txt:#REM# LISTING OF THE TCP/IP FILES
+
+
+base_sys_lst.txt:#CMD# ls -ltr /etc/services*
+
+
+base_sys_lst.txt:#CMD# ls -ltr /etc/host*
+
+
+base_sys_lst.txt:#CMD# ls -ltr /var/universe/ams-cos2p/FDXP01/mgr/u_ioproxy.dta*
+
+
+base_sys_lst.txt:#CMD# ls -ltr /var/universe/ams-cos2p/FDXP01/mgr/u_ioproxy.dta*
+
+
+base_sys_lst.txt:#REM# LISTING OF THE UNIVERSE LINKS
+
+
+base_sys_lst.txt:#CMD# ls -l / | grep -i UNI
+
+
+base_sys_lst.txt:#CMD# ls -l /etc | grep -i UNI
+
+
+base_sys_lst.txt:#REM# LISTING OF THE RFC SERVER FOLDER
+
+
+base_sys_lst.txt:#CMD# ls -l /etc | grep UNIVERSE_SERVER_RFC
+
+
+base_sys_lst.txt:#REM# LISTING OF THE SAP AGENT FOLDER
+
+
+base_sys_lst.txt:#CMD# ls -l /etc | grep UNIVERSE_AGENT_SAP
+
+
+base_sys_lst.txt:#REM# LISTING OF THE ALL DQM FOLDER
+
+
+base_sys_lst.txt:#CMD# ls -l /etc | grep UNIVERSE_DQM
+
+
+base_sys_lst.txt:#REM# LISTING OF THE libux STRUCTURE
+
+
+base_sys_lst.txt:#CMD# ls -l /usr/lib | grep libux
+
+
+base_sys_lst.txt:#CMD# ls -lRai /usr/lib/libux*/*
+
+
+du_dir_analysis.txt:#REM# Analysis of the / folder
+
+
+du_dir_analysis.txt:#REM# The available place in / is
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXDEX folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/exp/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/exp/data/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/exp/data is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070559 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/exp/data is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/exp/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070600 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXDSI folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/sim/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/sim/data/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/sim/data is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070602 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/sim/data is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/sim/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070604 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXDIN folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/int/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/int/data/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/int/data is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/int/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070605 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/int/data is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/int/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070607 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXDAP folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/app/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/app/data/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/app/data is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/app/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070609 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/app/data is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/app/data
+
+
+du_dir_analysis.txt:#TSP#  20041104-070611 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXDIR_ROOT folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01 is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01
+
+
+du_dir_analysis.txt:#TSP#  20041104-070613 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01 is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01
+
+
+du_dir_analysis.txt:#TSP#  20041104-070613 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXMGR folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/mgr/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/mgr is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/mgr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070616 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/mgr is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/mgr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070617 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXEXE folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/FDXP01/exec/
+
+
+du_dir_analysis.txt:#REM# The available place in /opt/universe/FDXP01/exec is
+
+
+du_dir_analysis.txt:#CMD# df -k /opt/universe/FDXP01/exec
+
+
+du_dir_analysis.txt:#TSP#  20041104-070618 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /opt/universe/FDXP01/exec is
+
+
+du_dir_analysis.txt:#CMD# du -sk /opt/universe/FDXP01/exec
+
+
+du_dir_analysis.txt:#TSP#  20041104-070619 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXLIB folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/FDXP01/exec/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /opt/universe/FDXP01/exec/lib/
+
+
+du_dir_analysis.txt:#REM# The available place in /opt/universe/FDXP01/exec/lib is
+
+
+du_dir_analysis.txt:#CMD# df -k /opt/universe/FDXP01/exec/lib
+
+
+du_dir_analysis.txt:#TSP#  20041104-070621 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /opt/universe/FDXP01/exec/lib is
+
+
+du_dir_analysis.txt:#CMD# du -sk /opt/universe/FDXP01/exec/lib
+
+
+du_dir_analysis.txt:#TSP#  20041104-070622 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXPEX folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/exp/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/exp/upr/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/exp/upr is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/exp/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070625 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/exp/upr is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/exp/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070626 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXPSI folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/sim/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/sim/upr/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/sim/upr is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/sim/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070628 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/sim/upr is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/sim/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070629 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXPIN folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/int/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/int/upr/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/int/upr is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/int/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070631 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/int/upr is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/int/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070632 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXPAP folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/app/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/app/upr/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/app/upr is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/app/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070634 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/app/upr is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/app/upr
+
+
+du_dir_analysis.txt:#TSP#  20041104-070636 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXLEX folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/exp/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/exp/log/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/exp/log is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/exp/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070638 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/exp/log is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/exp/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070639 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXLSI folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/sim/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/sim/log/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/sim/log is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/sim/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070641 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/sim/log is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/sim/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070643 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXLIN folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/int/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/int/log/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/int/log is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/int/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070645 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/int/log is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/int/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070646 
+
+
+du_dir_analysis.txt:#REM# Analysis of the UXLAP folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/app/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/app/log/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/app/log is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/app/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070648 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/app/log is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/app/log
+
+
+du_dir_analysis.txt:#TSP#  20041104-070650 
+
+
+du_dir_analysis.txt:#REM# Analysis of the U_TMP_PATH folder
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/
+
+
+du_dir_analysis.txt:#REM# Rights of the folder /var/universe/ams-cos2p/FDXP01/temp/
+
+
+du_dir_analysis.txt:#REM# The available place in /var/universe/ams-cos2p/FDXP01/temp is
+
+
+du_dir_analysis.txt:#CMD# df -k /var/universe/ams-cos2p/FDXP01/temp
+
+
+du_dir_analysis.txt:#TSP#  20041104-070652 
+
+
+du_dir_analysis.txt:#REM# The place occupied by /var/universe/ams-cos2p/FDXP01/temp is
+
+
+du_dir_analysis.txt:#CMD# du -sk /var/universe/ams-cos2p/FDXP01/temp
+
+
+du_dir_analysis.txt:#TSP#  20041104-070653 
+
+
+
+
+
+===DQM
+
+
+cp *.dat
+
+
+cp uxshutdowndqm*
+
+
+cp uxstartdqm*
+
+
+cp *.log
+
+
+cp uxsrsrv.*
+
+
+DQM_all_ls_ltrai.txt:#REM# LISTING OF THE ALL DQM FOLDER
+
+
+DQM_all_ls_ltrai.txt:#CMD# ls -l /etc | grep UNIVERSE_DQM
+
+
+DQM_all_ls_ltrai.txt:#REM# /etc/UNIVERSE_DQM_FDXP01 is unreachable
+
+
+DQM_UXDQM_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDQM directory
+
+
+DQM_UXDQM_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/DQM
+
+
+DQM_UXDQM_ls_ltrai.txt:#TSP#  20041104-071026
+
+
+DQM_UXDQM_ls_ltruai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDQM directory
+
+
+DQM_UXDQM_ls_ltruai.txt:#CMD# ls -ltruai /var/universe/ams-cos2p/FDXP01/DQM
+
+
+DQM_UXDQM_ls_ltruai.txt:#TSP#  20041104-071026
+
+
+uxshw_job.txt:#CMD# /var/universe/ams-cos2p/FDXP01/DQM/uxshwjob
+
+
+uxshw_job.txt:#TSP#  20041104-071029
+
+
+uxshw_queue_all.txt:#CMD# /var/universe/ams-cos2p/FDXP01/DQM/uxshwque queue=ALL
+
+
+uxshw_queue_all.txt:#TSP#  20041104-071028
+
+
+
+
+
+
+
+
+===DUFILES
+
+
+UXDEX
+
+
+	dffdob50.dta.gz
+
+
+	files.txt
+
+
+	#REM# These files come from this directory : /export/home/TFRV50/exp/data
+
+
+	#REM# Liste of the backuped files : fmlp fmsb fmsp fmtp fmcx fmfu fmhs fmph
+
+
+	#REM# Liste of the backuped extensions : dta
+
+
+	#REM# These files come from this directory : /export/home/TFRV50/exp/data
+
+
+	#REM# Liste of the backuped files : dffdob
+
+
+	#REM# Liste of the backuped extensions : dta
+
+
+
+
+
+
+
+
+===FILES
+
+
+cp 
+
+
+	hosts
+
+
+	install.ksh
+
+
+	install.lis
+
+
+	resolv.conf
+
+
+	services
+
+
+	U_ANTE_UPROC
+
+
+	u_batch
+
+
+	u_fali01.txt
+
+
+	UNIVERSE_SECURITY_TEST50
+
+
+	U_POST_UPROC
+
+
+	uxlnmTEST50.dat
+
+
+	uxsetenv
+
+
+	uxshutdown*
+
+
+		uxshutdown_gen
+
+
+		uxshutdown_gen_20031218
+
+
+		uxshutdown_gen_RE0020C_20030605160832
+
+
+		uxshutdown_gen_RE0021D
+
+
+	uxsrsrv*
+
+
+		uxsrsrv.alias
+
+
+		uxsrsrv.cnf
+
+
+		uxsrsrv.protocol
+
+
+		uxsrsrv.sck
+
+
+	uxstartup*
+
+
+		uxstartup_gen
+
+
+	uxtrace
+
+
+	uxversion
+
+
+	ux_vrf_rgz_rst
+
+
+
+
+
+
+
+
+===ITO (need more info)
+
+
+autoNotif.pl
+
+
+ito.txt
+
+
+	#REM# The value of ${UXITO_OPCMSG} is /opt/OV/bin/OpC/opcmsg
+
+
+	#CMD# ls -ldai /usr/lib/libux*/libuxspv*
+
+
+
+
+
+
+
+
+
+
+
+===LOG
+
+
+
+
+
+copy everthing to the trace_result dir, and compress the job logs.
+
+
+
+
+
+log_list.txt
+
+
+cp * .../trace_result/tmp
+
+
+cd /trace_result/tmp
+
+
+mv UXLAP* UXLEX* UXLIN* UXLSI* REORG* ../
+
+
+mkdir UXLEX UXLAP UXLIN UXLSI
+
+
+cp X* ./UXLEX
+
+
+cp A* ./UXLAP
+
+
+cp I* ./UXLIN
+
+
+cp S* ./UXLSI
+
+
+tar zcvf UXLEX.tar.gz ./UXLEX
+
+
+tar zcvf UXLAP.tar.gz ./UXLAP
+
+
+tar zcvf UXLIN.tar.gz ./UXLIN
+
+
+tar zcvf UXLSI.tar.gz ./UXLSI
+
+
+
+
+
+
+
+
+
+
+
+===LST
+
+
+
+admin_hdp_lst.txt
+
+
+admin_mu_lst.txt
+
+
+admin_mu_shw.txt
+
+
+admin_node_lst.txt
+
+
+admin_node_shw.txt
+
+
+admin_prof_lst.txt
+
+
+admin_proxy_lst.txt
+
+
+admin_user_lst.txt
+
+
+admin_user_shw.txt
+
+
+APP_atm_lst.txt
+
+
+APP_ctl_lst.txt
+
+
+APP_ctl_lst_upr_IU_PUR.txt
+
+
+APP_evt_lst.txt
+
+
+APP_fla_lst.txt
+
+
+APP_ses_lst.txt
+
+
+APP_tsk_lst.txt
+
+
+APP_upr_lst.txt
+
+
+EXP_atm_lst.txt
+
+
+EXP_ctl_hst.txt
+
+
+EXP_ctl_lst.txt
+
+
+EXP_ctl_lst_upr_IU_PUR.txt
+
+
+EXP_evt_lst.txt
+
+
+EXP_fla_lst.txt
+
+
+EXP_ses_lst.txt
+
+
+EXP_ses_shw.txt
+
+
+EXP_tsk_lst.txt
+
+
+EXP_tsk_shw.txt
+
+
+EXP_upr_lst.txt
+
+
+EXP_upr_shw.txt
+
+
+INT_atm_lst.txt
+
+
+INT_ctl_lst.txt
+
+
+INT_ctl_lst_upr_IU_PUR.txt
+
+
+INT_evt_lst.txt
+
+
+INT_fla_lst.txt
+
+
+INT_ses_lst.txt
+
+
+INT_tsk_lst.txt
+
+
+INT_upr_lst.txt
+
+
+SIM_atm_lst.txt
+
+
+SIM_ctl_lst.txt
+
+
+SIM_ctl_lst_upr_IU_PUR.txt
+
+
+SIM_evt_lst.txt
+
+
+SIM_fla_lst.txt
+
+
+SIM_ses_lst.txt
+
+
+SIM_tsk_lst.txt
+
+
+SIM_upr_lst.txt
+
+
+
+
+
+
+
+
+EXP_atm_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst atm EXP all partage
+
+
+EXP_atm_lst.txt:#TSP#  20041104-071931 
+
+
+EXP_ctl_hst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst ctl EXP ses=* vses=* upr=* vupr=* mu=* hst
+
+
+EXP_ctl_hst.txt:#TSP#  20041104-071940 
+
+
+EXP_ctl_hst.txt:### Creation of destination directory : /var/universe/ams-cos2q/FDXP01/archive/E
+
+
+EXP_ctl_hst.txt:xpTables_ams-cos2q_FDXP01_20041021-023006 ###                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Backing up AREA related data ###                                            
+
+
+EXP_ctl_hst.txt:### Processing area EXP       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area SIM       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area INT       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area APP       ###                                               
+
+
+EXP_ctl_hst.txt:### DONE Backing up AREA related data ###                                       
+
+
+EXP_ctl_hst.txt:### Extracting resources ###                                                    
+
+
+EXP_ctl_hst.txt:### Extracting rules ###                                                        
+
+
+EXP_ctl_hst.txt:### Extracting ADMIN data ###                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Tar directory : /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_F
+
+
+EXP_ctl_hst.txt:DXP01_20041021-023006 ###                                                       
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q
+
+
+EXP_ctl_hst.txt:_FDXP01_20041021-023006.tar ###                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove directory /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_
+
+
+EXP_ctl_hst.txt:FDXP01_20041021-023006 ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### List ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/arc
+
+
+EXP_ctl_hst.txt:hive ###                                                                        
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/a
+
+
+EXP_ctl_hst.txt:rchive ###                                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Creation of destination directory : /var/universe/ams-cos2q/FDXP01/archive/E
+
+
+EXP_ctl_hst.txt:xpTables_ams-cos2q_FDXP01_20041022-023005 ###                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Backing up AREA related data ###                                            
+
+
+EXP_ctl_hst.txt:### Processing area EXP       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area SIM       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area INT       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area APP       ###                                               
+
+
+EXP_ctl_hst.txt:### DONE Backing up AREA related data ###                                       
+
+
+EXP_ctl_hst.txt:### Extracting resources ###                                                    
+
+
+EXP_ctl_hst.txt:### Extracting rules ###                                                        
+
+
+EXP_ctl_hst.txt:### Extracting ADMIN data ###                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Tar directory : /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_F
+
+
+EXP_ctl_hst.txt:DXP01_20041022-023005 ###                                                       
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q
+
+
+EXP_ctl_hst.txt:_FDXP01_20041022-023005.tar ###                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove directory /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_
+
+
+EXP_ctl_hst.txt:FDXP01_20041022-023005 ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### List ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/arc
+
+
+EXP_ctl_hst.txt:hive ###                                                                        
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/a
+
+
+EXP_ctl_hst.txt:rchive ###                                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Creation of destination directory : /var/universe/ams-cos2q/FDXP01/archive/E
+
+
+EXP_ctl_hst.txt:xpTables_ams-cos2q_FDXP01_20041023-023005 ###                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Backing up AREA related data ###                                            
+
+
+EXP_ctl_hst.txt:### Processing area EXP       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area SIM       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area INT       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area APP       ###                                               
+
+
+EXP_ctl_hst.txt:### DONE Backing up AREA related data ###                                       
+
+
+EXP_ctl_hst.txt:### Extracting resources ###                                                    
+
+
+EXP_ctl_hst.txt:### Extracting rules ###                                                        
+
+
+EXP_ctl_hst.txt:### Extracting ADMIN data ###                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Tar directory : /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_F
+
+
+EXP_ctl_hst.txt:DXP01_20041023-023005 ###                                                       
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q
+
+
+EXP_ctl_hst.txt:_FDXP01_20041023-023005.tar ###                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove directory /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_
+
+
+EXP_ctl_hst.txt:FDXP01_20041023-023005 ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### List ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/arc
+
+
+EXP_ctl_hst.txt:hive ###                                                                        
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/a
+
+
+EXP_ctl_hst.txt:rchive ###                                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Creation of destination directory : /var/universe/ams-cos2q/FDXP01/archive/E
+
+
+EXP_ctl_hst.txt:xpTables_ams-cos2q_FDXP01_20041024-023005 ###                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Backing up AREA related data ###                                            
+
+
+EXP_ctl_hst.txt:### Processing area EXP       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area SIM       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area INT       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area APP       ###                                               
+
+
+EXP_ctl_hst.txt:### DONE Backing up AREA related data ###                                       
+
+
+EXP_ctl_hst.txt:### Extracting resources ###                                                    
+
+
+EXP_ctl_hst.txt:### Extracting rules ###                                                        
+
+
+EXP_ctl_hst.txt:### Extracting ADMIN data ###                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Tar directory : /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_F
+
+
+EXP_ctl_hst.txt:DXP01_20041024-023005 ###                                                       
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q
+
+
+EXP_ctl_hst.txt:_FDXP01_20041024-023005.tar ###                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove directory /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_
+
+
+EXP_ctl_hst.txt:FDXP01_20041024-023005 ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### List ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/arc
+
+
+EXP_ctl_hst.txt:hive ###                                                                        
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/a
+
+
+EXP_ctl_hst.txt:rchive ###                                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Creation of destination directory : /var/universe/ams-cos2q/FDXP01/archive/E
+
+
+EXP_ctl_hst.txt:xpTables_ams-cos2q_FDXP01_20041104-070829 ###                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Backing up AREA related data ###                                            
+
+
+EXP_ctl_hst.txt:### Processing area EXP       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area SIM       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area INT       ###                                               
+
+
+EXP_ctl_hst.txt:### Processing area APP       ###                                               
+
+
+EXP_ctl_hst.txt:### DONE Backing up AREA related data ###                                       
+
+
+EXP_ctl_hst.txt:### Extracting resources ###                                                    
+
+
+EXP_ctl_hst.txt:### Extracting rules ###                                                        
+
+
+EXP_ctl_hst.txt:### Extracting ADMIN data ###                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Tar directory : /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_F
+
+
+EXP_ctl_hst.txt:DXP01_20041104-070829 ###                                                       
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q
+
+
+EXP_ctl_hst.txt:_FDXP01_20041104-070829.tar ###                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove directory /var/universe/ams-cos2q/FDXP01/archive/ExpTables_ams-cos2q_
+
+
+EXP_ctl_hst.txt:FDXP01_20041104-070829 ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### List ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/arc
+
+
+EXP_ctl_hst.txt:hive ###                                                                        
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove ExpTables files older than 2 days in /var/universe/ams-cos2q/FDXP01/a
+
+
+EXP_ctl_hst.txt:rchive ###                                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### List of operations logs older than 4 days in /var/universe/ams-cos2q/FDXP01/
+
+
+EXP_ctl_hst.txt:exp/log ###                                                                     
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Creation of Unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01
+
+
+EXP_ctl_hst.txt:_Unilog_X_20041021 ###                                                          
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Move universe.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore universe.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxioserv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxioserv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxiotrns.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxiotrns.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:### Restore uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 l
+
+
+EXP_ctl_hst.txt:### Move FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Tar unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:X_20041021 ###                                                                  
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_200
+
+
+EXP_ctl_hst.txt:41021.tar ###                                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove unilog directory /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:_X_20041021 ###                                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Too old archives list in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove old archives in /var/universe/ams-cos2q/FDXP01/archive ###           
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Updated list of files in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### List of operations logs older than 4 days in /var/universe/ams-cos2q/FDXP01/
+
+
+EXP_ctl_hst.txt:exp/log ###                                                                     
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Creation of Unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01
+
+
+EXP_ctl_hst.txt:_Unilog_X_20041022 ###                                                          
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Move universe.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore universe.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxioserv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxioserv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxiotrns.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxiotrns.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:### Restore uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 l
+
+
+EXP_ctl_hst.txt:### Move FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Tar unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:X_20041022 ###                                                                  
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_200
+
+
+EXP_ctl_hst.txt:41022.tar ###                                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove unilog directory /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:_X_20041022 ###                                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Too old archives list in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove old archives in /var/universe/ams-cos2q/FDXP01/archive ###           
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Updated list of files in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### List of operations logs older than 4 days in /var/universe/ams-cos2q/FDXP01/
+
+
+EXP_ctl_hst.txt:exp/log ###                                                                     
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Creation of Unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01
+
+
+EXP_ctl_hst.txt:_Unilog_X_20041023 ###                                                          
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Move universe.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore universe.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxioserv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxioserv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxiotrns.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxiotrns.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:### Restore uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 l
+
+
+EXP_ctl_hst.txt:### Move FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Tar unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:X_20041023 ###                                                                  
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_200
+
+
+EXP_ctl_hst.txt:41023.tar ###                                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove unilog directory /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:_X_20041023 ###                                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Too old archives list in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove old archives in /var/universe/ams-cos2q/FDXP01/archive ###           
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Updated list of files in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### List of operations logs older than 4 days in /var/universe/ams-cos2q/FDXP01/
+
+
+EXP_ctl_hst.txt:exp/log ###                                                                     
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove these logs  ###                                                      
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Creation of Unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01
+
+
+EXP_ctl_hst.txt:_Unilog_X_20041024 ###                                                          
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Move universe.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore universe.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcdjsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxcmdsrv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxioserv.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxioserv.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxiotrns.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_
+
+
+EXP_ctl_hst.txt:### Restore uxiotrns.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 lin
+
+
+EXP_ctl_hst.txt:### Move uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:### Restore uxstartdqm.log in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 l
+
+
+EXP_ctl_hst.txt:### Move FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_CALX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ECHX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_ORDX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Move FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:### Restore FDXP01_SURX.LOG in /var/universe/ams-cos2q/FDXP01/exp/log with 5000 
+
+
+EXP_ctl_hst.txt:### Tar unilog directory : /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_
+
+
+EXP_ctl_hst.txt:X_20041024 ###                                                                  
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Compress Tar file /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog_X_200
+
+
+EXP_ctl_hst.txt:41024.tar ###                                                                   
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove unilog directory /var/universe/ams-cos2q/FDXP01/archive/FDXP01_Unilog
+
+
+EXP_ctl_hst.txt:_X_20041024 ###                                                                 
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:### Too old archives list in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Remove old archives in /var/universe/ams-cos2q/FDXP01/archive ###           
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### Updated list of files in /var/universe/ams-cos2q/FDXP01/archive ###         
+
+
+EXP_ctl_hst.txt:### Command completed.                                                          
+
+
+EXP_ctl_hst.txt:### All the steps are completed ###                                             
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_hst.txt:##################################################
+
+
+EXP_ctl_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst ctl EXP ses=* vses=* upr=* vupr=* mu=* full
+
+
+EXP_ctl_lst.txt:#TSP#  20041104-071935 
+
+
+EXP_ctl_lst_upr_IU_PUR.txt:#CMD# /opt/universe/FDXP01/exec/uxlst ctl EXP ses=* vses=* upr=IU_PUR full
+
+
+EXP_ctl_lst_upr_IU_PUR.txt:#TSP#  20041104-071936 
+
+
+EXP_evt_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst evt EXP full
+
+
+EXP_evt_lst.txt:#TSP#  20041104-071934 
+
+
+EXP_fla_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst fla EXP full
+
+
+EXP_fla_lst.txt:#TSP#  20041104-071934 
+
+
+EXP_ses_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst ses EXP ses=* vses=* full
+
+
+EXP_ses_lst.txt:#TSP#  20041104-071933 
+
+
+EXP_ses_shw.txt:#CMD# /opt/universe/FDXP01/exec/uxshw ses EXP ses=* vses=* lnk
+
+
+EXP_ses_shw.txt:#TSP#  20041104-071937 
+
+
+EXP_tsk_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst tsk EXP upr=* vupr=* mu=* full
+
+
+EXP_tsk_lst.txt:#TSP#  20041104-071933 
+
+
+EXP_tsk_shw.txt:#CMD# /opt/universe/FDXP01/exec/uxshw tsk EXP upr=* vupr=* mu=*
+
+
+EXP_tsk_shw.txt:#TSP#  20041104-071937 
+
+
+EXP_upr_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst upr EXP upr=* vupr=* full
+
+
+EXP_upr_lst.txt:#TSP#  20041104-071932 
+
+
+EXP_upr_shw.txt:#CMD# /opt/universe/FDXP01/exec/uxshw upr EXP upr=* vupr=*
+
+
+EXP_upr_shw.txt:#TSP#  20041104-071938 
+
+
+admin_hdp_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst hdp full
+
+
+admin_hdp_lst.txt:#TSP#  20041104-071928 
+
+
+admin_mu_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst MU MU=* full
+
+
+admin_mu_lst.txt:#TSP#  20041104-071927 
+
+
+admin_mu_shw.txt:#CMD# /opt/universe/FDXP01/exec/uxshw MU MU=*
+
+
+admin_mu_shw.txt:#TSP#  20041104-071928 
+
+
+admin_mu_shw.txt~:#CMD# /opt/universe/FDXP01/exec/uxshw MU MU=*
+
+
+admin_mu_shw.txt~:#TSP#  20041104-071928 
+
+
+admin_node_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst NODE TNODE=* full
+
+
+admin_node_lst.txt:#TSP#  20041104-071927 
+
+
+admin_node_shw.txt:#CMD# /opt/universe/FDXP01/exec/uxshw NODE TNODE=*
+
+
+admin_node_shw.txt:#TSP#  20041104-071930 
+
+
+admin_prof_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst prof prof=* 
+
+
+admin_prof_lst.txt:#TSP#  20041104-071929 
+
+
+admin_proxy_lst.txt:#CMD# /opt/universe/FDXP01/exec/lstproxy
+
+
+admin_proxy_lst.txt:#TSP#  20041104-071931 
+
+
+admin_user_lst.txt:#CMD# /opt/universe/FDXP01/exec/uxlst user user=* full
+
+
+admin_user_lst.txt:#TSP#  20041104-071929 
+
+
+admin_user_shw.txt:#CMD# /opt/universe/FDXP01/exec/uxshw user user=*
+
+
+admin_user_shw.txt:#TSP#  20041104-071930 
+
+
+
+
+
+
+
+
+==PAT
+
+
+
+patrol.txt
+
+
+#REM# The PATROL_HOME variable is not defined
+
+
+#REM# Value of ${PATROL_HOME} :
+
+
+#REM# The U_PATROL_HOME variable is not defined
+
+
+#REM# Value of ${U_PATROL_HOME} :
+
+
+#REM# /UNIVERSE/Patrol does not exist
+
+
+#CMD# ls -ltrai /UNIVERSE
+
+
+#TSP#  20041104-071925
+
+
+/UNIVERSE not found
+
+
+
+
+
+
+
+
+
+
+
+===SYS
+
+
+df_k_01G.txt
+
+
+df_k_02G.txt
+
+
+df_k_98G.txt
+
+
+df_k_99G.txt
+
+
+env.txt
+
+
+netstat_a_01G.txt
+
+
+netstat_a_02G.txt
+
+
+netstat_a_98G.txt
+
+
+netstat_a_99G.txt
+
+
+netstat_i.txt
+
+
+netstat_na_01G.txt
+
+
+netstat_na_02G.txt
+
+
+netstat_na_98G.txt
+
+
+netstat_na_99G.txt
+
+
+ps_ef_01G.txt
+
+
+ps_ef_02G.txt
+
+
+ps_ef_98G.txt
+
+
+ps_ef_99G.txt
+
+
+ps_efl_01G.txt
+
+
+ps_efl_02G.txt
+
+
+ps_efl_98G.txt
+
+
+ps_efl_99G.txt
+
+
+ps_efl_ux_01G.txt
+
+
+ps_efl_ux_02G.txt
+
+
+ps_efl_ux_11.txt
+
+
+ps_efl_ux_12.txt
+
+
+ps_efl_ux_13.txt
+
+
+ps_efl_ux_98G.txt
+
+
+ps_efl_ux_99G.txt
+
+
+ps_ef_ux_01G.txt
+
+
+ps_ef_ux_02G.txt
+
+
+ps_ef_ux_98G.txt
+
+
+ps_ef_ux_99G.txt
+
+
+shared_memory.txt
+
+
+top_bud3_01G.txt
+
+
+top_bud3_02G.txt
+
+
+top_bud3_98G.txt
+
+
+top_bud3_99G.txt
+
+
+vmstat_01G.txt
+
+
+vmstat_02G.txt
+
+
+vmstat_98G.txt
+
+
+vmstat_99G.txt
+
+
+who_b.txt
+
+
+
+
+
+df_k_01G.txt:#CMD# df -k
+
+
+df_k_01G.txt:#TSP#  20041104-071401 
+
+
+df_k_02G.txt:#CMD# df -k
+
+
+df_k_02G.txt:#TSP#  20041104-071659 
+
+
+df_k_98G.txt:#CMD# df -k
+
+
+df_k_98G.txt:#TSP#  20041104-071857 
+
+
+df_k_99G.txt:#CMD# df -k
+
+
+df_k_99G.txt:#TSP#  20041104-072020 
+
+
+env.txt:#CMD# env
+
+
+env.txt:#TSP#  20041104-071422 
+
+
+netstat_a_01G.txt:#CMD# netstat -a
+
+
+netstat_a_01G.txt:#TSP#  20041104-071333 
+
+
+netstat_a_02G.txt:#CMD# netstat -a
+
+
+netstat_a_02G.txt:#TSP#  20041104-071611 
+
+
+netstat_a_98G.txt:#CMD# netstat -a
+
+
+netstat_a_98G.txt:#TSP#  20041104-071829 
+
+
+netstat_a_99G.txt:#CMD# netstat -a
+
+
+netstat_a_99G.txt:#TSP#  20041104-071955 
+
+
+netstat_i.txt:#CMD# netstat -i
+
+
+netstat_i.txt:#TSP#  20041104-071422 
+
+
+netstat_na_01G.txt:#CMD# netstat -na
+
+
+netstat_na_01G.txt:#TSP#  20041104-071359 
+
+
+netstat_na_02G.txt:#CMD# netstat -na
+
+
+netstat_na_02G.txt:#TSP#  20041104-071658 
+
+
+netstat_na_98G.txt:#CMD# netstat -na
+
+
+netstat_na_98G.txt:#TSP#  20041104-071856 
+
+
+netstat_na_99G.txt:#CMD# netstat -na
+
+
+netstat_na_99G.txt:#TSP#  20041104-072019 
+
+
+ps_ef_01G.txt:#CMD# ps -ef
+
+
+ps_ef_01G.txt:#TSP#  20041104-071400 
+
+
+ps_ef_02G.txt:#CMD# ps -ef
+
+
+ps_ef_02G.txt:#TSP#  20041104-071658 
+
+
+ps_ef_98G.txt:#CMD# ps -ef
+
+
+ps_ef_98G.txt:#TSP#  20041104-071857 
+
+
+ps_ef_99G.txt:#CMD# ps -ef
+
+
+ps_ef_99G.txt:#TSP#  20041104-072020 
+
+
+ps_ef_ux_01G.txt:#CMD# ps -ef | grep ux
+
+
+ps_ef_ux_01G.txt:#TSP#  20041104-071415 
+
+
+ps_ef_ux_02G.txt:#CMD# ps -ef | grep ux
+
+
+ps_ef_ux_02G.txt:#TSP#  20041104-071715 
+
+
+ps_ef_ux_98G.txt:#CMD# ps -ef | grep ux
+
+
+ps_ef_ux_98G.txt:#TSP#  20041104-071912 
+
+
+ps_ef_ux_99G.txt:#CMD# ps -ef | grep ux
+
+
+ps_ef_ux_99G.txt:#TSP#  20041104-072032 
+
+
+ps_efl_01G.txt:#CMD# ps -efl
+
+
+ps_efl_01G.txt:#TSP#  20041104-071415 
+
+
+ps_efl_02G.txt:#CMD# ps -efl
+
+
+ps_efl_02G.txt:#TSP#  20041104-071716 
+
+
+ps_efl_98G.txt:#CMD# ps -efl
+
+
+ps_efl_98G.txt:#TSP#  20041104-071913 
+
+
+ps_efl_99G.txt:#CMD# ps -efl
+
+
+ps_efl_99G.txt:#TSP#  20041104-072032 
+
+
+ps_efl_ux_01G.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_01G.txt:#TSP#  20041104-071328 
+
+
+ps_efl_ux_02G.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_02G.txt:#TSP#  20041104-071606 
+
+
+ps_efl_ux_11.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_11.txt:#TSP#  20041104-071721 
+
+
+ps_efl_ux_12.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_12.txt:#TSP#  20041104-071743 
+
+
+ps_efl_ux_13.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_13.txt:#TSP#  20041104-071802 
+
+
+ps_efl_ux_98G.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_98G.txt:#TSP#  20041104-071822 
+
+
+ps_efl_ux_99G.txt:#CMD# ps -efl | grep ux
+
+
+ps_efl_ux_99G.txt:#TSP#  20041104-071951 
+
+
+sheared_memory.txt:#CMD# ipcs -ma
+
+
+sheared_memory.txt:#CMD# /opt/universe/FDXP01/exec/uxlnmlst FDXP01 X ams-cos2q
+
+
+sheared_memory.txt:#CMD# /opt/universe/FDXP01/exec/uxlnmlst FDXP01 S ams-cos2q
+
+
+sheared_memory.txt:#CMD# /opt/universe/FDXP01/exec/uxlnmlst FDXP01 A ams-cos2q
+
+
+sheared_memory.txt:#CMD# /opt/universe/FDXP01/exec/uxlnmlst FDXP01 I ams-cos2q
+
+
+vmstat_01G.txt:#CMD# vmstat 1 5
+
+
+vmstat_01G.txt:#TSP#  20041104-071416 
+
+
+vmstat_02G.txt:#CMD# vmstat 1 5
+
+
+vmstat_02G.txt:#TSP#  20041104-071717 
+
+
+vmstat_98G.txt:#CMD# vmstat 1 5
+
+
+vmstat_98G.txt:#TSP#  20041104-071913 
+
+
+vmstat_99G.txt:#CMD# vmstat 1 5
+
+
+vmstat_99G.txt:#TSP#  20041104-072033 
+
+
+who_b.txt:#CMD# who -b 
+
+
+
+
+

@@ -1,0 +1,79 @@
+###################################################################
+#                 Daenv Aliases
+###################################################################
+# @(#) script sh
+# @(#) created by  : Guy MULLER (Orsyp)
+###################################################################
+##
+# revision : 1.01
+# date     : 20050712
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : /etc/dalcl integration
+##
+# revision : 1.0
+# date     : 20031217
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Evolution
+##
+# revision : 0.9
+# date     : 20021107
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Creation
+
+# Environment 
+g_daenv=/etc/daenv; export g_daenv
+g_dalcl=/etc/dalcl; export g_dalcl
+
+# Cases aliases
+alias clfcp='sudo '${g_daenv}'/cases/CpLinuxFr'
+alias clmkd='sudo '${g_daenv}'/cases/MkdirLinuxCase'
+alias clmkdir='sudo '${g_daenv}'/cases/MkdirLinuxCase' #Old
+alias clcd='. '${g_daenv}'/cases/CdLinuxCase'
+
+
+alias cflcp='sudo '${g_daenv}'/cases/CpFrLinux'
+alias cdiff=${g_daenv}'/cases/DiffCase'
+alias cfls=${g_daenv}'/cases/LsFrCase'
+alias clls=${g_daenv}'/cases/LsLinuxCase'
+alias cfmkd=${g_daenv}'/cases/MkdirFrCase'
+alias cfmkdir=${g_daenv}'/cases/MkdirFrCase' #Old
+alias dudmp='sudo -u univa '${g_daenv}'/cases/DumpFiles'
+alias dudmpmu='sudo -u univa '${g_daenv}'/cases/DumpFiles_MultiComp'
+alias dutrs='sudo -u univa '${g_daenv}'/cases/Multi_Insert.ksh'
+
+alias linkcase='/users/zwa/pj26_case_directory_by_customer/linkcase.sh'
+alias cdc='. /etc/daenv/cases/cdc'
+# Dollar Universe Aliases
+alias lddu=${g_daenv}'/du/LoadDuEnv' #Old
+alias duld=${g_daenv}'/du/LoadDuEnv'
+alias duenv='echo "Company name : ${S_SOCIETE}";echo "User Id : `id`"'
+alias dustp='sudo -u univa '${g_daenv}'/du/StopDu'
+alias dustr='sudo -u univa '${g_daenv}'/du/StartDu'
+alias durzd='sudo -u univa '${g_daenv}'/du/RazFicDyn'
+alias durlk='sudo '${g_daenv}'/du/DuRelink'
+
+# Dollar Universe tools
+#alias dudmp=${g_daenv}'/tools/Dump_fmsb50.pl'
+# Licenses Aliases
+alias lic=${g_dalcl}'/lic/lic_gen'
+alias licmu=${g_daenv}'/lic/lic_mu'
+alias licma=${g_daenv}'/lic/lic_ma'
+
+# Patches Aliases
+alias dped='sudo '${g_daenv}'/patch/FrEdition.sh'
+alias dpch='sudo '${g_daenv}'/patch/FrPatches.sh'
+
+# Dollar Access Aliases
+alias daal='. '${g_daenv}'/env/Alias'
+alias dahlp='cat '${g_daenv}'/help/help.txt'
+alias dasmb='sudo '${g_daenv}'/net/Samba'
+alias danfs='sudo '${g_daenv}'/net/Nfs'
+alias envrep='${g_daenv}/du/env_report.ksh'
+
+# Others Aliases
+alias untaz=${g_daenv}'/cases/Untaz'
+
+# Load customized aliases
+l_id=`id -nu`
+l_home_alias=/data/home/${l_id}/.alias
+[ -f ${l_home_alias} ] && . ${l_home_alias}

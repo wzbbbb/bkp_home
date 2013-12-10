@@ -1,0 +1,17 @@
+#! /bin/ksh
+# =======================================================
+#           ---------------------------------------------
+# ORSYP.Sa           
+#   UNIVERSE shutdown procedure
+#   asked by the administrator
+# =======================================================
+#
+#echo "UNIVERSE shutdown beginning"
+#
+. /universe/OSCORP/mgr/uxsetenv
+#
+$UXEXE/uxgetmsg INSTTEXT000146
+ksh $UXMGR/uxshutdown_gen ocean67  OSCORP 
+#
+#echo "UNIVERSE end of shutdown procedure"
+$UXEXE/uxgetmsg INSTTEXT000147

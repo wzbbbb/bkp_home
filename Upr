@@ -1,0 +1,12 @@
+#!/usr/bin/ksh
+num=1
+upr_base=TC31645W
+until [ ${num} -gt 99 ]
+do
+	[ ${num} -ge 10 ] || uproc_name=${upr_base}0${num}
+	[ ${num} -ge 10 ] && uproc_name=${upr_base}${num}
+	uxadd UPR APP UPR=${uproc_name} LABEL=\"DM1 CMP E0\" FPERIOD=d appl="U_" memo="O" nbper=1
+	echo "exit 0" > ${UXPAP}/${uproc_name}.001
+	chmod 777 ${UXPAP}/${uproc_name}.001
+	num=` expr ${num} + 1`
+done

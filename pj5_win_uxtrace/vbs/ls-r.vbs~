@@ -1,0 +1,9 @@
+Set FSO = CreateObject("Scripting.FileSystemObject")
+ShowSubfolders FSO.GetFolder("f:\download")
+Sub ShowSubFolders(Folder)
+    For Each Subfolder in Folder.SubFolders
+        Wscript.Echo Subfolder.Path
+        ShowSubFolders Subfolder
+    Next
+End Sub
+

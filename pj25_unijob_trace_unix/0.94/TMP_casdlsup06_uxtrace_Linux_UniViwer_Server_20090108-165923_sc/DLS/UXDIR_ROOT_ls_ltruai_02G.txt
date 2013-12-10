@@ -1,0 +1,12 @@
+#REM# LISTING OF THE DOLLAR UNIVERSE UXDIR_ROOT DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltruai /apps/unijob110/univiewer_server/casdlsup06
+#TSP#  20090108-165949 
+total 104
+21627191 -r-xr--r-- 1 root root 56646 Jan  5 11:30 ThirdPartyLicenseReadme.txt
+21627190 -r-xr--r-- 1 root root   932 Jan  5 11:30 README.txt
+21627158 -r-xr--r-- 1 root root 21600 Jan  5 11:30 license.txt
+21627192 -rw-rw-rw- 1 root root     0 Jan  5 11:48 unistartms.log
+21627156 drwxr-xr-x 5 root root  4096 Jan  8 16:59 app
+21627155 drwxr-xr-x 3 root root  4096 Jan  8 16:59 ..
+21643272 drwxr-xr-x 7 root root  4096 Jan  8 16:59 data
+21627153 drwxr-xr-x 4 root root  4096 Jan  8 16:59 .

@@ -1,0 +1,6 @@
+#REM# LISTING OF THE UXPEX DIRECTORY (following symbolic links and Sorted by time stamp)
+#CMD# ls -ltraiL /apps/unijob110/unijob/casdlsup06_unijob/data/upr
+#TSP#  20090108-170010 
+total 8
+21643494 drwxrwxrwx 2 root root 4096 Jan  5 12:18 .
+21643384 drwxr-xr-x 7 root root 4096 Jan  8 16:42 ..

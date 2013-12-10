@@ -1,0 +1,231 @@
+#! /bin/ksh
+ 
+# ======================================================
+#        UNIVERSE login routine
+# ======================================================
+ 
+U_BATCH_INIT ()
+
+   { 
+
+   set +a
+
+   STATUS=1
+   $UXEXE/uxjobinit "${S_USERNAME}" "${S_CODAUTEUR}" "${S_SOCIETE}" "${S_UG}" \
+                    "${S_SIGCELL}"  "${S_CODEXP}"    "${S_UPROC}"   "${S_NUMPROC}"   "${$}"
+
+   STATUS=$?
+
+   if [ ${STATUS} -ne 0 ]
+   then
+     return ${STATUS} 
+   fi
+
+#------------------------------------------------------
+# Building launching execution script name                   
+#------------------------------------------------------   
+   if [ "${U_TMP_PATH:-UNDEFINED}" = "UNDEFINED" ]
+   then
+      s_numproc_file="/tmp/${S_ESPEXE}${S_NUMPROC}_${$}.uproc"
+   else
+#     s_numproc_file="${U_TMP_PATH}/${S_ESPEXE}${S_NUMPROC}_${$}.uproc"
+     s_numproc_file="${U_TMP_PATH}/${S_ESPEXE}${S_NUMPROC}.uproc"
+   fi
+
+   if [ ! -s ${s_numproc_file} ]
+   then
+      return 1 
+   fi
+
+
+   chmod 0700 $s_numproc_file
+   . $s_numproc_file 
+   STATUS=$?
+
+   unalias rm
+   rm -f ${s_numproc_file}
+
+   if [ ${STATUS} -ne 0 ]
+   then
+       return ${STATUS} 
+   fi
+
+#------------------------------------------------------
+# Control if UPROC script exist, and control if script 
+# is executable      
+#------------------------------------------------------
+ 
+   if [ ! -x  ${S_UPROC} ] 
+   then 
+      STATUS=255
+   fi
+
+   if [ ! -r  ${S_UPROC} ] 
+   then 
+      STATUS=255
+   fi
+
+   return ${STATUS}
+   }
+ 
+ 
+# ======================================================
+#        Routine to execute customized client shell
+# ======================================================
+ 
+U_BATCH_CLIENT ()
+
+   { 
+# Uncomment the line below if you will to ignore the SIGTERM signal
+
+#    trap ' '  15
+
+   RESEXE=0
+#------------------------------------------------------
+#       Launching customized client init shell
+#------------------------------------------------------
+
+   if [ -x $UXMGR/U_ANTE_UPROC ]
+   then
+           unix_status=0
+           alias exit=". $UXMGR/UNIX_STATUS "
+           alias return=". $UXMGR/UNIX_STATUS "
+        . $UXMGR/U_ANTE_UPROC 
+           if [ ${unix_status} -ne 0 ]
+           then
+              MSGINITFAILED=`$UXEXE/uxgetmsg`
+              echo ${MSGINITFAILED}
+              $UXEXE/uxset msg "${MSGINITFAILED}"
+           fi
+
+# Comment the line below if you will that an abnormal return status of      
+# U_ANTE_UPROC routine does not put the UPROC status to Incident
+
+           RESEXE=${unix_status}      
+           unalias exit
+           unalias return  
+   fi
+
+   if [ ${RESEXE} -ne 0 ]
+   then
+       return ${RESEXE} 
+   fi
+
+#------------------------------------------------------
+#       Launching UPROC script shell
+#------------------------------------------------------
+   if [ "${S_UPROC:-UNDEFINED}" = "UNDEFINED" ] 
+   then
+       return 1
+   fi
+ 
+   eval $S_UPROC 
+   RESEXE=$?
+   export RESEXE
+
+#------------------------------------------------------
+# U_POST_UPROC now called after enhanced status management.
+#------------------------------------------------------
+#   if [ -x $UXMGR/U_POST_UPROC ]
+#   then
+#           $UXMGR/U_POST_UPROC 
+#   fi
+   return $RESEXE 
+   }
+
+# ======================================================
+#       UNIVERSE technical end_of_job routine 
+# ======================================================
+ 
+U_BATCH_TERM ()
+
+   { 
+   times > "/tmp/${S_NUMPROC}_${$}.conso"
+   Iscn=0
+   while read BUFFER 
+   do    
+     let Iscn=Iscn+1
+     if [ $Iscn -eq 2 ]
+     then
+        export STR_TIMES="$BUFFER" 
+     fi 
+   done   < "/tmp/${S_NUMPROC}_${$}.conso"
+   rm  -f /tmp/${S_NUMPROC}_${$}.conso
+   if [ -x $UXEXE/uxjobstatus ]
+   then      
+      $UXEXE/uxjobstatus ${RESEXE}
+      result=$?
+      if [ $result -ne 2 ]
+      then
+         RESEXE=$result
+      fi
+   fi   
+
+#------------------------------------------------------
+#       Launching client customized post UPROC routine 
+#------------------------------------------------------
+   if [ -x $UXMGR/U_POST_UPROC ]
+   then
+           $UXMGR/U_POST_UPROC 
+   fi
+
+   $UXEXE/uxjobend ${RESEXE}
+   }
+ 
+# ======================================================
+#       Standard nut shell to execute UNIVERSE UPROC task      
+#
+# MAIN 
+# ======================================================
+ 
+export TMP_USER="${1}"
+export S_CODAUTEUR=`echo "${TMP_USER}" | cut -c 1-3 `
+export S_USERNAME=`echo "${TMP_USER}" | cut -c 4- `
+
+export TMP_ENV="${2}"
+export S_SOCIETE=`echo "${TMP_ENV}" | cut -c 2-7 `
+export S_SIGSOC=`echo "${TMP_ENV}" | cut -c 2-7 `
+export S_ESPEXE=`echo "${TMP_ENV}" | cut -c 8-8 `
+export S_NOEUD=`echo "${TMP_ENV}" | cut -c 9- `
+
+export TMP_NUM="${3}"
+export S_NUMPROC=`echo "${TMP_NUM}" | cut -c 1-7 `
+export S_NUMLANC=`echo "${TMP_NUM}" | cut -c 8-14 `
+export S_UG=`echo "${TMP_NUM}" | cut -c 15- `
+export S_CODUG=`echo "${TMP_NUM}" | cut -c 15- `
+
+export UNI_DIR_APP="${4}"
+export UNI_DIR_DATA="${5}"
+export S_UPROC="${6}"
+export S_NODENAME="${7}"
+
+export PROCESS_MODE="BATCH"
+
+# loading environment
+. ${UNI_DIR_DATA}/unienv.ksh > /dev/null
+
+# getting additional variables
+export UXEXE=`${U_ROOT_DIR}/app/bin/getvar UXEXE`
+export U_TMP_PATH=`${U_ROOT_DIR}/app/bin/getvar U_TMP_PATH`
+
+# export CONF_TRACE_FILE="${UNI_DIR_DATA}/log/conf.log"
+
+export UXMGR=" "
+export S_SIGCELL=" "
+export S_CODESP=" "
+  
+U_BATCH_INIT
+STATUT_INIT=$?
+
+if [ ${STATUT_INIT} -eq 0 ]
+then
+   U_BATCH_CLIENT
+   U_BATCH_TERM
+   exit $RESEXE
+else
+   RESEXE=$STATUT_INIT
+   U_BATCH_TERM
+   exit $RESEXE
+fi
+
+ 

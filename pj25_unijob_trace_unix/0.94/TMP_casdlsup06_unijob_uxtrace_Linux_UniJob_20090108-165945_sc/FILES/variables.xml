@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<variables version="1.0" xmlns:xsi="http://www.orsyp.com/ns/var-instance">
+<!-- DO NOT MODIFY THIS FILE
+ Values indicated in this file are DEFAULT values (it is used if there is no value defined in the values file) -->
+<!-- 2008/02/08  -->
+<!-- VARIABLES are described using: ID (code name), TYPE (STRING or CHOICES only in the first version), DISPLAY (displayed name in the GUI), NATURE (to qualify the variables with some tags) and a DEFAULT VALUE (normally always defined) -->
+<!-- NATURE can be: INSTALL (installation variable), STATIC (variable change needs restart to take effect), DYNAMIC (no restart is needed) -->
+<!-- Variables are sorted using CATEGORIES -->
+
+<category icon="categ1.png">
+<name>
+	<display lang="EN">UniJob server settings</display>
+	<display lang="FR">Reglages du serveur UniJob</display>
+</name>
+<!-- Variable S_U_LANGUE -->
+<var id="S_U_LANGUE" is_env="N">
+   <display lang="EN">Language</display>
+   <nature>INSTALL</nature>
+   <data type="CHOICES">
+   <choice code="EN">
+      <display lang="EN">English</display>
+   </choice>
+   <choice code="FR">
+      <display lang="EN">Francais</display>
+   </choice>
+      <default>EN</default>
+   </data>
+</var>
+<!-- Variable U_FMT_DATE -->
+<var id="U_FMT_DATE" is_env="Y">
+   <display lang="EN">Date format</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="mm/dd/yyyy">
+      <display lang="EN">mm/dd/yyyy</display>
+   </choice>
+   <choice code="jj/mm/aaaa">
+      <display lang="EN">jj/mm/aaaa</display>
+   </choice>
+      <default>mm/dd/yyyy</default>
+   </data>
+</var>
+<!-- Variable S_PLAGEHORAIRE -->
+<var id="S_PLAGEHORAIRE" is_env="N">
+   <display lang="EN">Default time range</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>0:0/23:59</default>
+   </data>
+</var>
+</category>
+
+
+<category icon="categ2.png">
+<name>
+	<display lang="EN">Installation files and directories</display>
+	<display lang="FR">Fichiers et repertoires d'installation</display>
+</name>
+<!-- Variable UNI_DIR_ROOT -->
+<var id="UNI_DIR_ROOT" is_env="Y">
+   <display lang="EN">UniJob root directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable UNI_DIR_APP -->
+<var id="UNI_DIR_APP" is_env="N">
+   <display lang="EN">Application directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_ROOT!/app</default>
+   </data>
+</var>
+<!-- Variable UNI_DIR_DATA -->
+<var id="UNI_DIR_DATA" is_env="N">
+   <display lang="EN">Data directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_ROOT!/data</default>
+   </data>
+</var>
+<!-- Variable UXDIR_ROOT -->
+<var id="UXDIR_ROOT" is_env="Y">
+   <display lang="EN">DB root directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/data</default>
+   </data>
+</var>
+<!-- Variable UXEXE -->
+<var id="UXEXE" is_env="Y">
+   <display lang="EN">UniJob executables directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_APP!/bin</default>
+   </data>
+</var>
+<!-- Variable UXMGR -->
+<var id="UXMGR" is_env="Y">
+   <display lang="EN">UniJob maintenance directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!</default>
+   </data>
+</var>
+<!-- Variable UXDEX -->
+<var id="UXDEX" is_env="Y">
+   <display lang="EN">UniJob data directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/data</default>
+   </data>
+</var>
+<!-- Variable UXPEX -->
+<var id="UXPEX" is_env="Y">
+   <display lang="EN">UniJob scripts directory</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/upr</default>
+   </data>
+</var>
+<!-- Variable UXLEX -->
+<var id="UXLEX" is_env="Y">
+   <display lang="EN">UniJob log directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log</default>
+   </data>
+</var>
+<!-- Variable U_MSG_FILE -->
+<var id="U_MSG_FILE" is_env="N">
+   <display lang="EN">Message file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_APP!/files/uni_msg.txt</default>
+   </data>
+</var>
+<!-- Variable SRVNET_DIR -->
+<var id="SRVNET_DIR" is_env="N">
+   <display lang="EN">Network configuration directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!</default>
+   </data>
+</var>
+<!-- Variable U_TMP_PATH -->
+<var id="U_TMP_PATH" is_env="Y">
+   <display lang="EN">Temporary directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/temp</default>
+   </data>
+</var>
+<!-- Variable S_UNIJOB_SYSMGR -->
+<var id="S_UNIJOB_SYSMGR" is_env="N">
+   <display lang="EN">Maintenance directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!</default>
+   </data>
+</var>
+<!-- Variable S_UNIJOB_EU_DV -->
+<var id="S_UNIJOB_EU_DV" is_env="N">
+   <display lang="EN">Executable directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_APP!/bin</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ3.png">
+<name>
+	<display lang="EN">UniJob server environment</display>
+	<display lang="FR">Environnement du serveur UniJob</display>
+</name>
+<!-- Variable S_NODENAME -->
+<var id="S_NODENAME" is_env="N">
+   <display lang="EN">Extended node name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable S_NOEUD -->
+<var id="S_NOEUD" is_env="N">
+   <display lang="EN">Node name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable U_LOCALHOSTNAME -->
+<var id="U_LOCALHOSTNAME" is_env="N">
+   <display lang="EN">Local host name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable UX_IO_VAR_OS -->
+<var id="UX_IO_VAR_OS" is_env="N">
+   <display lang="EN">Operating system</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable UNI_VERSION -->
+<var id="UNI_VERSION" is_env="N">
+   <display lang="EN">Product version</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>UniJob,1.1.0</default>
+   </data>
+</var>
+<!-- Variable S_CODNOEUD -->
+<var id="S_CODNOEUD" is_env="N">
+   <display lang="EN">Node name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>!S_NOEUD!</default>
+   </data>
+</var>
+<!-- Variable S_USER_AUTOMATE -->
+<var id="S_USER_AUTOMATE" is_env="N">
+   <display lang="EN">System user for engines</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+</category>
+
+<category icon="categ4.png">
+<name>
+	<display lang="EN">Startup and shutdown</display>
+	<display lang="FR">Demarrage et arret</display>
+</name>
+	<!-- Variable UNI_CDJ_STARTUP -->
+	<var id="UNI_CDJ_STARTUP" is_env="N">
+	   <display lang="EN">Start-up for CDJ server</display>
+	   <nature>STATIC</nature>
+	   <data type="CHOICES">
+	   <choice code="Y">
+	      <display lang="EN">Yes</display>
+	   </choice>
+	   <choice code="N">
+	      <display lang="EN">No</display>
+	   </choice>
+	      <default>Y</default>
+	   </data>
+	</var>
+	<!-- Variable UNI_CAL_STARTUP -->
+	<var id="UNI_CAL_STARTUP" is_env="N">
+	   <display lang="EN">Start-up for calculator</display>
+	   <nature>STATIC</nature>
+	   <data type="CHOICES">
+	   <choice code="Y">
+	      <display lang="EN">Yes</display>
+	   </choice>
+	   <choice code="N">
+	      <display lang="EN">No</display>
+	   </choice>
+	      <default>Y</default>
+	   </data>
+	</var>
+	<!-- Variable UNI_LAN_STARTUP -->
+	<var id="UNI_LAN_STARTUP" is_env="N">
+	   <display lang="EN">Start-up for launcher</display>
+	   <nature>STATIC</nature>
+	   <data type="CHOICES">
+	   <choice code="Y">
+	      <display lang="EN">Yes</display>
+	   </choice>
+	   <choice code="N">
+	      <display lang="EN">No</display>
+	   </choice>
+	      <default>Y</default>
+	   </data>
+	</var>
+</category>
+
+<category icon="categ5.png">
+<name>
+	<display lang="EN">Logging</display>
+	<display lang="FR">Log</display>
+</name>
+<!-- Variable UXLOG -->
+<var id="UXLOG" is_env="Y">
+   <display lang="EN">UniJob main log directory</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log</default>
+   </data>
+</var>
+<!-- Variable U_LOG_FILE -->
+<var id="U_LOG_FILE" is_env="N">
+   <display lang="EN">Main log file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>!UNI_DIR_DATA!/log/unijob.log</default>
+   </data>
+</var>
+<!-- Variable U_LOG_LEVEL -->
+<var id="U_LOG_LEVEL" is_env="N">
+   <display lang="EN">Main log level</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>0</default>
+   </data>
+</var>
+<!-- Variable U_LOG_TRANS -->
+<var id="U_LOG_TRANS" is_env="N">
+   <display lang="EN">Audit trail activation</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+      <default>Y</default>
+   </data>
+</var>
+<!-- Variable U_MAX_SIZE_LOG_FILE -->
+<var id="U_MAX_SIZE_LOG_FILE" is_env="N">
+   <display lang="EN">Maximum size for the log file (Mbytes)</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>100</default>
+   </data>
+</var>
+<!-- Variable U_ARCH_LOG_MAX_NB -->
+<var id="U_ARCH_LOG_MAX_NB" is_env="N">
+   <display lang="EN">Maximum number of archived log files</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>0</default>
+   </data>
+</var>
+<!-- Variable U_ARCH_LOG_CMD -->
+<var id="U_ARCH_LOG_CMD" is_env="N">
+   <display lang="EN">Command to compress the log file (specified with !LOGFILE!)</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable U_ARCH_LOG_PATH -->
+<var id="U_ARCH_LOG_PATH" is_env="N">
+   <display lang="EN">Directory where to archive the log file</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable U_ARCHLOG_LOCK  -->
+<var id="U_ARCHLOG_LOCK " is_env="N">
+   <display lang="EN">System wide file lock for log archive</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="Y">
+      <display lang="EN">Yes (not blocking)</display>
+   </choice>
+   <choice code="B">
+      <display lang="EN">Yes (blocking)</display>
+   </choice>
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ6.png">
+<name>
+	<display lang="EN">Technical settings</display>
+	<display lang="FR">Reglages techniques</display>
+</name>
+<!-- Variable S_TIMEOUT -->
+<var id="S_TIMEOUT" is_env="N">
+   <display lang="EN">Default time-out</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>60</default>
+   </data>
+</var>
+<!-- Variable U_MASK_UPR -->
+<var id="U_MASK_UPR" is_env="N">
+   <display lang="EN">Default mask for Uproc scripts</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>u=rwx,g=rwx,o=rx</default>
+   </data>
+</var>
+<!-- Variable U_FULL_PATH -->
+<var id="U_FULL_PATH" is_env="N">
+   <display lang="EN">Changing UNIX path for ps command</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="Y">
+      <display lang="EN">Full path</display>
+   </choice>
+   <choice code="N">
+      <display lang="EN">Short path</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+<!-- Variable U_CONNECT_ITER_INTERVAL -->
+<var id="U_CONNECT_ITER_INTERVAL" is_env="N">
+   <display lang="EN">Seconds between two network connection attempts</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>0</default>
+   </data>
+</var>
+<!-- Variable U_CONNECT_ITER_NBMAX -->
+<var id="U_CONNECT_ITER_NBMAX" is_env="N">
+   <display lang="EN">Maximum number of network connection attempts</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>1</default>
+   </data>
+</var>
+<!-- Variable U_CDJ_TIMEOUT -->
+<var id="U_CDJ_TIMEOUT" is_env="N">
+   <display lang="EN">Time-out for CDJ server</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>10</default>
+   </data>
+</var>
+<!-- Variable U_IO_TIMEOUT -->
+<var id="U_IO_TIMEOUT" is_env="N">
+   <display lang="EN">Time-out for IO server</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>10</default>
+   </data>
+</var>
+<!-- Variable UXMAXFD -->
+<var id="UXMAXFD" is_env="N">
+   <display lang="EN">Maximum number of file descriptors</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>256</default>
+   </data>
+</var>
+<!-- Variable U_CDJ_NBJOB_INIT -->
+<var id="U_CDJ_NBJOB_INIT" is_env="N">
+   <display lang="EN">Primary memory allocation for Runs in CDJ</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>1000</default>
+   </data>
+</var>
+<!-- Variable U_CDJ_NBJOB_ADD -->
+<var id="U_CDJ_NBJOB_ADD" is_env="N">
+   <display lang="EN">Reallocation for Runs in CDJ</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>200</default>
+   </data>
+</var>
+<!-- Variable U_CDJ_IOCONNECT_NUM -->
+<var id="U_CDJ_IOCONNECT_NUM" is_env="N">
+   <display lang="EN">Maximum number of IO connection attempts for CDJ at startup</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>3</default>
+   </data>
+</var>
+<!-- Variable U_CDJ_IOCONNECT_DELAY -->
+<var id="U_CDJ_IOCONNECT_DELAY" is_env="N">
+   <display lang="EN">Seconds between two IO connection attempts for CDJ</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>1</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ7.png">
+<name>
+	<display lang="EN">Maintenance</display>
+	<display lang="FR">Maintenance</display>
+</name>
+</category>
+
+<category icon="categ8.png">
+<name>
+	<display lang="EN">Advanced settings</display>
+	<display lang="FR">Reglages avances</display>
+</name>
+<!-- Variable U_CDJ_DISABLE -->
+<var id="U_CDJ_DISABLE" is_env="N">
+   <display lang="EN">Disabling dispatch server</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+<!-- Variable U_NO_SETHDLTERM -->
+<var id="U_NO_SETHDLTERM" is_env="N">
+   <display lang="EN">Disabling UNIX signal management</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable LAN_JOB_DELAY -->
+<var id="LAN_JOB_DELAY" is_env="N">
+   <display lang="EN">Time (in seconds) to check the Jobs by the Launcher</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>60</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ9.png">
+<name>
+	<display lang="EN">Default UniJob environment</display>
+	<display lang="FR">Environnement UniJob par defaut</display>
+</name>
+<!-- Variable S_CODPROF -->
+<var id="S_CODPROF" is_env="N">
+   <display lang="EN">Default profile</display>
+   <nature>STATIC</nature>
+   <data type="STRING">
+      <default>PROFADM</default>
+   </data>
+</var>
+<!-- Variable S_SOCIETE -->
+<var id="S_SOCIETE" is_env="Y">
+   <display lang="EN">Company name</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>UNIJOB</default>
+   </data>
+</var>
+<!-- Variable S_ESPEXE -->
+<var id="S_ESPEXE" is_env="Y">
+   <display lang="EN">Default Area</display>
+   <nature>INSTALL</nature>
+   <data type="CHOICES">
+   <choice code="A">
+      <display lang="EN">Application</display>
+   </choice>
+   <choice code="I">
+      <display lang="EN">Integration</display>
+   </choice>
+   <choice code="S">
+      <display lang="EN">Simulation</display>
+   </choice>
+   <choice code="X">
+      <display lang="EN">Production</display>
+   </choice>
+      <default>X</default>
+   </data>
+</var>
+<!-- Variable S_UNIVERS -->
+<var id="S_UNIVERS" is_env="N">
+   <display lang="EN">Default Universe</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>E</default>
+   </data>
+</var>
+<!-- Variable S_APPLI -->
+<var id="S_APPLI" is_env="N">
+   <display lang="EN">Default Application</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>U_</default>
+   </data>
+</var>
+<!-- Variable S_CODCENTRAL -->
+<var id="S_CODCENTRAL" is_env="N">
+   <display lang="EN">Central control</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+<!-- Variable U_CLUSTER -->
+<var id="U_CLUSTER" is_env="N">
+   <display lang="EN">Cluster mode</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ10.png">
+<name>
+	<display lang="EN">Network parameters</display>
+	<display lang="FR">Parametres reseau</display>
+</name>
+<!-- Variable SRV_SIO_PORT -->
+<var id="SRV_SIO_PORT" is_env="N">
+   <display lang="EN">Port number for the IO server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable SRV_CDJ_PORT -->
+<var id="SRV_CDJ_PORT" is_env="N">
+   <display lang="EN">Port number for the CDJ server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable SRV_CAL_PORT -->
+<var id="SRV_CAL_PORT" is_env="N">
+   <display lang="EN">Port number for the calculator server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable SRV_AUT_PORT -->
+<var id="SRV_AUT_PORT" is_env="N">
+   <display lang="EN">Port number for the central authentication server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default></default>
+   </data>
+</var>
+<!-- Variable SRV_AUT_HOST -->
+<var id="SRV_AUT_HOST" is_env="N">
+   <display lang="EN">Host for the central authentication server</display>
+   <nature>INSTALL</nature>
+   <data type="STRING">
+      <default>HOST=localhost</default>
+   </data>
+</var>
+<!-- Variable UNI_LOCALADDR_DISABLE -->
+<var id="UNI_LOCALADDR_DISABLE" is_env="N">
+   <display lang="EN">Disabling 127.0.0.1 binding for local engines</display>
+   <nature>STATIC</nature>
+   <data type="CHOICES">
+   <choice code="N">
+      <display lang="EN">No</display>
+   </choice>
+   <choice code="Y">
+      <display lang="EN">Yes</display>
+   </choice>
+      <default>N</default>
+   </data>
+</var>
+</category>
+
+<category icon="categ11.png">
+<name>
+	<display lang="EN">Purge configuration</display>
+	<display lang="FR">Configuration de la maintenance</display>
+</name>
+	<!-- Variable U_DYNAMIC_PURGE -->
+	<var id="U_DYNAMIC_PURGE" is_env="N">
+	   <display lang="EN">Online purge</display>
+	   <nature>STATIC</nature>
+	   <data type="CHOICES">
+	   <choice code="N">
+	      <display lang="EN">No</display>
+	   </choice>
+	   <choice code="Y">
+	      <display lang="EN">Yes</display>
+	   </choice>
+	      <default>Y</default>
+	   </data>
+   </var>
+	<!-- Variable U_RETENTION_DELAY -->
+	<var id="U_RETENTION_DELAY" is_env="N">
+	   <display lang="EN">General retention cycle (DDD:HH:MM)</display>
+	   <nature>STATIC</nature>
+	   <data type="STRING">
+	      <default>003:00:00</default>
+	   </data>
+	</var>
+	<!-- Variable U_RETENTION_DELAY_COMPLETED -->
+	<var id="U_RETENTION_DELAY_COMPLETED" is_env="N">
+	   <display lang="EN">Retention cycle of "completed" jobs</display>
+	   <nature>STATIC</nature>
+	   <data type="STRING">
+	      <default>!U_RETENTION_DELAY!</default>
+	   </data>
+	</var>
+	<!-- Variable U_RETENTION_DELAY_ABORTED -->
+	<var id="U_RETENTION_DELAY_ABORTED" is_env="N">
+	   <display lang="EN">Retention cycle of "aborted" jobs</display>
+	   <nature>STATIC</nature>
+	   <data type="STRING">
+	      <default>!U_RETENTION_DELAY!</default>
+	   </data>
+	</var>
+	<!-- Variable U_RETENTION_DELAY_TIME_OVERRUN -->
+	<var id="U_RETENTION_DELAY_TIME_OVERRUN" is_env="N">
+	   <display lang="EN">Retention cycle of "time overrun" jobs</display>
+	   <nature>STATIC</nature>
+	   <data type="STRING">
+	      <default>!U_RETENTION_DELAY!</default>
+	   </data>
+	</var>
+	<!-- Variable U_RETENTION_DELAY_SUSPENDED -->
+	<var id="U_RETENTION_DELAY_SUSPENDED" is_env="N">
+	   <display lang="EN">Retention cycle of "suspended" jobs</display>
+	   <nature>STATIC</nature>
+	   <data type="STRING">
+	      <default>!U_RETENTION_DELAY!</default>
+	   </data>
+	</var>
+</category>
+
+</variables>
+

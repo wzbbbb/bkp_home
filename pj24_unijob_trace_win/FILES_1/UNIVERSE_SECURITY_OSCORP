@@ -1,0 +1,1698 @@
+#######################################################################
+# ORSYP / VFE 18 MAR 2003
+# DOLLAR UNIVERSE Security Strategy
+# 
+# Versions:
+# v1.0 - 18 MAR 2003: defining 5 profiles
+# v1.1 - 28 NOV 2003: The name of the ADMIN user is now given by a keyword:
+#                     U N I _ U S R _ A D M; 
+#                     it is replaced dynamically during install
+# v1.2 - 05FEB2004: Redefined PROFDEV
+# v1.3 - 08MAR2004: General review of all profiles - several changes
+# v1.4 - 21MAR2005: Add privilege USE_WITHIN_LAUNCH to PROFOPR on MUs
+# v1.5 - 14DEC2005: Added PURGE keyword to allow purge of future launches on some profiles
+# v1.6 - 17DEC2006: Duplicated PROFOPR section into PROFEXP for easier compatibility with other installations
+# v1.7 - 08AUG2007: Ported to v5.3.1 - added "MANAGEMENT_UNIT_DEPENDENCE"
+#######################################################################
+
+#######################################################################
+#######################################################################
+#
+# PROFADM : Administrator profile. 
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFADM
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
++
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+UPDATE
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+USE_AS_PREREQUISITE
+USE_TO_DISTRIBUTE_TO
+USE_WITHIN_HDP
+USE_WITHIN_SESSION
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+USE_AS_PREREQUISITE
+USE_TO_DISTRIBUTE_TO
+USE_WITHIN_LAUNCH
+USE_WITHIN_HDP
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+CREATE
+DISPLAY
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=univa
+-
+DELETE_OBJ
+
+USER=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+#MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+MANAGE_EVENT
+USE_AS_PREREQUISITE
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+MANAGE_EVENT
+USE_AS_PREREQUISITE
+DEALLOCATE
+ALLOCATE
+RESERVE
+UNRESERVE
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+UNLOCK
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+UNLOCK
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+TRANSFERT
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+SIMULATE
+UNLOCK
+USE_WITHIN_LAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+PURGE
+MANAGE_EVENT
+MANAGE_EXCHANGEDATA
+RELAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+UPDATE
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+MANAGE_DQM_JOBS
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+ENABLE
+DISABLE
+#
+# End of Profile
+#######################################################################
+
+
+#######################################################################
+#######################################################################
+#
+# PROFSCH : Scheduler profile.
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFSCH
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
+-
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+USE_AS_PREREQUISITE
+USE_TO_DISTRIBUTE_TO
+USE_WITHIN_HDP
+USE_WITHIN_SESSION
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+USE_AS_PREREQUISITE
+USE_TO_DISTRIBUTE_TO
+USE_WITHIN_LAUNCH
+USE_WITHIN_HDP
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+CREATE
+DISPLAY
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EXCHANGEDATA
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=univa
+-
+DELETE_OBJ
+MANAGE_EXCHANGEDATA
+
+USER=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EVENT
+USE_AS_PREREQUISITE
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EVENT
+USE_AS_PREREQUISITE
+DEALLOCATE
+ALLOCATE
+RESERVE
+UNRESERVE
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+UNLOCK
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+UNLOCK
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+TRANSFERT
+DISTRIBUTE
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+SIMULATE
+UNLOCK
+USE_WITHIN_LAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+PURGE
+MANAGE_EVENT
+RELAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+UPDATE
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+MANAGE_DQM_JOBS
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+ENABLE
+DISABLE
+#
+# End of Profile
+#######################################################################
+
+
+#######################################################################
+#######################################################################
+#
+# PROFOPR : Operator profile.
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFOPR
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
+-
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+DISPLAY
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(*;*;*)
++
+DISPLAY
+USE_WITHIN_LAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+PURGE
+MANAGE_EVENT
+RELAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+UPDATE
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+UPDATE
+ENABLE
+DISABLE
+#
+# End of Profile
+#######################################################################
+
+#######################################################################
+#######################################################################
+#
+# PROFEXP : Operator profile.
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFEXP
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
+-
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+DISPLAY
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(*;*;*)
++
+DISPLAY
+USE_WITHIN_LAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+PURGE
+MANAGE_EVENT
+RELAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+UPDATE
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+UPDATE
+ENABLE
+DISABLE
+#
+# End of Profile
+#######################################################################
+
+
+#######################################################################
+#######################################################################
+#
+# PROFDEV : Developer profile.
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFDEV
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
+-
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+USE_TO_DISTRIBUTE_TO
+USE_WITHIN_HDP
+USE_WITHIN_SESSION
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+USE_AS_PREREQUISITE
+USE_TO_DISTRIBUTE_TO
+USE_WITHIN_LAUNCH
+USE_WITHIN_HDP
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+CREATE
+DISPLAY
+DELETE_OBJ
+DISTRIBUTE
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=root
+-
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+USER=univa
+-
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+USER=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DISTRIBUTE
+MANAGE_EVENT
+USE_AS_PREREQUISITE
+DEALLOCATE
+ALLOCATE
+RESERVE
+UNRESERVE
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=IU_*
++
+DISPLAY
+DUPLICATE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+UPROC=TU_*
++
+DISPLAY
+DUPLICATE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+UPROC=TMP*
++
+DISPLAY
+DUPLICATE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+UPROC=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=IU_*
++
+DISPLAY
+DUPLICATE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+SESSION=TU_*
++
+DISPLAY
+DUPLICATE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+SESSION=TMP*
++
+DISPLAY
+DUPLICATE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+SESSION=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+TRANSFERT
+DISTRIBUTE
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(IU_*;*;*)
++
+DISPLAY
+DUPLICATE
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+TASK=(TU_*;*;*)
++
+DISPLAY
+DUPLICATE
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+TASK=(TMP*;*;*)
++
+DISPLAY
+DUPLICATE
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+TASK=(*;IU_*;*)
++
+DISPLAY
+DUPLICATE
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+TASK=(*;TU_*;*)
++
+DISPLAY
+DUPLICATE
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+TASK=(*;TMP*;*)
++
+DISPLAY
+DUPLICATE
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+TASK=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+DUPLICATE
+TRANSFERT
+DISTRIBUTE
+SIMULATE
+USE_WITHIN_LAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+CREATE
+DISPLAY
+UPDATE
+DELETE_OBJ
+PURGE
+MANAGE_EVENT
+RELAUNCH
+ENABLE
+DISABLE
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+MANAGE_DQM_JOBS
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+ENABLE
+DISABLE
+#
+# End of Profile
+#######################################################################
+
+
+
+
+#######################################################################
+#######################################################################
+#
+# PROFINQ : Read Only profile for inquiries
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFINQ
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
+-
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+DISPLAY
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=*
++
+DISPLAY
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(*;*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+#
+# End of Profile
+#######################################################################
+
+#######################################################################
+#######################################################################
+#
+# PROFSUB : Profile for submission accounts - based on PROFINQ, 
+#   with minimal rights to execute jobs and launch some Dollar Universe commands
+#
+#######################################################################
+#######################################################################
+#
+PROFILE=PROFSUB
+USERNAME=*
+#
+# --------------------------------------------------------------
+#                      Area Object 
+#                      KEY Value [A,I,S,X] 
+AREA=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Licence Object
+#                      KEY Format (Node;Product)
+LICENCE=(*;*)
+-
+DISPLAY
+CREATE
+UPDATE
+DELETE_OBJ
+#
+# --------------------------------------------------------------
+#                      Company Object
+COMPANY=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Node Object
+NODE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Domain Object
+DOMAIN=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Object
+APPLICATION=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Application Directories Object
+#                      KEY Format (Application;Node)
+APPLICATION_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Type Object
+MANAGEMENT_UNIT_TYPE=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+USE_WITHIN_HDP
+USE_WITHIN_SESSION
+# --------------------------------------------------------------
+#                      Management Unit Object
+MANAGEMENT_UNIT=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_HDP
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Management Unit Directories Object
+#                      KEY Format (MU;Application)
+MANAGEMENT_UNIT_DIRECTORY=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Management Unit Dependances
+#                      KEY Format (MU;MU)
+MANAGEMENT_UNIT_DEPENDENCE=(*;*)
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      User Object
+USER=*
++
+USER=root
+-
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+USER=univa
+-
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+USER=*
++
+DISPLAY
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+# --------------------------------------------------------------
+#                      User Profile Object
+USER_PROFILE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Uproc Class Object
+UPROCCLASS=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+#
+# --------------------------------------------------------------
+#                      Resource Object
+RESOURCE=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+DEALLOCATE
+ALLOCATE
+RESERVE
+UNRESERVE
+#
+# --------------------------------------------------------------
+#                      Uproc Object
+UPROC=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+USE_WITHIN_SESSION
+#
+# --------------------------------------------------------------
+#                      Session Object
+SESSION=*
++
+DISPLAY
+USE_AS_PREREQUISITE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Calendar Object
+#                      KEY Format MU
+CALENDAR=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      Rules Object
+RULE=*
++
+DISPLAY
+USE_WITHIN_TASK
+#
+# --------------------------------------------------------------
+#                      Task Object
+#                      KEY Format (Session;Uproc;MU)
+TASK=(*;*;*)
++
+DISPLAY
+SIMULATE
+USE_WITHIN_LAUNCH
+#
+# --------------------------------------------------------------
+#                      Launch Object
+#                      KEY Format (Session;Uproc;MU)
+LAUNCH=(*;*;*)
++
+DISPLAY
+CREATE
+#
+# --------------------------------------------------------------
+#                      Dollar Universe Engines
+#                      KEY Value [C,L,S,E] 
+ENGINE=*
++
+DISPLAY
+#
+# --------------------------------------------------------------
+#                      DQM Object
+DQM_QUEUE=*
++
+DISPLAY
+UPDATE
+USE_WITHIN_LAUNCH
+USE_WITHIN_TASK
+#
+# End of Profile
+#######################################################################

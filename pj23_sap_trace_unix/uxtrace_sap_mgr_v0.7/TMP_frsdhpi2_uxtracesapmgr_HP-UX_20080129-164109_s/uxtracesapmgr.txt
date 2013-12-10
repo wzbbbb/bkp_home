@@ -1,0 +1,80 @@
+#REM# User Verification
+#CMD# id
+uid=0(root) gid=3(sys) groups=0(root),1(other),2(bin),4(adm),5(daemon),6(mail),7(lp),20(users)
+
+The values of the configuration variables are :
+
+#         uxtrace version : 0.7
+
+	UXTRACELOCATE :		/tmp
+	UXCUSTSCRIPT :		/apps/DUSAP42//mgr/uxtrace_cust
+	UXKEEPUXTRACEFOLDER :		N
+	UXCOMPRESSUXTRACEFOLDER :		Y
+	UXLOOPNUMBER :		2
+	UXSLEEPTIME :		30
+	UXLAUNCHCUSTSCRIPT :		s
+#REM# The version of the launched uxtracesapmgr is 0.7
+#REM# For information, the space available in /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s is :
+/tmp                   (/dev/vg00/lvol7       ) :  1561928 total allocated Kb
+                                                   1524160 free allocated Kb
+                                                     37768 used allocated Kb
+                                                         2 % allocation used
+
+#REM# The result of ps -ef | cut -c 1-2000 | grep ux is :
+    root 14448     1  0  Jan 24  ?         0:05 ./uxioserv TST520 A frsdhpi2
+    root 14457     1  0  Jan 24  ?         0:05 ./uxcdjsrv TST520 X frsdhpi2
+    root 14465     1  0  Jan 24  ?         0:04 ./uxbvssrv TST520 A frsdhpi2
+    root  2409     1  0  Jan 21  ?         0:52 ./uxech ADMLIN X frsdhpi2
+    root  2311     1  0  Jan 21  ?         0:00 ./uxcal ADMLIN X frsdhpi2
+    root  2337     1  0  Jan 21  ?         0:00 ./uxord ADMLIN X frsdhpi2
+    root  2438     1  0  Jan 21  ?         0:57 ./uxsur ADMLIN X frsdhpi2
+    root  2282     1  0  Jan 21  ?         0:17 ./uxcdjsrv ADMLIN A frsdhpi2
+    root  2281     1  0  Jan 21  ?         0:16 ./uxcdjsrv ADMLIN X frsdhpi2
+    root  2264     1  0  Jan 21  ?         2:45 ./uxioserv ADMLIN X frsdhpi2
+    root  2265     1  0  Jan 21  ?         0:09 ./uxioserv ADMLIN A frsdhpi2
+    root 14476     1  0  Jan 24  ?         0:03 ./uxcal TST520 X frsdhpi2
+    root 14461     1  0  Jan 24  ?         0:05 ./uxbvssrv TST520 X frsdhpi2
+    root  3000  2932  0  Jan 21  ?         0:04 netmon -P -k segRedux=true -k migrateHsrpVirtualIP=true
+    root 14446     1  0  Jan 24  ?         1:05 ./uxioserv TST520 X frsdhpi2
+    root 21061 15966  5 16:41:09 pts/ta    0:00 /bin/ksh ./uxtracesapmgr
+    root 13836     1  0  Jan 25  ?         0:10 ./uxcdjsrv FESTOP X sdeu1029
+    root 14456     1  0  Jan 24  ?         0:04 ./uxcdjsrv TST520 A frsdhpi2
+    root 13827     1  0  Jan 25  ?         0:00 ./uxdqmsrv FESTOP X sdeu1029
+    root 13826     1  0  Jan 25  ?         1:55 ./uxioserv FESTOP X sdeu1029
+    root 21123 21061  0 16:41:09 pts/ta    0:00 grep ux
+    root 14536     1  0  Jan 24  ?         0:11 ./uxsur TST520 X frsdhpi2
+    root 13833     1  0  Jan 25  ?         0:00 ./uxcmdsrv FESTOP X sdeu1029
+    root 14487     1  0  Jan 24  ?         0:10 ./uxord TST520 X frsdhpi2
+    root 14525     1  0  Jan 24  ?         0:10 ./uxech TST520 X frsdhpi2
+#REM# The SAP Manager seems to be running.
+#REM# Beginning of the copy of the MGR files
+#CMD# cp -p /apps/DUSAP42//mgr/dev_rfc.trc /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/dev_rfc.trc /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/uxsrsrv.sck /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/uxsrsrv.alias /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/uxsrsrv.protocol /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/core.unirfcmanager /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#REM# Beginning of the copy of the EXEC files
+#CMD# cp -p /apps/DUSAP42//exec/uxversion.ksh /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//exec/core.uxagtsap /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#REM# Beginning of the copy of the /etc files
+#CMD# cp -p /etc/hosts /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /etc/services /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#REM# Beginning of the copy of other system files
+#CMD# cp -p /apps/DUSAP42//log/sapjcs.log /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//log/sapjcs.log /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//exec/uni_msg.txt /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/uxsaprfc.ini /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#CMD# cp -p /apps/DUSAP42//mgr/u_fali01.txt /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#REM# The file /apps/DUSAP42//mgr/uxsapagt.host does not exist
+
+#REM# Backup of this trace script
+#CMD# cp -p /SocieteSupport/DUSAP42/mgr/uxtracesapmgr /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/FILES/
+#REM# /apps/DUSAP42//mgr/uxtrace_cust file does not exist
+
+#CMD# /apps/DUSAP42//exec/uxevtfile LIST
+#CMD# /apps/DUSAP42//exec/uxjnlfile LIST
+#CMD# /apps/DUSAP42//exec/uxhstfile LIST
+#CMD# rmdir /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/CUST
+#TSP#  20080129-164328 
+rmdir: /tmp/TMP_frsdhpi2_uxtracesapmgr_HP-UX_20080129-164109_s/CUST: No such file or directory

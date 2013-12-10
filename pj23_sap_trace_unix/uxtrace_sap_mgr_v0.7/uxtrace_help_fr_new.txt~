@@ -1,0 +1,33 @@
+-- Comment utiliser la version 0.6 de la procédure uxtracesapmgr (uxtrace pour le Dollar Universe Manager for SAP Solutions)
+
+-.- Transfert
+Transférer le fichier uxtrace_sap_mgr_v0.6.taz dans le répertoire ($UXMGR)
+de votre Manager for SAP. (ce transfert doit être fait en mode binaire).
+
+-.- Vous déplacer dans le répertoire mgr de votre Manager for SAP:
+cd zzz/mgr
+
+-.- Décompresser l'archive :
+mv ./uxtrace_sap_mgr_v0.6.taz ./uxtrace_sap_mgr_v0.6.tar.Z
+uncompress  ./uxtrace_sap_mgr_v0.6.tar.Z
+tar -xvf ./uxtrace_sap_mgr_v0.6.tar
+
+-.- Fichiers crées
+Cette procédure va créer ou replacer les fichiers suivants dans le répertoire mgr:
+uxtracesapmgr uxtracer_help_en.txt uxtrace_help_fr.txt
+
+-.- Envoi du résultat
+Afin d'éviter qu'un antivirus ou firewall ne bloque l'envoi du résultat, nous vous recommandons l'option suivante:
+
+* upload du résultat de l'uxtrace vers votre répertoire ftp du site Orsyp (ftp://YourCustomerID@ftp.orsyp.com/private)
+
+-- Comment lancer la procédure (0.6)
+Lancer les commandes suivantes sans aucun argument:
+cd zzz/mgr
+./uxtracesapmgr
+
+-.- Pré requis
+  Il est recommandé de placer la procédure uxtracesapmgr dans le répertoire mgr sur Manager for SAP que vous désirez tracer.
+  Si tel n'est pas le cas l'environnement du Manager for SAP devra avoir été préalablement chargé.
+
+

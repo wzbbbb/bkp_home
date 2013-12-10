@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x -v
+
+#v6_kit is a link in /apps/du/600 to the current V6 kit.
+#/apps/du/600/v6_kit/unirun -i -s -f /apps/du/600/work.install.file
+#/apps/du/600/v6_kit/unirun -i -s -f /home/zwa/home/pj31_dudmp_v6/work.install.file

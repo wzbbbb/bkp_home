@@ -1,0 +1,8 @@
+const fixed=2
+set objfso=createobject("scripting.filesystemobject")
+set coldiskdrive=objfso.drives
+for each objdiskdrive in coldiskdrive
+	if objdiskdrive.drivetype=fixed then
+		wscript.echo objdiskdrive.driveletter
+	end if
+next

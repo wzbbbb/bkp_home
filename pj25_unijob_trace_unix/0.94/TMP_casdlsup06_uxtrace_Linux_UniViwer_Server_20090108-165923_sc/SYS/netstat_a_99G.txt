@@ -1,0 +1,598 @@
+#CMD# netstat -a
+#TSP#  20090108-170123 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0      0 *:FLS530_IO_X               *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:FLS510_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_S              *:*                         LISTEN      
+tcp        0      0 *:FLS510_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:FLS530_IO_A               *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_I              *:*                         LISTEN      
+tcp        0      0 *:FLS510_DQM                *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:52004                     *:*                         LISTEN      
+tcp        0      0 *:FLS530_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:52005                     *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:52006                     *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS530_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:PRE530_IO_X               *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:UNI532_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:UNI532_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:5802                      *:*                         LISTEN      
+tcp        0      0 *:FLS530_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:UNI532_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:TST530_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST500_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST530_IO_S               *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:FLS530_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_S              *:*                         LISTEN      
+tcp        0      0 *:5902                      *:*                         LISTEN      
+tcp        0      0 *:FLS520_DQM_X              *:*                         LISTEN      
+tcp        0      0 *:TST530_IO_A               *:*                         LISTEN      
+tcp        0      0 *:TST500_IO_A               *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_I              *:*                         LISTEN      
+tcp        0      0 *:sunrpc                    *:*                         LISTEN      
+tcp        0      0 *:TST540_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST500_CMD                *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:TST530_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:42225                     *:*                         LISTEN      
+tcp        0      0 *:6002                      *:*                         LISTEN      
+tcp        0      0 *:FLS530_DQM_A              *:*                         LISTEN      
+tcp        0      0 *:TST540_IO_A               *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS510_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST530_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:TST540_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:TST520_IO_I               *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:TST520_IO_A               *:*                         LISTEN      
+tcp        0      0 localhost.localdomain:ipp   *:*                         LISTEN      
+tcp        0      0 *:TST530_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST500_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST540_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_S               *:*                         LISTEN      
+tcp        0      0 *:smtp                      *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_I               *:*                         LISTEN      
+tcp        0      0 *:TST530_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:TST500_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:TST540_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_A               *:*                         LISTEN      
+tcp        0      0 *:TST500_DQM                *:*                         LISTEN      
+tcp        0      0 *:PRE530_DQM_X              *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_X               *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_S               *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_I               *:*                         LISTEN      
+tcp        0      0 *:TST540_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_A               *:*                         LISTEN      
+tcp        0      0 *:TST540_DQM_A              *:*                         LISTEN      
+tcp        0      0 *:FLS510_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST530_DQM_A              *:*                         LISTEN      
+tcp        0      0 *:33119                     *:*                         LISTEN      
+tcp        0      0 localhost.localdomain:46935 localhost.local:TST520_IO_A ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55392 ESTABLISHED 
+tcp        0      0 casdlsup06:puprouter        casdlsup02:nfs              ESTABLISHED 
+tcp        0      0 casdlsup06:1018             casdlsup02:nfs              ESTABLISHED 
+tcp        0      0 casdlsup06:1013             casdlsup02:nfs              ESTABLISHED 
+tcp        0      0 casdlsup06:1014             casdlsup02:nfs              ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58970 ESTABLISHED 
+tcp        0      0 casdlsup06:1012             caribou:nfs                 ESTABLISHED 
+tcp        0      0 casdlsup06:1008             caribou:nfs                 ESTABLISHED 
+tcp        0      0 casdlsup06:surf             caribou:nfs                 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55399 ESTABLISHED 
+tcp        0      0 localhost.locald:TST500_DQM localhost.localdomain:35929 ESTABLISHED 
+tcp        0      0 localhost.local:TST520_IO_A localhost.localdomain:46935 ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmvhe.orsypgroup.co:4754 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55403 ESTABLISHED 
+tcp        0      0 casdlsup06:54713            casdlsup06:FLS520_IO_I      ESTABLISHED 
+tcp        0      0 casdlsup06:53527            casdlsup06:FLS520_IO_S      ESTABLISHED 
+tcp        0      0 casdlsup06:52004            casdlsup06:39109            ESTABLISHED 
+tcp        0      0 casdlsup06:52004            casdlsup06:39108            ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42351 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55408 ESTABLISHED 
+tcp        0      0 casdlsup06:TST540_IO_A      casdlsup06:36725            ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmvhe.orsypgroup.c:spocp ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_I localhost.localdomain:58439 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48248            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55416 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42360 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55417 ESTABLISHED 
+tcp        0      0 localhost.localdomain:44159 localhost.local:TST520_IO_I ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54341 ESTABLISHED 
+tcp        0      0 casdlsup06:36725            casdlsup06:TST540_IO_A      ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48253            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55423 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42367 ESTABLISHED 
+tcp        0      0 localhost.local:TST520_IO_I localhost.localdomain:44159 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42304 ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42819 ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmwzh.orsypgroup.co:2212 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:59002 ESTABLISHED 
+tcp        0      0 localhost.localdomain:37102 localhost.local:FLS510_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42823 ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmwzh.orsypgroup.:ipcore ESTABLISHED 
+tcp        0      0 casdlsup06:TST540_IO_X      casdlsup06:47947            ESTABLISHED 
+tcp        0      0 casdlsup06:47947            casdlsup06:TST540_IO_X      ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42827 ESTABLISHED 
+tcp        0      0 casdlsup06:PRE530_CDJ_A     support7:casanswmgmt        ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58997 ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_A localhost.localdomain:44366 ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_X localhost.localdomain:44400 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58991 ESTABLISHED 
+tcp        0      0 localhost.localdomain:42823 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42819 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42827 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42815 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42810 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42809 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.locald:TST500_DQM localhost.localdomain:35943 ESTABLISHED 
+tcp        0      0 localhost.localdomain:58439 localhost.local:FLS520_IO_I ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55387 ESTABLISHED 
+tcp        0      0 localhost.loca:PRE530_DQM_X localhost.localdomain:60507 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55388 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48220            ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48221            ESTABLISHED 
+tcp        0      0 localhost.localdomain:44366 localhost.local:TST540_IO_A ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48222            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55391 ESTABLISHED 
+tcp        0      0 localhost.localdomain:39940 localhost.local:FLS520_IO_A ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54300 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_CDJ_X     casdlsup06:57382            ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_S      casdlsup06:53527            ESTABLISHED 
+tcp        0      0 casdlsup06:UNI532_CDJ_X     casdlsup06:47914            ESTABLISHED 
+tcp        0      0 casdlsup06:UNI532_CDJ_S     casdlsup06:59697            ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42809 ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42810 ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_A localhost.localdomain:39940 ESTABLISHED 
+tcp        0      0 localhost.localdomain:33688 localhost.local:FLS520_IO_S ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42815 ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54334 ESTABLISHED 
+tcp        0      0 casdlsup06:48580            casdlsup06:FLS520_IO_X      ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40199 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40205 ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54322 ESTABLISHED 
+tcp        0      0 localhost.localdomain:44400 localhost.local:FLS520_IO_X ESTABLISHED 
+tcp        0      0 casdlsup06:UNI532_CDJ_I     casdlsup06:37394            ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40211 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_A      casdlsup06:48148            ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_DQM_A     casdlsup06:41492            ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54313 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_A      casdlsup06:48150            ESTABLISHED 
+tcp        0      0 casdlsup06:42491            casdlsup06:FLS520_IO_A      ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43490 ESTABLISHED 
+tcp        0      0 casdlsup06:59697            casdlsup06:UNI532_CDJ_S     ESTABLISHED 
+tcp        0      0 localhost.localdomain:60911 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 casdlsup06:58110            casdlsup06:PRE530_IO_X      ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40170 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:60911 ESTABLISHED 
+tcp        0      0 casdlsup06:48306            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48258            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48267            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48248            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48253            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48220            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48221            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48222            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:FLS530_IO_A      casdlsup06:45298            ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_A localhost.localdomain:55500 ESTABLISHED 
+tcp        0      0 casdlsup06:48150            casdlsup06:TST530_IO_A      ESTABLISHED 
+tcp        0      0 casdlsup06:48148            casdlsup06:TST530_IO_A      ESTABLISHED 
+tcp        0      0 localhost.localdomain:60507 localhost.loca:PRE530_DQM_X ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_X      casdlsup06:48580            ESTABLISHED 
+tcp        0      0 casdlsup06:41492            casdlsup06:TST530_DQM_A     ESTABLISHED 
+tcp        0      0 casdlsup06:PRE530_IO_X      casdlsup06:58110            ESTABLISHED 
+tcp        0      0 localhost.localdomain:60607 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60602 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60596 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60593 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60587 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60582 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60578 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60573 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 casdlsup06:35123            support7:TST530_CDJ_X       ESTABLISHED 
+tcp        0      0 localhost.localdomain:55500 localhost.local:TST511_IO_A ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_A      casdlsup06:42491            ESTABLISHED 
+tcp        0      0 casdlsup06:FLS530_IO_X      casdlsup06:59592            ESTABLISHED 
+tcp        0      0 casdlsup06:59592            casdlsup06:FLS530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:38666            casdlsup06:TST530_DQM_A     TIME_WAIT   
+tcp        0      0 casdlsup06:38674            casdlsup06:TST530_DQM_A     TIME_WAIT   
+tcp        0      0 localhost.localdomain:58997 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 localhost.localdomain:59002 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 localhost.localdomain:58991 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 casdlsup06:40787            support5:TST530_CDJ_X       ESTABLISHED 
+tcp        0      0 localhost.localdomain:58970 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 localhost.localdomain:54341 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54322 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54334 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54313 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54300 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55445 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55452 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55429 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55436 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55473 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55458 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55466 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55387 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55388 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55391 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55408 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55416 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55417 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55423 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55392 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55399 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55403 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:FLS510_IO_X localhost.localdomain:37102 ESTABLISHED 
+tcp        0      0 localhost.local:FLS530_IO_X localhost.localdomain:46547 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43475 ESTABLISHED 
+tcp        0      0 localhost.local:FLS530_IO_X localhost.localdomain:46548 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43483 ESTABLISHED 
+tcp        0      0 casdlsup06:39109            casdlsup06:52004            ESTABLISHED 
+tcp        0      0 casdlsup06:39108            casdlsup06:52004            ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_S localhost.localdomain:37277 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55458 ESTABLISHED 
+tcp        0      0 localhost.localdomain:43409 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.localdomain:43490 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60573 ESTABLISHED 
+tcp        0      0 localhost.localdomain:43475 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.localdomain:43483 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.localdomain:48804 localhost.local:TST511_IO_I ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_S localhost.localdomain:33688 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55466 ESTABLISHED 
+tcp        0      0 localhost.localdomain:42351 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.localdomain:42367 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.localdomain:42360 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.localdomain:42304 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55473 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48306            ESTABLISHED 
+tcp        0      0 casdlsup06:47914            casdlsup06:UNI532_CDJ_X     ESTABLISHED 
+tcp        0      0 localhost.local:FLS530_IO_A localhost.localdomain:44470 ESTABLISHED 
+tcp        0      0 casdlsup06:57382            casdlsup06:TST530_CDJ_X     ESTABLISHED 
+tcp        0      0 localhost.localdomain:35929 localhost.locald:TST500_DQM ESTABLISHED 
+tcp        0      0 localhost.localdomain:35943 localhost.locald:TST500_DQM ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_CDJ_X     support7:mps-raft           ESTABLISHED 
+tcp        0      0 localhost.localdomain:52004 localhost.localdomain:54551 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60607 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48258            ESTABLISHED 
+tcp        0      0 casdlsup06:51340            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 casdlsup06:51341            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 casdlsup06:51342            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 casdlsup06:51343            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 casdlsup06:51339            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 casdlsup06:51344            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 casdlsup06:51345            casdlsup06:TST530_IO_X      TIME_WAIT   
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60602 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55429 ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_I      casdlsup06:54713            ESTABLISHED 
+tcp        0      0 localhost.localdomain:37277 localhost.local:TST511_IO_S ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60596 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48267            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55436 ESTABLISHED 
+tcp        0      0 localhost.localdomain:44470 localhost.local:FLS530_IO_A ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60593 ESTABLISHED 
+tcp        0      0 localhost.localdomain:54551 localhost.localdomain:52004 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43409 ESTABLISHED 
+tcp        0      0 casdlsup06:45298            casdlsup06:FLS530_IO_A      ESTABLISHED 
+tcp        0      0 localhost.localdomain:40211 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:40199 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:40205 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:46548 localhost.local:FLS530_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55445 ESTABLISHED 
+tcp        0      0 localhost.localdomain:46547 localhost.local:FLS530_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60587 ESTABLISHED 
+tcp        0      0 localhost.localdomain:40170 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60582 ESTABLISHED 
+tcp        0      0 casdlsup06:37394            casdlsup06:UNI532_CDJ_I     ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_I localhost.localdomain:48804 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55452 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60578 ESTABLISHED 
+tcp        0      0 localhost.localdomain:8005  *:*                         LISTEN      
+tcp        0      0 *:casdlsup06_REP_X          *:*                         LISTEN      
+tcp        0      0 *:8009                      *:*                         LISTEN      
+tcp        0      0 *:webcache                  *:*                         LISTEN      
+tcp        0      0 *:6002                      *:*                         LISTEN      
+tcp        0      0 *:ssh                       *:*                         LISTEN      
+tcp        0      0 *:4184                      *:*                         LISTEN      
+tcp        0      0 casdlsup06:4184             support7:knetd              ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:ah-esp-encap       CLOSE_WAIT  
+tcp        0      0 casdlsup06:ssh              calpmlxu.orsyp:mcns-tel-ret ESTABLISHED 
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgroup.c:wkars ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:pns                CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:netobjects2        CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:netobjects1        CLOSE_WAIT  
+tcp        0      0 casdlsup06:43867            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        1      0 casdlsup06:47078            casdlsup06:TST530_IO_X      CLOSE_WAIT  
+tcp        1      0 casdlsup06:47077            casdlsup06:TST530_IO_X      CLOSE_WAIT  
+tcp        1      0 casdlsup06:47076            casdlsup06:TST530_IO_X      CLOSE_WAIT  
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgrou:cadsi-lm ESTABLISHED 
+tcp        0      0 casdlsup06:37172            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        0      0 casdlsup06:37161            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        0      0 casdlsup06:37158            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        0      0 casdlsup06:ssh              calpmlxu.orsypgroup.co:4382 ESTABLISHED 
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgrou:writesrv ESTABLISHED 
+tcp        0      0 casdlsup06:4184             support7:sdfunc             ESTABLISHED 
+tcp        0      0 casdlsup06:4184             support7:2047               ESTABLISHED 
+udp        0      0 *:filenet-tms               *:*                                     
+udp        0      0 *:filenet-rpc               *:*                                     
+udp        0      0 *:filenet-rmi               *:*                                     
+udp        0      0 casdlsup06:43143            frspmdc001.orsyp:domain     ESTABLISHED 
+udp        0      0 *:xdmcp                     *:*                                     
+udp        0      0 *:959                       *:*                                     
+udp        0      0 *:mdns                      *:*                                     
+udp        0      0 *:sunrpc                    *:*                                     
+udp        0      0 *:ipp                       *:*                                     
+udp        0      0 casdlsup06:ntp              *:*                                     
+udp        0      0 localhost.localdomain:ntp   *:*                                     
+udp        0      0 *:ntp                       *:*                                     
+udp        0      0 *:filenet-nch               *:*                                     
+udp        0      0 *:ntp                       *:*                                     
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING     5534   /tmp/.font-unix/fs7100
+unix  2      [ ACC ]     STREAM     LISTENING     5262   public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     5656   /tmp/.X11-unix/X2
+unix  2      [ ACC ]     STREAM     LISTENING     7496   @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     7207   /tmp/ksocket-root/kdeinit__2
+unix  2      [ ACC ]     STREAM     LISTENING     7209   /tmp/ksocket-root/kdeinit-:2
+unix  2      [ ACC ]     STREAM     LISTENING     7220   /tmp/.gdm_socket
+unix  2      [ ACC ]     STREAM     LISTENING     7370   /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     7385   /tmp/.ICE-unix/dcop2371-1229524149
+unix  2      [ ACC ]     STREAM     LISTENING     7454   /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  2      [ ACC ]     STREAM     LISTENING     7558   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  2      [ ACC ]     STREAM     LISTENING     6156   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  2      [ ACC ]     STREAM     LISTENING     7563   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  2      [ ACC ]     STREAM     LISTENING     7584   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  2      [ ACC ]     STREAM     LISTENING     7619   /tmp/.ICE-unix/2420
+unix  2      [ ACC ]     STREAM     LISTENING     7776   /tmp/ksocket-root/casdlsup06.orsypgroup.com-0980-49490cbe
+unix  2      [ ACC ]     STREAM     LISTENING     5269   private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     5273   private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     5277   private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     5281   private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     5285   private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     5289   private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     5293   public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     5297   private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     5301   private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     5305   private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     5309   public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     5313   private/error
+unix  2      [ ACC ]     STREAM     LISTENING     5317   private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     5321   private/local
+unix  25     [ ]         DGRAM                    4435   /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     5325   private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     5329   private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5333   private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     5337   private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     5876   /var/run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     5341   private/maildrop
+unix  2      [ ACC ]     STREAM     LISTENING     5345   private/old-cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5349   private/cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5353   private/uucp
+unix  2      [ ACC ]     STREAM     LISTENING     5357   private/ifmail
+unix  2      [ ACC ]     STREAM     LISTENING     5361   private/bsmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5472   /dev/gpmctl
+unix  2      [ ]         DGRAM                    1111   @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     6157   @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  2      [ ]         DGRAM                    6165   @/org/freedesktop/hal/udev_event
+unix  2      [ ACC ]     STREAM     LISTENING     4664   /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     4713   /var/run/sdp
+unix  2      [ ACC ]     STREAM     LISTENING     4955   /var/run/acpid.socket
+unix  2      [ ]         DGRAM                    2389246 
+unix  2      [ ]         DGRAM                    2389160 
+unix  3      [ ]         STREAM     CONNECTED     2389157 
+unix  3      [ ]         STREAM     CONNECTED     2389156 
+unix  2      [ ]         DGRAM                    2387678 
+unix  2      [ ]         DGRAM                    2358273 
+unix  2      [ ]         DGRAM                    2323554 
+unix  2      [ ]         DGRAM                    2323466 
+unix  3      [ ]         STREAM     CONNECTED     2323463 
+unix  3      [ ]         STREAM     CONNECTED     2323462 
+unix  2      [ ]         DGRAM                    2320644 
+unix  3      [ ]         STREAM     CONNECTED     2320643 
+unix  3      [ ]         STREAM     CONNECTED     2320642 
+unix  2      [ ]         DGRAM                    2319198 
+unix  2      [ ]         DGRAM                    2319112 
+unix  3      [ ]         STREAM     CONNECTED     2319109 
+unix  3      [ ]         STREAM     CONNECTED     2319108 
+unix  2      [ ]         DGRAM                    2318957 
+unix  2      [ ]         DGRAM                    2101638 
+unix  3      [ ]         STREAM     CONNECTED     2101637 
+unix  3      [ ]         STREAM     CONNECTED     2101636 
+unix  3      [ ]         STREAM     CONNECTED     8154   /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     8153   
+unix  3      [ ]         STREAM     CONNECTED     7811   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7810   
+unix  3      [ ]         STREAM     CONNECTED     7804   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7803   
+unix  3      [ ]         STREAM     CONNECTED     7787   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7786   
+unix  3      [ ]         STREAM     CONNECTED     7785   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7784   
+unix  3      [ ]         STREAM     CONNECTED     7756   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7755   
+unix  3      [ ]         STREAM     CONNECTED     7752   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7751   
+unix  3      [ ]         STREAM     CONNECTED     7750   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7749   
+unix  3      [ ]         STREAM     CONNECTED     7745   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7744   
+unix  3      [ ]         STREAM     CONNECTED     7721   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7720   
+unix  3      [ ]         STREAM     CONNECTED     7719   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7718   
+unix  3      [ ]         STREAM     CONNECTED     7690   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7689   
+unix  3      [ ]         STREAM     CONNECTED     7682   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7681   
+unix  3      [ ]         STREAM     CONNECTED     7674   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7673   
+unix  3      [ ]         STREAM     CONNECTED     7672   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7671   
+unix  3      [ ]         STREAM     CONNECTED     7666   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7665   
+unix  3      [ ]         STREAM     CONNECTED     7661   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7660   
+unix  3      [ ]         STREAM     CONNECTED     7652   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7651   
+unix  3      [ ]         STREAM     CONNECTED     7648   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7647   
+unix  3      [ ]         STREAM     CONNECTED     7644   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7643   
+unix  3      [ ]         STREAM     CONNECTED     7638   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7637   
+unix  3      [ ]         STREAM     CONNECTED     7636   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7635   
+unix  3      [ ]         STREAM     CONNECTED     7630   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7629   
+unix  3      [ ]         STREAM     CONNECTED     7627   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7626   
+unix  3      [ ]         STREAM     CONNECTED     7625   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7624   
+unix  3      [ ]         STREAM     CONNECTED     7618   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7617   
+unix  3      [ ]         STREAM     CONNECTED     7612   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7611   
+unix  3      [ ]         STREAM     CONNECTED     7605   /tmp/ksocket-root/kdeinit__2
+unix  3      [ ]         STREAM     CONNECTED     7604   
+unix  3      [ ]         STREAM     CONNECTED     7623   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7592   
+unix  3      [ ]         STREAM     CONNECTED     7589   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7588   
+unix  3      [ ]         STREAM     CONNECTED     7587   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7586   
+unix  3      [ ]         STREAM     CONNECTED     7583   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7582   
+unix  3      [ ]         STREAM     CONNECTED     7581   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7580   
+unix  3      [ ]         STREAM     CONNECTED     7579   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7578   
+unix  3      [ ]         STREAM     CONNECTED     7566   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7565   
+unix  3      [ ]         STREAM     CONNECTED     7562   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7561   
+unix  3      [ ]         STREAM     CONNECTED     7543   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7542   
+unix  3      [ ]         STREAM     CONNECTED     7513   /tmp/.font-unix/fs7100
+unix  3      [ ]         STREAM     CONNECTED     7512   
+unix  3      [ ]         STREAM     CONNECTED     7498   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7497   
+unix  3      [ ]         STREAM     CONNECTED     7486   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7485   
+unix  3      [ ]         STREAM     CONNECTED     7482   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7481   
+unix  3      [ ]         STREAM     CONNECTED     7457   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7456   
+unix  3      [ ]         STREAM     CONNECTED     7428   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7427   
+unix  3      [ ]         STREAM     CONNECTED     7396   
+unix  3      [ ]         STREAM     CONNECTED     7395   
+unix  3      [ ]         STREAM     CONNECTED     7517   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7372   
+unix  3      [ ]         STREAM     CONNECTED     6992   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     6991   
+unix  3      [ ]         STREAM     CONNECTED     6939   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6938   
+unix  3      [ ]         STREAM     CONNECTED     6896   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6895   
+unix  3      [ ]         STREAM     CONNECTED     6846   /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     6845   
+unix  3      [ ]         STREAM     CONNECTED     6865   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6840   
+unix  3      [ ]         STREAM     CONNECTED     6160   @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  3      [ ]         STREAM     CONNECTED     6159   
+unix  3      [ ]         STREAM     CONNECTED     5924   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5923   
+unix  3      [ ]         STREAM     CONNECTED     5879   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5878   
+unix  3      [ ]         STREAM     CONNECTED     5873   
+unix  3      [ ]         STREAM     CONNECTED     5872   
+unix  2      [ ]         DGRAM                    5870   
+unix  3      [ ]         STREAM     CONNECTED     5694   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     5693   
+unix  2      [ ]         DGRAM                    5474   
+unix  2      [ ]         DGRAM                    5451   
+unix  2      [ ]         DGRAM                    5432   
+unix  2      [ ]         DGRAM                    5375   
+unix  3      [ ]         STREAM     CONNECTED     5364   
+unix  3      [ ]         STREAM     CONNECTED     5363   
+unix  3      [ ]         STREAM     CONNECTED     5360   
+unix  3      [ ]         STREAM     CONNECTED     5359   
+unix  3      [ ]         STREAM     CONNECTED     5356   
+unix  3      [ ]         STREAM     CONNECTED     5355   
+unix  3      [ ]         STREAM     CONNECTED     5352   
+unix  3      [ ]         STREAM     CONNECTED     5351   
+unix  3      [ ]         STREAM     CONNECTED     5348   
+unix  3      [ ]         STREAM     CONNECTED     5347   
+unix  3      [ ]         STREAM     CONNECTED     5344   
+unix  3      [ ]         STREAM     CONNECTED     5343   
+unix  3      [ ]         STREAM     CONNECTED     5340   
+unix  3      [ ]         STREAM     CONNECTED     5339   
+unix  3      [ ]         STREAM     CONNECTED     5336   
+unix  3      [ ]         STREAM     CONNECTED     5335   
+unix  3      [ ]         STREAM     CONNECTED     5332   
+unix  3      [ ]         STREAM     CONNECTED     5331   
+unix  3      [ ]         STREAM     CONNECTED     5328   
+unix  3      [ ]         STREAM     CONNECTED     5327   
+unix  3      [ ]         STREAM     CONNECTED     5324   
+unix  3      [ ]         STREAM     CONNECTED     5323   
+unix  3      [ ]         STREAM     CONNECTED     5320   
+unix  3      [ ]         STREAM     CONNECTED     5319   
+unix  3      [ ]         STREAM     CONNECTED     5316   
+unix  3      [ ]         STREAM     CONNECTED     5315   
+unix  3      [ ]         STREAM     CONNECTED     5312   
+unix  3      [ ]         STREAM     CONNECTED     5311   
+unix  3      [ ]         STREAM     CONNECTED     5308   
+unix  3      [ ]         STREAM     CONNECTED     5307   
+unix  3      [ ]         STREAM     CONNECTED     5304   
+unix  3      [ ]         STREAM     CONNECTED     5303   
+unix  3      [ ]         STREAM     CONNECTED     5300   
+unix  3      [ ]         STREAM     CONNECTED     5299   
+unix  3      [ ]         STREAM     CONNECTED     5296   
+unix  3      [ ]         STREAM     CONNECTED     5295   
+unix  3      [ ]         STREAM     CONNECTED     5292   
+unix  3      [ ]         STREAM     CONNECTED     5291   
+unix  3      [ ]         STREAM     CONNECTED     5288   
+unix  3      [ ]         STREAM     CONNECTED     5287   
+unix  3      [ ]         STREAM     CONNECTED     5284   
+unix  3      [ ]         STREAM     CONNECTED     5283   
+unix  3      [ ]         STREAM     CONNECTED     5280   
+unix  3      [ ]         STREAM     CONNECTED     5279   
+unix  3      [ ]         STREAM     CONNECTED     5276   
+unix  3      [ ]         STREAM     CONNECTED     5275   
+unix  3      [ ]         STREAM     CONNECTED     5272   
+unix  3      [ ]         STREAM     CONNECTED     5271   
+unix  3      [ ]         STREAM     CONNECTED     5268   
+unix  3      [ ]         STREAM     CONNECTED     5267   
+unix  3      [ ]         STREAM     CONNECTED     5265   
+unix  3      [ ]         STREAM     CONNECTED     5264   
+unix  3      [ ]         STREAM     CONNECTED     5261   
+unix  3      [ ]         STREAM     CONNECTED     5260   
+unix  3      [ ]         STREAM     CONNECTED     5253   
+unix  3      [ ]         STREAM     CONNECTED     5252   
+unix  2      [ ]         DGRAM                    5204   
+unix  2      [ ]         DGRAM                    5034   
+unix  2      [ ]         DGRAM                    4803   
+unix  3      [ ]         STREAM     CONNECTED     4706   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     4705   
+unix  2      [ ]         DGRAM                    4692   
+unix  2      [ ]         DGRAM                    4686   
+unix  3      [ ]         STREAM     CONNECTED     4667   
+unix  3      [ ]         STREAM     CONNECTED     4666   
+unix  3      [ ]         STREAM     CONNECTED     4632   
+unix  4      [ ]         STREAM     CONNECTED     4631   
+unix  2      [ ]         DGRAM                    4510   
+unix  2      [ ]         DGRAM                    4443   

@@ -1,0 +1,256 @@
+The analysis of the rights of the UniJob folders
+
+#REM# Analysis of the / folder
+
+drwxr-xr-x  31 root root         4096 Jan  8 11:35 ..
+
+#REM# The available place in / is
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+
+#REM# Analysis of the UXDEX folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:42 data
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/data/
+drwxr-xr-x 2 root root 4096 Jan  5 12:18 data
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/data/data is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/data/data
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721684 244052484   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/data/data is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/data/data
+#TSP#  20090108-170011 
+2664	/apps/unijob110/unijob/casdlsup06_unijob/data/data
+
+#REM# Analysis of the UXDIR_ROOT folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721684 244052484   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob
+#TSP#  20090108-170011 
+13908	/apps/unijob110/unijob/casdlsup06_unijob
+
+#REM# Analysis of the UXFIL folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/app/
+drwxr-xr-x 6 root root  4096 Jan  8 16:59 app
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/app/files/
+drwxr-xr-x 2 root root 4096 Jan  8 16:43 files
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/app/files is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/app/files
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721684 244052484   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/app/files is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/app/files
+#TSP#  20090108-170011 
+116	/apps/unijob110/unijob/casdlsup06_unijob/app/files
+
+#REM# Analysis of the UXJAR folder
+
+#REM# The available place in  is
+#CMD# df -k 
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+/dev/hda1               256666     17397    226017   8% /boot
+tmpfs                   484844         0    484844   0% /dev/shm
+/dev/hda5            276836664  18721684 244052484   8% /dsk1
+support2:/dsk1/cases  65472416  60063264   2083296  97% /cases
+support2:/dsk1/windata
+                      65472416  60063264   2083296  97% /windata
+support2:/dsk1/lindata
+                      65472416  60063264   2083296  97% /lindata
+caribou:/dsk1/dlc01  163765376 122605824  32840704  79% /windata/20_Edition
+caribou:/dsk1/da_documents
+                     163765376 122605824  32840704  79% /da_documents
+casplda01:/dsk2/users
+                     288435136  54410496 219372960  20% /data/home
+caribou:/dsk1/da_documents/data
+                     163765376 122605824  32840704  79% /data/data
+
+#REM# The place occupied by  is
+#CMD# du -sk 
+#TSP#  20090108-170011 
+752	.
+
+#REM# Analysis of the UXMGR folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:42 data
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/data is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/data
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721688 244052480   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/data is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/data
+#TSP#  20090108-170011 
+2760	/apps/unijob110/unijob/casdlsup06_unijob/data
+
+#REM# Analysis of the UXEXE folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/app/
+drwxr-xr-x 6 root root  4096 Jan  8 16:59 app
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/app/bin/
+drwxr-xr-x 2 root root 4096 Jan  5 12:18 bin
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/app/bin is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/app/bin
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721688 244052480   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/app/bin is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/app/bin
+#TSP#  20090108-170011 
+1844	/apps/unijob110/unijob/casdlsup06_unijob/app/bin
+
+#REM# Analysis of the UXLIB folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/app/
+drwxr-xr-x 6 root root  4096 Jan  8 16:59 app
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/app/lib/
+drwxr-xr-x 2 root root 4096 Jan  5 12:18 lib
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/app/lib is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/app/lib
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721688 244052480   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/app/lib is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/app/lib
+#TSP#  20090108-170011 
+8400	/apps/unijob110/unijob/casdlsup06_unijob/app/lib
+
+#REM# Analysis of the UXPEX folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:42 data
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/upr/
+drwxrwxrwx 2 root root 4096 Jan  5 12:18 upr
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/data/upr is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/data/upr
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721692 244052476   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/data/upr is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/data/upr
+#TSP#  20090108-170011 
+4	/apps/unijob110/unijob/casdlsup06_unijob/data/upr
+
+#REM# Analysis of the UXLEX folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:42 data
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/log/
+drwxrwxrwx 2 root root 4096 Jan  5 12:19 log
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/data/log is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/data/log
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721692 244052476   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/data/log is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/data/log
+#TSP#  20090108-170011 
+12	/apps/unijob110/unijob/casdlsup06_unijob/data/log
+
+#REM# Analysis of the U_TMP_PATH folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/unijob/
+drwxr-xr-x 3 root root 4096 Jan  5 12:18 unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/
+drwxr-xr-x 4 root root 4096 Jan  5 12:18 casdlsup06_unijob
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:42 data
+#REM# Rights of the folder /apps/unijob110/unijob/casdlsup06_unijob/data/temp/
+drwxrwxrwx 2 root root 4096 Jan  5 12:18 temp
+
+#REM# The available place in /apps/unijob110/unijob/casdlsup06_unijob/data/temp is
+#CMD# df -k /apps/unijob110/unijob/casdlsup06_unijob/data/temp
+#TSP#  20090108-170011 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18721692 244052476   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/unijob/casdlsup06_unijob/data/temp is
+#CMD# du -sk /apps/unijob110/unijob/casdlsup06_unijob/data/temp
+#TSP#  20090108-170011 
+4	/apps/unijob110/unijob/casdlsup06_unijob/data/temp

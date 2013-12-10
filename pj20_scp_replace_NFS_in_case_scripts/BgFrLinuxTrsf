@@ -1,0 +1,121 @@
+#! /bin/sh   
+###################################################################
+#                 Background transfer procedure
+###################################################################
+# @(#) script sh
+# @(#) created by  : Guy MULLER (Orsyp)
+###################################################################
+##
+# revision : 1.2.0
+# date     : 20060310
+# author   : Zhibing Wang (Orsyp Inc)
+# modifs   : replace NFS with scp and ssh
+##
+# revision : 1.1.1
+# date     : 20051012
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Adaptation to the nfs sharing -> right issue
+##
+# revision : 1.1
+# date     : 20051003
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Adaptation to the nfs sharing
+##
+# revision : 1.0
+# date     : 20030925
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Packaging
+##
+# revision : 0.9
+# date     : 20030707
+# author   : Guy Muller (Orsyp Inc)
+# modifs   : Creation
+
+### Environment definition
+g_daenv_dir=/etc/daenv
+Transfert_Cases_Dir_Base=/cases/.Transfert
+#Fr_Cases_Dir_Base=/FR/DA/Incident\ Related\ Files
+#Fr_Cases_Dir_Base=/FR/cases
+Fr_Cases_Dir_Base=frsplda01:/cases
+ux_tmp_dir=/cases/.Transfert/.tmp
+ux_log_dir=/cases/.Transfert/.logs
+ux_lst_dir=/cases/.Transfert/.lst
+ux_file_trsf_list=${ux_tmp_dir}/tmp_file_trsf.txt
+Transfer_List=${ux_lst_dir}/TransferList.txt
+gen_flag_file=${ux_tmp_dir}/bg_transfer_on
+Log_File=${ux_log_dir}/BgFrLinuxTrsf.txt
+bg_trsf_procedure=${g_daenv_dir}/cases/BgFrLinuxTrsf
+fr_host=frsplda01
+loc_return_status=0
+### ID test
+#loc_id=`id -u`
+#if [ ${loc_id} -ne 0 ]; then
+#	echo "You must log on with the root user account"
+#	exit 1
+#fi
+
+# Check if the procedure is already running
+if [ -f ${gen_flag_file} ]; then
+	date >> ${Log_File}
+	echo "#REM#The procedure is already running" 
+	echo "The procedure is already running" >> ${Log_File}
+	echo "#CMD# ps -ef " >> ${Log_File} 2>&1
+	exit 1
+else
+	touch ${gen_flag_file}
+fi
+cd ${Transfert_Cases_Dir_Base}
+
+# Generation of the list of files
+ls > ${ux_file_trsf_list}
+
+# Processing the files
+while read loc_file
+do
+	loc_case_number=`echo "${loc_file}" | cut -d@ -f1`	
+	case ${loc_case_number} in
+		[0-9][0-9][0-9][0-9]|[0-9][0-9][0-9][0-9][0-9]|[0-9][0-9][0-9][0-9][0-9][0-9] )
+			loc_file_name=`echo "${loc_file}" | cut -d@ -f2`	
+			ux_case_number_2dig=`echo ${loc_case_number} | cut -c 1-2 `
+			ux_case_number_3dig=`echo ${loc_case_number} | cut -c 1-3 `
+			ux_fr_case_dir="${Fr_Cases_Dir_Base}/${ux_case_number_2dig}xxx/${ux_case_number_3dig}xx/${loc_case_number}"
+			echo "#CMD# mv ${Transfert_Cases_Dir_Base}/${loc_file} ${ux_fr_case_dir}/${loc_file_name}" >> ${Log_File} 2>&1
+			echo "#CMD# mv \"${Transfert_Cases_Dir_Base}/${loc_file}\" \"${ux_fr_case_dir}/${loc_file_name}\"" >> ${Transfer_List} 2>&1
+			#echo "#CMD# mv \"${Transfert_Cases_Dir_Base}/${loc_file}\" \"${ux_fr_case_dir}/${loc_file_name}\""
+			#mv "./${loc_file}" "${ux_fr_case_dir}/${loc_file_name}" >> ${Log_File} 2>&1
+			path_=`pwd`
+			eval mv \""${path_}"/"${loc_file}"\" \""${path_}"/"${loc_file_name}"\"
+			[ $? -ne 0 ] && exit 1
+			#eval su - da -c "scp "${path_}"/"${loc_file}" "${ux_fr_case_dir}"/"${loc_file_name}" >> ${Log_File} 2>&1"
+			#ls "${path_}/${loc_file_name}"
+			#eval su - da -c "scp \""${path_}/${loc_file_name}"\" \""${ux_fr_case_dir}/${loc_file_name}"\" >> ${Log_File} 2>&1"
+			su - da -c "scp \"${path_}/${loc_file_name}\" \"${ux_fr_case_dir}/\" >> ${Log_File} 2>&1"
+			loc_ret_code=$?
+			if [ ${loc_ret_code} -eq 0 ]; then  
+				 rm -rf "./${loc_file_name}"
+			else
+				eval mv  \""${path_}"/"${loc_file_name}"\" \""${path_}"/"${loc_file}"\"
+			fi
+			# Fix the right issue
+			#chown 491:502 "${ux_fr_case_dir}/${loc_file_name}" >> ${Log_File} 2>&1
+			#chmod 775 "${ux_fr_case_dir}/${loc_file_name}" >> ${Log_File} 2>&1
+			[ ${loc_ret_code} -eq 0 ] && echo "#REM# [   OK   ] : ${loc_file}" >> ${Transfer_List} 2>&1
+			if [ ${loc_ret_code} -ne 0 ] ; then
+				 echo "#REM# [ FAILED ] : ${loc_file}" >> ${Transfer_List} 2>&1
+				loc_return_status=${loc_ret_code}
+			fi
+			;;
+		* )
+			echo "The file ${loc_file} is not considered, the structure does not match" >> ${Log_File} 2>&1
+			;;
+	esac
+done < "${ux_file_trsf_list}"
+
+#ls [0-9][0-9][0-9][0-9][0-9]* > /dev/null 2>&1
+#full_dir=`echo ${ux_fr_case_dir} | cut -f2 -d":" `
+#su - da -c "ssh -t $fr_host ls \"\"${full_dir}/${loc_file_name}\"\" "
+rm ${ux_file_trsf_list} >> ${Log_File} 2>&1
+rm ${gen_flag_file} >> ${Log_File} 2>&1
+[ ${loc_return_status} -eq 0 ] && exit 0
+sleep 60
+${bg_trsf_procedure} &

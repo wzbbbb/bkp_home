@@ -1,0 +1,49 @@
+
+Key words: CPU usage, Unix, IO server, uxioserv
+
+Subject: 
+High IO server CPU usage
+
+
+Prerequistites:
+
+
+Application validation tests: 
+
+Check the uxtrace result: 
+if the IO is really using a lot of CPU?
+if the IO is in the "top" command output?
+Maybe the IO was using a lot of CPU but not anymore?
+Why the customer think the IO is using a lot of CPU?
+
+
+Explanation:
+
+In this case, the customer found the following:
+  univa   392     1  0   Feb 19 ?       1493:08 ./uxioserv FDXP01 X wrecapf2
+The above does not mean the IO server is still using a lot of CPU.
+
+We can find the real situation from the uxtrace result. We can see that the IO server does not concume much CPU, 25 seconds in 3 minutes and 6 seconds:
+#TSP#  20070226-152331 
+   univa   392     1  0   Feb 19 ?       1492:41 ./uxioserv FDXP01 X wrecapf2
+#TSP#  20070226-152637 
+   univa   392     1  0   Feb 19 ?       1493:06 ./uxioserv FDXP01 X wrecapf2
+
+So, as conclusion, there is not real issue that causing IO server to concume a lot of CPU. What the customer found was due to normal Dollar Universe usage.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+Internal
+
+Experties level:
+

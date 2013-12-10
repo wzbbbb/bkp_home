@@ -1,0 +1,61 @@
+#CMD# uname -as
+Linux casdlsup06.orsypgroup.com 2.6.17-1.2174_FC5smp #1 SMP Tue Aug 8 16:00:39 EDT 2006 i686
+
+#CMD# head -100 /etc/*release
+==> /etc/fedora-release <==
+Fedora Core release 5 (Bordeaux)
+
+==> /etc/redhat-release <==
+Fedora Core release 5 (Bordeaux)
+
+#CMD# java -version
+java version "1.6.0_02"
+Java(TM) SE Runtime Environment (build 1.6.0_02-b05)
+Java HotSpot(TM) Client VM (build 1.6.0_02-b05, mixed mode, sharing)
+
+#CMD# hostname
+casdlsup06.orsypgroup.com
+
+#CMD# ./unicheckuj
+UniJob check procedure
+UniJob environment loaded.
+
+
+Product version: UniJob,1.1.0 (build Dec 31 2008)
+
+UniViewer Management Server casdlsup06/port 4184: OK
+UniJob IO server casdlsup06.orsypgroup.com/port 52004: OK
+
+4 engines:
+code:LAN  status:1  start:20090105171915  stop:                wakeup:20370101045900  systemId:      5759
+code:CAL  status:1  start:20090105171915  stop:                wakeup:20370101045959  systemId:      5761
+code:CDJ  status:1  start:20090105171915  stop:                wakeup:                systemId:      5757
+code:IO   status:1  start:20090105171915  stop:                wakeup:                systemId:      5755
+
+#CMD# uxversion
+#CMD# /apps/unijob110/unijob/casdlsup06_unijob/app/bin/getvar UNI_VERSION
+UniJob,1.1.0
+
+
+#CMD# uxversion
+#CMD# cat /apps/unijob110/unijob/casdlsup06_unijob/data/install/history_installation.txt
+Unijob Agent UniJob,1.1.0 : installation on 20090105_121800
+
+#CMD# df -k
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+/dev/hda1               256666     17397    226017   8% /boot
+tmpfs                   484844         0    484844   0% /dev/shm
+/dev/hda5            276836664  18721772 244052396   8% /dsk1
+support2:/dsk1/cases  65472416  60063264   2083296  97% /cases
+support2:/dsk1/windata
+                      65472416  60063264   2083296  97% /windata
+support2:/dsk1/lindata
+                      65472416  60063264   2083296  97% /lindata
+caribou:/dsk1/dlc01  163765376 122605824  32840704  79% /windata/20_Edition
+caribou:/dsk1/da_documents
+                     163765376 122605824  32840704  79% /da_documents
+casplda01:/dsk2/users
+                     288435136  54410496 219372960  20% /data/home
+caribou:/dsk1/da_documents/data
+                     163765376 122605824  32840704  79% /data/data

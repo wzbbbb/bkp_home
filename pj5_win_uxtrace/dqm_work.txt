@@ -1,0 +1,42 @@
+DQM_all_ls_ltrai.txt:#REM# LISTING OF THE ALL DQM FOLDER;N/A
+
+
+DQM_all_ls_ltrai.txt:#CMD# ls -l /etc | grep UNIVERSE_DQM;N/A
+
+
+DQM_all_ls_ltrai.txt:#REM# /etc/UNIVERSE_DQM_FDXP01 is unreachable;N/A
+
+
+DQM_UXDQM_ls_ltrai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDQM
+directory;N/A
+
+
+DQM_UXDQM_ls_ltrai.txt:#CMD# ls -ltrai /var/universe/ams-cos2p/FDXP01/DQM;N/A
+
+
+DQM_UXDQM_ls_ltrai.txt:#TSP#  20041104-071026;N/A
+
+
+DQM_UXDQM_ls_ltruai.txt:#REM# LISTING OF THE DOLLAR UNIVERSE UXDQM
+directory;N/A
+
+
+DQM_UXDQM_ls_ltruai.txt:#CMD# ls -ltruai
+/var/universe/ams-cos2p/FDXP01/DQM;N/A
+
+
+DQM_UXDQM_ls_ltruai.txt:#TSP#  20041104-071026;N/A
+
+
+uxshw_job.txt:#CMD# /var/universe/ams-cos2p/FDXP01/DQM/uxshwjob;N/A
+
+
+uxshw_job.txt:#TSP#  20041104-071029;N/A
+
+
+uxshw_queue_all.txt:#CMD# /var/universe/ams-cos2p/FDXP01/DQM/uxshwque
+queue=ALL;N/A
+
+
+uxshw_queue_all.txt:#TSP#  20041104-071028;N/A
+

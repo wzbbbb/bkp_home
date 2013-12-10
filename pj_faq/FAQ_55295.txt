@@ -1,0 +1,29 @@
+
+Key words: Manager for SAP 4.0, libux_p_v501_sbw
+
+Subject: The link /usr/lib/libux_p_v501_sbw is not necessary
+
+Prerequisites:
+On Unix, Manager for SAP 4.0,
+
+Application validation tests:
+
+Explanation:
+
+We have confirmed with R&D. This link /usr/lib/libux_p_v501_sbw is not necessary, and can be deleted.
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+Internal
+
+Experties level:
+

@@ -1,0 +1,32 @@
+#REM# LISTING OF THE DOLLAR UNIVERSE UXJAR DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP#  20090108-170029 
+total 5648
+21627187 -rw-rw-rw- 1 root root     532 Jan  5 11:30 uxinsmod.jar
+21627186 -rw-rw-rw- 1 root root   96711 Jan  5 11:30 util.jar
+21627185 -rw-rw-rw- 1 root root 1016483 Jan  5 11:30 stdimpl.jar
+21627184 -rw-rw-rw- 1 root root     530 Jan  5 11:30 setvar.jar
+21627182 -rw-rw-rw- 1 root root  118701 Jan  5 11:30 schedconv-std.jar
+21627183 -rw-rw-rw- 1 root root   82659 Jan  5 11:30 schedconv.jar
+21627181 -rw-rw-rw- 1 root root  337950 Jan  5 11:30 protocols.jar
+21627180 -rw-rw-rw- 1 root root  241388 Jan  5 11:30 protobuf-java-2.0.1.jar
+21627179 -rw-rw-rw- 1 root root     545 Jan  5 11:30 miglogin.jar
+21627178 -rw-rw-rw- 1 root root  371264 Jan  5 11:30 mail.jar
+21627177 -rw-rw-rw- 1 root root  391834 Jan  5 11:30 log4j-1.2.15.jar
+21627176 -rw-rw-rw- 1 root root     551 Jan  5 11:30 installpassphrase.jar
+21627188 -rw-rw-rw- 1 root root  706710 Jan  5 11:30 hsqldb.jar
+21627175 -rw-rw-rw- 1 root root     531 Jan  5 11:30 getvar.jar
+21627174 -rw-rw-rw- 1 root root   15817 Jan  5 11:30 conf.jar
+21627173 -rw-rw-rw- 1 root root   36174 Jan  5 11:30 commons-cli-1.1.jar
+21627172 -rw-rw-rw- 1 root root  260395 Jan  5 11:30 comm.jar
+21627171 -rw-rw-rw- 1 root root     543 Jan  5 11:30 centralserver-stop.jar
+21627170 -rw-rw-rw- 1 root root     541 Jan  5 11:30 centralserver-start.jar
+21627169 -rw-rw-rw- 1 root root     542 Jan  5 11:30 centralserver-check.jar
+21627168 -rw-rw-rw- 1 root root  315781 Jan  5 11:30 central.jar
+21627167 -rw-rw-rw- 1 root root  191375 Jan  5 11:30 central-core.jar
+21627166 -rw-rw-rw- 1 root root  793885 Jan  5 11:30 art.jar
+21627165 -rw-rw-rw- 1 root root  563389 Jan  5 11:30 api.jar
+21627164 -rw-rw-rw- 1 root root  106633 Jan  5 11:30 alm.jar
+21627163 -rw-rw-rw- 1 root root     546 Jan  5 11:30 addlogin.jar
+21627162 drwxr-xr-x 2 root root    4096 Jan  5 11:30 .
+21627156 drwxr-xr-x 5 root root    4096 Jan  8 16:22 ..

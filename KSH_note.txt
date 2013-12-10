@@ -1,0 +1,767 @@
+Variable:
+variablename="some string"
+Or
+variablename=1234 # no spaces are allowed on either side of the equal sign
+var=    #set the variable to NULL
+x=*	#$x is set to contain all of the file/directory names in the current directory
+mv $file ${file}x	#{} is only needed when the var is followed by a alphanumeric char or an underscore.
+
+................................................
+............................................
+........... '' : ignore all of the enclosed chars
+........... "" : ingore most of the enclosed chars
+except: $, `` and \
+
+x=*
+echo $x
+echo '$x'
+echo "$x"
+echo ""$x""
+
+"" can be used to hide '' and vice versa.
+
+........... \ : equivalent to placing single quites around a single char, with a few exceptions. Any special meaning of the char is removed.
+echo \>
+>
+echo \$x
+$x
+echo \\
+\
+lines= one\	#\ removed the meaning of \n at the end of the line.
+> two
+echo $lines
+onetwo
+echo "\$x"
+$x
+echo "\ is the backslash char"
+\ is the backslash char
+
+file=exec.o
+lastchar='echo $file |sed 's/.*\(.\)$/\1/'` #change all chars in a line to the last char
+echo $lastchar
+
+...........expr #all of the operator and operand must be separate, for integer
+expr 1 + 1
+expr 16 \* 17
+
+expr "$filename" : ".*" #count the number of chars in the var.
+":" : to match the chars in behind to the "$filename"
+............................................
+................................................
+An Example:
+INPUTFILE="$1"
+USERLIST="$2"
+OUTPUTFILE="$3"
+
+count=0
+
+while read username ; do
+	grep $username $USERLIST >>$OUTPUTFILE
+	count=$(($count+1))
+done < $INPUTFILE	#the while loop is executed in a subshell since input to it is redirected from the file $INPUTFILE	
+
+echo user count is $count
+................................................
+................................................
+
+$1 : the 1st argument
+$* : all the arguments together, list all args $1, $2, ...
+$# : how many arguments are there?
+$? : checks the exiting status of the last command
+$@ : similar to $* just variables will be placed in "", eg "$1", "$2" ...
+
+#####Single-quotes are literal quotes.
+#####Double-quotes can be expanded
+
+
+................................................
+LOOP AND CONDITIONS
+
+...........IF
+string1 = string2
+string1 != string2
+-n string	#true if the string is not null
+-z string	#true if the string is null
+[ expression ] = test "expression"
+int1 -eq int2
+int1 -ge int2
+int1 -gt int2
+int1 -le int2
+int1 -lt int2
+int1 -ne int2
+
+-d file 	#file is a directory;  ! -d
+-f file 	#file is anordinary file; ! -f
+-r file		#file is readable by the process; ! -r
+-s file		#file isnonzero length; ! -s
+-w file		#file is writable by the process; ! -w
+-x file		#file is executable; ! -x
+
+-a 	# AND
+[ "$count" -ge 0 -a "$count" -lt 10 ] 	# the same as
+[ \( "$count" -ge 0 \) -a \( "$count" -lt 10 \) ]
+
+-o 	# OR
+
+: 	# Null command, do nothing
+
+&& 	# if
+command1 && command2
+[ -z "$EDITOR" ] && EDITOR=/usr/bin/vim
+
+
+|| 	# if not
+command1 || command2 	# command2 run only if command1 return $? != 0
+
+
+
+#
+if [ $? -eq 0] ; then
+	print we are ok
+else 
+	print something failed
+fi
+#
+user=$1
+if who | grep "^$user" > /dev/null
+then echo "$user" is logged on
+fi
+#
+if test "$name" = julie # the space around the equal sign is required!
+then echo "let's play"  # "$name" is a must; otherwise, if $name is null, test will complain "one
+fi			# parameter is missing"
+
+
+...........CASE
+
+echo input yes or no
+read answer
+case $answer in
+	yes|Yes|y)
+		echo got a positive answer
+		# the following ';;' is mandatory for every set
+		# of comparative xxx) that you do
+		;;
+	no)
+		echo got a 'no'
+		;;
+	q*|Q*)
+		#assume the user want to quit
+		exit
+
+	*)
+		echo this is the default clause. we are not sure why or 
+		echo what someone would be typing, but we could take
+		echo action on it here
+		;;
+esac
+
+
+...........WHILE (run when the condition is true)
+
+keeplooping=1;
+while [[ $keeplooping -eq 1 ]] ; do
+	read quitnow
+	if [[ "$quitnow" = "yes" ]] ; then
+		keeplooping=0
+	fi
+	if [[ "$quitnow" = "q" ]] ; then
+		break;
+	fi
+done
+
+while : 	#build a infinite loop
+do
+	...
+done
+
+while [ "$senddata" -ne TRUE ] ; do
+	...
+done 2> errorsfile	#redirect error to errorsfile
+
+...........UNTIL (run if the condition is false)
+
+until [[ $stopnow -eq 1 ]] ; do
+	echo just run this once
+	stopnow=1;
+	echo we should not be here again.
+done
+
+
+...........FOR
+
+list="one two three"
+for var in $list ; do
+	echo $var
+	#Note: Changing this does NOT affect the loop items
+	list="nolist"
+done
+
+1. it prints out "one" "two" "three"
+2. Do NOT quote "$list" for multiple items.
+
+If you used "$list", it would print out a SINGLE LINE, "one two three" 
+
+IO redirect:
+
+for i in 1 2 3 4	#redirect the loop's output to loopout
+do 
+	echo $i
+done > loopout
+
+for i in 1 2 3 4 
+do 
+	echo $i
+done | wc -l
+................................................
+................................................
+
+Arrays
+
+# This is an OPTIONAL way to quickly null out prior values
+set -A array
+#
+array[1]="one"
+array[2]="two"
+array[3]="three"
+three=3
+
+print ${array[1]}
+print ${array[2]}
+print ${array[3]}
+print ${array[three]}
+
+
+................................................
+................................................
+
+PWD - always the current directory
+RANDOM - a different number every time you access it
+$$ - the current process id (of the script, not the user's shell)
+PPID - the "parent process's ID. (BUT NOT ALWAYS, FOR FUNCTIONS)
+$? - exit status of the last command run by the script
+PS1 - your "prompt". "PS1=`$PWD:>`" is interesting
+$1 to $9 - arguments 1 to 9 passed to your script or function
+ 
+tmp=/tmp/Tmp$$.  # use the current pid to create unique filename
+................................................
+
+To give a default value if and ONLY if a variable is not already set, use this construct: 
+
+APP_DIR=${APP_DIR:-/usr/local/bin}
+
+...........KSH only
+Running an actual command to generate the value
+DATESTRING=${DATESTRING:-$(date)}
+
+To count the number of characters contained in a variable string, use ${#varname}. 
+
+echo num of chars in stringvar is ${#stringvar}
+
+
+
+................................................
+................................................
+
+...........join
+
+file 1: john_s John Smith
+file 2: john_s John Smith 1234 marlebone rd
+
+join file1 file2
+
+--> john_s John Smith 1234 marlebone rd
+
+If the files do not already have a common field, you could either use the paste utility to join the two files, or give each file line numbers before joining them, with 
+
+cat -n file1 >file1.numbered
+
+
+...........comm
+
+
+First, run any two files through "sort". Then you can run 
+'comm file1 file2'
+ to tell you which lines are ONLY in file1, or ONLY in file2, or both. Or any combination
+
+comm -1 file1 file2
+
+...........fmt
+...........pr
+
+...........grep and egrep
+
+...........sed
+
+sed 's/oldstring/newstring/'
+sed 's/oldstring/newstring/g'
+
+If you want to substitute either an oldstring or a newstring that has slashes in it, you can use a different separator character: 
+
+
+sed 's:/old/path:/new/path:'
+
+
+...........awk
+
+How do I print out the first and fifth columns/fields of the password file?
+awk -F: '{print $1,$5}' /etc/passwd 
+
+"-F:" defines the "field separator" to be ":"
+ 
+You must use single-quotes for the mini-program, to avoid $1 being expanded by the shell itself. In this case, you want awk to literally see '$1' 
+
+"$x" means the 'x'th column
+The comma is a quick way to say "put a space here".
+
+
+................................................
+................................................
+
+FUNCTION
+
+printmessage () {
+	echo "Hello, this is the printmessage function"
+}
+printmessage
+
+Remember: Just like its own separate shellscript. Which means if you access "$1" in a function, it is the first argument passed in to the function, not the shellscript. 
+
+........... exit vs return
+
+'exit' will exit the entire script, whether it is in a function or not.
+'return' will just quit the function. Like 'exit', however, it can return the default "sucess" value of 0, or any number from 1-255 that you specify.
+
+...........read and set
+
+read varname ; #from the standard input. exit with 0 unless an end of file is detected.
+set $varname ; # set the argument variables $1, $2 , etc
+
+read text < data 	# the same as
+text=`line < data`
+
+........... [[]] and []
+
+The main difference being that wildcard expansion does not work within [[]]. 
+
+...........Built-in math
+
+four=$((2+2))
+eight=$(($four+4))
+print $(($four * $eight))
+
+
+...........inlin redirection
+
+command << EOF
+
+means, "run 'command', but make its stdin come from this file right here, until you see the string 'EOF'"
+EOF is the traditional string. But you can actually use any unique string you want. Additionally, you can use variable expansion in this section! 
+
+DATE=`date`
+HOST=`uname -n`
+mailx -s 'long warning' root << EOF
+Something went horribly wrong with system $HOST
+at $DATE
+EOF
+
+To send attachment.
+mail -s "title" root@xxx.com < filename
+
+To send Binary attachment
+uuencode xxx.jpep xxx.jpeg |mail xxx@xxx.com
+cat file.txt; unencode xxx.jpeg xxx.jpeg |mail xxx@xx.com
+
+................................................
+
+it is possible to get an interactive view of the process, by using 
+
+tar cvf - dirname | compress > file.tar.Z
+
+stdout has been redirected to the pipe, but stderr is still being displayed to your terminal, so you will get a file-by-file progress report. Or of course, you could redirect it somewhere else, with 
+
+tar cvf - dirname 2>/tmp/tarfile.list | compress > file.tar.Z 
+
+
+........... tput
+
+tput init
+tput clear
+tput cup 3 2
+print -n "Here is a clean screen, with these words near the top"
+endline=`tput cols`
+tput cup $(($endline - 2)) 
+print "and now, back to you"
+sleep 2
+
+tput reset
+
+
+................................................
+................................................
+
+........... Number-based menus
+
+select word in one two three exit; do 
+	echo word is $word
+	echo reply is $REPLY
+	if [[ "$word" = "exit" ]] ; then 
+		break;
+	fi
+done
+
+break : to break the immediate loop.
+break n : to break the immediate n loops.
+
+continue n : the remaining commands in the n loops will be skipped.
+
+
+
+
+
+
+
+
+
+
+
+
+.......................................................
+.......................................................
+
+........... Raw TCP access
+
+#!/bin/ksh -p
+
+MAILHOST=127.0.0.1
+exec 3<>/dev/tcp/$MAILHOST/25 || exit 1
+
+read -r BANNER <&3
+echo BANNER is $BANNER
+print -u3 HELO myhost.com
+read -r REPLY <&3
+echo REPLY is $REPLAY
+
+the output:
+
+BANNER is 220 yourhost.domain.com ESMTP Sendmail 8.11.6+Sun/8.11.6; Tue, 3 Dec 2002 17:30:01 -0800 (PST)
+REPLY is 250 yourhost.domain.com Hello localhost [127.0.0.1], pleased to meet you
+
+"-r" - give the data "raw"
+To dump the rest of the data waiting on the socket,
+cat <&3 > somefile
+
+
+
+................................................
+................................................
+
+........... cron job
+
+1.So set your PATH=/whatever:/usr/bin explicitly in your cron scripts. 
+
+2. cron by default saves anything that gets send to 'stderr', and MAILS IT to the owner of the cron job. 
+So, sometimes, if you just want a minor error logged somewhere, it is sufficient to just do 
+
+print "Hey, this is kinda wierd" >/dev/fd/2
+
+which will send the output of the print to stderr, which will then go to email. Another way of doing it, if your system does not have /dev/fd, could be 
+print "Wow, this is tortured" 1>&2
+
+Contrariwise, if you want to throw away ALL output, use 
+
+command >/dev/null 2>&1
+
+
+If you do not regularly read email for the user in question, you can either set up an alias for that user, to forward all its email to you, or do 
+
+export MAILTO=my@address.here
+
+The MAILTO trick does not work on all cron demons, however. 
+
+
+................................................
+................................................
+
+........... Matching
+
+[0-9]
+[!a-z]
+[a-np-z]*
+*[!o]
+[a-z]*[!0-9]
+
+................................................
+................................................
+
+........... Standard error
+
+ls n* 2> error_file
+
+NO SPACE is permitted between the 2 and the >.
+
+
+................................................
+................................................
+
+...........Regular Expression
+
+"." : any single character
+/ ... / : any 3 chars word surrund by spaces
+^George : George at the beginning of a line
+$s/p.o/XXX/g : replacing
+$s/^/>>/ : insert >> at the beginning of each line 
+word$ : word at the end of a line
+\.$ : any line end with a period
+^\. : any line start with a period
+^ $ : any empty line with a single space
+$s/..$// : delete the last two chars from each line.
+[^A-Za-z]: like [!A-Za-z] in shell
+* : match zero or mulitple occurences of the previous chars
+XXX* : match at least 2 X's --> XX
+$s/  */ /g : replace multiple spaces with one
+
+[A-Za-z][A-Za-z]* : match all words
+[-0-9] : match - and a number
+[]a-z] : match ] and a char
+
+X\{1,10\}: match 1 to 10 consecutive X's
+[A-Za-z]\{4,7\} : match a word 4-7 char long
+[A-Za-z]\{7\} : match a word with 7 char long
+.\{10\} : match 10 chars, anything
+$s/^.\{10\}// : delete the first 10 chars
+$s/.\{5\}$// : delete 5 chars from the end
++\{5,\} : match 5 and more +
+
+^\(.\) : same the first char of a line into regester 1
+^\(.\).*\1$ : match the line that has the same char as the first and the last.
+^\(...\)\(...\) : first 3 chars save in regester1, next 3 in regester 2
+$s/\(.*\)	\(.*\)/\2 \1/ : switch two fields saparated by tab.
+%s/\([0-9]\)) /\1)\. /g : to change (any NO.) 1) to 1). First caputure the number to \1 then ...
+.......................................................
+.......................................................
+
+exec --> replace the current shell, never return.
+
+.......................................................
+.......................................................
+
+......................Editting the Crontab
+echo '10 * * * 1,2,3,4,5 root ~zwa/s-mail' >> /etc/crontab
+minute hour dom month dow user script
+
+
+.......................................................
+.......................................................
+
+...........cut
+
+cut -cchars file
+cut -c5
+cut -c1,13,50
+cut -c20-50
+who | cut -c20- |sort  # to the end of the line
+cut -c1-8,18-
+
+cut -ddchar -ffields file
+cut -d: -f1,6 /etc/passwd # -d : the delimitor, f : the field
+
+...........paste
+paste names numbers
+paster -d'+' names addresses numbers
+passte -s name # paste itself, all into one line
+ls | paste  -d' ' -s - # all listed file name into one line and separated by space.
+
+...........sed
+sed 's/Unix/UNIX/' filename
+sed 's/Unix/UNIX/g' filename
+who |cut -c1-8 |sed 's/  *//g' #remove the spaces
+who |sed 's/ .*$//g' #remove from the first space to the end of the line
+
+sed -n '20,25p' filename  # print from line 20 to line 50 of a file
+sed -n '/a_string/p' filename  # print only the lines contain the "a_string" 
+sed  '1,2d' filename # delete the first 2 lines fo the file
+sed '/a_string/d' filename # delete the lines that contain the "a_string"
+sed '/[Tt]est/d' filename # delete all lines with test or Test in .
+sed '1,10s/unix/UNIX/g' file # change unix to UNIX in the first 10 lines
+sed '/jan/s/unix/UNIX/' # change the fist unix to UNIX in all lines containing "jan"
+sed 's/...//' file # delete first 3 chars from all lines
+sed 's/...$//' file # delete the last 3 chars from all lines
+sed -n 'l' file # print all lines of a file, showing nonprinting chars.
+sed 's/$/=/g' tmmmm| tr '=' "\n" #add an empty line after each line.
+sed G file #the same as above; double space of a file.
+sed -n '$=' filename # count lines, the same as; wc -l tmmmm |sed 's/^  *//g'|cut -d' '  -f1 
+sed -e '10a\' -e 'on line 11' # to append text on line 11.
+sed -e '10i\' -e 'on line 10' # to insert text on line 10
+sed -e '/ScDir/a\' -e "Scdir=$ScDir" file # append after ScDir
+...........tr
+cut -d: -f1,6 /etc/passwd | tr : ' ' # can only translate from one to one, can't be one->many
+tr : '\11' # from : --> tab (\11)
+
+	Bell		7
+	Backspace	10	\b
+	Tab		11	\t
+	Newline		12	\n
+	Linefeed	12
+	Formfeed	14
+	Carriage return	15	\r
+	Escape		33
+\c : The line without a terminateing newline
+echo "overwirte (yes/no)?  \c"
+
+tr '[a-z]' '[A-Z]'	
+
+tr -s '	' ' ' lotofspaces  # squeeze out multiple occurrences of chars
+tr -d ' ' file # delete all space in the file
+the same as :
+sed 's/ //g' file
+tr '()' '{}' file
+tr '[A-Z]' '[N-Z][A-M]' file 
+tr -d '[0-9]' file # delte all digits
+tr -d '\r'	# remove the ^M from a DOS file
+tr  '\r' '\n'	#For file from Mac
+	
+	
+...........grep
+$grep '*' stars
+************* the stars
+
+grep '[Tt]he' filename
+grep -i 'the' filename	#ignore the case
+grep '\.pic$' filelist  #file names ended with .pic
+grep -v 'UNIX' filename # to find the lines that does NOT contain the word UNIX
+grep -l 'a_name' *.c # list only the file names that contain the word a_name
+grep -l 'a_name' *.c| wc -l # to find out how many files contain the a_name
+grep -n 'a_name' file.c # list the line number also!
+grep  '.'  file # delete all blank lines 
+grep -a # for binary file
+
+...........sort
+sort names #sort the input into many lines 
+sort -u names # to eliminate the duplicate lines
+sort -r names # list in reverse order
+sort names -o outputfile #the same as sort names >outputfil
+sort names -o names #replace itself!
+sort -n data # sort it according to the fist column numbers
+sort +5n data #sort it according to the sixth column, skip first 5 columns
+sort +2n -t: /etc/passwd # use : as the delimiter
+
+...........uniq
+sort names|uniq # remove only the consecutive duplicate lines
+sort names |uniq -d # list only the duplicate lines, only once
+sort /etc/passwd |cut -f1 -d:| uniq -d # list the duplicated user entries
+sort names |uniq -c # coute the occurences of each lines.
+1 mike
+1 joe
+1 tom
+2 cathy
+1 nick
+
+
+
+............................................
+............................................
+To trap singal
+
+trap 'rm -f "$Tmp" 2>/dev/null' 0
+trap "exit 2" 1 2 3 5 
+
+............................................
+............................................
+PS1="$PWD $"
+PATH=${PATH}:./bin
+$ type l
+l is an alias for 'ls -l'
+............................................
+............................................
+To set the title bar of the xterm
+Ctrl-V Esc; Ctrl-V Ctrl-G
+echo "^[]0; this is a title^G"
+
+............................................
+............................................
+use root account in between a script
+command ...
+...
+su root <<EOF!
+command ...
+...
+<<EOF!
+
+............................................
+............................................
+...........To add/remove an entry from a file
+
+echo "$1	$2" >> phonebook
+sort -o phonebook phonebook
+
+...........
+grep -v "$1" phonebook > /tmp/phonebook
+mv /tmp/phonebook phonebook
+........... or
+sed "$1/d" phonebook > /tmp/phonebook
+
+............................................
+............................................
+...........shift 	#to access the 10th and more args
+arg1=$1
+shift
+arg10=$9
+
+
+............................................
+............................................
+...........getopts
+OPTARG : store the actual argument inside 
+OPTIND : initially set to 1, and is updated each time "getopts" returns to reflect the number of the next command line argument to be processed.
+
+mailopt=FALSE
+interval=60
+
+#process command options
+while getopts mt: options
+do 	
+	case "$option"
+	in 
+		 m) mailopt=TRUE;;
+		 t) interval=$OPTARG;;
+		\?) echo "Usage: mon [-m] [-t n] user"
+		    echo "   -m means to be informed by email"
+		    echo "   -t means check every n secs."
+		exit 1;;
+	esac
+done
+
+#make sure a user name was specified
+if  [ "$OPTIND" -gt "$#" ] ; then
+	echo "Missing user name!"
+	exit 2
+fi
+hiftcount=`expr #OPTIND - 1`
+shift $shiftcount
+user=$1
+	
+.................................
+.................................
+........... the . command
+
+. file 	#the commands from file are executed by the current shell just as if they were typed at that point. A subshell is not spawned to execute the program.
+
+
+.................................
+.................................
+...........eval
+eval command-line 	#the shell scans the command line twice before running it.
+pipe="|"
+eval ls $pipe wc -l	#ls |wc -l
+
+.................................
+.................................
+........... date
+date '+%F-%H-%M' # 2004-03-24-15-56
+date '+%Y%m%d'   # 20040324
+
+.................................
+.................................
+...........$U Variable: Batch mode detection
+[ ! "${PROCESS_MODE:-NONE}" = "BATCH" ]

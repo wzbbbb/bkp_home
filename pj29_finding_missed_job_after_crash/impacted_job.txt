@@ -1,0 +1,59 @@
+############ The following jobs are still in LAUNCH WAIT
+
+
+ Command : uxlst fla exp status=L full before=09/20/2012,2000 upr=* ses=* mu=* since=(00/00/0000,0000)
+
+ SESSION    UPROC      MU         STATE                  START      AT   END        AT    NODE       CLUSTER      QUEUE BATCH     NSEQ    SESSNO  PROCNO  INFO                                               SEV  
+ -------------------------------- ---------------------- --------------------------------------------------------------------------------------------------------
+ SLEEP3000  EXIT0      CASDLSUP06 LAUNCH WAIT            09/22/2011 1011 09/22/2011 1021  casdlsup06              SYS_BATCH      1397917 0000062          .exit 0                                            0001       
+
+
+############ The following jobs are in sessions, whose session hearders are still in LAUNCH WAIT
+
+
+ Command : uxshw ses ses=SLEEP3000 lnk vses=*
+
+ TYPE  | ses 
+
+ ITEMS | ses          : SLEEP3000  
+       | vses         : 000 
+       | label        :                                         
+       | header       : EXIT0     
+       | links        :
+       |
+       || NumF | NumS | Path |   Father   |    Son     |   HDP/MU   || 
+       || 0001 | 0002 |  OK  | EXIT0      | SLEEP3000  |            || 
+       |
+
+
+
+############ The following jobs were in EXECUTING status,
+############ they could show in ABORTED status after the launcher is started
+
+
+ Command : uxlst ctl exp status=E full upr=* ses=* mu=* since=(00/00/0000,0000) before=(12/31/9999,2359) execinfo=* execsev=*
+
+SESSION     UPROC      MU         STATE                 START      AT     END        AT        MODIFICATIONS          NODE       QUEUE                           JOB    PRI SESSNO  PROCNO  PDATE      USERNAME     VSES VUPR STP NSEQ    INFO                                               SEV
+--------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------- ------------------------------------------
+            SLEEP3000  CASDLSUP06 EXECUTING             09/22/2009 110908 09/22/2009 110908                           casdlsup06 SYS_BATCH                       0085   100         1394895 09/22/2009 univa        000  000  00  1397920 .                                                  0001
+ SLEEP3000  SLEEP3000  CASDLSUP06 EXECUTING             09/22/2009 110851 09/22/2009 110851                           casdlsup06 SYS_BATCH                       0084   100 0000063 1394894 09/22/2009 univa        000  000  00  1397919                                                        
+
+
+############ Some uprocs in the following sessions were in EXECUTING status, as showing above.
+############ The rest of the sessions may not run, if those uprocs ABORTED.
+
+
+ Command : uxshw ses ses=SLEEP3000 lnk vses=*
+
+ TYPE  | ses 
+
+ ITEMS | ses          : SLEEP3000  
+       | vses         : 000 
+       | label        :                                         
+       | header       : EXIT0     
+       | links        :
+       |
+       || NumF | NumS | Path |   Father   |    Son     |   HDP/MU   || 
+       || 0001 | 0002 |  OK  | EXIT0      | SLEEP3000  |            || 
+       |
+

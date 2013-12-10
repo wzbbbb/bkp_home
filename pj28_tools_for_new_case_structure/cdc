@@ -1,0 +1,13 @@
+#!/bin/bash  
+case_no=$1
+l1=`echo $case_no |cut -c1-2`
+l2=`echo $case_no |cut -c1-3`
+cd /cases/${l1}xxx/${l2}xx/${case_no}
+
+rc=$?
+if [ $rc -eq 0 ] ; then
+	echo "$case_no" >> ~/case_work_history.txt
+else
+	echo "The case number does not exist locally yet."
+	echo "Maybe try again later."
+fi

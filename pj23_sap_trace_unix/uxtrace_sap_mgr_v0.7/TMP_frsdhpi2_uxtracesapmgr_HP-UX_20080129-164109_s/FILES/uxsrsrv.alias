@@ -1,0 +1,19 @@
+# uxsrsrv.alias file
+# ORSYP S.A. 2005
+#
+# ---------------------------------------------------------------------
+# Use this file to associate the internal service name of
+# the SAP Job Control Server (which is SOCNAME_frsdhpi2MAJ_SAP_X)
+# to another IP service definition, which is required to
+# get the port number of the service in the /etc/services file.
+#
+# IMPORTANT: By default, if there is no port number associated with
+# the SOCNAME_SAPNOEUD_SAP_X service, the program will search for
+# a port associated with SOCNAME_SAP_X
+#
+# EXAMPLE:
+# With old installations, use this alias for the IP definition of the
+# service:
+# SOCNAME_SAPNOEUD_SAP_X     _SAP_ 
+# ---------------------------------------------------------------------
+_SAP_                     _SAP42_

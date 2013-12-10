@@ -1,0 +1,33 @@
+47979
+Key words:
+
+library link, patch level, multiple Dollar Universe Company,
+
+Subject:
+
+Only one patch level can exist for each release of Dollar Universe on a Unix host.
+
+Prerequistites:
+
+On Unix host.
+
+Application validation tests:
+
+Explanation:
+
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+

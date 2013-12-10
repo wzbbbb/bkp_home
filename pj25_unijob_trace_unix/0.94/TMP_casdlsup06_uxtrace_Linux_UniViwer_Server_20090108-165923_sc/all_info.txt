@@ -1,0 +1,2278 @@
+#CMD# uname -as
+Linux casdlsup06.orsypgroup.com 2.6.17-1.2174_FC5smp #1 SMP Tue Aug 8 16:00:39 EDT 2006 i686
+
+#CMD# head -100 /etc/*release
+==> /etc/fedora-release <==
+Fedora Core release 5 (Bordeaux)
+
+==> /etc/redhat-release <==
+Fedora Core release 5 (Bordeaux)
+
+#CMD# java -version
+java version "1.6.0_02"
+Java(TM) SE Runtime Environment (build 1.6.0_02-b05)
+Java HotSpot(TM) Client VM (build 1.6.0_02-b05, mixed mode, sharing)
+
+#CMD# hostname
+casdlsup06.orsypgroup.com
+
+#CMD# ./unicheckms
+UniViewer Management Server check procedure
+UniViewer Management Server environment loaded.
+
+Loading configuration /apps/unijob110/univiewer_server/casdlsup06/data/values.xml...
+Status of engine ALM is: RUNNING
+Status of engine AUT is: RUNNING
+
+#CMD# uxversion
+#CMD# cat /apps/unijob110/univiewer_server/casdlsup06/data/install/history_installation.txt
+UniViewer Management Server UniViewer Server,1.1.0 : installation on 20090105_113031
+
+#CMD# df -k
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+/dev/hda1               256666     17397    226017   8% /boot
+tmpfs                   484844         0    484844   0% /dev/shm
+/dev/hda5            276836664  18720376 244053792   8% /dsk1
+support2:/dsk1/cases  65472416  60063264   2083296  97% /cases
+support2:/dsk1/windata
+                      65472416  60063264   2083296  97% /windata
+support2:/dsk1/lindata
+                      65472416  60063264   2083296  97% /lindata
+caribou:/dsk1/dlc01  163765376 122605824  32840704  79% /windata/20_Edition
+caribou:/dsk1/da_documents
+                     163765376 122605824  32840704  79% /da_documents
+casplda01:/dsk2/users
+                     288435136  54415456 219368000  20% /data/home
+caribou:/dsk1/da_documents/data
+                     163765376 122605824  32840704  79% /data/data
+
+#REM# More information can be found in the DLS subdirectory
+
+#CMD# ipcs -ma
+
+------ Shared Memory Segments --------
+key        shmid      owner      perms      bytes      nattch     status      
+0x00000001 32768      root      600        655360     2                       
+0x00000000 131073     gdm       600        393216     2          dest         
+0x6105c03a 327682     univa     777        171688     11                      
+0x6105c016 360451     univa     777        171688     8                       
+0x6105c226 393220     root      777        359972     1                       
+0x6105401a 425989     univa     777        171688     4                       
+0x6105c0a9 458758     univa     777        171688     5                       
+
+------ Semaphore Arrays --------
+key        semid      owner      perms      nsems     
+
+------ Message Queues --------
+key        msqid      owner      perms      used-bytes   messages    
+
+#REM# LISTING OF THE TCP/IP FILES
+#CMD# ls -ltr /etc/services*
+-rw-r--r-- 1 root root 365450 Aug 31  2006 /etc/services.sav.20060831-180324
+-rw-r--r-- 1 root root 366138 Sep 11  2006 /etc/services.sav.20060911-115455
+-rw-r--r-- 1 root root 367115 Sep 11  2006 /etc/services.sav.20060911-154622
+-rw-r--r-- 1 root root 368092 Sep 11  2006 /etc/services.sav.20060911-171642
+-rw-r--r-- 1 root root 369069 Sep 12  2006 /etc/services.sav.20060912-174113
+-rw-r--r-- 1 root root 376160 Nov  2  2006 /etc/services.sav.20061102-143236
+-rw-r--r-- 1 root root 377354 Nov  2  2006 /etc/services.sav.20061102-173929
+-rw-r--r-- 1 root root 378490 Nov  3  2006 /etc/services.sav.20061103-152332
+-rw-r--r-- 1 root root 383008 Nov  3  2006 /etc/services.sav.20061103-172453
+-rw-r--r-- 1 root root 383011 Nov  3  2006 /etc/services.sav.20061103-180943
+-rw-r--r-- 1 root root 383011 Nov  7  2006 /etc/services.sav.20061107-153124
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-172327
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-173723
+-rw-r--r-- 1 root root 381072 Oct  4  2007 /etc/services_before_UNIVERSE_bkup
+-rw-r--r-- 1 root root 385757 Oct  4  2007 /etc/services_before_UNIVERSE
+-rw-r--r-- 1 root root 387778 Nov  9  2007 /etc/services_UPG_523_BKP
+-rw-r--r-- 1 root root 389010 Feb 27  2008 /etc/services_UPG_532_BKP
+-rw-r--r-- 1 root root 389412 Mar 31  2008 /etc/services_UPG_533_BKP
+-rw-rw-rw- 1 root root   1077 Oct 17 14:41 /etc/services_maj
+-rw-r--r-- 1 root root 392378 Oct 17 14:41 /etc/services_SAVE
+-rw-r--r-- 1 root root    327 Oct 20 17:49 /etc/services_maj_dqm
+-rw-r--r-- 1 root root 393782 Oct 20 17:49 /etc/services_SAVE_dqm
+-rw-r--r-- 1 root root 394007 Jan  8 09:59 /etc/services
+#CMD# ls -lL /etc/services*
+-rw-r--r-- 1 root root 394007 Jan  8 09:59 /etc/services
+-rw-r--r-- 1 root root 385757 Oct  4  2007 /etc/services_before_UNIVERSE
+-rw-r--r-- 1 root root 381072 Oct  4  2007 /etc/services_before_UNIVERSE_bkup
+-rw-rw-rw- 1 root root   1077 Oct 17 14:41 /etc/services_maj
+-rw-r--r-- 1 root root    327 Oct 20 17:49 /etc/services_maj_dqm
+-rw-r--r-- 1 root root 365450 Aug 31  2006 /etc/services.sav.20060831-180324
+-rw-r--r-- 1 root root 366138 Sep 11  2006 /etc/services.sav.20060911-115455
+-rw-r--r-- 1 root root 367115 Sep 11  2006 /etc/services.sav.20060911-154622
+-rw-r--r-- 1 root root 368092 Sep 11  2006 /etc/services.sav.20060911-171642
+-rw-r--r-- 1 root root 369069 Sep 12  2006 /etc/services.sav.20060912-174113
+-rw-r--r-- 1 root root 376160 Nov  2  2006 /etc/services.sav.20061102-143236
+-rw-r--r-- 1 root root 377354 Nov  2  2006 /etc/services.sav.20061102-173929
+-rw-r--r-- 1 root root 378490 Nov  3  2006 /etc/services.sav.20061103-152332
+-rw-r--r-- 1 root root 383008 Nov  3  2006 /etc/services.sav.20061103-172453
+-rw-r--r-- 1 root root 383011 Nov  3  2006 /etc/services.sav.20061103-180943
+-rw-r--r-- 1 root root 383011 Nov  7  2006 /etc/services.sav.20061107-153124
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-172327
+-rw-r--r-- 1 root root 379633 Nov  8  2006 /etc/services.sav.20061108-173723
+-rw-r--r-- 1 root root 392378 Oct 17 14:41 /etc/services_SAVE
+-rw-r--r-- 1 root root 393782 Oct 20 17:49 /etc/services_SAVE_dqm
+-rw-r--r-- 1 root root 387778 Nov  9  2007 /etc/services_UPG_523_BKP
+-rw-r--r-- 1 root root 389010 Feb 27  2008 /etc/services_UPG_532_BKP
+-rw-r--r-- 1 root root 389412 Mar 31  2008 /etc/services_UPG_533_BKP
+#CMD# ls -ltr /etc/hosts*
+-rw-r--r-- 1 root root 347 Jan 12  2000 /etc/hosts.deny
+-rw-r--r-- 1 root root 161 Jan 12  2000 /etc/hosts.allow
+-rw-r--r-- 2 root root 616 Aug 20 13:59 /etc/hosts
+#CMD# ls -lL /etc/hosts*
+-rw-r--r-- 2 root root 616 Aug 20 13:59 /etc/hosts
+-rw-r--r-- 1 root root 161 Jan 12  2000 /etc/hosts.allow
+-rw-r--r-- 1 root root 347 Jan 12  2000 /etc/hosts.deny
+#CMD# ls -ltr /etc/fedora-release*
+-rw-r--r-- 1 root root 33 Mar 14  2006 /etc/fedora-release
+#CMD# ls -lL /etc/fedora-release*
+-rw-r--r-- 1 root root 33 Mar 14  2006 /etc/fedora-release
+#CMD# ls -ltr /etc/redhat-release*
+lrwxrwxrwx 1 root root 14 Aug  9  2006 /etc/redhat-release -> fedora-release
+#CMD# ls -lL /etc/redhat-release*
+-rw-r--r-- 1 root root 33 Mar 14  2006 /etc/redhat-release
+#CMD# ls -ltr /etc/resolv.conf*
+-rw-r--r-- 2 root root 89 Aug 14  2006 /etc/resolv.conf
+#CMD# ls -lL /etc/resolv.conf*
+-rw-r--r-- 2 root root 89 Aug 14  2006 /etc/resolv.conf
+#CMD# ls -ltr /proc/version*
+-r--r--r-- 1 root root 0 Jan  8 16:59 /proc/version
+#CMD# ls -lL /proc/version*
+-r--r--r-- 1 root root 0 Jan  8 16:59 /proc/version
+#REM# LISTING OF THE UNIVERSE LINKS
+#CMD# ls -l / | grep -i UNI
+#CMD# ls -l /etc | grep -i UNI
+-rw-r--r--  1 root  root   25290 Apr 17  2007 bkup_UNIVERSE_SECURITY_SUP513
+-rw-r--r--  1 root  root   25290 Apr 16  2007 bkup_UNIVERSE_SECURITY_TST520
+-rw-r--r--  1 root  root  385757 Oct  4  2007 services_before_UNIVERSE
+-rw-r--r--  1 root  root  381072 Oct  4  2007 services_before_UNIVERSE_bkup
+lrwxrwxrwx  1 root  root      33 Oct  4  2007 UNIVERSE_ACNPRD_casdlsup06 -> /apps/du/500/ACNPRD/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 May  2  2007 UNIVERSE__casdlsup06 -> /apps/du/520/TST520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_ -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct  4  2007 UNIVERSE_DQM_ACNPRD -> /apps/du/500/ACNPRD/DQM
+lrwxrwxrwx  1 root  root      23 Aug 24  2007 UNIVERSE_DQM_FLS500 -> /apps/du/500/FLS500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 14  2006 UNIVERSE_DQM_FLS510 -> /apps/du/510/FLS510/DQM
+lrwxrwxrwx  1 root  root      23 Nov 28  2006 UNIVERSE_DQM_FLS520 -> /apps/du/520/FLS520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_FLS530 -> /apps/du/530/FLS530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 17 14:43 UNIVERSE_DQM_FLS540 -> /apps/du/540/FLS540/DQM
+lrwxrwxrwx  1 root  root      23 Nov  3  2006 UNIVERSE_DQM_INT520 -> /apps/du/520/INT520/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_MDT500 -> /apps/du/500/MDT500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 29  2006 UNIVERSE_DQM_MDT511 -> /apps/du/511/MDT511/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_MNT500 -> /apps/du/MNT500/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_PRE500 -> /apps/du/500/PRE500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 31  2006 UNIVERSE_DQM_PRE511 -> /apps/du/511/PRE511/DQM
+lrwxrwxrwx  1 root  root      23 Oct 16 16:57 UNIVERSE_DQM_PRE530 -> /apps/du/530/PRE530/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_QCL500 -> /apps/du/QCL500/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_SUP500 -> /apps/du/SUP500/DQM
+lrwxrwxrwx  1 root  root      23 Sep  7  2007 UNIVERSE_DQM_SUP511 -> /apps/du/511/SUP511/DQM
+lrwxrwxrwx  1 root  root      23 Apr 17  2007 UNIVERSE_DQM_SUP513 -> /apps/du/510/SUP513/DQM
+lrwxrwxrwx  1 root  root      23 Sep 12  2006 UNIVERSE_DQM_TST500 -> /apps/du/500/TST500/DQM
+lrwxrwxrwx  1 root  root      23 Oct 21 11:47 UNIVERSE_DQM_TST511_ori -> /apps/du/511/TST511/DQM
+lrwxrwxrwx  1 root  root      23 May 14  2007 UNIVERSE_DQM_TST520 -> /apps/du/520/TST520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_TST530 -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 20 17:49 UNIVERSE_DQM_TST540 -> /apps/du/540/TST540/DQM
+lrwxrwxrwx  1 root  root      23 Jan 18  2008 UNIVERSE_DQM_UNI532 -> /apps/du/532/UNI532/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_ZMVS50 -> /apps/du/ZMVS50/DQM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_FDXPRD_DA_US_U_02 -> /apps/du/FDXPRD/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 24  2007 UNIVERSE_FLS500_casdlsup06 -> /apps/du/500/FLS500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 23  2007 UNIVERSE_FLS500_DA_US_U_02 -> /apps/du/500/FLS500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_FLS500_DA_US_U_02_bck -> /apps/du/FLS500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 14  2006 UNIVERSE_FLS510_casdlsup06 -> /apps/du/510/FLS510/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Nov 28  2006 UNIVERSE_FLS520_casdlsup06 -> /apps/du/520/FLS520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Nov  3  2006 UNIVERSE_INT520_casdlsup06 -> /apps/du/520/INT520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep 11  2006 UNIVERSE_MDT500_casdlsup06 -> /apps/du/500/MDT500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Apr 27  2007 UNIVERSE_MDT511_casdlsup06 -> /apps/du/511/MDT511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_MNT500_DA_US_U_02 -> /apps/du/MNT500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_MNT500_support2 -> /apps/du/MNT500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep 11  2006 UNIVERSE_PRE500_casdlsup06 -> /apps/du/500/PRE500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Aug 31  2006 UNIVERSE_PRE511_casdlsup06 -> /apps/du/511/PRE511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_QCL500_DA_US_U_02 -> /apps/du/QCL500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_QCL500_support2 -> /apps/du/QCL500/mgr/UXSHM_LNM
+-rw-r--r--  1 root  root   24273 Oct  4  2007 UNIVERSE_SECURITY_ACNPRD
+-rw-r--r--  1 root  root   24177 Oct  4  2007 UNIVERSE_SECURITY_ACNPRD_24384B
+-rw-r--r--  1 root  root   24171 Oct  4  2007 UNIVERSE_SECURITY_ACNPRD_RE0025
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_FLS500 -> /apps/du/FLS500/mgr/security.txt
+-rw-r--r--  1 univa users  27498 Mar  3  2006 UNIVERSE_SECURITY_FLS500_24384B
+-rw-r--r--  1 univa users  27498 Mar  3  2006 UNIVERSE_SECURITY_FLS500_RE0025
+-rw-r--r--  1 root  root   25290 Nov 28  2006 UNIVERSE_SECURITY_FLS520
+-rw-r--r--  1 root  root   25287 Oct 21 10:09 UNIVERSE_SECURITY_FLS530
+-rw-r--r--  1 root  root   25290 Aug  8  2007 UNIVERSE_SECURITY_FLS530_UPG_532_BKP
+-rw-r--r--  1 root  root   25290 Aug  8  2007 UNIVERSE_SECURITY_FLS530_UPG_533_BKP
+-rw-r--r--  1 root  root   25290 Oct 17 14:41 UNIVERSE_SECURITY_FLS540
+-rw-r--r--  1 root  root   25290 Nov  3  2006 UNIVERSE_SECURITY_INT520
+-rw-r--r--  1 root  root   24177 Sep 11  2006 UNIVERSE_SECURITY_MDT500
+-rw-r--r--  1 root  root   24171 Sep 11  2006 UNIVERSE_SECURITY_MDT500_RE0025
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_A -> /apps/du/511/MDT511/mgr/security_A.txt
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_I -> /apps/du/511/MDT511/mgr/security_I.txt
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_S -> /apps/du/511/MDT511/mgr/security_S.txt
+lrwxrwxrwx  1 root  root      38 Nov  9  2006 UNIVERSE_SECURITY_MDT511_casdlsup06_X -> /apps/du/511/MDT511/mgr/security_X.txt
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_MNT500 -> /apps/du/MNT500/mgr/security.txt
+-rw-rw-r--  1 univa univ   47751 Mar 31  2006 UNIVERSE_SECURITY_MNT500_24430A
+-rw-r--r--  1 root  root   24273 Sep 11  2006 UNIVERSE_SECURITY_PRE500
+-rw-r--r--  1 root  root   24177 Sep 11  2006 UNIVERSE_SECURITY_PRE500_24384B
+-rw-r--r--  1 root  root   24171 Sep 11  2006 UNIVERSE_SECURITY_PRE500_RE0025
+lrwxrwxrwx  1 root  root      36 Mar  7  2007 UNIVERSE_SECURITY_PRE511 -> /apps/du/511/PRE511/mgr/security.txt
+-rw-r--r--  1 root  root   25276 Dec  5 14:54 UNIVERSE_SECURITY_PRE530
+-rw-r--r--  1 root  root   25290 Aug 14  2007 UNIVERSE_SECURITY_PRE530_UPG_532_BKP
+-rw-r--r--  1 root  root   25290 Aug 14  2007 UNIVERSE_SECURITY_PRE530_UPG_533_BKP
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_QCL500 -> /apps/du/QCL500/mgr/security.txt
+-rw-rwxr--  1 univa univ   27402 Aug  9  2005 UNIVERSE_SECURITY_QCL500_24384B
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_SUP500 -> /apps/du/SUP500/mgr/security.txt
+-rw-r--r--  1 root  root   25290 Sep  7  2007 UNIVERSE_SECURITY_SUP511
+-rw-r--r--  1 root  root   25290 Apr 17  2007 UNIVERSE_SECURITY_SUP513
+-rw-r--r--  1 root  root   24273 Sep 12  2006 UNIVERSE_SECURITY_TST500
+-rw-r--r--  1 root  root   24177 Sep 12  2006 UNIVERSE_SECURITY_TST500_24384B
+-rw-r--r--  1 root  root   24171 Sep 12  2006 UNIVERSE_SECURITY_TST500_RE0025
+-rw-r--r--  1 root  root   25290 Dec  2 17:14 UNIVERSE_SECURITY_TST511
+-rw-r--r--  1 root  root   25290 Nov  2  2006 UNIVERSE_SECURITY_TST520
+-rw-r--r--  1 root  root   25290 Nov 25 12:13 UNIVERSE_SECURITY_TST530
+-rw-r--r--  1 root  root   25985 Feb 29  2008 UNIVERSE_SECURITY_TST530_old
+-rw-r--r--  1 root  root   25992 Dec  4  2007 UNIVERSE_SECURITY_TST530_UPG_532_BKP
+-rw-r--r--  1 root  root   25985 Feb 29  2008 UNIVERSE_SECURITY_TST530_UPG_533_BKP
+-rw-r--r--  1 root  root   25290 Oct 10 15:38 UNIVERSE_SECURITY_TST540
+-rw-r--r--  1 root  root   25290 Jan 18  2008 UNIVERSE_SECURITY_UNI532
+lrwxrwxrwx  1 root  root      32 Oct  9  2006 UNIVERSE_SECURITY_ZMVS50 -> /apps/du/ZMVS50/mgr/security.txt
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_SUP500_DA_US_U_02 -> /apps/du/SUP500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep  7  2007 UNIVERSE_SUP511_casdlsup06 -> /apps/du/511/SUP511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Apr 17  2007 UNIVERSE_SUP513_casdlsup06 -> /apps/du/510/SUP513/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_A -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_A
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_I -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_I
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_S -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_S
+lrwxrwxrwx  1 root  root      61 Aug  1  2007 UNIVERSE_SUP513_casdlsup06_X -> /apps/du/510/SUP513/mgr/UNIVERSE_SECURITY_SUP513_casdlsup06_X
+lrwxrwxrwx  1 root  root      33 Sep 12  2006 UNIVERSE_TST500_casdlsup06 -> /apps/du/500/TST500/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Sep 11  2006 UNIVERSE_TST511_casdlsup06 -> /apps/du/511/TST511/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 May  2  2007 UNIVERSE_TST520_casdlsup06 -> /apps/du/520/TST520/mgr/UXSHM_LNM
+lrwxrwxrwx  1 root  root      33 Oct  9  2006 UNIVERSE_USERALIAS_MNT500_old -> /apps/du/MNT500/mgr/useralias.txt
+-rw-r--r--  1 root  root      11 May 16  2008 UNIVERSE_USERALIAS_TST500
+lrwxrwxrwx  1 root  root      29 Oct  9  2006 UNIVERSE_ZMVS50_DA_US_U_02 -> /apps/du/ZMVS50/mgr/UXSHM_LNM
+#REM# LISTING OF THE RFC SERVER DIRECTORY
+#CMD# ls -l /etc | grep UNIVERSE_SERVER_RFC
+#REM# LISTING OF THE SAP AGENT DIRECTORY
+#CMD# ls -l /etc | grep UNIVERSE_AGENT_SAP
+#REM# LISTING OF THE ALL DQM DIRECTORIES
+#CMD# ls -l /etc | grep UNIVERSE_DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_ -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct  4  2007 UNIVERSE_DQM_ACNPRD -> /apps/du/500/ACNPRD/DQM
+lrwxrwxrwx  1 root  root      23 Aug 24  2007 UNIVERSE_DQM_FLS500 -> /apps/du/500/FLS500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 14  2006 UNIVERSE_DQM_FLS510 -> /apps/du/510/FLS510/DQM
+lrwxrwxrwx  1 root  root      23 Nov 28  2006 UNIVERSE_DQM_FLS520 -> /apps/du/520/FLS520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_FLS530 -> /apps/du/530/FLS530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 17 14:43 UNIVERSE_DQM_FLS540 -> /apps/du/540/FLS540/DQM
+lrwxrwxrwx  1 root  root      23 Nov  3  2006 UNIVERSE_DQM_INT520 -> /apps/du/520/INT520/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_MDT500 -> /apps/du/500/MDT500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 29  2006 UNIVERSE_DQM_MDT511 -> /apps/du/511/MDT511/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_MNT500 -> /apps/du/MNT500/DQM
+lrwxrwxrwx  1 root  root      23 Sep 11  2006 UNIVERSE_DQM_PRE500 -> /apps/du/500/PRE500/DQM
+lrwxrwxrwx  1 root  root      23 Aug 31  2006 UNIVERSE_DQM_PRE511 -> /apps/du/511/PRE511/DQM
+lrwxrwxrwx  1 root  root      23 Oct 16 16:57 UNIVERSE_DQM_PRE530 -> /apps/du/530/PRE530/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_QCL500 -> /apps/du/QCL500/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_SUP500 -> /apps/du/SUP500/DQM
+lrwxrwxrwx  1 root  root      23 Sep  7  2007 UNIVERSE_DQM_SUP511 -> /apps/du/511/SUP511/DQM
+lrwxrwxrwx  1 root  root      23 Apr 17  2007 UNIVERSE_DQM_SUP513 -> /apps/du/510/SUP513/DQM
+lrwxrwxrwx  1 root  root      23 Sep 12  2006 UNIVERSE_DQM_TST500 -> /apps/du/500/TST500/DQM
+lrwxrwxrwx  1 root  root      23 Oct 21 11:47 UNIVERSE_DQM_TST511_ori -> /apps/du/511/TST511/DQM
+lrwxrwxrwx  1 root  root      23 May 14  2007 UNIVERSE_DQM_TST520 -> /apps/du/520/TST520/DQM
+lrwxrwxrwx  1 root  root      23 Aug  8  2007 UNIVERSE_DQM_TST530 -> /apps/du/530/TST530/DQM
+lrwxrwxrwx  1 root  root      23 Oct 20 17:49 UNIVERSE_DQM_TST540 -> /apps/du/540/TST540/DQM
+lrwxrwxrwx  1 root  root      23 Jan 18  2008 UNIVERSE_DQM_UNI532 -> /apps/du/532/UNI532/DQM
+lrwxrwxrwx  1 root  root      19 Oct  9  2006 UNIVERSE_DQM_ZMVS50 -> /apps/du/ZMVS50/DQM
+#REM# LISTING OF THE libux STRUCTURE
+#CMD# ls -l /usr/lib | grep libux
+lrwxrwxrwx   1 root root       28 Feb 27  2008 libux_fso_DU_V53-Maintenance -> /apps/du/530/FLS530/exec/lib
+lrwxrwxrwx   1 root root       28 Oct 17 14:41 libux_v540 -> /apps/du/540/FLS540/exec/lib
+#CMD# ls -lRai /usr/lib/libux*/*
+20168750 -r-xr-xr-x 1 univa univ 2605909 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_api.so
+20168770 -r-xr-xr-x 1 univa univ 2260978 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_cmd.so
+20168745 -r-xr-xr-x 1 univa univ 2260550 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_cmd.so_24549
+20168769 -r-xr-xr-x 1 univa univ 3862539 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_ord.so
+20168744 -r-xr-xr-x 1 univa univ 3846229 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuni_ord.so_24549
+20168766 -r-xr-xr-x 1 univa univ 8119000 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxapi.so
+20168752 -r-xr-xr-x 1 univa univ 8110374 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxapi.so_24549
+20168746 -r-xr-xr-x 1 univa univ  282804 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxbvs.so
+20168751 -r-xr-xr-x 1 univa univ  144167 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcdj.so
+20168765 -r-xr-xr-x 1 univa univ  553050 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcmd.so
+20168764 -r-xr-xr-x 1 univa univ  552810 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcmd.so_24549
+20168756 -r-xr-xr-x 1 univa univ    7917 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcrypt_empty.so
+20168762 lrwxrwxrwx 1 root  root      21 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxcrypt.so -> ./libuxcrypt_empty.so
+20168738 -r-xr-xr-x 1 univa univ 2563791 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxdscart.so
+20168753 -r-xr-xr-x 1 univa univ   89736 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxftapi.so
+20168755 -r-xr-xr-x 1 univa univ   15804 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxft_empty.so
+20168760 lrwxrwxrwx 1 root  root      18 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxft.so -> ./libuxft_empty.so
+20168740 -r-xr-xr-x 1 univa univ 3307166 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxgui.so
+20168768 -r-xr-xr-x 1 univa univ 2397467 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxos.so
+20168757 -r-xr-xr-x 1 univa univ 2395303 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxos.so_24549
+20168741 -r-xr-xr-x 1 univa univ   18391 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_com.so
+20168742 -r-xr-xr-x 1 univa univ    9050 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_empty.so
+20168763 -r-xr-xr-x 1 root  root   20086 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_itm.so
+20168747 -r-xr-xr-x 1 univa univ   20890 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_ito.so
+20168759 -r-xr-xr-x 1 univa univ 1006593 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_pat.so
+20168761 lrwxrwxrwx 1 root  root      19 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv.so -> ./libuxspv_empty.so
+20168737 -r-xr-xr-x 1 univa univ   14046 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_tiv.so
+20168739 -r-xr-xr-x 1 univa univ   16785 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxspv_tng.so
+20168749 -r-xr-xr-x 1 univa univ  609094 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxsrvio.so
+20168767 -r-xr-xr-x 1 univa univ 8526572 Jul 18 17:49 /usr/lib/libux_fso_DU_V53-Maintenance/libuxuni.so
+20168748 -r-xr-xr-x 1 univa univ 8504788 Jul 18 17:38 /usr/lib/libux_fso_DU_V53-Maintenance/libuxuni.so_24549
+20168758 -r-xr-xr-x 1 univa univ 2304861 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxxml.so
+20168754 -r-xr-xr-x 1 univa univ   74672 Jul 18 17:36 /usr/lib/libux_fso_DU_V53-Maintenance/libuxz.so
+21856426 -rwxrwxr-x 1 root  root 2651996 Oct 17 14:41 /usr/lib/libux_v540/libuni_api.so
+21856427 -rwxrwxr-x 1 root  root 2289815 Oct 17 14:41 /usr/lib/libux_v540/libuni_cmd.so
+21856428 -rwxrwxr-x 1 root  root 3185565 Oct 17 14:41 /usr/lib/libux_v540/libuni_ord.so
+21856429 -rwxrwxr-x 1 root  root 8149276 Oct 17 14:41 /usr/lib/libux_v540/libuxapi.so
+21856430 -rwxrwxr-x 1 root  root  282812 Oct 17 14:41 /usr/lib/libux_v540/libuxbvs.so
+21856431 -rwxrwxr-x 1 root  root  144167 Oct 17 14:41 /usr/lib/libux_v540/libuxcdj.so
+21856432 -rwxrwxr-x 1 root  root  552874 Oct 17 14:41 /usr/lib/libux_v540/libuxcmd.so
+21856450 -rwxrwxr-x 1 root  root    7917 Oct 17 14:41 /usr/lib/libux_v540/libuxcrypt_empty.so
+21856583 lrwxrwxrwx 1 root  root      21 Oct 17 14:41 /usr/lib/libux_v540/libuxcrypt.so -> ./libuxcrypt_empty.so
+21856433 -rwxrwxr-x 1 root  root  466497 Oct 17 14:41 /usr/lib/libux_v540/libuxdqmplus.so
+21856434 -rwxrwxr-x 1 root  root 2551370 Oct 17 14:41 /usr/lib/libux_v540/libuxdscart.so
+21856435 -rwxrwxr-x 1 root  root   89736 Oct 17 14:41 /usr/lib/libux_v540/libuxftapi.so
+21856448 -rwxrwxr-x 1 root  root   15804 Oct 17 14:41 /usr/lib/libux_v540/libuxft_empty.so
+21856581 lrwxrwxrwx 1 root  root      18 Oct 17 14:41 /usr/lib/libux_v540/libuxft.so -> ./libuxft_empty.so
+21856436 -rwxrwxr-x 1 root  root 3311605 Oct 17 14:41 /usr/lib/libux_v540/libuxgui.so
+21856437 -rwxrwxr-x 1 root  root 2415955 Oct 17 14:41 /usr/lib/libux_v540/libuxos.so
+21856438 -rwxrwxr-x 1 root  root   18789 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_com.so
+21856449 -rwxrwxr-x 1 root  root    9248 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_empty.so
+21856439 -rwxrwxr-x 1 root  root   20312 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_itm.so
+21856440 -rwxrwxr-x 1 root  root   21080 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_ito.so
+21856441 -rwxrwxr-x 1 root  root 1006593 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_pat.so
+21856582 lrwxrwxrwx 1 root  root      19 Oct 17 14:41 /usr/lib/libux_v540/libuxspv.so -> ./libuxspv_empty.so
+21856442 -rwxrwxr-x 1 root  root   14256 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_tiv.so
+21856443 -rwxrwxr-x 1 root  root   17003 Oct 17 14:41 /usr/lib/libux_v540/libuxspv_tng.so
+21856444 -rwxrwxr-x 1 root  root  641697 Oct 17 14:41 /usr/lib/libux_v540/libuxsrvio.so
+21856445 -rwxrwxr-x 1 root  root 9153935 Oct 17 14:41 /usr/lib/libux_v540/libuxuni.so
+21856446 -rwxrwxr-x 1 root  root 2304861 Oct 17 14:41 /usr/lib/libux_v540/libuxxml.so
+21856447 -rwxrwxr-x 1 root  root   74672 Oct 17 14:41 /usr/lib/libux_v540/libuxz.so
+#REM# LISTING OF THE UXMGR DIRECTORY (Sorted by name)
+#CMD# ls -lai /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP#  20090108-165947 
+total 516
+21643272 drwxr-xr-x 7 root root   4096 Jan  8 16:08 .
+21627153 drwxr-xr-x 4 root root   4096 Jan  5 11:30 ..
+21643283 -rwxr-xr-x 1 root root    557 Jan  5 11:30 alertmanager.xml
+21643273 drwxr-xr-x 2 root root   4096 Jan  5 11:54 data
+21643518 -rw-r--r-- 1 root root      0 Jan  8 12:29 -f2
+21643291 dr-xr-xr-x 2 root root   4096 Jan  5 11:30 install
+21643288 drwxrwxrwx 2 root root   4096 Jan  5 11:30 jobtemplates
+21643287 -rwxr-xr-x 1 root root    114 Jan  5 11:30 licenses.txt
+21643289 drwxrwxrwx 2 root root   4096 Jan  5 11:30 log
+21643277 -rwxr-xr-x 1 root root   1972 Jan  5 11:30 log4j.xml
+21643280 -rwxr-xr-x 1 root root   5561 Jan  8 16:33 network.xml
+21643309 -rw-rw-rw- 1 root root    518 Jan  5 11:30 phrase.key
+21643307 -rw-rw-rw- 1 root root    339 Jan  6 11:58 phrases.bin
+21643281 -rwxr-xr-x 1 root root    352 Jan  6 11:58 proxy.xml
+21643284 -rwxr-xr-x 1 root root   1310 Jan  6 11:58 roles.xml
+21643290 drwxrwxrwx 2 root root   4096 Jan  5 11:30 temp
+21643525 -rw-rw-rw- 1 root root 210638 Jan  8 15:59 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-155726_sc.tar.gz
+21643526 -rw-rw-rw- 1 root root 214753 Jan  8 16:08 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-160444_sc.tar.gz
+21643285 -rwxr-xr-x 1 root root    557 Jan  5 11:30 unicheckms
+21643276 -rwxr-xr-x 1 root root    423 Jan  5 11:30 unienv.csh
+21643282 -rwxr-xr-x 1 root root    467 Jan  5 11:30 unienv.ksh
+21643286 -rwxr-xr-x 1 root root    981 Jan  5 11:30 unistartms
+21643278 -rwxr-xr-x 1 root root    427 Jan  5 11:30 unistopms
+21643292 -rwxr-xr-x 1 root root    580 Jan  5 11:30 values.xml
+#REM# LISTING OF THE UXEXE DIRECTORY (Sorted by name)
+#CMD# ls -lai 
+#TSP#  20090108-165947 
+total 248
+21643267 drwxrwxr-x 3 root root   4096 Jan  8 16:59 .
+21627156 drwxr-xr-x 5 root root   4096 Jan  8 16:22 ..
+21643519 drwxr-xr-x 5 root root   4096 Jan  8 16:59 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc
+21643517 -rwxr----- 1 root root 105741 Jan  8 16:59 uxtrace
+21643269 -r--r--r-- 1 root root   6937 Jan  5 11:30 uxtrace_help_en.txt
+21643270 -r--r--r-- 1 root root   6373 Jan  5 11:30 uxtrace_help_fr.txt
+21643268 -rwx------ 1 root root 104697 Jan  5 11:30 uxtrace_ori
+21643271 -r--r--r-- 1 root root      6 Jan  5 11:30 uxtraceversion.txt
+#REM# LISTING OF THE UXLIB DIRECTORY (Sorted by name)
+#CMD# ls -lai /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP#  20090108-165947 
+ls: /apps/unijob110/univiewer_server/casdlsup06/app/lib: No such file or directory
+
+#REM# More information can be found in the DQM subdirectory
+
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DQM/DQM_all_ls_ltrai.txt: cannot open [No such file or directory]
+
+#REM# More information can be found in the SAP and RFC subdirectories
+
+#REM# SAP not configured
+#REM# SAP not configured
+
+#REM# More information can be found in the DLS subdirectory
+
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/DQM_all_ls_ltrai.txt: cannot open [No such file or directory]
+#REM# LISTING OF THE DOLLAR UNIVERSE UXDIR_ROOT DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06
+#TSP#  20090108-165933 
+total 104
+21627155 drwxr-xr-x 3 root root  4096 Jan  5 11:30 ..
+21627191 -r-xr--r-- 1 root root 56646 Jan  5 11:30 ThirdPartyLicenseReadme.txt
+21627190 -r-xr--r-- 1 root root   932 Jan  5 11:30 README.txt
+21627158 -r-xr--r-- 1 root root 21600 Jan  5 11:30 license.txt
+21627192 -rw-rw-rw- 1 root root     0 Jan  5 11:30 unistartms.log
+21627153 drwxr-xr-x 4 root root  4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root  4096 Jan  8 16:08 data
+21627156 drwxr-xr-x 5 root root  4096 Jan  8 16:22 app
+
+#REM# LISTING OF THE DOLLAR UNIVERSE UXDEX DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP#  20090108-165933 
+total 24
+21643275 -rw-rw-rw- 1 root root   72 Jan  5 11:30 user.csv
+21643510 -rw-rw-rw- 1 root root 2146 Jan  5 11:54 unicentral.db.script
+21643301 -rw-rw-rw- 1 root root  420 Jan  5 11:54 unicentral.db.properties
+21643296 -rw-rw-rw- 1 root root    0 Jan  5 11:54 servicehistory.csv
+21643297 -rw-rw-rw- 1 root root    0 Jan  5 11:54 runhistory.csv
+21643299 -rw-rw-rw- 1 root root    0 Jan  5 11:54 nodeviewitem.csv
+21643298 -rw-rw-rw- 1 root root    0 Jan  5 11:54 nodeview.csv
+21643295 -rw-rw-rw- 1 root root    0 Jan  5 11:54 jobtemplatehistory.csv
+21643293 -rw-rw-rw- 1 root root    0 Jan  5 11:54 jobtemplate.csv
+21643273 drwxr-xr-x 2 root root 4096 Jan  5 11:54 .
+21643300 -rw-rw-rw- 1 root root   40 Jan  5 11:54 unicentral.db.log
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXDSI_ls_ltrai_01G.txt: cannot open [No such file or directory]
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXDIN_ls_ltrai_01G.txt: cannot open [No such file or directory]
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXDAP_ls_ltrai_01G.txt: cannot open [No such file or directory]
+
+#REM# LISTING OF THE UXPEX DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai 
+#TSP#  20090108-165947 
+total 248
+21643271 -r--r--r-- 1 root root      6 Jan  5 11:30 uxtraceversion.txt
+21643268 -rwx------ 1 root root 104697 Jan  5 11:30 uxtrace_ori
+21643270 -r--r--r-- 1 root root   6373 Jan  5 11:30 uxtrace_help_fr.txt
+21643269 -r--r--r-- 1 root root   6937 Jan  5 11:30 uxtrace_help_en.txt
+21627156 drwxr-xr-x 5 root root   4096 Jan  8 16:22 ..
+21643517 -rwxr----- 1 root root 105741 Jan  8 16:59 uxtrace
+21643267 drwxrwxr-x 3 root root   4096 Jan  8 16:59 .
+21643519 drwxr-xr-x 5 root root   4096 Jan  8 16:59 TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXPSI_ls_ltrai.txt: cannot open [No such file or directory]
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXPIN_ls_ltrai.txt: cannot open [No such file or directory]
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXPAP_ls_ltrai.txt: cannot open [No such file or directory]
+
+#REM# LISTING OF THE UXLEX DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP#  20090108-165947 
+total 36
+21643303 -r--r--r-- 1 root root  2665 Jan  5 11:30 orsyp_installation.log
+21643289 drwxrwxrwx 2 root root  4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root  4096 Jan  8 16:08 ..
+21643306 -rw-rw-rw- 1 root root  2671 Jan  8 16:59 uxiotrns.log
+21643304 -rw-rw-rw- 1 root root 11571 Jan  8 16:59 uvserver.log
+21643274 -rw-rw-rw- 1 root root   649 Jan  8 16:59 stdout.log
+21643302 -rw-rw-rw- 1 root root  1561 Jan  8 16:59 stderr.log
+#REM# LISTING OF THE UXLEX DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP#  20090108-165947 
+total 36
+21643303 -r--r--r-- 1 root root  2665 Jan  5 11:30 orsyp_installation.log
+21643289 drwxrwxrwx 2 root root  4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root  4096 Jan  8 16:08 ..
+21643306 -rw-rw-rw- 1 root root  2671 Jan  8 16:59 uxiotrns.log
+21643304 -rw-rw-rw- 1 root root 11571 Jan  8 16:59 uvserver.log
+21643274 -rw-rw-rw- 1 root root   649 Jan  8 16:59 stdout.log
+21643302 -rw-rw-rw- 1 root root  1561 Jan  8 16:59 stderr.log
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXLIN_ls_ltrai.txt: cannot open [No such file or directory]
+cat: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS/UXLAP_ls_ltrai.txt: cannot open [No such file or directory]
+
+#REM# LISTING OF THE U_TMP_PATH DIRECTORY (Sorted by time stamp)
+#CMD# ls -ltrai /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP#  20090108-165947 
+total 8
+21643290 drwxrwxrwx 2 root root 4096 Jan  5 11:30 .
+21643272 drwxr-xr-x 7 root root 4096 Jan  8 16:08 ..
+
+The analysis of the rights of the UniJob folders
+
+#REM# Analysis of the / folder
+
+drwxr-xr-x  31 root root         4096 Jan  8 11:35 ..
+
+#REM# The available place in / is
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+
+#REM# Analysis of the UXDEX folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:08 data
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/data/
+drwxr-xr-x 2 root root   4096 Jan  5 11:54 data
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/data/data is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720364 244053804   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/data/data is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data/data
+#TSP#  20090108-165948 
+20	/apps/unijob110/univiewer_server/casdlsup06/data/data
+
+#REM# Analysis of the UXDIR_ROOT folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06 is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720364 244053804   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06 is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06
+#TSP#  20090108-165948 
+7196	/apps/unijob110/univiewer_server/casdlsup06
+
+#REM# Analysis of the UXFIL folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/app/
+drwxr-xr-x 5 root root  4096 Jan  8 16:22 app
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/app/files/
+drwxr-xr-x 2 root root 4096 Jan  8 16:20 files
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/app/files is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720364 244053804   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/app/files is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/app/files
+#TSP#  20090108-165948 
+72	/apps/unijob110/univiewer_server/casdlsup06/app/files
+
+#REM# Analysis of the UXJAR folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/app/
+drwxr-xr-x 5 root root  4096 Jan  8 16:22 app
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/app/jars/
+drwxr-xr-x 2 root root 4096 Jan  5 11:30 jars
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/app/jars is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720368 244053800   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/app/jars is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/app/jars
+#TSP#  20090108-165948 
+5644	/apps/unijob110/univiewer_server/casdlsup06/app/jars
+
+#REM# Analysis of the UXMGR folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:08 data
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/data is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720368 244053800   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/data is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data
+#TSP#  20090108-165948 
+560	/apps/unijob110/univiewer_server/casdlsup06/data
+
+#REM# Analysis of the UXEXE folder
+
+#REM# The available place in  is
+#CMD# df -k 
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+/dev/hda1               256666     17397    226017   8% /boot
+tmpfs                   484844         0    484844   0% /dev/shm
+/dev/hda5            276836664  18720368 244053800   8% /dsk1
+support2:/dsk1/cases  65472416  60063264   2083296  97% /cases
+support2:/dsk1/windata
+                      65472416  60063264   2083296  97% /windata
+support2:/dsk1/lindata
+                      65472416  60063264   2083296  97% /lindata
+caribou:/dsk1/dlc01  163765376 122605824  32840704  79% /windata/20_Edition
+caribou:/dsk1/da_documents
+                     163765376 122605824  32840704  79% /da_documents
+casplda01:/dsk2/users
+                     288435136  54415456 219368000  20% /data/home
+caribou:/dsk1/da_documents/data
+                     163765376 122605824  32840704  79% /data/data
+
+#REM# The place occupied by  is
+#CMD# du -sk 
+#TSP#  20090108-165948 
+828	.
+
+#REM# Analysis of the UXLIB folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/app/
+drwxr-xr-x 5 root root  4096 Jan  8 16:22 app
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/app/lib/
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/app/lib is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP#  20090108-165948 
+df: `/apps/unijob110/univiewer_server/casdlsup06/app/lib': No such file or directory
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/app/lib is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/app/lib
+#TSP#  20090108-165948 
+du: cannot access `/apps/unijob110/univiewer_server/casdlsup06/app/lib': No such file or directory
+
+#REM# Analysis of the UXPEX folder
+
+#REM# The available place in  is
+#CMD# df -k 
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda2             10154020   7693624   1936276  80% /
+/dev/hda1               256666     17397    226017   8% /boot
+tmpfs                   484844         0    484844   0% /dev/shm
+/dev/hda5            276836664  18720372 244053796   8% /dsk1
+support2:/dsk1/cases  65472416  60063264   2083296  97% /cases
+support2:/dsk1/windata
+                      65472416  60063264   2083296  97% /windata
+support2:/dsk1/lindata
+                      65472416  60063264   2083296  97% /lindata
+caribou:/dsk1/dlc01  163765376 122605824  32840704  79% /windata/20_Edition
+caribou:/dsk1/da_documents
+                     163765376 122605824  32840704  79% /da_documents
+casplda01:/dsk2/users
+                     288435136  54415456 219368000  20% /data/home
+caribou:/dsk1/da_documents/data
+                     163765376 122605824  32840704  79% /data/data
+
+#REM# The place occupied by  is
+#CMD# du -sk 
+#TSP#  20090108-165948 
+832	.
+
+#REM# Analysis of the UXLEX folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:08 data
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/log/
+drwxrwxrwx 2 root root   4096 Jan  5 11:30 log
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/data/log is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720372 244053796   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/data/log is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data/log
+#TSP#  20090108-165948 
+32	/apps/unijob110/univiewer_server/casdlsup06/data/log
+
+#REM# Analysis of the U_TMP_PATH folder
+#REM# Rights of the folder /apps/
+lrwxrwxrwx   1 root root           10 Aug 14  2006 apps -> /dsk1/apps
+#REM# Rights of the folder /apps/unijob110/
+drwxr-xr-x  4 root root 4096 Jan  5 11:35 unijob110
+#REM# Rights of the folder /apps/unijob110/univiewer_server/
+drwxr-xr-x 3 root root 4096 Jan  5 11:30 univiewer_server
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/
+drwxr-xr-x 4 root root 4096 Jan  5 11:30 casdlsup06
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/
+drwxr-xr-x 7 root root  4096 Jan  8 16:08 data
+#REM# Rights of the folder /apps/unijob110/univiewer_server/casdlsup06/data/temp/
+drwxrwxrwx 2 root root   4096 Jan  5 11:30 temp
+
+#REM# The available place in /apps/unijob110/univiewer_server/casdlsup06/data/temp is
+#CMD# df -k /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP#  20090108-165948 
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18720372 244053796   8% /dsk1
+
+#REM# The place occupied by /apps/unijob110/univiewer_server/casdlsup06/data/temp is
+#CMD# du -sk /apps/unijob110/univiewer_server/casdlsup06/data/temp
+#TSP#  20090108-165948 
+4	/apps/unijob110/univiewer_server/casdlsup06/data/temp
+
+#REM# More information can be found in the SYS subdirectory
+
+#CMD# env
+#TSP#  20090108-165947 
+_=/bin/env
+SHLIB_PATH=/apps/unijob110/univiewer_server/casdlsup06/app/lib
+SUDO_COMMAND=/bin/su
+g_daenv=/etc/daenv
+LANG=en_US.UTF-8
+UXSLEEPTIME=15
+UXTRACEDUFILESFOLDER=/apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DUFILES
+LD_LIBRARY_PATH=/apps/unijob110/univiewer_server/casdlsup06/app/lib
+HOME=/root
+UXCOMPRESSUXTRACEFOLDER=Y
+UXLOGDELAY=1
+S_U_LANGUE=EN
+HOSTNAME=casdlsup06.orsypgroup.com
+g_dalcl=/etc/dalcl
+UXTRACECUSTFOLDER=/apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/CUST
+PWD=/apps/unijob110/univiewer_server/casdlsup06/app/uxtrace
+HISTSIZE=1000
+SHLVL=2
+U_JAVA_EXE=java
+PATH=/usr/kerberos/sbin:/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin:/home/zwa/bin
+KDEDIR=/usr
+UXLOGNB=25
+UXKEEPUXTRACEFOLDER=N
+U_ROOT_DIR=/apps/unijob110/univiewer_server/casdlsup06
+DISPLAY=dsp_ip_zwa:0
+UXBGTIMEOUT=20
+daal=. /etc/daenv/env/Alias
+CVS_RSH=ssh
+daenv=/etc/daenv
+FPATH=
+U_CONF_VAR=/apps/unijob110/univiewer_server/casdlsup06/app/files/variables.xml
+UXTRACELOCATE=/apps/unijob110/univiewer_server/casdlsup06/app/uxtrace
+U_CONF_VAL=/apps/unijob110/univiewer_server/casdlsup06/data/values.xml
+INPUTRC=/etc/inputrc
+SUDO_USER=zwa
+LS_COLORS=no=00:fi=00:di=00;34:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;32:*.cmd=00;32:*.exe=00;32:*.com=00;32:*.btm=00;32:*.bat=00;32:*.sh=00;32:*.csh=00;32:*.tar=00;31:*.tgz=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.zip=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.jpg=00;35:*.gif=00;35:*.bmp=00;35:*.xbm=00;35:*.xpm=00;35:*.png=00;35:*.tif=00;35:
+SUDO_GID=500
+l_lin_base=/users
+ssss=/tmp
+G_BROKEN_FILENAMES=1
+PS1=# 
+SHELL=/bin/bash
+LIBPATH=/apps/unijob110/univiewer_server/casdlsup06/app/lib
+LOGNAME=root
+UXLOOPNUMBER=4
+dalcl=/etc/dalcl
+OLDPWD=/apps/unijob110/univiewer_server/casdlsup06/app
+UXMAINAREA=X
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SSH_CONNECTION=192.168.110.6 4382 192.168.110.206 22
+LESSOPEN=|/usr/bin/lesspipe.sh %s
+TERM=xterm
+UXLAUNCHCUSTSCRIPT=s
+UXCUSTSCRIPT=/apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust
+_AST_FEATURES=UNIVERSE - ucb
+SSH_CLIENT=192.168.110.6 4382 22
+KDE_IS_PRELINKED=1
+UXDUFILESIZELIM=10000
+USER=root
+SUDO_UID=238
+MAIL=/var/spool/mail/zwa
+ldal=daal
+SSH_TTY=/dev/pts/7
+EDITOR=vim
+#CMD# ps -ef
+#TSP#  20090108-165935 
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0  2008 ?        00:00:13 init [5]                             
+root         2     1  0  2008 ?        00:00:00 [migration/0]
+root         3     1  0  2008 ?        00:00:00 [ksoftirqd/0]
+root         4     1  0  2008 ?        00:00:00 [watchdog/0]
+root         5     1  0  2008 ?        00:00:54 [migration/1]
+root         6     1  0  2008 ?        00:00:00 [ksoftirqd/1]
+root         7     1  0  2008 ?        00:00:00 [watchdog/1]
+root         8     1  0  2008 ?        00:00:00 [events/0]
+root         9     1  0  2008 ?        00:00:00 [events/1]
+root        10     1  0  2008 ?        00:00:00 [khelper]
+root        11     1  0  2008 ?        00:00:00 [kthread]
+root        14    11  0  2008 ?        00:00:04 [kblockd/0]
+root        15    11  0  2008 ?        00:00:05 [kblockd/1]
+root        16    11  0  2008 ?        00:00:00 [kacpid]
+root       138    11  0  2008 ?        00:00:00 [khubd]
+root       140    11  0  2008 ?        00:00:00 [kseriod]
+root       205     1  0  2008 ?        00:00:49 [kswapd0]
+root       206    11  0  2008 ?        00:00:00 [aio/0]
+root       207    11  0  2008 ?        00:00:00 [aio/1]
+root       375    11  0  2008 ?        00:00:00 [kpsmoused]
+root       392    11  0  2008 ?        00:00:43 [kjournald]
+root       431    11  0  2008 ?        00:00:00 [kauditd]
+root       455     1  0  2008 ?        00:00:00 /sbin/udevd -d
+root      1292    11  0  2008 ?        00:00:00 [kmirrord]
+root      1317    11  0  2008 ?        00:00:00 [kjournald]
+root      1319    11  0  2008 ?        00:05:02 [kjournald]
+root      1589     1  0  2008 ?        00:00:04 syslogd -m 0
+root      1592     1  0  2008 ?        00:00:00 klogd -x
+root      1602     1  0  2008 ?        00:00:05 irqbalance
+rpc       1612     1  0  2008 ?        00:00:00 portmap
+rpcuser   1631     1  0  2008 ?        00:00:01 rpc.statd
+root      1661     1  0  2008 ?        00:00:12 rpc.idmapd
+dbus      1675     1  0  2008 ?        00:00:00 dbus-daemon --system
+root      1684     1  0  2008 ?        00:00:00 hcid: processing events
+root      1687     1  0  2008 ?        00:00:00 sdpd
+root      1706     1  0  2008 ?        00:00:00 [krfcommd]
+root      1745     1  0  2008 ?        00:12:58 /usr/bin/hidd --server
+root      1843     1  0  2008 ?        00:00:00 /usr/sbin/automount --timeout=60 /net program /etc/auto.net
+root      1858     1  0  2008 ?        00:00:00 /usr/sbin/smartd -q never
+root      1867     1  0  2008 ?        00:00:00 /usr/sbin/acpid
+root      1885     1  0  2008 ?        00:00:00 /usr/sbin/sshd
+ntp       1897     1  0  2008 ?        00:00:11 ntpd -u ntp:ntp -p /var/run/ntpd.pid -g
+root      1950     1  0  2008 ?        00:00:01 /usr/libexec/postfix/master
+postfix   1965  1950  0  2008 ?        00:00:00 qmgr -l -t fifo -u
+smmsp     1978     1  0  2008 ?        00:00:00 sendmail: Queue runner@01:00:00 for /var/spool/clientmqueue
+root      1987     1  0  2008 ?        00:00:29 gpm -m /dev/input/mice -t exps2
+root      1997     1  0  2008 ?        00:00:01 crond
+xfs       2028     1  0  2008 ?        00:00:00 xfs -droppriv -daemon
+root      2069     1  0  2008 ?        00:00:02 Xvnc :2 -desktop casdlsup06.orsypgroup.com:2 (root) -httpd /usr/share/vnc/classes -auth /root/.Xauthority -geometry 1024x768 -depth 16 -rfbwait 30000 -rfbauth /root/.vnc/passwd -rfbport 5902 -pn
+root      2080     1  0  2008 ?        00:00:00 vncconfig -iconic
+root      2081     1  0  2008 ?        00:00:00 /bin/sh /usr/bin/startkde
+root      2095     1  0  2008 ?        00:00:00 /usr/sbin/atd
+avahi     2198     1  0  2008 ?        00:00:00 avahi-daemon: running [casdlsup06.local]
+avahi     2199  2198  0  2008 ?        00:00:00 avahi-daemon: chroot helper process
+root      2211     1  0  2008 ?        00:00:00 cups-config-daemon
+68        2221     1  0  2008 ?        00:00:03 hald
+root      2222  2221  0  2008 ?        00:00:00 hald-runner
+68        2228  2222  0  2008 ?        00:00:00 /usr/libexec/hald-addon-acpi
+68        2241  2222  0  2008 ?        00:00:00 /usr/libexec/hald-addon-keyboard
+root      2249  2222  0  2008 ?        00:13:56 /usr/libexec/hald-addon-storage
+root      2267     1  0  2008 tty1     00:00:00 /sbin/mingetty tty1
+root      2269     1  0  2008 tty2     00:00:00 /sbin/mingetty tty2
+root      2271     1  0  2008 tty3     00:00:00 /sbin/mingetty tty3
+root      2280     1  0  2008 tty4     00:00:00 /sbin/mingetty tty4
+root      2283     1  0  2008 tty5     00:00:00 /sbin/mingetty tty5
+root      2286     1  0  2008 tty6     00:00:00 /sbin/mingetty tty6
+root      2306     1  0  2008 ?        00:00:00 /bin/sh /etc/X11/prefdm -nodaemon
+root      2327  2306  0  2008 ?        00:00:00 /usr/sbin/gdm-binary -nodaemon
+root      2364     1  0  2008 ?        00:00:00 kdeinit Running...                    
+root      2366  2327  0  2008 ?        00:00:00 /usr/sbin/gdm-binary -nodaemon
+root      2369  2366  0  2008 tty7     00:04:35 /usr/bin/Xorg :0 -audit 0 -auth /var/gdm/:0.Xauth -nolisten tcp vt7
+root      2371     1  0  2008 ?        00:00:00 dcopserver --nosid
+root      2382  2364  0  2008 ?        00:00:06 klauncher [kdeinit] --new-startup     
+root      2396     1  0  2008 ?        00:00:14 kded --new-startup
+root      2398     1  0  2008 ?        00:46:41 /usr/libexec/gam_server
+gdm       2409  2366  0  2008 ?        00:03:03 /usr/libexec/gdmgreeter --gtk-module=gail:atk-bridge:/usr/lib/gtk-2.0/modules/libkeymouselistener:/usr/lib/gtk-2.0/modules/libdwellmouselistener
+gdm       2412     1  0  2008 ?        00:00:00 /usr/libexec/bonobo-activation-server --ac-activate --ior-output-fd=12
+gdm       2414     1  0  2008 ?        00:14:57 /usr/libexec/at-spi-registryd --oaf-activate-iid=OAFIID:Accessibility_Registry:1.0 --oaf-ior-fd=23
+root      2418  2081  0  2008 ?        00:01:09 kwrapper ksmserver
+root      2420     1  0  2008 ?        00:00:00 ksmserver
+root      2421  2364  0  2008 ?        00:00:00 kwin -session 102b521d261297000115558037900000023580000_1155589806_134678
+root      2423     1  0  2008 ?        00:00:01 kdesktop
+root      2425     1  0  2008 ?        00:03:57 kicker
+root      2426  2364  0  2008 ?        00:00:00 kio_file [kdeinit] file /tmp/ksocket-root/klauncherjiMW5b.slave-socket /tmp/ksocket-root/kdesktopJr0qta.slave-socket
+root      2432  2364  0  2008 ?        00:07:23 /usr/bin/artsd -F 10 -S 4096 -s 60 -m artsmessage -c drkonqi -l 3 -f
+root      2434     1  0  2008 ?        00:00:00 kaccess
+root      2436  2364  0  2008 ?        00:00:00 konsole -session 102b521d261297000115558775500000023580010_1155589806_110901
+root      2441  2436  0  2008 pts/2    00:00:00 /bin/bash
+root      2523    11  0  2008 ?        00:00:22 [rpciod/0]
+root      2524    11  0  2008 ?        00:00:00 [rpciod/1]
+root      2525     1  0  2008 ?        00:00:00 [lockd]
+root     32206     1  0  2008 ?        00:20:42 /usr/java/jdk1.6.0_02/jre/bin/java -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.util.logging.config.file=/apps/tomcat/apache-tomcat-6.0.2/conf/logging.properties -Djava.endorsed.dirs=/apps/tomcat/apache-tomcat-6.0.2/endorsed -classpath :/apps/tomcat/apache-tomcat-6.0.2/bin/bootstrap.jar:/apps/tomcat/apache-tomcat-6.0.2/bin/commons-logging-api.jar -Dcatalina.base=/apps/tomcat/apache-tomcat-6.0.2 -Dcatalina.home=/apps/tomcat/apache-tomcat-6.0.2 -Djava.io.tmpdir=/apps/tomcat/apache-tomcat-6.0.2/temp org.apache.catalina.startup.Bootstrap start
+univa    15982     1  9  2008 ?        1-13:53:59 ./uxioserv PRE530 X casdlsup06
+univa    15983     1  2  2008 ?        08:10:08 ./uxioserv PRE530 S casdlsup06
+univa    15988     1  0  2008 ?        00:00:30 ./uxioserv PRE530 I casdlsup06
+univa    15991     1  0  2008 ?        00:00:34 ./uxioserv PRE530 A casdlsup06
+root     15994     1  0  2008 ?        00:01:11 ./uxdqmsrv PRE530 X casdlsup06
+univa    16008     1  0  2008 ?        00:00:12 ./uxbvssrv PRE530 X casdlsup06
+univa    16020     1  0  2008 ?        00:00:11 ./uxbvssrv PRE530 S casdlsup06
+univa    16021     1  0  2008 ?        00:00:14 ./uxcdjsrv PRE530 X casdlsup06
+univa    16024     1  0  2008 ?        00:00:12 ./uxcdjsrv PRE530 A casdlsup06
+univa    16026     1  0  2008 ?        00:00:12 ./uxcdjsrv PRE530 I casdlsup06
+univa    16028     1  0  2008 ?        00:00:19 ./uxcdjsrv PRE530 S casdlsup06
+univa    16036     1  0  2008 ?        00:00:12 ./uxbvssrv PRE530 I casdlsup06
+univa    16046     1  0  2008 ?        00:00:12 ./uxbvssrv PRE530 A casdlsup06
+univa    16063     1  0  2008 ?        00:01:20 ./uxcal PRE530 X casdlsup06
+root     16078     1  0  2008 ?        00:01:51 ./uxord PRE530 X casdlsup06
+univa    16091     1  7  2008 ?        1-04:01:53 ./uxech PRE530 X casdlsup06
+univa    16111     1  0  2008 ?        00:00:28 ./uxcal PRE530 S casdlsup06
+root     16113     1  0  2008 ?        00:00:14 ./uxsur PRE530 X casdlsup06
+root     16127     1  1  2008 ?        06:48:55 ./uxord PRE530 S casdlsup06
+univa    16141     1  0  2008 ?        01:29:54 ./uxech PRE530 S casdlsup06
+univa    16154     1  0  2008 ?        00:00:22 ./uxcal PRE530 A casdlsup06
+root     16169     1  0  2008 ?        00:00:30 ./uxord PRE530 A casdlsup06
+univa    16181     1  0  2008 ?        00:00:02 ./uxech PRE530 A casdlsup06
+univa    16195     1  0  2008 ?        00:00:06 ./uxcal PRE530 I casdlsup06
+root     16208     1  0  2008 ?        00:00:08 ./uxord PRE530 I casdlsup06
+univa    16223     1  0  2008 ?        00:00:02 ./uxech PRE530 I casdlsup06
+univa    22456     1  0  2008 ?        00:00:46 ./uxioserv TST500 X casdlsup06
+univa    22460     1  0  2008 ?        00:00:19 ./uxioserv TST500 A casdlsup06
+root     22463     1  0  2008 ?        00:00:00 ./uxdqmsrv TST500 X casdlsup06
+root     22469     1  0  2008 ?        00:00:00 ./uxcmdsrv TST500 X casdlsup06
+univa    22474     1  0  2008 ?        00:00:10 ./uxcdjsrv TST500 X casdlsup06
+univa    22475     1  0  2008 ?        00:00:10 ./uxcdjsrv TST500 A casdlsup06
+univa    22489     1  0  2008 ?        00:00:00 ./uxcal TST500 X casdlsup06
+root     22502     1  0  2008 ?        00:00:00 ./uxord TST500 X casdlsup06
+univa    22514     1  0  2008 ?        00:00:03 ./uxech TST500 X casdlsup06
+root     22526     1  0  2008 ?        00:00:23 ./uxsur TST500 X casdlsup06
+root     22538     1  0  2008 ?        00:00:00 ./uxord TST500 A casdlsup06
+univa    22552     1  0  2008 ?        00:00:00 ./uxcal TST500 A casdlsup06
+univa    22565     1  0  2008 ?        00:00:03 ./uxech TST500 A casdlsup06
+root      5978    11  0  2008 ?        00:00:10 [pdflush]
+root     30572    11  0  2008 ?        00:00:05 [pdflush]
+univa    13015     1  0 Jan02 ?        00:03:27 ./uxioserv TST530 X casdlsup06
+univa    13022     1  0 Jan02 ?        00:00:02 ./uxioserv TST530 S casdlsup06
+univa    13024     1  0 Jan02 ?        00:00:04 ./uxioserv TST530 A casdlsup06
+root     13030     1  0 Jan02 ?        00:34:16 ./uxdqmsrv TST530 X casdlsup06
+univa    13035     1  0 Jan02 ?        00:00:05 ./uxcdjsrv TST530 X casdlsup06
+univa    13040     1  0 Jan02 ?        00:00:04 ./uxcdjsrv TST530 A casdlsup06
+univa    13042     1  0 Jan02 ?        00:00:11 ./uxbvssrv TST530 X casdlsup06
+univa    13050     1  0 Jan02 ?        00:00:04 ./uxbvssrv TST530 A casdlsup06
+univa    13084     1  0 Jan02 ?        00:00:05 ./uxcal TST530 X casdlsup06
+root     13098     1  0 Jan02 ?        00:03:32 ./uxord TST530 X casdlsup06
+univa    13110     1  0 Jan02 ?        00:03:26 ./uxech TST530 X casdlsup06
+root     13123     1  0 Jan02 ?        00:00:17 ./uxsur TST530 X casdlsup06
+root     26797     1  0 Jan04 ?        00:00:00 cupsd
+root      5222     1  0 Jan05 ?        00:04:24 java -jar /apps/unijob110/univiewer_server/casdlsup06/app/jars/centralserver-start.jar
+root      5755     1  0 Jan05 ?        00:00:04 ./uniio UNIJOB X casdlsup06_unijob
+root      5757     1  0 Jan05 ?        00:00:02 ./unicdj UNIJOB X casdlsup06_unijob
+root      5759     1  0 Jan05 ?        00:00:00 ./unilan UNIJOB X casdlsup06_unijob
+root      5761     1  0 Jan05 ?        00:00:01 ./unical UNIJOB X casdlsup06_unijob
+univa     8031     1  0 Jan05 ?        00:05:19 ./uxioserv TST511 X casdlsup06
+univa     8035     1  0 Jan05 ?        00:00:01 ./uxioserv TST511 S casdlsup06
+univa     8039     1  0 Jan05 ?        00:00:01 ./uxioserv TST511 I casdlsup06
+univa     8043     1  0 Jan05 ?        00:00:01 ./uxioserv TST511 A casdlsup06
+univa     8089     1  0 Jan05 ?        00:00:02 ./uxcdjsrv TST511 A casdlsup06
+univa     8094     1  0 Jan05 ?        00:00:02 ./uxcdjsrv TST511 S casdlsup06
+univa     8095     1  0 Jan05 ?        00:00:02 ./uxcdjsrv TST511 X casdlsup06
+univa     8097     1  0 Jan05 ?        00:00:02 ./uxcdjsrv TST511 I casdlsup06
+univa     8130     1  0 Jan05 ?        00:00:01 ./uxcal TST511 X casdlsup06
+root      8180     1  0 Jan05 ?        00:00:06 ./uxord TST511 X casdlsup06
+univa     8238     1  0 Jan05 ?        00:00:22 ./uxech TST511 X casdlsup06
+root      8258     1  0 Jan05 ?        00:01:21 ./uxsur TST511 X casdlsup06
+root      7559  1885  0 Jan06 ?        00:00:00 sshd: zwa [priv] 
+zwa       7561  7559  0 Jan06 ?        00:00:01 sshd: zwa@pts/7  
+zwa       7562  7561  0 Jan06 pts/7    00:00:00 -bash
+root      9201     1  0 Jan06 ?        00:00:00 ./uxdqmsrv FLS510 X casdlsup06
+univa     9202     1  0 Jan06 ?        00:00:04 ./uxioserv FLS510 X casdlsup06
+univa     9206     1  0 Jan06 ?        00:00:01 ./uxioserv FLS510 I casdlsup06
+univa     9210     1  0 Jan06 ?        00:00:01 ./uxioserv FLS510 A casdlsup06
+univa     9221     1  0 Jan06 ?        00:00:02 ./uxcdjsrv FLS510 X casdlsup06
+univa     9226     1  0 Jan06 ?        00:00:01 ./uxcdjsrv FLS510 A casdlsup06
+univa     9232     1  0 Jan06 ?        00:00:01 ./uxcdjsrv FLS510 I casdlsup06
+univa    17115     1  0 Jan06 ?        00:00:05 ./uxioserv TST540 X casdlsup06
+univa    17116     1  0 Jan06 ?        00:00:01 ./uxioserv TST540 A casdlsup06
+root     17121     1  0 Jan06 ?        00:00:00 ./uxdqmsrv TST540 X casdlsup06
+univa    17133     1  0 Jan06 ?        00:00:01 ./uxbvssrv TST540 X casdlsup06
+univa    17137     1  0 Jan06 ?        00:00:01 ./uxbvssrv TST540 A casdlsup06
+univa    17141     1  0 Jan06 ?        00:00:01 ./uxcdjsrv TST540 X casdlsup06
+univa    17144     1  0 Jan06 ?        00:00:01 ./uxcdjsrv TST540 A casdlsup06
+univa    17165     1  0 Jan06 ?        00:00:00 ./uxcal TST540 X casdlsup06
+root     17177     1  0 Jan06 ?        00:00:00 ./uxord TST540 X casdlsup06
+univa    17189     1  0 Jan06 ?        00:00:00 ./uxech TST540 X casdlsup06
+root     17203     1  0 Jan06 ?        00:00:02 ./uxsur TST540 X casdlsup06
+root     19627     1  0 Jan07 ?        00:00:00 ./uxdqmsrv FLS520 X casdlsup06
+univa    19632     1  0 Jan07 ?        00:00:21 ./uxioserv FLS520 X casdlsup06
+univa    19636     1  0 Jan07 ?        00:00:00 ./uxioserv FLS520 S casdlsup06
+univa    19640     1  0 Jan07 ?        00:00:00 ./uxioserv FLS520 I casdlsup06
+univa    19644     1  0 Jan07 ?        00:00:00 ./uxioserv FLS520 A casdlsup06
+univa    19650     1  0 Jan07 ?        00:00:00 ./uxcdjsrv FLS520 X casdlsup06
+univa    19659     1  0 Jan07 ?        00:00:00 ./uxcdjsrv FLS520 A casdlsup06
+univa    19661     1  0 Jan07 ?        00:00:00 ./uxcdjsrv FLS520 I casdlsup06
+univa    19662     1  0 Jan07 ?        00:00:00 /apps/du/520/FLS520/exec/uxbvssrv FLS520 X casdlsup06
+univa    19665     1  0 Jan07 ?        00:00:00 /apps/du/520/FLS520/exec/uxbvssrv FLS520 S casdlsup06
+univa    19670     1  0 Jan07 ?        00:00:00 /apps/du/520/FLS520/exec/uxbvssrv FLS520 I casdlsup06
+univa    19672     1  0 Jan07 ?        00:00:00 /apps/du/520/FLS520/exec/uxbvssrv FLS520 A casdlsup06
+univa    19684     1  0 Jan07 ?        00:00:00 ./uxcdjsrv FLS520 S casdlsup06
+univa    18974     1  0 09:34 ?        00:00:09 ./uxioserv FLS530 X casdlsup06
+univa    18978     1  0 09:34 ?        00:00:00 ./uxioserv FLS530 A casdlsup06
+root     18982     1  0 09:34 ?        00:00:00 ./uxdqmsrv FLS530 X casdlsup06
+univa    18989     1  0 09:34 ?        00:00:00 ./uxbvssrv FLS530 X casdlsup06
+univa    18994     1  0 09:34 ?        00:00:00 ./uxbvssrv FLS530 A casdlsup06
+univa    18998     1  0 09:34 ?        00:00:00 ./uxcdjsrv FLS530 X casdlsup06
+univa    19000     1  0 09:34 ?        00:00:00 ./uxcdjsrv FLS530 A casdlsup06
+root     26175  7562  0 10:35 pts/7    00:00:00 su
+root     26177 26175  0 10:35 pts/7    00:00:00 bash
+root     26213  1885  0 10:36 ?        00:00:00 sshd: bta [priv] 
+bta      26215 26213  0 10:37 ?        00:00:00 sshd: bta@pts/4  
+bta      26216 26215  0 10:37 pts/4    00:00:00 -bash
+root     26247 26216  0 10:37 pts/4    00:00:00 su -
+root     26249 26247  0 10:37 pts/4    00:00:00 -bash
+root     26273 26249  0 10:37 pts/4    00:00:00 bash
+root     26675  1885  0 10:50 ?        00:00:00 sshd: zwa [priv] 
+zwa      26679 26675  0 10:50 ?        00:00:00 sshd: zwa@pts/5  
+zwa      26680 26679  0 10:50 pts/5    00:00:00 -bash
+root     27596  1885  0 11:21 ?        00:00:00 sshd: bta [priv] 
+bta      27599 27596  0 11:21 ?        00:00:00 sshd: bta@pts/6  
+bta      27600 27599  0 11:21 pts/6    00:00:00 -bash
+root     27631 27600  0 11:21 pts/6    00:00:00 su -
+root     27633 27631  0 11:21 pts/6    00:00:00 -bash
+root     27655 27633  0 11:21 pts/6    00:00:00 bash
+root      5549 26680  0 16:08 pts/5    00:00:00 su
+root      5551  5549  0 16:08 pts/5    00:00:00 bash
+root      9173     1  0 16:19 pts/4    00:00:00 bash
+root      9174  9173  0 16:19 pts/4    00:00:20 java -Xmx1024m -Xms512m -cp exec/c3p0-0.9.1.2.jar:exec/ehcache-1.2.3.jar:exec/commons-codec-1.2.jar:exec/ant.jar:exec/antlr-2.7.6.jar:exec/api.jar:exec/art.jar:exec/cglib-nodep-2.1_3.jar:exec/comm.jar:exec/commons-beanutils.jar:exec/commons-betwixt-0.8.jar:exec/commons-codec-1.3.jar:exec/commons-collections-3.2.jar:exec/commons-dbcp-1.2.1.jar:exec/commons-digester-1.8.jar:exec/commons-logging-1.1.jar:exec/commons-pool-1.4.jar:exec/dom4j-1.6.1.jar:exec/DUJavaWebConsole.jar:exec/Extensions.jar:exec/hibernate3.jar:exec/jaxen-1.1-beta-6.jar:exec/jta.jar:exec/log4j-1.2.14.jar:exec/log4j-extras.jar:exec/monitoring.jar:exec/monitoring-std.jar:exec/mysql-connector-java-5.0.3-bin.jar:exec/ojdbc14.jar:exec/RepPubCommon.jar:exec/servlet-api.jar:exec/spring.jar:exec/sqljdbc.jar:exec/stdimpl.jar:exec/Swing.jar:exec/util.jar:exec/RepPubServer.jar:exec/wco-servlet.jar:exec/userfile.jar:exec/userlicense.jar:exec/jtds-1.2.jar:exec/itext-1.3.1.jar:exec/jasperreports-3.0.0.jar:exec/jasperreports-extensions-1.3.1.jar:exec/jcommon-1.0.9.jar:exec/jfreechart-1.0.11.jar:exec/mail-1.4.jar:exec/activation.jar com.orsyp.reppub.server.communication.ServerStartUp
+postfix  14532  1950  0 16:30 ?        00:00:00 pickup -l -t fifo -u
+root     14855  1885  0 16:31 ?        00:00:00 sshd: bta [priv] 
+bta      14858 14855  0 16:31 ?        00:00:00 sshd: bta@pts/8  
+bta      14859 14858  0 16:31 pts/8    00:00:00 -bash
+root     14891 14859  0 16:32 pts/8    00:00:00 su univa
+univa    14892 14891  0 16:32 pts/8    00:00:00 bash
+univa    14910 14892  0 16:32 pts/8    00:00:00 /bin/bash /etc/daenv/du/LoadDuEnv
+univa    15325 14910  0 16:32 pts/8    00:00:00 ksh
+root     23115 26177  0 16:59 pts/7    00:00:00 /bin/ksh ./uxtrace
+root     23235 23115  0 16:59 pts/7    00:00:00 ps -ef
+#CMD# netstat -a
+#TSP#  20090108-165933 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0      0 *:FLS530_IO_X               *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:FLS510_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_S              *:*                         LISTEN      
+tcp        0      0 *:FLS510_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:FLS530_IO_A               *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_I              *:*                         LISTEN      
+tcp        0      0 *:FLS510_DQM                *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS520_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:52004                     *:*                         LISTEN      
+tcp        0      0 *:FLS530_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:52005                     *:*                         LISTEN      
+tcp        0      0 *:TST511_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:52006                     *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS530_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:PRE530_IO_X               *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:UNI532_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS520_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:UNI532_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:5802                      *:*                         LISTEN      
+tcp        0      0 *:FLS530_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:UNI532_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:TST530_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST500_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST530_IO_S               *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:FLS530_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_S              *:*                         LISTEN      
+tcp        0      0 *:5902                      *:*                         LISTEN      
+tcp        0      0 *:FLS520_DQM_X              *:*                         LISTEN      
+tcp        0      0 *:TST530_IO_A               *:*                         LISTEN      
+tcp        0      0 *:TST500_IO_A               *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_I              *:*                         LISTEN      
+tcp        0      0 *:sunrpc                    *:*                         LISTEN      
+tcp        0      0 *:TST540_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST500_CMD                *:*                         LISTEN      
+tcp        0      0 *:PRE530_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:TST530_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:42225                     *:*                         LISTEN      
+tcp        0      0 *:6002                      *:*                         LISTEN      
+tcp        0      0 *:FLS530_DQM_A              *:*                         LISTEN      
+tcp        0      0 *:TST540_IO_A               *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:FLS510_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST530_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_S              *:*                         LISTEN      
+tcp        0      0 *:TST540_BVS_X              *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_I              *:*                         LISTEN      
+tcp        0      0 *:TST520_IO_I               *:*                         LISTEN      
+tcp        0      0 *:PRE530_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:TST520_IO_A               *:*                         LISTEN      
+tcp        0      0 localhost.localdomain:ipp   *:*                         LISTEN      
+tcp        0      0 *:TST530_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST500_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST540_BVS_A              *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_X               *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_S               *:*                         LISTEN      
+tcp        0      0 *:smtp                      *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_I               *:*                         LISTEN      
+tcp        0      0 *:TST530_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:TST500_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:TST540_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST511_IO_A               *:*                         LISTEN      
+tcp        0      0 *:TST500_DQM                *:*                         LISTEN      
+tcp        0      0 *:PRE530_DQM_X              *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_X               *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_S               *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_I               *:*                         LISTEN      
+tcp        0      0 *:TST540_CDJ_A              *:*                         LISTEN      
+tcp        0      0 *:FLS520_IO_A               *:*                         LISTEN      
+tcp        0      0 *:TST540_DQM_A              *:*                         LISTEN      
+tcp        0      0 *:FLS510_CDJ_X              *:*                         LISTEN      
+tcp        0      0 *:TST530_DQM_A              *:*                         LISTEN      
+tcp        0      0 *:33119                     *:*                         LISTEN      
+tcp        0      0 localhost.localdomain:46935 localhost.local:TST520_IO_A ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55392 ESTABLISHED 
+tcp        0      0 casdlsup06:puprouter        casdlsup02:nfs              ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58970 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55399 ESTABLISHED 
+tcp        0      0 localhost.locald:TST500_DQM localhost.localdomain:35929 ESTABLISHED 
+tcp        0      0 localhost.local:TST520_IO_A localhost.localdomain:46935 ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmvhe.orsypgroup.co:4754 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55403 ESTABLISHED 
+tcp        0      0 casdlsup06:54713            casdlsup06:FLS520_IO_I      ESTABLISHED 
+tcp        0      0 casdlsup06:53527            casdlsup06:FLS520_IO_S      ESTABLISHED 
+tcp        0      0 casdlsup06:52004            casdlsup06:39109            ESTABLISHED 
+tcp        0      0 casdlsup06:52004            casdlsup06:39108            ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42351 ESTABLISHED 
+tcp        0      6 localhost.local:PRE530_IO_X localhost.localdomain:55408 ESTABLISHED 
+tcp        0      0 casdlsup06:TST540_IO_A      casdlsup06:36725            ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmvhe.orsypgroup.c:spocp ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_I localhost.localdomain:58439 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48248            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55416 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42360 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55417 ESTABLISHED 
+tcp        0      0 localhost.localdomain:44159 localhost.local:TST520_IO_I ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54341 ESTABLISHED 
+tcp        0      0 casdlsup06:36725            casdlsup06:TST540_IO_A      ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48253            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55423 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42367 ESTABLISHED 
+tcp        0      0 localhost.local:TST520_IO_I localhost.localdomain:44159 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_I localhost.localdomain:42304 ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42819 ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmwzh.orsypgroup.co:2212 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:59002 ESTABLISHED 
+tcp        0      0 localhost.localdomain:37102 localhost.local:FLS510_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42823 ESTABLISHED 
+tcp        0      0 casdlsup06:TST511_IO_X      calpmwzh.orsypgroup.:ipcore ESTABLISHED 
+tcp        0      0 casdlsup06:TST540_IO_X      casdlsup06:47947            ESTABLISHED 
+tcp        0      0 casdlsup06:47947            casdlsup06:TST540_IO_X      ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42827 ESTABLISHED 
+tcp        0      0 casdlsup06:PRE530_CDJ_A     support7:casanswmgmt        ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58997 ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_A localhost.localdomain:44366 ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_X localhost.localdomain:44400 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_A localhost.localdomain:58991 ESTABLISHED 
+tcp        0      0 localhost.localdomain:42823 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42819 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42827 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42815 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42810 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:42809 localhost.local:TST540_IO_X ESTABLISHED 
+tcp        0      0 localhost.locald:TST500_DQM localhost.localdomain:35943 ESTABLISHED 
+tcp        0      0 localhost.localdomain:58439 localhost.local:FLS520_IO_I ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55387 ESTABLISHED 
+tcp        0      0 localhost.loca:PRE530_DQM_X localhost.localdomain:60507 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55388 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48220            ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48221            ESTABLISHED 
+tcp        0      0 localhost.localdomain:44366 localhost.local:TST540_IO_A ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48222            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55391 ESTABLISHED 
+tcp        0      0 localhost.localdomain:39940 localhost.local:FLS520_IO_A ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54300 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_CDJ_X     casdlsup06:57382            ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_S      casdlsup06:53527            ESTABLISHED 
+tcp        0      0 casdlsup06:UNI532_CDJ_X     casdlsup06:47914            ESTABLISHED 
+tcp        0      0 casdlsup06:UNI532_CDJ_S     casdlsup06:59697            ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42809 ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42810 ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_A localhost.localdomain:39940 ESTABLISHED 
+tcp        0      0 localhost.localdomain:33688 localhost.local:FLS520_IO_S ESTABLISHED 
+tcp        0      0 localhost.local:TST540_IO_X localhost.localdomain:42815 ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54334 ESTABLISHED 
+tcp        0      0 casdlsup06:48580            casdlsup06:FLS520_IO_X      ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40199 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40205 ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54322 ESTABLISHED 
+tcp        0      0 localhost.localdomain:44400 localhost.local:FLS520_IO_X ESTABLISHED 
+tcp        0      0 casdlsup06:UNI532_CDJ_I     casdlsup06:37394            ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40211 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_A      casdlsup06:48148            ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_DQM_A     casdlsup06:41492            ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_X localhost.localdomain:54313 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_A      casdlsup06:48150            ESTABLISHED 
+tcp        0      0 casdlsup06:42491            casdlsup06:FLS520_IO_A      ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43490 ESTABLISHED 
+tcp        0      0 casdlsup06:59697            casdlsup06:UNI532_CDJ_S     ESTABLISHED 
+tcp        0      0 localhost.localdomain:60911 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 casdlsup06:58110            casdlsup06:PRE530_IO_X      ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_X localhost.localdomain:40170 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:60911 ESTABLISHED 
+tcp        0      0 casdlsup06:48306            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48258            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48267            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48248            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48253            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48220            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48221            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:48222            casdlsup06:TST530_IO_X      ESTABLISHED 
+tcp        0      0 casdlsup06:FLS530_IO_A      casdlsup06:45298            ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_A localhost.localdomain:55500 ESTABLISHED 
+tcp        0      0 casdlsup06:48150            casdlsup06:TST530_IO_A      ESTABLISHED 
+tcp        0      0 casdlsup06:48148            casdlsup06:TST530_IO_A      ESTABLISHED 
+tcp        0      0 localhost.localdomain:60507 localhost.loca:PRE530_DQM_X ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_X      casdlsup06:48580            ESTABLISHED 
+tcp        0      0 casdlsup06:41492            casdlsup06:TST530_DQM_A     ESTABLISHED 
+tcp        0      0 casdlsup06:PRE530_IO_X      casdlsup06:58110            ESTABLISHED 
+tcp        0      0 localhost.localdomain:60607 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60602 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60596 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60593 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60587 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60582 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60578 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:60573 localhost.local:TST500_IO_X ESTABLISHED 
+tcp        0      0 casdlsup06:35123            support7:TST530_CDJ_X       ESTABLISHED 
+tcp        0      0 localhost.localdomain:55500 localhost.local:TST511_IO_A ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_A      casdlsup06:42491            ESTABLISHED 
+tcp        0      0 casdlsup06:FLS530_IO_X      casdlsup06:59592            ESTABLISHED 
+tcp        0      0 casdlsup06:59592            casdlsup06:FLS530_IO_X      ESTABLISHED 
+tcp        0      0 localhost.localdomain:58997 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 localhost.localdomain:59002 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 localhost.localdomain:58991 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 casdlsup06:40787            support5:TST530_CDJ_X       ESTABLISHED 
+tcp        0      0 localhost.localdomain:58970 localhost.local:TST500_IO_A ESTABLISHED 
+tcp        0      0 localhost.localdomain:54341 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54322 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54334 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54313 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:54300 localhost.local:TST511_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55445 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55452 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55429 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55436 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55473 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55458 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55466 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55387 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55388 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55391 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0     50 localhost.localdomain:55408 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55416 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55417 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55423 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55392 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55399 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:55403 localhost.local:PRE530_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:FLS510_IO_X localhost.localdomain:37102 ESTABLISHED 
+tcp        0      0 localhost.local:FLS530_IO_X localhost.localdomain:46547 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43475 ESTABLISHED 
+tcp        0      0 localhost.local:FLS530_IO_X localhost.localdomain:46548 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43483 ESTABLISHED 
+tcp        0      0 casdlsup06:39109            casdlsup06:52004            ESTABLISHED 
+tcp        0      0 casdlsup06:39108            casdlsup06:52004            ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_S localhost.localdomain:37277 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55458 ESTABLISHED 
+tcp        0      0 localhost.localdomain:43409 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.localdomain:43490 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60573 ESTABLISHED 
+tcp        0      0 localhost.localdomain:43475 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.localdomain:43483 localhost.loca:UNI532_CDJ_S ESTABLISHED 
+tcp        0      0 localhost.localdomain:48804 localhost.local:TST511_IO_I ESTABLISHED 
+tcp        0      0 localhost.local:FLS520_IO_S localhost.localdomain:33688 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55466 ESTABLISHED 
+tcp        0      0 localhost.localdomain:42351 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.localdomain:42367 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.localdomain:42360 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.localdomain:42304 localhost.loca:UNI532_CDJ_I ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55473 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48306            ESTABLISHED 
+tcp        0      0 casdlsup06:47914            casdlsup06:UNI532_CDJ_X     ESTABLISHED 
+tcp        0      0 localhost.local:FLS530_IO_A localhost.localdomain:44470 ESTABLISHED 
+tcp        0      0 casdlsup06:57382            casdlsup06:TST530_CDJ_X     ESTABLISHED 
+tcp        0      0 localhost.localdomain:35929 localhost.locald:TST500_DQM ESTABLISHED 
+tcp        0      0 localhost.localdomain:35943 localhost.locald:TST500_DQM ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_CDJ_X     support7:mps-raft           ESTABLISHED 
+tcp        0      0 localhost.localdomain:52004 localhost.localdomain:54551 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60607 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48258            ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60602 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55429 ESTABLISHED 
+tcp        0      0 casdlsup06:FLS520_IO_I      casdlsup06:54713            ESTABLISHED 
+tcp        0      0 localhost.localdomain:37277 localhost.local:TST511_IO_S ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60596 ESTABLISHED 
+tcp        0      0 casdlsup06:TST530_IO_X      casdlsup06:48267            ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55436 ESTABLISHED 
+tcp        0      0 localhost.localdomain:44470 localhost.local:FLS530_IO_A ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60593 ESTABLISHED 
+tcp        0      0 localhost.localdomain:54551 localhost.localdomain:52004 ESTABLISHED 
+tcp        0      0 localhost.loca:UNI532_CDJ_S localhost.localdomain:43409 ESTABLISHED 
+tcp        0      0 casdlsup06:45298            casdlsup06:FLS530_IO_A      ESTABLISHED 
+tcp        0      0 localhost.localdomain:40211 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:40199 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:40205 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.localdomain:46548 localhost.local:FLS530_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55445 ESTABLISHED 
+tcp        0      0 localhost.localdomain:46547 localhost.local:FLS530_IO_X ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60587 ESTABLISHED 
+tcp        0      0 localhost.localdomain:40170 localhost.loca:UNI532_CDJ_X ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60582 ESTABLISHED 
+tcp        0      0 casdlsup06:37394            casdlsup06:UNI532_CDJ_I     ESTABLISHED 
+tcp        0      0 localhost.local:TST511_IO_I localhost.localdomain:48804 ESTABLISHED 
+tcp        0      0 localhost.local:PRE530_IO_X localhost.localdomain:55452 ESTABLISHED 
+tcp        0      0 localhost.local:TST500_IO_X localhost.localdomain:60578 ESTABLISHED 
+tcp        0      0 localhost.localdomain:8005  *:*                         LISTEN      
+tcp        0      0 *:casdlsup06_REP_X          *:*                         LISTEN      
+tcp        0      0 *:8009                      *:*                         LISTEN      
+tcp        0      0 *:webcache                  *:*                         LISTEN      
+tcp        0      0 *:6002                      *:*                         LISTEN      
+tcp        0      0 *:ssh                       *:*                         LISTEN      
+tcp        0      0 *:4184                      *:*                         LISTEN      
+tcp        0      0 casdlsup06:4184             support7:knetd              ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:ah-esp-encap       CLOSE_WAIT  
+tcp        0      0 casdlsup06:ssh              calpmlxu.orsyp:mcns-tel-ret ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:rnrp               CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:crmsbits           CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:g-talk             CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:dslremote-mgmt     CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:attachmate-s2s     CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:cas                CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:venus-se           CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:2426               CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:fjitsuappmgr       CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:kofax-svr          CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:orion              CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:jediserver         CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:trc-netpoll        CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:iec-104            CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:taskmaster2000     CLOSE_WAIT  
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgroup.c:wkars ESTABLISHED 
+tcp        0      0 casdlsup06:43867            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:seaodbc            CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:taskman-port       CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:mti-tcs-comm       CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:qip-msgd           CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:ace-svr-prop       CLOSE_WAIT  
+tcp        1      0 casdlsup06:47078            casdlsup06:TST530_IO_X      CLOSE_WAIT  
+tcp        1      0 casdlsup06:47077            casdlsup06:TST530_IO_X      CLOSE_WAIT  
+tcp        1      0 casdlsup06:47076            casdlsup06:TST530_IO_X      CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:ace-server         CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:vitalanalysis      CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:aker-cdp           CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:c3                 CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:wago-io-system     CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:indx-dds           CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:madge-ltd          CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:sybasedbsynch      CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:2438               CLOSE_WAIT  
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgrou:cadsi-lm ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:pxc-epmap          CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:codasrv-se         CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:codasrv            CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:ovwdb              CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:bues_service       CLOSE_WAIT  
+tcp        0      0 casdlsup06:37172            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        0      0 casdlsup06:37161            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        0      0 casdlsup06:37158            orsyp-d85f3f9de.or:ncube-lm ESTABLISHED 
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:dtn1               CLOSE_WAIT  
+tcp        1      0 casdlsup06:casdlsup06_REP_X support7:spearway           CLOSE_WAIT  
+tcp        0      0 casdlsup06:ssh              calpmlxu.orsypgroup.co:4382 ESTABLISHED 
+tcp        0      0 casdlsup06:ssh              calpmwzh.orsypgrou:writesrv ESTABLISHED 
+tcp        0      0 casdlsup06:4184             support7:sdfunc             ESTABLISHED 
+tcp        0      0 casdlsup06:4184             support7:2047               ESTABLISHED 
+udp        0      0 *:filenet-tms               *:*                                     
+udp        0      0 *:filenet-rpc               *:*                                     
+udp        0      0 *:filenet-rmi               *:*                                     
+udp        0      0 *:xdmcp                     *:*                                     
+udp        0      0 *:959                       *:*                                     
+udp        0      0 *:mdns                      *:*                                     
+udp        0      0 *:sunrpc                    *:*                                     
+udp        0      0 *:ipp                       *:*                                     
+udp        0      0 casdlsup06:ntp              *:*                                     
+udp        0      0 localhost.localdomain:ntp   *:*                                     
+udp        0      0 *:ntp                       *:*                                     
+udp        0      0 *:filenet-nch               *:*                                     
+udp        0      0 *:ntp                       *:*                                     
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING     5534   /tmp/.font-unix/fs7100
+unix  2      [ ACC ]     STREAM     LISTENING     5262   public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     5656   /tmp/.X11-unix/X2
+unix  2      [ ACC ]     STREAM     LISTENING     7496   @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     7207   /tmp/ksocket-root/kdeinit__2
+unix  2      [ ACC ]     STREAM     LISTENING     7209   /tmp/ksocket-root/kdeinit-:2
+unix  2      [ ACC ]     STREAM     LISTENING     7220   /tmp/.gdm_socket
+unix  2      [ ACC ]     STREAM     LISTENING     7370   /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     7385   /tmp/.ICE-unix/dcop2371-1229524149
+unix  2      [ ACC ]     STREAM     LISTENING     7454   /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  2      [ ACC ]     STREAM     LISTENING     7558   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  2      [ ACC ]     STREAM     LISTENING     6156   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  2      [ ACC ]     STREAM     LISTENING     7563   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  2      [ ACC ]     STREAM     LISTENING     7584   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  2      [ ACC ]     STREAM     LISTENING     7619   /tmp/.ICE-unix/2420
+unix  2      [ ACC ]     STREAM     LISTENING     7776   /tmp/ksocket-root/casdlsup06.orsypgroup.com-0980-49490cbe
+unix  2      [ ACC ]     STREAM     LISTENING     5269   private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     5273   private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     5277   private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     5281   private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     5285   private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     5289   private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     5293   public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     5297   private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     5301   private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     5305   private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     5309   public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     5313   private/error
+unix  2      [ ACC ]     STREAM     LISTENING     5317   private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     5321   private/local
+unix  25     [ ]         DGRAM                    4435   /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     5325   private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     5329   private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5333   private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     5337   private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     5876   /var/run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     5341   private/maildrop
+unix  2      [ ACC ]     STREAM     LISTENING     5345   private/old-cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5349   private/cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5353   private/uucp
+unix  2      [ ACC ]     STREAM     LISTENING     5357   private/ifmail
+unix  2      [ ACC ]     STREAM     LISTENING     5361   private/bsmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5472   /dev/gpmctl
+unix  2      [ ]         DGRAM                    1111   @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     6157   @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  2      [ ]         DGRAM                    6165   @/org/freedesktop/hal/udev_event
+unix  2      [ ACC ]     STREAM     LISTENING     4664   /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     4713   /var/run/sdp
+unix  2      [ ACC ]     STREAM     LISTENING     4955   /var/run/acpid.socket
+unix  2      [ ]         DGRAM                    2389246 
+unix  2      [ ]         DGRAM                    2389160 
+unix  3      [ ]         STREAM     CONNECTED     2389157 
+unix  3      [ ]         STREAM     CONNECTED     2389156 
+unix  2      [ ]         DGRAM                    2387678 
+unix  2      [ ]         DGRAM                    2358273 
+unix  2      [ ]         DGRAM                    2323554 
+unix  2      [ ]         DGRAM                    2323466 
+unix  3      [ ]         STREAM     CONNECTED     2323463 
+unix  3      [ ]         STREAM     CONNECTED     2323462 
+unix  2      [ ]         DGRAM                    2320644 
+unix  3      [ ]         STREAM     CONNECTED     2320643 
+unix  3      [ ]         STREAM     CONNECTED     2320642 
+unix  2      [ ]         DGRAM                    2319198 
+unix  2      [ ]         DGRAM                    2319112 
+unix  3      [ ]         STREAM     CONNECTED     2319109 
+unix  3      [ ]         STREAM     CONNECTED     2319108 
+unix  2      [ ]         DGRAM                    2318957 
+unix  2      [ ]         DGRAM                    2101638 
+unix  3      [ ]         STREAM     CONNECTED     2101637 
+unix  3      [ ]         STREAM     CONNECTED     2101636 
+unix  3      [ ]         STREAM     CONNECTED     8154   /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     8153   
+unix  3      [ ]         STREAM     CONNECTED     7811   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7810   
+unix  3      [ ]         STREAM     CONNECTED     7804   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7803   
+unix  3      [ ]         STREAM     CONNECTED     7787   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7786   
+unix  3      [ ]         STREAM     CONNECTED     7785   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7784   
+unix  3      [ ]         STREAM     CONNECTED     7756   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7755   
+unix  3      [ ]         STREAM     CONNECTED     7752   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7751   
+unix  3      [ ]         STREAM     CONNECTED     7750   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7749   
+unix  3      [ ]         STREAM     CONNECTED     7745   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7744   
+unix  3      [ ]         STREAM     CONNECTED     7721   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7720   
+unix  3      [ ]         STREAM     CONNECTED     7719   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7718   
+unix  3      [ ]         STREAM     CONNECTED     7690   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7689   
+unix  3      [ ]         STREAM     CONNECTED     7682   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7681   
+unix  3      [ ]         STREAM     CONNECTED     7674   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7673   
+unix  3      [ ]         STREAM     CONNECTED     7672   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7671   
+unix  3      [ ]         STREAM     CONNECTED     7666   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7665   
+unix  3      [ ]         STREAM     CONNECTED     7661   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7660   
+unix  3      [ ]         STREAM     CONNECTED     7652   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7651   
+unix  3      [ ]         STREAM     CONNECTED     7648   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7647   
+unix  3      [ ]         STREAM     CONNECTED     7644   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7643   
+unix  3      [ ]         STREAM     CONNECTED     7638   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7637   
+unix  3      [ ]         STREAM     CONNECTED     7636   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7635   
+unix  3      [ ]         STREAM     CONNECTED     7630   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7629   
+unix  3      [ ]         STREAM     CONNECTED     7627   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7626   
+unix  3      [ ]         STREAM     CONNECTED     7625   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7624   
+unix  3      [ ]         STREAM     CONNECTED     7618   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7617   
+unix  3      [ ]         STREAM     CONNECTED     7612   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7611   
+unix  3      [ ]         STREAM     CONNECTED     7605   /tmp/ksocket-root/kdeinit__2
+unix  3      [ ]         STREAM     CONNECTED     7604   
+unix  3      [ ]         STREAM     CONNECTED     7623   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7592   
+unix  3      [ ]         STREAM     CONNECTED     7589   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7588   
+unix  3      [ ]         STREAM     CONNECTED     7587   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7586   
+unix  3      [ ]         STREAM     CONNECTED     7583   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7582   
+unix  3      [ ]         STREAM     CONNECTED     7581   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7580   
+unix  3      [ ]         STREAM     CONNECTED     7579   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7578   
+unix  3      [ ]         STREAM     CONNECTED     7566   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7565   
+unix  3      [ ]         STREAM     CONNECTED     7562   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7561   
+unix  3      [ ]         STREAM     CONNECTED     7543   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7542   
+unix  3      [ ]         STREAM     CONNECTED     7513   /tmp/.font-unix/fs7100
+unix  3      [ ]         STREAM     CONNECTED     7512   
+unix  3      [ ]         STREAM     CONNECTED     7498   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7497   
+unix  3      [ ]         STREAM     CONNECTED     7486   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7485   
+unix  3      [ ]         STREAM     CONNECTED     7482   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7481   
+unix  3      [ ]         STREAM     CONNECTED     7457   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7456   
+unix  3      [ ]         STREAM     CONNECTED     7428   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7427   
+unix  3      [ ]         STREAM     CONNECTED     7396   
+unix  3      [ ]         STREAM     CONNECTED     7395   
+unix  3      [ ]         STREAM     CONNECTED     7517   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7372   
+unix  3      [ ]         STREAM     CONNECTED     6992   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     6991   
+unix  3      [ ]         STREAM     CONNECTED     6939   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6938   
+unix  3      [ ]         STREAM     CONNECTED     6896   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6895   
+unix  3      [ ]         STREAM     CONNECTED     6846   /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     6845   
+unix  3      [ ]         STREAM     CONNECTED     6865   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6840   
+unix  3      [ ]         STREAM     CONNECTED     6160   @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  3      [ ]         STREAM     CONNECTED     6159   
+unix  3      [ ]         STREAM     CONNECTED     5924   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5923   
+unix  3      [ ]         STREAM     CONNECTED     5879   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5878   
+unix  3      [ ]         STREAM     CONNECTED     5873   
+unix  3      [ ]         STREAM     CONNECTED     5872   
+unix  2      [ ]         DGRAM                    5870   
+unix  3      [ ]         STREAM     CONNECTED     5694   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     5693   
+unix  2      [ ]         DGRAM                    5474   
+unix  2      [ ]         DGRAM                    5451   
+unix  2      [ ]         DGRAM                    5432   
+unix  2      [ ]         DGRAM                    5375   
+unix  3      [ ]         STREAM     CONNECTED     5364   
+unix  3      [ ]         STREAM     CONNECTED     5363   
+unix  3      [ ]         STREAM     CONNECTED     5360   
+unix  3      [ ]         STREAM     CONNECTED     5359   
+unix  3      [ ]         STREAM     CONNECTED     5356   
+unix  3      [ ]         STREAM     CONNECTED     5355   
+unix  3      [ ]         STREAM     CONNECTED     5352   
+unix  3      [ ]         STREAM     CONNECTED     5351   
+unix  3      [ ]         STREAM     CONNECTED     5348   
+unix  3      [ ]         STREAM     CONNECTED     5347   
+unix  3      [ ]         STREAM     CONNECTED     5344   
+unix  3      [ ]         STREAM     CONNECTED     5343   
+unix  3      [ ]         STREAM     CONNECTED     5340   
+unix  3      [ ]         STREAM     CONNECTED     5339   
+unix  3      [ ]         STREAM     CONNECTED     5336   
+unix  3      [ ]         STREAM     CONNECTED     5335   
+unix  3      [ ]         STREAM     CONNECTED     5332   
+unix  3      [ ]         STREAM     CONNECTED     5331   
+unix  3      [ ]         STREAM     CONNECTED     5328   
+unix  3      [ ]         STREAM     CONNECTED     5327   
+unix  3      [ ]         STREAM     CONNECTED     5324   
+unix  3      [ ]         STREAM     CONNECTED     5323   
+unix  3      [ ]         STREAM     CONNECTED     5320   
+unix  3      [ ]         STREAM     CONNECTED     5319   
+unix  3      [ ]         STREAM     CONNECTED     5316   
+unix  3      [ ]         STREAM     CONNECTED     5315   
+unix  3      [ ]         STREAM     CONNECTED     5312   
+unix  3      [ ]         STREAM     CONNECTED     5311   
+unix  3      [ ]         STREAM     CONNECTED     5308   
+unix  3      [ ]         STREAM     CONNECTED     5307   
+unix  3      [ ]         STREAM     CONNECTED     5304   
+unix  3      [ ]         STREAM     CONNECTED     5303   
+unix  3      [ ]         STREAM     CONNECTED     5300   
+unix  3      [ ]         STREAM     CONNECTED     5299   
+unix  3      [ ]         STREAM     CONNECTED     5296   
+unix  3      [ ]         STREAM     CONNECTED     5295   
+unix  3      [ ]         STREAM     CONNECTED     5292   
+unix  3      [ ]         STREAM     CONNECTED     5291   
+unix  3      [ ]         STREAM     CONNECTED     5288   
+unix  3      [ ]         STREAM     CONNECTED     5287   
+unix  3      [ ]         STREAM     CONNECTED     5284   
+unix  3      [ ]         STREAM     CONNECTED     5283   
+unix  3      [ ]         STREAM     CONNECTED     5280   
+unix  3      [ ]         STREAM     CONNECTED     5279   
+unix  3      [ ]         STREAM     CONNECTED     5276   
+unix  3      [ ]         STREAM     CONNECTED     5275   
+unix  3      [ ]         STREAM     CONNECTED     5272   
+unix  3      [ ]         STREAM     CONNECTED     5271   
+unix  3      [ ]         STREAM     CONNECTED     5268   
+unix  3      [ ]         STREAM     CONNECTED     5267   
+unix  3      [ ]         STREAM     CONNECTED     5265   
+unix  3      [ ]         STREAM     CONNECTED     5264   
+unix  3      [ ]         STREAM     CONNECTED     5261   
+unix  3      [ ]         STREAM     CONNECTED     5260   
+unix  3      [ ]         STREAM     CONNECTED     5253   
+unix  3      [ ]         STREAM     CONNECTED     5252   
+unix  2      [ ]         DGRAM                    5204   
+unix  2      [ ]         DGRAM                    5034   
+unix  2      [ ]         DGRAM                    4803   
+unix  3      [ ]         STREAM     CONNECTED     4706   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     4705   
+unix  2      [ ]         DGRAM                    4692   
+unix  2      [ ]         DGRAM                    4686   
+unix  3      [ ]         STREAM     CONNECTED     4667   
+unix  3      [ ]         STREAM     CONNECTED     4666   
+unix  3      [ ]         STREAM     CONNECTED     4632   
+unix  4      [ ]         STREAM     CONNECTED     4631   
+unix  2      [ ]         DGRAM                    4510   
+unix  2      [ ]         DGRAM                    4443   
+#CMD# netstat -na
+#TSP#  20090108-165935 
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State      
+tcp        0      0 0.0.0.0:24640               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24545               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24513               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24546               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24514               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24643               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24547               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24515               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24451               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24548               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24452               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:52004               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24645               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24453               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:52005               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24454               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:52006               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24551               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24648               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24552               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24680               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24553               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24681               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24554               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24682               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:5802                0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24651               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24683               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24620               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24140               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24621               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24685               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24654               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24686               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:5902                0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24559               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24623               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24143               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24687               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:111                 0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24720               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24144               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24688               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24625               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:42225               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:6002                0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24659               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24723               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24691               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24500               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24628               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24692               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24725               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24693               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24502               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24694               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24503               0.0.0.0:*                   LISTEN      
+tcp        0      0 127.0.0.1:631               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24631               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24151               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24728               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24440               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24441               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:25                  0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24442               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24634               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24154               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24731               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24443               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24155               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24699               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24540               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24541               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24542               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24734               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24543               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24735               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24511               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:24639               0.0.0.0:*                   LISTEN      
+tcp        0      0 0.0.0.0:33119               0.0.0.0:*                   LISTEN      
+tcp        0      0 127.0.0.1:46935             127.0.0.1:24503             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55392             ESTABLISHED 
+tcp        0      0 192.168.110.206:999         192.168.110.205:2049        ESTABLISHED 
+tcp        0      0 127.0.0.1:24143             127.0.0.1:58970             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55399             ESTABLISHED 
+tcp        0      0 127.0.0.1:24155             127.0.0.1:35929             ESTABLISHED 
+tcp        0      0 127.0.0.1:24503             127.0.0.1:46935             ESTABLISHED 
+tcp        0      0 192.168.110.206:24440       192.168.110.9:4754          ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55403             ESTABLISHED 
+tcp        0      0 192.168.110.206:54713       192.168.110.206:24542       ESTABLISHED 
+tcp        0      0 192.168.110.206:53527       192.168.110.206:24541       ESTABLISHED 
+tcp        0      0 192.168.110.206:52004       192.168.110.206:39109       ESTABLISHED 
+tcp        0      0 192.168.110.206:52004       192.168.110.206:39108       ESTABLISHED 
+tcp        0      0 127.0.0.1:24683             127.0.0.1:42351             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55408             ESTABLISHED 
+tcp        0      0 192.168.110.206:24723       192.168.110.206:36725       ESTABLISHED 
+tcp        0      0 192.168.110.206:24440       192.168.110.9:4751          ESTABLISHED 
+tcp        0      0 127.0.0.1:24542             127.0.0.1:58439             ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48248       ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55416             ESTABLISHED 
+tcp        0      0 127.0.0.1:24683             127.0.0.1:42360             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55417             ESTABLISHED 
+tcp        0      0 127.0.0.1:44159             127.0.0.1:24502             ESTABLISHED 
+tcp        0      0 127.0.0.1:24440             127.0.0.1:54341             ESTABLISHED 
+tcp        0      0 192.168.110.206:36725       192.168.110.206:24723       ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48253       ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55423             ESTABLISHED 
+tcp        0      0 127.0.0.1:24683             127.0.0.1:42367             ESTABLISHED 
+tcp        0      0 127.0.0.1:24502             127.0.0.1:44159             ESTABLISHED 
+tcp        0      0 127.0.0.1:24683             127.0.0.1:42304             ESTABLISHED 
+tcp        0      0 127.0.0.1:24720             127.0.0.1:42819             ESTABLISHED 
+tcp        0      0 192.168.110.206:24440       192.168.110.17:2212         ESTABLISHED 
+tcp        0      0 127.0.0.1:24143             127.0.0.1:59002             ESTABLISHED 
+tcp        0      0 127.0.0.1:37102             127.0.0.1:24500             ESTABLISHED 
+tcp        0      0 127.0.0.1:24720             127.0.0.1:42823             ESTABLISHED 
+tcp        0      0 192.168.110.206:24440       192.168.110.17:2215         ESTABLISHED 
+tcp        0      0 192.168.110.206:24720       192.168.110.206:47947       ESTABLISHED 
+tcp        0      0 192.168.110.206:47947       192.168.110.206:24720       ESTABLISHED 
+tcp        0      0 127.0.0.1:24720             127.0.0.1:42827             ESTABLISHED 
+tcp        0      0 192.168.110.206:24694       192.168.110.208:3669        ESTABLISHED 
+tcp        0      0 127.0.0.1:24143             127.0.0.1:58997             ESTABLISHED 
+tcp        0      0 127.0.0.1:24723             127.0.0.1:44366             ESTABLISHED 
+tcp        0      0 127.0.0.1:24540             127.0.0.1:44400             ESTABLISHED 
+tcp        0      0 127.0.0.1:24143             127.0.0.1:58991             ESTABLISHED 
+tcp        0      0 127.0.0.1:42823             127.0.0.1:24720             ESTABLISHED 
+tcp        0      0 127.0.0.1:42819             127.0.0.1:24720             ESTABLISHED 
+tcp        0      0 127.0.0.1:42827             127.0.0.1:24720             ESTABLISHED 
+tcp        0      0 127.0.0.1:42815             127.0.0.1:24720             ESTABLISHED 
+tcp        0      0 127.0.0.1:42810             127.0.0.1:24720             ESTABLISHED 
+tcp        0      0 127.0.0.1:42809             127.0.0.1:24720             ESTABLISHED 
+tcp        0      0 127.0.0.1:24155             127.0.0.1:35943             ESTABLISHED 
+tcp        0      0 127.0.0.1:58439             127.0.0.1:24542             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55387             ESTABLISHED 
+tcp        0      0 127.0.0.1:24699             127.0.0.1:60507             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55388             ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48220       ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48221       ESTABLISHED 
+tcp        0      0 127.0.0.1:44366             127.0.0.1:24723             ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48222       ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55391             ESTABLISHED 
+tcp        0      0 127.0.0.1:39940             127.0.0.1:24543             ESTABLISHED 
+tcp        0      0 127.0.0.1:24440             127.0.0.1:54300             ESTABLISHED 
+tcp        0      1 192.168.110.206:36837       192.168.2.1:24680           SYN_SENT    
+tcp        0      0 192.168.110.206:24631       192.168.110.206:57382       ESTABLISHED 
+tcp        0      0 192.168.110.206:24541       192.168.110.206:53527       ESTABLISHED 
+tcp        0      0 192.168.110.206:24681       192.168.110.206:47914       ESTABLISHED 
+tcp        0      0 192.168.110.206:24682       192.168.110.206:59697       ESTABLISHED 
+tcp        0      0 127.0.0.1:24720             127.0.0.1:42809             ESTABLISHED 
+tcp        0      0 127.0.0.1:24720             127.0.0.1:42810             ESTABLISHED 
+tcp        0      0 127.0.0.1:24543             127.0.0.1:39940             ESTABLISHED 
+tcp        0      0 127.0.0.1:33688             127.0.0.1:24541             ESTABLISHED 
+tcp        0      0 127.0.0.1:24720             127.0.0.1:42815             ESTABLISHED 
+tcp        0      0 127.0.0.1:24440             127.0.0.1:54334             ESTABLISHED 
+tcp        0      0 192.168.110.206:48580       192.168.110.206:24540       ESTABLISHED 
+tcp        0      0 127.0.0.1:24681             127.0.0.1:40199             ESTABLISHED 
+tcp        0      0 127.0.0.1:24681             127.0.0.1:40205             ESTABLISHED 
+tcp        0      0 127.0.0.1:24440             127.0.0.1:54322             ESTABLISHED 
+tcp        0      0 127.0.0.1:44400             127.0.0.1:24540             ESTABLISHED 
+tcp        0      0 192.168.110.206:24683       192.168.110.206:37394       ESTABLISHED 
+tcp        0      0 127.0.0.1:24681             127.0.0.1:40211             ESTABLISHED 
+tcp        0      0 192.168.110.206:24623       192.168.110.206:48148       ESTABLISHED 
+tcp        0      0 192.168.110.206:24639       192.168.110.206:41492       ESTABLISHED 
+tcp        0      0 127.0.0.1:24440             127.0.0.1:54313             ESTABLISHED 
+tcp        0      0 192.168.110.206:24623       192.168.110.206:48150       ESTABLISHED 
+tcp        0      0 192.168.110.206:42491       192.168.110.206:24543       ESTABLISHED 
+tcp        0      0 127.0.0.1:24682             127.0.0.1:43490             ESTABLISHED 
+tcp        0      0 192.168.110.206:59697       192.168.110.206:24682       ESTABLISHED 
+tcp        0      0 127.0.0.1:60911             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 192.168.110.206:58110       192.168.110.206:24680       ESTABLISHED 
+tcp        0      0 127.0.0.1:24681             127.0.0.1:40170             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:60911             ESTABLISHED 
+tcp        0      0 192.168.110.206:48306       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48258       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48267       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48248       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48253       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48220       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48221       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:48222       192.168.110.206:24620       ESTABLISHED 
+tcp        0      0 192.168.110.206:24643       192.168.110.206:45298       ESTABLISHED 
+tcp        0      0 127.0.0.1:24443             127.0.0.1:55500             ESTABLISHED 
+tcp        0      0 192.168.110.206:48150       192.168.110.206:24623       ESTABLISHED 
+tcp        0      0 192.168.110.206:48148       192.168.110.206:24623       ESTABLISHED 
+tcp        0      0 127.0.0.1:60507             127.0.0.1:24699             ESTABLISHED 
+tcp        0      0 192.168.110.206:24540       192.168.110.206:48580       ESTABLISHED 
+tcp        0      0 192.168.110.206:41492       192.168.110.206:24639       ESTABLISHED 
+tcp        0      0 192.168.110.206:24680       192.168.110.206:58110       ESTABLISHED 
+tcp        0      0 127.0.0.1:60607             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60602             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60596             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60593             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60587             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60582             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60578             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 127.0.0.1:60573             127.0.0.1:24140             ESTABLISHED 
+tcp        0      0 192.168.110.206:35123       192.168.110.208:24631       ESTABLISHED 
+tcp        0      0 127.0.0.1:55500             127.0.0.1:24443             ESTABLISHED 
+tcp        0      0 192.168.110.206:24543       192.168.110.206:42491       ESTABLISHED 
+tcp        0      0 192.168.110.206:24640       192.168.110.206:59592       ESTABLISHED 
+tcp        0      0 192.168.110.206:59592       192.168.110.206:24640       ESTABLISHED 
+tcp        0      0 127.0.0.1:58997             127.0.0.1:24143             ESTABLISHED 
+tcp        0      0 127.0.0.1:59002             127.0.0.1:24143             ESTABLISHED 
+tcp        0      0 127.0.0.1:58991             127.0.0.1:24143             ESTABLISHED 
+tcp        0      0 192.168.110.206:40787       192.168.110.207:24631       ESTABLISHED 
+tcp        0      0 127.0.0.1:58970             127.0.0.1:24143             ESTABLISHED 
+tcp        0      0 127.0.0.1:54341             127.0.0.1:24440             ESTABLISHED 
+tcp        0      0 127.0.0.1:54322             127.0.0.1:24440             ESTABLISHED 
+tcp        0      0 127.0.0.1:54334             127.0.0.1:24440             ESTABLISHED 
+tcp        0      0 127.0.0.1:54313             127.0.0.1:24440             ESTABLISHED 
+tcp        0      0 127.0.0.1:54300             127.0.0.1:24440             ESTABLISHED 
+tcp        0      0 127.0.0.1:55445             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55452             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55429             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55436             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55473             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55458             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55466             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55387             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55388             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55391             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55408             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55416             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55417             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55423             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55392             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55399             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:55403             127.0.0.1:24680             ESTABLISHED 
+tcp        0      0 127.0.0.1:24500             127.0.0.1:37102             ESTABLISHED 
+tcp        0      0 127.0.0.1:24640             127.0.0.1:46547             ESTABLISHED 
+tcp        0      0 127.0.0.1:24682             127.0.0.1:43475             ESTABLISHED 
+tcp        0      0 127.0.0.1:24640             127.0.0.1:46548             ESTABLISHED 
+tcp        0      0 127.0.0.1:24682             127.0.0.1:43483             ESTABLISHED 
+tcp        0      0 192.168.110.206:39109       192.168.110.206:52004       ESTABLISHED 
+tcp        0      0 192.168.110.206:39108       192.168.110.206:52004       ESTABLISHED 
+tcp        0      0 127.0.0.1:24441             127.0.0.1:37277             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55458             ESTABLISHED 
+tcp        0      0 127.0.0.1:43409             127.0.0.1:24682             ESTABLISHED 
+tcp        0      0 127.0.0.1:43490             127.0.0.1:24682             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60573             ESTABLISHED 
+tcp        0      0 127.0.0.1:43475             127.0.0.1:24682             ESTABLISHED 
+tcp        0      0 127.0.0.1:43483             127.0.0.1:24682             ESTABLISHED 
+tcp        0      0 127.0.0.1:48804             127.0.0.1:24442             ESTABLISHED 
+tcp        0      0 127.0.0.1:24541             127.0.0.1:33688             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55466             ESTABLISHED 
+tcp        0      0 127.0.0.1:42351             127.0.0.1:24683             ESTABLISHED 
+tcp        0      0 127.0.0.1:42367             127.0.0.1:24683             ESTABLISHED 
+tcp        0      0 127.0.0.1:42360             127.0.0.1:24683             ESTABLISHED 
+tcp        0      0 127.0.0.1:42304             127.0.0.1:24683             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55473             ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48306       ESTABLISHED 
+tcp        0      0 192.168.110.206:47914       192.168.110.206:24681       ESTABLISHED 
+tcp        0      0 127.0.0.1:24643             127.0.0.1:44470             ESTABLISHED 
+tcp        0      0 192.168.110.206:57382       192.168.110.206:24631       ESTABLISHED 
+tcp        0      0 127.0.0.1:35929             127.0.0.1:24155             ESTABLISHED 
+tcp        0      0 127.0.0.1:35943             127.0.0.1:24155             ESTABLISHED 
+tcp        0      0 192.168.110.206:24631       192.168.110.208:1700        ESTABLISHED 
+tcp        0      0 127.0.0.1:52004             127.0.0.1:54551             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60607             ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48258       ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60602             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55429             ESTABLISHED 
+tcp        0      0 192.168.110.206:24542       192.168.110.206:54713       ESTABLISHED 
+tcp        0      0 127.0.0.1:37277             127.0.0.1:24441             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60596             ESTABLISHED 
+tcp        0      0 192.168.110.206:24620       192.168.110.206:48267       ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55436             ESTABLISHED 
+tcp        0      0 127.0.0.1:44470             127.0.0.1:24643             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60593             ESTABLISHED 
+tcp        0      0 127.0.0.1:54551             127.0.0.1:52004             ESTABLISHED 
+tcp        0      0 127.0.0.1:24682             127.0.0.1:43409             ESTABLISHED 
+tcp        0      0 192.168.110.206:45298       192.168.110.206:24643       ESTABLISHED 
+tcp        0      0 127.0.0.1:40211             127.0.0.1:24681             ESTABLISHED 
+tcp        0      0 127.0.0.1:40199             127.0.0.1:24681             ESTABLISHED 
+tcp        0      0 127.0.0.1:40205             127.0.0.1:24681             ESTABLISHED 
+tcp        0      0 127.0.0.1:46548             127.0.0.1:24640             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55445             ESTABLISHED 
+tcp        0      0 127.0.0.1:46547             127.0.0.1:24640             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60587             ESTABLISHED 
+tcp        0      0 127.0.0.1:40170             127.0.0.1:24681             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60582             ESTABLISHED 
+tcp        0      0 192.168.110.206:37394       192.168.110.206:24683       ESTABLISHED 
+tcp        0      0 127.0.0.1:24442             127.0.0.1:48804             ESTABLISHED 
+tcp        0      0 127.0.0.1:24680             127.0.0.1:55452             ESTABLISHED 
+tcp        0      0 127.0.0.1:24140             127.0.0.1:60578             ESTABLISHED 
+tcp        0      0 ::ffff:127.0.0.1:8005       :::*                        LISTEN      
+tcp        0      0 :::10630                    :::*                        LISTEN      
+tcp        0      0 :::8009                     :::*                        LISTEN      
+tcp        0      0 :::8080                     :::*                        LISTEN      
+tcp        0      0 :::6002                     :::*                        LISTEN      
+tcp        0      0 :::22                       :::*                        LISTEN      
+tcp        0      0 :::4184                     :::*                        LISTEN      
+tcp        0      0 ::ffff:192.168.110.206:4184 ::ffff:192.168.110.208:2053 ESTABLISHED 
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2070 CLOSE_WAIT  
+tcp        0      0 ::ffff:192.168.110.206:22   ::ffff:192.168.110.6:3311   ESTABLISHED 
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2423 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2422 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2421 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2420 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2419 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2418 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2431 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2426 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2425 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2424 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2407 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2406 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2405 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2404 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2403 CLOSE_WAIT  
+tcp        0      0 ::ffff:192.168.110.206:22   ::ffff:192.168.110.17:2720  ESTABLISHED 
+tcp        0      0 ::ffff:192.168.110.20:43867 ::ffff:192.168.110.23:1521  ESTABLISHED 
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2471 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2470 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2469 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2468 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2476 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:47078 ::ffff:192.168.110.20:24620 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:47077 ::ffff:192.168.110.20:24620 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:47076 ::ffff:192.168.110.20:24620 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2475 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2474 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2473 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2472 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2455 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2454 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2453 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2439 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2438 CLOSE_WAIT  
+tcp        0      0 ::ffff:192.168.110.206:22   ::ffff:192.168.110.17:1387  ESTABLISHED 
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2434 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2433 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2432 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2447 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2446 CLOSE_WAIT  
+tcp        0      0 ::ffff:192.168.110.20:37172 ::ffff:192.168.110.23:1521  ESTABLISHED 
+tcp        0      0 ::ffff:192.168.110.20:37161 ::ffff:192.168.110.23:1521  ESTABLISHED 
+tcp        0      0 ::ffff:192.168.110.20:37158 ::ffff:192.168.110.23:1521  ESTABLISHED 
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2445 CLOSE_WAIT  
+tcp        1      0 ::ffff:192.168.110.20:10630 ::ffff:192.168.110.208:2440 CLOSE_WAIT  
+tcp        0      0 ::ffff:192.168.110.206:22   ::ffff:192.168.110.6:4382   ESTABLISHED 
+tcp        0      0 ::ffff:192.168.110.206:22   ::ffff:192.168.110.17:1334  ESTABLISHED 
+tcp        0      0 ::ffff:192.168.110.206:4184 ::ffff:192.168.110.208:2046 ESTABLISHED 
+tcp        0      0 ::ffff:192.168.110.206:4184 ::ffff:192.168.110.208:2047 ESTABLISHED 
+udp        0      0 0.0.0.0:32768               0.0.0.0:*                               
+udp        0      0 0.0.0.0:32769               0.0.0.0:*                               
+udp        0      0 0.0.0.0:32771               0.0.0.0:*                               
+udp        0      0 0.0.0.0:177                 0.0.0.0:*                               
+udp        0      0 0.0.0.0:959                 0.0.0.0:*                               
+udp        0      0 0.0.0.0:5353                0.0.0.0:*                               
+udp        0      0 0.0.0.0:111                 0.0.0.0:*                               
+udp        0      0 0.0.0.0:631                 0.0.0.0:*                               
+udp        0      0 192.168.110.206:123         0.0.0.0:*                               
+udp        0      0 127.0.0.1:123               0.0.0.0:*                               
+udp        0      0 0.0.0.0:123                 0.0.0.0:*                               
+udp        0      0 :::32770                    :::*                                    
+udp        0      0 :::123                      :::*                                    
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node Path
+unix  2      [ ACC ]     STREAM     LISTENING     5534   /tmp/.font-unix/fs7100
+unix  2      [ ACC ]     STREAM     LISTENING     5262   public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     5656   /tmp/.X11-unix/X2
+unix  2      [ ACC ]     STREAM     LISTENING     7496   @/tmp/fam-root-
+unix  2      [ ACC ]     STREAM     LISTENING     7207   /tmp/ksocket-root/kdeinit__2
+unix  2      [ ACC ]     STREAM     LISTENING     7209   /tmp/ksocket-root/kdeinit-:2
+unix  2      [ ACC ]     STREAM     LISTENING     7220   /tmp/.gdm_socket
+unix  2      [ ACC ]     STREAM     LISTENING     7370   /tmp/.X11-unix/X0
+unix  2      [ ACC ]     STREAM     LISTENING     7385   /tmp/.ICE-unix/dcop2371-1229524149
+unix  2      [ ACC ]     STREAM     LISTENING     7454   /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  2      [ ACC ]     STREAM     LISTENING     7558   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  2      [ ACC ]     STREAM     LISTENING     6156   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  2      [ ACC ]     STREAM     LISTENING     7563   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  2      [ ACC ]     STREAM     LISTENING     7584   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  2      [ ACC ]     STREAM     LISTENING     7619   /tmp/.ICE-unix/2420
+unix  2      [ ACC ]     STREAM     LISTENING     7776   /tmp/ksocket-root/casdlsup06.orsypgroup.com-0980-49490cbe
+unix  2      [ ACC ]     STREAM     LISTENING     5269   private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     5273   private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     5277   private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     5281   private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     5285   private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     5289   private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     5293   public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     5297   private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     5301   private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     5305   private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     5309   public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     5313   private/error
+unix  2      [ ACC ]     STREAM     LISTENING     5317   private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     5321   private/local
+unix  25     [ ]         DGRAM                    4435   /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     5325   private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     5329   private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5333   private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     5337   private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     5876   /var/run/avahi-daemon/socket
+unix  2      [ ACC ]     STREAM     LISTENING     5341   private/maildrop
+unix  2      [ ACC ]     STREAM     LISTENING     5345   private/old-cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5349   private/cyrus
+unix  2      [ ACC ]     STREAM     LISTENING     5353   private/uucp
+unix  2      [ ACC ]     STREAM     LISTENING     5357   private/ifmail
+unix  2      [ ACC ]     STREAM     LISTENING     5361   private/bsmtp
+unix  2      [ ACC ]     STREAM     LISTENING     5472   /dev/gpmctl
+unix  2      [ ]         DGRAM                    1111   @/org/kernel/udev/udevd
+unix  2      [ ACC ]     STREAM     LISTENING     6157   @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  2      [ ]         DGRAM                    6165   @/org/freedesktop/hal/udev_event
+unix  2      [ ACC ]     STREAM     LISTENING     4664   /var/run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     4713   /var/run/sdp
+unix  2      [ ACC ]     STREAM     LISTENING     4955   /var/run/acpid.socket
+unix  2      [ ]         DGRAM                    2389246 
+unix  2      [ ]         DGRAM                    2389160 
+unix  3      [ ]         STREAM     CONNECTED     2389157 
+unix  3      [ ]         STREAM     CONNECTED     2389156 
+unix  2      [ ]         DGRAM                    2387678 
+unix  2      [ ]         DGRAM                    2358273 
+unix  2      [ ]         DGRAM                    2323554 
+unix  2      [ ]         DGRAM                    2323466 
+unix  3      [ ]         STREAM     CONNECTED     2323463 
+unix  3      [ ]         STREAM     CONNECTED     2323462 
+unix  2      [ ]         DGRAM                    2320644 
+unix  3      [ ]         STREAM     CONNECTED     2320643 
+unix  3      [ ]         STREAM     CONNECTED     2320642 
+unix  2      [ ]         DGRAM                    2319198 
+unix  2      [ ]         DGRAM                    2319112 
+unix  3      [ ]         STREAM     CONNECTED     2319109 
+unix  3      [ ]         STREAM     CONNECTED     2319108 
+unix  2      [ ]         DGRAM                    2318957 
+unix  2      [ ]         DGRAM                    2101638 
+unix  3      [ ]         STREAM     CONNECTED     2101637 
+unix  3      [ ]         STREAM     CONNECTED     2101636 
+unix  3      [ ]         STREAM     CONNECTED     8154   /tmp/ksocket-root/klauncherjiMW5b.slave-socket
+unix  3      [ ]         STREAM     CONNECTED     8153   
+unix  3      [ ]         STREAM     CONNECTED     7811   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7810   
+unix  3      [ ]         STREAM     CONNECTED     7804   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7803   
+unix  3      [ ]         STREAM     CONNECTED     7787   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7786   
+unix  3      [ ]         STREAM     CONNECTED     7785   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7784   
+unix  3      [ ]         STREAM     CONNECTED     7756   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7755   
+unix  3      [ ]         STREAM     CONNECTED     7752   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7751   
+unix  3      [ ]         STREAM     CONNECTED     7750   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7749   
+unix  3      [ ]         STREAM     CONNECTED     7745   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7744   
+unix  3      [ ]         STREAM     CONNECTED     7721   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7720   
+unix  3      [ ]         STREAM     CONNECTED     7719   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     7718   
+unix  3      [ ]         STREAM     CONNECTED     7690   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7689   
+unix  3      [ ]         STREAM     CONNECTED     7682   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7681   
+unix  3      [ ]         STREAM     CONNECTED     7674   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7673   
+unix  3      [ ]         STREAM     CONNECTED     7672   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7671   
+unix  3      [ ]         STREAM     CONNECTED     7666   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7665   
+unix  3      [ ]         STREAM     CONNECTED     7661   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7660   
+unix  3      [ ]         STREAM     CONNECTED     7652   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7651   
+unix  3      [ ]         STREAM     CONNECTED     7648   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7647   
+unix  3      [ ]         STREAM     CONNECTED     7644   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7643   
+unix  3      [ ]         STREAM     CONNECTED     7638   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7637   
+unix  3      [ ]         STREAM     CONNECTED     7636   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7635   
+unix  3      [ ]         STREAM     CONNECTED     7630   /tmp/.ICE-unix/2420
+unix  3      [ ]         STREAM     CONNECTED     7629   
+unix  3      [ ]         STREAM     CONNECTED     7627   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7626   
+unix  3      [ ]         STREAM     CONNECTED     7625   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7624   
+unix  3      [ ]         STREAM     CONNECTED     7618   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7617   
+unix  3      [ ]         STREAM     CONNECTED     7612   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7611   
+unix  3      [ ]         STREAM     CONNECTED     7605   /tmp/ksocket-root/kdeinit__2
+unix  3      [ ]         STREAM     CONNECTED     7604   
+unix  3      [ ]         STREAM     CONNECTED     7623   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7592   
+unix  3      [ ]         STREAM     CONNECTED     7589   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7588   
+unix  3      [ ]         STREAM     CONNECTED     7587   /tmp/orbit-gdm/linc-96e-0-7ec2edcfe0d37
+unix  3      [ ]         STREAM     CONNECTED     7586   
+unix  3      [ ]         STREAM     CONNECTED     7583   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7582   
+unix  3      [ ]         STREAM     CONNECTED     7581   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7580   
+unix  3      [ ]         STREAM     CONNECTED     7579   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7578   
+unix  3      [ ]         STREAM     CONNECTED     7566   /tmp/orbit-gdm/linc-969-0-5aa13808daf0
+unix  3      [ ]         STREAM     CONNECTED     7565   
+unix  3      [ ]         STREAM     CONNECTED     7562   /tmp/orbit-gdm/linc-96c-0-127b42218d843
+unix  3      [ ]         STREAM     CONNECTED     7561   
+unix  3      [ ]         STREAM     CONNECTED     7543   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7542   
+unix  3      [ ]         STREAM     CONNECTED     7513   /tmp/.font-unix/fs7100
+unix  3      [ ]         STREAM     CONNECTED     7512   
+unix  3      [ ]         STREAM     CONNECTED     7498   @/tmp/fam-root-
+unix  3      [ ]         STREAM     CONNECTED     7497   
+unix  3      [ ]         STREAM     CONNECTED     7486   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7485   
+unix  3      [ ]         STREAM     CONNECTED     7482   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7481   
+unix  3      [ ]         STREAM     CONNECTED     7457   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     7456   
+unix  3      [ ]         STREAM     CONNECTED     7428   /tmp/.ICE-unix/dcop2371-1229524149
+unix  3      [ ]         STREAM     CONNECTED     7427   
+unix  3      [ ]         STREAM     CONNECTED     7396   
+unix  3      [ ]         STREAM     CONNECTED     7395   
+unix  3      [ ]         STREAM     CONNECTED     7517   /tmp/.X11-unix/X0
+unix  3      [ ]         STREAM     CONNECTED     7372   
+unix  3      [ ]         STREAM     CONNECTED     6992   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     6991   
+unix  3      [ ]         STREAM     CONNECTED     6939   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6938   
+unix  3      [ ]         STREAM     CONNECTED     6896   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6895   
+unix  3      [ ]         STREAM     CONNECTED     6846   /var/run/acpid.socket
+unix  3      [ ]         STREAM     CONNECTED     6845   
+unix  3      [ ]         STREAM     CONNECTED     6865   @/tmp/hald-local/dbus-63NWWvJOfG
+unix  3      [ ]         STREAM     CONNECTED     6840   
+unix  3      [ ]         STREAM     CONNECTED     6160   @/tmp/hald-runner/dbus-UMry0WEmNI
+unix  3      [ ]         STREAM     CONNECTED     6159   
+unix  3      [ ]         STREAM     CONNECTED     5924   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5923   
+unix  3      [ ]         STREAM     CONNECTED     5879   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     5878   
+unix  3      [ ]         STREAM     CONNECTED     5873   
+unix  3      [ ]         STREAM     CONNECTED     5872   
+unix  2      [ ]         DGRAM                    5870   
+unix  3      [ ]         STREAM     CONNECTED     5694   /tmp/.X11-unix/X2
+unix  3      [ ]         STREAM     CONNECTED     5693   
+unix  2      [ ]         DGRAM                    5474   
+unix  2      [ ]         DGRAM                    5451   
+unix  2      [ ]         DGRAM                    5432   
+unix  2      [ ]         DGRAM                    5375   
+unix  3      [ ]         STREAM     CONNECTED     5364   
+unix  3      [ ]         STREAM     CONNECTED     5363   
+unix  3      [ ]         STREAM     CONNECTED     5360   
+unix  3      [ ]         STREAM     CONNECTED     5359   
+unix  3      [ ]         STREAM     CONNECTED     5356   
+unix  3      [ ]         STREAM     CONNECTED     5355   
+unix  3      [ ]         STREAM     CONNECTED     5352   
+unix  3      [ ]         STREAM     CONNECTED     5351   
+unix  3      [ ]         STREAM     CONNECTED     5348   
+unix  3      [ ]         STREAM     CONNECTED     5347   
+unix  3      [ ]         STREAM     CONNECTED     5344   
+unix  3      [ ]         STREAM     CONNECTED     5343   
+unix  3      [ ]         STREAM     CONNECTED     5340   
+unix  3      [ ]         STREAM     CONNECTED     5339   
+unix  3      [ ]         STREAM     CONNECTED     5336   
+unix  3      [ ]         STREAM     CONNECTED     5335   
+unix  3      [ ]         STREAM     CONNECTED     5332   
+unix  3      [ ]         STREAM     CONNECTED     5331   
+unix  3      [ ]         STREAM     CONNECTED     5328   
+unix  3      [ ]         STREAM     CONNECTED     5327   
+unix  3      [ ]         STREAM     CONNECTED     5324   
+unix  3      [ ]         STREAM     CONNECTED     5323   
+unix  3      [ ]         STREAM     CONNECTED     5320   
+unix  3      [ ]         STREAM     CONNECTED     5319   
+unix  3      [ ]         STREAM     CONNECTED     5316   
+unix  3      [ ]         STREAM     CONNECTED     5315   
+unix  3      [ ]         STREAM     CONNECTED     5312   
+unix  3      [ ]         STREAM     CONNECTED     5311   
+unix  3      [ ]         STREAM     CONNECTED     5308   
+unix  3      [ ]         STREAM     CONNECTED     5307   
+unix  3      [ ]         STREAM     CONNECTED     5304   
+unix  3      [ ]         STREAM     CONNECTED     5303   
+unix  3      [ ]         STREAM     CONNECTED     5300   
+unix  3      [ ]         STREAM     CONNECTED     5299   
+unix  3      [ ]         STREAM     CONNECTED     5296   
+unix  3      [ ]         STREAM     CONNECTED     5295   
+unix  3      [ ]         STREAM     CONNECTED     5292   
+unix  3      [ ]         STREAM     CONNECTED     5291   
+unix  3      [ ]         STREAM     CONNECTED     5288   
+unix  3      [ ]         STREAM     CONNECTED     5287   
+unix  3      [ ]         STREAM     CONNECTED     5284   
+unix  3      [ ]         STREAM     CONNECTED     5283   
+unix  3      [ ]         STREAM     CONNECTED     5280   
+unix  3      [ ]         STREAM     CONNECTED     5279   
+unix  3      [ ]         STREAM     CONNECTED     5276   
+unix  3      [ ]         STREAM     CONNECTED     5275   
+unix  3      [ ]         STREAM     CONNECTED     5272   
+unix  3      [ ]         STREAM     CONNECTED     5271   
+unix  3      [ ]         STREAM     CONNECTED     5268   
+unix  3      [ ]         STREAM     CONNECTED     5267   
+unix  3      [ ]         STREAM     CONNECTED     5265   
+unix  3      [ ]         STREAM     CONNECTED     5264   
+unix  3      [ ]         STREAM     CONNECTED     5261   
+unix  3      [ ]         STREAM     CONNECTED     5260   
+unix  3      [ ]         STREAM     CONNECTED     5253   
+unix  3      [ ]         STREAM     CONNECTED     5252   
+unix  2      [ ]         DGRAM                    5204   
+unix  2      [ ]         DGRAM                    5034   
+unix  2      [ ]         DGRAM                    4803   
+unix  3      [ ]         STREAM     CONNECTED     4706   /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     4705   
+unix  2      [ ]         DGRAM                    4692   
+unix  2      [ ]         DGRAM                    4686   
+unix  3      [ ]         STREAM     CONNECTED     4667   
+unix  3      [ ]         STREAM     CONNECTED     4666   
+unix  3      [ ]         STREAM     CONNECTED     4632   
+unix  4      [ ]         STREAM     CONNECTED     4631   
+unix  2      [ ]         DGRAM                    4510   
+unix  2      [ ]         DGRAM                    4443   

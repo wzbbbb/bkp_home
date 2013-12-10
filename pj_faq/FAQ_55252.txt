@@ -1,0 +1,42 @@
+
+Key words:
+GJM, graphic job monitor,  GraphicJobMonitor.exe 
+
+Subject: GraphicJobMonitor.exe not to be used in batch mode
+
+Prerequisites:
+
+Application validation tests:
+
+Questions:
+Is there a way to open a specific GJM connection to a specific node via the command line?  I am able to open the "multi-node" window via the command line but if I try to specify a particular node (rather than multi-node) a GJM window opens with the monitored node left blank (and, of course, the CDJ connection fails).
+
+What I want to do is create various scripts to open groups of GJM windows - rather than requiring users to manually open all of the needed windows.
+
+
+
+Explanation:
+
+We do not have any document about the syntax of this command:
+GraphicJobMonitor.exe 
+We are not sure if this binary will accept a parameter for single node. This binary is not designed to be used in script. You may figure out a way to do it for now. However, it is possible that our R&D team changes the command syntax in future, since it is not documented for customers.
+
+An alternative could be to limit the nodes defined in the node table.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+Internal
+
+
+Experties level:
+

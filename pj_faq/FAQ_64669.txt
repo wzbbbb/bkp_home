@@ -1,0 +1,59 @@
+Subject
+
+"Server process not found" in job log.
+Prerequisites
+
+Make sure the Dollar Universe Company is using DQM.
+
+Application Validation Tests
+
+Check to see if the DQM process is there or not.
+
+When this issue happened, all history traces look like the following:
+
+                05/19/2008 13:27:29 Start Condition Check                                    
+                                    Modified directly in the Engine by                        
+                                    operator : rokerr                                         
+                                    Processing Date 05/19/2008                                
+                 Server process not found                                                     
+                                                                                              
+...
+
+...
+                  *** Task launch refused  *** 
+
+There will be no job logs.
+
+Explanation
+
+Normally, the message "Server process not found" means the DQM server is not started or stopped.
+
+There could be different reasons for DQM server missing. In this case, also the most common issue for current DQM structure, the DQM data files are broken; the data file size become 0.
+
+ 8271 -rw-rw-rw-   1 root     universe          0 May 15 12:27 /etc/UNIVERSE_DQM_LIDEV1/uxdmpqueLIDEV1X.dat
+ 8272 -rw-rw-rw-   1 root     universe          0 May 15 12:27 /etc/UNIVERSE_DQM_LIDEV1/uxdmpdtaLIDEV1X.dat
+
+
+Sometimes, only one of the data files becomes 0 sized. In all case, the DQM server will stop right away, when this happened.
+
+Warnings
+
+Mandatory Backups / Safety Measures
+
+Implementation procedure
+
+To fix this issue,
+
+1). shutdown Dollar Universe
+2). delete or rename of the 2 data files
+3). restart the Company.
+
+The 2 data files will be recreated. However, all of the previously defined queues will be removed. They have to be recreated and started manually.
+
+Implementation check
+
+In case the procedure is unsuccessful Issues/Maintenance Feedback
+
+Next Updates
+
+

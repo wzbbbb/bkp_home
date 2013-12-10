@@ -1,0 +1,223 @@
+#! /bin/csh
+# ==========================================================================
+# ORSYP.Sa           
+#             ------------------------------------------------------
+#   UNIVERSE environment declaring procedure
+#       Defining variables
+#       Defining aliases
+#
+#
+#   The following declarations are part of the common login
+#   UNIVERSE for the company OSCORP
+#   (file created at installation)
+# ==========================================================================
+#
+# ========================================================
+#
+# Defining default context variables for
+# DOLLAR-UNIVERSE users
+#
+# S_CODPROF  : UNIVERSE user profile
+# S_SOCIETE  : UNIVERSE company code
+# S_U_LANGUE : current language
+# S_TIMEOUT  : deconnection time
+#
+# ========================================================
+#
+setenv S_CODPROF   PROFADM 
+#
+setenv S_SOCIETE   OSCORP
+#
+if ( ${?S_U_LANGUE} != 0 ) then
+   if ( "${S_U_LANGUE}" != "FR" ) then
+       setenv S_U_LANGUE  EN
+   endif
+else
+  setenv S_U_LANGUE  EN
+endif
+#
+setenv S_TIMEOUT   60
+setenv S_ESPEXE    X
+setenv S_UNIVERS   E
+setenv S_APPLI     U_
+setenv S_NOEUD     ocean67
+#
+ if (-e /etc/UNIVERSE_DQM_${S_SOCIETE} ) then 
+#    source /etc/UNIVERSE_DQM_${S_SOCIETE}/uxsetenv_dqm_csh 
+    setenv  UXDQM  /etc/UNIVERSE_DQM_${S_SOCIETE}
+    alias   uxdqm  "cd $UXDQM;set prompt='$UXDQM# '"
+  endif 
+#
+#       Protection mask applied to Uproc files
+#
+setenv  U_MASK_UPR "u=rwx,g=rw,o=rx" 
+#
+#       Defining Universe root directory
+#
+setenv  UXDIR_ROOT /universe/OSCORP 
+alias   uxroot  "cd $UXDIR_ROOT;set prompt='$UXDIR_ROOT# '"
+#
+#       Defining Executables directory
+#
+setenv  UXEXE  /universe/OSCORP/exec
+alias   uxexe  "cd $UXEXE;set prompt='$UXEXE# '"
+#
+#       Defining Maintenance directory
+#
+setenv  UXMGR  /universe/OSCORP/mgr 
+alias   uxmgr  "cd $UXMGR;set prompt='$UXMGR# '"
+#
+#       Defining Application Data directory
+#
+setenv  UXDAP  /universe/OSCORP/app/data 
+alias   uxdap  "cd $UXDAP;set prompt='$UXDAP# '"
+#
+#       Defining Integration Data directory
+#
+setenv  UXDIN  /universe/OSCORP/int/data 
+alias   uxdin  "cd $UXDIN;set prompt='$UXDIN# '"
+#
+#       Defining Simulation Data directory
+#
+setenv  UXDSI  /universe/OSCORP/sim/data 
+alias   uxdsi  "cd $UXDSI;set prompt='$UXDSI# '"
+#
+#       Defining Production Data directory
+#
+setenv  UXDEX  /universe/OSCORP/exp/data 
+alias   uxdex  "cd $UXDEX;set prompt='$UXDEX# '"
+#
+#       Defining Application Scripts directory
+#
+setenv  UXPAP  /universe/OSCORP/app/upr 
+alias   uxpap  "cd $UXPAP;set prompt='$UXPAP# '"
+#
+#       Defining Integration Scripts directory
+#
+setenv  UXPIN  /universe/OSCORP/int/upr 
+alias   uxpin  "cd $UXPIN;set prompt='$UXPIN# '"
+#
+#       Defining Simulation Scripts  directory
+#
+setenv  UXPSI  /universe/OSCORP/sim/upr 
+alias   uxpsi  "cd $UXPSI;set prompt='$UXPSI# '"
+#
+#       Defining Production Scripts directory
+#
+setenv  UXPEX  /universe/OSCORP/exp/upr 
+alias   uxpex  "cd $UXPEX;set prompt='$UXPEX# '"
+#
+#       Defining Application Logs directory
+#
+setenv  UXLAP  /universe/OSCORP/app/log 
+alias   uxlap  "cd $UXLAP;set prompt='$UXLAP# '"
+#
+#       Defining  Integration Logs directory
+#
+setenv  UXLIN  /universe/OSCORP/int/log 
+alias   uxlin  "cd $UXLIN;set prompt='$UXLIN# '"
+#
+#       Defining Simulation Logs directory
+#
+setenv  UXLSI  /universe/OSCORP/sim/log 
+alias   uxlsi  "cd $UXLSI;set prompt='$UXLSI# '"
+#
+#       Defining Production Logs directory
+#
+setenv  UXLEX  /universe/OSCORP/exp/log 
+alias   uxlex  "cd $UXLEX;set prompt='$UXLEX# '"
+#
+#       Defining  UNIVERSE log directory
+#
+setenv  UXLOG  /universe/OSCORP/exp/log 
+alias   uxlog  "cd $UXLOG;set prompt='$UXLOG# '"
+#
+#       Defining date format
+#
+if ( "${S_U_LANGUE}"  ==  "FR" ) then
+    setenv  U_FMT_DATE    jj/mm/aaaa
+else
+    setenv  U_FMT_DATE    mm/dd/yyyy 
+endif
+#
+#       Defining host file for SAP Agent
+#
+   setenv UXSAP_HOSTS_FILE "/universe/OSCORP/mgr/uxsapagt.host"
+#
+#
+# ========================================================
+#
+#       Defining external ressources necessary
+#       for identifying IPC communications objects 
+# UXSHM_LCK : Reserving Shareable Memory space for Locks
+# UXSHM_FIL : Reserving Shareable Memory space for Open Files
+# UXSHM_TRN : Reserving Shareable Memory space for Interactive Conversations
+# UXSHM_JOB : Reserving Shareable Memory space for Batch Job tracking
+#
+# =======================================================
+#
+setenv UXSHM_FIL $UXMGR/UXSHM_FIL
+setenv UXSHM_TRN $UXMGR/UXSHM_TRN
+#
+#
+# =======================================================
+#
+# Defining environment variables for accessing files :
+#  - U_LOG_FILE : UNIVERSE Log
+#  - U_MSG_FILE : UNIVERSE Message Base
+#  - SRVNET_DIR : Directory for network configuration files
+#
+# ========================================================
+#
+#
+setenv U_LOG_FILE  /universe/OSCORP/exp/log/universe.log 
+setenv U_MSG_FILE  $UXEXE/uni_msg.txt
+setenv U_LIC_FILE  $UXMGR/u_fali01.txt
+setenv U_EDITEUR_R "xterm -e vi -R "
+setenv U_EDITEUR_W "xterm -e vi "
+setenv SRVNET_DIR  $UXMGR
+setenv S_CODCENTRAL N
+setenv S_PLAGEHORAIRE "0:0/23:59"
+setenv U_TMP_PATH  /universe/OSCORP/temp 
+#
+#
+if ( -x $UXMGR/uxsetenv_csh_OSCORP ) then
+   source $UXMGR/uxsetenv_csh_OSCORP
+endif
+# ========================================================
+umask 0 
+#
+#Audit Trace Option
+setenv U_LOG_TRANS Y
+#
+#Disabling cluster communication
+#setenv U_CLUSTER_NODE_DISABLED Y
+ 
+#Proxy definitions
+setenv U_PROXY_FILE ${UXMGR}/u_ioproxy.dta
+setenv U_IO_PROXY_FILE ${UXMGR}/u_ioproxy.dta
+#setenv U_PROXY_LOG ${UXLEX}/proxy_dbg.log
+#
+#Dynamic purge
+setenv U_DYNAMIC_PURGE Y
+setenv U_RETENTION_DELAY 014:00:00
+setenv U_TRACE_PURGE Y
+#
+#DQM Options
+setenv DQM_COPY_LOG Y
+setenv U_DQM_DISPATCH Y
+ setenv UXRES /universe/OSCORP/res
+ setenv UXMGR4JAVA_HOSTS_FILE ${SRVNET_DIR}/uxmgr4java.host
+ setenv U_LOCALHOSTNAME ocean67
+ setenv UXAAP REP_D_DAT/action
+ setenv UXAIN REP_I_DAT/action
+ setenv UXASI REP_S_DAT/action
+ setenv UXAEX REP_E_DAT/action
+ setenv U_ITM_I Y
+ setenv U_ITM_T N
+ setenv U_ITM_E N
+ setenv U_ITM_R Y
+ setenv U_ITM_W N
+ setenv U_ITM_O Y
+ setenv U_ITM_EVT_LOG UXLOG
+ setenv U_ITM_METAFILE_PATH UXEXE

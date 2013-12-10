@@ -1,0 +1,94 @@
+#REM# User Verification
+#CMD# id 
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),700(univ)
+#CMD# id
+uid=0(root) gid=0(root) groups=0(root),1(bin),2(daemon),3(sys),4(adm),6(disk),10(wheel),700(univ)
+
+The values of the configuration variables are :
+
+#         uxtrace version : 0.9.4
+
+	UXTRACELOCATE :		/apps/unijob110/univiewer_server/casdlsup06/app/uxtrace
+	UXCUSTSCRIPT :		/apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust
+	UXMAINAREA :		X
+	UXKEEPUXTRACEFOLDER :		N
+	UXCOMPRESSUXTRACEFOLDER :		Y
+	UXLOGDELAY :		1
+	UXLOGNB :		25
+	UXLOOPNUMBER :		4
+	UXSLEEPTIME :		15
+	UXLAUNCHCUSTSCRIPT :		s
+	UXDUFILESIZELIM :		10000
+	UXBGTIMEOUT :		20
+#REM# The version of the launched uxtrace is 0.9.4
+#REM# For information, the place available in the /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc is :
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/hda5            276836664  18719780 244054388   8% /dsk1
+
+#REM# The /apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust is not present or readable
+#CMD# ls -l /apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust
+#TSP#  20090108-165933 
+ls: /apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust: No such file or directory
+cp: cannot stat `/apps/unijob110/univiewer_server/casdlsup06/data/temp/u_gethrd_report.log': No such file or directory
+./uxtrace[1555]: /apps/unijob110/univiewer_server/casdlsup06/data/uxgethrd: cannot execute
+cp: cannot stat `/apps/unijob110/univiewer_server/casdlsup06/data/temp/u_gethrd_report.log': No such file or directory
+#REM# Beginning of the copy of the MGR files
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unienv.csh /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unienv.ksh /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/phrase.key /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#REM# The file /apps/unijob110/univiewer_server/casdlsup06/data/u_*.txt does exist
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unicheckms /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unienv.csh /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unienv.ksh /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unistartms /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/unistopms /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#REM# The file /apps/unijob110/univiewer_server/casdlsup06/data/*.dat does exist
+#REM# The file /apps/unijob110/univiewer_server/casdlsup06/data/*.dta does exist
+#REM# The file /apps/unijob110/univiewer_server/casdlsup06/data/u_batch* does exist
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/alertmanager.xml /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/log4j.xml /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/network.xml /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/proxy.xml /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/roles.xml /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /apps/unijob110/univiewer_server/casdlsup06/data/values.xml /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#REM# Beginning of the copy of the EXEC files
+#REM# Beginning of the copy of the files directory
+#REM# Beginning of the copy of system files
+#CMD# cp -p /etc/hosts /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /etc/fedora-release /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /etc/redhat-release /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /etc/resolv.conf /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /proc/version /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /etc/passwd /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#CMD# cp -p /etc/group /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+#REM# The file /etc/networks does not exist
+#CMD# cp -p /etc/protocols /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES/
+
+#REM# Backup of the used trace procedure
+#CMD# cd /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace
+#CMD# cp -p ./uxtrace /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/FILES
+#REM# /apps/unijob110/univiewer_server/casdlsup06/data/uxtrace_cust file does not exist
+
+ls: ./X**: No such file or directory
+ls: ./X*IU_PUR*: No such file or directory
+ls: ./X*IU_RTS*: No such file or directory
+#REM# uxcdjsrv.log not collected by the find procedures
+#REM# uxcmdsrv.log not collected by the find procedures
+#REM# unijob.log not collected by the find procedures
+#REM# *_CAL*.LOG not collected by the find procedures
+#REM# *_ORD*.LOG not collected by the find procedures
+#REM# *_ECH*.LOG not collected by the find procedures
+#REM# *_SUR*.LOG not collected by the find procedures
+The file /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/LOG/UXLEX.tar.gz has been created
+It's size in Kb is : 4
+
+#CMD# rmdir /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/CUST
+#TSP#  20090108-170137 
+rmdir: /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/CUST: No such file or directory
+The file /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DLS.tar has been created
+It's size in Kb is : 176
+
+The file /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/SYS.tar has been created
+It's size in Kb is : 1404
+
+The /apps/unijob110/univiewer_server/casdlsup06/app/uxtrace/TMP_casdlsup06_uxtrace_Linux_UniViwer_Server_20090108-165923_sc/DQM folder does not exist

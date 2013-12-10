@@ -1,0 +1,31 @@
+
+Key words: generic supervision, system32, u_spv_job.bat, launcher
+
+Subject: Launcher can only launch one job (Windows)
+
+Prerequisites:
+
+Application validation tests:
+
+One cmd.exe process hangs in the system after each launch, and the launcher will not do anything else unless the cmd.exe got killed or the batch file is present in the system32. In another word, the launcher seems to hang after launching a job; the job will complete.
+
+
+Explanation:
+
+The issue was caused by improper configuration for generic supervision. They implemented the DLL file for generic supervision, but did not put the u_spv_job.bat in the c:\windows\system32 directory.
+
+
+Warnings:
+
+Mandatory Backups/Safety Measures:
+
+Implementation check:
+
+In case the procedure is unsuccessful:
+
+Next updates:
+
+Access level:
+
+Experties level:
+
