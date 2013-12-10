@@ -1,0 +1,100 @@
+www.6park.com
+514 982 1703
+zwa@orsyp.com
+
+838 Ste. Catherine, Montreal, QC
+
+class Bicycle {
+
+    int cadence = 0;
+    int speed = 0;
+    int gear = 1;
+
+    void changeCadence(int newValue) {
+         cadence = newValue;
+    }
+
+    void changeGear(int newValue) {
+         gear = newValue;
+    }
+
+    void speedUp(int increment) {
+         speed = speed + increment;   
+    }
+
+    void applyBrakes(int decrement) {
+         speed = speed - decrement;
+    }
+
+    void printStates() {
+         System.out.println("cadence:" +
+             cadence + " speed:" + 
+             speed + " gear:" + gear);
+    }
+}
+class BicycleDemo {
+    public static void main(String[] args) {
+
+        // Create two different 
+        // Bicycle objects
+        Bicycle bike1 = new Bicycle(); //he object is stored in a region of memory known as the heap.
+        Bicycle bike2 = new Bicycle();
+
+        // Invoke methods on 
+        // those objects
+        bike1.changeCadence(50);
+        bike1.speedUp(10);
+        bike1.changeGear(2);
+        bike1.printStates();
+
+        bike2.changeCadence(50);
+        bike2.speedUp(10);
+        bike2.changeGear(2);
+        bike2.changeCadence(40);
+        bike2.speedUp(10);
+        bike2.changeGear(3);
+        bike2.printStates();
+    }
+}
+
+The output of this test prints the ending pedal cadence, speed, and gear for the two bicycles:
+
+cadence:50 speed:10 gear:2
+cadence:40 speed:20 gear:3
+//each class has to be stored in a different file?
+// both class and the main function are class, and has to be in different files.
+...........Inheritance
+
+The syntax for creating a subclass is simple. At the beginning of your class declaration, use the extends keyword, followed by the name of the class to inherit from:
+
+class MountainBike extends Bicycle {
+
+    // new fields and methods defining 
+    // a mountain bike would go here
+
+}
+
+...........Interface
+In its most common form, an interface is a group of related methods with empty bodies. A bicycle's behavior, if specified as an interface, might appear as follows:
+
+interface Bicycle {
+
+    //  wheel revolutions per minute
+    void changeCadence(int newValue);
+
+    void changeGear(int newValue);
+
+    void speedUp(int increment);
+
+    void applyBrakes(int decrement);
+}
+
+To implement this interface, the name of your class would change (to a particular brand of bicycle, for example, such as ACMEBicycle), and you'd use the implements keyword in the class declaration:
+
+class ACMEBicycle implements Bicycle {
+
+    // remainder of this class 
+    // implemented as before
+}
+If your class claims to implement an interface, all methods defined by that interface must appear in its source code before the class will successfully compile.
+

@@ -1,0 +1,7 @@
+
+    <resources>
+        <color name="logo_color">#FFFF0F</color>
+        <color name="version_bkgrd">#1A1A48</color><color name="version_color">#F0F0F0</color>
+        <color name="title_color">#F0F0F0</color>
+        
+    </resources>

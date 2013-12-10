@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--This is a mock score XML chunk-->
+	<scores>
+	<score username="WZB" score="12349" rank="1"/>
+	<score username="SAC" score="12344" rank="2"/>
+	<score username="NAD" score="12339" rank="3"/>
+	<score username="LED" score="12345" rank="4"/> 
+	<score username="CAI" score="12324" rank="5"/> 
+	<score username="HPI" score="12315" rank="6"/> 
+	<score username="MIB" score="12310" rank="7"/> 
+	<score username="XXI" score="12300" rank="8"/> 
+	<score username="QCA" score="12245" rank="9"/> 
+	<score username="CAL" score="12325" rank="10"/> 
+	<score username="GCN" score="12321" rank="11"/> 
+	<score username="NJI" score="12198" rank="12"/> 
+	<score username="MMO" score="12142" rank="13"/> 
+	<score username="HHI" score="12132" rank="14"/> 
+</scores>

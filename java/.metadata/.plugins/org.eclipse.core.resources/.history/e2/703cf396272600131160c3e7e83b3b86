@@ -1,0 +1,39 @@
+package com.example.beentheredonethat;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
+
+public class QuitzScoresActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzscores);
+		Log.i(TAG, "In Scores activity, onCreate() callback method");
+		TabHost host = (TabHost) findViewById(R.id.tabhost1);
+		host.setup();
+		TabSpec allScoresTab = host.newTabSpec("allTab");
+
+		allScoresTab.setIndicator(getResources().getString(R.string.all_scores), getResources().getDrawable(android.R.drawable.star_on));
+		allScoresTab.setContent(R.id.ScrollViewAllScores);
+		host.addTab(allScoresTab);
+
+		TabSpec friendScoresTab = host.newTabSpec("friendTab");
+
+		allScoresTab.setIndicator(getResources().getString(R.string.friend_scores), getResources().getDrawable(android.R.drawable.star_on));
+		allScoresTab.setContent(R.id.ScrollViewFriendScores);
+		host.addTab(friendScoresTab);
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="1200" key="dialogWidth"/>
+		<item value="767" key="dialogHeight"/>
+		<list key="orderedProviders">
+			<item value="org.eclipse.e4.ui.parts"/>
+			<item value="org.eclipse.e4.ui.parts"/>
+		</list>
+		<list key="textArray">
+			<item value="proper"/>
+			<item value="out"/>
+		</list>
+		<list key="orderedElements">
+			<item value="com.android.ide.eclipse.hierarchyviewer.views.PropertyView"/>
+			<item value="org.eclipse.ui.views.ContentOutline"/>
+		</list>
+		<list key="textEntries">
+			<item value="1"/>
+			<item value="1"/>
+		</list>
+	</section>
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="63" key="DIALOG_Y_ORIGIN"/>
+		<item value="313" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="InstallationDialogSettings">
+		<item value="934" key="DIALOG_WIDTH"/>
+		<item value="-367" key="DIALOG_Y_ORIGIN"/>
+		<item value="980" key="DIALOG_HEIGHT"/>
+		<item value="-123" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.android.ide.eclipse.editors.wizards.NewXmlFileWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.android.ide.eclipse.wizards.category"/>
+		</list>
+	</section>
+	<section name="ShowViewDialog">
+		<item value="392" key="DIALOG_WIDTH"/>
+		<item value="96" key="DIALOG_Y_ORIGIN"/>
+		<item value="477" key="DIALOG_X_ORIGIN"/>
+		<item value="477" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="ImportExportAction">
+	</section>
+</section>

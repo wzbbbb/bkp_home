@@ -1,0 +1,110 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=7212, tid=1128
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_21-b11
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.21-b01 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000001f0d800):  JavaThread "Unknown thread" [_thread_in_vm, id=1128, stack(0x0000000002170000,0x0000000002270000)]
+
+Stack: [0x0000000002170000,0x0000000002270000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000001f0d800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=1128, stack(0x0000000002170000,0x0000000002270000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.103 loading class 0x0000000001da4860 done
+Event: 0.103 loading class 0x0000000001d63300 done
+Event: 0.103 loading class 0x0000000001d632d0
+Event: 0.103 loading class 0x0000000001dee300
+Event: 0.103 loading class 0x0000000001dee300 done
+Event: 0.103 loading class 0x0000000001dee340
+Event: 0.103 loading class 0x0000000001dee340 done
+Event: 0.103 loading class 0x000000000866c1d0
+Event: 0.103 loading class 0x000000000866c1d0 done
+Event: 0.103 loading class 0x0000000001d632d0 done
+
+
+Dynamic libraries:
+0x000000013f730000 - 0x000000013f763000 	D:\glassfish4\jdk7\bin\javaw.exe
+0x0000000077320000 - 0x00000000774c9000 	C:\windows\SYSTEM32\ntdll.dll
+0x0000000077100000 - 0x000000007721f000 	C:\windows\system32\kernel32.dll
+0x000007fefd390000 - 0x000007fefd3fb000 	C:\windows\system32\KERNELBASE.dll
+0x000007feff4b0000 - 0x000007feff58b000 	C:\windows\system32\ADVAPI32.dll
+0x000007fefd530000 - 0x000007fefd5cf000 	C:\windows\system32\msvcrt.dll
+0x000007fefd780000 - 0x000007fefd79f000 	C:\windows\SYSTEM32\sechost.dll
+0x000007fefee50000 - 0x000007fefef7d000 	C:\windows\system32\RPCRT4.dll
+0x0000000077220000 - 0x000000007731a000 	C:\windows\system32\USER32.dll
+0x000007fefd6e0000 - 0x000007fefd747000 	C:\windows\system32\GDI32.dll
+0x000007fefd750000 - 0x000007fefd75e000 	C:\windows\system32\LPK.dll
+0x000007feff3e0000 - 0x000007feff4a9000 	C:\windows\system32\USP10.dll
+0x000007fefb5d0000 - 0x000007fefb7c4000 	C:\windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_fa396087175ac9ac\COMCTL32.dll
+0x000007feff2c0000 - 0x000007feff331000 	C:\windows\system32\SHLWAPI.dll
+0x000007fefe020000 - 0x000007fefe04e000 	C:\windows\system32\IMM32.DLL
+0x000007fefd5d0000 - 0x000007fefd6d9000 	C:\windows\system32\MSCTF.dll
+0x000000006b640000 - 0x000000006b711000 	D:\glassfish4\jdk7\jre\bin\msvcr100.dll
+0x000000006a270000 - 0x000000006a991000 	D:\glassfish4\jdk7\jre\bin\server\jvm.dll
+0x000007fef8ed0000 - 0x000007fef8ed9000 	C:\windows\system32\WSOCK32.dll
+0x000007fefdfd0000 - 0x000007fefe01d000 	C:\windows\system32\WS2_32.dll
+0x000007fefee40000 - 0x000007fefee48000 	C:\windows\system32\NSI.dll
+0x000007fefbe10000 - 0x000007fefbe4b000 	C:\windows\system32\WINMM.dll
+0x00000000774e0000 - 0x00000000774e7000 	C:\windows\system32\PSAPI.DLL
+0x000000006fef0000 - 0x000000006feff000 	D:\glassfish4\jdk7\jre\bin\verify.dll
+0x000000006fec0000 - 0x000000006fee8000 	D:\glassfish4\jdk7\jre\bin\java.dll
+0x000000006bb90000 - 0x000000006bbc5000 	D:\glassfish4\jdk7\jre\bin\jdwp.dll
+0x000000006d480000 - 0x000000006d488000 	D:\glassfish4\jdk7\jre\bin\npt.dll
+0x000000006cf90000 - 0x000000006cfa5000 	D:\glassfish4\jdk7\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:63758 -Dfile.encoding=Cp1252 -Xbootclasspath:D:\download\adt-bundle-windows-x86_64-20130729\sdk\platforms\android-18\android.jar 
+java_command: com.example.beentheredonethat.QuitzSettingsActivity
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=D:\glassfish4\jdk7\jre\bin;D:/glassfish4/jdk7/bin/../jre/bin/server;D:/glassfish4/jdk7/bin/../jre/bin;D:/glassfish4/jdk7/bin/../jre/lib/amd64;C:\Program Files\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files (x86)\Common Files\Microsoft Shared\Microsoft Online Services;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files\Broadcom\Broadcom 802.11;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;C:\Program Files (x86)\Roxio\OEM\AudioCore\;C:\Program Files (x86)\Intel\Services\IPT\;C:\Program Files (x86)\Windows Live\Shared;d:\Program Files (x86)\vim\vim73;d:\python33;d:\Ruby193\bin;D:\glassfish4\jdk7\bin;D:\download\adt-bundle-windows-x86_64-20130729\eclipse;
+USERNAME=zwa
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 42 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 4127088k(1252716k free), swap 8252316k(2971732k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.21-b01) for windows-amd64 JRE (1.7.0_21-b11), built on Apr  4 2013 08:11:28 by "java_re" with unknown MS VC++:1600
+
+time: Sun Sep 22 19:59:19 2013
+elapsed time: 0 seconds
+

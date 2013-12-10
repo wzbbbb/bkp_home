@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extracts string &apos;null&apos; into R.string.test_output" description="Extracts string &apos;null&apos; into R.string.test_output" flags="6" id="com.android.ide.eclipse.adt.refactoring.extract.string" mode="SELECT_NEW_ID" proj="/Droid1" rplc-all-java="false" rplc-all-xml="false" stamp="1379779714466"/>
+</session>

@@ -1,0 +1,24 @@
+package com.example.beentheredonethat;
+
+import android.os.Bundle;
+import android.util.Log;
+
+public class QuitzHelpActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzhelp);
+		Log.i(TAG, "In Help activity, onCreate() callback method");
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

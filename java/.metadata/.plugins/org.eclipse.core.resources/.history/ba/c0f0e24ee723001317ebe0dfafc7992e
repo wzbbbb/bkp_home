@@ -1,0 +1,26 @@
+package com.example.beentheredonethat;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.util.Log;
+
+public class QuitZSplashActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzsplash);
+		Log.i(TAG, "In Splash activity, onCreate() callback method");
+		SharedPreferences lastPref = getSharedPreferences(lastLaunch,	MODE_PRIVATE);
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

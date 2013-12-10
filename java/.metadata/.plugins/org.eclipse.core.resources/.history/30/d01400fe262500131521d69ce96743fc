@@ -1,0 +1,31 @@
+package com.example.beentheredonethat;
+
+import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+public class QuitzMenuActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzmenu);
+		ListView menuList = (ListView) findViewById(R.id.listView1);
+		String[] items = { getResources().getString(R.string.but_play),
+				getResources().getString(R.string.scores),
+				getResources().getString(R.string.settings),
+				getResources().getString(R.string.help) };
+		ArrayAdapter<String> adapt = new ArrayAdapter<String>(this,	R.layout.menu_item, items);
+		menuList.setAdapter(adapt);
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

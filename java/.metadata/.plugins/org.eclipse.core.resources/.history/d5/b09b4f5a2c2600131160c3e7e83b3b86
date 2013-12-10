@@ -1,0 +1,71 @@
+package com.example.beentheredonethat;
+
+import android.content.res.XmlResourceParser;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TabHost;
+import android.widget.TabHost.TabSpec;
+import android.widget.TableLayout;
+import android.widget.TableRow;
+import android.widget.TextView;
+
+public class QuitzScoresActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzscores);
+		Log.i(TAG, "In Scores activity, onCreate() callback method");
+		TabHost host = (TabHost) findViewById(R.id.tabhost1);
+		host.setup();
+		
+		TabSpec allScoresTab = host.newTabSpec("allTab");
+		allScoresTab.setIndicator(getResources().getString(R.string.all_scores), getResources().getDrawable(android.R.drawable.star_on));
+		allScoresTab.setContent(R.id.ScrollViewAllScores);
+		host.addTab(allScoresTab);
+
+		TabSpec friendScoresTab = host.newTabSpec("friendTab");
+		allScoresTab.setIndicator(getResources().getString(R.string.friend_scores), getResources().getDrawable(android.R.drawable.star_on));
+		allScoresTab.setContent(R.id.ScrollViewFriendScores);
+		host.addTab(friendScoresTab);
+		
+		host.setCurrentTabByTag("allTab");
+		
+        // Retrieve the TableLayout references
+        TableLayout allScoresTable = (TableLayout) findViewById(R.id.TableLayout_AllScores);
+        TableLayout friendScoresTable = (TableLayout) findViewById(R.id.TableLayout_FriendScores);
+        // Give each TableLayout a yellow header row with the column names
+        initializeHeaderRow(allScoresTable);
+        initializeHeaderRow(friendScoresTable);
+        
+		XmlResourceParser mockAllScores = getResources().getXml(R.xml.allscores);
+		XmlResourceParser mockFriendScores =getResources().getXml(R.xml.friendscores);
+		
+	}
+    private void initializeHeaderRow(TableLayout scoreTable) {
+        // Create the Table header row
+        TableRow headerRow = new TableRow(this);
+        int textColor = getResources().getColor(R.color.logo_color);
+        float textSize = getResources().getDimension(R.dimen.help_text_size);
+        addTextToRowWithValues(headerRow, getResources().getString(R.string.username), textColor, textSize);
+        addTextToRowWithValues(headerRow, getResources().getString(R.string.score), textColor, textSize);
+        addTextToRowWithValues(headerRow, getResources().getString(R.string.rank), textColor, textSize);
+        scoreTable.addView(headerRow);
+    }
+    private void addTextToRowWithValues(final TableRow tableRow, String text, int textColor, float textSize) {
+        TextView textView = new TextView(this);
+        textView.setTextSize(textSize);
+        textView.setTextColor(textColor);
+        textView.setText(text);
+        tableRow.addView(textView);
+    }
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

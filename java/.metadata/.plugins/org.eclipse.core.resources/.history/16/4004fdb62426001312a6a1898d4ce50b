@@ -1,0 +1,27 @@
+package com.example.beentheredonethat;
+
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TabHost;
+
+public class QuitzScoresActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzscores);
+		Log.i(TAG, "In Scores activity, onCreate() callback method");
+		TabHost host = (TabHost) findViewById(R.id.tabhost);
+		host.setup();
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

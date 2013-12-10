@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.example.beentheredonethat.R.layout"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.view.Menu"/>
+<fullyQualifiedTypeName name="android.view.MenuItem"/>
+<fullyQualifiedTypeName name="com.example.beentheredonethat.R.array"/>
+<fullyQualifiedTypeName name="android.widget.RelativeLayout"/>
+</qualifiedTypeNameHistroy>

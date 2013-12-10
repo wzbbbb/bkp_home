@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tian_tan"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textHelpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="@string/help"
+            android:textColor="@color/logo_color"
+            android:textSize="@dimen/logo_size" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="28dp"
+            android:src="@drawable/ic_launcher" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_helpText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:autoLink="web|email|map"
+        android:fadingEdgeLength="@dimen/help_text_fading"
+        android:linksClickable="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"
+        android:text="TextView"
+        android:textColor="@color/selected"
+        android:textSize="@dimen/medium_size"
+        android:textStyle="italic" />
+
+</LinearLayout>

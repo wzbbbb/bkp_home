@@ -1,0 +1,41 @@
+package com.example.beentheredonethat;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+
+public class QuitzSettingsActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzsettings);
+		Log.i(TAG, "In Settings activity, onCreate() callback method");
+
+		SharedPreferences settings = getSharedPreferences(GAME_PREFERENCES,	MODE_PRIVATE);
+		if (settings.contains("UserName") == true) {
+			// We have a user name
+			String user = settings.getString("UserName", "Default");
+		}
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/***
+		 * onClick(R.id.editText1);
+		 * 
+		 * String u_name =get @+id/editText1 submit_Button =
+		 * (Button)findViewById(R.id.button1); u_name =
+		 * (EditText)findViewById(R.id.editText1);
+		 * 
+		 * mButton.setOnClickListener( new View.OnClickListener() { public void
+		 * onClick(View view) { Log.v("EditText", mEdit.getText().toString()); }
+		 * });
+		 ***/
+		
+	}
+
+}

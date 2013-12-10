@@ -1,0 +1,62 @@
+package com.example.beentheredonethat;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class QuitzSettingsActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzsettings);
+		Log.i(TAG, "In Settings activity, onCreate() callback method");
+
+		SharedPreferences settings = getSharedPreferences(GAME_PREFERENCES,	MODE_PRIVATE);
+		if (settings.contains("UserName") == true) {
+			// We have a user name
+			String user = settings.getString("UserName", "Default");
+		}
+		
+		SharedPreferences mGameSettings =	getSharedPreferences(GAME_PREFERENCES, Context.MODE_PRIVATE);
+		
+		final EditText nicknameText = (EditText) findViewById(R.id.editTextNickname);
+		String strNicknameToSave = nicknameText.getText().toString();
+		
+		
+	}
+	public void onPickDateButtonClick(View view){
+		Toast.makeText(QuitzSettingsActivity.this,
+				"DO: Launch Password Dialog", Toast.LENGTH_LONG).show();
+	}
+	
+	public void onSetPasswordButtonClick(View view){
+		Toast.makeText(QuitzSettingsActivity.this,
+				"TODO: Launch DatePickerDialog", Toast.LENGTH_LONG).show();
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/***
+		 * onClick(R.id.editText1);
+		 * 
+		 * String u_name =get @+id/editText1 submit_Button =
+		 * (Button)findViewById(R.id.button1); u_name =
+		 * (EditText)findViewById(R.id.editText1);
+		 * 
+		 * mButton.setOnClickListener( new View.OnClickListener() { public void
+		 * onClick(View view) { Log.v("EditText", mEdit.getText().toString()); }
+		 * });
+		 ***/
+		
+	}
+
+}

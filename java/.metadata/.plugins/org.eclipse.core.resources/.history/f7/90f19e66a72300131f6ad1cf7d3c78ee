@@ -1,0 +1,22 @@
+package com.example.beentheredonethat;
+
+import android.os.Bundle;
+
+public class QuitzMenuActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentVIew(R.layout.activity_quitzmenu);
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

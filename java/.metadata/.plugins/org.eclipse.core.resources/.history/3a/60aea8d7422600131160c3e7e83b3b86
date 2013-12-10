@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name">Been there, Done that!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="scores">View Scores</string>
+    <string name="welcome">Welcome to the game! </string>
+
+    <dimen name="header">20sp</dimen>
+
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="but_play">Play Game</string>
+    <string name="user_set_label">Specify your user name:</string>
+    <string name="submit">Submit</string>
+
+    <dimen name="medium_size">15sp</dimen>
+
+    <string name="LastRunTime">Last time the game started at:</string>
+    <string name="Temp_date">To be replaced</string>
+    <string name="but_score">Check scores</string>
+    <string name="summar_palace">Summar Palace</string>
+    <string name="tian_tan">Tian Tan</string>
+    <string name="water_cube">Water cube</string>
+    <string name="app_logo_top">BEEN THERE</string>
+    <string name="app_logo_bottom">DONE THAT!</string>
+    <string name="great_wall">Great Wall</string>
+    <string name="app_version_info">Version 2.0.0\nCopyright © 2013 WANG ZHI BING\nAll Right Resreved.</string>
+    <string name="menu">MAIN MENU</string>
+    <string name="icon">icon</string>
+
+    <string-array name="stringarray">
+        <item>Settings</item>
+        <item>Play</item>
+        <item>Help</item>
+        <item>Scores</item>
+    </string-array>
+
+    <string name="all_scores">"All Scores"</string>
+    <string name="friend_scores">"Scores of Friends"</string>
+    <string name="no_scores">"No scores to show."</string>
+    <string name="username">"Username"</string>
+    <string name="rank">"Ranking"</string>
+    <string name="score">"Score"</string>
+    <string name="wait_msg">"Retrieving Scores &#8230;"</string>
+    <string name="wait_title">"Loading &#8230;"</string>
+
+</resources>

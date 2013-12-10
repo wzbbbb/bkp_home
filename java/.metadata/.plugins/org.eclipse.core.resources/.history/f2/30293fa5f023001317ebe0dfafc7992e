@@ -1,0 +1,42 @@
+package com.example.beentheredonethat;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.TextView;
+
+public class QuitZSplashActivity extends QuitzActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_quitzsplash);
+		Log.i(TAG, "In Splash activity, onCreate() callback method");
+		SharedPreferences lastPref = getSharedPreferences(lastLaunch,	MODE_PRIVATE);
+		if (lastPref.contains("lastRunTime") == true) {
+			// We have a user name
+			String lastTime = lastPref.getString("lastRunTime", "Default");
+			TextView t = (TextView)findViewById(R.id.textView3);
+			t.setText(lastTime);
+		}
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+		String currentDateandTime = sdf.format(new Date());
+		SharedPreferences.Editor prefEditor = lastPref.edit();
+		prefEditor.putString("lastLaunch", currentDateandTime);
+		prefEditor.commit();
+
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,19 @@
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+        
+        <item android:id="@+id/settings_menu_item" 
+            android:icon="@android:drawable/ic_menu_preferences" 
+            android:title="@string/settings">
+            
+        </item>
+        <item android:id="@+id/help_menu_item" 
+            android:icon="@android:drawable/ic_menu_help" 
+            android:title="@string/help">
+            
+        </item>
+        <item android:id="@+id/scores_menu_item" 
+            android:icon="@android:drawable/ic_menu_help" 
+            android:title="@string/scores">
+            
+        </item>
+    </menu>
