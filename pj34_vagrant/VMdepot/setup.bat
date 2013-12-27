@@ -1,4 +1,5 @@
 d:
+mkdir \VMmount
 cd \VMmount
 call vagrant init
 rename Vagrantfile Vagrantfile_blank

@@ -21,9 +21,10 @@ The files above is used internally, please don't change it.
 
 Preparation -
 
-1. Creat directory D:\VMdepot  # Store every files in VMdepot  
+1. Install latest VirutalBox and Vagrant
 
-2. Create directory D:\VMmount # this directory is accessable in every VM
+2. Creat a directory D:\VMdepot, put all files in it  
+
 
 
 
@@ -32,15 +33,15 @@ Usage -
 
 2. Run setup.bat and one of the launch script, for example, boot1.bat
 
-3. Access the UVC through web browser, http://localhost:8081
+3. Access the UVC through web browser, http://localhost:8081/univiewer_webconsole_6.1.21_all_os/
 
 4. After test, run cleanup.bat
 
 5. To keep the environment for later, run pause.bat
 
 6. SSH access to the node: 
-testvm11: 127.0.0.1:2021
-testvm12: 127.0.0.1:2022
-testvm13: 127.0.0.1:2023
+testvm11: 127.0.0.1:2021, root:test
+testvm12: 127.0.0.1:2022, root:test
+testvm13: 127.0.0.1:2023, root:test
 
 7. For dump, unpack uxtrace in D:\VMmount, and run boot1.bat, then dudmp6 in testvm11.
