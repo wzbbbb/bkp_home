@@ -1,9 +1,13 @@
+# Disposable test environment
+# ZWA
+# Version 1.0
+# 12/26/2013
 Content -
 ==================
 -  bootstrap1.sh
 -  bootstrap2.sh
 -  bootstrap3.sh
--  testvm11.box
+-  testvm11.box  #The UVMS and UVC webconsole is on testvm1. 
 -  testvm12.box
 -  testvm13.box
 -  Vagrantfile
@@ -16,16 +20,14 @@ The files above is used internally, please don't change it.
 -  cleanup.bat  # To clean up everything 
 -  pause.bat    # To suspend VM, and free memory
 
-4. The UVMS and UVC webconsole is on testvm1. 
-
 
 Preparation -
 
 1. Install latest VirutalBox and Vagrant
 
-2. Creat a directory D:\VMdepot, put all files in it  
+2. Creat a directory D:\VMdepot, 
 
-
+3. Download all files in casplda01:/windata/DTE, and put in D:\VMdepot
 
 
 Usage -
@@ -33,7 +35,7 @@ Usage -
 
 2. Run setup.bat and one of the launch script, for example, boot1.bat
 
-3. Access the UVC through web browser, http://localhost:8081/univiewer_webconsole_6.1.21_all_os/
+3. Access the UVC through web browser, http://localhost:8081/univiewer_webconsole_6.1.21_all_os/; univa:univa; administrator:admin
 
 4. After test, run cleanup.bat
 
