@@ -3,6 +3,14 @@ To implement run, the IP is the server that provide the download. It can be a di
 
 gw6.sh  -
 curl -s 192.168.115.41/download/gw6.sh|bash    ---
+for ssl --
+curl -s 192.168.115.41/download/gw6_ssl.sh|bash    ---
+With IP and custer ID as parameters          
+curl -s 192.168.115.41/download/gw6_ssl.sh | bash /dev/stdin '192.168.114.215' someID   ---
+e.g.
+curl -s 192.168.115.41/download/gw6_ssl.sh |bash /dev/stdin '192.168.114.242' '@2a@10@iQhay0Bvrzdciex3oARlIuOSkX4AN8NCTWycsLqlHGHC5\/pVFPOCi' ---
+
+
 
 That script will download and install necessary package, and scripts.  
 
